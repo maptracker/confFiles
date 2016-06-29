@@ -64,4 +64,5 @@ noisy_cd "$HOME"
 CDIR="confFiles"
 
 link "$CDIR/.tmux.conf" '.tmux.conf'
-link "$CDIR/.bashrc" '.bashrc'
+link "$CDIR/.bashrc"    '.bashrc'
+link "$CDIR/.emacs"     '.emacs'
