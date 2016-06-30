@@ -139,3 +139,11 @@ fi
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
+
+# Yeahhh ... Some of this is not universally useful. In particular, ls
+# coloring is (unsurprisingly) causing problems with some other shell
+# scripts. Allow the presence of *another* machine-specific file to
+# undo some of the above
+
+POSTBASHRC="$HOME/.bashrc-finish.sh"
+[ -f "$POSTBASHRC" ] && . "$POSTBASHRC"
