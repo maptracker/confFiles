@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -33,6 +35,12 @@ gls() {
     # Seems I'm always less'ing gzipped data files...
     gunzip -c "$1" | less -S
 }
+
+alias myproc='ps -ef | grep tilfordc | egrep -v "(emacs|-tcsh|-bash|sshd:| grep | ps -ef| sort -k8)" | sort -k8'
+
+# Disable Ctrl-s in terminals
+# https://unix.stackexchange.com/a/12108
+stty -ixon
 
 # Include date and time in history output
 export HISTTIMEFORMAT='%b%d %H:%M '
