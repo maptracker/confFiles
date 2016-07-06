@@ -4,6 +4,8 @@
 (setq load-path (cons (concat (getenv "HOME") "/.lisp") load-path))
 (setq load-path (cons (concat (getenv "HOME") "/lisp") load-path))
 
+(setq vc-follow-symlinks t)
+
 ;; wiki mode
 ;; (add-to-list 'load-path "/path/to/the/directory/where/emacs-wiki/resides/")
 ;; (setq load-path (cons (concat (getenv "HOME") "/lisp/emacs-wiki-2.70/") load-path))
