@@ -31,6 +31,37 @@ ssh() {
     fi
 }
 
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# http://alexteichman.com/octo/blog/2014/01/01/x11-forwarding-and-terminal-multiplexers/
+# -- Improved X11 forwarding through GNU Screen (or tmux).
+# If not in screen or tmux, update the DISPLAY cache.
+# If we are, update the value of DISPLAY to be that in the cache.
+function update-x11-forwarding
+{
+    if [ -z "$STY" -a -z "$TMUX" ]; then
+        echo $DISPLAY > ~/.display.txt
+    else
+        export DISPLAY=`cat ~/.display.txt`
+    fi
+}
+
+# This is run before every command.
+preexec() {
+    # Don't cause a preexec for PROMPT_COMMAND.
+    # Beware!  This fails if PROMPT_COMMAND is a string containing more than one command.
+    [ "$BASH_COMMAND" = "$PROMPT_COMMAND" ] && return 
+
+    update-x11-forwarding
+
+    # Debugging.
+    #echo DISPLAY = $DISPLAY, display.txt = `cat ~/.display.txt`, STY = $STY, TMUX = $TMUX  
+}
+trap 'preexec' DEBUG
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
 gls() {
     # Seems I'm always less'ing gzipped data files...
     gunzip -c "$1" | less -S
@@ -97,12 +128,18 @@ fi
 # Red prompt:
 #  PS1="\\[$(tput setaf 1)\\]\\u@\\h:\\w #\\[$(tput sgr0)\\]"
 
-if [ "$color_prompt" = yes ]; then
+# Meh. Just color away... When TERM is xterm, it still appears to support color
+#if [ "$color_prompt" = yes ]; then
+if [[ "$USER" == "tilfordc" ]]; then
     PS1='\[\033[01;33m\]\h \#%\[\033[00m\] '
 else
-    # PS1='\h \#% '
-    PS1='\[\033[01;33m\]\h \#%\[\033[00m\] '
+    # If su'ed as a different user, highlight UID
+    PS1='\[\033[01;33m\]\h (\u) \#%\[\033[00m\] '
 fi
+#else
+#    # PS1='\h \#% '
+#    PS1='\[\033[01;33m\]\h \#%\[\033[00m\] '
+#fi
 unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
