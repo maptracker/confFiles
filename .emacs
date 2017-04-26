@@ -237,8 +237,9 @@
 ;; Will use polymode (below) for Rmd files instead
 ;; (add-to-list 'auto-mode-alist '("\\.Rmd\\'" . markdown-mode))
 
-;; STOP with the stupid _ === <- insanity!!
+(add-to-list 'load-path "/home/tilfordc/ESS/lisp/")
 (require 'ess-site)
+;; STOP with the stupid _ === <- insanity!!
 (ess-toggle-underscore nil)
 
 ;; Polymode - for files with mixed content, like R+Markdown
