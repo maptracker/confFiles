@@ -4,6 +4,11 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+
+#### chsh -s /bin/bash
+## Done for:
+# kraken
+
 # I've pared down this file to be universal across machines I
 # use. Machine-specific settings are put in ~/.bashrc-local.sh
 XTRABASHRC="$HOME/.bashrc-local.sh"
