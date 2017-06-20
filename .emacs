@@ -228,6 +228,10 @@
   (replace-string "\n\r" "\n")
   (replace-string "\r" "\n"))
 
+;; node.js mode
+;; https://github.com/abicky/nodejs-repl.el
+;; (require 'nodejs-repl)
+
 ;; Markdown major mode
 ;; http://jblevins.org/projects/markdown-mode/
 (autoload 'markdown-mode "markdown-mode"

@@ -1,5 +1,6 @@
 FORCE="$1"
 
+## https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
 function msg () {
     COL=$1
     MSG=$2
@@ -67,3 +68,32 @@ link "$CDIR/.tmux.conf" '.tmux.conf'
 link "$CDIR/.bashrc"    '.bashrc'
 link "$CDIR/.emacs"     '.emacs'
 link "$CDIR/.psqlrc"    '.psqlrc'
+
+gct="gconftool-2"
+hasGconf=`which $gct`
+
+
+gnomeTools=(
+    gnome-terminal
+)
+
+if [[ -z "$hasGconf" ]]; then
+    warn "$gct not present - not sure how to manipulate Gnome settings"
+else
+    msg "46;0;35" "
+Manual steps for restoring Gnome configurations
+   (not sure how to detect if changes have been made, or to live-link)
+"
+
+    ## Backup and restore with gconftool-2 :
+    ## https://superuser.com/a/241570
+
+    for gt in "${gnomeTools[@]}"
+    do
+        msg "44;33" "## $gt settings:"
+
+        msg "36" "    $gct --dump '/apps/$gt' > \"$HOME/$CDIR/${gt}-conf.xml-BKUP\" # Backup
+    $gct --load \"$HOME/$CDIR/${gt}-conf.xml\" # Restore
+"
+    done
+fi

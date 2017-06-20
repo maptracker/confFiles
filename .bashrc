@@ -18,6 +18,14 @@ XTRABASHRC="$HOME/.bashrc-local.sh"
 # This is defensive against complaints involving tput.
 [ -z "$PS1" ] && return
 
+## Postgres information
+export PGPORT=5433
+export PGHOST=elephant.pri.bms.com
+alias  mt-sql="psql maptracker"
+alias  vir-sql="psql virologydb"
+alias  ga-sql="psql genacc"
+alias  sg-sql="psql stndgene"
+
 ssh() {
     # ssh wrapper to allow tmux to set short hostname
     # https://gist.github.com/florianbeer/ee02c149a7e25f643491
