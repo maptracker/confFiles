@@ -4,6 +4,11 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+
+#### chsh -s /bin/bash
+## Done for:
+# kraken
+
 # I've pared down this file to be universal across machines I
 # use. Machine-specific settings are put in ~/.bashrc-local.sh
 XTRABASHRC="$HOME/.bashrc-local.sh"
@@ -12,6 +17,14 @@ XTRABASHRC="$HOME/.bashrc-local.sh"
 # If not running interactively, don't do anything
 # This is defensive against complaints involving tput.
 [ -z "$PS1" ] && return
+
+## Postgres information
+export PGPORT=5433
+export PGHOST=elephant.pri.bms.com
+alias  mt-sql="psql maptracker"
+alias  vir-sql="psql virologydb"
+alias  ga-sql="psql genacc"
+alias  sg-sql="psql stndgene"
 
 ssh() {
     # ssh wrapper to allow tmux to set short hostname
