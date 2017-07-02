@@ -6,8 +6,9 @@
 ##   http://ahmed.amayem.com/bash-arrays-2-different-methods-for-looping-through-an-array/
 ## Working with xpis from command line: https://askubuntu.com/a/73480
 
-browser=${1:"firefox"}
-
+browser=${1:-"firefox"}
+profile=${2:-`ls -1d ~/.mozilla/firefox/*.default`}
+          
 tmp="/tmp/setupFirefox"
 mkdir -p "$tmp"
 cd "$tmp"
@@ -17,6 +18,8 @@ echo "
 Downloading and installing addons for $browser
    Temp dir: $tmp
      Source: $baseUrl
+    Browser: $browser
+    Profile: $profile
 "
 
 xpis=(
@@ -56,3 +59,48 @@ Failed to download XPI:
 
 done
 
+rdf="install.rdf"
+locrdf="/tmp/setupFirefox/$rdf"
+
+if [[ -e "$rdf" ]]; then
+    rm --force "$rdf"
+    if [[ -e "$rdf" ]]; then
+        echo "ERROR: can not remove $tmp/$rdf"
+        exit
+    fi
+fi
+
+## Now install all, which will require confirmation for each
+for ((i=0; i<$xlen; i += 2));
+do
+    id=${xpis[$i]}
+    nm=${xpis[$i+1]}
+    rm --force "$rdf"
+    locName="addon-${id}-latest.xpi"
+
+    unzip -q "$locName" "$rdf"
+    if [[ ! -s "$locrdf" ]]; then
+        echo "
+ERROR: Failed to extract $rdf from xpi
+ name: $nm
+  xpi: $locName
+"
+        exit;
+    fi
+
+    ## Sometimes <id> is used instead
+    emid=`egrep '<(em:id|id)>' "$locrdf" | head -n1 | sed 's/<[^>]*>//g' | sed -r 's/[[:space:]]+//g'`
+    if [[ -z "$emid" ]]; then
+        echo "
+ERROR: Failed to find xpi ID
+  rdf: /tmp/setupFirefox/$rdf
+"
+        exit;
+    fi
+    xpi="$profile/extensions/$emid".xpi
+    echo "
+Installing: $nm
+      Path: $xpi
+"
+    # sudo $browser -install-global-extension "$locName" "about:addons"
+done
