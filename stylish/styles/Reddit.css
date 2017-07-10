@@ -7,7 +7,9 @@
     }
 
     .promotedlink, #siteTable_promoted,  .promoted, .arrow, div.side,
-    #header-bottom-right, .footer-parent { 
+    #header-bottom-right, .footer-parent, #cta-container-placeholder,
+    #fixed-side-footer-links, #recommendations, #promoted-spotlight
+    { 
         display: none ! important; 
     }
 

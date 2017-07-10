@@ -1,0 +1,9 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("theonion.com") {
+    div.image div, .reading-list-video-player-wrapper, #footer,
+    .reading-list-after-item-content
+    { 
+        display : none !important;
+    }
+}

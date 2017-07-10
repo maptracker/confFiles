@@ -6,10 +6,13 @@
     #block-ec_social-right_rail_social_share_buttons,
     #block-ec_components-page_tools_compact, .share_inline_header,
     #block-ec_components-print_sub, #comments-header, 
-    a[href*='www.economist.com/digital/apps']
+    a[href*='www.economist.com/digital/apps'], .navigation-sticky-scroller,
+    .main-content__video-collection, #bottom-page-wrapper,
+    .latest-printed, .share-component
     { 
         display: none ! important; 
     }
+
     p {
         margin-left: 1em ! important; 
     }

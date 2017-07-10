@@ -11,9 +11,12 @@
     .gb_ga, .gb_g, .gb_Mb.gb_ee.gb_R, .section-me-oscars-2016,
     .section-en_us-b, section-en_us-e, .section-me-ncaa-tournament-2016,
     .section-en_us-tc, .section-me-masters-2016,
-    .gb_ha
+    .gb_ha, .section-en_uk-e, .section-en_uk-s, #gbw,
+    c-wiz[data-label="Entertainment"],
+    c-wiz[data-label="Sports"],
+    c-wiz[data-label="Health"],
+    c-wiz[data-label="Technology"]
     { 
         display: none ! important; 
     }
-    
 }

@@ -2,7 +2,7 @@
 
 @-moz-document domain("ixquick.com") {
     
-    #sponsored { 
+    #sponsored, iframe { 
         display: none ! important; 
     }
     

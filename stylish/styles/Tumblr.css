@@ -1,0 +1,8 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("tumblr.com") {
+    #notes, aside, footer, .caption, #pagination-top, #masthead
+    {
+        display: none!important;
+    }
+}

@@ -1,0 +1,11 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("baltimoresun.com"), domain("orlandosentinel.com") {
+    /* Tribune papers share the same CSS */
+    .div[data-adloader-adtype], .trb_cm, .trb_sc, .trb_nls_c, .trb_bnn,
+    .trb_bottomAdBanner, .trb_ar_summary_load, .trb_ar_taboolaCmpn, 
+    .trb_masthead, .trb_nh_uw
+    { 
+        display : none ! important; 
+    }
+}
