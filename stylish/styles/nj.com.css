@@ -1,0 +1,10 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("nj.com") {
+    #newsletter_promo, #social_icons, #active_discussions, #most_read,
+    #disclaimer, .icn-link, .social_sidebar, #adv_header,
+    #multimedia_main_gallery
+    { 
+        display : none ! important; 
+    }
+}

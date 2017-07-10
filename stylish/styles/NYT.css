@@ -1,0 +1,15 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("nytimes.com") {
+    #cColumn, .runaroundLeft, .shareTools, .emailAlertModule,
+    #insideNYTimesHeader, #footer, .metaFootnote, #breaking-news-email-promo,
+    #ribbon, #masthead, #site-index-navigation, #whats-next,
+    #TopAd1, #site-index, .interactive-image-container, .interactive
+    { 
+        display: none ! important; 
+    }
+
+    #abColumn, #article { 
+        width: 100% ! important; 
+    }
+}

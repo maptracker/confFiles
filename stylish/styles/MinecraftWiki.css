@@ -1,0 +1,8 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("minecraftwiki.net") {
+    #curse-panel, #ft, #footer-icons, #footer-places,
+    #footer-info-copyright, #p-lang { 
+        display: none ! important; 
+    }
+}

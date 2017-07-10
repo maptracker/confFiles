@@ -1,0 +1,10 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("theatlantic.com") {
+    .lazyload, .video, .subscribe, .follow, .about,
+    .newsletters, .article-tools, .social-icons,
+    pictaaure
+    { 
+        display : none ! important; 
+    }
+}

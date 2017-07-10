@@ -1,0 +1,8 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("openclipart.org") {
+    #shutterstock_results, #shutterstock_search
+    { 
+        display: none ! important; 
+    }
+}

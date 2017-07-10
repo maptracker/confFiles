@@ -1,0 +1,9 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("reuters.com") {
+    .footer-trnetwork, .footer-disclaimer, .footer-top, #specialFeature,
+    .slider-module
+    { 
+        display: none !important;
+    }
+}

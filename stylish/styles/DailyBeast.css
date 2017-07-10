@@ -1,0 +1,10 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("thedailybeast.com") {
+    .blockquote, .cheatSignUp, .comments-link, .social, .cheatAd, .ad,
+    #utilitiyLinks, .fb-like, .login-search-nav, .topicHeading,
+    .brightcove, .cheat-aside 
+    { 
+        display: none ! important; 
+    }
+}

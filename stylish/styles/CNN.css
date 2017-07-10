@@ -1,0 +1,10 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("cnn.com") {
+    .cnnStryVidCont, .map-canvas, .cnn_stryshrwdgtbtm, #cnn_ftrcntnt, 
+    .js-owl-filmstrip, #cnn_hdr-main, #large-media, iframe, 
+    #leaf-footer-article-zone 
+    { 
+        display : none ! important; 
+    }
+}

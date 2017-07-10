@@ -1,0 +1,20 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("youtube.com") {
+    #action-panel-details
+    { 
+        display: block ! important; 
+    }
+
+    .promoted-videos, .branded-page-v2-top-row, #video-masthead, 
+    .signup-promo, #footer, #action-panel-share, #yt-uix-clickcard-card13,
+    #dftvp, #watch7-sidebar-discussion,
+    #item-section-054769, #item-section-033661, #item-section-652998,
+    #item-section-648146, #item-section-392757, #item-section-296230,
+    #item-section-046460, #item-section-204995, #item-section-031197,
+    #item-section-650712, #item-section-006100, #item-section-855594,
+    #item-section-840628, #item-section-202600, #item-section-884364
+    { 
+        display: none ! important; 
+    }
+}

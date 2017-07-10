@@ -1,0 +1,10 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("guardian.co.uk") {
+    .m-guardianbookshop, .named-trailblock, .twitter-container, .jobs-box,
+    .share-links, .facebook, .tweet, #footer, #header,
+    .list-of-trails
+    { 
+        display: none ! important; 
+    }
+}

@@ -1,0 +1,8 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("starmadepedia.net") {
+    html { 
+        overflow-x: scroll !important; 
+        overflow-y: scroll ! important;
+    }
+}

@@ -1,0 +1,218 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("gog.com") {
+    .is-owned { 
+        display: none ! important
+    }
+    .icon-linux { 
+        background-color: darkorange ! important;
+        margin:3px; 
+        border: solid orange 2px;  
+    }
+    .product-row__rating {
+        display:inline ! important; 
+        width: 3px ! important;
+    }
+    .icon-win, .icon-mac, .icon-plus { 
+        display: none ! important
+    }
+
+    /* #wishlistHolder .invisible { display: block ! important } */
+    
+    .star-rating--50 { background-color: lime; }
+    .star-rating--45 { background-color: green; }
+    .star-rating--40 { background-color: yellowgreen; }
+    .star-rating--35 { background-color: yellow; }
+    .star-rating--30 { background-color: pink; }
+    .star-rating--25 { background-color: red; }
+    .star-rating--20 { background-color: red; }
+    .star-rating--15 { background-color: black; }
+    .star-rating--10 { background-color: black; }
+    
+    /* These attributes are no longer being set */
+    .product-row__rating[star-rating="50"] { background-color: lime; }
+    .product-row__rating[star-rating="49"] { background-color: lime; }
+    .product-row__rating[star-rating="48"] { background-color: lime; }
+    .product-row__rating[star-rating="47"] { background-color: green; }
+    .product-row__rating[star-rating="46"] { background-color: green; }
+    .product-row__rating[star-rating="45"] { background-color: green; }
+    .product-row__rating[star-rating="44"] { background-color: yellowgreen; }
+    .product-row__rating[star-rating="43"] { background-color: yellowgreen; }
+    .product-row__rating[star-rating="42"] { background-color: yellowgreen; }
+    .product-row__rating[star-rating="41"] { background-color: yellow; }
+    .product-row__rating[star-rating="40"] { background-color: yellow; }
+    .product-row__rating[star-rating^="3"] { background-color: pink; }
+    .product-row__rating[star-rating^="2"] { background-color: red; }
+    .product-row__rating[star-rating^="1"] { background-color: black; }
+    
+    /* Owned games from other sources */
+    *[gog-product="1207659024"], /* botanicula */
+    *[gog-product="1207659753"], /* vvvvvvvv */
+    *[gog-product="1207664843"], /* space_pirates_and_zombies */
+    *[gog-product="1207660134"], /* race_the_sun */
+    *[gog-product="1425657908"], /* skulls_of_the_shogun */
+    *[gog-product="1207659018"], /* spacechem */
+    *[gog-product="1207659017"], /* machinarium */
+    *[gog-product="1207659209"], /* Papers Please */
+    *[gog-product="1207659259"], /* Amnesia */
+    *[gog-product="1421855536"], /* world of goo */
+    *[gog-product="1430398832"], /* aquaria */
+    *[gog-product="1207659016"], /* grimrock */
+    *[gog-product="1207660913"], /* shadowrun */
+    *[gog-product="1207665343"], /* ai war */
+    *[gog-product="1207659020"], /* trine */
+    *[gog-product="1207659033"], /* uplink */
+    *[gog-product="1207659072"], /* to the moon */
+    *[gog-product="1438343741"], /* frozen_synapse */
+    *[gog-product="1207659014"], /* darwinia */
+    *[gog-product="1207659124"], /* deponia 2 */
+    *[gog-product="1207660563"], /* risk of rain */
+    *[gog-product="1207664703"], /* Desktop Dungeons */
+    *[gog-product="1207665283"], /* kingdom rush */
+    *[gog-product="1436866438"], /* shadowrun hk */
+    *[gog-product="1207659145"], /* stacking */
+    *[gog-product="1207659513"], /* guacamelee */
+    *[gog-product="1207660104"], /* pixeljunk */
+    *[gog-product="1207660253"], /* dustforce */
+    *[gog-product="1207665323"], /* ai war */
+    *[gog-product="1207659132"], /* costume quest */
+    *[gog-product="1207659220"], /* eschalon */
+    *[gog-product="1207665333"], /* ai war */
+    *[gog-product="1207664603"], /* among the sleep */
+    *[gog-product="1207667123"], /* anomaly */
+    *[gog-product="1207667133"], /* anomaly korea */
+    *[gog-product="1207659164"], /* bards tale */
+    *[gog-product="1207666373"], /* baldurs gate ii */
+    *[gog-product="1207666353"], /* baldurs gate */
+    *[gog-product="1207665193"], /* blocks that matter */
+    *[gog-product="1434013541"], /* breach and clear */
+    *[gog-product="1434036647"], /* breach and clear */
+    *[gog-product="1207659253"], /* brutal legend */
+    *[gog-product="1446823701"], /* card city nights */
+    *[gog-product="1207659075"], /* defcon */
+    *[gog-product="1207659953"], /* democracy 3 */
+    *[gog-product="1207666613"], /* democracy 3 */
+    *[gog-product="1207664493"], /* democracy 3 */
+    *[gog-product="1207660663"], /* democracy 3 */
+    *[gog-product="1207660233"], /* deponia 3 */
+    *[gog-product="1207660683"], /* eschalon iii */
+    *[gog-product="1207665163"], /* gone home */
+    *[gog-product="1207666533"], /* halfway */
+    *[gog-product="1207659483"], /* hammerwatch */
+    *[gog-product="1207666683"], /* icewind dale */
+    *[gog-product="1434445160"], /* ironclad tactics */
+    *[gog-product="1444053723"], /* little inferno */
+    *[gog-product="1446797453"], /* last federation */
+    *[gog-product="1207661993"], /* luftrausers */
+    *[gog-product="1207659074"], /* multiwinia */
+    *[gog-product="1207665033"], /* olliolli */
+    *[gog-product="1207660064"], /* outlast */
+    *[gog-product="1207664463"], /* outlast */
+    *[gog-product="1207667073"], /* pixel piracy */
+    *[gog-product="1207659049"], /* retro city */
+    *[gog-product="1207660413"], /* shadowrun returns */
+    *[gog-product="1440061546"], /* shadowrun hk */
+    *[gog-product="1439900139"], /* shadowrun hk */
+    *[gog-product="1207659160"], /* Shattered Haven */
+    *[gog-product="1207660263"], /* Shivah */
+    *[gog-product="1207664303"], /* Sir You are Being Hunted */
+    *[gog-product="1207665863"], /* spacecom */
+    *[gog-product="1207660733"], /* steamworld dig */
+    *[gog-product="1207660213"], /* super hexagon */
+    *[gog-product="1446796759"], /* last federation */
+    *[gog-product="1207660863"], /* tower of guns */
+    *[gog-product="1207665053"], /* unrest */
+    *[gog-product="1207665063"], /* unrest */
+    *[gog-product="1207665073"], /* unrest */
+    *[gog-product="1207665843"], /* shadowgate */
+    *[gog-product="0"], /*  */
+    *[gog-product="0"], /*  */
+    *[gog-product="0"], /*  */
+    *[gog-product="0"], /*  */
+    *[gog-product="0"], /*  */
+    *[gog-product="0"], /*  */
+    *[gog-product="0"], /*  */
+    *[gog-product="0"], /*  */
+
+    /* Stupid stuff like soundtracks*/
+    *[gog-product="1443432851"],
+    *[gog-product="1432563933"],
+    *[gog-product="1432925124"],
+    *[gog-product="1432925592"],
+    *[gog-product="1428489988"],
+    *[gog-product="1437732694"],
+    *[gog-product="1445245918"],
+    *[gog-product="1433148949"],
+    *[gog-product="1444761329"],
+    *[gog-product="1440698774"],
+    *[gog-product="1207666873"],
+    *[gog-product="1429612255"],
+    *[gog-product="1436531655"],
+    *[gog-product="1839729056"], /* real texas */
+    *[gog-product="2140144873"], /* rel texas */
+    *[gog-product="1735987864"], /* shadow warrior */
+    *[gog-product="1207658828"], /* gabriel knight */
+    *[gog-product="1207664393"], /* blackwell */
+    *[gog-product="1207658837"], /* gabriel knight */
+    *[gog-product="1207660094"], /* dust */
+    *[gog-product="1423058311"], /* bastion */
+    *[gog-product="1445250653"], /* pirates */
+    *[gog-product="1452686647"], /* samorost */
+    *[gog-product="1453277526"], /* samorost */
+    *[gog-product="1207658843"], /* gabriel knight */
+    *[gog-product="1440603706"], /* stasis */
+    *[gog-product="1461061433"], /* braid */
+    *[gog-product="1207665633"], /* dreamfall */
+    *[gog-product="1447947499"], /* besiege */
+    *[gog-product="1207658834"], /* phantasmagoria */
+    *[gog-product="1207659166"], /* avadon */
+    *[gog-product="1440603896"], /* stasis */
+    *[gog-product="0"], /*  */
+    *[gog-product="0"], /*  */
+    *[gog-product="0"], /*  */
+    *[gog-product="0"], /*  */
+    *[gog-product="0"], /*  */
+    *[gog-product="0"], /*  */
+    *[gog-product="0"], /*  */
+    /* Stuff I simply do not want, or is horribly rated */
+
+    *[gog-product="1446465369"],
+    *[gog-product="1443779037"],
+    *[gog-product="1443778814"],
+    *[gog-product="1442564308"],
+    *[gog-product="1442910108"],
+    *[gog-product="1443778954"],
+    *[gog-product="1441717336"],
+    *[gog-product="1207665143"], /* mark of the ninja */
+    *[gog-product="1439377578"],
+    *[gog-product="1450092067"],
+    *[gog-product="1450100911"],
+    *[gog-product="1207658941"], /* lil devil */
+    *[gog-product="1207664403"], /* pinball world */
+    *[gog-product="1207658856"], /* blood */
+    *[gog-product="1207665153"], /* wasteland 2 */
+    *[gog-product="1436885138"], /* dungeons 2 poor ratings */
+    *[gog-product="1513949567"], /* everspace - garbage wine */
+    *[gog-product="1207666123"], /* starpoint gemini 2 - garbage wine (directx 11) */
+    *[gog-product="1422618200"], /* paranautical activity 2 stars */
+    *[gog-product="1444830704"], /* owned */
+    *[gog-product="1207664993"], /* owned */
+    *[gog-product="0"], /*  */
+    *[gog-product="0"], /*  */
+    *[gog-product="0"], /*  */
+    *[gog-product="0"], /*  */
+    *[gog-product="0"], /*  */
+    *[gog-product="0"], /*  */
+    *[gog-product="0"], /*  */
+    *[gog-product="0"], /*  */
+    *[gog-product="0"], /*  */
+    *[gog-product="0"], /*  */
+    *[gog-product="0"], /*  */
+    *[gog-product="0"], /*  */
+    *[gog-product="0"], /*  */
+
+    *[gog-product="0"] /*  */  
+    {
+        display: none ! important;
+    }
+}

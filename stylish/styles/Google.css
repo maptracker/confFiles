@@ -1,0 +1,19 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("google.com") {
+    #s_PERSONALIZATION, .additional-video,
+    .video box, .media-strip, .footer, #rt-col,
+    .share-button-wrapper, .gsid-FVD, #FEATURED_VIDEOS,
+    #en_us-e, #en_us-s, #en_us-m, #en_us-b, 
+    .section-en_us-e, .section-en_us-s, .section-en_us-m,
+    #taw, #bottomads, #fll, #fblqf, #fblsh, #gbvg, #wmxmsg,
+    #promo-section, #settings-button, #gbgs4, .pmoabs, #dftvp,
+    .gb_ga, .gb_g, .gb_Mb.gb_ee.gb_R, .section-me-oscars-2016,
+    .section-en_us-b, section-en_us-e, .section-me-ncaa-tournament-2016,
+    .section-en_us-tc, .section-me-masters-2016,
+    .gb_ha
+    { 
+        display: none ! important; 
+    }
+    
+}

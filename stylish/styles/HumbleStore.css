@@ -1,0 +1,15 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("humblebundle.com") {
+    .featured-view, .js-featured-view,.about-storefront
+    { 
+        display : none ! important; 
+    }
+    a[href*="hmb_campaign"],
+    label[for='rb-windows'], label[for='rb-android'], label[for='rb-mac'],
+    label[for='rb-alphabetical'], label[for='rb-mac'],
+    label[for='rb-steam'], label[for='rb-uplay']
+    { 
+        display: none ! important; 
+    }
+}

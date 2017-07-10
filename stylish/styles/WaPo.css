@@ -1,0 +1,12 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("washingtonpost.com") {
+    #header-v3, #newsharebarMasthead, #right-rail, .posttv-your-three-container,
+    .pb-f-page-share-bar, .pb-f-page-recommended-strip, .pb-f-games-gamesWidget,
+    .pb-f-page-trending-strip, .posttv-video-embed, .inline-video, #wp-header, 
+    .pb-f-page-comments, .pb-f-page-newsletter-inLine, .pb-f-page-footer-v2,
+    .pb-f-sharebars-top-share-bar, #page
+    { 
+        display : none ! important; 
+    }
+}
