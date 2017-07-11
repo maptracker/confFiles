@@ -152,8 +152,9 @@ sub restore {
         } else {
             ## New style
             my $mr   = $mdata{$name};
-            $mr    ||= [ map { $defaults{$_} } @metaCols ];
+            $mr    ||= [ map { $defaults{$_} || undef } @metaCols ];
             my @row  = ($name, $code, @{$mr});
+            $row[$#metaCols + 2] ||= undef; # Pad out default rows
             $add->execute(@row) unless ($test);
             print "       New: $name\n";
         }
