@@ -1,0 +1,18 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("time.com") {
+
+    #moreOnTime ,#time_video-3, #time_more_on_time_widget-5, #footer, #header,
+    #time_outbrain-2 , .main-header, .top-banner, header, pushdown-ad,
+    magazine-cover, #pushdown-ad, .article-footer, footer, #first-visit
+    { 
+        display: none ! important; 
+    }
+    #notTheHeader { 
+        margin-top : 1px ! important; 
+        margin-bottom : 1px ! important; 
+    }
+    .wrapper { overflow: auto; }
+    .article-viewport { overflow:auto; }
+    body { overflow: auto ! important; }
+}

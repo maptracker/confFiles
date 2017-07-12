@@ -1,0 +1,10 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("flickr.com") {
+    .facade-of-protection-neue { 
+        display: none ! important; 
+    }
+    .navigate-target { 
+        width:10em ! important
+    }
+}

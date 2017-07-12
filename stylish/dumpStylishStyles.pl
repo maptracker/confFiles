@@ -3,68 +3,184 @@
 use strict;
 use File::Basename;
 use DBI;
-use DBD::SQLite;
-
+use DBD::SQLite;   ## Will need to install with cpan
+use File::Copy qw(copy);
 
 my $workDir = dirname($0);
-my $ffDir   = `\$HOME/confFiles/systemSetup/findFirefoxProfile.sh 1`;
+my $home    = $ENV{HOME};
+my $ffDir   = `"$home/confFiles/systemSetup/findFirefoxProfile.sh" 1`;
 $ffDir      =~ s/[\n\r]+$//;
-my $db      = "/home/tilfordc/firefoxProfile/stylish.sqlite";
+$ffDir      = "$home/.mozilla/firefox/$ffDir" unless ($ffDir =~ /^\//);
+my $styDir  = "$workDir/styles";
+my $mFile   = "$workDir/stylishMetadata.tsv";
+unless (-d $styDir) {
+    mkdir($styDir) || die "Failed to make style directory\n  $!\n  ";
+}
 
-print "
+my $mode = "??";
+my $test = 1;
+foreach my $arg (@ARGV) {
+    if (-d $arg && -s "$arg/stylish.sqlite") {
+        $ffDir = $arg;
+        warn "User-set Firefox directory: $ffDir\n";
+    } elsif ($arg =~ /restore/i) {
+        $mode = "Restore";
+        warn "Mode set to: $mode\n";
+    } elsif ($arg =~ /dump/i) {
+        $mode = "Dump";
+        warn "Mode set to: $mode\n";
+    } elsif ($arg =~ /(run|go)/) {
+        $test = 0;
+        warn "Enabling DB write\n"
+    }
+}
+
+my $testText = $test ? 
+    "Test mode, no changes to DB" : "RUNNING - DB set to be altered";
+
+warn "
 Working Directory: $workDir
   Firefox Profile: $ffDir
-         Database: $db
+             Mode: $mode
+           Safety: $testText
 ";
 
+my $db = "$ffDir/stylish.sqlite";
 
 die "Failed to locate Stylish SQLite database at:\n  $db\n" unless (-s $db);
 
 my $dbh = DBI->connect("dbi:SQLite:dbname=$db",'','', {
-    sqlite_open_flags => DBD::SQLite::OPEN_READONLY,
+    sqlite_open_flags => $test ? DBD::SQLite::OPEN_READONLY : undef,
     AutoCommit => 1,
     RaiseError => 1,
     PrintError => 0 });
 
+if ($mode eq "Restore") {
+    &restore();
+} elsif ($mode eq "Dump") {
+    &dump();
+} else {
+    warn "
+Nothing done - please run with one of the following arguments:
+     dump - Extract all styles from the database
+  restore - Import already dumped styles into DB
 
-# id will be specific to each SQLite instance, do not include
-my @metaCols = qw(url updateUrl md5Url enabled originalCode 
-                  idUrl applyBackgroundUpdates originalMd5);
-my $get = $dbh->prepare("SELECT code, name, ".
-                        join(', ', @metaCols)." FROM styles ORDER BY name");
-my $xFile = "$workDir/_extracol.tsv";
-my $mFile = "$workDir/_metadata.tsv";
-open(XFILE, ">$xFile") || die "Failed to write extra col info\n  $xFile\n  $!";
-print XFILE join("\t", 'name', @metaCols)."\n";
-$get->execute();
-my $rows = $get->fetchall_arrayref();
-for my $r (0..$#{$rows}) {
-    my @line = map { defined $_ ? $_ : '{null}' } @{$rows->[$r]};
-    my $code = shift @line;
-    my $name = $line[0];
-    my $file = "$workDir/$name.css";
-    open(OUT, ">$file") || die "Failed to write file\n  $file\n  $!";
-    print OUT $code;
-    close OUT;
-    map { s/\t/    /g } @line;
-    print XFILE join("\t", @line)."\n";
-    print "\n" unless ($r % 4);
-    printf("%5d %-24s", (-s $file), "$name.css");
-}
-close XFILE;
-
-my $mget = $dbh->prepare("SELECT s.name, m.name, m.value". 
-                         "  FROM styles s, style_meta m".
-                         " WHERE s.id = m.style_id ORDER BY s.name, m.name");
-$mget->execute();
-my $mrows = $mget->fetchall_arrayref();
-open(MFILE, ">$mFile") || die "Failed to write metadata\n  $mFile\n  $!";
-print MFILE join("\t", qw(styleName name value))."\n";
-foreach my $row (@{$mrows}) {
-    my @line = map { defined $_ ? $_ : '{null}' } @{$row};
-    map { s/\t/    /g } @line;
-    print MFILE join("\t", @line)."\n";
+";
 }
 
-print "\n\nExtraCols: $xFile\n Metadata: $mFile\n\n";
-# print `ls -lh "$workDir"`;
+sub dump {
+    my @metaCols = qw(enabled applyBackgroundUpdates url updateUrl md5Url
+                  originalCode idUrl originalMd5);
+    open(META, ">$mFile") || die "Failed to write metadata\n  $mFile\n  $!\n  ";
+    print META join("\t", "name", @metaCols)."\n";
+    my $get = $dbh->prepare
+        ("SELECT ".join(', ', 'name', 'code', @metaCols)." FROM styles");
+    $get->execute();
+
+    my $rows = $get->fetchall_arrayref();
+    foreach my $row (@{$rows}) {
+        my $name = shift @{$row};
+        my $css  = shift @{$row};
+        print META join("\t", $name, map {defined $_ ? $_ : ""} @{$row}) ."\n";
+        my $file = "$styDir/$name.css";
+        open(OUT, ">$file") || die "Failed to write file\n  $file\n  $!";
+        print OUT $css;
+        close OUT;
+    }
+    close META;
+    print `ls -lh "$styDir"`;
+    print "Metadata: $mFile\n";
+}
+
+sub restore {
+    my $bkup = "$db-BKUP";
+    my $backNum  = 1;
+    while (-s "$bkup.$backNum") { $backNum++; }
+    copy($db, "$bkup.$backNum");
+    warn "\nBackup of database:\n  $bkup.$backNum\n";
+
+    open(META, "<$mFile") || die "Failed to read metadata\n  $mFile\n  $!\n  ";
+    my $head = <META>;
+    $head =~ s/[\n\r]+$//;
+    my @metaCols = split("\t", $head);
+    shift @metaCols;
+    my %mdata;
+    while (<META>) {
+        s/[\n\r]+$//;
+        my @row  = split("\t");
+        my $name = shift @row;
+        $mdata{$name} = [map { $_ eq "" ? undef : $_ } @row ];
+    }
+    close META;
+    my %defaults = ( enabled => 1, applyBackgroundUpdates => 1 );
+    opendir(my $dh, $styDir) || 
+        die "Failed to read style directory:\n  $styDir\n  $!\n  ";
+    
+    my @cols    = ("name", "code", @metaCols);
+    my $findId  = $dbh->prepare("SELECT id FROM styles WHERE name = ?");
+    my $getCode = $dbh->prepare("SELECT code FROM styles WHERE id = ?");
+    my $setCode = $dbh->prepare("UPDATE styles SET code = ? WHERE id = ?");
+    my $add     = $dbh->prepare("INSERT INTO styles (".join(', ', @cols).
+                                ") VALUES (".join(',', map {'?'} @cols).")");
+    my $upd     = $dbh->prepare("UPDATE styles SET ".join(', ', map {
+        sprintf("%s = ?", $_) } @cols)." WHERE id = ?");
+    my @cFiles;
+    while (readdir($dh)) {
+        my $name;
+        push @cFiles, $_ if (/\.css$/);
+    }
+    my @noChange;
+    foreach my $cf (sort { lc($a) cmp lc($b) || $a cmp $b } @cFiles) {
+        my $name = $cf; $name =~ s/\.css$//;
+        my $path = "$styDir/$cf";
+        my $code = "";
+        open(FILE, $path) || die "Failed to read CSS file:\n  $path\n  $!\n  ";
+        while (<FILE>) { $code .= $_; }
+        close FILE;
+        $findId->execute($name);
+        my ($id) = $findId->fetchrow_array();
+        if ($id) {
+            ## Style already in DB
+            $getCode->execute($id);
+            my ($chk) = $getCode->fetchrow_array();
+            if ($code ne $chk) {
+                print "   Updated: $name\n";
+                $setCode->execute($code, $id) unless ($test);
+            } else {
+                push @noChange, $name;
+            }
+        } else {
+            ## New style
+            my $mr   = $mdata{$name};
+            $mr    ||= [ map { $defaults{$_} || undef } @metaCols ];
+            my @row  = ($name, $code, @{$mr});
+            $row[$#metaCols + 2] ||= undef; # Pad out default rows
+            $add->execute(@row) unless ($test);
+            print "       New: $name\n";
+        }
+    }
+    if ($#noChange != -1) {
+        print "\n The following styles had no change:\n";
+        my $l = 0;
+        foreach my $name (@noChange) {
+            print "  $name";
+            $l += 2 + length($name);
+            if ($l > 80) {
+                $l = 0;
+                print "\n";
+            }
+        }
+        print "\n";
+    }
+    if ($backNum > 10) {
+        warn "
+There are at least $backNum backup versions of your database.
+  You can list them with:
+    ls -lhtr '$db-BKUP'*
+  You can remove them all with:
+    rm '$db-BKUP'*
+";
+    }
+    warn "\n";
+    closedir($dh);
+}

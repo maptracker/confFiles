@@ -1,0 +1,16 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("ixquick.com") {
+    
+    #sponsored, iframe { 
+        display: none ! important; 
+    }
+    
+    a[href*="wikipedia.org"] { 
+        background-color: lime ! important
+    }
+
+    a:visited { 
+        color: purple !important;
+    }
+}

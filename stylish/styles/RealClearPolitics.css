@@ -1,0 +1,42 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("realclearpolitics.com") {
+    .ndn_embed, .ndn_separator, .ndn_article_body_title, #facebox,
+    #facebox_overlay, .overlay
+    { 
+        display: none ! important; 
+    }
+    
+    /*  Coloring sources by FiveThirtyEight's pollster ratings
+        https://projects.fivethirtyeight.com/pollster-ratings/  */
+
+    /* A */
+
+    a[href*=".qu.edu"], a[href*=".wsj.com"], a[href*=".cbsnews.com"],
+    a[href*=".ipsos-na.com"], a[href*=".mcclatchydc.com"],
+    a[href*=".monmouth.edu"], a[href*=".turner.com"],
+    a[href*=".marist.edu"], a[href*="Ipsos"], a[href*="ipsos"],
+    a[href*="NBCWSJ"], a[href*="www.washingtonpost.com"],
+    a[href*="cnn.com"]
+    { 
+        background-color: lime ! important; 
+    }
+
+    /* B */
+
+    a[href*=".gallup.com"], a[href*=".publicpolicypolling.com"],
+    a[href*="d25d2506sfb94s.cloudfront.net"], a[href*=".foxnews.com"],
+    a[href*=".usatoday.com"], a[href*=".people-press.org"]
+
+    {
+        background-color: green ! important; 
+        color: yellow ! important; 
+    }
+
+    /* C */
+
+    a[href*=".rasmussenreports.com"] 
+    {
+        background-color: yellow ! important; 
+    }
+}

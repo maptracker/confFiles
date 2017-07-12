@@ -1,0 +1,12 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("mail.yahoo.com") {
+    .disposableAddressEducationDiv, #ChatWindow { 
+        display: none ! important; 
+    }
+
+    #disposableEmailAddresses_scroller, #disposableEmailAddresses_list
+    { 
+        height: 40em ! important; 
+    }
+}

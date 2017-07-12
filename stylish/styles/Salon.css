@@ -1,0 +1,9 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("salon.com") {
+    .svp-widget, .smr-widget , .ad-widget, .followSalon, #footer,
+    #comments, .article-comments, .salon-logo-wrap, .header-container
+    {
+        display: none!important;
+    }
+}

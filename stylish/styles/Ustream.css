@@ -1,0 +1,12 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("ustream.tv") {
+    #SocialStream, #Footer, #Header, .content-title, .side-col, .content-col ,
+    #CollectionWrapper, .viewSwitch, .viewer-bg, #CollectionWrapper,
+    #xxxExperience_Empty { 
+        display: none ! important; 
+    }
+    .main-content { 
+        display: none ! important; 
+    }
+}

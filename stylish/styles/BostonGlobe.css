@@ -1,0 +1,9 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("bostonglobe.com") {
+    #masthead, #section-nav, .tools, footer, .inlineNewsletter__wrapper,
+    .inline-newsletter
+    { 
+        display: none ! important; 
+    }
+}

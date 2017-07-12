@@ -1,0 +1,7 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("nasa.gov") {
+    .grid_image img, .grid_text .caption { 
+        visibility:visible ! important; 
+    }
+}

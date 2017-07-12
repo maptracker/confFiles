@@ -1,0 +1,12 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("bloomberg.com") {
+    noscript, #nav_news_dropdown_container, #disqus_thread, 
+    #story_social_toolbar_bottom, #market_snapshot_simple,
+    #footer, .dropdown_section, .story_inline, .ham_nav_container, 
+    #story_social_toolbar_top_container, #header_container,
+    .header_top_unit, .social_tout, header.global,aside, #global_footer  
+    { 
+        display: none ! important; 
+    }
+}

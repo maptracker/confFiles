@@ -1,0 +1,27 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("economist.com") {
+    .ec-homepage-player, #product-events, .footer-stripe-bottom,
+    .footer-stripe-top, .mh-stripe, #ec-cookie-messages-container,
+    #block-ec_social-right_rail_social_share_buttons,
+    #block-ec_components-page_tools_compact, .share_inline_header,
+    #block-ec_components-print_sub, #comments-header, 
+    a[href*='www.economist.com/digital/apps'], .navigation-sticky-scroller,
+    .main-content__video-collection, #bottom-page-wrapper,
+    .latest-printed, .share-component
+    { 
+        display: none ! important; 
+    }
+
+    p {
+        margin-left: 1em ! important; 
+    }
+    
+    a:visited, a:visited * { 
+        color : purple ! important; 
+    }
+    .imagefield { 
+        position: relative !important; 
+        z-index: 999999 ! important; 
+    }
+}

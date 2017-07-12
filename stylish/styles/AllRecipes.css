@@ -1,0 +1,6 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("allrecipes.com") {
+    #divGoBack, #divGoNext, .lo-container
+    { display: none ! important; }
+}

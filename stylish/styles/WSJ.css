@@ -1,0 +1,18 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("wsj.com") {
+    .footer_columns, .footnotes , #morein, #fblikebot, #abt.at.emailthis,
+    .stBtn-email, .stBtn-reprint, .header, #hat_div,
+    .art_tabbed_nav, .sTools, #newsreeliframe, .wsjSubnav, .wsjMainNav,
+    .margin-left-big, .footer_bar, footer, .article-chiclet, .unitType-reel,
+    header
+    { 
+        display: none ! important; 
+    }
+    .stream_c { 
+        width: 100em ! important; 
+    }
+    #articles_right_rail { 
+        width: 300px; 
+    }
+}

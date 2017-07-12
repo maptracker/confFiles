@@ -1,0 +1,9 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("yahoo.com") {
+    #leftContent, .type_contentcarousel, .type_footer, .type_subfooter,
+    .mul-cont, .type_ads, .specialevents, .type_marketindices
+    { 
+        display: none ! important;
+    }
+}

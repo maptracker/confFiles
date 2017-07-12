@@ -1,0 +1,7 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("bay12forums.com") {
+    .spoiler, .spoilerheader,.spoilerbody { 
+        display: block ! important; 
+    }
+}
