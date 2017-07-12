@@ -25,24 +25,24 @@ foreach my $arg (@ARGV) {
         warn "User-set Firefox directory: $ffDir\n";
     } elsif ($arg =~ /restore/i) {
         $mode = "Restore";
-        warn "Mode set to: $mode\n";
     } elsif ($arg =~ /dump/i) {
         $mode = "Dump";
-        warn "Mode set to: $mode\n";
     } elsif ($arg =~ /(run|go)/) {
         $test = 0;
         warn "Enabling DB write\n"
     }
 }
 
-my $testText = $test ? 
-    "Test mode, no changes to DB" : "RUNNING - DB set to be altered";
+my $chngWhat = $mode eq 'Dump' ? "files" : $mode eq 'Restore' ? "database" : "anything";
+my $testText = $test ? "Test mode, no changes to $chngWhat" : 
+    "RUNNING - Changes will be made to $chngWhat";
 
 warn "
 Working Directory: $workDir
   Firefox Profile: $ffDir
              Mode: $mode
            Safety: $testText
+
 ";
 
 my $db = "$ffDir/stylish.sqlite";
@@ -71,6 +71,10 @@ Nothing done - please run with one of the following arguments:
 sub dump {
     my @metaCols = qw(enabled applyBackgroundUpdates url updateUrl md5Url
                   originalCode idUrl originalMd5);
+    if ($test) {
+        $mFile = "/tmp/stylishMetadata-TEST.tsv";
+        warn "Metadata being written to temp file for test run\n";
+    }
     open(META, ">$mFile") || die "Failed to write metadata\n  $mFile\n  $!\n  ";
     print META join("\t", "name", @metaCols)."\n";
     my $get = $dbh->prepare
@@ -78,17 +82,41 @@ sub dump {
     $get->execute();
 
     my $rows = $get->fetchall_arrayref();
+    my @noChange;
     foreach my $row (@{$rows}) {
         my $name = shift @{$row};
         my $css  = shift @{$row};
         print META join("\t", $name, map {defined $_ ? $_ : ""} @{$row}) ."\n";
         my $file = "$styDir/$name.css";
+        my $diff = 0;
+        if (-s $file) {
+            my @chk = split(/\n/, $css);
+            ## Stylish removes terminal blank lines on installation:
+            while ($chk[-1] eq '') { pop @chk }
+            my $n = 0;
+            open(IN, "<$file")  || die "Failed to read file\n  $file\n  $!";
+            while (<IN>) {
+                s/[\n]$//;
+                $diff++ if ($n > $#chk || $chk[$n++] ne $_);
+            }
+            close IN;
+            if ($diff) {
+                print "   Changed: $name ($diff lines)\n";
+            } else {
+                push @noChange, $name;
+            }
+        } else {
+            $diff = 1;
+            print "       New: $name\n";
+        }
+        next if ($test || $diff == 0);
         open(OUT, ">$file") || die "Failed to write file\n  $file\n  $!";
         print OUT $css;
         close OUT;
     }
     close META;
-    print `ls -lh "$styDir"`;
+    &report_unchanged( \@noChange );
+    # print `ls -lh "$styDir"`;
     print "Metadata: $mFile\n";
 }
 
@@ -159,18 +187,13 @@ sub restore {
             print "       New: $name\n";
         }
     }
-    if ($#noChange != -1) {
-        print "\n The following styles had no change:\n";
-        my $l = 0;
-        foreach my $name (@noChange) {
-            print "  $name";
-            $l += 2 + length($name);
-            if ($l > 80) {
-                $l = 0;
-                print "\n";
-            }
-        }
-        print "\n";
+    &report_unchanged( \@noChange );
+    if (!$test) {
+        warn "
+Changed styles should be reflected immediately.
+New styles will need to be 'tweaked' to be recognized -
+  Just change the style block and save; Adding and removing a space is sufficient.
+"
     }
     if ($backNum > 10) {
         warn "
@@ -183,4 +206,20 @@ There are at least $backNum backup versions of your database.
     }
     warn "\n";
     closedir($dh);
+}
+
+sub report_unchanged {
+    my $noChange = shift;
+    return if ($#{$noChange} == -1);
+    print "\n The following styles had no change:\n";
+    my $l = 0;
+    foreach my $name (@{$noChange}) {
+        print "  $name";
+        $l += 2 + length($name);
+        if ($l > 80) {
+            $l = 0;
+            print "\n";
+        }
+    }
+    print "\n";
 }
