@@ -125,7 +125,7 @@ sub restore {
     my $backNum  = 1;
     while (-s "$bkup.$backNum") { $backNum++; }
     copy($db, "$bkup.$backNum");
-    warn "\nBackup of database:\n  $bkup.$backNum\n";
+    warn "\nBackup of database:\n  $bkup.$backNum\n\n";
 
     open(META, "<$mFile") || die "Failed to read metadata\n  $mFile\n  $!\n  ";
     my $head = <META>;
@@ -191,6 +191,7 @@ sub restore {
             ## Style already in DB
             $getCode->execute($id);
             my ($chk) = $getCode->fetchrow_array();
+            #if ($name eq 'Ixquick') {warn "$name:\n$chk\n---\n$code\n  ";}
             if ($code ne $chk) {
                 print "   Updated: $name $dtxt\n";
                 $setCode->execute($code, $id) unless ($test);
@@ -250,13 +251,7 @@ sub restore {
         }
     }
     &report_unchanged( \@noChange );
-    if (!$test) {
-        warn "
-Changed styles should be reflected immediately.
-New styles will need to be 'tweaked' to be recognized -
-  Just change the style block and save; Adding and removing a space is sufficient.
-"
-    }
+
     if ($backNum > 10) {
         warn "
 There are at least $backNum backup versions of your database.

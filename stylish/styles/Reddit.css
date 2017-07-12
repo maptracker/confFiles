@@ -26,4 +26,11 @@
     body div.content { 
         margin: 0px 0px 0px 0px ! important; 
     }
+
+    /* Sites that don't play well with my addons */
+    a[href*="gfycat.com"]
+    {
+        color: red ! important;
+        background-color: #999 ! important;
+    }
 }
