@@ -8,7 +8,8 @@
 
     .promotedlink, #siteTable_promoted,  .promoted, .arrow, div.side,
     #header-bottom-right, .footer-parent, #cta-container-placeholder,
-    #fixed-side-footer-links, #recommendations, #promoted-spotlight
+    #fixed-side-footer-links, #recommendations, #promoted-spotlight,
+    #eu-cookie-policy
     { 
         display: none ! important; 
     }
