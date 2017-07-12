@@ -1,6 +1,6 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
-@-moz-document domain("ixquick.com") {
+@-moz-document domain("ixquick.com"), domain("startpage.com") {
     
     /* Generally I'm looking for one of these: */
     a[href*='stackoverflow'], a[href*='stackexchange'],
