@@ -1,0 +1,9 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("dreamwidth.org") {
+    /* What were we doing with this? Wiki option at some point? */
+    .comment-content { min-height: 0px}
+    div.footer { 
+        display: none ! important;
+    }
+}

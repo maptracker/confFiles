@@ -1,0 +1,8 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("krebsonsecurity.com") {
+    #header, #sidebar, #top-banner, #pg-nav, a[href*='/cpm/']
+    {
+        display: none ! important;
+    }
+}

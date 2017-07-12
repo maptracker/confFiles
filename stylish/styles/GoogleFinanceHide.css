@@ -1,0 +1,45 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("www.google.com") {
+    /* Links I didn't find useful */
+    a[href*="marketintelligencecenter.com"], a[href*="pr-usa.net"],
+    a[href*="pr-inside.com"], a[href*="123jump.com"],
+    a[href*="forextv.com"], a[href*="tradingmarkets.com"],
+    a[href*="blacknews.com"], a[href*="live-pr.com"],
+    a[href*="transworldnews.com"], a[href*="medscape.com"],
+    a[href*="foxbusiness.com"], a[href*="thestreet.com"],
+    a[href*="sys-con.com"], a[href*="twst.com"],
+    a[href*="menafn.com"], a[href*="ad-hoc-news.de"],
+    a[href*="prminds.com"], a[href*="gurufocus"],
+    a[href*="marketoracle.co.uk"], a[href*="businesswire.com"],
+    a[href*="benzinga.com"], a[href*="istockanalyst.com"],
+    a[href*="investorplace.com"], a[href*="mysmartrend.com"],
+    a[href*="investors.com"], a[href*="courant.com"],
+    a[href*="piqqem.com"], a[href*="earthtimes.org"],
+    a[href*="emailwire.com"], a[href*="cnanalyst.com"],
+    a[href*="msn.com"], a[href*="tradershuddle.com"],
+    a[href*="articleant.com"], a[href*="lexology.com"],
+    a[href*="schaeffersresearch.com"], a[href*="zacks.com"],
+    a[href*="chartpoppers"], a[href*="tapebeat"],
+    a[href*="wallstreetbay"], a[href*="efreepressrelease"],
+    a[href*="americanbankingnews"], a[href*="savvystockpicks"],
+    a[href*="stockbling"], a[href*="galaxystocks"],
+    a[href*="etfchannel"], a[href*=".sbwire.com"],
+    a[href*="4-traders.com"], a[href*="northforkvue.com"],
+    a[href*="jutiagroup"], a[href*="tickerreport.com"],
+    a[href*="aaaresearchreports"], a[href*="aaaaa"], a[href*="aaaaa"],
+    a[href*="aaaaa"], a[href*="aaaaa"]
+
+    { 
+        display:none ! important
+    }
+
+    .pin
+    { 
+        height: 8px ! important; 
+    }
+
+    .xxnews-item { 
+        height: 1.4em; 
+    }
+}

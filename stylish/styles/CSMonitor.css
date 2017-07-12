@@ -1,0 +1,9 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("csmonitor.com") {
+    #ezve-right-col-2-r14, #ui-right-column, .promo_link, #full_width_promo,
+    #ui-page-above-footer-1, #ui-page-above-footer-2, #ui-page-footer
+    { 
+        display: none !important; 
+    }
+}

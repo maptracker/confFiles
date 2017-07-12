@@ -1,0 +1,15 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("soylentnews.org") {
+    .commentSub, .sig , .score0, .noTH, .commentHider, .commentBelow,
+    #slashboxes
+    { 
+        display: none ! important; 
+    }
+    a.visited { 
+        color:purple ! important;
+    }
+    #articles { 
+        margin: 0 0 1em 0; 
+    }
+}

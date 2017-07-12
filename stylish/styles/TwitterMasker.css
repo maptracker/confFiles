@@ -1,0 +1,10 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("twitter.com") {
+    /* various spammers */
+    div[data-screen-name="deplorablemax1"],
+    div[data-screen-name="FarhanKVirk"]
+    { 
+        display: none ! important; 
+    }
+}

@@ -12,11 +12,19 @@
     .section-en_us-b, section-en_us-e, .section-me-ncaa-tournament-2016,
     .section-en_us-tc, .section-me-masters-2016,
     .gb_ha, .section-en_uk-e, .section-en_uk-s, #gbw,
-    c-wiz[data-label="Entertainment"],
-    c-wiz[data-label="Sports"],
-    c-wiz[data-label="Health"],
-    c-wiz[data-label="Technology"]
+    .mnr-c, #gbwa, #gbw, #ad-source, #ad-label, #groups, #topstuff,
+    #ms, #lc, .share-bar-table, #gbgs4, #gbgs5, .side-appbar,
+    .plusone-box, #gf-foot, .appbar-add, #ad, #calendar, .SP_calendar,
+    .sfe-break-right-em, .gpost,
+    .ad-target2-wrapper, .hdg, #gmm-panel-promo, #copyright, #gbu, #notify-box,
+    .rmi-rpl-bottom, #s_SPORTS_GADGET, #s_EDITORS_PICK, #s_INTERESTING
     { 
         display: none ! important; 
+    }
+
+    a[href*="forbes.com"]
+    {
+        /* does not play well with my browser configuration */
+        color: red ! important;
     }
 }

@@ -2,7 +2,7 @@
 
 @-moz-document domain("realclearpolitics.com") {
     .ndn_embed, .ndn_separator, .ndn_article_body_title, #facebox,
-    #facebox_overlay, .overlay
+    #facebox_overlay, .overlay, .warning-wrapper
     { 
         display: none ! important; 
     }
