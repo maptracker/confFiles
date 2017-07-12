@@ -119,7 +119,18 @@ sub restore {
     my @cols    = ("name", "code", @metaCols);
     my $findId  = $dbh->prepare("SELECT id FROM styles WHERE name = ?");
     my $getCode = $dbh->prepare("SELECT code FROM styles WHERE id = ?");
+    my $chkType = $dbh->prepare("SELECT value FROM style_meta ".
+                                "WHERE name='type' AND style_id = ?");
+    my $setType = $dbh->prepare("INSERT INTO style_meta (style_id,name,value)".
+                                " VALUES (?, 'type', 'site')");
+    my $chkDom  = $dbh->prepare("SELECT value FROM style_meta ".
+                                "WHERE style_id = ? AND name = 'domain'");
+    my $delDom  = $dbh->prepare("DELETE FROM style_meta WHERE style_id = ? ".
+                                "AND name = 'domain' AND value = ?");
+    my $setDom  = $dbh->prepare("INSERT INTO style_meta (style_id,name,value)".
+                                " VALUES (?, 'domain', ?)");
     my $setCode = $dbh->prepare("UPDATE styles SET code = ? WHERE id = ?");
+    
     my $add     = $dbh->prepare("INSERT INTO styles (".join(', ', @cols).
                                 ") VALUES (".join(',', map {'?'} @cols).")");
     my $upd     = $dbh->prepare("UPDATE styles SET ".join(', ', map {
@@ -137,6 +148,15 @@ sub restore {
         open(FILE, $path) || die "Failed to read CSS file:\n  $path\n  $!\n  ";
         while (<FILE>) { $code .= $_; }
         close FILE;
+        my $chunk = $code; $chunk =~ s/[\n\r]+/ /g;
+        my @domains;
+        while ($chunk =~ /(domain\(\s*"\s*([^"]+?)\s*"\s*\))/ ||
+               $chunk =~ /(domain\(\s*'\s*([^']+?)\s*'\s*\))/) {
+            my ($swp, $dom) = ($1, $2);
+            $chunk =~ s/\Q$swp\E/ /;
+            push @domains, $dom;
+        }
+        my $dtxt = "(".join(', ', @domains).")";
         $findId->execute($name);
         my ($id) = $findId->fetchrow_array();
         if ($id) {
@@ -144,7 +164,7 @@ sub restore {
             $getCode->execute($id);
             my ($chk) = $getCode->fetchrow_array();
             if ($code ne $chk) {
-                print "   Updated: $name\n";
+                print "   Updated: $name $dtxt\n";
                 $setCode->execute($code, $id) unless ($test);
             } else {
                 push @noChange, $name;
@@ -155,8 +175,50 @@ sub restore {
             $mr    ||= [ map { $defaults{$_} || undef } @metaCols ];
             my @row  = ($name, $code, @{$mr});
             $row[$#metaCols + 2] ||= undef; # Pad out default rows
-            $add->execute(@row) unless ($test);
-            print "       New: $name\n";
+            unless ($test) {
+                $add->execute(@row);
+                $findId->execute($name);
+                ($id) = $findId->fetchrow_array();
+            }
+            print "       New: $name $dtxt\n";
+        }
+        if (!$test && $#domains != -1) {
+            ## Make sure domains are registered properly in the meta
+            ## table
+
+            ## Make sure the 'site' tag is present
+            $chkType->execute($id);
+            my ($typ) = $chkType->fetchrow_array();
+            if (!$typ) {
+                # Need to flag the style as associated with a site
+                $setType->execute($id);
+            } elsif ($typ ne 'site') {
+                warn "
+!! $name is stored as type '$typ' rather than 'site'
+   You may need to manage it manually
+";
+                next;
+            }
+
+            ## Add needed domains, remove those no longer referenced
+            ## by style
+            my %need = map { $_ => 1 } @domains;
+            $chkDom->execute($id);
+            my $doms = $chkDom->fetchall_arrayref();
+
+            foreach my $dd (@{$doms}) {
+                my $dom = $dd->[0];
+                if ($need{$dom}) {
+                    ## Already there
+                    delete $need{$dom};
+                } else {
+                    $delDom->execute($id, $dom);
+                }
+            }
+            while (my ($dom, $needed) = each %need) {
+                next unless ($needed);
+                $setDom->execute($id, $dom);
+            }
         }
     }
     if ($#noChange != -1) {
