@@ -1,0 +1,9 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("zdnet.com") {
+    #promo-subscribe-nl-e590, #footer, #promo-subscribe-logged-out,
+    #promo-subscribe-nl-e589
+    { 
+        display: none; 
+    }
+}

@@ -1,0 +1,29 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("news.google.com") { 
+    .personalization-video-pane, .additional-video, .a2-edit-icon, .bottom,
+    .share-icons, #en_us-s, #en_us-m, #en_us-e, .section-en_us-s, 
+    .section-en_us-e, .section-en_us-m, #promo-section, .footer-disclaimer,
+    .section-en_us-tc, .section-en_us-b, .media-strip,
+    .section-me-us-open-2015, .section-me-ncaa-tournament-2016,
+    .section-me-masters-2016, .section-me-nba-finals-2016,
+    .gb_sc, .ovLBK, .QWO3dd, div[jsname="dNnLb"], .fkWPz, .jjs37b, footer,
+    c-wiz[jsdata*="promos"],
+    c-wiz[data-label="Business"],
+    c-wiz[data-label="Technology"],
+    c-wiz[data-label="Health"],
+    c-wiz[data-label="Sports"],
+    c-wiz[data-label="Entertainment"]
+
+    {
+        display: none ! important;
+    }
+    
+    a[href*="forbes.com"], a[href*="japantimes.co.jp"]
+    {
+        /* does not play well with my browser configuration */
+        background-color: #faa ! important; 
+        color: #888 ! important; 
+        font-size: 0.7em ! important
+    }
+}

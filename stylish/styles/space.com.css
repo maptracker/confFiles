@@ -1,0 +1,8 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("space.com") {
+    img { 
+        opacity: 1 ! important; 
+        transition: none ! important; 
+    }
+}

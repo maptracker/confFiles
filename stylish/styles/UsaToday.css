@@ -2,7 +2,7 @@
 
 @-moz-document domain("usatoday.com") {
     .more-stories-content, .inline-share-tools, .ui-video-wrapper,
-    header, .close-wrap
+    header, .close-wrap, #Adv10
     {
         display: none !important;
     }

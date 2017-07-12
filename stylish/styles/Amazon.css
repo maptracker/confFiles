@@ -1,0 +1,9 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("amazon.com") {
+    /* AWS stuff */
+    #marketingimagelink, #link_root_account_signin
+    {
+        display:none!important;
+    }
+}

@@ -1,0 +1,15 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("thestreet.com") {
+    .whiteBox, .brokerage, .rightHandTextLinks, .premiumServices,
+    .blueHdrTitle, .whiteBorderBox, #boxAdContainer, #nl, #rightCol, #nav,
+    #opinion, #subHdr, #promoLink, #extraContent, #directory,
+    #logo, #hd, #footer
+    { 
+        display: none ! important; 
+    }
+
+    #twoCol_left { 
+        width: 100% ! important; 
+    }
+}

@@ -1,0 +1,42 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("slashdot.org") {
+    aside.view_mode, .nav-secondary-wrap, .nav-wrap, section.bq, footer,
+    #fh-pag-div, #slashboxes, .topic, #clickgen, .show, .grid_14, #besttabs,
+    aside, .fhitem-poll, #slideshow-wrap, #firehose-message-tray,
+    .commentSub, nav.grid_15, #sitenotice, #announcement,
+    [class*='sponsored'],  article[class*='article-nel-']
+    { 
+        display: none !important; 
+    }
+    
+    .comment-bubble { 
+        background-color: #ccc ! important;
+    }
+    #firehose article header h2,  #comments h4  { 
+        background-color: #fff ! important; 
+        background-image: none; 
+    }
+    
+    #d2header > div > nav { 
+        background-color: #ccc ! important; 
+        background-image: none; 
+    }
+    .comments { 
+        background-color: blue ! important; 
+        display: inline ! important; 
+    }
+    
+    .opt, .title, .score { 
+        color: #005 ! important; 
+    }
+    a { 
+        color: blue ! important; 
+    }
+    a:visited { 
+        color: purple ! important; 
+    }
+    .main-content, #comments { 
+        margin-right: 0 ! important; 
+    }
+}

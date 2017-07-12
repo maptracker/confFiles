@@ -1,0 +1,8 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("fiercebiotech.com"), domain("fiercepharma.com") {
+    #sidebar, #footer, .pane-sister-sites, .pane-sponsored-content
+    { 
+        display: none ! important; 
+    }
+}
