@@ -124,8 +124,10 @@ sub restore {
     my $bkup = "$db-BKUP";
     my $backNum  = 1;
     while (-s "$bkup.$backNum") { $backNum++; }
-    copy($db, "$bkup.$backNum");
-    warn "\nBackup of database:\n  $bkup.$backNum\n\n";
+    unless ($test) {
+        copy($db, "$bkup.$backNum");
+        warn "\nBackup of database:\n  $bkup.$backNum\n\n";
+    }
 
     open(META, "<$mFile") || die "Failed to read metadata\n  $mFile\n  $!\n  ";
     my $head = <META>;

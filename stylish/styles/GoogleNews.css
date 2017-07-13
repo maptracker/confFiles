@@ -26,4 +26,10 @@
         color: #888 ! important; 
         font-size: 0.7em ! important
     }
+    .zQTmif
+    {
+        margin-left: 10px ! important;
+    }
+    /* Suppress vieo results */
+    c-wiz[data-yt-video-id] { display: none ! important; }
 }
