@@ -74,5 +74,5 @@ function debugNote (el) {
     el.appendChild(span);
 }
 
-setTimeout(scanVotes, 1000);
+setTimeout(scanVotes, 4 * 1000);
 

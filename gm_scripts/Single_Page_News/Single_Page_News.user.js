@@ -1,7 +1,9 @@
 // ==UserScript==
 // @name        Single Page News
 // @namespace   tilford.net
+// @include     http://www.washingtonpost.com/*.html
 // @include     https://www.washingtonpost.com/*.html
+// @include     http://abcnews.go.com/*
 // @version     1
 // ==/UserScript==
 

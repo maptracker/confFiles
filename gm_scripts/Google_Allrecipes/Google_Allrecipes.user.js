@@ -2,12 +2,14 @@
 // @name        Google Allrecipes
 // @namespace   tilford.net
 // @include     http://www.google.com/search?*allrecipes.com*
+// @include     https://www.google.com/search?*allrecipes.com*
+// @include     https://encrypted.google.com/search?*allrecipes.com*
 // @version     1
 // ==/UserScript==
 
 // Masks search results that do not have any reviews
 
-var revCheck = new RegExp('((\\d+) reviews)');
+var revCheck = new RegExp('(([,\\d]+) reviews)');
 var scCheck  = new RegExp('(Rating: ([\\d\\.]+))');
 
 setTimeout(main, 500);
@@ -31,7 +33,8 @@ function main () {
         }
         found++;
         var revHit = rev[1];
-        var revNum = parseFloat(rev[2]) + 0;
+        var revNum = rev[2].replace(',', '');
+        revNum = parseFloat(revNum) + 0;
         var rCol   = "";
         if (revNum > 300) {
             rCol = 'red';
