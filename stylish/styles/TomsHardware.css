@@ -1,0 +1,7 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("tomshardware.com") {
+    ol.field.listing.h { 
+        display: none ! important; 
+    }
+}

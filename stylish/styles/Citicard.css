@@ -1,0 +1,21 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("citi.com") {
+    
+    #virtualImage, .cA-DD-offer, .cA-spf-rewardsWrapper,
+    .cA-spf-rewardsLinkWrapper, .cA-ada-offersBenefitsDoubleContainer
+    { 
+        display: none ! important;
+    }
+    
+    .cA-ada-quickLinkContainer, .cA-ada-quickLinkWrapper {
+        background-color: red ! important; 
+        color: yellow ! important;
+    }
+    
+    #cmlink_SvcVANEnroll { 
+        font-size: 2em ! important; 
+        font-weight:
+        bold !important; 
+    }
+}
