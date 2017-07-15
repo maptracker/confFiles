@@ -1,4 +1,4 @@
-// ==UserScript==
+﻿// ==UserScript==
 // @name        Politico One Page
 // @namespace   tilford.net
 // @include     http://www.politico.com/*

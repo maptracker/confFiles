@@ -9,6 +9,7 @@
 // @include        https://www.reddit.com/comments/*
 // @include        https://www.reddit.com/user/*
 // @include        https://www.reddit.com/r/*
+// @grant          none
 // ==/UserScript==
 log("-- Reddit Comment Highlighter --");
 

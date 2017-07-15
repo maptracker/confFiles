@@ -2,6 +2,7 @@
 // @name           All Recipes TiddlyWiki
 // @namespace      tilford.net
 // @include        http://allrecipes.com/Recipe/*
+// @grant          none
 // ==/UserScript==
 
 /* No longer really works after site changes ... */

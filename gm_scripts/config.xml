@@ -1,83 +1,114 @@
 <UserScriptConfig>
-	<Script basedir="Google_Allrecipes" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Google_Allrecipes.user.js" installTime="1366509995437" modified="1366509995000" name="Google Allrecipes" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="ad54e088-a90d-4ad4-a71f-9afa597c37f0" version="1" installurl="file:///home/intranet/nas/shared/firefox/GreaseMonkey/Google_Allrecipes.user.js" updateurl="file:///home/intranet/nas/shared/firefox/GreaseMonkey/Google_Allrecipes.user.js">
-		<Grant>none</Grant>
-		<Include>http://www.google.com/search?*allrecipes.com*</Include>
-	</Script>
-	<Script basedir="Single_Page_News" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Single_Page_News.user.js" installTime="1366510048763" modified="1366510048000" name="Single Page News" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="f0781d8a-166a-444c-80c5-ba80f762e3cd" version="1" installurl="file:///home/intranet/nas/shared/firefox/GreaseMonkey/Single_Page_News.user.js" updateurl="file:///home/intranet/nas/shared/firefox/GreaseMonkey/Single_Page_News.user.js">
-		<Grant>none</Grant>
-		<Include>http://www.washingtonpost.com/*.html</Include>
-	</Script>
-	<Script basedir="Filter_BarnesNoble" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Filter_BarnesNoble.user.js" installTime="1366510058907" modified="1381628907000" name="Filter BarnesNoble" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="2c1fa9e0-46e3-43a2-b32c-de1ff19dc79a" version="null" installurl="file:///home/intranet/nas/shared/firefox/GreaseMonkey/Filter_BarnesNoble.user.js" updateurl="file:///home/intranet/nas/shared/firefox/GreaseMonkey/Filter_BarnesNoble.user.js">
-		<Grant>none</Grant>
-		<Include>http://*barnesandnoble.com/*</Include>
-	</Script>
-	<Script basedir="Disqus_Filter" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Disqus_Filter.user.js" installTime="1366510065186" modified="1366510065000" name="Disqus Filter" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="5c6a569a-621c-4401-b13d-ea5d89fa81f2" version="1" installurl="file:///home/intranet/nas/shared/firefox/GreaseMonkey/Disqus_Filter.user.js" updateurl="file:///home/intranet/nas/shared/firefox/GreaseMonkey/Disqus_Filter.user.js">
-		<Grant>none</Grant>
-		<Include>http://disqus.com/*</Include>
-	</Script>
-	<Script basedir="All_Recipes_TiddlyWiki" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="all_recipes_tiddlywiki.user.js" installTime="1366510072675" modified="1366510072000" name="All Recipes TiddlyWiki" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="de42e7af-ecea-4866-90b0-7bb41bd54aef" version="null" installurl="file:///home/intranet/nas/shared/firefox/GreaseMonkey/all_recipes_tiddlywiki.user.js" updateurl="file:///home/intranet/nas/shared/firefox/GreaseMonkey/all_recipes_tiddlywiki.user.js">
+	<Script basedir="All_Recipes_TiddlyWiki" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="all_recipes_tiddlywiki.user.js" installTime="1334273818788" modified="1500139095000" name="All Recipes TiddlyWiki" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="c9306417-ed56-4664-befe-9869b2623b96" version="null" installurl="file:///home/tilfordc/.mozilla/firefox/stndProfile/gm_scripts/all_recipes_tiddlywiki/all_recipes_tiddlywiki.user.js" updateurl="file:///home/tilfordc/.mozilla/firefox/stndProfile/gm_scripts/all_recipes_tiddlywiki/all_recipes_tiddlywiki.user.js">
 		<Grant>none</Grant>
 		<Include>http://allrecipes.com/Recipe/*</Include>
 	</Script>
-	<Script basedir="NewEgg_Filter" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="NewEgg_Filter.user.js" installTime="1366510079953" modified="1366510079000" name="NewEgg Filter" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="819fbf10-ee7c-4bfa-bf76-e72f31f8a215" version="1" installurl="file:///home/intranet/nas/shared/firefox/GreaseMonkey/NewEgg_Filter.user.js" updateurl="file:///home/intranet/nas/shared/firefox/GreaseMonkey/NewEgg_Filter.user.js">
+	<Script basedir="USDA_Post_to_Get" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="usda_post_to_get.user.js" installTime="1334273835519" modified="1500137867000" name="USDA Post to Get" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="e96f2ba3-768b-447d-ae88-39e2e8e83509" version="null" installurl="file:///home/tilfordc/.mozilla/firefox/stndProfile/gm_scripts/usda_post_to_get/usda_post_to_get.user.js" updateurl="file:///home/tilfordc/.mozilla/firefox/stndProfile/gm_scripts/usda_post_to_get/usda_post_to_get.user.js">
 		<Grant>none</Grant>
-		<Include>http://*.newegg.com/*</Include>
+		<Include>http://www.nal.usda.gov/fnic/foodcomp/cgi-bin/nut_search_new.pl</Include>
 	</Script>
-	<Script basedir="Filter_Walmart_DVDs" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Filter_Walmart_DVDs.user.js" installTime="1366510087130" modified="1385851456000" name="Filter Walmart DVDs" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="af9679d0-d235-4093-8cca-65d6261d02c5" version="null" installurl="file:///home/intranet/nas/shared/firefox/GreaseMonkey/Filter_Walmart_DVDs.user.js" updateurl="file:///home/intranet/nas/shared/firefox/GreaseMonkey/Filter_Walmart_DVDs.user.js">
+	<Script basedir="Filter_BarnesNoble" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Filter_BarnesNoble.user.js" installTime="1334352730167" modified="1500135300000" name="Filter BarnesNoble" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="e519602f-1e65-49f3-91fd-e21a0265203f" version="null" updateurl="null">
+		<Grant>none</Grant>
+		<Include>http://*barnesandnoble.com/*</Include>
+	</Script>
+	<Script basedir="Filter_Walmart_DVDs" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Filter_Walmart_DVDs.user.js" installTime="1334366804493" modified="1500135300000" name="Filter Walmart DVDs" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="08c8e9a4-b9fa-48b7-9a70-088ce4ad8eda" version="null" updateurl="null">
 		<Grant>none</Grant>
 		<Include>http://www.walmart.com/*</Include>
 	</Script>
-	<Script basedir="Reddit_Comments" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Reddit_Comments.user.js" installTime="1366510114858" modified="1366510114000" name="Reddit Comments" namespace="http://www.tilford.net/" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="9fe9ea1a-e368-4813-b4ad-4a7669ceb939" version="null" installurl="file:///home/intranet/nas/shared/firefox/GreaseMonkey/Reddit_Comments.user.js" updateurl="file:///home/intranet/nas/shared/firefox/GreaseMonkey/Reddit_Comments.user.js">
+	<Script basedir="Modify_GOG" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Modify_GOG.user.js" installTime="1347923772800" modified="1500137371000" name="Modify GOG" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="8b9f2e79-40ea-4ad9-a715-ab8e2dfcb8c8" version="1" installurl="file:///home/tilfordc/.mozilla/firefox/n2u152vw.default/gm_scripts/Modify_GOG/Modify_GOG.user.js" updateurl="file:///home/tilfordc/.mozilla/firefox/n2u152vw.default/gm_scripts/Modify_GOG/Modify_GOG.user.js">
+		<Grant>none</Grant>
+		<Include>https://www.gog.com/en/gamecard/*</Include>
+		<Include>https://www.gog.com/gamecard/*</Include>
+		<Include>https://www.gog.com/game/*</Include>
+		<Include>https://www.gog.com/mix/*</Include>
+		<Include>https://www.gog.com/games*</Include>
+		<Include>https://secure.gog.com/gamecard/*</Include>
+	</Script>
+	<Script basedir="Reddit_Comments" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Reddit_Comments.user.js" installTime="1353721202523" modified="1500138614000" name="Reddit Comments" namespace="http://www.tilford.net/" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="e0c7f9a2-11fc-4beb-b661-690ef1bf8307" version="null" installurl="file:///home/intranet/nas/UserData/Win7/Documents/Mozilla/Charles/CharlesFirefoxProfile/gm_scripts/Reddit_Comments/Reddit_Comments.user.js" updateurl="file:///home/intranet/nas/UserData/Win7/Documents/Mozilla/Charles/CharlesFirefoxProfile/gm_scripts/Reddit_Comments/Reddit_Comments.user.js">
 		<Grant>none</Grant>
 		<Include>http://www.reddit.com/*/comments/*</Include>
+		<Include>http://np.reddit.com/*/comments/*</Include>
+		<Include>https://np.reddit.com/*/comments/*</Include>
+		<Include>http://www.reddit.com/user/*</Include>
+		<Include>https://www.reddit.com/*/comments/*</Include>
+		<Include>https://www.reddit.com/comments/*</Include>
+		<Include>https://www.reddit.com/user/*</Include>
+		<Include>https://www.reddit.com/r/*</Include>
 	</Script>
-	<Script basedir="Khan_Login" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Khan_Login.user.js" installTime="1382489183936" modified="1382489183000" name="Khan Login" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="920300d9-4b49-457e-88a5-38318cfff9fb" version="1" installurl="file:///home/intranet/nas/SharedFiles/GreaseMonkey/Khan_Login/Khan_Login.user.js" updateurl="file:///home/intranet/nas/SharedFiles/GreaseMonkey/Khan_Login/Khan_Login.user.js">
+	<Script basedir="NewEgg_Filter" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="NewEgg_Filter.user.js" installTime="1354838846284" modified="1500135300000" name="NewEgg Filter" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="87690bde-d97e-494f-a53e-548eb54a68c9" version="1" installurl="file:///home/tilfordc/.mozilla/firefox/n2u152vw.default/gm_scripts/NewEgg_Filter/NewEgg_Filter.user.js" updateurl="file:///home/tilfordc/.mozilla/firefox/n2u152vw.default/gm_scripts/NewEgg_Filter/NewEgg_Filter.user.js">
+		<Grant>none</Grant>
+		<Include>http://*.newegg.com/*</Include>
+	</Script>
+	<Script basedir="Disqus_Filter" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Disqus_Filter.user.js" installTime="1356615048520" modified="1500137090000" name="Disqus Filter" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="125119f6-0c1c-48d1-9558-65ef7985cea2" version="1" installurl="file:///home/tilfordc/.mozilla/firefox/n2u152vw.default/gm_scripts/Disqus_Filter/Disqus_Filter.user.js" updateurl="file:///home/tilfordc/.mozilla/firefox/n2u152vw.default/gm_scripts/Disqus_Filter/Disqus_Filter.user.js">
+		<Grant>none</Grant>
+		<Include>http://disqus.com/*</Include>
+	</Script>
+	<Script basedir="Single_Page_News" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Single_Page_News.user.js" installTime="1361877171753" modified="1500137789000" name="Single Page News" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="a2d5493e-2ed2-4a61-a0b1-982fc2c08e27" version="1" installurl="file:///home/tilfordc/.mozilla/firefox/n2u152vw.default/gm_scripts/Single_Page_News/Single_Page_News.user.js" updateurl="file:///home/tilfordc/.mozilla/firefox/n2u152vw.default/gm_scripts/Single_Page_News/Single_Page_News.user.js">
+		<Grant>none</Grant>
+		<Include>http://www.washingtonpost.com/*.html</Include>
+		<Include>https://www.washingtonpost.com/*.html</Include>
+		<Include>http://abcnews.go.com/*</Include>
+	</Script>
+	<Script basedir="Google_Allrecipes" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Google_Allrecipes.user.js" installTime="1362845761996" modified="1500137174000" name="Google Allrecipes" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="3286d089-9cf0-48c4-929d-db025b7552c4" version="1" installurl="file:///home/tilfordc/.mozilla/firefox/n2u152vw.default/gm_scripts/Google_Allrecipes/Google_Allrecipes.user.js" updateurl="file:///home/tilfordc/.mozilla/firefox/n2u152vw.default/gm_scripts/Google_Allrecipes/Google_Allrecipes.user.js">
+		<Grant>none</Grant>
+		<Include>http://www.google.com/search?*allrecipes.com*</Include>
+		<Include>https://www.google.com/search?*allrecipes.com*</Include>
+		<Include>https://encrypted.google.com/search?*allrecipes.com*</Include>
+	</Script>
+	<Script basedir="Khan_Login" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Khan_Login.user.js" installTime="1379164526000" modified="1500137251000" name="Khan Login" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="4ee055ac-0cbc-4dc8-b034-c5c0e7d86e61" version="1" installurl="file:///home/tilfordc/.mozilla/firefox/n2u152vw.default/gm_scripts/Khan_Login/Khan_Login.user.js" updateurl="file:///home/tilfordc/.mozilla/firefox/n2u152vw.default/gm_scripts/Khan_Login/Khan_Login.user.js">
 		<Grant>none</Grant>
 		<Include>https://www.khanacademy.org/login*</Include>
 	</Script>
-	<Script basedir="Modify_GOG" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Modify_GOG.user.js" installTime="1385865592000" modified="1385865592000" name="Modify GOG" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="4e95b4e2-7083-4865-af57-19dffba08a14" version="1" installurl="file:///abyss/Common/SharedFiles/GreaseMonkey/Modify_GOG/Modify_GOG.user.js" updateurl="file:///abyss/Common/SharedFiles/GreaseMonkey/Modify_GOG/Modify_GOG.user.js">
-		<Grant>none</Grant>
-		<Include>http://www.gog.com/en/gamecard/*</Include>
-		<Include>http://www.gog.com/gamecard/*</Include>
-		<Include>http://www.gog.com/game/*</Include>
-		<Include>https://secure.gog.com/gamecard/*</Include>
+	<Script basedir="Humble_Store" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Humble_Store.user.js" installTime="1387636822000" modified="1500137198000" name="Humble Store" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="dc028c07-1462-4814-8593-154c0533f88e" version="1" installurl="file:///home/tilfordc/.mozilla/firefox/n2u152vw.default/gm_scripts/Humble_Store/Humble_Store.user.js" updateurl="file:///home/tilfordc/.mozilla/firefox/n2u152vw.default/gm_scripts/Humble_Store/Humble_Store.user.js">
+		<Grant>GM_log</Grant>
+		<Include>https://www.humblebundle.com/store/*</Include>
+		<Include>https://www.humblebundle.com/store</Include>
 	</Script>
-	<Script basedir="Filter_Amazon_DVDs" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Filter_Amazon_DVDs.user.js" installTime="1388603489000" modified="1388606322000" name="Filter Amazon DVDs" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="7b52bdf1-39e9-4601-a49c-6e900f3ec490" version="null" installurl="file:///abyss/Common/SharedFiles/GreaseMonkey/Filter_Amazon_DVDs.user.js" updateurl="file:///abyss/Common/SharedFiles/GreaseMonkey/Filter_Amazon_DVDs.user.js">
+	<Script basedir="Politico_One_Page" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Politico_One_Page.user.js" installTime="1500139553000" modified="1500139553000" name="Politico One Page" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="8deedef8-e7ad-4970-933c-321285ffcea0" version="1" installurl="file:///home/tilfordc/confFiles/gm_scripts/Politico_One_Page/Politico_One_Page.user.js" updateurl="file:///home/tilfordc/confFiles/gm_scripts/Politico_One_Page/Politico_One_Page.user.js">
+		<Grant>none</Grant>
+		<Include>http://www.politico.com/*</Include>
+	</Script>
+	<Script basedir="DeviantArt" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="DeviantArt.user.js" installTime="1421003733000" modified="1500137030000" name="DeviantArt" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="24dc6f9c-8ee8-42a3-8eb7-e09314fbbf3a" version="1" installurl="file:///home/tilfordc/.mozilla/firefox/n2u152vw.default/gm_scripts/DeviantArt/DeviantArt.user.js" updateurl="file:///home/tilfordc/.mozilla/firefox/n2u152vw.default/gm_scripts/DeviantArt/DeviantArt.user.js">
+		<Grant>none</Grant>
+		<Include>http://*.deviantart.com/art/*</Include>
+	</Script>
+	<Script author="zanetu" basedir="Direct_Google" checkRemoteUpdates="1" dependhash="1327e6efbbfbab7cec5ff953de39ef6c41d3842b" description="Removes Google redirects and exposes &quot;Cached&quot; links." enabled="true" filename="Direct_Google.user.js" installTime="1433683722000" modified="1500135300000" name="Direct Google" namespace="http://userscripts.org/users/92143" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="aac2ed17-8ee2-4a17-a5aa-741393b58b65" version="2.3" installurl="file:///abyss/Common/SharedFiles/GreaseMonkey/Direct%20Google.user.js" updateurl="file:///abyss/Common/SharedFiles/GreaseMonkey/Direct%20Google.user.js">
+		<Grant>GM_addStyle</Grant>
+		<Include>/^https?\:\/\/(www|news|maps|docs|cse|encrypted)\.google\./</Include>
+		<Require filename="jquery.min.js"/>
+	</Script>
+	<Script basedir="NJ.com_image_adder" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="nj.com image" enabled="true" filename="NJ.com_image_adder.user.js" installTime="1461468951000" modified="1500136681000" name="NJ.com image adder" namespace="Foo" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="6a19ee52-631f-432b-b731-1ecd60db71ba" version="1" installurl="file:///home/tilfordc/.mozilla/firefox/oyv5676g.default/gm_scripts/NJ.com_image_adder/NJ.com_image_adder.user.js" updateurl="file:///home/tilfordc/.mozilla/firefox/oyv5676g.default/gm_scripts/NJ.com_image_adder/NJ.com_image_adder.user.js">
+		<Grant>none</Grant>
+		<Include>http://www.nj.com/*</Include>
+	</Script>
+	<Script basedir="The_Atlantic" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="The_Atlantic.user.js" installTime="1467388093000" modified="1500137815000" name="The Atlantic" namespace="Foo" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="5034e16f-4f3e-4800-a090-8d1e0b2c2b22" version="1" installurl="file:///home/tilfordc/.mozilla/firefox/oyv5676g.default/gm_scripts/The_Atlantic/The_Atlantic.user.js" updateurl="file:///home/tilfordc/.mozilla/firefox/oyv5676g.default/gm_scripts/The_Atlantic/The_Atlantic.user.js">
+		<Grant>none</Grant>
+		<Include>http://www.theatlantic.com/*</Include>
+	</Script>
+	<Script basedir="Amazon_Review_Scanner" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Amazon_Review_Scanner.user.js" installTime="1500138834000" modified="1500135300000" name="Amazon Review Scanner" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="4d7dca31-a05c-403d-8d06-c612608baab3" version="1" installurl="file:///home/tilfordc/confFiles/gm_scripts/Amazon_Review_Scanner/Amazon_Review_Scanner.user.js" updateurl="file:///home/tilfordc/confFiles/gm_scripts/Amazon_Review_Scanner/Amazon_Review_Scanner.user.js">
+		<Grant>none</Grant>
+		<Include>https://www.amazon.com/*</Include>
+	</Script>
+	<Script basedir="Filter_Amazon_DVDs" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Filter_Amazon_DVDs.user.js" installTime="1500138866000" modified="1500135300000" name="Filter Amazon DVDs" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="81325976-dbec-49b3-9c0d-08ae2087f69e" version="null" installurl="file:///home/tilfordc/confFiles/gm_scripts/Filter_Amazon_DVDs/Filter_Amazon_DVDs.user.js" updateurl="file:///home/tilfordc/confFiles/gm_scripts/Filter_Amazon_DVDs/Filter_Amazon_DVDs.user.js">
 		<Grant>GM_getValue</Grant>
 		<Grant>GM_setValue</Grant>
 		<Grant>GM_log</Grant>
 		<Include>http://www.amazon.com/*</Include>
 	</Script>
-	<Script basedir="Flickr_Functional_Suite" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="Adds some additional functionality to page" enabled="false" filename="flickrfunctionalsuite.user.js" installTime="1396914844000" modified="1396918360000" name="Flickr Functional Suite" namespace="http://www.tilford.net/" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="4abe2020-4751-4beb-a251-d07bea4d469b" version="null" installurl="file:///abyss/Common/SharedFiles/old_shared/firefox/GreaseMonkey/flickrfunctionalsuite.user.js" updateurl="file:///abyss/Common/SharedFiles/old_shared/firefox/GreaseMonkey/flickrfunctionalsuite.user.js">
-		<Grant>GM_getValue</Grant>
-		<Grant>GM_setValue</Grant>
-		<Grant>GM_log</Grant>
-		<Grant>GM_xmlhttpRequest</Grant>
-		<Include>http://*.flickr.com/*</Include>
-		<Include>http://flickr.com/*</Include>
-		<Include>https://*.flickr.com/*</Include>
-		<Include>https://flickr.com/*</Include>
-	</Script>
-	<Script basedir="pfSense_Filters" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="Marks up firewall logs in pfSense" enabled="true" filename="pfSense_Filters.user.js" installTime="1404181415000" modified="1443966801000" name="pfSense Filters" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="2aa8da9f-556b-4e93-aebb-ae45c0e21650" version="1" installurl="file:///home/tilfordc/.mozilla/firefox/mwad0hks.default/gm_scripts/pfSense_Filters/pfSense_Filters.user.js" updateurl="file:///home/tilfordc/.mozilla/firefox/mwad0hks.default/gm_scripts/pfSense_Filters/pfSense_Filters.user.js">
+	<Script basedir="ixQuick_Repoint_Image_Links" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="ixQuick_Repoint_Image_Links.user.js" installTime="1500138923000" modified="1500137239000" name="ixQuick Repoint Image Links" namespace="http://www.tilford.net/" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="6093a08a-2da0-4f73-b0a3-89957ae464eb" version="null" installurl="file:///home/tilfordc/confFiles/gm_scripts/ixQuick_Repoint_Image_Links/ixQuick_Repoint_Image_Links.user.js" updateurl="file:///home/tilfordc/confFiles/gm_scripts/ixQuick_Repoint_Image_Links/ixQuick_Repoint_Image_Links.user.js">
 		<Grant>none</Grant>
-		<Include>https://pfsense/diag_logs_filter.php</Include>
-		<Include>https://pfsense/status_dhcp_leases.php</Include>
-		<Include>https://pfsense/pfblockerng/pfblockerng_alerts.php*</Include>
+		<Include>https://ixquick.com/do/search?*cat=pics*</Include>
 	</Script>
-	<Script basedir="Tumblr_Image" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Tumblr_Image.user.js" installTime="1407507470000" modified="1407507703000" name="Tumblr Image" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="afc7ff0a-96c4-4095-b4f6-c3382fde9aae" version="1" installurl="file:///home/tilfordc/.mozilla/firefox/mwad0hks.default/gm_scripts/Tumblr_Image/Tumblr_Image.user.js" updateurl="file:///home/tilfordc/.mozilla/firefox/mwad0hks.default/gm_scripts/Tumblr_Image/Tumblr_Image.user.js">
+	<Script basedir="Pinterest" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Pinterest.user.js" installTime="1500139479000" modified="1500139479000" name="Pinterest" namespace="TOR" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="930f0ee9-3ff4-4614-a8bc-df93e9117434" version="1" installurl="file:///home/tilfordc/confFiles/gm_scripts/Pinterest/Pinterest.user.js" updateurl="file:///home/tilfordc/confFiles/gm_scripts/Pinterest/Pinterest.user.js">
 		<Grant>none</Grant>
-		<Include>http://*.tumblr.com/image/*</Include>
+		<Include>https://www.pinterest.com/pin/*</Include>
+		<Include>https://www.pinterest.com/*</Include>
 	</Script>
-	<Script author="zanetu" basedir="Direct_Google" checkRemoteUpdates="1" dependhash="1327e6efbbfbab7cec5ff953de39ef6c41d3842b" description="Removes Google redirects and exposes &quot;Cached&quot; links." enabled="true" filename="Direct_Google.user.js" installTime="1458950422000" modified="1458950422000" name="Direct Google" namespace="http://userscripts.org/users/92143" noframes="false" runAt="document-end" updateMetaStatus="ok" uuid="034a5598-185c-49d7-bba1-8f9da3cc9fbf" version="2.3" installurl="https://greasyfork.org/scripts/568-direct-google/code/Direct%20Google.user.js" updateurl="https://greasyfork.org/scripts/568-direct-google/code/Direct%20Google.user.js">
-		<Grant>GM_addStyle</Grant>
-		<Include>/^https?\:\/\/(www|news|maps|docs|cse|encrypted)\.google\./</Include>
-		<Require filename="jquery.min.js"/>
-	</Script>
-	<Script basedir="Amazon_Review_Scanner" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Amazon_Review_Scanner.user.js" installTime="1466300864000" modified="1484190087000" name="Amazon Review Scanner" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="65647e76-41e4-47ea-83f7-5e70016dcceb" version="1" installurl="file:///home/tilfordc/.mozilla/firefox/mwad0hks.default/gm_scripts/Amazon_Review_Scanner/Amazon_Review_Scanner.user.js" updateurl="file:///home/tilfordc/.mozilla/firefox/mwad0hks.default/gm_scripts/Amazon_Review_Scanner/Amazon_Review_Scanner.user.js">
+	<Script basedir="Plastic_Soldier_Review" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Plastic_Soldier_Review.user.js" installTime="1500139497000" modified="1500139497000" name="Plastic Soldier Review" namespace="TOR" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="f96127f4-26a5-4b62-b1bd-3ef52a186037" version="1" installurl="file:///home/tilfordc/confFiles/gm_scripts/Plastic_Soldier_Review/Plastic_Soldier_Review.user.js" updateurl="file:///home/tilfordc/confFiles/gm_scripts/Plastic_Soldier_Review/Plastic_Soldier_Review.user.js">
 		<Grant>none</Grant>
-		<Include>https://www.amazon.com/*</Include>
+		<Include>http://www.plasticsoldierreview.com/*</Include>
 	</Script>
-	<Script basedir="Tumblr_Direct_Image" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Tumblr_Direct_Image.user.js" installTime="1500130264000" modified="1500130472000" name="Tumblr Direct Image" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="fb26268a-fa30-46b9-a225-be99064ce35d" version="1" installurl="file:///home/tilfordc/.mozilla/firefox/mwad0hks.default/gm_scripts/Tumblr_Direct_Image/Tumblr_Direct_Image.user.js" updateurl="file:///home/tilfordc/.mozilla/firefox/mwad0hks.default/gm_scripts/Tumblr_Direct_Image/Tumblr_Direct_Image.user.js">
+	<Script basedir="Tumblr_Direct_Image" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Tumblr_Direct_Image.user.js" installTime="1500139656000" modified="1500139656000" name="Tumblr Direct Image" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="490456c2-10d7-482a-aae1-23be13261aa0" version="1" installurl="file:///home/tilfordc/confFiles/gm_scripts/Tumblr_Direct_Image/Tumblr_Direct_Image.user.js" updateurl="file:///home/tilfordc/confFiles/gm_scripts/Tumblr_Direct_Image/Tumblr_Direct_Image.user.js">
 		<Grant>none</Grant>
 		<Include>https://*.tumblr.com/image/*</Include>
 	</Script>
