@@ -12,7 +12,7 @@ function link () {
     SRC="$1"
     TRG="$2"
     if [ -d "$SRC" ]; then
-        msg 36 "Processing source directory: $SRC"
+        msg 37 "  Source is dir: $SRC"
     elif [ ! -f "$SRC" ]; then
         err "Source file does not exist: $SRC"
         return
@@ -70,6 +70,11 @@ FFPROF=`$my_dir/systemSetup/findFirefoxProfile.sh 1`
 ## Greasemonkey:
 link "$my_dir/gm_scripts" "$FFPROF/gm_scripts"
 
+TORPROF="$HOME/tor-browser_en-US/profile.default/"
+if [[ -d "$TORPROF" ]]; then
+    ## Also manage TOR Browser
+    link "$my_dir/gm_scripts" "$TORPROF/gm_scripts"
+fi
 
 
 ## gnome-terminal -- DOES. NOT. WORK.
