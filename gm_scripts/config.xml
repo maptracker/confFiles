@@ -99,17 +99,30 @@
 		<Grant>none</Grant>
 		<Include>https://ixquick.com/do/search?*cat=pics*</Include>
 	</Script>
-	<Script basedir="Pinterest" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Pinterest.user.js" installTime="1500139479000" modified="1500139479000" name="Pinterest" namespace="TOR" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="930f0ee9-3ff4-4614-a8bc-df93e9117434" version="1" installurl="file:///home/tilfordc/confFiles/gm_scripts/Pinterest/Pinterest.user.js" updateurl="file:///home/tilfordc/confFiles/gm_scripts/Pinterest/Pinterest.user.js">
+	<Script basedir="Pinterest" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Pinterest.user.js" installTime="1500139479000" modified="1500136693000" name="Pinterest" namespace="TOR" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="930f0ee9-3ff4-4614-a8bc-df93e9117434" version="1" installurl="file:///home/tilfordc/confFiles/gm_scripts/Pinterest/Pinterest.user.js" updateurl="file:///home/tilfordc/confFiles/gm_scripts/Pinterest/Pinterest.user.js">
 		<Grant>none</Grant>
 		<Include>https://www.pinterest.com/pin/*</Include>
 		<Include>https://www.pinterest.com/*</Include>
 	</Script>
-	<Script basedir="Plastic_Soldier_Review" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Plastic_Soldier_Review.user.js" installTime="1500139497000" modified="1500139497000" name="Plastic Soldier Review" namespace="TOR" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="f96127f4-26a5-4b62-b1bd-3ef52a186037" version="1" installurl="file:///home/tilfordc/confFiles/gm_scripts/Plastic_Soldier_Review/Plastic_Soldier_Review.user.js" updateurl="file:///home/tilfordc/confFiles/gm_scripts/Plastic_Soldier_Review/Plastic_Soldier_Review.user.js">
+	<Script basedir="Plastic_Soldier_Review" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Plastic_Soldier_Review.user.js" installTime="1500139497000" modified="1500136700000" name="Plastic Soldier Review" namespace="TOR" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="f96127f4-26a5-4b62-b1bd-3ef52a186037" version="1" installurl="file:///home/tilfordc/confFiles/gm_scripts/Plastic_Soldier_Review/Plastic_Soldier_Review.user.js" updateurl="file:///home/tilfordc/confFiles/gm_scripts/Plastic_Soldier_Review/Plastic_Soldier_Review.user.js">
 		<Grant>none</Grant>
 		<Include>http://www.plasticsoldierreview.com/*</Include>
 	</Script>
-	<Script basedir="Tumblr_Direct_Image" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Tumblr_Direct_Image.user.js" installTime="1500139656000" modified="1500139656000" name="Tumblr Direct Image" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="490456c2-10d7-482a-aae1-23be13261aa0" version="1" installurl="file:///home/tilfordc/confFiles/gm_scripts/Tumblr_Direct_Image/Tumblr_Direct_Image.user.js" updateurl="file:///home/tilfordc/confFiles/gm_scripts/Tumblr_Direct_Image/Tumblr_Direct_Image.user.js">
+	<Script basedir="Tumblr_Direct_Image" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Tumblr_Direct_Image.user.js" installTime="1500139656000" modified="1500135300000" name="Tumblr Direct Image" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="490456c2-10d7-482a-aae1-23be13261aa0" version="1" installurl="file:///home/tilfordc/confFiles/gm_scripts/Tumblr_Direct_Image/Tumblr_Direct_Image.user.js" updateurl="file:///home/tilfordc/confFiles/gm_scripts/Tumblr_Direct_Image/Tumblr_Direct_Image.user.js">
 		<Grant>none</Grant>
 		<Include>https://*.tumblr.com/image/*</Include>
+	</Script>
+	<Script basedir="Load_Lazy_Images" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Load_Lazy_Images.user.js" installTime="1500159867000" modified="1500160769000" name="Load_Lazy_Images" namespace="TOR" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="c1a5d6ee-1d3b-4a98-9bf3-e5ef07f7bdfd" version="1" installurl="file:///home/tilfordc/confFiles/gm_scripts/Load_Lazy_Images/Load_Lazy_Images.user.js" updateurl="file:///home/tilfordc/confFiles/gm_scripts/Load_Lazy_Images/Load_Lazy_Images.user.js">
+		<Grant>none</Grant>
+		<Grant>GM_log</Grant>
+		<Include>https://*washingtonpost.com/*</Include>
+	</Script>
+	<Script basedir="Tumblr_Image_set" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Tumblr_Image_set.user.js" installTime="1500161492000" modified="1500161854000" name="Tumblr_Image_set" namespace="TOR" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="1de9df7d-dadd-44f0-b2d3-25ced1e2726a" version="1" installurl="file:///home/tilfordc/confFiles/gm_scripts/Tumblr_Image_set/Tumblr_Image_set.user.js" updateurl="file:///home/tilfordc/confFiles/gm_scripts/Tumblr_Image_set/Tumblr_Image_set.user.js">
+		<Grant>none</Grant>
+		<Include>https://*.tumblr.com/post/*</Include>
+	</Script>
+	<Script basedir="Instagram_Image" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Instagram_Image.user.js" installTime="1500162027000" modified="1500162732000" name="Instagram_Image" namespace="TOR" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="b1836fd1-4521-4db5-94a5-3ab2bb0cd15f" version="1" installurl="file:///home/tilfordc/confFiles/gm_scripts/Instagram_Image/Instagram_Image.user.js" updateurl="file:///home/tilfordc/confFiles/gm_scripts/Instagram_Image/Instagram_Image.user.js">
+		<Grant>none</Grant>
+		<Include>https://www.instagram.com/p/*</Include>
 	</Script>
 </UserScriptConfig>
