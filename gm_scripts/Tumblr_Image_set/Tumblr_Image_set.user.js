@@ -8,7 +8,7 @@
 
 /* Not sure this is needed? */
 
-// find_sets();
+find_sets();
 
 function find_sets () {
     var scripts = document.getElementsByTagName('script');
