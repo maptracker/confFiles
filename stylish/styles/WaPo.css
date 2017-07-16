@@ -20,4 +20,5 @@
         border-right: none ! important; 
         background-image: none ! important; 
     }
+    /* .unprocessed { filter : unset ! important;} */
 }
