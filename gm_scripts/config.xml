@@ -1,9 +1,9 @@
 <UserScriptConfig>
-	<Script basedir="All_Recipes_TiddlyWiki" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="all_recipes_tiddlywiki.user.js" installTime="1334273818788" modified="1500295197000" name="All Recipes TiddlyWiki" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="c9306417-ed56-4664-befe-9869b2623b96" version="null" installurl="file:///home/tilfordc/confFiles/gm_scripts/all_recipes_tiddlywiki/all_recipes_tiddlywiki.user.js" updateurl="file:///home/tilfordc/confFiles/gm_scripts/all_recipes_tiddlywiki/all_recipes_tiddlywiki.user.js">
+	<Script basedir="All_Recipes_TiddlyWiki" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="all_recipes_tiddlywiki.user.js" installTime="1334273818788" modified="1500295197000" name="All Recipes TiddlyWiki" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="c9306417-ed56-4664-befe-9869b2623b96" version="null" installurl="file:///home/tilfordc/.mozilla/firefox/stndProfile/gm_scripts/all_recipes_tiddlywiki/all_recipes_tiddlywiki.user.js" updateurl="file:///home/tilfordc/.mozilla/firefox/stndProfile/gm_scripts/all_recipes_tiddlywiki/all_recipes_tiddlywiki.user.js">
 		<Grant>none</Grant>
 		<Include>http://allrecipes.com/Recipe/*</Include>
 	</Script>
-	<Script basedir="USDA_Post_to_Get" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="usda_post_to_get.user.js" installTime="1334273835519" modified="1500295197000" name="USDA Post to Get" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="e96f2ba3-768b-447d-ae88-39e2e8e83509" version="null" installurl="file:///home/tilfordc/confFiles/gm_scripts/usda_post_to_get/usda_post_to_get.user.js" updateurl="file:///home/tilfordc/confFiles/gm_scripts/usda_post_to_get/usda_post_to_get.user.js">
+	<Script basedir="USDA_Post_to_Get" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="usda_post_to_get.user.js" installTime="1334273835519" modified="1500295197000" name="USDA Post to Get" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="e96f2ba3-768b-447d-ae88-39e2e8e83509" version="null" installurl="file:///home/tilfordc/.mozilla/firefox/stndProfile/gm_scripts/usda_post_to_get/usda_post_to_get.user.js" updateurl="file:///home/tilfordc/.mozilla/firefox/stndProfile/gm_scripts/usda_post_to_get/usda_post_to_get.user.js">
 		<Grant>none</Grant>
 		<Include>http://www.nal.usda.gov/fnic/foodcomp/cgi-bin/nut_search_new.pl</Include>
 	</Script>
@@ -24,7 +24,7 @@
 		<Include>https://www.gog.com/games*</Include>
 		<Include>https://secure.gog.com/gamecard/*</Include>
 	</Script>
-	<Script basedir="Reddit_Comments" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Reddit_Comments.user.js" installTime="1353721202523" modified="1500295197000" name="Reddit Comments" namespace="http://www.tilford.net/" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="e0c7f9a2-11fc-4beb-b661-690ef1bf8307" version="null" installurl="file:///home/tilfordc/confFiles/gm_scripts/Reddit_Comments/Reddit_Comments.user.js" updateurl="file:///home/tilfordc/confFiles/gm_scripts/Reddit_Comments/Reddit_Comments.user.js">
+	<Script basedir="Reddit_Comments" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Reddit_Comments.user.js" installTime="1353721202523" modified="1500295197000" name="Reddit Comments" namespace="http://www.tilford.net/" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="e0c7f9a2-11fc-4beb-b661-690ef1bf8307" version="null" installurl="file:///home/intranet/nas/UserData/Win7/Documents/Mozilla/Charles/CharlesFirefoxProfile/gm_scripts/Reddit_Comments/Reddit_Comments.user.js" updateurl="file:///home/intranet/nas/UserData/Win7/Documents/Mozilla/Charles/CharlesFirefoxProfile/gm_scripts/Reddit_Comments/Reddit_Comments.user.js">
 		<Grant>none</Grant>
 		<Include>http://www.reddit.com/*/comments/*</Include>
 		<Include>http://np.reddit.com/*/comments/*</Include>
@@ -73,11 +73,11 @@
 		<Include>/^https?\:\/\/(www|news|maps|docs|cse|encrypted)\.google\./</Include>
 		<Require filename="jquery.min.js"/>
 	</Script>
-	<Script basedir="NJ.com_image_adder" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="nj.com image" enabled="true" filename="NJ.com_image_adder.user.js" installTime="1461468951000" modified="1500295197000" name="NJ.com image adder" namespace="Foo" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="6a19ee52-631f-432b-b731-1ecd60db71ba" version="1" installurl="file:///home/tilfordc/confFiles/gm_scripts/NJ.com_image_adder/NJ.com_image_adder.user.js" updateurl="file:///home/tilfordc/confFiles/gm_scripts/NJ.com_image_adder/NJ.com_image_adder.user.js">
+	<Script basedir="NJ.com_image_adder" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="nj.com image" enabled="true" filename="NJ.com_image_adder.user.js" installTime="1461468951000" modified="1500295197000" name="NJ.com image adder" namespace="Foo" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="6a19ee52-631f-432b-b731-1ecd60db71ba" version="1" installurl="file:///home/tilfordc/.mozilla/firefox/oyv5676g.default/gm_scripts/NJ.com_image_adder/NJ.com_image_adder.user.js" updateurl="file:///home/tilfordc/.mozilla/firefox/oyv5676g.default/gm_scripts/NJ.com_image_adder/NJ.com_image_adder.user.js">
 		<Grant>none</Grant>
 		<Include>http://www.nj.com/*</Include>
 	</Script>
-	<Script basedir="The_Atlantic" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="The_Atlantic.user.js" installTime="1467388093000" modified="1500295197000" name="The Atlantic" namespace="Foo" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="5034e16f-4f3e-4800-a090-8d1e0b2c2b22" version="1" installurl="file:///home/tilfordc/confFiles/gm_scripts/The_Atlantic/The_Atlantic.user.js" updateurl="file:///home/tilfordc/confFiles/gm_scripts/The_Atlantic/The_Atlantic.user.js">
+	<Script basedir="The_Atlantic" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="The_Atlantic.user.js" installTime="1467388093000" modified="1500295197000" name="The Atlantic" namespace="Foo" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="5034e16f-4f3e-4800-a090-8d1e0b2c2b22" version="1" installurl="file:///home/tilfordc/.mozilla/firefox/oyv5676g.default/gm_scripts/The_Atlantic/The_Atlantic.user.js" updateurl="file:///home/tilfordc/.mozilla/firefox/oyv5676g.default/gm_scripts/The_Atlantic/The_Atlantic.user.js">
 		<Grant>none</Grant>
 		<Include>http://www.theatlantic.com/*</Include>
 	</Script>
@@ -127,7 +127,24 @@
 		<Grant>none</Grant>
 		<Include>http://*.bbc.com/news/*</Include>
 	</Script>
-	<Script basedir="Khan_Login" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Khan_Login.user.js" installTime="1379164526000" modified="1500137251000" name="Khan Login" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="4ee055ac-0cbc-4dc8-b034-c5c0e7d86e61" version="1" installurl="file:///home/tilfordc/confFiles/gm_scripts/Khan_Login/Khan_Login.user.js" updateurl="file:///home/tilfordc/confFiles/gm_scripts/Khan_Login/Khan_Login.user.js">
+	<Script basedir="Detect_Web_Filter" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Detect_Web_Filter.user.js" installTime="1500299775000" modified="1500299775000" name="Detect Web Filter" namespace="com.bms.bioinformatics" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="0580462a-c8a7-4346-a5fc-c4bd7f65e74a" version="1" installurl="file:///home/tilfordc/firefoxProfile/gm_scripts-BKUP/Detect_Web_Filter/Detect_Web_Filter.user.js" updateurl="file:///home/tilfordc/firefoxProfile/gm_scripts-BKUP/Detect_Web_Filter/Detect_Web_Filter.user.js">
+		<Grant>GM_xmlhttpRequest</Grant>
+		<Include>http*</Include>
+		<Include>file*</Include>
+	</Script>
+	<Script basedir="Soylent" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Soylent.user.js" installTime="1500300090000" modified="1500300090000" name="Soylent" namespace="*" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="545a5939-f43e-4edc-96da-a991d44a028a" version="1" installurl="file:///home/tilfordc/firefoxProfile/gm_scripts-BKUP/Soylent/Soylent.user.js" updateurl="file:///home/tilfordc/firefoxProfile/gm_scripts-BKUP/Soylent/Soylent.user.js">
+		<Grant>none</Grant>
+		<Include>http://soylentnews.org/*</Include>
+		<Include>https://soylentnews.org/*</Include>
+	</Script>
+	<Script basedir="StackExchange" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="StackExchange.user.js" installTime="1500300148000" modified="1500300148000" name="StackExchange" namespace="*" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="ccf937bd-1a07-45bb-850d-de5f53faa414" version="1" installurl="file:///home/tilfordc/firefoxProfile/gm_scripts-BKUP/StackExchange/StackExchange.user.js" updateurl="file:///home/tilfordc/firefoxProfile/gm_scripts-BKUP/StackExchange/StackExchange.user.js">
+		<Grant>none</Grant>
+		<Include>https://*.stackexchange.com/*</Include>
+		<Include>https://serverfault.com/*</Include>
+		<Include>https://stackoverflow.com/*</Include>
+		<Include>https://superuser.com/*</Include>
+	</Script>
+	<Script basedir="Khan_Login" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Khan_Login.user.js" installTime="1379164526000" modified="1500137251000" name="Khan Login" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="4ee055ac-0cbc-4dc8-b034-c5c0e7d86e61" version="1" installurl="file:///home/tilfordc/.mozilla/firefox/n2u152vw.default/gm_scripts/Khan_Login/Khan_Login.user.js" updateurl="file:///home/tilfordc/.mozilla/firefox/n2u152vw.default/gm_scripts/Khan_Login/Khan_Login.user.js">
 		<Grant>none</Grant>
 		<Include>https://www.khanacademy.org/login*</Include>
 	</Script>
