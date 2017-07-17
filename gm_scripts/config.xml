@@ -127,4 +127,8 @@
 		<Grant>none</Grant>
 		<Include>http://*.bbc.com/news/*</Include>
 	</Script>
+	<Script basedir="Khan_Login" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Khan_Login.user.js" installTime="1379164526000" modified="1500137251000" name="Khan Login" namespace="tilford.net" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="4ee055ac-0cbc-4dc8-b034-c5c0e7d86e61" version="1" installurl="file:///home/tilfordc/confFiles/gm_scripts/Khan_Login/Khan_Login.user.js" updateurl="file:///home/tilfordc/confFiles/gm_scripts/Khan_Login/Khan_Login.user.js">
+		<Grant>none</Grant>
+		<Include>https://www.khanacademy.org/login*</Include>
+	</Script>
 </UserScriptConfig>
