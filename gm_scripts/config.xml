@@ -125,4 +125,8 @@
 		<Grant>none</Grant>
 		<Include>https://www.instagram.com/p/*</Include>
 	</Script>
+	<Script basedir="BBC_Image" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="BBC_Image.user.js" installTime="1500288478000" modified="1500288632000" name="BBC_Image" namespace="TOR" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="9ce42310-b75a-4a0a-9529-14bef87f8576" version="1" installurl="file:///home/tilfordc/confFiles/gm_scripts/BBC_Image/BBC_Image.user.js" updateurl="file:///home/tilfordc/confFiles/gm_scripts/BBC_Image/BBC_Image.user.js">
+		<Grant>none</Grant>
+		<Include>http://*.bbc.com/news/*</Include>
+	</Script>
 </UserScriptConfig>
