@@ -1,0 +1,8 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("bbc.co.uk") {
+    .share, #comp-pattern-library-2, #core-navigation, .tags-container,
+    .orb-footer-inner, #comp-features-and-analysis, .related-links,
+    #comp-top-stories-promo
+    { display : none ! important; }
+}

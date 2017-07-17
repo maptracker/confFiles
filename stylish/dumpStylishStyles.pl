@@ -83,7 +83,7 @@ sub dump {
 
     my $rows = $get->fetchall_arrayref();
     my @noChange;
-    foreach my $row (@{$rows}) {
+    foreach my $row ( sort { $a->[0] cmp $b->[0] } @{$rows}) {
         my $name = shift @{$row};
         my $css  = shift @{$row};
         print META join("\t", $name, map {defined $_ ? $_ : ""} @{$row}) ."\n";
