@@ -1,0 +1,6 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("github.com") {
+    .signup-prompt-bg
+    { display : none ! important; }
+}
