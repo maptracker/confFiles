@@ -5,6 +5,7 @@
 // @include     https://www.nytimes.com*
 // @include     http://www.space.com/*
 // @include     https://*reuters.com/*
+// @include     https://*bloomberg.com/*
 // @version     1
 // @grant       none
 // @grant       GM_log
@@ -18,30 +19,41 @@ var imgs = document.getElementsByTagName('img');
 var ilen = imgs.length;
 var loc  = document.location;
 var bgChk = new RegExp('(&w=[0-9]+)"');
+var hrSrc = 'data-src';
+var cb    = dataSrc;
+var wait  = 1;
 
 if (/washingtonpost/.test(loc)) {
     /* non-standard attributes plus a blur style */
-    hiResSrc();
+    cb = hiResSrc;
+    hrSrc = 'data-hi-res-src';
+} else if (/bloomberg/.test(loc)) {
+    cb = hiResSrc;
+    hrSrc = 'data-native-src';
 } else if (/reuters/.test(loc)) {
     /* Using a background-image CSS style to define image source */
-    divBackground();
+    cb = divBackground;
 } else {
     /* This seems like the 'standard' way to do a lazy load */
-    dataSrc();
 }
+
+window.setTimeout(cb, wait);
 
 function dataSrc() {
     for (var i = 0; i < ilen; i++) {
         var img  = imgs[i];
-        var ds   = img.getAttribute( 'data-src' );
-        if (ds) img.src = ds;
+        var ds   = img.getAttribute( hrSrc );
+        if (ds) {
+            img.src = ds;
+            // alert(ds);
+        }
     }
 }
 
 function hiResSrc() {
     for (var i = 0; i < ilen; i++) {
         var img  = imgs[i];
-        var dhrs = img.getAttribute( 'data-hi-res-src' );
+        var dhrs = img.getAttribute( hrSrc );
         if (dhrs) {
             /* WaPo has both lazy loading and a blur style on placeholders */
             img.src = dhrs;
