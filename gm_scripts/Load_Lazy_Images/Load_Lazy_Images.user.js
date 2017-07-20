@@ -10,6 +10,10 @@
 // @grant       GM_log
 // ==/UserScript==
 
+/* Had lazy load tags on some elements, but apparently not needed?
+   http://*cbsnews.com/*
+*/
+
 var imgs = document.getElementsByTagName('img');
 var ilen = imgs.length;
 var loc  = document.location;

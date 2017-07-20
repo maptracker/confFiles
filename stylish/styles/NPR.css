@@ -1,6 +1,10 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document domain("npr.org") {
+    footer, .branding, #global-navigation-wrap, .share-tools,
+    iframe {
+        display: none ! important;
+    }
     a:visited { color: purple ! important; }
     #dsq1 { overflow: visible; }
     #qqqdisqus_thread { border: solid 2px red ! important; }
