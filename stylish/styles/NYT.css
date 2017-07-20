@@ -8,8 +8,8 @@
     #navigation, #masthead, #memberTools, #cCol, #blogroll,
     .socialMediaModule, .ad, #footer, .subNavigation, .share, #header, .tabs,
     .external-links, .interactive-embedded, .newsletter-signup,
-    #site-index, #whats-next, .text-ad, #page-footer, .ribbon, .navigation
-
+    #site-index, #whats-next, .text-ad, #page-footer, .ribbon, .navigation,
+    .video
     { 
         display: none ! important; 
     }
