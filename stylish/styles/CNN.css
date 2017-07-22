@@ -3,8 +3,10 @@
 @-moz-document domain("cnn.com") {
     .cnnStryVidCont, .map-canvas, .cnn_stryshrwdgtbtm, #cnn_ftrcntnt, 
     .js-owl-filmstrip, #cnn_hdr-main, #large-media, iframe, 
-    #leaf-footer-article-zone, .el__featured-video, .pg-rail-tall__head
+    #leaf-footer-article-zone, .el__featured-video, .pg-rail-tall__head,
+    footer, #story-bottom
     { 
         display : none ! important; 
     }
+    .media__image { transition: unset ! important; }
 }

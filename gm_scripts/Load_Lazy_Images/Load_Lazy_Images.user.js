@@ -5,6 +5,7 @@
 // @include     https://www.nytimes.com*
 // @include     http://www.space.com/*
 // @include     https://*reuters.com/*
+// @include     https://*.cnn.com/*
 // @include     https://*bloomberg.com/*
 // @version     1
 // @grant       none
@@ -33,6 +34,8 @@ if (/washingtonpost/.test(loc)) {
 } else if (/reuters/.test(loc)) {
     /* Using a background-image CSS style to define image source */
     cb = divBackground;
+} else if (/\.cnn\./.test(loc)) {
+    hrSrc = 'data-src-large';
 } else {
     /* This seems like the 'standard' way to do a lazy load */
 }

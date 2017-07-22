@@ -1,6 +1,11 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document domain("space.com") {
+    .partner-banner, #stickyShare, .social-mod, iframe, footer,
+    .subscribe
+    {
+        display: none ! important;
+    }
     img { 
         opacity: 1 ! important; 
         transition: none ! important; 
