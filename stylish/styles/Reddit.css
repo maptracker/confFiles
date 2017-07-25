@@ -5,6 +5,7 @@
     div.entry.unvoted ul.flat-list.buttons { 
         display: block ! important; 
     }
+    body { background : none !important; }
 
     .promotedlink, #siteTable_promoted,  .promoted, .arrow, div.side,
     #header-bottom-right, .footer-parent, #cta-container-placeholder,
