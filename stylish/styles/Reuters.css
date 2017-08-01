@@ -2,8 +2,17 @@
 
 @-moz-document domain("reuters.com") {
     .footer-trnetwork, .footer-disclaimer, .footer-top, #specialFeature,
-    .slider-module
+    .slider-module,
+    div[class*='TopBar'], div[class*='CanvasAd'], div[class^='Header_'],
+    div[data-template='footer']
     { 
         display: none !important;
     }
+    div[class^='ArticleHeader_'] 
+    { 
+      padding: unset ! important; 
+      margin-left: unset ! important;
+      margin-right: unset ! important;
+    }
+    p { margin-bottom: 5px ! important; }
 }
