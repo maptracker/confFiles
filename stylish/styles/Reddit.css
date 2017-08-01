@@ -10,7 +10,7 @@
     .promotedlink, #siteTable_promoted,  .promoted, .arrow, div.side,
     #header-bottom-right, .footer-parent, #cta-container-placeholder,
     #fixed-side-footer-links, #recommendations, #promoted-spotlight,
-    #eu-cookie-policy
+    #eu-cookie-policy, .report-button, .flair, .morecomments
     { 
         display: none ! important; 
     }
