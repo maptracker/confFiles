@@ -8,6 +8,7 @@ AmazonOffers	1	1
 BBC	1	1						
 Bloomberg	1	1						
 BostonGlobe	1	1						
+BostonHerald	1	1						
 Breitbart	1	1						
 BusinessWeek	1	1						
 CNN	1	1						
@@ -34,6 +35,7 @@ FreeDictionary	1	1
 GOG	1	1						
 GameSpot	1	1						
 Gamepedia	1	1						
+GenAccAtom	1	1						
 Genepool	1	1						
 GenomeBiology	1	1						
 GitHub	1	1						
@@ -42,11 +44,16 @@ GoogleFinanceHide	1	1
 GoogleNews	1	1						
 GroupTribune	1	1						
 Guardian	1	1						
+Habitica	1	1						
 HumbleMasker	1	1						
-HumbleStore	1	1						
+HumbleStore	0	1						
 Imgur	1	1						
 Indeed	1	1						
 Independent	1	1						
+Insite	1	1						
+InteractiveBrowser	0	1						
+InteractiveViewer1	0	1						
+IronPort	1	1						
 Ixquick	1	1						
 Khan	1	1						
 Krebs	1	1						
@@ -66,6 +73,7 @@ Newsweek	1	1
 NihSearch	1	1						
 Olympus	1	1						
 OpenClipArt	1	1						
+OutlookCalendar	1	1						
 PBS	1	1						
 PCWorld	1	1						
 PlanetaryOrg	1	1						
@@ -78,10 +86,12 @@ Robtex	1	1
 SCP	1	1						
 SMH	1	1						
 Salon	1	1						
+School	1	1						
 Slashdot	1	1						
 Soylent	1	1						
 Stackexchange	1	1						
 StarMade	1	1						
+TASSearch	1	1						
 TechTimes	1	1						
 TheAtlantic	1	1						
 TheHill	1	1						
