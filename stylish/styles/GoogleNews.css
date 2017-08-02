@@ -19,9 +19,11 @@
         display: none ! important;
     }
     
-    a[href*="forbes.com"], a[href*="japantimes.co.jp"]
+    a[href*="forbes.com"], a[href*="japantimes.co.jp"],
+    a[href*=".wsj.com"]
     {
-        /* does not play well with my browser configuration */
+        /* does not play well with my browser configuration 
+           or is paywalled */
         background-color: #faa ! important; 
         color: #888 ! important; 
         font-size: 0.7em ! important
