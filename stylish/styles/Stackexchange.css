@@ -3,7 +3,8 @@
 @-moz-document domain("stackexchange.com"), domain("serverfault.com"),
 domain("stackoverflow.com"), domain("superuser.com") {
     .hero-box, #herobox, #newsletter-ad, .community-bulletin, #hero-content,
-    #chat-feature, #hlogo, #footer, #feed-link, #post-form, .newsletter-anon
+    #chat-feature, #hlogo, #footer, #feed-link, #post-form, .newsletter-anon,
+    .hero-container
     { 
         display: none !important;
     }
