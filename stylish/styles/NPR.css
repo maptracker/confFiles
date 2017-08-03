@@ -2,7 +2,8 @@
 
 @-moz-document domain("npr.org") {
     footer, .branding, #global-navigation-wrap, .share-tools,
-    iframe {
+    iframe, .statichtml
+    {
         display: none ! important;
     }
     a:visited { color: purple ! important; }
