@@ -1,0 +1,8 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("msn.com") {
+  .xnetvidplayer, .paddle, .sharingtb, #nav, .head,
+  .pagination_control, .two-back-home-buttons,
+  .facebook-comments-disabled-container, #foot, .circularhub
+  { display: none ! important; }
+}
