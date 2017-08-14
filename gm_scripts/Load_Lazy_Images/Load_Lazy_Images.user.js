@@ -7,6 +7,7 @@
 // @include     https://*reuters.com/*
 // @include     https://*.cnn.com/*
 // @include     https://*bloomberg.com/*
+// @include     https://*qz.com/*
 // @version     1
 // @grant       none
 // @grant       GM_log
@@ -14,6 +15,9 @@
 
 /* Had lazy load tags on some elements, but apparently not needed?
    http://*cbsnews.com/*
+
+   Quartz also needs a stylish stylesheet to mask the blurry thumbnail
+   and reset opacity on the actual image
 */
 
 var imgs = document.getElementsByTagName('img');
