@@ -1,0 +1,6 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("fortune.com") {
+  /* what a weird way to manage a page... */
+  p, a { visibility: unset ! important; }
+}

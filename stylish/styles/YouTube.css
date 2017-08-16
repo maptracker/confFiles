@@ -13,7 +13,8 @@
     #item-section-648146, #item-section-392757, #item-section-296230,
     #item-section-046460, #item-section-204995, #item-section-031197,
     #item-section-650712, #item-section-006100, #item-section-855594,
-    #item-section-840628, #item-section-202600, #item-section-884364
+    #item-section-840628, #item-section-202600, #item-section-884364,
+    .mealbar-promo-renderer
     { 
         display: none ! important; 
     }
