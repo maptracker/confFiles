@@ -1,0 +1,14 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("snopes.com") {
+  img {
+    /*
+    Arg. Does not work. The hidden _attribute_ does not seem to be accessible via CSS
+    https://stackoverflow.com/a/6708403
+    https://w3c.github.io/html/editing.html#the-hidden-attribute
+    */
+    box-sizing: unset ! important;
+    display: block ! important;
+    visibility: visible ! important;
+  }
+}

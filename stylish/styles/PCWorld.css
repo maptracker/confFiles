@@ -1,0 +1,11 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("pcworld.com") {
+    #shoppingMod, #topXMod,  #footerMoreSMB,  #smbRightSubscribe,
+    #resourceLinks, #smbBlogLinks,  #artCommentDiv,  #smbWhitepaperWrap, 
+    #footer, #smbFooterAd, #smbWhitepaperWrap, #miniHeader, #mainNav, #header, 
+    #artCommentDiv, #resourceLinks, .chicklet 
+    { 
+        display: none ! important; 
+    }
+}

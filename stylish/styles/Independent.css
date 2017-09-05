@@ -1,0 +1,11 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("independent.co.uk") {
+    .video-player, .video-playlist, iframe, .type-gallery,
+    .type-video, .box-comments, .syndication-btn, #i100-0,
+    #most_popular-0, #ines_video_sidebar-0, .fb-info, .partner-slots,
+    .taboola
+    {
+        display: none ! important;
+    }
+}

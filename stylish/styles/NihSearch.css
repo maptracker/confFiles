@@ -1,0 +1,28 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("nih.gov") {
+
+    .search {
+        width: 100% ! important; 
+    }
+    .search_bottom, .search_extras, .search_top
+    { 
+        clear: none ! important;
+        float: left ! important;
+        background-color: orange ! important;
+    }
+
+
+    .search_top { 
+        width: 200px ! important; 
+    }
+    .search_bottom { 
+        width: 500px ! important; 
+    }
+    .search_extras { 
+        width: 100px ! important; 
+    }
+    .search button { 
+        font-size: 1em ! important; 
+    }
+}

@@ -1,0 +1,25 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("thehill.com") {
+    .region-column-left, .left-sidebar-space, .blogs-social-wrp, .left-sidebar,
+    .block-disqus, #block-thehill-blocks-footer-signup, .region-bottom-column2,
+    .item-pos
+    { 
+        display: none!important;
+    }
+    
+    .content-wrapper {
+        padding-left: 0px ! important;
+    }
+    
+    #main, .mostpopular-item, #block-mostpopular-1 { 
+        padding: 0 0 0 0  ! important; 
+    }
+    
+    .content-wrapper { 
+        padding-left: 5px ! important; 
+    }
+    .xxxxsidebars { 
+        width: 200px ! important;
+    }
+}

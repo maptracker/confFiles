@@ -1,0 +1,7 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("businessweek.com") {
+    #middle_rail, .column { 
+        width: 100% ! important; 
+    }
+}

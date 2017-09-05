@@ -1,0 +1,34 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("checkfreeweb.com") {
+    #upsellheader,  #upsellContainer, #ebillSignUpUpSellSlideBoxArea,
+    .intrstl-body, .intrstl-hero-heading, .proceedToRegistration,
+    .learnMore, .reg-features-half, .reg-features-full,
+    #bankDepositHeading, .ad-lrg
+    { 
+        display: none ! important; 
+    }
+    
+    .internal-link.odd-link-fl { 
+        font-size: 300%; 
+        color: darkgreen; 
+        font-weight: bold;
+    }
+    
+    #payAsstContainer, #pabody, #payAsstAmtView
+    { 
+        height: 300px ! important; 
+    }
+    
+    .def-data { 
+        background-color: yellow ! important; 
+        font-size: 2em;
+        font-family: Courier; 
+        font-weight: bold; 
+        padding: 10px 0 10px 0; 
+    }
+    
+    .deliver-month, .deliver-day { 
+        background-color: cyan ! important;  
+    }
+}

@@ -1,0 +1,9 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("newsweek.com") {
+    .trial-promo, .nw-subscribe-today, .hidden-xs, #discussion,
+    #taboola-below-main-column, noscript
+    { 
+        display: none ! important; 
+    }
+}

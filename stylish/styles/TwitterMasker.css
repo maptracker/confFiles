@@ -1,0 +1,16 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("twitter.com") {
+    /* various spammers, folks that just post the same thing over and over again,
+       or tired memes ... */
+    div[data-screen-name="deplorablemax1"],
+    div[data-screen-name="peplamb"],
+    div[data-screen-name="DC_Resister_Bee"],
+    div[data-screen-name="Impeach_D_Trump"],
+    div[data-screen-name="jamesclarke1123"],
+    div[data-screen-name="SLandinSoCal"],
+    div[data-screen-name="FarhanKVirk"]
+    { 
+        display: none ! important; 
+    }
+}

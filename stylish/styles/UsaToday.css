@@ -1,0 +1,9 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("usatoday.com") {
+    .more-stories-content, .inline-share-tools, .ui-video-wrapper,
+    header, .close-wrap, #Adv10, .oembed-asset
+    {
+        display: none !important;
+    }
+}

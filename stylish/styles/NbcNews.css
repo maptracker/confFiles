@@ -1,0 +1,9 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("nbcnews.com") {
+    .inlineVideo, #siteheader, footer, .paginationDiv,
+    .stack-l-image-lede-container,.sitewide-footer
+    { 
+        display : none ! important; 
+    }
+}

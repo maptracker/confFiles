@@ -1,0 +1,19 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("yahoo.com") {
+    #leftContent, .type_contentcarousel, .type_footer, .type_subfooter,
+    .mul-cont, .type_ads, .specialevents, .type_marketindices, #yn-vitality 
+
+    { 
+        display: none ! important;
+    }
+
+    #disposableEmailAddresses_scroller { 
+        height: 40em ! important; 
+    }
+
+    .disposableAddressEducation, #yfi_fidelity, #yfi_fp_featured_videos,
+    #yfi_fp_investing_ideas { 
+        display: none ! important; 
+    }
+}

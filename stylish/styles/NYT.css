@@ -1,0 +1,20 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("nytimes.com") {
+    #cColumn, .runaroundLeft, .shareTools, .emailAlertModule,
+    #insideNYTimesHeader, #footer, .metaFootnote, #breaking-news-email-promo,
+    #ribbon, #masthead, #site-index-navigation, #whats-next,
+    #TopAd1, #site-index, .interactive-image-container, .interactive,
+    #navigation, #masthead, #memberTools, #cCol, #blogroll,
+    .socialMediaModule, .ad, #footer, .subNavigation, .share, #header, .tabs,
+    .external-links, .interactive-embedded, .newsletter-signup,
+    #site-index, #whats-next, .text-ad, #page-footer, .ribbon, .navigation,
+    .video
+    { 
+        display: none ! important; 
+    }
+
+    #abColumn, #article { 
+        width: 100% ! important; 
+    }
+}

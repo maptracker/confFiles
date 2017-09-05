@@ -1,0 +1,23 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("stackexchange.com"), domain("serverfault.com"),
+domain("stackoverflow.com"), domain("superuser.com") {
+    .hero-box, #herobox, #newsletter-ad, .community-bulletin, #hero-content,
+    #chat-feature, #hlogo, #footer, #feed-link, #post-form, .newsletter-anon,
+    .hero-container
+    { 
+        display: none !important;
+    }
+    a:visited { 
+        color: purple ! important;
+    }
+    a.js-gps-track:visited { 
+        color : rgb(20, 121, 188) ! important;  
+    }
+    a.js-gps-track { 
+        color : rgb(20, 121, 188) ! important;  
+    }
+    #header { 
+        background-image: url('') ! important
+    }
+}

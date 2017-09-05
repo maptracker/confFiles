@@ -1,0 +1,37 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("reddit.com") {
+
+    div.entry.unvoted ul.flat-list.buttons { 
+        display: block ! important; 
+    }
+    body { background : none !important; }
+
+    .promotedlink, #siteTable_promoted,  .promoted, .arrow, div.side,
+    #header-bottom-right, .footer-parent, #cta-container-placeholder,
+    #fixed-side-footer-links, #recommendations, #promoted-spotlight,
+    #eu-cookie-policy, .report-button, .flair, .morecomments
+    { 
+        display: none ! important; 
+    }
+
+    ul.flat-list.buttons { 
+        display: none ! important; 
+    }
+
+    .comment { 
+        padding: 0px ! important; 
+        margin-bottom: 0px ! important; 
+    }
+
+    body div.content { 
+        margin: 0px 0px 0px 0px ! important; 
+    }
+
+    /* Sites that don't play well with my addons */
+    a[href*="gfycat.com"]
+    {
+        color: red ! important;
+        background-color: #999 ! important;
+    }
+}

@@ -1,0 +1,19 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("scp-wiki.net") {
+    .collapsible-block, .collapsible-block-content, 
+    .collapsible-block-unfolded, .collapsible-block-folded
+    { 
+        display: block !important;
+    }
+    
+    div[id|='wiki-tab']
+    { 
+        display: block !important; 
+        border-top: solid red 3px;
+    }
+    
+    a:visited { 
+        color: purple !important;
+    }
+}

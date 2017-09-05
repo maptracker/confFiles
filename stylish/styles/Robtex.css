@@ -1,0 +1,22 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("robtex.com") {
+    .filler, .separator, #x_discussion, #x_contact, #x_similar,
+    .inuls, header
+    { 
+        display: none !important; 
+        height: 0px ! important;  
+    }
+
+    div, section, .sep1, .sep2 { 
+        height: auto ! important; 
+    }
+    
+    #x_summary { 
+        background-color: #afa; 
+        position: absolute; 
+        left: 0px; 
+        top: 0px; 
+        width: 30em;
+    }  
+}

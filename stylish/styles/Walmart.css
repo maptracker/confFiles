@@ -1,0 +1,11 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("walmart.com") {
+    /*
+      #border, .MainColumn, #shelfDiv { width: 1200px ! important; }
+      */
+    .gridVertDiv { 
+        float: left ! important; 
+        display : none; 
+    }
+}

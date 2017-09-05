@@ -1,0 +1,15 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("go.com") {
+    #siteSubNav, #rsslisting, #show_promo, #itremble, .footer, .story_rail,
+    .show_tools, #story-features, .comments, #social-bar,
+    .headerbg, .headerBgContainer, #share-bottom , .short_nav, 
+    #disqus, #_fs_container, #nav, noscript, .dsq-brlink,
+    #sectionnav
+    { 
+        display: none ! important; 
+    }
+    #storyText p { 
+        left: 0px ! important; 
+    }
+}

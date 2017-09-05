@@ -1,0 +1,7 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("slate.com") {
+    .sidebar, #tablet_header, .social, .tablet-ad,
+    footer
+  { display: none ! important; }
+}

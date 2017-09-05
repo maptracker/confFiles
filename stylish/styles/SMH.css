@@ -1,0 +1,8 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("smh.com.au") {
+    .dropdown-panel, iframe, .fMastheadLinks, .classifieds , .header, .mySite
+    { 
+        display: none ! important; 
+    }
+}

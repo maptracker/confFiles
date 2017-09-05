@@ -1,0 +1,7 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("techtimes.com") {
+    header, .sidebar_in, .at_con { 
+        display: none ! important; 
+    }
+}

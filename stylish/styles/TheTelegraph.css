@@ -1,0 +1,9 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("telegraph.co.uk") {
+    .mnIframe, #tmg-related-links, .storyFt,
+    #section_puffs_01, .oneSixth, #top_stories_05, .pictureGrid
+    { 
+        display: none ! important; 
+    }
+}

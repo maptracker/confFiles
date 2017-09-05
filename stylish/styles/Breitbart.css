@@ -1,0 +1,9 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("breitbart.com") {
+    #breitbartpodcasts, #iscbbsocialconnect, #acurtschilling, #BBStoreLead,
+    #EmailOptin, #comments, .send-tip, #navFSocialUL
+    { 
+        display: none !important; 
+    }
+}

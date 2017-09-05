@@ -1,0 +1,36 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("twitter.com") {
+    .dashboard, #side_lists, #trends, #following,
+    .empty-home, .get-started-steps,
+    .empty-timeline, #global-nav-search, #user-dropdown-toggle,
+    .actions, .profile-header-inner-overlay, .profile-card.profile-header,
+    .promptbird, .BannersContainer, .promoted-tweet,
+    .ProfileSidebar, .ProfileCanopy, .ProfileHeading,
+    .PromptbirdPrompt-streamItem, .modal-container, .modal-overlay,
+    #introduce_retweet_banner, .promotion round,
+    .js-recommended-followers, #empty-timeline-recommendations,
+    .dashboard-left, .dashboard-right, .ProfileTweet-actionList,
+    .js-more-ProfileTweet-actions
+    { 
+        display:none ! important; 
+    }
+    
+    .ProfileTweet-actionCountList, .ProfileTweet-action--retweet,
+    .ProfileTweet-action--favorite
+    { 
+        display: inline ! important;    
+        position: relative ! important; 
+    }
+
+    .flex-module, .profile-card, .js-content-top, #page-container,
+    .ProfileTweet 
+    { 
+        width: 500px ! important; 
+    }
+    
+    .pull-right { 
+        float: left ! important; 
+        clear: none ! important; 
+    }
+}

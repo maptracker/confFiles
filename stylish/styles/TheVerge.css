@@ -1,0 +1,8 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("theverge.com") {
+    .c-dynamic-image, .c-related-list, aside, #comments,
+    .c-compact-river, footer, .l-col__sidebar, svg, symbol {
+      display : none ! important;
+    }
+}

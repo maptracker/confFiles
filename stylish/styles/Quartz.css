@@ -1,0 +1,6 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("qz.com") {
+  .progressive-image-thumbnail { display: none ! important; }
+  .progressive-image-large { opacity: unset ! important; }
+}

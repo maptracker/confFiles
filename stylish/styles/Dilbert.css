@@ -1,0 +1,10 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("dilbert.com") {
+    .HPG_Promo, .HPG_Promo_Template, .Col_B, .STR_Footer,
+    .CMT_CommentList, .STR_StripComments, .TTL_Strips, #strip_zoom,
+    .FTR_FooterTop, .FTR_Footer, .Header, .row, footer, .list-inline
+    {
+        display: none ! important; 
+    }
+}

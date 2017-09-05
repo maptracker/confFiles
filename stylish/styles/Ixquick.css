@@ -1,0 +1,21 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("ixquick.com"), domain("startpage.com") {
+    
+    /* Generally I'm looking for one of these: */
+    a[href*='stackoverflow'], a[href*='stackexchange'],
+    a[href*='serverfault'], a[href*='superuser'], 
+    a[href*="wikipedia.org"]
+    { 
+        background-color: lime ! important;
+    }
+
+    #sponsored, iframe, .banner-container
+    { 
+        display: none ! important; 
+    }
+
+    a:visited { 
+        color: purple !important;
+    }
+}
