@@ -60,10 +60,11 @@ noisy_cd "$HOME"
 CDIR="$my_dir"
 
 ## Basic conf files:
-link "$CDIR/.tmux.conf" ".tmux.conf"
-link "$CDIR/.bashrc"    ".bashrc"
-link "$CDIR/.emacs"     ".emacs"
-link "$CDIR/.psqlrc"    ".psqlrc"
+link "$CDIR/.tmux.conf"    ".tmux.conf"
+link "$CDIR/.bashrc"       ".bashrc"
+link "$CDIR/.emacs"        ".emacs"
+link "$CDIR/.psqlrc"       ".psqlrc"
+link "$CDIR/.bash_profile" ".bash_profile"
 
 ## Firefox stuff
 FFPROF=`$my_dir/systemSetup/findFirefoxProfile.sh 1`
