@@ -3,7 +3,7 @@
 @-moz-document domain("wikipedia.org") {
     #cn-sliding-ad, #centralNotice,#p-lang, 
     #siteNotice, #articleFeedbackv5-bottomrighttab , #frbanner3, #frbanner4,
-    #mw-panel
+    #mw-panel, #frb-inline
     { 
         display:none ! important; 
     }
