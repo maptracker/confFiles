@@ -99,8 +99,10 @@ sub restore {
     closedir($dh);
 
     my $json = JSON->new->allow_nonref;
-    my @fields = qw(name enabled updateUrl md5Url url originalMd5);
-    my @jf = map { $json->encode( $_ ) } @fields;
+    my @fields  = qw(name enabled updateUrl md5Url url originalMd5);
+    my @jf      = map { $json->encode( $_ ) } @fields;
+    my @wheres  = qw(domains urls urlPrefixes);
+    my @jw      = map { $json->encode( $_ ) } @wheres;
 
     open(JF, ">$jFile") || die "Failed to write JSON\n  $jFile\n  $!  ";
     print JF "[\n";
@@ -111,32 +113,53 @@ sub restore {
         my $name = $cf; $name =~ s/\.css$//;
         my $path = "$styDir/$cf";
         open(FILE, $path) || die "Failed to read CSS file:\n  $path\n  $!\n  ";
-        my $code = "";
-        my @domains;
+        my $code  = "";
+        my %where = map { $_ => [] } @wheres;
+        my $locs  = 0;
+        my $isStylish = 0;
 
         while (<FILE>) {
-            next if /^\@namespace/;
+            if (/^\@namespace/) {
+                $isStylish++;
+                next;
+            }
             my $line = $_;
-            if ($line =~ /domain\(/) {
+            next if (!$code && $line =~ /^\s*$/);
+            if (!$code && $line =~ /(url|url-prefix|domain)\(/) {
                 # Stylish format
-                while ($line =~ /(domain\(\s*"\s*([^"]+?)\s*"\s*\))/ ||
-                       $line =~ /(domain\(\s*'\s*([^']+?)\s*'\s*\))/) {
-                    my ($swp, $dom) = ($1, $2);
+                $isStylish++;
+                while ($line =~ /((url|url-prefix|domain)\(\s*"\s*([^"]+?)\s*"\s*\))/ ||
+                       $line =~ /((url|url-prefix|domain)\(\s*'\s*([^']+?)\s*'\s*\))/) {
+                    my ($swp, $what, $dom) = ($1, $2, $3);
                     $line =~ s/\Q$swp\E/ /;
-                    push @domains, $dom;
+                    
+                    if ($what eq 'domain') {
+                        push @{$where{domains}}, $dom;
+                    } elsif ($what eq 'url-prefix') {
+                        push @{$where{urlPrefixes}}, $dom;
+                    } elsif ($what eq 'url') {
+                        push @{$where{urls}}, $dom;
+                    }
+                    $locs++
                 }
                 next;
             }
-            $code .= $_ unless ($#domains == -1);
+            
+            $code .= $_;
         }
         close FILE;
         my @lines = map { defined $_ ? $_ : ""  } split(/\n/, $code);
+        ## Remove trailing blank lines:
         while ($#lines != -1 && $lines[-1] =~ /^\s*$/) { pop @lines; }
-        if ($#lines != -1 && $lines[-1] =~ /^\s*\}\s*$/) {
-            pop @lines;
-        } else {
-            warn "Failed to find terminal bracket for $cf";
-            next;
+        if ($isStylish) {
+            ## Remove the last '}' in a Stylish file
+            if ($#lines != -1 && $lines[-1] =~ /^\s*\}\s*$/) {
+                pop @lines;
+            } else {
+                warn "Failed to find terminal bracket for $cf. Last line:
+" .($#lines == -1 ? "-NO LINES-" : "'$lines[-1]'");
+                next;
+            }
         }
         print JF "  {\n";
         my $md = $mdata{$name} || {};
@@ -151,8 +174,17 @@ sub restore {
             } else {
                 $v = $json->encode($v);
             }
-            printf(JF "    %s: %s,\n", $jf[$fi], $v);
+            printf(JF "    %15s: %s,\n", $jf[$fi], $v);
         }
+        ## Just going to put everything into one "section"
+        printf(JF "    %15s: [{\n", '"sections"');
+        for my $wi (0..$#wheres) {
+            printf(JF "      %15s: %s,\n", $jw[$wi], 
+                   $json->encode($where{$wheres[$wi]}));
+        }
+        printf(JF "      %15s: %s\n", '"code"', 
+               $json->encode( join("\n", @lines) ));
+        print JF "    }]\n";
         print JF "  }";
         print JF "," unless ($ci == $#cFiles);
         print JF "\n";

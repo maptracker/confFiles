@@ -1,0 +1,1920 @@
+[
+  {
+             "name": "AbcNews",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["go.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #siteSubNav, #rsslisting, #show_promo, #itremble, .footer, .story_rail,\n    .show_tools, #story-features, .comments, #social-bar,\n    .headerbg, .headerBgContainer, #share-bottom , .short_nav, \n    #disqus, #_fs_container, #nav, noscript, .dsq-brlink,\n    #sectionnav\n    { \n        display: none ! important; \n    }\n    #storyText p { \n        left: 0px ! important; \n    }"
+    }]
+  },
+  {
+             "name": "Affymetrix",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["affymetrix.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    a:visited { \n        color:blue ! important; \n    }"
+    }]
+  },
+  {
+             "name": "AllRecipes",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["allrecipes.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #divGoBack, #divGoNext, .lo-container\n    { display: none ! important; }"
+    }]
+  },
+  {
+             "name": "Amazon",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["amazon.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    /* AWS stuff */\n    #marketingimagelink, #link_root_account_signin\n    {\n        display:none!important;\n    }"
+    }]
+  },
+  {
+             "name": "AmazonHider",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["amazon.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #related_adsLazyLoad, #AUI_A9AdsMiddleBoxTop, #nav-ad-background-style,\n    #ask-btf_feature_div, #hmdFormDiv, div.navFooterLine:nth-child(4),\n    div.navFooterLine:nth-child(2), div.navFooterLine:nth-child(5),\n    #nav-bar-inner.nav-sprite, #marketing, #wrapper-credit-account,\n    #wrapper-add-bank-account, #cart-upsell, #hlbcc, .prime-ad-banner-content,\n    #footer,\n    #hows-my-search, #poweredBy\n    { \n        display: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "AmazonOffers",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["amazon.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    /* SO. MUCH. SPAM. */\n    .updp-right-option, .prime-updp-messaging,  .adStripe2 ,\n    #sbbop-yes-button, .smTabCDiv, #cbcc_banner_container,\n    #availableForPrimeBox, #navFooter, #tellAFriendBox_feature_div,\n    #cbcc_banner, #wrapper-credit-account, #wrapper-add-bank-account,\n    #mom-child-form, #bbop-sbbop-container, #va-rel-videos-carousel,\n    #momSignupButton, .mom-check-mark, #mom-shipping-note, \n    #pe-bb-join-prime-section, #benefit-list, #quickPromoBucketContent,\n    iframe, #customer_discussions_lazy_load_div, #giveaway_feature_div,\n    .SP-Ad-Feedback, #sims-fbt, #tradeInButton_feature_div, \n    #oneClickSignIn, #unifiedLocation_feature_div, #siAddCoverage,\n    .GB-SHOVELER, .acs-bgtext-widget, #hows-my-search, #rhf, .advertisingTable,\n    .iss-ad-row, .bit-aa-install-widget-contents, #hero-quick-promo,\n    #alternativeOfferEligibilityMessaging_feature_div, \n    #edpIngress_feature_diva , #student_benefit_container\n    { \n        display: none ! important; \n    }\n    \n    .itemPriceDrop { \n        background-color: lime ! important; \n    }\n    \n    .itemAvailOfferedBy b { \n        color: red ! important; \n        background-color: yellow; \n    }\n    \n    #sbbop-no-button *, .no-thanks-link *, #mom-no-thanks *, \n    #siNoCoverage-announce \n    { \n        font-size: 2em; \n        font-weight: bold; \n        color: darkgreen ! important; \n        background-color: yellow; \n    }\n\n    .no-thanks-link, #cancel_button_container { \n        height: 3em ! important; \n        width: 1000px ! important; \n        border: solid green 1px; \n    }\n    #cancel_button_container a { \n        background-color: yellow; \n        font-size: 2em ! important; \n        font-weight: bold; \n        color: red; \n    }\n    #pe-fallback-msgbox { \n        background-color: yellow ! important; \n    }"
+    }]
+  },
+  {
+             "name": "BBC",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["bbc.co.uk","bbc.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .share, #comp-pattern-library-2, #core-navigation, .tags-container,\n    .orb-footer-inner, #comp-features-and-analysis, .related-links,\n    #comp-top-stories-promo, .player-with-placeholder__caption\n    { display : none ! important; }"
+    }]
+  },
+  {
+             "name": "BioConductor",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["bioconductor.org"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "  .preformatted { white-space:pre ! important;}"
+    }]
+  },
+  {
+             "name": "Bloomberg",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["bloomberg.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    noscript, #nav_news_dropdown_container, #disqus_thread, \n    #story_social_toolbar_bottom, #market_snapshot_simple,\n    #footer, .dropdown_section, .story_inline, .ham_nav_container, \n    #story_social_toolbar_top_container, #header_container,\n    .header_top_unit, .social_tout, header.global,aside, #global_footer  \n    { \n        display: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "BostonGlobe",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["bostonglobe.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #masthead, #section-nav, .tools, footer, .inlineNewsletter__wrapper,\n    .inline-newsletter\n    { \n        display: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "BostonHerald",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["bostonherald.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "  .inform-embed, .view-photo-box, #page-header, #radio,\n  footer, .comments, .social\n  { display: none ! important; }"
+    }]
+  },
+  {
+             "name": "Breitbart",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["breitbart.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #breitbartpodcasts, #iscbbsocialconnect, #acurtschilling, #BBStoreLead,\n    #EmailOptin, #comments, .send-tip, #navFSocialUL\n    { \n        display: none !important; \n    }"
+    }]
+  },
+  {
+             "name": "BusinessWeek",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["businessweek.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #middle_rail, .column { \n        width: 100% ! important; \n    }"
+    }]
+  },
+  {
+             "name": "CbsNews",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["cbsnews.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "  .shortcode, .media-list, iframe, .social,\n  .site-nav__item-anchor, .article-video-container,\n  .listing-media-feature, .module, footer, .smart-banner-cbsn,\n  .module-rem, .media-block, .media-figure\n  {\n    display: none !important; \n  }\n  header { height: auto ! important; }"
+    }]
+  },
+  {
+             "name": "CheckFreeWeb",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["checkfreeweb.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #upsellheader,  #upsellContainer, #ebillSignUpUpSellSlideBoxArea,\n    .intrstl-body, .intrstl-hero-heading, .proceedToRegistration,\n    .learnMore, .reg-features-half, .reg-features-full,\n    #bankDepositHeading, .ad-lrg\n    { \n        display: none ! important; \n    }\n    \n    .internal-link.odd-link-fl { \n        font-size: 300%; \n        color: darkgreen; \n        font-weight: bold;\n    }\n    \n    #payAsstContainer, #pabody, #payAsstAmtView\n    { \n        height: 300px ! important; \n    }\n    \n    .def-data { \n        background-color: yellow ! important; \n        font-size: 2em;\n        font-family: Courier; \n        font-weight: bold; \n        padding: 10px 0 10px 0; \n    }\n    \n    .deliver-month, .deliver-day { \n        background-color: cyan ! important;  \n    }"
+    }]
+  },
+  {
+             "name": "Citicard",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["citi.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #virtualImage, .cA-DD-offer, .cA-spf-rewardsWrapper,\n    .cA-spf-rewardsLinkWrapper, .cA-ada-offersBenefitsDoubleContainer\n    { \n        display: none ! important;\n    }\n    \n    .cA-ada-quickLinkContainer, .cA-ada-quickLinkWrapper {\n        background-color: red ! important; \n        color: yellow ! important;\n    }\n    \n    #cmlink_SvcVANEnroll { \n        font-size: 2em ! important; \n        font-weight:\n        bold !important; \n    }"
+    }]
+  },
+  {
+             "name": "CNN",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["cnn.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .cnnStryVidCont, .map-canvas, .cnn_stryshrwdgtbtm, #cnn_ftrcntnt, \n    .js-owl-filmstrip, #cnn_hdr-main, #large-media, iframe, \n    #leaf-footer-article-zone, .el__featured-video, .pg-rail-tall__head,\n    footer, #story-bottom\n    { \n        display : none ! important; \n    }\n    .media__image { transition: unset ! important; }"
+    }]
+  },
+  {
+             "name": "ConsumerFinance",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["consumerfinance.gov"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .o-mega-menu_content {\n        display: none!important;\n    }"
+    }]
+  },
+  {
+             "name": "Coursera",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["coursera.org"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .c-verification-info-text, .c-setup-info, .rc-PromoBanner,\n    .rc-ExploreCourses, .rc-PageFooter\n    { \n        display: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "Crea",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["siegegames.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .quotecontent div \n    { \n        display: block ! important; \n    }"
+    }]
+  },
+  {
+             "name": "CSMonitor",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["csmonitor.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #ezve-right-col-2-r14, #ui-right-column, .promo_link, #full_width_promo,\n    #ui-page-above-footer-1, #ui-page-above-footer-2, #ui-page-footer\n    { \n        display: none !important; \n    }"
+    }]
+  },
+  {
+             "name": "DailyBeast",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["thedailybeast.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .blockquote, .cheatSignUp, .comments-link, .social, .cheatAd, .ad,\n    #utilitiyLinks, .fb-like, .login-search-nav, .topicHeading,\n    .brightcove, .cheat-aside \n    { \n        display: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "DailyShow",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["www.thedailyshow.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #oo_container\n    { \n        display: none ! important;\n    }"
+    }]
+  },
+  {
+             "name": "DeviantArt",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["deviantart.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #printtabscontainer {\n        display: none ! important\n    }"
+    }]
+  },
+  {
+             "name": "Dilbert",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["dilbert.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .HPG_Promo, .HPG_Promo_Template, .Col_B, .STR_Footer,\n    .CMT_CommentList, .STR_StripComments, .TTL_Strips, #strip_zoom,\n    .FTR_FooterTop, .FTR_Footer, .Header, .row, footer, .list-inline\n    {\n        display: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "Disqus",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["disqus.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    li.share { \n        display: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "distrowatch",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["distrowatch.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    a[href*='3cx'], a[href*='acunetix']  { \n        display: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "Dreamwidth",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["dreamwidth.org"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    /* What were we doing with this? Wiki option at some point? */\n    .comment-content { min-height: 0px}\n    div.footer { \n        display: none ! important;\n    }"
+    }]
+  },
+  {
+             "name": "DwarfFortress",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["bay12forums.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .spoiler, .spoilerheader,.spoilerbody { \n        display: block ! important; \n    }"
+    }]
+  },
+  {
+             "name": "EasyMatch",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["easymatch.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #banner { \n        display: none; \n    }"
+    }]
+  },
+  {
+             "name": "Ebay",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["ebay.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .nojs, .nojs * { \n        display:none !important; \n    }"
+    }]
+  },
+  {
+             "name": "Economist",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["economist.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .ec-homepage-player, #product-events, .footer-stripe-bottom,\n    .footer-stripe-top, .mh-stripe, #ec-cookie-messages-container,\n    #block-ec_social-right_rail_social_share_buttons,\n    #block-ec_components-page_tools_compact, .share_inline_header,\n    #block-ec_components-print_sub, #comments-header, \n    a[href*='www.economist.com/digital/apps'], .navigation-sticky-scroller,\n    .main-content__video-collection, #bottom-page-wrapper,\n    .latest-printed, .share-component\n    { \n        display: none ! important; \n    }\n\n    p {\n        margin-left: 1em ! important; \n    }\n    \n    a:visited, a:visited * { \n        color : purple ! important; \n    }\n    .imagefield { \n        position: relative !important; \n        z-index: 999999 ! important; \n    }"
+    }]
+  },
+  {
+             "name": "FireceBiotech",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["fiercebiotech.com","fiercepharma.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #sidebar, #footer, .pane-sister-sites, .pane-sponsored-content\n    { \n        display: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "Flickr",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["flickr.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .facade-of-protection-neue, .signup-footer-view, .sub-photo-ad-view,\n    #preloaded-ad-frame, #pro-upsell-image\n    { \n        display: none ! important; \n    }\n\n    .navigate-target { \n        width:10em ! important\n    }"
+    }]
+  },
+  {
+             "name": "food.com",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["www.food.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .flyout {\n        display: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "Fortune",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["fortune.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "  /* what a weird way to manage a page... */\n  p, a { visibility: unset ! important; }"
+    }]
+  },
+  {
+             "name": "FreeDictionary",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["thefreedictionary.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .OvBorder\n    { \n        display: none; \n    }"
+    }]
+  },
+  {
+             "name": "Gamepedia",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["gamepedia.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .show-ads, #netbar { \n        display: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "GameSpot",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["gamespot.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    footer , #masthead { \n        display : none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "GenAccAtom",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": [],
+               "urls": [],
+        "urlPrefixes": ["http://bioinformatics.bms.com/biocgi/tilfordc/working/maptracker/MapTracker/genacc_service.pl","http://bioinformatics.bms.com/biocgi/genacc_service.pl"],
+               "code": "    .entry { border: solid black 2px; float: left; padding: 0.5em; margin: 2px; }\n   .lastUpdated { font-style: italic; }\n .feedEntryContent { font-weight: bold; color: orange; }\n    /* div { clear: none ! important; } */"
+    }]
+  },
+  {
+             "name": "Genepool",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": [],
+               "urls": ["http://genepool/"],
+        "urlPrefixes": [],
+               "code": "    .chart { \n        float: left; \n    }"
+    }]
+  },
+  {
+             "name": "GenomeBiology",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["genomebiology.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    p {\n        font-size: 1.5em ! important; \n    }"
+    }]
+  },
+  {
+             "name": "GitHub",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["github.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .signup-prompt-bg\n    { display : none ! important; }"
+    }]
+  },
+  {
+             "name": "GOG",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["gog.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .is-owned { \n        display: none ! important\n    }\n    .icon-linux { \n        background-color: darkorange ! important;\n        margin:3px; \n        border: solid orange 2px;  \n    }\n    .product-row__rating {\n        display:inline ! important; \n        width: 3px ! important;\n    }\n    .icon-win, .icon-mac, .icon-plus { \n        display: none ! important\n    }\n\n    /* #wishlistHolder .invisible { display: block ! important } */\n    \n    .star-rating--50 { background-color: lime; }\n    .star-rating--45 { background-color: green; }\n    .star-rating--40 { background-color: yellowgreen; }\n    .star-rating--35 { background-color: yellow; }\n    .star-rating--30 { background-color: pink; }\n    .star-rating--25 { background-color: red; }\n    .star-rating--20 { background-color: red; }\n    .star-rating--15 { background-color: black; }\n    .star-rating--10 { background-color: black; }\n    \n    /* These attributes are no longer being set */\n    .product-row__rating[star-rating=\"50\"] { background-color: lime; }\n    .product-row__rating[star-rating=\"49\"] { background-color: lime; }\n    .product-row__rating[star-rating=\"48\"] { background-color: lime; }\n    .product-row__rating[star-rating=\"47\"] { background-color: green; }\n    .product-row__rating[star-rating=\"46\"] { background-color: green; }\n    .product-row__rating[star-rating=\"45\"] { background-color: green; }\n    .product-row__rating[star-rating=\"44\"] { background-color: yellowgreen; }\n    .product-row__rating[star-rating=\"43\"] { background-color: yellowgreen; }\n    .product-row__rating[star-rating=\"42\"] { background-color: yellowgreen; }\n    .product-row__rating[star-rating=\"41\"] { background-color: yellow; }\n    .product-row__rating[star-rating=\"40\"] { background-color: yellow; }\n    .product-row__rating[star-rating^=\"3\"] { background-color: pink; }\n    .product-row__rating[star-rating^=\"2\"] { background-color: red; }\n    .product-row__rating[star-rating^=\"1\"] { background-color: black; }\n    \n    /* Owned games from other sources */\n    *[gog-product=\"1207659024\"], /* botanicula */\n    *[gog-product=\"1207659753\"], /* vvvvvvvv */\n    *[gog-product=\"1207664843\"], /* space_pirates_and_zombies */\n    *[gog-product=\"1207660134\"], /* race_the_sun */\n    *[gog-product=\"1425657908\"], /* skulls_of_the_shogun */\n    *[gog-product=\"1207659018\"], /* spacechem */\n    *[gog-product=\"1207659017\"], /* machinarium */\n    *[gog-product=\"1207659209\"], /* Papers Please */\n    *[gog-product=\"1207659259\"], /* Amnesia */\n    *[gog-product=\"1421855536\"], /* world of goo */\n    *[gog-product=\"1430398832\"], /* aquaria */\n    *[gog-product=\"1207659016\"], /* grimrock */\n    *[gog-product=\"1207660913\"], /* shadowrun */\n    *[gog-product=\"1207665343\"], /* ai war */\n    *[gog-product=\"1207659020\"], /* trine */\n    *[gog-product=\"1207659033\"], /* uplink */\n    *[gog-product=\"1207659072\"], /* to the moon */\n    *[gog-product=\"1438343741\"], /* frozen_synapse */\n    *[gog-product=\"1207659014\"], /* darwinia */\n    *[gog-product=\"1207659124\"], /* deponia 2 */\n    *[gog-product=\"1207660563\"], /* risk of rain */\n    *[gog-product=\"1207664703\"], /* Desktop Dungeons */\n    *[gog-product=\"1207665283\"], /* kingdom rush */\n    *[gog-product=\"1436866438\"], /* shadowrun hk */\n    *[gog-product=\"1207659145\"], /* stacking */\n    *[gog-product=\"1207659513\"], /* guacamelee */\n    *[gog-product=\"1207660104\"], /* pixeljunk */\n    *[gog-product=\"1207660253\"], /* dustforce */\n    *[gog-product=\"1207665323\"], /* ai war */\n    *[gog-product=\"1207659132\"], /* costume quest */\n    *[gog-product=\"1207659220\"], /* eschalon */\n    *[gog-product=\"1207665333\"], /* ai war */\n    *[gog-product=\"1207664603\"], /* among the sleep */\n    *[gog-product=\"1207667123\"], /* anomaly */\n    *[gog-product=\"1207667133\"], /* anomaly korea */\n    *[gog-product=\"1207659164\"], /* bards tale */\n    *[gog-product=\"1207666373\"], /* baldurs gate ii */\n    *[gog-product=\"1207666353\"], /* baldurs gate */\n    *[gog-product=\"1207665193\"], /* blocks that matter */\n    *[gog-product=\"1434013541\"], /* breach and clear */\n    *[gog-product=\"1434036647\"], /* breach and clear */\n    *[gog-product=\"1207659253\"], /* brutal legend */\n    *[gog-product=\"1446823701\"], /* card city nights */\n    *[gog-product=\"1207659075\"], /* defcon */\n    *[gog-product=\"1207659953\"], /* democracy 3 */\n    *[gog-product=\"1207666613\"], /* democracy 3 */\n    *[gog-product=\"1207664493\"], /* democracy 3 */\n    *[gog-product=\"1207660663\"], /* democracy 3 */\n    *[gog-product=\"1207660233\"], /* deponia 3 */\n    *[gog-product=\"1207660683\"], /* eschalon iii */\n    *[gog-product=\"1207665163\"], /* gone home */\n    *[gog-product=\"1207666533\"], /* halfway */\n    *[gog-product=\"1207659483\"], /* hammerwatch */\n    *[gog-product=\"1207666683\"], /* icewind dale */\n    *[gog-product=\"1434445160\"], /* ironclad tactics */\n    *[gog-product=\"1444053723\"], /* little inferno */\n    *[gog-product=\"1446797453\"], /* last federation */\n    *[gog-product=\"1207661993\"], /* luftrausers */\n    *[gog-product=\"1207659074\"], /* multiwinia */\n    *[gog-product=\"1207665033\"], /* olliolli */\n    *[gog-product=\"1207660064\"], /* outlast */\n    *[gog-product=\"1207664463\"], /* outlast */\n    *[gog-product=\"1207667073\"], /* pixel piracy */\n    *[gog-product=\"1207659049\"], /* retro city */\n    *[gog-product=\"1207660413\"], /* shadowrun returns */\n    *[gog-product=\"1440061546\"], /* shadowrun hk */\n    *[gog-product=\"1439900139\"], /* shadowrun hk */\n    *[gog-product=\"1207659160\"], /* Shattered Haven */\n    *[gog-product=\"1207660263\"], /* Shivah */\n    *[gog-product=\"1207664303\"], /* Sir You are Being Hunted */\n    *[gog-product=\"1207665863\"], /* spacecom */\n    *[gog-product=\"1207660733\"], /* steamworld dig */\n    *[gog-product=\"1207660213\"], /* super hexagon */\n    *[gog-product=\"1446796759\"], /* last federation */\n    *[gog-product=\"1207660863\"], /* tower of guns */\n    *[gog-product=\"1207665053\"], /* unrest */\n    *[gog-product=\"1207665063\"], /* unrest */\n    *[gog-product=\"1207665073\"], /* unrest */\n    *[gog-product=\"1207665843\"], /* shadowgate */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n\n    /* Stupid stuff like soundtracks*/\n    *[gog-product=\"1443432851\"],\n    *[gog-product=\"1432563933\"],\n    *[gog-product=\"1432925124\"],\n    *[gog-product=\"1432925592\"],\n    *[gog-product=\"1428489988\"],\n    *[gog-product=\"1437732694\"],\n    *[gog-product=\"1445245918\"],\n    *[gog-product=\"1433148949\"],\n    *[gog-product=\"1444761329\"],\n    *[gog-product=\"1440698774\"],\n    *[gog-product=\"1207666873\"],\n    *[gog-product=\"1429612255\"],\n    *[gog-product=\"1436531655\"],\n    *[gog-product=\"1839729056\"], /* real texas */\n    *[gog-product=\"2140144873\"], /* rel texas */\n    *[gog-product=\"1735987864\"], /* shadow warrior */\n    *[gog-product=\"1207658828\"], /* gabriel knight */\n    *[gog-product=\"1207664393\"], /* blackwell */\n    *[gog-product=\"1207658837\"], /* gabriel knight */\n    *[gog-product=\"1207660094\"], /* dust */\n    *[gog-product=\"1423058311\"], /* bastion */\n    *[gog-product=\"1445250653\"], /* pirates */\n    *[gog-product=\"1452686647\"], /* samorost */\n    *[gog-product=\"1453277526\"], /* samorost */\n    *[gog-product=\"1207658843\"], /* gabriel knight */\n    *[gog-product=\"1440603706\"], /* stasis */\n    *[gog-product=\"1461061433\"], /* braid */\n    *[gog-product=\"1207665633\"], /* dreamfall */\n    *[gog-product=\"1447947499\"], /* besiege */\n    *[gog-product=\"1207658834\"], /* phantasmagoria */\n    *[gog-product=\"1207659166\"], /* avadon */\n    *[gog-product=\"1440603896\"], /* stasis */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    /* Stuff I simply do not want, or is horribly rated */\n\n    *[gog-product=\"1446465369\"],\n    *[gog-product=\"1443779037\"],\n    *[gog-product=\"1443778814\"],\n    *[gog-product=\"1442564308\"],\n    *[gog-product=\"1442910108\"],\n    *[gog-product=\"1443778954\"],\n    *[gog-product=\"1441717336\"],\n    *[gog-product=\"1207665143\"], /* mark of the ninja */\n    *[gog-product=\"1439377578\"],\n    *[gog-product=\"1450092067\"],\n    *[gog-product=\"1450100911\"],\n    *[gog-product=\"1207658941\"], /* lil devil */\n    *[gog-product=\"1207664403\"], /* pinball world */\n    *[gog-product=\"1207658856\"], /* blood */\n    *[gog-product=\"1207665153\"], /* wasteland 2 */\n    *[gog-product=\"1436885138\"], /* dungeons 2 poor ratings */\n    *[gog-product=\"1513949567\"], /* everspace - garbage wine */\n    *[gog-product=\"1207666123\"], /* starpoint gemini 2 - garbage wine (directx 11) */\n    *[gog-product=\"1422618200\"], /* paranautical activity 2 stars */\n    *[gog-product=\"1444830704\"], /* owned */\n    *[gog-product=\"1207664993\"], /* owned */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n\n    *[gog-product=\"0\"] /*  */  \n    {\n        display: none ! important;\n    }"
+    }]
+  },
+  {
+             "name": "Google",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["google.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #s_PERSONALIZATION, .additional-video,\n    .video box, .media-strip, .footer, #rt-col,\n    .share-button-wrapper, .gsid-FVD, #FEATURED_VIDEOS,\n    #en_us-e, #en_us-s, #en_us-m, #en_us-b, \n    .section-en_us-e, .section-en_us-s, .section-en_us-m,\n    #taw, #bottomads, #fll, #fblqf, #fblsh, #gbvg, #wmxmsg,\n    #promo-section, #settings-button, #gbgs4, .pmoabs, #dftvp,\n    .gb_ga, .gb_g, .gb_Mb.gb_ee.gb_R, .section-me-oscars-2016,\n    .section-en_us-b, section-en_us-e, .section-me-ncaa-tournament-2016,\n    .section-en_us-tc, .section-me-masters-2016,\n    .gb_ha, .section-en_uk-e, .section-en_uk-s, #gbw,\n    .mnr-c, #gbwa, #gbw, #ad-source, #ad-label, #groups, #topstuff,\n    #ms, #lc, .share-bar-table, #gbgs4, #gbgs5, .side-appbar,\n    .plusone-box, #gf-foot, .appbar-add, #ad, #calendar, .SP_calendar,\n    .sfe-break-right-em, .gpost,\n    .ad-target2-wrapper, .hdg, #gmm-panel-promo, #copyright, #gbu, #notify-box,\n    .rmi-rpl-bottom, #s_SPORTS_GADGET, #s_EDITORS_PICK, #s_INTERESTING\n    { \n        display: none ! important; \n    }\n\n    a[href*=\"forbes.com\"]\n    {\n        /* does not play well with my browser configuration */\n        color: red ! important;\n    }"
+    }]
+  },
+  {
+             "name": "GoogleFinanceHide",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["www.google.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    /* Links I didn't find useful */\n    a[href*=\"marketintelligencecenter.com\"], a[href*=\"pr-usa.net\"],\n    a[href*=\"pr-inside.com\"], a[href*=\"123jump.com\"],\n    a[href*=\"forextv.com\"], a[href*=\"tradingmarkets.com\"],\n    a[href*=\"blacknews.com\"], a[href*=\"live-pr.com\"],\n    a[href*=\"transworldnews.com\"], a[href*=\"medscape.com\"],\n    a[href*=\"foxbusiness.com\"], a[href*=\"thestreet.com\"],\n    a[href*=\"sys-con.com\"], a[href*=\"twst.com\"],\n    a[href*=\"menafn.com\"], a[href*=\"ad-hoc-news.de\"],\n    a[href*=\"prminds.com\"], a[href*=\"gurufocus\"],\n    a[href*=\"marketoracle.co.uk\"], a[href*=\"businesswire.com\"],\n    a[href*=\"benzinga.com\"], a[href*=\"istockanalyst.com\"],\n    a[href*=\"investorplace.com\"], a[href*=\"mysmartrend.com\"],\n    a[href*=\"investors.com\"], a[href*=\"courant.com\"],\n    a[href*=\"piqqem.com\"], a[href*=\"earthtimes.org\"],\n    a[href*=\"emailwire.com\"], a[href*=\"cnanalyst.com\"],\n    a[href*=\"msn.com\"], a[href*=\"tradershuddle.com\"],\n    a[href*=\"articleant.com\"], a[href*=\"lexology.com\"],\n    a[href*=\"schaeffersresearch.com\"], a[href*=\"zacks.com\"],\n    a[href*=\"chartpoppers\"], a[href*=\"tapebeat\"],\n    a[href*=\"wallstreetbay\"], a[href*=\"efreepressrelease\"],\n    a[href*=\"americanbankingnews\"], a[href*=\"savvystockpicks\"],\n    a[href*=\"stockbling\"], a[href*=\"galaxystocks\"],\n    a[href*=\"etfchannel\"], a[href*=\".sbwire.com\"],\n    a[href*=\"4-traders.com\"], a[href*=\"northforkvue.com\"],\n    a[href*=\"jutiagroup\"], a[href*=\"tickerreport.com\"],\n    a[href*=\"aaaresearchreports\"], a[href*=\"aaaaa\"], a[href*=\"aaaaa\"],\n    a[href*=\"aaaaa\"], a[href*=\"aaaaa\"]\n\n    { \n        display:none ! important\n    }\n\n    .pin\n    { \n        height: 8px ! important; \n    }\n\n    .xxnews-item { \n        height: 1.4em; \n    }"
+    }]
+  },
+  {
+             "name": "GoogleNews",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["news.google.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .personalization-video-pane, .additional-video, .a2-edit-icon, .bottom,\n    .share-icons, #en_us-s, #en_us-m, #en_us-e, .section-en_us-s, \n    .section-en_us-e, .section-en_us-m, #promo-section, .footer-disclaimer,\n    .section-en_us-tc, .section-en_us-b, .media-strip,\n    .section-me-us-open-2015, .section-me-ncaa-tournament-2016,\n    .section-me-masters-2016, .section-me-nba-finals-2016,\n    .gb_sc, .ovLBK, .QWO3dd, div[jsname=\"dNnLb\"], .fkWPz, .jjs37b, footer,\n    c-wiz[jsdata*=\"promos\"],\n    c-wiz[data-label=\"Business\"],\n    c-wiz[data-label=\"Technology\"],\n    c-wiz[data-label=\"Health\"],\n    c-wiz[data-label=\"Sports\"],\n    c-wiz[data-label=\"Entertainment\"]\n\n    {\n        display: none ! important;\n    }\n    \n    a[href*=\"forbes.com\"], a[href*=\"japantimes.co.jp\"],\n    a[href*=\".wsj.com\"]\n    {\n        /* does not play well with my browser configuration \n           or is paywalled */\n        background-color: #faa ! important; \n        color: #888 ! important; \n        font-size: 0.7em ! important\n    }\n    .zQTmif\n    {\n        margin-left: 10px ! important;\n    }\n    /* Suppress vieo results */\n    c-wiz[data-yt-video-id] { display: none ! important; }"
+    }]
+  },
+  {
+             "name": "GroupTribune",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["chicagotribune.com","latimes.com","baltimoresun.com","orlandosentinel.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    /* Tribune papers share the same CSS */\n    .div[data-adloader-adtype], .trb_cm, .trb_sc, .trb_nls_c,\n    .trb_bnn, .trb_bottomAdBanner, .trb_ar_summary_load,\n    .trb_ar_taboolaCmpn, .trb_masthead, .trb_nh_uw, .trb_embed_media_link,\n    .trb_nh, .trb_bnn, .trb_socialize, .trb_cm, .trb_nls_c,\n    .trb_ar_summary_load, .trb_video_embeddedvideo,\n    .trb_embed_imageContainer_figure, iframe, .mod-adcpc,\n    *[data-role='notification'], *[data-role='nls'],\n    *[data-role='cm_expandable'], *[data-role*='delayload']\n\n    { \n        display : none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "Guardian",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["guardian.co.uk"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .m-guardianbookshop, .named-trailblock, .twitter-container, .jobs-box,\n    .share-links, .facebook, .tweet, #footer, #header,\n    .list-of-trails\n    { \n        display: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "Habitica",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["habitica.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "  .modal, .modal-backdrop { display : none ! important;}"
+    }]
+  },
+  {
+             "name": "HumbleMasker",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["humblebundle.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "/* Listed games will be hidden in Humble's store. Includes:\n   Games I've bought, at Humble or elsewhere\n   Ones that came in a bundle\n   Games I have no interest in buying  */\n\n    .hero-banner { \n        display: none ! important; \n    }\n    \n    li[data-entity-key=\"torchlight_storefront\"],\n    li[data-entity-key=\"torchlight2_storefront\"],\n    li[data-entity-key=\"maxsbigbust_acaptainnekoraitale_storefront\"],\n    li[data-entity-key=\"huniepop_storefront\"],\n    li[data-entity-key=\"tis_100_storefront\"],\n    li[data-entity-key=\"prisonarchitect_storefront\"],\n    li[data-entity-key=\"papersplease_storefront\"],\n    li[data-entity-key=\"hotlinemiami_wildlife_complete_storefront\"],\n    li[data-entity-key=\"bindingofisaac_storefront\"],\n    li[data-entity-key=\"hotlinemiami2_special_storefront\"],\n    li[data-entity-key=\"elseheart_break_storefront\"],\n    li[data-entity-key=\"minimetro_storefront\"],\n    li[data-entity-key=\"outlast_storefront\"],\n    li[data-entity-key=\"dayofthetentacle_storefront\"],\n    li[data-entity-key=\"reassembly_storefront\"],\n    li[data-entity-key=\"cavestoryplus_storefront\"],\n    li[data-entity-key=\"crimsonland_storefront\"],\n    li[data-entity-key=\"huniecam_studio_storefront\"],\n    li[data-entity-key=\"ponyisland_storefront\"],\n    li[data-entity-key=\"ironclad_storefront\"],\n    li[data-entity-key=\"xenonauts_storefront\"],\n    li[data-entity-key=\"zenbound2_storefront\"],\n    li[data-entity-key=\"wormsreloaded_worms2armageddon_storefront\"],\n    li[data-entity-key=\"wizorb_storefront\"],\n    li[data-entity-key=\"windosill_storefront\"],\n    li[data-entity-key=\"weirdworlds_rtis_storefront\"],\n    li[data-entity-key=\"vvvvvv_storefront\"],\n    li[data-entity-key=\"wakingmars_storefront\"],\n    li[data-entity-key=\"vessel_storefront\"],\n    li[data-entity-key=\"unsummoning_thespectralhorde_storefront\"],\n    li[data-entity-key=\"unrest_storefront\"],\n    li[data-entity-key=\"unmechanical_storefront\"],\n    li[data-entity-key=\"unityofcommand_redturn_storefront\"],\n    li[data-entity-key=\"unityofcommand_blackturn_storefront\"],\n    li[data-entity-key=\"unepic_storefront\"],\n    li[data-entity-key=\"type_rider_storefront\"],\n    li[data-entity-key=\"trine_storefront\"],\n    li[data-entity-key=\"trine3_storefront\"],\n    li[data-entity-key=\"trine2complete_storefront\"],\n    li[data-entity-key=\"tri_storefront\"],\n    li[data-entity-key=\"towerofguns_storefront\"],\n    li[data-entity-key=\"towerfall_darkworld_storefront\"],\n    li[data-entity-key=\"tothemoon_storefront\"],\n    li[data-entity-key=\"tomboftyrants_storefront\"],\n    li[data-entity-key=\"tokitori2_storefront\"],\n    li[data-entity-key=\"toby_thesecretmine_storefront\"],\n    li[data-entity-key=\"tinykeep_storefront\"],\n    li[data-entity-key=\"tinyandbig_storefront\"],\n    li[data-entity-key=\"tidalis_storefront\"],\n    li[data-entity-key=\"theswapper_storefront\"],\n    li[data-entity-key=\"therealtexas_storefront\"],\n    li[data-entity-key=\"thelasttinker_storefront\"],\n    li[data-entity-key=\"thelastfederation_storefront\"],\n    li[data-entity-key=\"thelastfederation_betrayedhope_storefront\"],\n    li[data-entity-key=\"theinnerworld_storefront\"],\n    li[data-entity-key=\"theforestofdoom_storefront\"],\n    li[data-entity-key=\"thebridge_storefront\"],\n    li[data-entity-key=\"tetrobotandco_storefront\"],\n    li[data-entity-key=\"teslagrad_storefront\"],\n    li[data-entity-key=\"talesofmajeyal_storefront\"],\n    li[data-entity-key=\"talesofmajeyal_ashesofurhrok_storefront\"],\n    li[data-entity-key=\"swordandsworcery_storefront\"],\n    li[data-entity-key=\"survivorsquad_storefront\"],\n    li[data-entity-key=\"surgeonsimulator2013_storefront\"],\n    li[data-entity-key=\"supertimeforce_ultra_storefront\"],\n    li[data-entity-key=\"supermeatboy_storefront\"],\n    li[data-entity-key=\"superhexagon_storefront\"],\n    li[data-entity-key=\"ftlfasterthanlight_storefront\"],\n    li[data-entity-key=\"starbound_storefront\"],\n    li[data-entity-key=\"loversinadangerousspacetime_storefront\"],\n    li[data-entity-key=\"bigpharma_storefront\"],\n    li[data-entity-key=\"antichamber_storefront\"],\n    li[data-entity-key=\"limbo_storefront\"],\n    li[data-entity-key=\"splice_storefront\"],\n    li[data-entity-key=\"tw_warhammer_realmofthewoodelves_storefront\"],\n    li[data-entity-key=\"total_wartm_warhammer__chaos_warriors_race_pack_storefront\"],\n    li[data-entity-key=\"twwh_thegrimandthegrave_storefront\"],\n    li[data-entity-key=\"tw_warhammer_thekingandthewarlod_storefront\"],\n    li[data-entity-key=\"victorvran_storefront\"],\n    li[data-entity-key=\"factorio_storefront\"],\n    li[data-entity-key=\"tw_warhammer_callofthebeastmen_storefront\"],\n    li[data-entity-key=\"tw_warhammer_bloodforthebloodgod_storefront\"],\n    li[data-entity-key=\"stardewvalley_storefront\"],\n    li[data-entity-key=\"terraria_storefront\"],\n    li[data-entity-key=\"shatteredhaven_storefront\"],\n    li[data-entity-key=\"tokitori_storefront\"],\n    li[data-entity-key=\"stardustvanguards_storefront\"],\n    li[data-entity-key=\"stacking_storefront\"],\n    li[data-entity-key=\"solarflux_storefront\"],\n    li[data-entity-key=\"shadowgrounds_survivor_storefront\"],\n    li[data-entity-key=\"shadowgrounds_storefront\"],\n    li[data-entity-key=\"the39steps_storefront\"],\n    li[data-entity-key=\"trainfever_storefront\"],\n    li[data-entity-key=\"psychonauts_storefront\"],\n    li[data-entity-key=\"massivechalice_storefront\"],\n    li[data-entity-key=\"journeyofaroach_storefront\"],\n    li[data-entity-key=\"hacknslash_withsoundtrack_storefront\"],\n    li[data-entity-key=\"goodbyedeponia_storefront\"],\n    li[data-entity-key=\"brutallegend_storefront\"],\n    li[data-entity-key=\"costumequest_storefront\"],\n    li[data-entity-key=\"deponia_storefront\"],\n    li[data-entity-key=\"edge_storefront\"],\n    li[data-entity-key=\"breachandclear_storefront\"],\n    li[data-entity-key=\"battlestation_harbinger_storefront\"],\n    li[data-entity-key=\"curseofthecrescentisledx_storefront\"],\n    li[data-entity-key=\"unityofcommand_storefront\"],\n    li[data-entity-key=\"uplink_storefront\"],\n    li[data-entity-key=\"pixeljunkshooter_storefront\"],\n    li[data-entity-key=\"pixeljunkmonstersultimate_storefront\"],\n    li[data-entity-key=\"doorkickers_storefront\"],\n    li[data-entity-key=\"deponia_completejourney_storefront\"],\n    li[data-entity-key=\"bionicdues_storefront\"],\n    li[data-entity-key=\"avalleywithoutwind_1and2_storefront\"],\n    li[data-entity-key=\"shelter2_storefront\"],\n    li[data-entity-key=\"wearethedwarves_storefront\"],\n    li[data-entity-key=\"chaosondeponia_storefront\"],\n    li[data-entity-key=\"theybleedpixels_storefront\"],\n    li[data-entity-key=\"thelastfederation_collection_storefront\"],\n    li[data-entity-key=\"thenovelist_storefront\"],\n    li[data-entity-key=\"surgeonsimulator_ae_storefront\"],\n    li[data-entity-key=\"surgeonsimulator_ae_content_storefront\"],\n    li[data-entity-key=\"skywardcollapse_complete_storefront\"],\n    li[data-entity-key=\"siryouarebeinghunted_storefront\"],\n    li[data-entity-key=\"shadowrunreturns_storefront\"],\n    li[data-entity-key=\"shadowruncompletecollection_storefront\"],\n    li[data-entity-key=\"solar2_storefront\"],\n    li[data-entity-key=\"shadowrun_dragonfall_dc_storefront\"],\n    li[data-entity-key=\"shadowgate_storefront\"],\n    li[data-entity-key=\"shadowgate_se_storefront\"],\n    li[data-entity-key=\"sentrisstandard_storefront\"],\n    li[data-entity-key=\"shadowrun_triplepack_storefront\"],\n    li[data-entity-key=\"sentris_storefront\"],\n    li[data-entity-key=\"penumbra_collection_storefront\"],\n    li[data-entity-key=\"paranauticalactivity_storefront\"],\n    li[data-entity-key=\"never_alone_arctic_collection_storefront\"],\n    li[data-entity-key=\"mirrormoonep_storefront\"],\n    li[data-entity-key=\"grimfandango_storefront\"],\n    li[data-entity-key=\"fotonica_storefront\"],\n    li[data-entity-key=\"cubeandstar_anarbitrarylove_storefront\"],\n    li[data-entity-key=\"dex_storefront\"],\n    li[data-entity-key=\"fire_storefront\"],\n    li[data-entity-key=\"darkecho_storefront\"],\n    li[data-entity-key=\"beatbuddy_storefront\"],\n    li[data-entity-key=\"badland_goty_storefront\"],\n    li[data-entity-key=\"anomalykorea_storefront\"],\n    li[data-entity-key=\"anomalydefenders_storefront\"],\n    li[data-entity-key=\"anomaly2_storefront\"],\n    li[data-entity-key=\"anomaly_warzoneearth_storefront\"],\n    li[data-entity-key=\"ziggurat_storefront\"],\n    li[data-entity-key=\"wormsreloaded_goty_storefront\"],\n    li[data-entity-key=\"wizardry_complete_storefront\"],\n    li[data-entity-key=\"wasteland_storefront\"],\n    li[data-entity-key=\"thebardstale_storefront\"],\n    li[data-entity-key=\"texmurphy_complete_storefront\"],\n    li[data-entity-key=\"survivorsquad_gauntlets_storefront\"],\n    li[data-entity-key=\"surgeonsimulatorae_iambread_pack_storefront\"],\n    li[data-entity-key=\"steamworlddig_storefront\"],\n    li[data-entity-key=\"starwardrogue_storefront\"],\n    li[data-entity-key=\"spiritsofxanadu_storefront\"],\n    li[data-entity-key=\"sokobond_storefront\"],\n    li[data-entity-key=\"strikesuitzero_storefront\"],\n    li[data-entity-key=\"silentservice2_storefront\"],\n    li[data-entity-key=\"silentservice_storefront\"],\n    li[data-entity-key=\"sid_meiers_colonization_classic_storefront\"],\n    li[data-entity-key=\"shadowrun_hongkong_storefront\"],\n    li[data-entity-key=\"racethesun_storefront\"],\n    li[data-entity-key=\"planetaryannihilation_titans_storefront\"],\n    li[data-entity-key=\"poncho_storefront\"],\n    li[data-entity-key=\"shadwen_storefront\"],\n    li[data-entity-key=\"shadowrun_hongkong_deluxe_storefront\"],\n    li[data-entity-key=\"outthere_storefront\"],\n    li[data-entity-key=\"outthere_omegaedition_storefront\"],\n    li[data-entity-key=\"outlast_whistleblower_storefront\"],\n    li[data-entity-key=\"oscura_lostlight_storefront\"],\n    li[data-entity-key=\"neverendingnightmares_storefront\"],\n    li[data-entity-key=\"neo_scavenger_storefront\"],\n    li[data-entity-key=\"knightsofpenandpaper_storefront\"],\n    li[data-entity-key=\"knightsofpenandpaper_hauntedfall_storefront\"],\n    li[data-entity-key=\"ironcladtactics_storefront\"],\n    li[data-entity-key=\"heroesofloot_storefront\"],\n    li[data-entity-key=\"hammerwatch_storefront\"],\n    li[data-entity-key=\"gunsoficarusonline_storefront\"],\n    li[data-entity-key=\"gabrielknight_sinsofthefathers_storefront\"],\n    li[data-entity-key=\"fullbore_storefront\"],\n    li[data-entity-key=\"farsky_storefront\"],\n    li[data-entity-key=\"forced_storefront\"],\n    li[data-entity-key=\"eldritch_storefront\"],\n    li[data-entity-key=\"therealtexas_dustyskiesedition_storefront\"],\n    li[data-entity-key=\"undertale_storefront\"],\n    li[data-entity-key=\"darkestdungeon_storefront\"],\n    li[data-entity-key=\"dontstarve_storefront\"],\n    li[data-entity-key=\"moveordie_storefront\"],\n    li[data-entity-key=\"ultimate_chicken_horse_storefront\"],\n    li[data-entity-key=\"trainvalley_storefront\"],\n    li[data-entity-key=\"thewarlockoffiretopmountain_storefront\"],\n    li[data-entity-key=\"thespatials_storefront\"],\n    li[data-entity-key=\"therealtexas_cellpop_storefront\"],\n    li[data-entity-key=\"talesofmajeyal_collection_storefront\"],\n    li[data-entity-key=\"talesofmajeyal_embersofrage_storefront\"],\n    li[data-entity-key=\"systemshock2_storefront\"],\n    li[data-entity-key=\"systemshock_pack_storefront\"],\n    li[data-entity-key=\"teleglitch_diemoreedition_storefront\"],\n    li[data-entity-key=\"syderarcade_storefront\"],\n    li[data-entity-key=\"sunlesssea_zubmariner_storefront\"],\n    li[data-entity-key=\"sunlesssea_storefront\"],\n    li[data-entity-key=\"startactics_storefront\"],\n    li[data-entity-key=\"starshiptraveller_storefront\"],\n    li[data-entity-key=\"spychameleon_rgbagent_storefront\"],\n    li[data-entity-key=\"spirits_storefront\"],\n    li[data-entity-key=\"spaz_storefront\"],\n    li[data-entity-key=\"snapshot_storefront\"],\n    li[data-entity-key=\"skyrogue_storefront\"],\n    li[data-entity-key=\"shelter_theheartedition_storefront\"],\n    li[data-entity-key=\"shelter_complete_storefront\"],\n    li[data-entity-key=\"shelter2_mountains_storefront\"],\n    li[data-entity-key=\"shadowwarrior_storefront\"],\n    li[data-entity-key=\"shadowwarrior_classicredux_storefront\"],\n    li[data-entity-key=\"serpentinthestaglands_storefront\"],\n    li[data-entity-key=\"secretsofraetikon_storefront\"],\n    li[data-entity-key=\"secretofthemagiccrystals_storefront\"],\n    li[data-entity-key=\"secretofthemagiccrystals_therace_storefront\"],\n    li[data-entity-key=\"savant_ascent_storefront\"],\n    li[data-entity-key=\"saturdaymorningrpg_storefront\"],\n    li[data-entity-key=\"samorost2_storefront\"],\n    li[data-entity-key=\"rymdkapsel_storefront\"],\n    li[data-entity-key=\"ryannorths_tobeornottobe_storefront\"],\n    li[data-entity-key=\"rochard_storefront\"],\n    li[data-entity-key=\"riskofrain_storefront\"],\n    li[data-entity-key=\"reus_storefront\"],\n    li[data-entity-key=\"retrocityrampage_storefront\"],\n    li[data-entity-key=\"renownedexplorers_moretoexplore_storefront\"],\n    li[data-entity-key=\"renownedexplorers_intsociety_storefront\"],\n    li[data-entity-key=\"renownedexplorers_theemperorschallenge_storefront\"],\n    li[data-entity-key=\"renownedexplorerscompletebundle_storefront\"],\n    li[data-entity-key=\"reigns_storefront\"],\n    li[data-entity-key=\"reignmaker_storefront\"],\n    li[data-entity-key=\"regencysolitaire_storefront\"],\n    li[data-entity-key=\"racethesun_sunrise_storefront\"],\n    li[data-entity-key=\"questofdungeons_storefront\"],\n    li[data-entity-key=\"questforinfamy_storefront\"],\n    li[data-entity-key=\"qube_directorscut_storefront\"],\n    li[data-entity-key=\"qbqbqb_storefront\"],\n    li[data-entity-key=\"puppygamesultrabundle_storefront\"],\n    li[data-entity-key=\"pulstar_storefront\"],\n    li[data-entity-key=\"puddle_storefront\"],\n    li[data-entity-key=\"proteus_storefront\"],\n    li[data-entity-key=\"pixelpiracy_storefront\"],\n    li[data-entity-key=\"pixelheroes_byteandmagic_storefront\"],\n    li[data-entity-key=\"pillarsofeternity_whitemarch_p2_storefront\"],\n    li[data-entity-key=\"pillarsofeternity_whitemarch_p1_storefront\"],\n    li[data-entity-key=\"pillarsofeternity_whitemarch_ep_storefront\"],\n    li[data-entity-key=\"pillarsofeternity_royal_storefront\"],\n    li[data-entity-key=\"pillarsofeternity_hero_storefront\"],\n    li[data-entity-key=\"pillarsofeternity_champion_storefront\"],\n    li[data-entity-key=\"parcel_storefront\"],\n    li[data-entity-key=\"parallax_storefront\"],\n    li[data-entity-key=\"papoandyo_storefront\"],\n    li[data-entity-key=\"papersorcerer_storefront\"],\n    li[data-entity-key=\"pajamasamssockworks_storefront\"],\n    li[data-entity-key=\"pajamasamslostandfound_storefront\"],\n    li[data-entity-key=\"pajamasam_nnthwido_storefront\"],\n    li[data-entity-key=\"pajamasam_gamestoplayonanyday_storefront\"],\n    li[data-entity-key=\"pajamasam_complete_storefront\"],\n    li[data-entity-key=\"pajamasam3_youarewhatyoueat_storefront\"],\n    li[data-entity-key=\"pajamasam2_thunderandlightning_storefront\"],\n    li[data-entity-key=\"otttd_storefront\"],\n    li[data-entity-key=\"osmos_storefront\"],\n    li[data-entity-key=\"orderofthethorne_kingschallenge_storefront\"],\n    li[data-entity-key=\"onrustytrails_storefront\"],\n    li[data-entity-key=\"oniken_storefront\"],\n    li[data-entity-key=\"okhlos_storefront\"],\n    li[data-entity-key=\"olliolli_storefront\"],\n    li[data-entity-key=\"offspringfling_storefront\"],\n    li[data-entity-key=\"oddworld_newntasty_storefront\"],\n    li[data-entity-key=\"octodad_dadliestcatch_storefront\"],\n    li[data-entity-key=\"nuclearthrone_storefront\"],\n    li[data-entity-key=\"nottherobots_storefront\"],\n    li[data-entity-key=\"nightsky_storefront\"],\n    li[data-entity-key=\"neondrive_storefront\"],\n    li[data-entity-key=\"mushroom11_storefront\"],\n    li[data-entity-key=\"mushroom11_soundtrackbundle_storefront\"],\n    li[data-entity-key=\"mousecraft_storefront\"],\n    li[data-entity-key=\"mountandblade_warband_viking_storefront\"],\n    li[data-entity-key=\"mountandblade_napoleonicwars_storefront\"],\n    li[data-entity-key=\"monstrum_storefront\"],\n    li[data-entity-key=\"monaco_storefront\"],\n    li[data-entity-key=\"mcpixel_storefront\"],\n    li[data-entity-key=\"mcdroid_storefront\"],\n    li[data-entity-key=\"masteroforion_storefront\"],\n    li[data-entity-key=\"masteroforion1_2_storefront\"],\n    li[data-entity-key=\"machinarium_storefront\"],\n    li[data-entity-key=\"lyne_storefront\"],\n    li[data-entity-key=\"luftrausers_storefront\"],\n    li[data-entity-key=\"lordsofxulima_storefront\"],\n    li[data-entity-key=\"littleinferno_storefront\"],\n    li[data-entity-key=\"lifelessplanet_storefront\"],\n    li[data-entity-key=\"legendofgrimrock_storefront\"],\n    li[data-entity-key=\"legendofdungeon_storefront\"],\n    li[data-entity-key=\"lastfederation_losttechnologies_storefront\"],\n    li[data-entity-key=\"knightsofpenandpaper_deluxier_storefront\"],\n    li[data-entity-key=\"kingdomrush_storefront\"],\n    li[data-entity-key=\"kingarthursgold_storefront\"],\n    li[data-entity-key=\"keeperrl_storefront\"],\n    li[data-entity-key=\"jaggedalliance_flashback_storefront\"],\n    li[data-entity-key=\"jaggedalliance_backinaction_storefront\"],\n    li[data-entity-key=\"jaggedalliance1_goldedition_storefront\"],\n    li[data-entity-key=\"jacklumber_storefront\"],\n    li[data-entity-key=\"ittledew_storefront\"],\n    li[data-entity-key=\"jotun_storefront\"],\n    li[data-entity-key=\"interstellaria_storefront\"],\n    li[data-entity-key=\"insanelytwistedshadowplanet_storefront\"],\n    li[data-entity-key*=\"influent_\"],\n    li[data-entity-key=\"infinifactory_storefront\"],\n    li[data-entity-key=\"incredipede_storefront\"],\n    li[data-entity-key=\"icantescape_darkness_storefront\"],\n    li[data-entity-key=\"humanresourcemachine_storefront\"],\n    li[data-entity-key=\"hotlinemiami_storefront\"],\n    li[data-entity-key=\"hook_storefront\"],\n    li[data-entity-key=\"hoard_storefront\"],\n    li[data-entity-key=\"hexcellscompletepack_storefront\"],\n    li[data-entity-key=\"heavybullets_storefront\"],\n    li[data-entity-key=\"hearthlands_storefront\"],\n    li[data-entity-key=\"hardwest_storefront\"],\n    li[data-entity-key=\"handoffate_storefront\"],\n    li[data-entity-key=\"hardwest_collectorsedition_storefront\"],\n    li[data-entity-key=\"halfway_storefront\"],\n    li[data-entity-key=\"hackslashloot_storefront\"],\n    li[data-entity-key=\"gunpoint_storefront\"],\n    li[data-entity-key=\"gonehome_storefront\"],\n    li[data-entity-key=\"godswillbewatching_storefront\"],\n    li[data-entity-key=\"godswillbewatching_se_storefront\"],\n    li[data-entity-key=\"goatsimulator_storefront\"],\n    li[data-entity-key=\"gnomoria_storefront\"],\n    li[data-entity-key=\"ga8_curseoftheassassin_storefront\"],\n    li[data-entity-key=\"ga5_catacombsoftheundercity_storefront\"],\n    li[data-entity-key=\"ga1_anassassininorlandes_storefront\"],\n    li[data-entity-key=\"galakz_storefront\"],\n    li[data-entity-key=\"frozensynapse_storefront\"],\n    li[data-entity-key*=\"freddifish\"],\n    li[data-entity-key=\"foxandflock_storefront\"],\n    li[data-entity-key=\"findingteddy_storefront\"],\n    li[data-entity-key=\"fez_storefront\"],\n    li[data-entity-key=\"feist_storefront\"],\n    li[data-entity-key=\"feist_deluxe_storefront\"],\n    li[data-entity-key=\"f117a_nighthawkstealthfighter_20_storefront\"],\n    li[data-entity-key=\"expeditions_conquistador_storefront\"],\n    li[data-entity-key=\"expand_withsoundtrack_storefront\"],\n    li[data-entity-key=\"expand_storefront\"],\n    li[data-entity-key=\"eufloriahd_storefront\"],\n    li[data-entity-key=\"eufloriahd_deluxe_storefront\"],\n    li[data-entity-key=\"englishcountrytune_storefront\"],\n    li[data-entity-key=\"electronicsuperjoy_storefront\"],\n    li[data-entity-key=\"electronicsuperjoy_groovecity_storefront\"],\n    li[data-entity-key=\"dustforce_storefront\"],\n    li[data-entity-key=\"dust_anelysiantail_storefront\"],\n    li[data-entity-key=\"dungeondefenders_eternity_storefront\"],\n    li[data-entity-key=\"dungeondefenders_storefront\"],\n    li[data-entity-key=\"dungeonhearts_storefront\"],\n    li[data-entity-key=\"droxoperative_storefront\"],\n    li[data-entity-key=\"droxoperative_invasionoftheancients_storefront\"],\n    li[data-entity-key=\"drawastickmanepic_storefront\"],\n    li[data-entity-key=\"doodlegod_storefront\"],\n    li[data-entity-key=\"dontstarve_reignofgiants_storefront\"],\n    li[data-entity-key=\"divinity_originalsin_enhanced_storefront\"],\n    li[data-entity-key=\"dinscurse_storefront\"],\n    li[data-entity-key=\"dinscurse_demonwar_storefront\"],\n    li[data-entity-key*=\"deusex_mankinddivided\"],\n    li[data-entity-key=\"detectivegrimoire_storefront\"],\n    li[data-entity-key=\"desktopdungeons_storefront\"],\n    li[data-entity-key*=\"democracy3\"],\n    li[data-entity-key=\"defendersquest_storefront\"],\n    li[data-entity-key=\"darkscavenger_storefront\"],\n    li[data-entity-key=\"darklands_storefront\"],\n    li[data-entity-key=\"crystalcatacombs_storefront\"],\n    li[data-entity-key=\"crowntakers_storefront\"],\n    li[data-entity-key=\"crea_storefront\"],\n    li[data-entity-key=\"cosmochoria_storefront\"],\n    li[data-entity-key=\"cornerstone_thesongoftyrim_storefront\"],\n    li[data-entity-key=\"convoy_storefront\"],\n    li[data-entity-key=\"continue_9876543210_storefront\"],\n    li[data-entity-key=\"closure_storefront\"],\n    li[data-entity-key=\"capsized_storefront\"],\n    li[data-entity-key=\"cardcitynights_storefront\"],\n    li[data-entity-key=\"broforce_storefront\"],\n    li[data-entity-key=\"bridgeconstructorplayground_storefront\"],\n    li[data-entity-key=\"bridgeconstructor_storefront\"],\n    li[data-entity-key=\"braveland_storefront\"],\n    li[data-entity-key=\"botanicula_storefront\"],\n    li[data-entity-key=\"bookofunwrittentales_collection_storefront\"],\n    li[data-entity-key=\"blocksthatmatter_storefront\"],\n    li[data-entity-key=\"bleed_storefront\"],\n    li[data-entity-key=\"bittriprunner2_storefront\"],\n    li[data-entity-key=\"bittripbeat_storefront\"],\n    li[data-entity-key=\"bindingofisaac_rebirth_storefront\"],\n    li[data-entity-key=\"bindingofisaac_afterbirth_storefront\"],\n    li[data-entity-key=\"big_pharma_marketing_malpractice_storefront\"],\n    li[data-entity-key=\"besiege_storefront\"],\n    li[data-entity-key=\"beathazardultra_storefront\"],\n    li[data-entity-key=\"battle_worlds_kronos_storefront\"],\n    li[data-entity-key=\"barony_storefront\"],\n    li[data-entity-key=\"bastion_storefront\"],\n    li[data-entity-key=\"badhotel_storefront\"],\n    li[data-entity-key=\"backtobed_storefront\"],\n    li[data-entity-key=\"awizardslizard_storefront\"],\n    li[data-entity-key=\"ascendant_storefront\"],\n    li[data-entity-key=\"aquaticadventureofthelasthuman_storefront\"],\n    li[data-entity-key=\"apotheon_storefront\"],\n    li[data-entity-key=\"anodyne_storefront\"],\n    li[data-entity-key=\"amongthesleep_storefront\"],\n    li[data-entity-key=\"amnesia_thedarkdescent_storefront\"],\n    li[data-entity-key=\"aaaaaa_fortheawesome_storefront\"],\n    li[data-entity-key=\"10000000_storefront\"],\n    li[data-entity-key=\"gunnheim_storefront\"],\n    li[data-entity-key=\"pyxelknight_storefront\"],\n    li[data-entity-key=\"lostworldzero_storefront\"],\n    li[data-entity-key=\"140_storefront\"],\n    li[data-entity-key=\"ballistick_storefront\"],\n    li[data-entity-key=\"lorentheamazonprincess_deluxe_storefront\"],\n    li[data-entity-key=\"roommates_deluxeedition_storefront\"],\n    li[data-entity-key=\"va11hallacyberpunkbartenderactn_storefront\"],\n    li[data-entity-key=\"shadowsofadam_storefront\"],\n    li[data-entity-key=\"starcrawlers_storefront\"],\n    li[data-entity-key=\"wheelsofaurelia_storefront\"],\n    li[data-entity-key=\"roguelegacy_storefront\"],\n    li[data-entity-key=\"sproggiwood_storefront\"],\n    li[data-entity-key=\"megabytepunch_storefront\"],\n    li[data-entity-key=\"brokenage_storefront\"],\n    li[data-entity-key=\"stranded_storefront\"],\n    li[data-entity-key=\"bittriprunner_storefront\"],\n    li[data-entity-key=\"sunset_storefront\"],\n    li[data-entity-key=\"lumini_deluxe_storefront\"],\n    li[data-entity-key=\"ladykillerinabind_storefront\"],\n    li[data-entity-key=\"lumini_storefront\"],\n    li[data-entity-key=\"probablyarchery_storefront\"],\n    li[data-entity-key=\"doorways_theunderworld_storefront\"],\n    li[data-entity-key=\"screencheat_storefront\"],\n    li[data-entity-key=\"screencheat_4pack_storefront\"],\n    li[data-entity-key=\"screencheat_deluxeedition_storefront\"],\n    li[data-entity-key=\"doorways_holymountainsofflesh_storefront\"],\n    li[data-entity-key=\"lumo_deluxe_storefront\"],\n    li[data-entity-key=\"lumo_storefront\"],\n    li[data-entity-key=\"tharsis_storefront\"],\n    li[data-entity-key=\"braid_storefront\"],\n    li[data-entity-key=\"amnesia_amachineforpigs_storefront\"],\n    li[data-entity-key=\"doorways_storefront\"],\n    li[data-entity-key=\"owlboy_storefront\"],\n    li[data-entity-key=\"owlboy_collectorsedition_storefront\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"torchlight2_storefront\"]\n    { \n        display : none !important; \n    }"
+    }]
+  },
+  {
+             "name": "HumbleStore",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["humblebundle.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .featured-view, .js-featured-view,.about-storefront\n    { \n        display : none ! important; \n    }\n    a[href*=\"hmb_campaign\"],\n    label[for='rb-windows'], label[for='rb-android'], label[for='rb-mac'],\n    label[for='rb-alphabetical'], label[for='rb-mac'],\n    label[for='rb-steam'], label[for='rb-uplay']\n    { \n        display: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "illumos.org",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["illumos.org"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .codeContent, .panelContent { \n        display: block ! important; \n    }"
+    }]
+  },
+  {
+             "name": "Imgur",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["imgur.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #cta-container-placeholder, #fixed-side-footer-links\n    { \n        display : none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "Indeed",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["indeed.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    a[href*=\"tag=Stats\"], \n    a[href*=\"tag=Java\"], \n    a[href*=\"tag=Contractor\"], \n    a[href*=\"tag=Bio\"],\n    a[href*=\"tag=Other\"],\n    a[href*=\"tag=Crazy\"],\n    a[href*=\"tag=Postdoc\"],\n    a[href*=\"tag=Reject\"],\n    a[href*=\"tag=Low\"] \n    { \n        color:yellow ! important; \n        background-color:red; \n    }\n\n    a[href*=\"tag=Boston\"] \n    { \n        color:orange ! important; \n        background-color: lime; \n    }\n    \n    a[href*=\"tag=Repeat\"] \n    { \n        color:red ! important; \n        background-color: yellow; \n    }\n\n    a[href*=\"tag=Medium\"], \n    a[href*=\"tag=Pub\"] \n    { \n        color:yellow ! important; \n        background-color:blue; \n    }\n    \n    a[href*=\"tag=Maybe\"] \n    { \n        color:black ! important; \n        background-color:lime; \n    }\n    \n    a[href*=\"tag=Perfect\"] \n    { \n        color:black ! important; \n        background-color:lime; \n        text-decoration: blink ! important; \n    }"
+    }]
+  },
+  {
+             "name": "Independent",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["independent.co.uk"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .video-player, .video-playlist, iframe, .type-gallery,\n    .type-video, .box-comments, .syndication-btn, #i100-0,\n    #most_popular-0, #ines_video_sidebar-0, .fb-info, .partner-slots,\n    .taboola\n    {\n        display: none ! important;\n    }"
+    }]
+  },
+  {
+             "name": "Insite",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["insite.bms.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": " a:visited { color:purple ! important; }"
+    }]
+  },
+  {
+             "name": "InteractiveBrowser",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": [],
+               "urls": ["http://bioinformatics.bms.com/biohtml/mutationViewer/map.html*"],
+        "urlPrefixes": [],
+               "code": ".x-grid3-hd { -moz-user-select:all ! important; }\n//.x-grid3-hd-inner { overflow:visible ! important; }\n//.x-grid3-cell-inner { overflow:visible ! important;}\n.x-grid3-row { -moz-user-select:all ! important;}\n"
+    }]
+  },
+  {
+             "name": "InteractiveViewer1",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": [],
+               "urls": [],
+        "urlPrefixes": ["http://bioinformatics.bms.com/biohtml/mutationViewer/map.html"],
+               "code": "// Select Hack\n.x-grid3-hd { -moz-user-select:all ! important; }\n.x-grid3-row { -moz-user-select:all ! important;}"
+    }]
+  },
+  {
+             "name": "IronPort",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["meusiprly04.net.bms.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "#slbl_list_table { height: 1500px ! important; }"
+    }]
+  },
+  {
+             "name": "Ixquick",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["ixquick.com","startpage.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    /* Generally I'm looking for one of these: */\n    a[href*='stackoverflow'], a[href*='stackexchange'],\n    a[href*='serverfault'], a[href*='superuser'], \n    a[href*=\"wikipedia.org\"]\n    { \n        background-color: lime ! important;\n    }\n\n    #sponsored, iframe, .banner-container\n    { \n        display: none ! important; \n    }\n\n    a:visited { \n        color: purple !important;\n    }"
+    }]
+  },
+  {
+             "name": "Khan",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["khanacademy.org"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .donate-notification {\n        display: none!important\n    }"
+    }]
+  },
+  {
+             "name": "Krebs",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["krebsonsecurity.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #header, #sidebar, #top-banner, #pg-nav, a[href*='/cpm/']\n    {\n        display: none ! important;\n    }"
+    }]
+  },
+  {
+             "name": "LinkedIn",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["linkedin.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #today-news-wrapper, .feature-promo, .upsell, .guided-setup\n    { \n        display: none; \n    }"
+    }]
+  },
+  {
+             "name": "LinuxQuestions",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["linuxquestions.org"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #navbar_notice_1 { \n        display: none !important; \n    }"
+    }]
+  },
+  {
+             "name": "MinecraftWiki",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["minecraftwiki.net"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #curse-panel, #ft, #footer-icons, #footer-places,\n    #footer-info-copyright, #p-lang { \n        display: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "Minetest",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["minetest.net"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "  .spoiler_content { display: unset ! important; }"
+    }]
+  },
+  {
+             "name": "MotleyFool",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["fool.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .ecap, .targetedPromotion\n    { \n        display: none ! important; \n    } "
+    }]
+  },
+  {
+             "name": "MSN",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["msn.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "  .xnetvidplayer, .paddle, .sharingtb, #nav, .head,\n  .pagination_control, .two-back-home-buttons,\n  .facebook-comments-disabled-container, #foot, .circularhub\n  { display: none ! important; }"
+    }]
+  },
+  {
+             "name": "NASA",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["nasa.gov"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .grid_image img, .grid_text .caption { \n        visibility:visible ! important; \n    }"
+    }]
+  },
+  {
+             "name": "Nature",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["nature.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    p.norm \n    { \n        font-size: 1.5em ! important; \n    }"
+    }]
+  },
+  {
+             "name": "NbcNews",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["nbcnews.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .inlineVideo, #siteheader, footer, .paginationDiv,\n    .stack-l-image-lede-container,.sitewide-footer\n    { \n        display : none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "Netflix",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["www.netflix.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .fb { \n        display: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "NewEgg",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["newegg.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #CombineBoxContent, #buying-combo, .grpSecondary, .footerAwards\n    { \n        display: none ! important\n    }"
+    }]
+  },
+  {
+             "name": "Newsweek",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["newsweek.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .trial-promo, .nw-subscribe-today, .hidden-xs, #discussion,\n    #taboola-below-main-column, noscript\n    { \n        display: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "NewZimbabwe",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["newzimbabwe.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    * { -webkit-user-select: auto ! important; }"
+    }]
+  },
+  {
+             "name": "NihSearch",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["nih.gov"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .search {\n        width: 100% ! important; \n    }\n    .search_bottom, .search_extras, .search_top\n    { \n        clear: none ! important;\n        float: left ! important;\n        background-color: orange ! important;\n    }\n\n\n    .search_top { \n        width: 200px ! important; \n    }\n    .search_bottom { \n        width: 500px ! important; \n    }\n    .search_extras { \n        width: 100px ! important; \n    }\n    .search button { \n        font-size: 1em ! important; \n    }"
+    }]
+  },
+  {
+             "name": "nj.com",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["nj.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #newsletter_promo, #social_icons, #active_discussions, #most_read,\n    #disclaimer, .icn-link, .social_sidebar, #adv_header, #commentButton,\n    #multimedia_main_gallery, iframe, noscript, .storify,\n    footer\n    { \n        display : none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "NPR",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["npr.org"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    footer, .branding, #global-navigation-wrap, .share-tools,\n    iframe, .statichtml\n    {\n        display: none ! important;\n    }\n    a:visited { color: purple ! important; }\n    #dsq1 { overflow: visible; }\n    #qqqdisqus_thread { border: solid 2px red ! important; }"
+    }]
+  },
+  {
+             "name": "NTSB",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["ntsb.gov"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "  /* why do people want to handle scrolling with JS?? */\n  body { overflow: unset ! important; }"
+    }]
+  },
+  {
+             "name": "NYT",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["nytimes.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #cColumn, .runaroundLeft, .shareTools, .emailAlertModule,\n    #insideNYTimesHeader, #footer, .metaFootnote, #breaking-news-email-promo,\n    #ribbon, #masthead, #site-index-navigation, #whats-next,\n    #TopAd1, #site-index, .interactive-image-container, .interactive,\n    #navigation, #masthead, #memberTools, #cCol, #blogroll,\n    .socialMediaModule, .ad, #footer, .subNavigation, .share, #header, .tabs,\n    .external-links, .interactive-embedded, .newsletter-signup,\n    #site-index, #whats-next, .text-ad, #page-footer, .ribbon, .navigation,\n    .video\n    { \n        display: none ! important; \n    }\n\n    #abColumn, #article { \n        width: 100% ! important; \n    }"
+    }]
+  },
+  {
+             "name": "Olympus",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["olympus.com.au"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    html { \n        overflow: auto ! important;\n    }"
+    }]
+  },
+  {
+             "name": "OpenClipArt",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["openclipart.org"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #shutterstock_results, #shutterstock_search\n    { \n        display: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "OutlookCalendar",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["webmail.bms.com","mailo365.bms.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": ".vis { background-color: #ff9; }\n.t { background-color: #f60 ! important; }\n.f { background-color: #9cf ! important; }\n.txt { font-size: 1em ! important; }\n.rwRO { background-color: #dfd; border: none ! important; }\n.rwRO a {}\n.bdy, .txtbdy { font-size: 1.2em ! important; }\ntd.fb a { color: red ! important; }\ntd, th { font-size: 100% ! important }\ntd.tm, td.tme, td.vis, td.frd, td.frn, td.txt, td.v, td.frl { height: 100% ! important; }\n.rwRO { font-weight: bold; font-size: 1.3em; border-left: 1px solid #aaa; border-right: 1px solid #aaa; margin-right: 0.5em; white-space: pre; padding: 2px; } \n#evt td { background-color: #f88 ! important }\n#selBsl { height: 30em ! important; }\n\n  /* Newer OWA */\n  .ms-bg-color-themeLight { background-color: lime ! important; }\n  \n  .disableTextSelection {\n\t-webkit-user-select: default ! important;\n\t-khtml-user-select: default ! important;\n\t-moz-user-select: text ! important;\n\t-o-user-select: default ! important;\n\t-ms-user-select: default ! important;\n\tuser-select: default ! important;\n\tcursor:default\n}\n  \n  "
+    }]
+  },
+  {
+             "name": "PBS",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["pbs.org"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .eloqua-popup-container\n    { \n        display: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "PCWorld",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["pcworld.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #shoppingMod, #topXMod,  #footerMoreSMB,  #smbRightSubscribe,\n    #resourceLinks, #smbBlogLinks,  #artCommentDiv,  #smbWhitepaperWrap, \n    #footer, #smbFooterAd, #smbWhitepaperWrap, #miniHeader, #mainNav, #header, \n    #artCommentDiv, #resourceLinks, .chicklet \n    { \n        display: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "pfSense",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["pfsense.org"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .signature { \n        display: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "pfSenseFilters",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": [],
+               "urls": ["https://pfsense/diag_logs_filter.php"],
+        "urlPrefixes": [],
+               "code": "    tr.wan { \n        background-color: #faa; \n    }"
+    }]
+  },
+  {
+             "name": "PlanetaryOrg",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["planetary.org"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    header {\n        display: none ! important;\n    }"
+    }]
+  },
+  {
+             "name": "Politico",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["politico.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .story-suggestions, .nav-micro, .global-header, aside, \n    .story-continued, .story-interrupt, .story-tools, .story-share,\n    .story-supplement, nav, .global-footer, .video-object\n    { \n        display: none ! important;\n    }"
+    }]
+  },
+  {
+             "name": "poorlydrawnlines",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["poorlydrawnlines.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    header {\n        display:none !important;\n    }"
+    }]
+  },
+  {
+             "name": "Quartz",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["qz.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "  .progressive-image-thumbnail { display: none ! important; }\n  .progressive-image-large { opacity: unset ! important; }"
+    }]
+  },
+  {
+             "name": "RealClearPolitics",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["realclearpolitics.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .ndn_embed, .ndn_separator, .ndn_article_body_title, #facebox,\n    #facebox_overlay, .overlay, .warning-wrapper\n    { \n        display: none ! important; \n    }\n    \n    /*  Coloring sources by FiveThirtyEight's pollster ratings\n        https://projects.fivethirtyeight.com/pollster-ratings/  */\n\n    /* A */\n\n    a[href*=\".qu.edu\"], a[href*=\".wsj.com\"], a[href*=\".cbsnews.com\"],\n    a[href*=\".ipsos-na.com\"], a[href*=\".mcclatchydc.com\"],\n    a[href*=\".monmouth.edu\"], a[href*=\".turner.com\"],\n    a[href*=\".marist.edu\"], a[href*=\"Ipsos\"], a[href*=\"ipsos\"],\n    a[href*=\"NBCWSJ\"], a[href*=\"www.washingtonpost.com\"],\n    a[href*=\"cnn.com\"]\n    { \n        background-color: lime ! important; \n    }\n\n    /* B */\n\n    a[href*=\".gallup.com\"], a[href*=\".publicpolicypolling.com\"],\n    a[href*=\"d25d2506sfb94s.cloudfront.net\"], a[href*=\".foxnews.com\"],\n    a[href*=\".usatoday.com\"], a[href*=\".people-press.org\"]\n\n    {\n        background-color: green ! important; \n        color: yellow ! important; \n    }\n\n    /* C */\n\n    a[href*=\".rasmussenreports.com\"] \n    {\n        background-color: yellow ! important; \n    }"
+    }]
+  },
+  {
+             "name": "Reddit",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["reddit.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    div.entry.unvoted ul.flat-list.buttons { \n        display: block ! important; \n    }\n    body { background : none !important; }\n\n    .promotedlink, #siteTable_promoted,  .promoted, .arrow, div.side,\n    #header-bottom-right, .footer-parent, #cta-container-placeholder,\n    #fixed-side-footer-links, #recommendations, #promoted-spotlight,\n    #eu-cookie-policy, .report-button, .flair, .morecomments\n    { \n        display: none ! important; \n    }\n\n    ul.flat-list.buttons { \n        display: none ! important; \n    }\n\n    .comment { \n        padding: 0px ! important; \n        margin-bottom: 0px ! important; \n    }\n\n    body div.content { \n        margin: 0px 0px 0px 0px ! important; \n    }\n\n    /* Sites that don't play well with my addons */\n    a[href*=\"gfycat.com\"]\n    {\n        color: red ! important;\n        background-color: #999 ! important;\n    }"
+    }]
+  },
+  {
+             "name": "ReTweetHighlight",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["twitter.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    div[data-retweeter] { \n        background-color: #ffa !important; \n    }"
+    }]
+  },
+  {
+             "name": "Reuters",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["reuters.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .footer-trnetwork, .footer-disclaimer, .footer-top, #specialFeature,\n    .slider-module,\n    div[class*='TopBar'], div[class*='CanvasAd'], div[class^='Header_'],\n    div[data-template='footer']\n    { \n        display: none !important;\n    }\n    div[class^='ArticleHeader_'] \n    { \n      padding: unset ! important; \n      margin-left: unset ! important;\n      margin-right: unset ! important;\n    }\n    p { margin-bottom: 5px ! important; }"
+    }]
+  },
+  {
+             "name": "Robtex",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["robtex.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .filler, .separator, #x_discussion, #x_contact, #x_similar,\n    .inuls, header\n    { \n        display: none !important; \n        height: 0px ! important;  \n    }\n\n    div, section, .sep1, .sep2 { \n        height: auto ! important; \n    }\n    \n    #x_summary { \n        background-color: #afa; \n        position: absolute; \n        left: 0px; \n        top: 0px; \n        width: 30em;\n    }  "
+    }]
+  },
+  {
+             "name": "Salon",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["salon.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .svp-widget, .smr-widget , .ad-widget, .followSalon, #footer,\n    #comments, .article-comments, .salon-logo-wrap, .header-container\n    {\n        display: none!important;\n    }"
+    }]
+  },
+  {
+             "name": "School",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["ewing.k12.nj.us"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": ".announcements, .ui-article-description, .ui-widget \n{ display: block ! important; \nwidth: 80em ! important;\noverflow: auto ! important; }\n\n .ui-widget-detail { position: static ! important; width: 30em ! important; }\n div.ui-widget.app.announcements * { width: 40em ! important; }\n"
+    }]
+  },
+  {
+             "name": "SCP",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["scp-wiki.net"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .collapsible-block, .collapsible-block-content, \n    .collapsible-block-unfolded, .collapsible-block-folded\n    { \n        display: block !important;\n    }\n    \n    div[id|='wiki-tab']\n    { \n        display: block !important; \n        border-top: solid red 3px;\n    }\n    \n    a:visited { \n        color: purple !important;\n    }"
+    }]
+  },
+  {
+             "name": "Slashdot",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["slashdot.org"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    aside.view_mode, .nav-secondary-wrap, .nav-wrap, section.bq, footer,\n    #fh-pag-div, #slashboxes, .topic, #clickgen, .show, .grid_14, #besttabs,\n    aside, .fhitem-poll, #slideshow-wrap, #firehose-message-tray,\n    .commentSub, nav.grid_15, #sitenotice, #announcement,\n    [class*='sponsored'],  article[class*='article-nel-']\n    { \n        display: none !important; \n    }\n    \n    .comment-bubble { \n        background-color: #ccc ! important;\n    }\n    #firehose article header h2,  #comments h4  { \n        background-color: #fff ! important; \n        background-image: none; \n    }\n    \n    #d2header > div > nav { \n        background-color: #ccc ! important; \n        background-image: none; \n    }\n    .comments { \n        background-color: blue ! important; \n        display: inline ! important; \n    }\n    \n    .opt, .title, .score { \n        color: #005 ! important; \n    }\n    a { \n        color: blue ! important; \n    }\n    a:visited { \n        color: purple ! important; \n    }\n    .main-content, #comments { \n        margin-right: 0 ! important; \n    }"
+    }]
+  },
+  {
+             "name": "Slate",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["slate.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .sidebar, #tablet_header, .social, .tablet-ad,\n    footer\n  { display: none ! important; }"
+    }]
+  },
+  {
+             "name": "SMH",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["smh.com.au"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .dropdown-panel, iframe, .fMastheadLinks, .classifieds , .header, .mySite\n    { \n        display: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "Snopes",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["snopes.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "  img {\n    /*\n    Arg. Does not work. The hidden _attribute_ does not seem to be accessible via CSS\n    https://stackoverflow.com/a/6708403\n    https://w3c.github.io/html/editing.html#the-hidden-attribute\n    */\n    box-sizing: unset ! important;\n    display: block ! important;\n    visibility: visible ! important;\n  }"
+    }]
+  },
+  {
+             "name": "Soylent",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["soylentnews.org"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .commentSub, .sig , .score0, .noTH, .commentHider, .commentBelow,\n    #slashboxes\n    { \n        display: none ! important; \n    }\n    a.visited { \n        color:purple ! important;\n    }\n    #articles { \n        margin: 0 0 1em 0; \n    }"
+    }]
+  },
+  {
+             "name": "space.com",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["space.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .partner-banner, #stickyShare, .social-mod, iframe, footer,\n    .subscribe\n    {\n        display: none ! important;\n    }\n    img { \n        opacity: 1 ! important; \n        transition: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "Stackexchange",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["stackexchange.com","serverfault.com","stackoverflow.com","superuser.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .hero-box, #herobox, #newsletter-ad, .community-bulletin, #hero-content,\n    #chat-feature, #hlogo, #footer, #feed-link, #post-form, .newsletter-anon,\n    .hero-container\n    { \n        display: none !important;\n    }\n    a:visited { \n        color: purple ! important;\n    }\n    a.js-gps-track:visited { \n        color : rgb(20, 121, 188) ! important;  \n    }\n    a.js-gps-track { \n        color : rgb(20, 121, 188) ! important;  \n    }\n    #header { \n        background-image: url('') ! important\n    }"
+    }]
+  },
+  {
+             "name": "StarMade",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["starmadepedia.net"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    html { \n        overflow-x: scroll !important; \n        overflow-y: scroll ! important;\n    }"
+    }]
+  },
+  {
+             "name": "TASSearch",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": [],
+               "urls": ["https://bi.bms.com/irj/portal"],
+        "urlPrefixes": [],
+               "code": " td, th  { -moz-user-select:all ! important; }\n td, th { -moz-user-select:all ! important; }"
+    }]
+  },
+  {
+             "name": "TechTimes",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["techtimes.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    header, .sidebar_in, .at_con { \n        display: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "TheAtlantic",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["theatlantic.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .lazyload, .video, .subscribe, .follow, .about, .blocker-message,\n    .newsletters, .article-tools, .social-icons, #site-footer,\n    pictaaure, #article-most-popular, .video, #site-header, .social-kit-top, \n    .article-tools\n    { \n        display : none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "TheHill",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["thehill.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .region-column-left, .left-sidebar-space, .blogs-social-wrp, .left-sidebar,\n    .block-disqus, #block-thehill-blocks-footer-signup, .region-bottom-column2,\n    .item-pos\n    { \n        display: none!important;\n    }\n    \n    .content-wrapper {\n        padding-left: 0px ! important;\n    }\n    \n    #main, .mostpopular-item, #block-mostpopular-1 { \n        padding: 0 0 0 0  ! important; \n    }\n    \n    .content-wrapper { \n        padding-left: 5px ! important; \n    }\n    .xxxxsidebars { \n        width: 200px ! important;\n    }"
+    }]
+  },
+  {
+             "name": "TheOnion",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["theonion.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    div.image div, .reading-list-video-player-wrapper, #footer,\n    .reading-list-after-item-content\n    { \n        display : none !important;\n    }"
+    }]
+  },
+  {
+             "name": "TheStreet",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["thestreet.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .whiteBox, .brokerage, .rightHandTextLinks, .premiumServices,\n    .blueHdrTitle, .whiteBorderBox, #boxAdContainer, #nl, #rightCol, #nav,\n    #opinion, #subHdr, #promoLink, #extraContent, #directory,\n    #logo, #hd, #footer\n    { \n        display: none ! important; \n    }\n\n    #twoCol_left { \n        width: 100% ! important; \n    }"
+    }]
+  },
+  {
+             "name": "TheTelegraph",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["telegraph.co.uk"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .mnIframe, #tmg-related-links, .storyFt,\n    #section_puffs_01, .oneSixth, #top_stories_05, .pictureGrid\n    { \n        display: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "TheVerge",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["theverge.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .c-dynamic-image, .c-related-list, aside, #comments,\n    .c-compact-river, footer, .l-col__sidebar, svg, symbol {\n      display : none ! important;\n    }"
+    }]
+  },
+  {
+             "name": "Time",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["time.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #moreOnTime ,#time_video-3, #time_more_on_time_widget-5, #footer, #header,\n    #time_outbrain-2 , .main-header, .top-banner, header, pushdown-ad,\n    magazine-cover, #pushdown-ad, .article-footer, footer, #first-visit\n    { \n        display: none ! important; \n    }\n    #notTheHeader { \n        margin-top : 1px ! important; \n        margin-bottom : 1px ! important; \n    }\n    .wrapper { overflow: auto; }\n    .article-viewport { overflow:auto; }\n    body { overflow: auto ! important; }"
+    }]
+  },
+  {
+             "name": "TomsHardware",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["tomshardware.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    ol.field.listing.h { \n        display: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "Tumblr",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["tumblr.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #notes, .notes, aside, footer, .caption, #pagination-top, #masthead\n    {\n        display: none!important;\n    }\n    .photo-slideshow { visibility: unset ! important; }"
+    }]
+  },
+  {
+             "name": "Twitter",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["twitter.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .dashboard, #side_lists, #trends, #following,\n    .empty-home, .get-started-steps,\n    .empty-timeline, #global-nav-search, #user-dropdown-toggle,\n    .actions, .profile-header-inner-overlay, .profile-card.profile-header,\n    .promptbird, .BannersContainer, .promoted-tweet,\n    .ProfileSidebar, .ProfileCanopy, .ProfileHeading,\n    .PromptbirdPrompt-streamItem, .modal-container, .modal-overlay,\n    #introduce_retweet_banner, .promotion round,\n    .js-recommended-followers, #empty-timeline-recommendations,\n    .dashboard-left, .dashboard-right, .ProfileTweet-actionList,\n    .js-more-ProfileTweet-actions\n    { \n        display:none ! important; \n    }\n    \n    .ProfileTweet-actionCountList, .ProfileTweet-action--retweet,\n    .ProfileTweet-action--favorite\n    { \n        display: inline ! important;    \n        position: relative ! important; \n    }\n\n    .flex-module, .profile-card, .js-content-top, #page-container,\n    .ProfileTweet \n    { \n        width: 500px ! important; \n    }\n    \n    .pull-right { \n        float: left ! important; \n        clear: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "TwitterMasker",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["twitter.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    /* various spammers, folks that just post the same thing over and over again,\n       or tired memes ... */\n    div[data-screen-name=\"deplorablemax1\"],\n    div[data-screen-name=\"peplamb\"],\n    div[data-screen-name=\"DC_Resister_Bee\"],\n    div[data-screen-name=\"Impeach_D_Trump\"],\n    div[data-screen-name=\"jamesclarke1123\"],\n    div[data-screen-name=\"SLandinSoCal\"],\n    div[data-screen-name=\"FarhanKVirk\"]\n    { \n        display: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "UsaToday",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["usatoday.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .more-stories-content, .inline-share-tools, .ui-video-wrapper,\n    header, .close-wrap, #Adv10, .oembed-asset\n    {\n        display: none !important;\n    }"
+    }]
+  },
+  {
+             "name": "Ustream",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["ustream.tv"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #SocialStream, #Footer, #Header, .content-title, .side-col, .content-col ,\n    #CollectionWrapper, .viewSwitch, .viewer-bg, #CollectionWrapper,\n    #xxxExperience_Empty { \n        display: none ! important; \n    }\n    .main-content { \n        display: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "VoltzWiki",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["voltzwiki.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .hlist li { \n        white-space: normal ! important; \n    }"
+    }]
+  },
+  {
+             "name": "Walmart",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["walmart.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    /*\n      #border, .MainColumn, #shelfDiv { width: 1200px ! important; }\n      */\n    .gridVertDiv { \n        float: left ! important; \n        display : none; \n    }"
+    }]
+  },
+  {
+             "name": "WaPo",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["washingtonpost.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #header-v3, #newsharebarMasthead, #right-rail, .posttv-your-three-container,\n    .pb-f-page-share-bar, .pb-f-page-recommended-strip, .pb-f-games-gamesWidget,\n    .pb-f-page-trending-strip, .posttv-video-embed, .inline-video, #wp-header, \n    .pb-f-page-comments, .pb-f-page-newsletter-inLine, .pb-f-page-footer-v2,\n    .pb-f-sharebars-top-share-bar, #page, .chain-button, #botPromoStrip,\n    #brand-wrapper,  #wrapperMainRight, #content_column_tools, .inline-video,\n    #NN-module-sidebar, #NN-module-footer, .partners, #footer-v3,\n    .tos,  #wrapperTop, #tsPostPolitics, #secondary, #menu-share-float,\n    .pb-f-most-sidebar, .next-story-wrapper\n\n    { \n        display : none ! important; \n    }\n\n    #main-content { \n        width: 100% ! important; \n        border-right: none ! important; \n        background-image: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "WashingtonTimes",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["washingtontimes.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    form, footer, .comments, .email-alerts, .ed-columns, .qotd, .breaking-news,\n    #top-bar, #masthead, #info-bar, noscript, #no-js-warning\n    {\n        display: none !important;\n    }"
+    }]
+  },
+  {
+             "name": "WeeklyStandard",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["weeklystandard.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    cnt, p { \n        display: block ! important; \n    }"
+    }]
+  },
+  {
+             "name": "Wikia",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["wikia.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    a:visited { \n        color: purple ! important;\n    }"
+    }]
+  },
+  {
+             "name": "Wikidot",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["wikidot.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #thread-container-posts, .collapsible-block-unfolded\n    {\n        display:block ! important;\n    }"
+    }]
+  },
+  {
+             "name": "Wikipedia",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["wikipedia.org"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #cn-sliding-ad, #centralNotice,#p-lang, \n    #siteNotice, #articleFeedbackv5-bottomrighttab , #frbanner3, #frbanner4,\n    #mw-panel, #frb-inline\n    { \n        display:none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "WineHQ",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["winehq.org"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "  .collapse { display: unset ! important;}"
+    }]
+  },
+  {
+             "name": "WSJ",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["wsj.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .footer_columns, .footnotes , #morein, #fblikebot, #abt.at.emailthis,\n    .stBtn-email, .stBtn-reprint, .header, #hat_div,\n    .art_tabbed_nav, .sTools, #newsreeliframe, .wsjSubnav, .wsjMainNav,\n    .margin-left-big, .footer_bar, footer, .article-chiclet, .unitType-reel,\n    header, .adSummary, .masthead, #hat_portal,\n    .aTools, .articleTools_bottom, #abt.at.container, .video-list,\n    #wsjdn-links, #about-links, #tools-links, #help-links, #bottom-links,\n    .top, .hamburger, .sponsored, .footer, #footer, #newReel, .unsub-lock\n    { \n        display: none ! important; \n    }\n\n    .stream_c { \n        width: 100em ! important; \n    }\n\n    #articles_right_rail { \n        width: 300px; \n    }"
+    }]
+  },
+  {
+             "name": "Yahoo",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["yahoo.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #leftContent, .type_contentcarousel, .type_footer, .type_subfooter,\n    .mul-cont, .type_ads, .specialevents, .type_marketindices, #yn-vitality \n\n    { \n        display: none ! important;\n    }\n\n    #disposableEmailAddresses_scroller { \n        height: 40em ! important; \n    }\n\n    .disposableAddressEducation, #yfi_fidelity, #yfi_fp_featured_videos,\n    #yfi_fp_investing_ideas { \n        display: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "YahooMail",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["mail.yahoo.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    .disposableAddressEducationDiv, #ChatWindow { \n        display: none ! important; \n    }\n\n    #disposableEmailAddresses_scroller, #disposableEmailAddresses_list\n    { \n        height: 40em ! important; \n    }"
+    }]
+  },
+  {
+             "name": "YouTube",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["youtube.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #action-panel-details\n    { \n        display: block ! important; \n    }\n\n    .promoted-videos, .branded-page-v2-top-row, #video-masthead, \n    .signup-promo, #footer, #action-panel-share, #yt-uix-clickcard-card13,\n    #dftvp, #watch7-sidebar-discussion, #watch-sidebar-live-chat,\n    #item-section-054769, #item-section-033661, #item-section-652998,\n    #item-section-648146, #item-section-392757, #item-section-296230,\n    #item-section-046460, #item-section-204995, #item-section-031197,\n    #item-section-650712, #item-section-006100, #item-section-855594,\n    #item-section-840628, #item-section-202600, #item-section-884364,\n    .mealbar-promo-renderer\n    { \n        display: none ! important; \n    }"
+    }]
+  },
+  {
+             "name": "zdnet",
+          "enabled": true,
+        "updateUrl": null,
+           "md5Url": null,
+              "url": null,
+      "originalMd5": null,
+         "sections": [{
+            "domains": ["zdnet.com"],
+               "urls": [],
+        "urlPrefixes": [],
+               "code": "    #promo-subscribe-nl-e590, #footer, #promo-subscribe-logged-out,\n    #promo-subscribe-nl-e589\n    { \n        display: none; \n    }"
+    }]
+  }
+]

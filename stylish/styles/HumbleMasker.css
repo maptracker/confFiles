@@ -1,12 +1,12 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
+@-moz-document domain("humblebundle.com") {
+    
 /* Listed games will be hidden in Humble's store. Includes:
    Games I've bought, at Humble or elsewhere
    Ones that came in a bundle
    Games I have no interest in buying  */
 
-@-moz-document domain("humblebundle.com") {
-    
     .hero-banner { 
         display: none ! important; 
     }
