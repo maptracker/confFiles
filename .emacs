@@ -104,7 +104,16 @@
 ;;; Ideas from Javier Oviedo's Emacs init file. joviedo@glue.umd.edu
 
 ;;; Have the titlebar contain name of current buffer
-(setq frame-title-format '("%b" (buffer-file-name " :   %f")))
+
+;;; Irritatingly, the title is still reset to "emacs@<machine domain>"
+;;; when the window gets minimized. I have not found a way to prevent
+;;; this.
+
+;; (setq frame-title-format '("%b" (buffer-file-name " :   %f")))
+
+;;; https://www.gnu.org/software/emacs/manual/html_node/efaq/Displaying-the-current-file-name-in-the-titlebar.html
+(setq frame-title-format "%b")
+
 ;;; Do not display newbie message on new startup
 (setq inhibit-startup-message t)
 ;;; Disable down-arrow and C-n at end of a buffer from adding new lines
