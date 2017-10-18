@@ -25,3 +25,34 @@ Detect_Web_Filter
 .#*
 
 ts
+
+
+## Greasemonkey suddenly makes DB files for every script? Most of
+## these scripts have no need for local storage, so exclude them from
+## repo
+
+All_Recipes_TiddlyWiki.db
+Amazon_Review_Scanner.db
+BBC_Image.db
+DeviantArt.db
+Direct_Google.db
+Disqus_Filter.db
+Google_Allrecipes.db
+Humble_Store.db
+Instagram_Image.db
+Load_Lazy_Images.db
+Modify_GOG.db
+NJ.com_image_adder.db
+Pinterest.db
+Plastic_Soldier_Review.db
+Politico_One_Page.db
+ReaperImgAllLarge.db
+Reddit_Comments.db
+Single_Page_News.db
+Soylent.db
+StackExchange.db
+The_Atlantic.db
+Tumblr_Direct_Image.db
+Tumblr_Image_set.db
+USDA_Post_to_Get.db
+ixQuick_Repoint_Image_Links.db

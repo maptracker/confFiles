@@ -4,6 +4,7 @@
 // @include     https://*washingtonpost.com/*
 // @include     https://www.nytimes.com*
 // @include     http://www.space.com/*
+// @include     https://www.space.com/*
 // @include     https://*reuters.com/*
 // @include     https://*.cnn.com/*
 // @include     https://*bloomberg.com/*
