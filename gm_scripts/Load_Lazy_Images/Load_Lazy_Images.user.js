@@ -9,6 +9,9 @@
 // @include     https://*.cnn.com/*
 // @include     https://*bloomberg.com/*
 // @include     https://*qz.com/*
+// @include     http://*.chicagotribune.com/*
+// @include     http://*.latimes.com/*
+// @include     http://*abc7.com/*
 // @version     1
 // @grant       none
 // @grant       GM_log
@@ -21,8 +24,7 @@
    and reset opacity on the actual image
 */
 
-var imgs = document.getElementsByTagName('img');
-var ilen = imgs.length;
+var tag  = 'img';
 var loc  = document.location;
 var bgChk = new RegExp('(&w=[0-9]+)"');
 var hrSrc = 'data-src';
@@ -39,11 +41,19 @@ if (/washingtonpost/.test(loc)) {
 } else if (/reuters/.test(loc)) {
     /* Using a background-image CSS style to define image source */
     cb = divBackground;
+} else if (/\.(chicagotribune|latimes)\./.test(loc)) {
+    hrSrc = 'data-baseurl';
 } else if (/\.cnn\./.test(loc)) {
     hrSrc = 'data-src-large';
+} else if (/\abc\d+\./.test(loc)) {
+    hrSrc = 'data-imgsrc';
+    tag   = 'div';
 } else {
     /* This seems like the 'standard' way to do a lazy load */
 }
+
+var imgs = document.getElementsByTagName(tag);
+var ilen = imgs.length;
 
 window.setTimeout(cb, wait);
 
@@ -52,6 +62,11 @@ function dataSrc() {
         var img  = imgs[i];
         var ds   = img.getAttribute( hrSrc );
         if (ds) {
+            if (img.tagName != 'img') {
+                newImg = document.createElement('img');
+                img.appendChild(newImg);
+                img = newImg;
+            }
             img.src = ds;
             // alert(ds);
         }
