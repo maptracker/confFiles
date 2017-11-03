@@ -2769,5 +2769,25 @@
 			}
 		],
 		"id": 138
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "DenverPost",
+		"sections": [
+			{
+				"code": "img { transform: none ! important }\n.slide-caption { display: block ! important; }\n\n.related, .more-news, iframe, footer, header, aside {\ndisplay: none ! important;\n}",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"denverpost.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 139
 	}
 ]
