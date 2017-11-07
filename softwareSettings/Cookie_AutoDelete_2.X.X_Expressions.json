@@ -1,0 +1,46 @@
+{
+  "default": [
+    {
+      "expression": "gog.com",
+      "storeId": "default",
+      "listType": "WHITE",
+      "id": "BkU72_00Z",
+      "cookieNames": []
+    },
+    {
+      "expression": "habitica.com",
+      "storeId": "default",
+      "listType": "WHITE",
+      "id": "H16Nn_CCZ",
+      "cookieNames": []
+    },
+    {
+      "expression": "humblebundle.com",
+      "storeId": "default",
+      "listType": "WHITE",
+      "id": "ByQS3_CRb",
+      "cookieNames": []
+    },
+    {
+      "expression": "khanacademy.org",
+      "storeId": "default",
+      "listType": "WHITE",
+      "id": "BkABndRRb",
+      "cookieNames": []
+    },
+    {
+      "expression": "mojang.com",
+      "storeId": "default",
+      "listType": "WHITE",
+      "id": "r1MU2O00b",
+      "cookieNames": []
+    },
+    {
+      "expression": "twitter.com",
+      "storeId": "default",
+      "listType": "WHITE",
+      "id": "Hy88hdRRW",
+      "cookieNames": []
+    }
+  ]
+}
