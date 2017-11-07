@@ -66,6 +66,15 @@ link "$CDIR/.emacs"        ".emacs"
 link "$CDIR/.psqlrc"       ".psqlrc"
 link "$CDIR/.bash_profile" ".bash_profile"
 
+## KDE files
+kdir=".kde/share/apps/konsole"
+mkdir -p "$kdir"
+link "$CDIR/KDE/konsoleui.rc"   "$kdir/konsoleui.rc"
+kdir=".kde/share/config"
+mkdir -p "$kdir"
+link "$CDIR/KDE/konsolerc"      "$kdir/konsolerc"
+
+
 ## Firefox stuff
 FFPROF=`$my_dir/systemSetup/findFirefoxProfile.sh 1`
 ## Greasemonkey:
