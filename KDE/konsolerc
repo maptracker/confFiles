@@ -1,11 +1,20 @@
 [$Version]
 update_info=konsole.upd:2.9.0-global-options
 
+[Colors]
+CurrentPalette=Forty Colors
+
 [Desktop Entry]
 DefaultProfile=Shell.profile
 
 [Favorite Profiles]
 Favorites=Shell.profile
+
+[KFileDialog Settings]
+Height 1440=696
+Recent Files[$e]=konsoleTabStylesheet.css,$HOME/confFiles/KDE/konsoleTabStylesheet.css
+Recent URLs[$e]=$HOME/confFiles/KDE/
+Width 3440=1720
 
 [MainWindow]
 Height 1440=922
@@ -16,3 +25,5 @@ Width 3440=911
 [TabBar]
 NewTabBehavior=PutNewTabAfterCurrentTab
 TabBarPosition=Top
+TabBarUseUserStyleSheet=true
+TabBarUserStyleSheetFile=file:///home/tilfordc/confFiles/KDE/konsoleTabStylesheet.css

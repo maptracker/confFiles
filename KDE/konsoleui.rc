@@ -61,5 +61,6 @@
   <Action shortcut="Ctrl+8" name="switch-to-tab-7"/>
   <Action shortcut="Ctrl+9" name="switch-to-tab-8"/>
   <Action shortcut="Ctrl+0" name="switch-to-tab-9"/>
+  <Action shortcut="" name="help_contents"/>
  </ActionProperties>
 </kpartgui>
