@@ -951,7 +951,7 @@
 		"name": "GroupTribune",
 		"sections": [
 			{
-				"code": "    /* Tribune papers share the same CSS */\n    .div[data-adloader-adtype], .trb_cm, .trb_sc, .trb_nls_c,\n    .trb_bnn, .trb_bottomAdBanner, .trb_ar_summary_load,\n    .trb_ar_taboolaCmpn, .trb_masthead, .trb_nh_uw, .trb_embed_media_link,\n    .trb_nh, .trb_bnn, .trb_socialize, .trb_cm, .trb_nls_c,\n    .trb_ar_summary_load, .trb_video_embeddedvideo,\n    .trb_embed_imageContainer_figure, iframe, .mod-adcpc,\n    *[data-role='notification'], *[data-role='nls'],\n    *[data-role='cm_expandable'], *[data-role*='delayload']\n\n    { \n        display : none ! important; \n    }",
+				"code": "    /* Tribune papers share the same CSS */\n    .div[data-adloader-adtype], .trb_cm, .trb_sc, .trb_nls_c,\n    .trb_bnn, .trb_bottomAdBanner, .trb_ar_summary_load,\n    .trb_ar_taboolaCmpn, .trb_masthead, .trb_nh_uw, .trb_embed_media_link,\n    .trb_nh, .trb_bnn, .trb_socialize, .trb_cm, .trb_nls_c,\n    .trb_ar_summary_load, .trb_video_embeddedvideo,\n    .trb_embed_imageContainer_figure, iframe, .mod-adcpc,\n    *[data-role='notification'], *[data-role='nls'],\n    *[data-role='cm_expandable'], *[data-role*='delayload'],\n    .video\n\n    { \n        display : none ! important; \n    }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
