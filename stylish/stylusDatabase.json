@@ -2789,5 +2789,45 @@
 			}
 		],
 		"id": 139
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "TechCrunch",
+		"sections": [
+			{
+				"code": ".article-extra, footer, .social-share, .l-sidebar, .announcement, .nav-bar\n{ display: none ! important; }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"techcrunch.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 140
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "ZimHerald",
+		"sections": [
+			{
+				"code": "body { background-image: none ! important; }\n#container { top: unset ! important; width: unset ! important; }\n\naside {display: none ! important; }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"herald.co.zw"
+				],
+				"regexps": []
+			}
+		],
+		"id": 141
 	}
 ]
