@@ -289,7 +289,7 @@
 		"name": "CbsNews",
 		"sections": [
 			{
-				"code": "  .shortcode, .media-list, iframe, .social,\n  .site-nav__item-anchor, .article-video-container,\n  .listing-media-feature, .module, footer, .smart-banner-cbsn,\n  .module-rem, .media-block, .media-figure\n  {\n    display: none !important; \n  }\n  header { height: auto ! important; }",
+				"code": "  .shortcode, .media-list, iframe, .social,\n  .site-nav__item-anchor, .article-video-container,\n  .listing-media-feature, .module, footer, .smart-banner-cbsn,\n  .module-rem, .media-block, .media-figure, .embed--type-video\n  {\n    display: none !important; \n  }\n  header { height: auto ! important; }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
