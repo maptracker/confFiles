@@ -649,7 +649,7 @@
 		"name": "Economist",
 		"sections": [
 			{
-				"code": "    .ec-homepage-player, #product-events, .footer-stripe-bottom,\n    .footer-stripe-top, .mh-stripe, #ec-cookie-messages-container,\n    #block-ec_social-right_rail_social_share_buttons,\n    #block-ec_components-page_tools_compact, .share_inline_header,\n    #block-ec_components-print_sub, #comments-header, \n    a[href*='www.economist.com/digital/apps'], .navigation-sticky-scroller,\n    .main-content__video-collection, #bottom-page-wrapper,\n    .latest-printed, .share-component\n    { \n        display: none ! important; \n    }\n\n    p {\n        margin-left: 1em ! important; \n    }\n    \n    a:visited, a:visited * { \n        color : purple ! important; \n    }\n    .imagefield { \n        position: relative !important; \n        z-index: 999999 ! important; \n    }",
+				"code": "    .ec-homepage-player, #product-events, .footer-stripe-bottom,\n    .footer-stripe-top, .mh-stripe, #ec-cookie-messages-container,\n    #block-ec_social-right_rail_social_share_buttons,\n    #block-ec_components-page_tools_compact, .share_inline_header,\n    #block-ec_components-print_sub, #comments-header, \n    a[href*='www.economist.com/digital/apps'], .navigation-sticky-scroller,\n    .main-content__video-collection, #bottom-page-wrapper,\n    .latest-printed, .share-component, .newsletter-form\n    { \n        display: none ! important; \n    }\n\narticle { max-width: unset ! important; }\n\n    p {\n        margin-left: 1em ! important; \n    }\n    \n    a:visited, a:visited * { \n        color : purple ! important; \n    }\n    .imagefield { \n        position: relative !important; \n        z-index: 999999 ! important; \n    }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
