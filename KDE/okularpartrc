@@ -1,0 +1,12 @@
+[$Version]
+update_info=okular.upd:sep_settings
+
+[Core General]
+ObeyDRM=false
+
+[General]
+ShellOpenFileInTabs=true
+UseKTTSD=false
+
+[PageView]
+MouseMode=TextSelect

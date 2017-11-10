@@ -1,0 +1,15 @@
+
+# The okularrc file includes recently file history. Blacklisting in
+# gitignore to be safe.
+
+okularrc
+
+# konsole also includes recent docs. Not really as important here, but
+# I still want it ignored from here out. The file will stay in the
+# repo since it includes tab bar configuration
+
+konsolerc
+
+# Also need to untrack, contentious on best way to do so:
+# https://stackoverflow.com/questions/1139762/ignore-files-that-have-already-been-committed-to-a-git-repository
+

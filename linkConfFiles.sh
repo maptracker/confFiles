@@ -70,8 +70,10 @@ link "$CDIR/.bash_profile" ".bash_profile"
 kdir=".kde/share/apps/konsole"
 mkdir -p "$kdir"
 link "$CDIR/KDE/konsoleui.rc"   "$kdir/konsoleui.rc"
+
 kdir=".kde/share/config"
 mkdir -p "$kdir"
+link "$CDIR/KDE/okularpartrc"   "$kdir/okularpartrc"
 link "$CDIR/KDE/konsolerc"      "$kdir/konsolerc"
 
 
