@@ -2849,5 +2849,25 @@
 			}
 		],
 		"id": 142
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "Jira",
+		"sections": [
+			{
+				"code": "/* Random irrelevant plugins */\n#tts-sla-panel { display: none ! important }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"dashboard.pri.bms.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 143
 	}
 ]
