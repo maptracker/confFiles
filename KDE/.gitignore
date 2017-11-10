@@ -11,5 +11,7 @@ okularrc
 konsolerc
 
 # Also need to untrack, contentious on best way to do so:
-# https://stackoverflow.com/questions/1139762/ignore-files-that-have-already-been-committed-to-a-git-repository
-
+#   https://stackoverflow.com/questions/1139762/ignore-files-that-have-already-been-committed-to-a-git-repository
+# The correct way to do this appears to be:
+##   git update-index --assume-unchanged konsolerc
+# I believe this is neccesary on all cloned locations.
