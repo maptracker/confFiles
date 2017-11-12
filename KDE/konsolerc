@@ -5,10 +5,10 @@ update_info=konsole.upd:2.9.0-global-options
 CurrentPalette=Forty Colors
 
 [Desktop Entry]
-DefaultProfile=/home/tilfordc/confFiles/KDE/Shell.profile
+DefaultProfile=Shell.profile
 
 [Favorite Profiles]
-Favorites=/home/tilfordc/confFiles/KDE/Shell.profile
+Favorites=/home/tilfordc/.kde/share/apps/konsole/Shell.profile
 
 [KFileDialog Settings]
 Height 1440=696
