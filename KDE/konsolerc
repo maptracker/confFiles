@@ -5,21 +5,21 @@ update_info=konsole.upd:2.9.0-global-options
 CurrentPalette=Forty Colors
 
 [Desktop Entry]
-DefaultProfile=Shell.profile
+DefaultProfile=/home/tilfordc/confFiles/KDE/Shell.profile
 
 [Favorite Profiles]
-Favorites=Shell.profile
+Favorites=/home/tilfordc/confFiles/KDE/Shell.profile
 
 [KFileDialog Settings]
 Height 1440=696
-Recent Files[$e]=konsoleTabStylesheet.css,$HOME/confFiles/KDE/konsoleTabStylesheet.css
-Recent URLs[$e]=$HOME/confFiles/KDE/
 Width 3440=1720
 
 [MainWindow]
+Height 1080=853
 Height 1440=922
-State=AAAA/wAAAAD9AAAAAAAAA48AAAOBAAAABAAAAAQAAAAIAAAACPwAAAAA
+State=AAAA/wAAAAD9AAAAAAAABPsAAAM8AAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
+Width 1920=1275
 Width 3440=911
 
 [TabBar]
