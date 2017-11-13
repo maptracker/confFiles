@@ -1,45 +1,87 @@
 {
   "default": [
     {
+      "expression": "*.bms.com",
+      "storeId": "default",
+      "listType": "WHITE",
+      "id": "HkZ3WPP1f",
+      "cookieNames": []
+    },
+    {
+      "expression": "*.coursera.org",
+      "storeId": "default",
+      "listType": "WHITE",
+      "id": "ByD2bwvyf",
+      "cookieNames": []
+    },
+    {
+      "expression": "*.ensembl.org",
+      "storeId": "default",
+      "listType": "WHITE",
+      "id": "Hy32-wP1M",
+      "cookieNames": []
+    },
+    {
+      "expression": "*.plateau.com",
+      "storeId": "default",
+      "listType": "WHITE",
+      "id": "rkmaWDwJG",
+      "cookieNames": []
+    },
+    {
       "expression": "gog.com",
       "storeId": "default",
       "listType": "WHITE",
-      "id": "BkU72_00Z",
+      "id": "Skm0ePv1G",
       "cookieNames": []
     },
     {
       "expression": "habitica.com",
       "storeId": "default",
       "listType": "WHITE",
-      "id": "H16Nn_CCZ",
+      "id": "SkxX0lvPkM",
       "cookieNames": []
     },
     {
       "expression": "humblebundle.com",
       "storeId": "default",
       "listType": "WHITE",
-      "id": "ByQS3_CRb",
+      "id": "BJbXRgvPJM",
+      "cookieNames": []
+    },
+    {
+      "expression": "ingenuity.com",
+      "storeId": "default",
+      "listType": "WHITE",
+      "id": "HJtGWDvkM",
       "cookieNames": []
     },
     {
       "expression": "khanacademy.org",
       "storeId": "default",
       "listType": "WHITE",
-      "id": "BkABndRRb",
+      "id": "B1GQClwwkG",
       "cookieNames": []
     },
     {
       "expression": "mojang.com",
       "storeId": "default",
       "listType": "WHITE",
-      "id": "r1MU2O00b",
+      "id": "rJQ7ClPDyf",
+      "cookieNames": []
+    },
+    {
+      "expression": "mozilla.org",
+      "storeId": "default",
+      "listType": "WHITE",
+      "id": "S1x7-wvkz",
       "cookieNames": []
     },
     {
       "expression": "twitter.com",
       "storeId": "default",
       "listType": "WHITE",
-      "id": "Hy88hdRRW",
+      "id": "BJ4m0ewPyz",
       "cookieNames": []
     }
   ]
