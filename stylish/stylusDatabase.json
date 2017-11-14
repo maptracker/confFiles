@@ -1234,7 +1234,7 @@
 		"name": "Ixquick",
 		"sections": [
 			{
-				"code": "    /* Generally I'm looking for one of these: */\n    a[href*='stackoverflow'], a[href*='stackexchange'],\n    a[href*='serverfault'], a[href*='superuser'], \n    a[href*=\"wikipedia.org\"]\n    { \n        background-color: lime ! important;\n    }\n\n    #sponsored, iframe, .banner-container\n    { \n        display: none ! important; \n    }\n\n    a:visited { \n        color: purple !important;\n    }",
+				"code": "    /* Generally I'm looking for one of these: */\n    a[href*='stackoverflow'], a[href*='stackexchange'],\n    a[href*='serverfault'], a[href*='superuser'], \n    a[href*=\"wikipedia.org\"], a[href*=\"tldp.org\"],\n    a[href*=\"askubuntu.com\"]\n    { \n        background-color: lime ! important;\n    }\n\n    #sponsored, iframe, .banner-container\n    { \n        display: none ! important; \n    }\n\n    a:visited { \n        color: purple !important;\n    }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -2829,5 +2829,65 @@
 			}
 		],
 		"id": 141
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "FiveThirtyEight",
+		"sections": [
+			{
+				"code": "iframe[src*='nfl'], iframe[src*='football'], iframe[src*='nba'], iframe[src*='soccer'],\n.tag-college-football, .tag-nfl, .vertical-sports, .footer-section-secondary-links,\n.footer-section-get-more, .comments, #footer-additional-info\n{ display: none ! important; }\n\n.widget { border-bottom: unset; }\n#colophon { padding: unset; }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"fivethirtyeight.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 142
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "Jira",
+		"sections": [
+			{
+				"code": "/* Random irrelevant plugins */\n#tts-sla-panel { display: none ! important }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"dashboard.pri.bms.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 143
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "WikiTribune",
+		"sections": [
+			{
+				"code": ".b-lazy {filter: unset ! important; transition: unset ! important; }\n\nimg img { display: none ! important; }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"wikitribune.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 144
 	}
 ]
