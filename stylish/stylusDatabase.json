@@ -148,7 +148,7 @@
 		"name": "BBC",
 		"sections": [
 			{
-				"code": "    .share, #comp-pattern-library-2, #core-navigation, .tags-container,\n    .orb-footer-inner, #comp-features-and-analysis, .related-links,\n    #comp-top-stories-promo, .player-with-placeholder__caption\n    { display : none ! important; }",
+				"code": "    .share, #comp-pattern-library-2, #core-navigation, .tags-container,\n    .orb-footer-inner, #comp-features-and-analysis, .related-links,\n    #comp-top-stories-promo, .player-with-placeholder__caption,\n.navigation, #orb-header, .comments-button\n    { display : none ! important; }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -1796,7 +1796,7 @@
 		"name": "Politico",
 		"sections": [
 			{
-				"code": "    .story-suggestions, .nav-micro, .global-header, aside, \n    .story-continued, .story-interrupt, .story-tools, .story-share,\n    .story-supplement, nav, .global-footer, .video-object\n    { \n        display: none ! important;\n    }",
+				"code": "    .story-suggestions, .nav-micro, .global-header, aside, \n    .story-continued, .story-interrupt, .story-tools, .story-share,\n    .story-supplement, nav, .global-footer, .video-object,\n#superComments\n    { \n        display: none ! important;\n    }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
