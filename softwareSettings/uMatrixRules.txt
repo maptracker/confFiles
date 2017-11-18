@@ -1,15 +1,21 @@
+https-strict: behind-the-scene false
 matrix-off: about-scheme true
 matrix-off: behind-the-scene true
 matrix-off: chrome-extension-scheme true
 matrix-off: chrome-scheme true
 matrix-off: localhost true
+matrix-off: moz-extension-scheme true
 matrix-off: opera-scheme true
+referrer-spoof: behind-the-scene false
+ua-spoof: behind-the-scene false
 * * * block
 * * css allow
 * * frame block
 * * image allow
-* 1st-party * allow
+* 1st-party cookie allow
+* 1st-party css allow
 * 1st-party frame allow
+* 1st-party image allow
 amazon.com d1k8kvpjaf8geh.cloudfront.net script allow
 amazon.com d39x00gckxu2jb.cloudfront.net script allow
 amazon.com dew9ckzjyt2gn.cloudfront.net script allow
@@ -26,7 +32,11 @@ gog.com bootstrapcdn.com xhr allow
 gog.com cloudflare.com script allow
 gog.com d3tvtfb6518e3e.cloudfront.net script allow
 gog.com googlevideo.com xhr allow
-gog.com s.ytimg.com plugin allow
+gog.com s.ytimg.com media allow
+gog.com www.google.com script allow
+gog.com www.youtube.com frame allow
+gog.com www.youtube.com script allow
+gog.com www.youtube.com xhr allow
 gog.com zdassets.com script allow
 gog.com zdassets.com xhr allow
 gog.com zendesk.com script allow
@@ -34,7 +44,6 @@ google.com ggpht.com xhr allow
 google.com google.nl cookie allow
 google.com gstatic.com script allow
 google.com maps.googleapis.com script allow
-google.com translate.googleusercontent.com frame allow
 google.com translate.googleusercontent.com frame allow
 google.com www.gstatic.com script allow
 google.com www.gstatic.com xhr allow
@@ -52,11 +61,13 @@ humblebundle.com checkout.stripe.com cookie allow
 humblebundle.com checkout.stripe.com xhr allow
 humblebundle.com d26a57ydsghvgx.cloudfront.net script allow
 humblebundle.com google.com cookie allow
+humblebundle.com google.com script allow
 humblebundle.com googlevideo.com xhr allow
 humblebundle.com pubnub.a.ssl.fastly.net script allow
 humblebundle.com pubnub.com xhr allow
 humblebundle.com q.stripe.com image allow
-humblebundle.com s.ytimg.com plugin allow
+humblebundle.com s.ytimg.com media allow
+humblebundle.com s.ytimg.com script allow
 humblebundle.com stripe.com cookie allow
 humblebundle.com stripe.com frame allow
 humblebundle.com stripe.com script allow
@@ -66,6 +77,9 @@ humblebundle.com www.google.com frame allow
 humblebundle.com www.google.com script allow
 humblebundle.com www.google.com xhr allow
 humblebundle.com www.gstatic.com script allow
+humblebundle.com www.youtube.com frame allow
+humblebundle.com www.youtube.com script allow
+humblebundle.com www.youtube.com xhr allow
 humblebundle.com zdassets.com script allow
 humblebundle.com zendesk.com script allow
 humblebundle.com zendesk.tv script allow
@@ -78,8 +92,8 @@ imgur.com ajax.googleapis.com script allow
 imgur.com facebook.com * block
 imgur.com facebook.com cookie block
 imgur.com facebook.com frame block
+imgur.com facebook.com media block
 imgur.com facebook.com other block
-imgur.com facebook.com plugin block
 imgur.com facebook.com script block
 imgur.com facebook.com xhr block
 imgur.com www.facebook.com * block
@@ -101,26 +115,28 @@ khanacademy.org kastatic.org other allow
 khanacademy.org kastatic.org script allow
 khanacademy.org s3.amazonaws.com script allow
 mozilla.org addons.cdn.mozilla.net script allow
+mozilla.org addons.mozilla.org other allow
+mozilla.org addons.mozilla.org xhr allow
 mozilla.org mozilla.net script allow
 netflix.com nflxext.com script allow
 netflix.com nflximg.net script allow
-npr.org edgefcs.net plugin allow
-pbs.org cdngw.ustream.tv plugin allow
+npr.org edgefcs.net media allow
+pbs.org cdngw.ustream.tv media allow
 pbs.org d2ok2u3bz752mp.cloudfront.net script allow
-pbs.org d3aef1qbbv7i5v.cloudfront.net plugin allow
+pbs.org d3aef1qbbv7i5v.cloudfront.net media allow
 pbs.org d3aef1qbbv7i5v.cloudfront.net script allow
 pbs.org d3i6fh83elv35t.cloudfront.net script allow
 pbs.org dl47xs20witg8.cloudfront.net script allow
-pbs.org static-cdn1.ustream.tv plugin allow
+pbs.org static-cdn1.ustream.tv media allow
 pbs.org static-cdn2.ustream.tv script allow
 pbs.org www.ustream.tv frame allow
-pbs.org www.ustream.tv plugin allow
+pbs.org www.ustream.tv media allow
 pbs.org www.ustream.tv script allow
-playstarbound.com ytimg.com plugin allow
+playstarbound.com ytimg.com media allow
 playstarbound.com ytimg.com script allow
 reddit.com cdn.embedly.com frame allow
+reddit.com g.redditmedia.com media allow
 reddit.com g.redditmedia.com other allow
-reddit.com g.redditmedia.com plugin allow
 reddit.com redditstatic.com script allow
 reddit.com v.redd.it xhr allow
 reddit.com www.redditmedia.com frame allow
@@ -131,47 +147,51 @@ scp-wiki.net scpfoundation.org frame allow
 steamcommunity.com akamaihd.net script allow
 steamcommunity.com steamcommunity-a.akamaihd.net script allow
 steampowered.com cdn.akamai.steamstatic.com other allow
+steampowered.com cdn.edgecast.steamstatic.com media allow
 steampowered.com cdn.edgecast.steamstatic.com other allow
-steampowered.com cdn.edgecast.steamstatic.com plugin allow
+steampowered.com steamstatic.com media allow
 steampowered.com steamstatic.com script allow
+steampowered.com store.akamai.steamstatic.com script allow
 theguardian.com www.youtube.com frame allow
 tineye.com www.google.com frame allow
 tineye.com www.google.com script allow
 twitter.com twimg.com frame allow
 twitter.com twimg.com script allow
-ustream.tv llnwd.net plugin allow
+twitter.com twimg.com xhr allow
+ustream.tv llnwd.net media allow
 vimeo.com fpdl.vimeocdn.com other allow
 vimeo.com vimeocdn.com frame allow
+vimeo.com vimeocdn.com media allow
 vimeo.com vimeocdn.com other allow
-vimeo.com vimeocdn.com plugin allow
 vimeo.com vimeocdn.com script allow
 vimeo.com vimeocdn.com xhr allow
 vote411.org static.thevoterguide.org script allow
 wikipedia.org 1st-party * inherit
 wikipedia.org commons.wikimedia.org other allow
 wikipedia.org meta.wikimedia.org script allow
+wikipedia.org upload.wikimedia.org media allow
 wikipedia.org upload.wikimedia.org other allow
-wikipedia.org upload.wikimedia.org plugin allow
 wikipedia.org wikipedia.org script allow
 xkcd.com ajax.googleapis.com script allow
 xkcd.com cdn.mathjax.org script allow
 youtube.com accounts.google.com frame allow
 youtube.com apis.google.com frame allow
-youtube.com apis.google.com frame allow
 youtube.com apis.google.com script allow
 youtube.com apis.google.com xhr allow
 youtube.com content.googleapis.com frame allow
-youtube.com content.googleapis.com plugin allow
+youtube.com content.googleapis.com media allow
 youtube.com content.googleapis.com script allow
 youtube.com content.googleapis.com xhr allow
 youtube.com google.com cookie allow
 youtube.com google.com script allow
 youtube.com google.com xhr allow
-youtube.com googlevideo.com plugin allow
+youtube.com googlevideo.com media allow
 youtube.com googlevideo.com xhr allow
 youtube.com gstatic.com frame allow
-youtube.com s.ytimg.com plugin allow
+youtube.com s.ytimg.com media allow
 youtube.com ssl.gstatic.com script allow
 youtube.com www.google.com script allow
 youtube.com www.gstatic.com script allow
+youtube.com www.youtube.com script allow
+youtube.com www.youtube.com xhr allow
 youtube.com ytimg.com script allow
