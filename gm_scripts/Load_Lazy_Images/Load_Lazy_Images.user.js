@@ -11,6 +11,7 @@
 // @include     https://*qz.com/*
 // @include     http://*.chicagotribune.com/*
 // @include     http://*.latimes.com/*
+// @include     http://*.denverpost.com/*
 // @include     http://*abc7.com/*
 // @version     1
 // @grant       none
