@@ -1,0 +1,36 @@
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* Tab bar on bottom:
+ * https://www.userchrome.org/what-is-userchrome-css.html
+ *
+ * Lots of examples:
+ * https://github.com/Aris-t2/CustomCSSforFx/tree/master/classic/css/tabs
+ */
+
+/* Tab bar below Navigation & Bookmarks Toolbars 
+   For best results, show Title Bar or Menu Bar */
+#nav-bar { /* main toolbar */
+    -moz-box-ordinal-group: 1 !important;
+    border-top-width: 0 !important; 
+}
+#PersonalToolbar { /* bookmarks toolbar */
+    -moz-box-ordinal-group: 2 !important;
+}
+#TabsToolbar { /* tab bar */
+    -moz-box-ordinal-group: 3 !important;
+}
+
+
+
+/* remove tab fog - @Aris-t2/CustomCSSforFx */
+#TabsToolbar:not(:-moz-lwtheme),
+#TabsToolbar:not(:-moz-lwtheme)::before,
+#TabsToolbar:not(:-moz-lwtheme)::after {
+    box-shadow: unset !important;
+}
+
+/* remove tab title blur - @Aris-t2/CustomCSSforFx */
+.tab-label-container[textoverflow]:not([pinned]) {
+  mask-image: unset !important;
+}
