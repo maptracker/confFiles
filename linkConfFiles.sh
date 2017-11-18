@@ -66,6 +66,12 @@ link "$CDIR/.emacs"        ".emacs"
 link "$CDIR/.psqlrc"       ".psqlrc"
 link "$CDIR/.bash_profile" ".bash_profile"
 
+## FireFox 57 is MESSING EVERYTHING UP. Tiddlywikis now can only be
+## loaded from a subfolder in ~/Downloads (WHY WHY WHY). Create
+## symlink that points to filer location:
+link "/abyss/Common/TW" "$HOME/Downloads/tiddlywikilocations"
+
+
 ## KDE files
 kdir=".kde/share/apps/konsole"
 mkdir -p "$kdir"
@@ -82,45 +88,19 @@ link "$CDIR/KDE/Shell.profile"  "$kdir/Shell.profile"
 FFPROF=`$my_dir/systemSetup/findFirefoxProfile.sh 1`
 ## Greasemonkey:
 link "$my_dir/gm_scripts" "$FFPROF/gm_scripts"
+## User styles:
+mkdir -p "$FFPROF/chrome"
+link "$my_dir/firefox/userChrome.css" "$FFPROF/chrome/userChrome.css"
 
-TORPROF="$HOME/tor-browser_en-US/profile.default/"
+
+TORPROF="$HOME/tor-browser_en-US/profile.default"
 if [[ -d "$TORPROF" ]]; then
     ## Also manage TOR Browser
     link "$my_dir/gm_scripts" "$TORPROF/gm_scripts"
+    mkdir -p "$TORPROF/chrome"
+    link "$my_dir/firefox/userChrome.css" "$TORPROF/chrome/userChrome.css"
 fi
 
-
-## gnome-terminal -- DOES. NOT. WORK.
-
-## gnome-terminal is a MAJOR PitA when it comes to trying to port
-## configuration. I have found suggestions on how to manage the issue,
-## but they are either outdated or don't apply to Mint, or both.
-
-gct="gconftool-2"
-hasGconf=`which $gct`
-
-
-gnomeTools=(
-    gnome-terminal
-)
-
-if [[ -z "$hasGconf" ]]; then
-    err "$gct not present - not sure how to manipulate Gnome settings"
-else
-    msg "46;0;35" "
-Manual steps for restoring Gnome configurations
-   (not sure how to detect if changes have been made, or to live-link)
+msg "1;35" "
+Finished.
 "
-
-    ## Backup and restore with gconftool-2 :
-    ## https://superuser.com/a/241570
-
-    for gt in "${gnomeTools[@]}"
-    do
-        msg "44;33" "## $gt settings:"
-
-        msg "36" "    $gct --dump '/apps/$gt' > \"$HOME/$CDIR/${gt}-conf.xml-BKUP\" # Backup
-    $gct --load \"$HOME/$CDIR/${gt}-conf.xml\" # Restore
-"
-    done
-fi
