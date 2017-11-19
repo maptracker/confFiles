@@ -76,12 +76,14 @@ link "/abyss/Common/TW" "$HOME/Downloads/tiddlywikilocations"
 kdir=".kde/share/apps/konsole"
 mkdir -p "$kdir"
 link "$CDIR/KDE/konsoleui.rc"   "$kdir/konsoleui.rc"
-link "$CDIR/KDE/konsoleui.rc"   "$kdir/konsoleui.rc"
+## not sure what folder the profile should be in?? Changed at some point?
+link "$CDIR/KDE/Shell.profile"  "$kdir/Shell.profile"
 
 kdir=".kde/share/config"
 mkdir -p "$kdir"
 link "$CDIR/KDE/okularpartrc"   "$kdir/okularpartrc"
 link "$CDIR/KDE/Shell.profile"  "$kdir/Shell.profile"
+link "$CDIR/KDE/konsolerc"      "$kdir/konsolerc"
 
 
 ## Firefox stuff
