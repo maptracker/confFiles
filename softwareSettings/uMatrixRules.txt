@@ -31,6 +31,8 @@ gog.com bootstrapcdn.com script allow
 gog.com bootstrapcdn.com xhr allow
 gog.com cloudflare.com script allow
 gog.com d3tvtfb6518e3e.cloudfront.net script allow
+gog.com gog.com script allow
+gog.com gog.com xhr allow
 gog.com googlevideo.com xhr allow
 gog.com s.ytimg.com media allow
 gog.com www.google.com script allow
@@ -54,13 +56,17 @@ google.nl www.gstatic.com script allow
 google.nl www.gstatic.com xhr allow
 habitica.com cloudflare.com script allow
 habitica.com d24n15hnbwhuhn.cloudfront.net script allow
+habitica.com habitica.com script allow
+habitica.com habitica.com xhr allow
 humblebundle.com akamaihd.net script allow
 humblebundle.com api.stripe.com xhr allow
 humblebundle.com apis.google.com frame allow
 humblebundle.com apis.google.com script allow
 humblebundle.com checkout.stripe.com cookie allow
 humblebundle.com checkout.stripe.com xhr allow
+humblebundle.com connect.facebook.net * block
 humblebundle.com d26a57ydsghvgx.cloudfront.net script allow
+humblebundle.com facebook.net * block
 humblebundle.com google.com cookie allow
 humblebundle.com google.com script allow
 humblebundle.com googlevideo.com xhr allow
@@ -78,6 +84,8 @@ humblebundle.com www.google.com frame allow
 humblebundle.com www.google.com script allow
 humblebundle.com www.google.com xhr allow
 humblebundle.com www.gstatic.com script allow
+humblebundle.com www.humblebundle.com script allow
+humblebundle.com www.humblebundle.com xhr allow
 humblebundle.com www.youtube.com frame allow
 humblebundle.com www.youtube.com script allow
 humblebundle.com www.youtube.com xhr allow
@@ -114,6 +122,8 @@ khanacademy.org googlevideo.com xhr allow
 khanacademy.org ka-perseus-graphie.s3.amazonaws.com script allow
 khanacademy.org kastatic.org other allow
 khanacademy.org kastatic.org script allow
+khanacademy.org khanacademy.org script allow
+khanacademy.org khanacademy.org xhr allow
 khanacademy.org s3.amazonaws.com script allow
 mozilla.org addons.cdn.mozilla.net script allow
 mozilla.org addons.mozilla.org other allow
