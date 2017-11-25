@@ -5,14 +5,14 @@
 		"md5Url": null,
 		"url": null,
 		"originalMd5": null,
-		"name": "Google",
+		"name": "Test",
 		"sections": [
 			{
-				"code": "    #s_PERSONALIZATION, .additional-video,\n    .video box, .media-strip, .footer, #rt-col,\n    .share-button-wrapper, .gsid-FVD, #FEATURED_VIDEOS,\n    #en_us-e, #en_us-s, #en_us-m, #en_us-b, \n    .section-en_us-e, .section-en_us-s, .section-en_us-m,\n    #taw, #bottomads, #fll, #fblqf, #fblsh, #gbvg, #wmxmsg,\n    #promo-section, #settings-button, #gbgs4, .pmoabs, #dftvp,\n    .gb_ga, .gb_g, .gb_Mb.gb_ee.gb_R, .section-me-oscars-2016,\n    .section-en_us-b, section-en_us-e, .section-me-ncaa-tournament-2016,\n    .section-en_us-tc, .section-me-masters-2016,\n    .gb_ha, .section-en_uk-e, .section-en_uk-s, #gbw,\n    .mnr-c, #gbwa, #gbw, #ad-source, #ad-label, #groups, #topstuff,\n    #ms, #lc, .share-bar-table, #gbgs4, #gbgs5, .side-appbar,\n    .plusone-box, #gf-foot, .appbar-add, #ad, #calendar, .SP_calendar,\n    .sfe-break-right-em, .gpost,\n    .ad-target2-wrapper, .hdg, #gmm-panel-promo, #copyright, #gbu, #notify-box,\n    .rmi-rpl-bottom, #s_SPORTS_GADGET, #s_EDITORS_PICK, #s_INTERESTING\n    { \n        display: none ! important; \n    }\n\n    a[href*=\"forbes.com\"]\n    {\n        /* does not play well with my browser configuration */\n        color: red ! important;\n    }",
+				"code": "body {\n    background-color: blue ! important;\n}",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
-					"google.com"
+					"example.com"
 				],
 				"regexps": []
 			}
@@ -891,7 +891,7 @@
 		"name": "GOG",
 		"sections": [
 			{
-				"code": "    .is-owned { \n        display: none ! important\n    }\n    .icon-linux { \n        background-color: darkorange ! important;\n        margin:3px; \n        border: solid orange 2px;  \n    }\n    .product-row__rating {\n        display:inline ! important; \n        width: 3px ! important;\n    }\n    .icon-win, .icon-mac, .icon-plus { \n        display: none ! important\n    }\n\n    /* #wishlistHolder .invisible { display: block ! important } */\n    \n    .star-rating--50 { background-color: lime; }\n    .star-rating--45 { background-color: green; }\n    .star-rating--40 { background-color: yellowgreen; }\n    .star-rating--35 { background-color: yellow; }\n    .star-rating--30 { background-color: pink; }\n    .star-rating--25 { background-color: red; }\n    .star-rating--20 { background-color: red; }\n    .star-rating--15 { background-color: black; }\n    .star-rating--10 { background-color: black; }\n    \n    /* These attributes are no longer being set */\n    .product-row__rating[star-rating=\"50\"] { background-color: lime; }\n    .product-row__rating[star-rating=\"49\"] { background-color: lime; }\n    .product-row__rating[star-rating=\"48\"] { background-color: lime; }\n    .product-row__rating[star-rating=\"47\"] { background-color: green; }\n    .product-row__rating[star-rating=\"46\"] { background-color: green; }\n    .product-row__rating[star-rating=\"45\"] { background-color: green; }\n    .product-row__rating[star-rating=\"44\"] { background-color: yellowgreen; }\n    .product-row__rating[star-rating=\"43\"] { background-color: yellowgreen; }\n    .product-row__rating[star-rating=\"42\"] { background-color: yellowgreen; }\n    .product-row__rating[star-rating=\"41\"] { background-color: yellow; }\n    .product-row__rating[star-rating=\"40\"] { background-color: yellow; }\n    .product-row__rating[star-rating^=\"3\"] { background-color: pink; }\n    .product-row__rating[star-rating^=\"2\"] { background-color: red; }\n    .product-row__rating[star-rating^=\"1\"] { background-color: black; }\n    \n    /* Owned games from other sources */\n    *[gog-product=\"1207659024\"], /* botanicula */\n    *[gog-product=\"1207659753\"], /* vvvvvvvv */\n    *[gog-product=\"1207664843\"], /* space_pirates_and_zombies */\n    *[gog-product=\"1207660134\"], /* race_the_sun */\n    *[gog-product=\"1425657908\"], /* skulls_of_the_shogun */\n    *[gog-product=\"1207659018\"], /* spacechem */\n    *[gog-product=\"1207659017\"], /* machinarium */\n    *[gog-product=\"1207659209\"], /* Papers Please */\n    *[gog-product=\"1207659259\"], /* Amnesia */\n    *[gog-product=\"1421855536\"], /* world of goo */\n    *[gog-product=\"1430398832\"], /* aquaria */\n    *[gog-product=\"1207659016\"], /* grimrock */\n    *[gog-product=\"1207660913\"], /* shadowrun */\n    *[gog-product=\"1207665343\"], /* ai war */\n    *[gog-product=\"1207659020\"], /* trine */\n    *[gog-product=\"1207659033\"], /* uplink */\n    *[gog-product=\"1207659072\"], /* to the moon */\n    *[gog-product=\"1438343741\"], /* frozen_synapse */\n    *[gog-product=\"1207659014\"], /* darwinia */\n    *[gog-product=\"1207659124\"], /* deponia 2 */\n    *[gog-product=\"1207660563\"], /* risk of rain */\n    *[gog-product=\"1207664703\"], /* Desktop Dungeons */\n    *[gog-product=\"1207665283\"], /* kingdom rush */\n    *[gog-product=\"1436866438\"], /* shadowrun hk */\n    *[gog-product=\"1207659145\"], /* stacking */\n    *[gog-product=\"1207659513\"], /* guacamelee */\n    *[gog-product=\"1207660104\"], /* pixeljunk */\n    *[gog-product=\"1207660253\"], /* dustforce */\n    *[gog-product=\"1207665323\"], /* ai war */\n    *[gog-product=\"1207659132\"], /* costume quest */\n    *[gog-product=\"1207659220\"], /* eschalon */\n    *[gog-product=\"1207665333\"], /* ai war */\n    *[gog-product=\"1207664603\"], /* among the sleep */\n    *[gog-product=\"1207667123\"], /* anomaly */\n    *[gog-product=\"1207667133\"], /* anomaly korea */\n    *[gog-product=\"1207659164\"], /* bards tale */\n    *[gog-product=\"1207666373\"], /* baldurs gate ii */\n    *[gog-product=\"1207666353\"], /* baldurs gate */\n    *[gog-product=\"1207665193\"], /* blocks that matter */\n    *[gog-product=\"1434013541\"], /* breach and clear */\n    *[gog-product=\"1434036647\"], /* breach and clear */\n    *[gog-product=\"1207659253\"], /* brutal legend */\n    *[gog-product=\"1446823701\"], /* card city nights */\n    *[gog-product=\"1207659075\"], /* defcon */\n    *[gog-product=\"1207659953\"], /* democracy 3 */\n    *[gog-product=\"1207666613\"], /* democracy 3 */\n    *[gog-product=\"1207664493\"], /* democracy 3 */\n    *[gog-product=\"1207660663\"], /* democracy 3 */\n    *[gog-product=\"1207660233\"], /* deponia 3 */\n    *[gog-product=\"1207660683\"], /* eschalon iii */\n    *[gog-product=\"1207665163\"], /* gone home */\n    *[gog-product=\"1207666533\"], /* halfway */\n    *[gog-product=\"1207659483\"], /* hammerwatch */\n    *[gog-product=\"1207666683\"], /* icewind dale */\n    *[gog-product=\"1434445160\"], /* ironclad tactics */\n    *[gog-product=\"1444053723\"], /* little inferno */\n    *[gog-product=\"1446797453\"], /* last federation */\n    *[gog-product=\"1207661993\"], /* luftrausers */\n    *[gog-product=\"1207659074\"], /* multiwinia */\n    *[gog-product=\"1207665033\"], /* olliolli */\n    *[gog-product=\"1207660064\"], /* outlast */\n    *[gog-product=\"1207664463\"], /* outlast */\n    *[gog-product=\"1207667073\"], /* pixel piracy */\n    *[gog-product=\"1207659049\"], /* retro city */\n    *[gog-product=\"1207660413\"], /* shadowrun returns */\n    *[gog-product=\"1440061546\"], /* shadowrun hk */\n    *[gog-product=\"1439900139\"], /* shadowrun hk */\n    *[gog-product=\"1207659160\"], /* Shattered Haven */\n    *[gog-product=\"1207660263\"], /* Shivah */\n    *[gog-product=\"1207664303\"], /* Sir You are Being Hunted */\n    *[gog-product=\"1207665863\"], /* spacecom */\n    *[gog-product=\"1207660733\"], /* steamworld dig */\n    *[gog-product=\"1207660213\"], /* super hexagon */\n    *[gog-product=\"1446796759\"], /* last federation */\n    *[gog-product=\"1207660863\"], /* tower of guns */\n    *[gog-product=\"1207665053\"], /* unrest */\n    *[gog-product=\"1207665063\"], /* unrest */\n    *[gog-product=\"1207665073\"], /* unrest */\n    *[gog-product=\"1207665843\"], /* shadowgate */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n\n    /* Stupid stuff like soundtracks*/\n    *[gog-product=\"1443432851\"],\n    *[gog-product=\"1432563933\"],\n    *[gog-product=\"1432925124\"],\n    *[gog-product=\"1432925592\"],\n    *[gog-product=\"1428489988\"],\n    *[gog-product=\"1437732694\"],\n    *[gog-product=\"1445245918\"],\n    *[gog-product=\"1433148949\"],\n    *[gog-product=\"1444761329\"],\n    *[gog-product=\"1440698774\"],\n    *[gog-product=\"1207666873\"],\n    *[gog-product=\"1429612255\"],\n    *[gog-product=\"1436531655\"],\n    *[gog-product=\"1839729056\"], /* real texas */\n    *[gog-product=\"2140144873\"], /* rel texas */\n    *[gog-product=\"1735987864\"], /* shadow warrior */\n    *[gog-product=\"1207658828\"], /* gabriel knight */\n    *[gog-product=\"1207664393\"], /* blackwell */\n    *[gog-product=\"1207658837\"], /* gabriel knight */\n    *[gog-product=\"1207660094\"], /* dust */\n    *[gog-product=\"1423058311\"], /* bastion */\n    *[gog-product=\"1445250653\"], /* pirates */\n    *[gog-product=\"1452686647\"], /* samorost */\n    *[gog-product=\"1453277526\"], /* samorost */\n    *[gog-product=\"1207658843\"], /* gabriel knight */\n    *[gog-product=\"1440603706\"], /* stasis */\n    *[gog-product=\"1461061433\"], /* braid */\n    *[gog-product=\"1207665633\"], /* dreamfall */\n    *[gog-product=\"1447947499\"], /* besiege */\n    *[gog-product=\"1207658834\"], /* phantasmagoria */\n    *[gog-product=\"1207659166\"], /* avadon */\n    *[gog-product=\"1440603896\"], /* stasis */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    /* Stuff I simply do not want, or is horribly rated */\n\n    *[gog-product=\"1446465369\"],\n    *[gog-product=\"1443779037\"],\n    *[gog-product=\"1443778814\"],\n    *[gog-product=\"1442564308\"],\n    *[gog-product=\"1442910108\"],\n    *[gog-product=\"1443778954\"],\n    *[gog-product=\"1441717336\"],\n    *[gog-product=\"1207665143\"], /* mark of the ninja */\n    *[gog-product=\"1439377578\"],\n    *[gog-product=\"1450092067\"],\n    *[gog-product=\"1450100911\"],\n    *[gog-product=\"1207658941\"], /* lil devil */\n    *[gog-product=\"1207664403\"], /* pinball world */\n    *[gog-product=\"1207658856\"], /* blood */\n    *[gog-product=\"1207665153\"], /* wasteland 2 */\n    *[gog-product=\"1436885138\"], /* dungeons 2 poor ratings */\n    *[gog-product=\"1513949567\"], /* everspace - garbage wine */\n    *[gog-product=\"1207666123\"], /* starpoint gemini 2 - garbage wine (directx 11) */\n    *[gog-product=\"1422618200\"], /* paranautical activity 2 stars */\n    *[gog-product=\"1444830704\"], /* owned */\n    *[gog-product=\"1207664993\"], /* owned */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n\n    *[gog-product=\"0\"] /*  */  \n    {\n        display: none ! important;\n    }",
+				"code": "    .is-owned { \n        display: none ! important\n    }\n    .icon-linux { \n        background-color: darkorange ! important;\n        margin:3px; \n        border: solid orange 2px;  \n    }\n    .product-row__rating {\n        display: inline ! important; \n        width: 3px ! important;\n    }\n    .icon-win, .icon-mac, .icon-plus { \n        display: none ! important\n    }\n\n    /* #wishlistHolder .invisible { display: block ! important } */\n    \n    .star-rating--50 { background-color: lime; }\n    .star-rating--45 { background-color: green; }\n    .star-rating--40 { background-color: yellowgreen; }\n    .star-rating--35 { background-color: yellow; }\n    .star-rating--30 { background-color: pink; }\n    .star-rating--25 { background-color: red; }\n    .star-rating--20 { background-color: red; }\n    .star-rating--15 { background-color: black; }\n    .star-rating--10 { background-color: black; }\n    \n    /* These attributes are no longer being set */\n    .product-row__rating[star-rating=\"50\"] { background-color: lime; }\n    .product-row__rating[star-rating=\"49\"] { background-color: lime; }\n    .product-row__rating[star-rating=\"48\"] { background-color: lime; }\n    .product-row__rating[star-rating=\"47\"] { background-color: green; }\n    .product-row__rating[star-rating=\"46\"] { background-color: green; }\n    .product-row__rating[star-rating=\"45\"] { background-color: green; }\n    .product-row__rating[star-rating=\"44\"] { background-color: yellowgreen; }\n    .product-row__rating[star-rating=\"43\"] { background-color: yellowgreen; }\n    .product-row__rating[star-rating=\"42\"] { background-color: yellowgreen; }\n    .product-row__rating[star-rating=\"41\"] { background-color: yellow; }\n    .product-row__rating[star-rating=\"40\"] { background-color: yellow; }\n    .product-row__rating[star-rating^=\"3\"] { background-color: pink; }\n    .product-row__rating[star-rating^=\"2\"] { background-color: red; }\n    .product-row__rating[star-rating^=\"1\"] { background-color: black; }\n    \n    /* Owned games from other sources */\n    *[gog-product=\"1207659024\"], /* botanicula */\n    *[gog-product=\"1207659753\"], /* vvvvvvvv */\n    *[gog-product=\"1207664843\"], /* space_pirates_and_zombies */\n    *[gog-product=\"1207660134\"], /* race_the_sun */\n    *[gog-product=\"1425657908\"], /* skulls_of_the_shogun */\n    *[gog-product=\"1207659018\"], /* spacechem */\n    *[gog-product=\"1207659017\"], /* machinarium */\n    *[gog-product=\"1207659209\"], /* Papers Please */\n    *[gog-product=\"1207659259\"], /* Amnesia */\n    *[gog-product=\"1421855536\"], /* world of goo */\n    *[gog-product=\"1430398832\"], /* aquaria */\n    *[gog-product=\"1207659016\"], /* grimrock */\n    *[gog-product=\"1207660913\"], /* shadowrun */\n    *[gog-product=\"1207665343\"], /* ai war */\n    *[gog-product=\"1207659020\"], /* trine */\n    *[gog-product=\"1207659033\"], /* uplink */\n    *[gog-product=\"1207659072\"], /* to the moon */\n    *[gog-product=\"1438343741\"], /* frozen_synapse */\n    *[gog-product=\"1207659014\"], /* darwinia */\n    *[gog-product=\"1207659124\"], /* deponia 2 */\n    *[gog-product=\"1207660563\"], /* risk of rain */\n    *[gog-product=\"1207664703\"], /* Desktop Dungeons */\n    *[gog-product=\"1207665283\"], /* kingdom rush */\n    *[gog-product=\"1436866438\"], /* shadowrun hk */\n    *[gog-product=\"1207659145\"], /* stacking */\n    *[gog-product=\"1207659513\"], /* guacamelee */\n    *[gog-product=\"1207660104\"], /* pixeljunk */\n    *[gog-product=\"1207660253\"], /* dustforce */\n    *[gog-product=\"1207665323\"], /* ai war */\n    *[gog-product=\"1207659132\"], /* costume quest */\n    *[gog-product=\"1207659220\"], /* eschalon */\n    *[gog-product=\"1207665333\"], /* ai war */\n    *[gog-product=\"1207664603\"], /* among the sleep */\n    *[gog-product=\"1207667123\"], /* anomaly */\n    *[gog-product=\"1207667133\"], /* anomaly korea */\n    *[gog-product=\"1207659164\"], /* bards tale */\n    *[gog-product=\"1207666373\"], /* baldurs gate ii */\n    *[gog-product=\"1207666353\"], /* baldurs gate */\n    *[gog-product=\"1207665193\"], /* blocks that matter */\n    *[gog-product=\"1434013541\"], /* breach and clear */\n    *[gog-product=\"1434036647\"], /* breach and clear */\n    *[gog-product=\"1207659253\"], /* brutal legend */\n    *[gog-product=\"1446823701\"], /* card city nights */\n    *[gog-product=\"1207659075\"], /* defcon */\n    *[gog-product=\"1207659953\"], /* democracy 3 */\n    *[gog-product=\"1207666613\"], /* democracy 3 */\n    *[gog-product=\"1207664493\"], /* democracy 3 */\n    *[gog-product=\"1207660663\"], /* democracy 3 */\n    *[gog-product=\"1207660233\"], /* deponia 3 */\n    *[gog-product=\"1207660683\"], /* eschalon iii */\n    *[gog-product=\"1207665163\"], /* gone home */\n    *[gog-product=\"1207666533\"], /* halfway */\n    *[gog-product=\"1207659483\"], /* hammerwatch */\n    *[gog-product=\"1207666683\"], /* icewind dale */\n    *[gog-product=\"1434445160\"], /* ironclad tactics */\n    *[gog-product=\"1444053723\"], /* little inferno */\n    *[gog-product=\"1446797453\"], /* last federation */\n    *[gog-product=\"1207661993\"], /* luftrausers */\n    *[gog-product=\"1207659074\"], /* multiwinia */\n    *[gog-product=\"1207665033\"], /* olliolli */\n    *[gog-product=\"1207660064\"], /* outlast */\n    *[gog-product=\"1207664463\"], /* outlast */\n    *[gog-product=\"1207667073\"], /* pixel piracy */\n    *[gog-product=\"1207659049\"], /* retro city */\n    *[gog-product=\"1207660413\"], /* shadowrun returns */\n    *[gog-product=\"1440061546\"], /* shadowrun hk */\n    *[gog-product=\"1439900139\"], /* shadowrun hk */\n    *[gog-product=\"1207659160\"], /* Shattered Haven */\n    *[gog-product=\"1207660263\"], /* Shivah */\n    *[gog-product=\"1207664303\"], /* Sir You are Being Hunted */\n    *[gog-product=\"1207665863\"], /* spacecom */\n    *[gog-product=\"1207660733\"], /* steamworld dig */\n    *[gog-product=\"1207660213\"], /* super hexagon */\n    *[gog-product=\"1446796759\"], /* last federation */\n    *[gog-product=\"1207660863\"], /* tower of guns */\n    *[gog-product=\"1207665053\"], /* unrest */\n    *[gog-product=\"1207665063\"], /* unrest */\n    *[gog-product=\"1207665073\"], /* unrest */\n    *[gog-product=\"1207665843\"], /* shadowgate */\n    *[gog-product=\"1207665263\"], /* crawl */\n    *[gog-product=\"1457519353\"], /* oxenfree  */\n    *[gog-product=\"1207666243\"], /* tri */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n\n    /* Stupid stuff like soundtracks*/\n    *[gog-product=\"1443432851\"],\n    *[gog-product=\"1432563933\"],\n    *[gog-product=\"1432925124\"],\n    *[gog-product=\"1432925592\"],\n    *[gog-product=\"1428489988\"],\n    *[gog-product=\"1437732694\"],\n    *[gog-product=\"1445245918\"],\n    *[gog-product=\"1433148949\"],\n    *[gog-product=\"1444761329\"],\n    *[gog-product=\"1440698774\"],\n    *[gog-product=\"1207666873\"],\n    *[gog-product=\"1429612255\"],\n    *[gog-product=\"1436531655\"],\n    *[gog-product=\"1839729056\"], /* real texas */\n    *[gog-product=\"2140144873\"], /* rel texas */\n    *[gog-product=\"1735987864\"], /* shadow warrior */\n    *[gog-product=\"1207658828\"], /* gabriel knight */\n    *[gog-product=\"1207664393\"], /* blackwell */\n    *[gog-product=\"1207658837\"], /* gabriel knight */\n    *[gog-product=\"1207660094\"], /* dust */\n    *[gog-product=\"1423058311\"], /* bastion */\n    *[gog-product=\"1445250653\"], /* pirates */\n    *[gog-product=\"1452686647\"], /* samorost */\n    *[gog-product=\"1453277526\"], /* samorost */\n    *[gog-product=\"1207658843\"], /* gabriel knight */\n    *[gog-product=\"1440603706\"], /* stasis */\n    *[gog-product=\"1461061433\"], /* braid */\n    *[gog-product=\"1207665633\"], /* dreamfall */\n    *[gog-product=\"1447947499\"], /* besiege */\n    *[gog-product=\"1207658834\"], /* phantasmagoria */\n    *[gog-product=\"1207659166\"], /* avadon */\n    *[gog-product=\"1440603896\"], /* stasis */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    /* Stuff I simply do not want, or is horribly rated */\n\n    *[gog-product=\"1446465369\"],\n    *[gog-product=\"1443779037\"],\n    *[gog-product=\"1443778814\"],\n    *[gog-product=\"1442564308\"],\n    *[gog-product=\"1442910108\"],\n    *[gog-product=\"1443778954\"],\n    *[gog-product=\"1441717336\"],\n    *[gog-product=\"1207665143\"], /* mark of the ninja */\n    *[gog-product=\"1439377578\"],\n    *[gog-product=\"1450092067\"],\n    *[gog-product=\"1450100911\"],\n    *[gog-product=\"1207658941\"], /* lil devil */\n    *[gog-product=\"1207664403\"], /* pinball world */\n    *[gog-product=\"1207658856\"], /* blood */\n    *[gog-product=\"1207665153\"], /* wasteland 2 */\n    *[gog-product=\"1436885138\"], /* dungeons 2 poor ratings */\n    *[gog-product=\"1513949567\"], /* everspace - garbage wine */\n    *[gog-product=\"1207666123\"], /* starpoint gemini 2 - garbage wine (directx 11) */\n    *[gog-product=\"1422618200\"], /* paranautical activity 2 stars */\n    *[gog-product=\"1444830704\"], /* owned */\n    *[gog-product=\"1207664993\"], /* owned */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n\n    *[gog-product=\"0\"] /*  */  \n    {\n        display: none ! important;\n    }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -901,6 +901,26 @@
 			}
 		],
 		"id": 45
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "Google",
+		"sections": [
+			{
+				"code": "    #s_PERSONALIZATION, .additional-video,\n    .video box, .media-strip, .footer, #rt-col,\n    .share-button-wrapper, .gsid-FVD, #FEATURED_VIDEOS,\n    #en_us-e, #en_us-s, #en_us-m, #en_us-b, \n    .section-en_us-e, .section-en_us-s, .section-en_us-m,\n    #taw, #bottomads, #fll, #fblqf, #fblsh, #gbvg, #wmxmsg,\n    #promo-section, #settings-button, #gbgs4, .pmoabs, #dftvp,\n    .gb_ga, .gb_g, .gb_Mb.gb_ee.gb_R, .section-me-oscars-2016,\n    .section-en_us-b, section-en_us-e, .section-me-ncaa-tournament-2016,\n    .section-en_us-tc, .section-me-masters-2016,\n    .gb_ha, .section-en_uk-e, .section-en_uk-s, #gbw,\n    .mnr-c, #gbwa, #gbw, #ad-source, #ad-label, #groups, #topstuff,\n    #ms, #lc, .share-bar-table, #gbgs4, #gbgs5, .side-appbar,\n    .plusone-box, #gf-foot, .appbar-add, #ad, #calendar, .SP_calendar,\n    .sfe-break-right-em, .gpost,\n    .ad-target2-wrapper, .hdg, #gmm-panel-promo, #copyright, #gbu, #notify-box,\n    .rmi-rpl-bottom, #s_SPORTS_GADGET, #s_EDITORS_PICK, #s_INTERESTING\n    { \n        display: none ! important; \n    }\n\n    a[href*=\"forbes.com\"]\n    {\n        /* does not play well with my browser configuration */\n        color: red ! important;\n    }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"google.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 46
 	},
 	{
 		"enabled": true,
@@ -920,7 +940,7 @@
 				"regexps": []
 			}
 		],
-		"id": 46
+		"id": 47
 	},
 	{
 		"enabled": true,
@@ -940,7 +960,7 @@
 				"regexps": []
 			}
 		],
-		"id": 47
+		"id": 48
 	},
 	{
 		"enabled": true,
@@ -963,7 +983,7 @@
 				"regexps": []
 			}
 		],
-		"id": 48
+		"id": 49
 	},
 	{
 		"enabled": true,
@@ -983,7 +1003,7 @@
 				"regexps": []
 			}
 		],
-		"id": 49
+		"id": 50
 	},
 	{
 		"enabled": false,
@@ -1003,7 +1023,7 @@
 				"regexps": []
 			}
 		],
-		"id": 50
+		"id": 51
 	},
 	{
 		"enabled": true,
@@ -1023,7 +1043,7 @@
 				"regexps": []
 			}
 		],
-		"id": 51
+		"id": 52
 	},
 	{
 		"enabled": true,
@@ -1043,7 +1063,7 @@
 				"regexps": []
 			}
 		],
-		"id": 52
+		"id": 53
 	},
 	{
 		"enabled": true,
@@ -1063,7 +1083,7 @@
 				"regexps": []
 			}
 		],
-		"id": 53
+		"id": 54
 	},
 	{
 		"enabled": true,
@@ -1083,7 +1103,7 @@
 				"regexps": []
 			}
 		],
-		"id": 54
+		"id": 55
 	},
 	{
 		"enabled": true,
@@ -1103,7 +1123,7 @@
 				"regexps": []
 			}
 		],
-		"id": 55
+		"id": 56
 	},
 	{
 		"enabled": true,
@@ -1123,7 +1143,7 @@
 				"regexps": []
 			}
 		],
-		"id": 56
+		"id": 57
 	},
 	{
 		"enabled": true,
@@ -1143,7 +1163,7 @@
 				"regexps": []
 			}
 		],
-		"id": 57
+		"id": 58
 	},
 	{
 		"enabled": true,
@@ -1163,7 +1183,7 @@
 				"regexps": []
 			}
 		],
-		"id": 58
+		"id": 59
 	},
 	{
 		"enabled": true,
@@ -1183,7 +1203,7 @@
 				"regexps": []
 			}
 		],
-		"id": 59
+		"id": 60
 	},
 	{
 		"enabled": true,
@@ -1203,7 +1223,7 @@
 				"regexps": []
 			}
 		],
-		"id": 60
+		"id": 61
 	},
 	{
 		"enabled": true,
@@ -1224,7 +1244,7 @@
 				"regexps": []
 			}
 		],
-		"id": 61
+		"id": 62
 	},
 	{
 		"enabled": true,
@@ -1244,7 +1264,7 @@
 				"regexps": []
 			}
 		],
-		"id": 62
+		"id": 63
 	},
 	{
 		"enabled": true,
@@ -1264,7 +1284,7 @@
 				"regexps": []
 			}
 		],
-		"id": 63
+		"id": 64
 	},
 	{
 		"enabled": true,
@@ -1284,7 +1304,7 @@
 				"regexps": []
 			}
 		],
-		"id": 64
+		"id": 65
 	},
 	{
 		"enabled": true,
@@ -1304,7 +1324,7 @@
 				"regexps": []
 			}
 		],
-		"id": 65
+		"id": 66
 	},
 	{
 		"enabled": true,
@@ -1324,7 +1344,7 @@
 				"regexps": []
 			}
 		],
-		"id": 66
+		"id": 67
 	},
 	{
 		"enabled": true,
@@ -1344,7 +1364,7 @@
 				"regexps": []
 			}
 		],
-		"id": 67
+		"id": 68
 	},
 	{
 		"enabled": true,
@@ -1364,7 +1384,7 @@
 				"regexps": []
 			}
 		],
-		"id": 68
+		"id": 69
 	},
 	{
 		"enabled": true,
@@ -1384,7 +1404,7 @@
 				"regexps": []
 			}
 		],
-		"id": 69
+		"id": 70
 	},
 	{
 		"enabled": true,
@@ -1404,7 +1424,7 @@
 				"regexps": []
 			}
 		],
-		"id": 70
+		"id": 71
 	},
 	{
 		"enabled": true,
@@ -1424,7 +1444,7 @@
 				"regexps": []
 			}
 		],
-		"id": 71
+		"id": 72
 	},
 	{
 		"enabled": true,
@@ -1444,7 +1464,7 @@
 				"regexps": []
 			}
 		],
-		"id": 72
+		"id": 73
 	},
 	{
 		"enabled": true,
@@ -1464,7 +1484,7 @@
 				"regexps": []
 			}
 		],
-		"id": 73
+		"id": 74
 	},
 	{
 		"enabled": true,
@@ -1484,7 +1504,7 @@
 				"regexps": []
 			}
 		],
-		"id": 74
+		"id": 75
 	},
 	{
 		"enabled": true,
@@ -1504,7 +1524,7 @@
 				"regexps": []
 			}
 		],
-		"id": 75
+		"id": 76
 	},
 	{
 		"enabled": true,
@@ -1524,7 +1544,7 @@
 				"regexps": []
 			}
 		],
-		"id": 76
+		"id": 77
 	},
 	{
 		"enabled": true,
@@ -1544,7 +1564,7 @@
 				"regexps": []
 			}
 		],
-		"id": 77
+		"id": 78
 	},
 	{
 		"enabled": true,
@@ -1564,7 +1584,7 @@
 				"regexps": []
 			}
 		],
-		"id": 78
+		"id": 79
 	},
 	{
 		"enabled": true,
@@ -1584,7 +1604,7 @@
 				"regexps": []
 			}
 		],
-		"id": 79
+		"id": 80
 	},
 	{
 		"enabled": true,
@@ -1604,7 +1624,7 @@
 				"regexps": []
 			}
 		],
-		"id": 80
+		"id": 81
 	},
 	{
 		"enabled": true,
@@ -1624,7 +1644,7 @@
 				"regexps": []
 			}
 		],
-		"id": 81
+		"id": 82
 	},
 	{
 		"enabled": true,
@@ -1644,7 +1664,7 @@
 				"regexps": []
 			}
 		],
-		"id": 82
+		"id": 83
 	},
 	{
 		"enabled": true,
@@ -1664,7 +1684,7 @@
 				"regexps": []
 			}
 		],
-		"id": 83
+		"id": 84
 	},
 	{
 		"enabled": true,
@@ -1685,7 +1705,7 @@
 				"regexps": []
 			}
 		],
-		"id": 84
+		"id": 85
 	},
 	{
 		"enabled": true,
@@ -1705,7 +1725,7 @@
 				"regexps": []
 			}
 		],
-		"id": 85
+		"id": 86
 	},
 	{
 		"enabled": true,
@@ -1725,7 +1745,7 @@
 				"regexps": []
 			}
 		],
-		"id": 86
+		"id": 87
 	},
 	{
 		"enabled": true,
@@ -1745,7 +1765,7 @@
 				"regexps": []
 			}
 		],
-		"id": 87
+		"id": 88
 	},
 	{
 		"enabled": true,
@@ -1765,7 +1785,7 @@
 				"regexps": []
 			}
 		],
-		"id": 88
+		"id": 89
 	},
 	{
 		"enabled": true,
@@ -1785,7 +1805,7 @@
 				"regexps": []
 			}
 		],
-		"id": 89
+		"id": 90
 	},
 	{
 		"enabled": true,
@@ -1805,7 +1825,7 @@
 				"regexps": []
 			}
 		],
-		"id": 90
+		"id": 91
 	},
 	{
 		"enabled": true,
@@ -1825,7 +1845,7 @@
 				"regexps": []
 			}
 		],
-		"id": 91
+		"id": 92
 	},
 	{
 		"enabled": true,
@@ -1845,7 +1865,7 @@
 				"regexps": []
 			}
 		],
-		"id": 92
+		"id": 93
 	},
 	{
 		"enabled": true,
@@ -1865,7 +1885,7 @@
 				"regexps": []
 			}
 		],
-		"id": 93
+		"id": 94
 	},
 	{
 		"enabled": true,
@@ -1885,7 +1905,7 @@
 				"regexps": []
 			}
 		],
-		"id": 94
+		"id": 95
 	},
 	{
 		"enabled": true,
@@ -1905,7 +1925,7 @@
 				"regexps": []
 			}
 		],
-		"id": 95
+		"id": 96
 	},
 	{
 		"enabled": true,
@@ -1925,7 +1945,7 @@
 				"regexps": []
 			}
 		],
-		"id": 96
+		"id": 97
 	},
 	{
 		"enabled": true,
@@ -1945,7 +1965,7 @@
 				"regexps": []
 			}
 		],
-		"id": 97
+		"id": 98
 	},
 	{
 		"enabled": true,
@@ -1965,7 +1985,7 @@
 				"regexps": []
 			}
 		],
-		"id": 98
+		"id": 99
 	},
 	{
 		"enabled": true,
@@ -1985,7 +2005,7 @@
 				"regexps": []
 			}
 		],
-		"id": 99
+		"id": 100
 	},
 	{
 		"enabled": true,
@@ -2005,7 +2025,7 @@
 				"regexps": []
 			}
 		],
-		"id": 100
+		"id": 101
 	},
 	{
 		"enabled": true,
@@ -2025,7 +2045,7 @@
 				"regexps": []
 			}
 		],
-		"id": 101
+		"id": 102
 	},
 	{
 		"enabled": true,
@@ -2045,7 +2065,7 @@
 				"regexps": []
 			}
 		],
-		"id": 102
+		"id": 103
 	},
 	{
 		"enabled": true,
@@ -2065,7 +2085,7 @@
 				"regexps": []
 			}
 		],
-		"id": 103
+		"id": 104
 	},
 	{
 		"enabled": true,
@@ -2085,7 +2105,7 @@
 				"regexps": []
 			}
 		],
-		"id": 104
+		"id": 105
 	},
 	{
 		"enabled": true,
@@ -2105,7 +2125,7 @@
 				"regexps": []
 			}
 		],
-		"id": 105
+		"id": 106
 	},
 	{
 		"enabled": true,
@@ -2125,7 +2145,7 @@
 				"regexps": []
 			}
 		],
-		"id": 106
+		"id": 107
 	},
 	{
 		"enabled": true,
@@ -2148,7 +2168,7 @@
 				"regexps": []
 			}
 		],
-		"id": 107
+		"id": 108
 	},
 	{
 		"enabled": true,
@@ -2168,7 +2188,7 @@
 				"regexps": []
 			}
 		],
-		"id": 108
+		"id": 109
 	},
 	{
 		"enabled": true,
@@ -2188,7 +2208,7 @@
 				"regexps": []
 			}
 		],
-		"id": 109
+		"id": 110
 	},
 	{
 		"enabled": true,
@@ -2208,7 +2228,7 @@
 				"regexps": []
 			}
 		],
-		"id": 110
+		"id": 111
 	},
 	{
 		"enabled": true,
@@ -2228,7 +2248,7 @@
 				"regexps": []
 			}
 		],
-		"id": 111
+		"id": 112
 	},
 	{
 		"enabled": true,
@@ -2248,7 +2268,7 @@
 				"regexps": []
 			}
 		],
-		"id": 112
+		"id": 113
 	},
 	{
 		"enabled": true,
@@ -2268,7 +2288,7 @@
 				"regexps": []
 			}
 		],
-		"id": 113
+		"id": 114
 	},
 	{
 		"enabled": true,
@@ -2288,7 +2308,7 @@
 				"regexps": []
 			}
 		],
-		"id": 114
+		"id": 115
 	},
 	{
 		"enabled": true,
@@ -2308,7 +2328,7 @@
 				"regexps": []
 			}
 		],
-		"id": 115
+		"id": 116
 	},
 	{
 		"enabled": true,
@@ -2328,7 +2348,7 @@
 				"regexps": []
 			}
 		],
-		"id": 116
+		"id": 117
 	},
 	{
 		"enabled": true,
@@ -2348,7 +2368,7 @@
 				"regexps": []
 			}
 		],
-		"id": 117
+		"id": 118
 	},
 	{
 		"enabled": true,
@@ -2368,7 +2388,7 @@
 				"regexps": []
 			}
 		],
-		"id": 118
+		"id": 119
 	},
 	{
 		"enabled": true,
@@ -2388,7 +2408,7 @@
 				"regexps": []
 			}
 		],
-		"id": 119
+		"id": 120
 	},
 	{
 		"enabled": true,
@@ -2408,7 +2428,7 @@
 				"regexps": []
 			}
 		],
-		"id": 120
+		"id": 121
 	},
 	{
 		"enabled": true,
@@ -2428,7 +2448,7 @@
 				"regexps": []
 			}
 		],
-		"id": 121
+		"id": 122
 	},
 	{
 		"enabled": true,
@@ -2448,7 +2468,7 @@
 				"regexps": []
 			}
 		],
-		"id": 122
+		"id": 123
 	},
 	{
 		"enabled": true,
@@ -2468,7 +2488,7 @@
 				"regexps": []
 			}
 		],
-		"id": 123
+		"id": 124
 	},
 	{
 		"enabled": true,
@@ -2488,7 +2508,7 @@
 				"regexps": []
 			}
 		],
-		"id": 124
+		"id": 125
 	},
 	{
 		"enabled": true,
@@ -2508,7 +2528,7 @@
 				"regexps": []
 			}
 		],
-		"id": 125
+		"id": 126
 	},
 	{
 		"enabled": true,
@@ -2528,7 +2548,7 @@
 				"regexps": []
 			}
 		],
-		"id": 126
+		"id": 127
 	},
 	{
 		"enabled": true,
@@ -2548,7 +2568,7 @@
 				"regexps": []
 			}
 		],
-		"id": 127
+		"id": 128
 	},
 	{
 		"enabled": true,
@@ -2568,7 +2588,7 @@
 				"regexps": []
 			}
 		],
-		"id": 128
+		"id": 129
 	},
 	{
 		"enabled": true,
@@ -2588,7 +2608,7 @@
 				"regexps": []
 			}
 		],
-		"id": 129
+		"id": 130
 	},
 	{
 		"enabled": true,
@@ -2608,7 +2628,7 @@
 				"regexps": []
 			}
 		],
-		"id": 130
+		"id": 131
 	},
 	{
 		"enabled": true,
@@ -2628,7 +2648,7 @@
 				"regexps": []
 			}
 		],
-		"id": 131
+		"id": 132
 	},
 	{
 		"enabled": true,
@@ -2648,7 +2668,7 @@
 				"regexps": []
 			}
 		],
-		"id": 132
+		"id": 133
 	},
 	{
 		"enabled": true,
@@ -2668,7 +2688,7 @@
 				"regexps": []
 			}
 		],
-		"id": 133
+		"id": 134
 	},
 	{
 		"enabled": true,
@@ -2688,7 +2708,7 @@
 				"regexps": []
 			}
 		],
-		"id": 134
+		"id": 135
 	},
 	{
 		"enabled": true,
@@ -2708,7 +2728,7 @@
 				"regexps": []
 			}
 		],
-		"id": 135
+		"id": 136
 	},
 	{
 		"enabled": true,
@@ -2728,7 +2748,7 @@
 				"regexps": []
 			}
 		],
-		"id": 136
+		"id": 137
 	},
 	{
 		"enabled": true,
@@ -2744,26 +2764,6 @@
 				"urlPrefixes": [],
 				"domains": [
 					"zdnet.com"
-				],
-				"regexps": []
-			}
-		],
-		"id": 137
-	},
-	{
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"name": "Test",
-		"sections": [
-			{
-				"code": "body {\n    background-color: blue ! important;\n}",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"example.com"
 				],
 				"regexps": []
 			}
