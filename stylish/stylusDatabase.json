@@ -5,14 +5,14 @@
 		"md5Url": null,
 		"url": null,
 		"originalMd5": null,
-		"name": "Test",
+		"name": "Google",
 		"sections": [
 			{
-				"code": "body {\n    background-color: blue ! important;\n}",
+				"code": "    #s_PERSONALIZATION, .additional-video,\n    .video box, .media-strip, .footer, #rt-col,\n    .share-button-wrapper, .gsid-FVD, #FEATURED_VIDEOS,\n    #en_us-e, #en_us-s, #en_us-m, #en_us-b, \n    .section-en_us-e, .section-en_us-s, .section-en_us-m,\n    #taw, #bottomads, #fll, #fblqf, #fblsh, #gbvg, #wmxmsg,\n    #promo-section, #settings-button, #gbgs4, .pmoabs, #dftvp,\n    .gb_ga, .gb_g, .gb_Mb.gb_ee.gb_R, .section-me-oscars-2016,\n    .section-en_us-b, section-en_us-e, .section-me-ncaa-tournament-2016,\n    .section-en_us-tc, .section-me-masters-2016,\n    .gb_ha, .section-en_uk-e, .section-en_uk-s, #gbw,\n    .mnr-c, #gbwa, #gbw, #ad-source, #ad-label, #groups, #topstuff,\n    #ms, #lc, .share-bar-table, #gbgs4, #gbgs5, .side-appbar,\n    .plusone-box, #gf-foot, .appbar-add, #ad, #calendar, .SP_calendar,\n    .sfe-break-right-em, .gpost,\n    .ad-target2-wrapper, .hdg, #gmm-panel-promo, #copyright, #gbu, #notify-box,\n    .rmi-rpl-bottom, #s_SPORTS_GADGET, #s_EDITORS_PICK, #s_INTERESTING\n    { \n        display: none ! important; \n    }\n\n    a[href*=\"forbes.com\"]\n    {\n        /* does not play well with my browser configuration */\n        color: red ! important;\n    }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
-					"example.com"
+					"google.com"
 				],
 				"regexps": []
 			}
@@ -908,26 +908,6 @@
 		"md5Url": null,
 		"url": null,
 		"originalMd5": null,
-		"name": "Google",
-		"sections": [
-			{
-				"code": "    #s_PERSONALIZATION, .additional-video,\n    .video box, .media-strip, .footer, #rt-col,\n    .share-button-wrapper, .gsid-FVD, #FEATURED_VIDEOS,\n    #en_us-e, #en_us-s, #en_us-m, #en_us-b, \n    .section-en_us-e, .section-en_us-s, .section-en_us-m,\n    #taw, #bottomads, #fll, #fblqf, #fblsh, #gbvg, #wmxmsg,\n    #promo-section, #settings-button, #gbgs4, .pmoabs, #dftvp,\n    .gb_ga, .gb_g, .gb_Mb.gb_ee.gb_R, .section-me-oscars-2016,\n    .section-en_us-b, section-en_us-e, .section-me-ncaa-tournament-2016,\n    .section-en_us-tc, .section-me-masters-2016,\n    .gb_ha, .section-en_uk-e, .section-en_uk-s, #gbw,\n    .mnr-c, #gbwa, #gbw, #ad-source, #ad-label, #groups, #topstuff,\n    #ms, #lc, .share-bar-table, #gbgs4, #gbgs5, .side-appbar,\n    .plusone-box, #gf-foot, .appbar-add, #ad, #calendar, .SP_calendar,\n    .sfe-break-right-em, .gpost,\n    .ad-target2-wrapper, .hdg, #gmm-panel-promo, #copyright, #gbu, #notify-box,\n    .rmi-rpl-bottom, #s_SPORTS_GADGET, #s_EDITORS_PICK, #s_INTERESTING\n    { \n        display: none ! important; \n    }\n\n    a[href*=\"forbes.com\"]\n    {\n        /* does not play well with my browser configuration */\n        color: red ! important;\n    }",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"google.com"
-				],
-				"regexps": []
-			}
-		],
-		"id": 46
-	},
-	{
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
 		"name": "GoogleFinanceHide",
 		"sections": [
 			{
@@ -940,7 +920,7 @@
 				"regexps": []
 			}
 		],
-		"id": 47
+		"id": 46
 	},
 	{
 		"enabled": true,
@@ -960,7 +940,7 @@
 				"regexps": []
 			}
 		],
-		"id": 48
+		"id": 47
 	},
 	{
 		"enabled": true,
@@ -983,7 +963,7 @@
 				"regexps": []
 			}
 		],
-		"id": 49
+		"id": 48
 	},
 	{
 		"enabled": true,
@@ -1003,7 +983,7 @@
 				"regexps": []
 			}
 		],
-		"id": 50
+		"id": 49
 	},
 	{
 		"enabled": false,
@@ -1023,7 +1003,7 @@
 				"regexps": []
 			}
 		],
-		"id": 51
+		"id": 50
 	},
 	{
 		"enabled": true,
@@ -1043,7 +1023,7 @@
 				"regexps": []
 			}
 		],
-		"id": 52
+		"id": 51
 	},
 	{
 		"enabled": true,
@@ -1063,7 +1043,7 @@
 				"regexps": []
 			}
 		],
-		"id": 53
+		"id": 52
 	},
 	{
 		"enabled": true,
@@ -1083,7 +1063,7 @@
 				"regexps": []
 			}
 		],
-		"id": 54
+		"id": 53
 	},
 	{
 		"enabled": true,
@@ -1103,7 +1083,7 @@
 				"regexps": []
 			}
 		],
-		"id": 55
+		"id": 54
 	},
 	{
 		"enabled": true,
@@ -1123,7 +1103,7 @@
 				"regexps": []
 			}
 		],
-		"id": 56
+		"id": 55
 	},
 	{
 		"enabled": true,
@@ -1143,7 +1123,7 @@
 				"regexps": []
 			}
 		],
-		"id": 57
+		"id": 56
 	},
 	{
 		"enabled": true,
@@ -1163,7 +1143,7 @@
 				"regexps": []
 			}
 		],
-		"id": 58
+		"id": 57
 	},
 	{
 		"enabled": true,
@@ -1183,7 +1163,7 @@
 				"regexps": []
 			}
 		],
-		"id": 59
+		"id": 58
 	},
 	{
 		"enabled": true,
@@ -1203,7 +1183,7 @@
 				"regexps": []
 			}
 		],
-		"id": 60
+		"id": 59
 	},
 	{
 		"enabled": true,
@@ -1223,7 +1203,7 @@
 				"regexps": []
 			}
 		],
-		"id": 61
+		"id": 60
 	},
 	{
 		"enabled": true,
@@ -1244,7 +1224,7 @@
 				"regexps": []
 			}
 		],
-		"id": 62
+		"id": 61
 	},
 	{
 		"enabled": true,
@@ -1264,7 +1244,7 @@
 				"regexps": []
 			}
 		],
-		"id": 63
+		"id": 62
 	},
 	{
 		"enabled": true,
@@ -1284,7 +1264,7 @@
 				"regexps": []
 			}
 		],
-		"id": 64
+		"id": 63
 	},
 	{
 		"enabled": true,
@@ -1304,7 +1284,7 @@
 				"regexps": []
 			}
 		],
-		"id": 65
+		"id": 64
 	},
 	{
 		"enabled": true,
@@ -1324,7 +1304,7 @@
 				"regexps": []
 			}
 		],
-		"id": 66
+		"id": 65
 	},
 	{
 		"enabled": true,
@@ -1344,7 +1324,7 @@
 				"regexps": []
 			}
 		],
-		"id": 67
+		"id": 66
 	},
 	{
 		"enabled": true,
@@ -1364,7 +1344,7 @@
 				"regexps": []
 			}
 		],
-		"id": 68
+		"id": 67
 	},
 	{
 		"enabled": true,
@@ -1384,7 +1364,7 @@
 				"regexps": []
 			}
 		],
-		"id": 69
+		"id": 68
 	},
 	{
 		"enabled": true,
@@ -1404,7 +1384,7 @@
 				"regexps": []
 			}
 		],
-		"id": 70
+		"id": 69
 	},
 	{
 		"enabled": true,
@@ -1424,7 +1404,7 @@
 				"regexps": []
 			}
 		],
-		"id": 71
+		"id": 70
 	},
 	{
 		"enabled": true,
@@ -1444,7 +1424,7 @@
 				"regexps": []
 			}
 		],
-		"id": 72
+		"id": 71
 	},
 	{
 		"enabled": true,
@@ -1464,7 +1444,7 @@
 				"regexps": []
 			}
 		],
-		"id": 73
+		"id": 72
 	},
 	{
 		"enabled": true,
@@ -1484,7 +1464,7 @@
 				"regexps": []
 			}
 		],
-		"id": 74
+		"id": 73
 	},
 	{
 		"enabled": true,
@@ -1504,7 +1484,7 @@
 				"regexps": []
 			}
 		],
-		"id": 75
+		"id": 74
 	},
 	{
 		"enabled": true,
@@ -1524,7 +1504,7 @@
 				"regexps": []
 			}
 		],
-		"id": 76
+		"id": 75
 	},
 	{
 		"enabled": true,
@@ -1544,7 +1524,7 @@
 				"regexps": []
 			}
 		],
-		"id": 77
+		"id": 76
 	},
 	{
 		"enabled": true,
@@ -1564,7 +1544,7 @@
 				"regexps": []
 			}
 		],
-		"id": 78
+		"id": 77
 	},
 	{
 		"enabled": true,
@@ -1584,7 +1564,7 @@
 				"regexps": []
 			}
 		],
-		"id": 79
+		"id": 78
 	},
 	{
 		"enabled": true,
@@ -1604,7 +1584,7 @@
 				"regexps": []
 			}
 		],
-		"id": 80
+		"id": 79
 	},
 	{
 		"enabled": true,
@@ -1624,7 +1604,7 @@
 				"regexps": []
 			}
 		],
-		"id": 81
+		"id": 80
 	},
 	{
 		"enabled": true,
@@ -1644,7 +1624,7 @@
 				"regexps": []
 			}
 		],
-		"id": 82
+		"id": 81
 	},
 	{
 		"enabled": true,
@@ -1664,7 +1644,7 @@
 				"regexps": []
 			}
 		],
-		"id": 83
+		"id": 82
 	},
 	{
 		"enabled": true,
@@ -1684,7 +1664,7 @@
 				"regexps": []
 			}
 		],
-		"id": 84
+		"id": 83
 	},
 	{
 		"enabled": true,
@@ -1705,7 +1685,7 @@
 				"regexps": []
 			}
 		],
-		"id": 85
+		"id": 84
 	},
 	{
 		"enabled": true,
@@ -1725,7 +1705,7 @@
 				"regexps": []
 			}
 		],
-		"id": 86
+		"id": 85
 	},
 	{
 		"enabled": true,
@@ -1745,7 +1725,7 @@
 				"regexps": []
 			}
 		],
-		"id": 87
+		"id": 86
 	},
 	{
 		"enabled": true,
@@ -1765,7 +1745,7 @@
 				"regexps": []
 			}
 		],
-		"id": 88
+		"id": 87
 	},
 	{
 		"enabled": true,
@@ -1785,7 +1765,7 @@
 				"regexps": []
 			}
 		],
-		"id": 89
+		"id": 88
 	},
 	{
 		"enabled": true,
@@ -1805,7 +1785,7 @@
 				"regexps": []
 			}
 		],
-		"id": 90
+		"id": 89
 	},
 	{
 		"enabled": true,
@@ -1825,7 +1805,7 @@
 				"regexps": []
 			}
 		],
-		"id": 91
+		"id": 90
 	},
 	{
 		"enabled": true,
@@ -1845,7 +1825,7 @@
 				"regexps": []
 			}
 		],
-		"id": 92
+		"id": 91
 	},
 	{
 		"enabled": true,
@@ -1865,7 +1845,7 @@
 				"regexps": []
 			}
 		],
-		"id": 93
+		"id": 92
 	},
 	{
 		"enabled": true,
@@ -1885,7 +1865,7 @@
 				"regexps": []
 			}
 		],
-		"id": 94
+		"id": 93
 	},
 	{
 		"enabled": true,
@@ -1905,7 +1885,7 @@
 				"regexps": []
 			}
 		],
-		"id": 95
+		"id": 94
 	},
 	{
 		"enabled": true,
@@ -1925,7 +1905,7 @@
 				"regexps": []
 			}
 		],
-		"id": 96
+		"id": 95
 	},
 	{
 		"enabled": true,
@@ -1945,7 +1925,7 @@
 				"regexps": []
 			}
 		],
-		"id": 97
+		"id": 96
 	},
 	{
 		"enabled": true,
@@ -1965,7 +1945,7 @@
 				"regexps": []
 			}
 		],
-		"id": 98
+		"id": 97
 	},
 	{
 		"enabled": true,
@@ -1985,7 +1965,7 @@
 				"regexps": []
 			}
 		],
-		"id": 99
+		"id": 98
 	},
 	{
 		"enabled": true,
@@ -2005,7 +1985,7 @@
 				"regexps": []
 			}
 		],
-		"id": 100
+		"id": 99
 	},
 	{
 		"enabled": true,
@@ -2025,7 +2005,7 @@
 				"regexps": []
 			}
 		],
-		"id": 101
+		"id": 100
 	},
 	{
 		"enabled": true,
@@ -2045,7 +2025,7 @@
 				"regexps": []
 			}
 		],
-		"id": 102
+		"id": 101
 	},
 	{
 		"enabled": true,
@@ -2065,7 +2045,7 @@
 				"regexps": []
 			}
 		],
-		"id": 103
+		"id": 102
 	},
 	{
 		"enabled": true,
@@ -2085,7 +2065,7 @@
 				"regexps": []
 			}
 		],
-		"id": 104
+		"id": 103
 	},
 	{
 		"enabled": true,
@@ -2105,7 +2085,7 @@
 				"regexps": []
 			}
 		],
-		"id": 105
+		"id": 104
 	},
 	{
 		"enabled": true,
@@ -2125,7 +2105,7 @@
 				"regexps": []
 			}
 		],
-		"id": 106
+		"id": 105
 	},
 	{
 		"enabled": true,
@@ -2145,7 +2125,7 @@
 				"regexps": []
 			}
 		],
-		"id": 107
+		"id": 106
 	},
 	{
 		"enabled": true,
@@ -2168,7 +2148,7 @@
 				"regexps": []
 			}
 		],
-		"id": 108
+		"id": 107
 	},
 	{
 		"enabled": true,
@@ -2188,7 +2168,7 @@
 				"regexps": []
 			}
 		],
-		"id": 109
+		"id": 108
 	},
 	{
 		"enabled": true,
@@ -2208,7 +2188,7 @@
 				"regexps": []
 			}
 		],
-		"id": 110
+		"id": 109
 	},
 	{
 		"enabled": true,
@@ -2228,7 +2208,7 @@
 				"regexps": []
 			}
 		],
-		"id": 111
+		"id": 110
 	},
 	{
 		"enabled": true,
@@ -2248,7 +2228,7 @@
 				"regexps": []
 			}
 		],
-		"id": 112
+		"id": 111
 	},
 	{
 		"enabled": true,
@@ -2268,7 +2248,7 @@
 				"regexps": []
 			}
 		],
-		"id": 113
+		"id": 112
 	},
 	{
 		"enabled": true,
@@ -2288,7 +2268,7 @@
 				"regexps": []
 			}
 		],
-		"id": 114
+		"id": 113
 	},
 	{
 		"enabled": true,
@@ -2308,7 +2288,7 @@
 				"regexps": []
 			}
 		],
-		"id": 115
+		"id": 114
 	},
 	{
 		"enabled": true,
@@ -2328,7 +2308,7 @@
 				"regexps": []
 			}
 		],
-		"id": 116
+		"id": 115
 	},
 	{
 		"enabled": true,
@@ -2348,7 +2328,7 @@
 				"regexps": []
 			}
 		],
-		"id": 117
+		"id": 116
 	},
 	{
 		"enabled": true,
@@ -2368,7 +2348,7 @@
 				"regexps": []
 			}
 		],
-		"id": 118
+		"id": 117
 	},
 	{
 		"enabled": true,
@@ -2388,7 +2368,7 @@
 				"regexps": []
 			}
 		],
-		"id": 119
+		"id": 118
 	},
 	{
 		"enabled": true,
@@ -2408,7 +2388,7 @@
 				"regexps": []
 			}
 		],
-		"id": 120
+		"id": 119
 	},
 	{
 		"enabled": true,
@@ -2428,7 +2408,7 @@
 				"regexps": []
 			}
 		],
-		"id": 121
+		"id": 120
 	},
 	{
 		"enabled": true,
@@ -2448,7 +2428,7 @@
 				"regexps": []
 			}
 		],
-		"id": 122
+		"id": 121
 	},
 	{
 		"enabled": true,
@@ -2468,7 +2448,7 @@
 				"regexps": []
 			}
 		],
-		"id": 123
+		"id": 122
 	},
 	{
 		"enabled": true,
@@ -2488,7 +2468,7 @@
 				"regexps": []
 			}
 		],
-		"id": 124
+		"id": 123
 	},
 	{
 		"enabled": true,
@@ -2508,7 +2488,7 @@
 				"regexps": []
 			}
 		],
-		"id": 125
+		"id": 124
 	},
 	{
 		"enabled": true,
@@ -2528,7 +2508,7 @@
 				"regexps": []
 			}
 		],
-		"id": 126
+		"id": 125
 	},
 	{
 		"enabled": true,
@@ -2548,7 +2528,7 @@
 				"regexps": []
 			}
 		],
-		"id": 127
+		"id": 126
 	},
 	{
 		"enabled": true,
@@ -2568,7 +2548,7 @@
 				"regexps": []
 			}
 		],
-		"id": 128
+		"id": 127
 	},
 	{
 		"enabled": true,
@@ -2588,7 +2568,7 @@
 				"regexps": []
 			}
 		],
-		"id": 129
+		"id": 128
 	},
 	{
 		"enabled": true,
@@ -2608,7 +2588,7 @@
 				"regexps": []
 			}
 		],
-		"id": 130
+		"id": 129
 	},
 	{
 		"enabled": true,
@@ -2628,7 +2608,7 @@
 				"regexps": []
 			}
 		],
-		"id": 131
+		"id": 130
 	},
 	{
 		"enabled": true,
@@ -2648,7 +2628,7 @@
 				"regexps": []
 			}
 		],
-		"id": 132
+		"id": 131
 	},
 	{
 		"enabled": true,
@@ -2668,7 +2648,7 @@
 				"regexps": []
 			}
 		],
-		"id": 133
+		"id": 132
 	},
 	{
 		"enabled": true,
@@ -2688,7 +2668,7 @@
 				"regexps": []
 			}
 		],
-		"id": 134
+		"id": 133
 	},
 	{
 		"enabled": true,
@@ -2708,7 +2688,7 @@
 				"regexps": []
 			}
 		],
-		"id": 135
+		"id": 134
 	},
 	{
 		"enabled": true,
@@ -2728,7 +2708,7 @@
 				"regexps": []
 			}
 		],
-		"id": 136
+		"id": 135
 	},
 	{
 		"enabled": true,
@@ -2748,7 +2728,7 @@
 				"regexps": []
 			}
 		],
-		"id": 137
+		"id": 136
 	},
 	{
 		"enabled": true,
@@ -2764,6 +2744,26 @@
 				"urlPrefixes": [],
 				"domains": [
 					"zdnet.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 137
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "Test",
+		"sections": [
+			{
+				"code": "body {\n    background-color: blue ! important;\n}",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"example.com"
 				],
 				"regexps": []
 			}
@@ -2829,5 +2829,25 @@
 			}
 		],
 		"id": 141
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "GoFundMe",
+		"sections": [
+			{
+				"code": "/* Just show all content */\n\n.truncate-text { height: unset ! important; background: unset ! important; }\n\n#updates, .js-pagination-panel { display: unset ! important; }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"gofundme.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 142
 	}
 ]
