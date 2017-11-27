@@ -65,6 +65,7 @@ link "$CDIR/.bashrc"       ".bashrc"
 link "$CDIR/.emacs"        ".emacs"
 link "$CDIR/.psqlrc"       ".psqlrc"
 link "$CDIR/.bash_profile" ".bash_profile"
+link "$CDIR/.inputrc"      ".inputrc"
 
 ## FireFox 57 is MESSING EVERYTHING UP. Tiddlywikis now can only be
 ## loaded from a subfolder in ~/Downloads (WHY WHY WHY). Create
