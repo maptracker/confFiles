@@ -13,6 +13,7 @@
 // @include     http://*.latimes.com/*
 // @include     http://*.denverpost.com/*
 // @include     http://*abc7.com/*
+// @include     https://*wikitribune.com/*
 // @version     1
 // @grant       none
 // @grant       GM_log
