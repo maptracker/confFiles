@@ -11,6 +11,7 @@
 // @include     https://*qz.com/*
 // @include     http://*.chicagotribune.com/*
 // @include     http://*.latimes.com/*
+// @include     http://time.com/*
 // @include     http://*.denverpost.com/*
 // @include     http://*abc7.com/*
 // @include     https://*.usatoday.com/*
@@ -50,7 +51,9 @@ if (/washingtonpost/.test(loc)) {
     hrSrc = 'data-src-large';
 } else if (/usatoday/.test(loc)) {
     hrSrc = 'data-mycapture-src';
-} else if (/\abc\d+\./.test(loc)) {
+} else if (/time.com/.test(loc)) {
+    tag   = 'div';
+} else if (/abc\d+\./.test(loc)) {
     hrSrc = 'data-imgsrc';
     tag   = 'div';
 } else {
