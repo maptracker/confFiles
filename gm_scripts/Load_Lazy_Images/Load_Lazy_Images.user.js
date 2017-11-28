@@ -14,6 +14,7 @@
 // @include     http://*.denverpost.com/*
 // @include     http://*abc7.com/*
 // @include     https://*.usatoday.com/*
+// @include     https://*wikitribune.com/*
 // @version     1
 // @grant       none
 // @grant       GM_log
