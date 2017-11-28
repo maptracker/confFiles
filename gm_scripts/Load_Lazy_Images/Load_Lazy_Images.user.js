@@ -13,6 +13,7 @@
 // @include     http://*.latimes.com/*
 // @include     http://*.denverpost.com/*
 // @include     http://*abc7.com/*
+// @include     https://*.usatoday.com/*
 // @version     1
 // @grant       none
 // @grant       GM_log
@@ -25,8 +26,8 @@
    and reset opacity on the actual image
 */
 
-var tag  = 'img';
-var loc  = document.location;
+var tag   = 'img';
+var loc   = document.location;
 var bgChk = new RegExp('(&w=[0-9]+)"');
 var hrSrc = 'data-src';
 var cb    = dataSrc;
@@ -46,6 +47,8 @@ if (/washingtonpost/.test(loc)) {
     hrSrc = 'data-baseurl';
 } else if (/\.cnn\./.test(loc)) {
     hrSrc = 'data-src-large';
+} else if (/usatoday/.test(loc)) {
+    hrSrc = 'data-mycapture-src';
 } else if (/\abc\d+\./.test(loc)) {
     hrSrc = 'data-imgsrc';
     tag   = 'div';
