@@ -2439,7 +2439,7 @@
 		"name": "TwitterMasker",
 		"sections": [
 			{
-				"code": "    /* various spammers, folks that just post the same thing over and over again,\n       or tired memes ... */\n    div[data-screen-name=\"TheRynheart\"],\n    div[data-screen-name=\"Team_Trump45\"],\n    div[data-screen-name=\"AHamiltonSpirit\"],\n    div[data-screen-name=\"MAGAPILL\"],\n    div[data-screen-name=\"jackschofield\"],\n    div[data-screen-name=\"deplorablemax1\"],\n    div[data-screen-name=\"peplamb\"],\n    div[data-screen-name=\"DC_Resister_Bee\"],\n    div[data-screen-name=\"Impeach_D_Trump\"],\n    div[data-screen-name=\"jamesclarke1123\"],\n    div[data-screen-name=\"SLandinSoCal\"],\n    div[data-screen-name=\"DeniseRapp1\"],\n    div[data-screen-name=\"trumpsterMG\"],\n    div[data-screen-name=\"ColumbiaBugle\"],\n    div[data-screen-name=\"4evaneverMalsi\"],\n    div[data-screen-name=\"ProudConse\"],\n    div[data-screen-name=\"\"],\n    div[data-screen-name=\"\"],\n    div[data-screen-name=\"\"],\n    div[data-screen-name=\"\"],\n    div[data-screen-name=\"\"],\n    div[data-screen-name=\"FarhanKVirk\"]\n    { \n        display: none ! important; \n    }",
+				"code": "    /* various spammers, folks that just post the same thing over and over again,\n       or tired memes ... */\n    div[data-screen-name=\"TheRynheart\"],\n    div[data-screen-name=\"Team_Trump45\"],\n    div[data-screen-name=\"AHamiltonSpirit\"],\n    div[data-screen-name=\"MAGAPILL\"],\n    div[data-screen-name=\"jackschofield\"],\n    div[data-screen-name=\"deplorablemax1\"],\n    div[data-screen-name=\"peplamb\"],\n    div[data-screen-name=\"DC_Resister_Bee\"],\n    div[data-screen-name=\"Impeach_D_Trump\"],\n    div[data-screen-name=\"jamesclarke1123\"],\n    div[data-screen-name=\"SLandinSoCal\"],\n    div[data-screen-name=\"DeniseRapp1\"],\n    div[data-screen-name=\"trumpsterMG\"],\n    div[data-screen-name=\"ColumbiaBugle\"],\n    div[data-screen-name=\"4evaneverMalsi\"],\n    div[data-screen-name=\"ProudConse\"],\n    div[data-screen-name=\"HuevosDeChivo\"],\n    div[data-screen-name=\"TexaPauline\"],\n    div[data-screen-name=\"wmmII88\"],\n    div[data-screen-name=\"\"],\n    div[data-screen-name=\"\"],\n    div[data-screen-name=\"\"],\n    div[data-screen-name=\"\"],\n    div[data-screen-name=\"\"],\n    div[data-screen-name=\"\"],\n    div[data-screen-name=\"FarhanKVirk\"]\n    { \n        display: none ! important; \n    }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -2836,6 +2836,66 @@
 		"md5Url": null,
 		"url": null,
 		"originalMd5": null,
+		"name": "FiveThirtyEight",
+		"sections": [
+			{
+				"code": "iframe[src*='nfl'], iframe[src*='football'], iframe[src*='nba'], iframe[src*='soccer'],\n.tag-college-football, .tag-nfl, .vertical-sports, .footer-section-secondary-links,\n.footer-section-get-more, .comments, #footer-additional-info\n{ display: none ! important; }\n\n.widget { border-bottom: unset; }\n#colophon { padding: unset; }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"fivethirtyeight.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 142
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "Jira",
+		"sections": [
+			{
+				"code": "/* Random irrelevant plugins */\n#tts-sla-panel { display: none ! important }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"dashboard.pri.bms.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 143
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "WikiTribune",
+		"sections": [
+			{
+				"code": ".b-lazy {filter: unset ! important; transition: unset ! important; }\n\nimg img { display: none ! important; }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"wikitribune.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 144
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
 		"name": "GoFundMe",
 		"sections": [
 			{
@@ -2848,6 +2908,6 @@
 				"regexps": []
 			}
 		],
-		"id": 142
+		"id": 145
 	}
 ]
