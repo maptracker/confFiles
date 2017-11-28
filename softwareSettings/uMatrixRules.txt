@@ -265,6 +265,8 @@ lynda.com tags.tiqcdn.com script allow
 maptracker.github.io mathjax.org script allow
 mathoverflow.net cdn.mathjax.org script allow
 mathoverflow.net cdn.sstatic.net script allow
+microsoftonline.com microsoftonline.com script allow
+microsoftonline.com microsoftonline.com xhr allow
 mozilla.org addons.cdn.mozilla.net script allow
 mozilla.org addons.mozilla.org other allow
 mozilla.org addons.mozilla.org xhr allow
@@ -413,6 +415,7 @@ vote411.org static.thevoterguide.org script allow
 wikipathways.org cloudflare.com script allow
 wikipathways.org js.org script allow
 wikipathways.org polyfill.io script allow
+ 
 wikipedia.org 1st-party * inherit
 wikipedia.org commons.wikimedia.org other allow
 wikipedia.org meta.wikimedia.org script allow
