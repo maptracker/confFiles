@@ -14,6 +14,7 @@
 // @include     http://time.com/*
 // @include     http://*.denverpost.com/*
 // @include     http://*abc7.com/*
+// @include     http://*aljazeera.com/*
 // @include     https://*.usatoday.com/*
 // @include     https://*wikitribune.com/*
 // @version     1
@@ -70,7 +71,7 @@ function dataSrc() {
         var img  = imgs[i];
         var ds   = img.getAttribute( hrSrc );
         if (ds) {
-            if (img.tagName != 'img') {
+            if (img.tagName.toLowerCase() != 'img') {
                 newImg = document.createElement('img');
                 img.appendChild(newImg);
                 img = newImg;
