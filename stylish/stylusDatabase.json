@@ -2909,5 +2909,25 @@
 			}
 		],
 		"id": 145
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "VanityFair",
+		"sections": [
+			{
+				"code": "footer, .mvt-variant, .embed, .component-social-share, .component-contributors,\n.site-navigation\n{ display: none ! important; }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"vanityfair.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 146
 	}
 ]
