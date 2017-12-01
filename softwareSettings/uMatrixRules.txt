@@ -296,11 +296,17 @@ pbs.org dl47xs20witg8.cloudfront.net script allow
 pbs.org static-cdn2.ustream.tv script allow
 pbs.org www.ustream.tv frame allow
 pbs.org www.ustream.tv script allow
+plaintextoffenders.com www.tumblr.com frame allow
 plateau.com fpdownload.adobe.com plugin allow
 playstarbound.com ytimg.com script allow
 plos.org ajax.googleapis.com script allow
 plos.org cdn.mathjax.org script allow
+plos.org cloudflare.com script allow
 plos.org code.jquery.com script allow
+plos.org crossref.org script allow
+plos.org figshare.com script allow
+plos.org plos.org script allow
+plos.org plos.org xhr allow
 plos.org wl.figshare.com script allow
 pnas.org cdn.mathjax.org script allow
 pnas.org crossref.org script allow
@@ -415,7 +421,7 @@ vote411.org static.thevoterguide.org script allow
 wikipathways.org cloudflare.com script allow
 wikipathways.org js.org script allow
 wikipathways.org polyfill.io script allow
- 
+wikipathways.org wikipathways.org script allow
 wikipedia.org 1st-party * inherit
 wikipedia.org commons.wikimedia.org other allow
 wikipedia.org meta.wikimedia.org script allow
