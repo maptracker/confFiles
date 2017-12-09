@@ -8,6 +8,7 @@ CustomCursorColor=255,0,0
 UseCustomCursorColor=true
 
 [General]
+Icon=/home/tilfordc/ToFile/icons/TerminalGreen_128x128.png
 Name=Shell
 NewTabBehavior=1
 Parent=FALLBACK/
