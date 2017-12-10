@@ -3,3 +3,5 @@
 	email = gitcommit@biocode.fastmail.fm
 [core]
 	editor = emacs
+[push]
+	default = simple
