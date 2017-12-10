@@ -1,0 +1,2 @@
+This folder should be symlinked directly into the FireFox profile
+directory (not recursively linked)
