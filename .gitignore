@@ -56,3 +56,9 @@ Tumblr_Direct_Image.db
 Tumblr_Image_set.db
 USDA_Post_to_Get.db
 ixQuick_Repoint_Image_Links.db
+
+## And we don't really use these anymore:
+Filter_Amazon_DVDs.db
+Filter_BarnesNoble.db
+Filter_Walmart_DVDs.db
+NewEgg_Filter.db
