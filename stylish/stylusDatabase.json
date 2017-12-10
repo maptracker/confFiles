@@ -1,5 +1,6 @@
 [
 	{
+		"installDate": 1512347946741,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -20,6 +21,7 @@
 		"id": 2
 	},
 	{
+		"installDate": 1512347946752,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -40,6 +42,7 @@
 		"id": 3
 	},
 	{
+		"installDate": 1512347946760,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -60,6 +63,7 @@
 		"id": 4
 	},
 	{
+		"installDate": 1512347946765,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -80,6 +84,7 @@
 		"id": 5
 	},
 	{
+		"installDate": 1512347946777,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -100,6 +105,7 @@
 		"id": 6
 	},
 	{
+		"installDate": 1512347946793,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -120,6 +126,7 @@
 		"id": 7
 	},
 	{
+		"installDate": 1512347946797,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -141,6 +148,7 @@
 		"id": 8
 	},
 	{
+		"installDate": 1512347946801,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -161,6 +169,7 @@
 		"id": 9
 	},
 	{
+		"installDate": 1512347946808,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -181,6 +190,7 @@
 		"id": 10
 	},
 	{
+		"installDate": 1512347946813,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -201,6 +211,7 @@
 		"id": 11
 	},
 	{
+		"installDate": 1512347946826,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -221,6 +232,7 @@
 		"id": 12
 	},
 	{
+		"installDate": 1512347946843,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -241,6 +253,7 @@
 		"id": 13
 	},
 	{
+		"installDate": 1512347946851,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -261,6 +274,7 @@
 		"id": 14
 	},
 	{
+		"installDate": 1512347946860,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -281,6 +295,7 @@
 		"id": 15
 	},
 	{
+		"installDate": 1512347946865,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -301,6 +316,7 @@
 		"id": 16
 	},
 	{
+		"installDate": 1512347946873,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -321,6 +337,7 @@
 		"id": 17
 	},
 	{
+		"installDate": 1512347946881,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -341,6 +358,7 @@
 		"id": 18
 	},
 	{
+		"installDate": 1512347946895,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -361,6 +379,7 @@
 		"id": 19
 	},
 	{
+		"installDate": 1512347946899,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -381,6 +400,7 @@
 		"id": 20
 	},
 	{
+		"installDate": 1512347946903,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -401,6 +421,7 @@
 		"id": 21
 	},
 	{
+		"installDate": 1512347946910,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -421,6 +442,7 @@
 		"id": 22
 	},
 	{
+		"installDate": 1512347946914,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -441,6 +463,7 @@
 		"id": 23
 	},
 	{
+		"installDate": 1512347946926,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -461,6 +484,7 @@
 		"id": 24
 	},
 	{
+		"installDate": 1512347946933,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -481,6 +505,7 @@
 		"id": 25
 	},
 	{
+		"installDate": 1512347946938,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -501,6 +526,7 @@
 		"id": 26
 	},
 	{
+		"installDate": 1512347946944,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -521,6 +547,7 @@
 		"id": 27
 	},
 	{
+		"installDate": 1512347946955,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -541,6 +568,7 @@
 		"id": 28
 	},
 	{
+		"installDate": 1512347946961,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -561,6 +589,7 @@
 		"id": 29
 	},
 	{
+		"installDate": 1512347946966,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -581,6 +610,7 @@
 		"id": 30
 	},
 	{
+		"installDate": 1512347946972,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -601,6 +631,7 @@
 		"id": 31
 	},
 	{
+		"installDate": 1512347946976,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -621,6 +652,7 @@
 		"id": 32
 	},
 	{
+		"installDate": 1512347946989,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -641,6 +673,7 @@
 		"id": 33
 	},
 	{
+		"installDate": 1512347946994,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -662,6 +695,7 @@
 		"id": 34
 	},
 	{
+		"installDate": 1512347946998,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -682,6 +716,7 @@
 		"id": 35
 	},
 	{
+		"installDate": 1512347947003,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -702,6 +737,7 @@
 		"id": 36
 	},
 	{
+		"installDate": 1512347947008,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -722,6 +758,7 @@
 		"id": 37
 	},
 	{
+		"installDate": 1512347947012,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -742,6 +779,7 @@
 		"id": 38
 	},
 	{
+		"installDate": 1512347947016,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -762,6 +800,7 @@
 		"id": 39
 	},
 	{
+		"installDate": 1512347947020,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -782,6 +821,7 @@
 		"id": 40
 	},
 	{
+		"installDate": 1512347947024,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -803,6 +843,7 @@
 		"id": 41
 	},
 	{
+		"installDate": 1512347947042,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -823,6 +864,7 @@
 		"id": 42
 	},
 	{
+		"installDate": 1512347947054,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -843,6 +885,7 @@
 		"id": 43
 	},
 	{
+		"installDate": 1512347947061,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -863,6 +906,7 @@
 		"id": 44
 	},
 	{
+		"installDate": 1512347947065,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -871,7 +915,7 @@
 		"name": "GOG",
 		"sections": [
 			{
-				"code": "    .is-owned { \n        display: none ! important\n    }\n    .icon-linux { \n        background-color: darkorange ! important;\n        margin:3px; \n        border: solid orange 2px;  \n    }\n    .product-row__rating {\n        display: inline ! important; \n        width: 3px ! important;\n    }\n    .icon-win, .icon-mac, .icon-plus { \n        display: none ! important\n    }\n\n    /* #wishlistHolder .invisible { display: block ! important } */\n    \n    .star-rating--50 { background-color: lime; }\n    .star-rating--45 { background-color: green; }\n    .star-rating--40 { background-color: yellowgreen; }\n    .star-rating--35 { background-color: yellow; }\n    .star-rating--30 { background-color: pink; }\n    .star-rating--25 { background-color: red; }\n    .star-rating--20 { background-color: red; }\n    .star-rating--15 { background-color: black; }\n    .star-rating--10 { background-color: black; }\n    \n    /* These attributes are no longer being set */\n    .product-row__rating[star-rating=\"50\"] { background-color: lime; }\n    .product-row__rating[star-rating=\"49\"] { background-color: lime; }\n    .product-row__rating[star-rating=\"48\"] { background-color: lime; }\n    .product-row__rating[star-rating=\"47\"] { background-color: green; }\n    .product-row__rating[star-rating=\"46\"] { background-color: green; }\n    .product-row__rating[star-rating=\"45\"] { background-color: green; }\n    .product-row__rating[star-rating=\"44\"] { background-color: yellowgreen; }\n    .product-row__rating[star-rating=\"43\"] { background-color: yellowgreen; }\n    .product-row__rating[star-rating=\"42\"] { background-color: yellowgreen; }\n    .product-row__rating[star-rating=\"41\"] { background-color: yellow; }\n    .product-row__rating[star-rating=\"40\"] { background-color: yellow; }\n    .product-row__rating[star-rating^=\"3\"] { background-color: pink; }\n    .product-row__rating[star-rating^=\"2\"] { background-color: red; }\n    .product-row__rating[star-rating^=\"1\"] { background-color: black; }\n    \n    /* Owned games from other sources */\n    *[gog-product=\"1207659024\"], /* botanicula */\n    *[gog-product=\"1207659753\"], /* vvvvvvvv */\n    *[gog-product=\"1207664843\"], /* space_pirates_and_zombies */\n    *[gog-product=\"1207660134\"], /* race_the_sun */\n    *[gog-product=\"1425657908\"], /* skulls_of_the_shogun */\n    *[gog-product=\"1207659018\"], /* spacechem */\n    *[gog-product=\"1207659017\"], /* machinarium */\n    *[gog-product=\"1207659209\"], /* Papers Please */\n    *[gog-product=\"1207659259\"], /* Amnesia */\n    *[gog-product=\"1421855536\"], /* world of goo */\n    *[gog-product=\"1430398832\"], /* aquaria */\n    *[gog-product=\"1207659016\"], /* grimrock */\n    *[gog-product=\"1207660913\"], /* shadowrun */\n    *[gog-product=\"1207665343\"], /* ai war */\n    *[gog-product=\"1207659020\"], /* trine */\n    *[gog-product=\"1207659033\"], /* uplink */\n    *[gog-product=\"1207659072\"], /* to the moon */\n    *[gog-product=\"1438343741\"], /* frozen_synapse */\n    *[gog-product=\"1207659014\"], /* darwinia */\n    *[gog-product=\"1207659124\"], /* deponia 2 */\n    *[gog-product=\"1207660563\"], /* risk of rain */\n    *[gog-product=\"1207664703\"], /* Desktop Dungeons */\n    *[gog-product=\"1207665283\"], /* kingdom rush */\n    *[gog-product=\"1436866438\"], /* shadowrun hk */\n    *[gog-product=\"1207659145\"], /* stacking */\n    *[gog-product=\"1207659513\"], /* guacamelee */\n    *[gog-product=\"1207660104\"], /* pixeljunk */\n    *[gog-product=\"1207660253\"], /* dustforce */\n    *[gog-product=\"1207665323\"], /* ai war */\n    *[gog-product=\"1207659132\"], /* costume quest */\n    *[gog-product=\"1207659220\"], /* eschalon */\n    *[gog-product=\"1207665333\"], /* ai war */\n    *[gog-product=\"1207664603\"], /* among the sleep */\n    *[gog-product=\"1207667123\"], /* anomaly */\n    *[gog-product=\"1207667133\"], /* anomaly korea */\n    *[gog-product=\"1207659164\"], /* bards tale */\n    *[gog-product=\"1207666373\"], /* baldurs gate ii */\n    *[gog-product=\"1207666353\"], /* baldurs gate */\n    *[gog-product=\"1207665193\"], /* blocks that matter */\n    *[gog-product=\"1434013541\"], /* breach and clear */\n    *[gog-product=\"1434036647\"], /* breach and clear */\n    *[gog-product=\"1207659253\"], /* brutal legend */\n    *[gog-product=\"1446823701\"], /* card city nights */\n    *[gog-product=\"1207659075\"], /* defcon */\n    *[gog-product=\"1207659953\"], /* democracy 3 */\n    *[gog-product=\"1207666613\"], /* democracy 3 */\n    *[gog-product=\"1207664493\"], /* democracy 3 */\n    *[gog-product=\"1207660663\"], /* democracy 3 */\n    *[gog-product=\"1207660233\"], /* deponia 3 */\n    *[gog-product=\"1207660683\"], /* eschalon iii */\n    *[gog-product=\"1207665163\"], /* gone home */\n    *[gog-product=\"1207666533\"], /* halfway */\n    *[gog-product=\"1207659483\"], /* hammerwatch */\n    *[gog-product=\"1207666683\"], /* icewind dale */\n    *[gog-product=\"1434445160\"], /* ironclad tactics */\n    *[gog-product=\"1444053723\"], /* little inferno */\n    *[gog-product=\"1446797453\"], /* last federation */\n    *[gog-product=\"1207661993\"], /* luftrausers */\n    *[gog-product=\"1207659074\"], /* multiwinia */\n    *[gog-product=\"1207665033\"], /* olliolli */\n    *[gog-product=\"1207660064\"], /* outlast */\n    *[gog-product=\"1207664463\"], /* outlast */\n    *[gog-product=\"1207667073\"], /* pixel piracy */\n    *[gog-product=\"1207659049\"], /* retro city */\n    *[gog-product=\"1207660413\"], /* shadowrun returns */\n    *[gog-product=\"1440061546\"], /* shadowrun hk */\n    *[gog-product=\"1439900139\"], /* shadowrun hk */\n    *[gog-product=\"1207659160\"], /* Shattered Haven */\n    *[gog-product=\"1207660263\"], /* Shivah */\n    *[gog-product=\"1207664303\"], /* Sir You are Being Hunted */\n    *[gog-product=\"1207665863\"], /* spacecom */\n    *[gog-product=\"1207660733\"], /* steamworld dig */\n    *[gog-product=\"1207660213\"], /* super hexagon */\n    *[gog-product=\"1446796759\"], /* last federation */\n    *[gog-product=\"1207660863\"], /* tower of guns */\n    *[gog-product=\"1207665053\"], /* unrest */\n    *[gog-product=\"1207665063\"], /* unrest */\n    *[gog-product=\"1207665073\"], /* unrest */\n    *[gog-product=\"1207665843\"], /* shadowgate */\n    *[gog-product=\"1207665263\"], /* crawl */\n    *[gog-product=\"1457519353\"], /* oxenfree  */\n    *[gog-product=\"1207666243\"], /* tri */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n\n    /* Stupid stuff like soundtracks*/\n    *[gog-product=\"1443432851\"],\n    *[gog-product=\"1432563933\"],\n    *[gog-product=\"1432925124\"],\n    *[gog-product=\"1432925592\"],\n    *[gog-product=\"1428489988\"],\n    *[gog-product=\"1437732694\"],\n    *[gog-product=\"1445245918\"],\n    *[gog-product=\"1433148949\"],\n    *[gog-product=\"1444761329\"],\n    *[gog-product=\"1440698774\"],\n    *[gog-product=\"1207666873\"],\n    *[gog-product=\"1429612255\"],\n    *[gog-product=\"1436531655\"],\n    *[gog-product=\"1839729056\"], /* real texas */\n    *[gog-product=\"2140144873\"], /* rel texas */\n    *[gog-product=\"1735987864\"], /* shadow warrior */\n    *[gog-product=\"1207658828\"], /* gabriel knight */\n    *[gog-product=\"1207664393\"], /* blackwell */\n    *[gog-product=\"1207658837\"], /* gabriel knight */\n    *[gog-product=\"1207660094\"], /* dust */\n    *[gog-product=\"1423058311\"], /* bastion */\n    *[gog-product=\"1445250653\"], /* pirates */\n    *[gog-product=\"1452686647\"], /* samorost */\n    *[gog-product=\"1453277526\"], /* samorost */\n    *[gog-product=\"1207658843\"], /* gabriel knight */\n    *[gog-product=\"1440603706\"], /* stasis */\n    *[gog-product=\"1461061433\"], /* braid */\n    *[gog-product=\"1207665633\"], /* dreamfall */\n    *[gog-product=\"1447947499\"], /* besiege */\n    *[gog-product=\"1207658834\"], /* phantasmagoria */\n    *[gog-product=\"1207659166\"], /* avadon */\n    *[gog-product=\"1440603896\"], /* stasis */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    /* Stuff I simply do not want, or is horribly rated */\n\n    *[gog-product=\"1446465369\"],\n    *[gog-product=\"1443779037\"],\n    *[gog-product=\"1443778814\"],\n    *[gog-product=\"1442564308\"],\n    *[gog-product=\"1442910108\"],\n    *[gog-product=\"1443778954\"],\n    *[gog-product=\"1441717336\"],\n    *[gog-product=\"1207665143\"], /* mark of the ninja */\n    *[gog-product=\"1439377578\"],\n    *[gog-product=\"1450092067\"],\n    *[gog-product=\"1450100911\"],\n    *[gog-product=\"1207658941\"], /* lil devil */\n    *[gog-product=\"1207664403\"], /* pinball world */\n    *[gog-product=\"1207658856\"], /* blood */\n    *[gog-product=\"1207665153\"], /* wasteland 2 */\n    *[gog-product=\"1436885138\"], /* dungeons 2 poor ratings */\n    *[gog-product=\"1513949567\"], /* everspace - garbage wine */\n    *[gog-product=\"1207666123\"], /* starpoint gemini 2 - garbage wine (directx 11) */\n    *[gog-product=\"1422618200\"], /* paranautical activity 2 stars */\n    *[gog-product=\"1444830704\"], /* owned */\n    *[gog-product=\"1207664993\"], /* owned */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n\n    *[gog-product=\"0\"] /*  */  \n    {\n        display: none ! important;\n    }",
+				"code": "    .is-owned { \n        display: none ! important\n    }\n    .icon-linux { \n        background-color: darkorange ! important;\n        margin:3px; \n        border: solid orange 2px;  \n    }\n    .product-row__rating {\n        display: inline ! important; \n        width: 3px ! important;\n    }\n    .icon-win, .icon-mac, .icon-plus { \n        display: none ! important\n    }\n\n    /* #wishlistHolder .invisible { display: block ! important } */\n    \n    .star-rating--50 { background-color: lime; }\n    .star-rating--45 { background-color: green; }\n    .star-rating--40 { background-color: yellowgreen; }\n    .star-rating--35 { background-color: yellow; }\n    .star-rating--30 { background-color: pink; }\n    .star-rating--25 { background-color: red; }\n    .star-rating--20 { background-color: red; }\n    .star-rating--15 { background-color: black; }\n    .star-rating--10 { background-color: black; }\n    \n    /* These attributes are no longer being set */\n    .product-row__rating[star-rating=\"50\"] { background-color: lime; }\n    .product-row__rating[star-rating=\"49\"] { background-color: lime; }\n    .product-row__rating[star-rating=\"48\"] { background-color: lime; }\n    .product-row__rating[star-rating=\"47\"] { background-color: green; }\n    .product-row__rating[star-rating=\"46\"] { background-color: green; }\n    .product-row__rating[star-rating=\"45\"] { background-color: green; }\n    .product-row__rating[star-rating=\"44\"] { background-color: yellowgreen; }\n    .product-row__rating[star-rating=\"43\"] { background-color: yellowgreen; }\n    .product-row__rating[star-rating=\"42\"] { background-color: yellowgreen; }\n    .product-row__rating[star-rating=\"41\"] { background-color: yellow; }\n    .product-row__rating[star-rating=\"40\"] { background-color: yellow; }\n    .product-row__rating[star-rating^=\"3\"] { background-color: pink; }\n    .product-row__rating[star-rating^=\"2\"] { background-color: red; }\n    .product-row__rating[star-rating^=\"1\"] { background-color: black; }\n    \n    /* Owned games from other sources */\n    *[gog-product=\"1207659024\"], /* botanicula */\n    *[gog-product=\"1207659753\"], /* vvvvvvvv */\n    *[gog-product=\"1207664843\"], /* space_pirates_and_zombies */\n    *[gog-product=\"1207660134\"], /* race_the_sun */\n    *[gog-product=\"1425657908\"], /* skulls_of_the_shogun */\n    *[gog-product=\"1207659018\"], /* spacechem */\n    *[gog-product=\"1207659017\"], /* machinarium */\n    *[gog-product=\"1207659209\"], /* Papers Please */\n    *[gog-product=\"1207659259\"], /* Amnesia */\n    *[gog-product=\"1421855536\"], /* world of goo */\n    *[gog-product=\"1430398832\"], /* aquaria */\n    *[gog-product=\"1207659016\"], /* grimrock */\n    *[gog-product=\"1207660913\"], /* shadowrun */\n    *[gog-product=\"1207665343\"], /* ai war */\n    *[gog-product=\"1207659020\"], /* trine */\n    *[gog-product=\"1207659033\"], /* uplink */\n    *[gog-product=\"1207659072\"], /* to the moon */\n    *[gog-product=\"1438343741\"], /* frozen_synapse */\n    *[gog-product=\"1207659014\"], /* darwinia */\n    *[gog-product=\"1207659124\"], /* deponia 2 */\n    *[gog-product=\"1207660563\"], /* risk of rain */\n    *[gog-product=\"1207664703\"], /* Desktop Dungeons */\n    *[gog-product=\"1207665283\"], /* kingdom rush */\n    *[gog-product=\"1436866438\"], /* shadowrun hk */\n    *[gog-product=\"1207659145\"], /* stacking */\n    *[gog-product=\"1207659513\"], /* guacamelee */\n    *[gog-product=\"1207660104\"], /* pixeljunk */\n    *[gog-product=\"1207660253\"], /* dustforce */\n    *[gog-product=\"1207665323\"], /* ai war */\n    *[gog-product=\"1207659132\"], /* costume quest */\n    *[gog-product=\"1207659220\"], /* eschalon */\n    *[gog-product=\"1207665333\"], /* ai war */\n    *[gog-product=\"1207664603\"], /* among the sleep */\n    *[gog-product=\"1207667123\"], /* anomaly */\n    *[gog-product=\"1207667133\"], /* anomaly korea */\n    *[gog-product=\"1207659164\"], /* bards tale */\n    *[gog-product=\"1207666373\"], /* baldurs gate ii */\n    *[gog-product=\"1207666353\"], /* baldurs gate */\n    *[gog-product=\"1207665193\"], /* blocks that matter */\n    *[gog-product=\"1434013541\"], /* breach and clear */\n    *[gog-product=\"1434036647\"], /* breach and clear */\n    *[gog-product=\"1207659253\"], /* brutal legend */\n    *[gog-product=\"1446823701\"], /* card city nights */\n    *[gog-product=\"1207659075\"], /* defcon */\n    *[gog-product=\"1207659953\"], /* democracy 3 */\n    *[gog-product=\"1207666613\"], /* democracy 3 */\n    *[gog-product=\"1207664493\"], /* democracy 3 */\n    *[gog-product=\"1207660663\"], /* democracy 3 */\n    *[gog-product=\"1207660233\"], /* deponia 3 */\n    *[gog-product=\"1207660683\"], /* eschalon iii */\n    *[gog-product=\"1207665163\"], /* gone home */\n    *[gog-product=\"1207666533\"], /* halfway */\n    *[gog-product=\"1207659483\"], /* hammerwatch */\n    *[gog-product=\"1207666683\"], /* icewind dale */\n    *[gog-product=\"1434445160\"], /* ironclad tactics */\n    *[gog-product=\"1444053723\"], /* little inferno */\n    *[gog-product=\"1446797453\"], /* last federation */\n    *[gog-product=\"1207661993\"], /* luftrausers */\n    *[gog-product=\"1207659074\"], /* multiwinia */\n    *[gog-product=\"1207665033\"], /* olliolli */\n    *[gog-product=\"1207660064\"], /* outlast */\n    *[gog-product=\"1207664463\"], /* outlast */\n    *[gog-product=\"1207667073\"], /* pixel piracy */\n    *[gog-product=\"1207659049\"], /* retro city */\n    *[gog-product=\"1207660413\"], /* shadowrun returns */\n    *[gog-product=\"1440061546\"], /* shadowrun hk */\n    *[gog-product=\"1439900139\"], /* shadowrun hk */\n    *[gog-product=\"1207659160\"], /* Shattered Haven */\n    *[gog-product=\"1207660263\"], /* Shivah */\n    *[gog-product=\"1207664303\"], /* Sir You are Being Hunted */\n    *[gog-product=\"1207665863\"], /* spacecom */\n    *[gog-product=\"1207660733\"], /* steamworld dig */\n    *[gog-product=\"1207660213\"], /* super hexagon */\n    *[gog-product=\"1446796759\"], /* last federation */\n    *[gog-product=\"1207660863\"], /* tower of guns */\n    *[gog-product=\"1207665053\"], /* unrest */\n    *[gog-product=\"1207665063\"], /* unrest */\n    *[gog-product=\"1207665073\"], /* unrest */\n    *[gog-product=\"1207665843\"], /* shadowgate */\n    *[gog-product=\"1207665263\"], /* crawl */\n    *[gog-product=\"1457519353\"], /* oxenfree  */\n    *[gog-product=\"1207666243\"], /* tri */\n    *[gog-product=\"1839729056\"], /* real texas */\n    *[gog-product=\"2140144873\"], /* rel texas */\n    *[gog-product=\"1735987864\"], /* shadow warrior */\n    *[gog-product=\"1207658828\"], /* gabriel knight */\n    *[gog-product=\"1207664393\"], /* blackwell */\n    *[gog-product=\"1207658837\"], /* gabriel knight */\n    *[gog-product=\"1207660094\"], /* dust */\n    *[gog-product=\"1423058311\"], /* bastion */\n    *[gog-product=\"1445250653\"], /* pirates */\n    *[gog-product=\"1452686647\"], /* samorost */\n    *[gog-product=\"1453277526\"], /* samorost */\n    *[gog-product=\"1207658843\"], /* gabriel knight */\n    *[gog-product=\"1440603706\"], /* stasis */\n    *[gog-product=\"1461061433\"], /* braid */\n    *[gog-product=\"1207665633\"], /* dreamfall */\n    *[gog-product=\"1447947499\"], /* besiege */\n    *[gog-product=\"1207659166\"], /* avadon */\n    *[gog-product=\"1440603896\"], /* stasis */\n    *[gog-product=\"1207664733\"], /* shelter2 */\n    *[gog-product=\"1424868860\"], /* shelter2 */\n    *[gog-product=\"1207659223\"], /* reus */\n    *[gog-product=\"2107856782\"], /* ren.expl */\n    *[gog-product=\"1938069609\"], /* cryptark */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    /* Stuff I simply do not want, or is horribly rated */\n\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"0\"], /*  */\n    *[gog-product=\"1788373596\"], /*  */\n    *[gog-product=\"1443432851\"],\n    *[gog-product=\"1432563933\"],\n    *[gog-product=\"1432925124\"],\n    *[gog-product=\"1432925592\"],\n    *[gog-product=\"1428489988\"],\n    *[gog-product=\"1437732694\"],\n    *[gog-product=\"1445245918\"],\n    *[gog-product=\"1433148949\"],\n    *[gog-product=\"1444761329\"],\n    *[gog-product=\"1440698774\"],\n    *[gog-product=\"1207666873\"],\n    *[gog-product=\"1429612255\"],\n    *[gog-product=\"1436531655\"],\n    *[gog-product=\"1207658834\"], /* phantasmagoria */\n    *[gog-product=\"1446465369\"],\n    *[gog-product=\"1443779037\"],\n    *[gog-product=\"1443778814\"],\n    *[gog-product=\"1442564308\"],\n    *[gog-product=\"1442910108\"],\n    *[gog-product=\"1443778954\"],\n    *[gog-product=\"1441717336\"],\n    *[gog-product=\"1207665143\"], /* mark of the ninja */\n    *[gog-product=\"1439377578\"],\n    *[gog-product=\"1450092067\"],\n    *[gog-product=\"1450100911\"],\n    *[gog-product=\"1207658941\"], /* lil devil */\n    *[gog-product=\"1207664403\"], /* pinball world */\n    *[gog-product=\"1207658856\"], /* blood */\n    *[gog-product=\"1207665153\"], /* wasteland 2 */\n    *[gog-product=\"1436885138\"], /* dungeons 2 poor ratings */\n    *[gog-product=\"1513949567\"], /* everspace - garbage wine */\n    *[gog-product=\"1207666123\"], /* starpoint gemini 2 - garbage wine (directx 11) */\n    *[gog-product=\"1422618200\"], /* paranautical activity 2 stars */\n    *[gog-product=\"1444830704\"], /* owned */\n    *[gog-product=\"1207664993\"], /* owned */\n\n    *[gog-product=\"0\"] /*  */  \n    {\n        display: none ! important;\n    }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -883,6 +927,7 @@
 		"id": 45
 	},
 	{
+		"installDate": 1512347947077,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -903,6 +948,7 @@
 		"id": 46
 	},
 	{
+		"installDate": 1512347947082,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -923,6 +969,7 @@
 		"id": 47
 	},
 	{
+		"installDate": 1512347947093,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -943,6 +990,7 @@
 		"id": 48
 	},
 	{
+		"installDate": 1512347947098,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -966,6 +1014,7 @@
 		"id": 49
 	},
 	{
+		"installDate": 1512347947104,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -986,6 +1035,7 @@
 		"id": 50
 	},
 	{
+		"installDate": 1512347947115,
 		"enabled": false,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1006,6 +1056,7 @@
 		"id": 51
 	},
 	{
+		"installDate": 1512347947128,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1014,7 +1065,7 @@
 		"name": "HumbleMasker",
 		"sections": [
 			{
-				"code": "/* Listed games will be hidden in Humble's store. Includes:\n   Games I've bought, at Humble or elsewhere\n   Ones that came in a bundle\n   Games I have no interest in buying  */\n\n    .hero-banner { \n        display: none ! important; \n    }\n    \n    li[data-entity-key=\"torchlight_storefront\"],\n    li[data-entity-key=\"torchlight2_storefront\"],\n    li[data-entity-key=\"maxsbigbust_acaptainnekoraitale_storefront\"],\n    li[data-entity-key=\"huniepop_storefront\"],\n    li[data-entity-key=\"tis_100_storefront\"],\n    li[data-entity-key=\"prisonarchitect_storefront\"],\n    li[data-entity-key=\"papersplease_storefront\"],\n    li[data-entity-key=\"hotlinemiami_wildlife_complete_storefront\"],\n    li[data-entity-key=\"bindingofisaac_storefront\"],\n    li[data-entity-key=\"hotlinemiami2_special_storefront\"],\n    li[data-entity-key=\"elseheart_break_storefront\"],\n    li[data-entity-key=\"minimetro_storefront\"],\n    li[data-entity-key=\"outlast_storefront\"],\n    li[data-entity-key=\"dayofthetentacle_storefront\"],\n    li[data-entity-key=\"reassembly_storefront\"],\n    li[data-entity-key=\"cavestoryplus_storefront\"],\n    li[data-entity-key=\"crimsonland_storefront\"],\n    li[data-entity-key=\"huniecam_studio_storefront\"],\n    li[data-entity-key=\"ponyisland_storefront\"],\n    li[data-entity-key=\"ironclad_storefront\"],\n    li[data-entity-key=\"xenonauts_storefront\"],\n    li[data-entity-key=\"zenbound2_storefront\"],\n    li[data-entity-key=\"wormsreloaded_worms2armageddon_storefront\"],\n    li[data-entity-key=\"wizorb_storefront\"],\n    li[data-entity-key=\"windosill_storefront\"],\n    li[data-entity-key=\"weirdworlds_rtis_storefront\"],\n    li[data-entity-key=\"vvvvvv_storefront\"],\n    li[data-entity-key=\"wakingmars_storefront\"],\n    li[data-entity-key=\"vessel_storefront\"],\n    li[data-entity-key=\"unsummoning_thespectralhorde_storefront\"],\n    li[data-entity-key=\"unrest_storefront\"],\n    li[data-entity-key=\"unmechanical_storefront\"],\n    li[data-entity-key=\"unityofcommand_redturn_storefront\"],\n    li[data-entity-key=\"unityofcommand_blackturn_storefront\"],\n    li[data-entity-key=\"unepic_storefront\"],\n    li[data-entity-key=\"type_rider_storefront\"],\n    li[data-entity-key=\"trine_storefront\"],\n    li[data-entity-key=\"trine3_storefront\"],\n    li[data-entity-key=\"trine2complete_storefront\"],\n    li[data-entity-key=\"tri_storefront\"],\n    li[data-entity-key=\"towerofguns_storefront\"],\n    li[data-entity-key=\"towerfall_darkworld_storefront\"],\n    li[data-entity-key=\"tothemoon_storefront\"],\n    li[data-entity-key=\"tomboftyrants_storefront\"],\n    li[data-entity-key=\"tokitori2_storefront\"],\n    li[data-entity-key=\"toby_thesecretmine_storefront\"],\n    li[data-entity-key=\"tinykeep_storefront\"],\n    li[data-entity-key=\"tinyandbig_storefront\"],\n    li[data-entity-key=\"tidalis_storefront\"],\n    li[data-entity-key=\"theswapper_storefront\"],\n    li[data-entity-key=\"therealtexas_storefront\"],\n    li[data-entity-key=\"thelasttinker_storefront\"],\n    li[data-entity-key=\"thelastfederation_storefront\"],\n    li[data-entity-key=\"thelastfederation_betrayedhope_storefront\"],\n    li[data-entity-key=\"theinnerworld_storefront\"],\n    li[data-entity-key=\"theforestofdoom_storefront\"],\n    li[data-entity-key=\"thebridge_storefront\"],\n    li[data-entity-key=\"tetrobotandco_storefront\"],\n    li[data-entity-key=\"teslagrad_storefront\"],\n    li[data-entity-key=\"talesofmajeyal_storefront\"],\n    li[data-entity-key=\"talesofmajeyal_ashesofurhrok_storefront\"],\n    li[data-entity-key=\"swordandsworcery_storefront\"],\n    li[data-entity-key=\"survivorsquad_storefront\"],\n    li[data-entity-key=\"surgeonsimulator2013_storefront\"],\n    li[data-entity-key=\"supertimeforce_ultra_storefront\"],\n    li[data-entity-key=\"supermeatboy_storefront\"],\n    li[data-entity-key=\"superhexagon_storefront\"],\n    li[data-entity-key=\"ftlfasterthanlight_storefront\"],\n    li[data-entity-key=\"starbound_storefront\"],\n    li[data-entity-key=\"loversinadangerousspacetime_storefront\"],\n    li[data-entity-key=\"bigpharma_storefront\"],\n    li[data-entity-key=\"antichamber_storefront\"],\n    li[data-entity-key=\"limbo_storefront\"],\n    li[data-entity-key=\"splice_storefront\"],\n    li[data-entity-key=\"tw_warhammer_realmofthewoodelves_storefront\"],\n    li[data-entity-key=\"total_wartm_warhammer__chaos_warriors_race_pack_storefront\"],\n    li[data-entity-key=\"twwh_thegrimandthegrave_storefront\"],\n    li[data-entity-key=\"tw_warhammer_thekingandthewarlod_storefront\"],\n    li[data-entity-key=\"victorvran_storefront\"],\n    li[data-entity-key=\"factorio_storefront\"],\n    li[data-entity-key=\"tw_warhammer_callofthebeastmen_storefront\"],\n    li[data-entity-key=\"tw_warhammer_bloodforthebloodgod_storefront\"],\n    li[data-entity-key=\"stardewvalley_storefront\"],\n    li[data-entity-key=\"terraria_storefront\"],\n    li[data-entity-key=\"shatteredhaven_storefront\"],\n    li[data-entity-key=\"tokitori_storefront\"],\n    li[data-entity-key=\"stardustvanguards_storefront\"],\n    li[data-entity-key=\"stacking_storefront\"],\n    li[data-entity-key=\"solarflux_storefront\"],\n    li[data-entity-key=\"shadowgrounds_survivor_storefront\"],\n    li[data-entity-key=\"shadowgrounds_storefront\"],\n    li[data-entity-key=\"the39steps_storefront\"],\n    li[data-entity-key=\"trainfever_storefront\"],\n    li[data-entity-key=\"psychonauts_storefront\"],\n    li[data-entity-key=\"massivechalice_storefront\"],\n    li[data-entity-key=\"journeyofaroach_storefront\"],\n    li[data-entity-key=\"hacknslash_withsoundtrack_storefront\"],\n    li[data-entity-key=\"goodbyedeponia_storefront\"],\n    li[data-entity-key=\"brutallegend_storefront\"],\n    li[data-entity-key=\"costumequest_storefront\"],\n    li[data-entity-key=\"deponia_storefront\"],\n    li[data-entity-key=\"edge_storefront\"],\n    li[data-entity-key=\"breachandclear_storefront\"],\n    li[data-entity-key=\"battlestation_harbinger_storefront\"],\n    li[data-entity-key=\"curseofthecrescentisledx_storefront\"],\n    li[data-entity-key=\"unityofcommand_storefront\"],\n    li[data-entity-key=\"uplink_storefront\"],\n    li[data-entity-key=\"pixeljunkshooter_storefront\"],\n    li[data-entity-key=\"pixeljunkmonstersultimate_storefront\"],\n    li[data-entity-key=\"doorkickers_storefront\"],\n    li[data-entity-key=\"deponia_completejourney_storefront\"],\n    li[data-entity-key=\"bionicdues_storefront\"],\n    li[data-entity-key=\"avalleywithoutwind_1and2_storefront\"],\n    li[data-entity-key=\"shelter2_storefront\"],\n    li[data-entity-key=\"wearethedwarves_storefront\"],\n    li[data-entity-key=\"chaosondeponia_storefront\"],\n    li[data-entity-key=\"theybleedpixels_storefront\"],\n    li[data-entity-key=\"thelastfederation_collection_storefront\"],\n    li[data-entity-key=\"thenovelist_storefront\"],\n    li[data-entity-key=\"surgeonsimulator_ae_storefront\"],\n    li[data-entity-key=\"surgeonsimulator_ae_content_storefront\"],\n    li[data-entity-key=\"skywardcollapse_complete_storefront\"],\n    li[data-entity-key=\"siryouarebeinghunted_storefront\"],\n    li[data-entity-key=\"shadowrunreturns_storefront\"],\n    li[data-entity-key=\"shadowruncompletecollection_storefront\"],\n    li[data-entity-key=\"solar2_storefront\"],\n    li[data-entity-key=\"shadowrun_dragonfall_dc_storefront\"],\n    li[data-entity-key=\"shadowgate_storefront\"],\n    li[data-entity-key=\"shadowgate_se_storefront\"],\n    li[data-entity-key=\"sentrisstandard_storefront\"],\n    li[data-entity-key=\"shadowrun_triplepack_storefront\"],\n    li[data-entity-key=\"sentris_storefront\"],\n    li[data-entity-key=\"penumbra_collection_storefront\"],\n    li[data-entity-key=\"paranauticalactivity_storefront\"],\n    li[data-entity-key=\"never_alone_arctic_collection_storefront\"],\n    li[data-entity-key=\"mirrormoonep_storefront\"],\n    li[data-entity-key=\"grimfandango_storefront\"],\n    li[data-entity-key=\"fotonica_storefront\"],\n    li[data-entity-key=\"cubeandstar_anarbitrarylove_storefront\"],\n    li[data-entity-key=\"dex_storefront\"],\n    li[data-entity-key=\"fire_storefront\"],\n    li[data-entity-key=\"darkecho_storefront\"],\n    li[data-entity-key=\"beatbuddy_storefront\"],\n    li[data-entity-key=\"badland_goty_storefront\"],\n    li[data-entity-key=\"anomalykorea_storefront\"],\n    li[data-entity-key=\"anomalydefenders_storefront\"],\n    li[data-entity-key=\"anomaly2_storefront\"],\n    li[data-entity-key=\"anomaly_warzoneearth_storefront\"],\n    li[data-entity-key=\"ziggurat_storefront\"],\n    li[data-entity-key=\"wormsreloaded_goty_storefront\"],\n    li[data-entity-key=\"wizardry_complete_storefront\"],\n    li[data-entity-key=\"wasteland_storefront\"],\n    li[data-entity-key=\"thebardstale_storefront\"],\n    li[data-entity-key=\"texmurphy_complete_storefront\"],\n    li[data-entity-key=\"survivorsquad_gauntlets_storefront\"],\n    li[data-entity-key=\"surgeonsimulatorae_iambread_pack_storefront\"],\n    li[data-entity-key=\"steamworlddig_storefront\"],\n    li[data-entity-key=\"starwardrogue_storefront\"],\n    li[data-entity-key=\"spiritsofxanadu_storefront\"],\n    li[data-entity-key=\"sokobond_storefront\"],\n    li[data-entity-key=\"strikesuitzero_storefront\"],\n    li[data-entity-key=\"silentservice2_storefront\"],\n    li[data-entity-key=\"silentservice_storefront\"],\n    li[data-entity-key=\"sid_meiers_colonization_classic_storefront\"],\n    li[data-entity-key=\"shadowrun_hongkong_storefront\"],\n    li[data-entity-key=\"racethesun_storefront\"],\n    li[data-entity-key=\"planetaryannihilation_titans_storefront\"],\n    li[data-entity-key=\"poncho_storefront\"],\n    li[data-entity-key=\"shadwen_storefront\"],\n    li[data-entity-key=\"shadowrun_hongkong_deluxe_storefront\"],\n    li[data-entity-key=\"outthere_storefront\"],\n    li[data-entity-key=\"outthere_omegaedition_storefront\"],\n    li[data-entity-key=\"outlast_whistleblower_storefront\"],\n    li[data-entity-key=\"oscura_lostlight_storefront\"],\n    li[data-entity-key=\"neverendingnightmares_storefront\"],\n    li[data-entity-key=\"neo_scavenger_storefront\"],\n    li[data-entity-key=\"knightsofpenandpaper_storefront\"],\n    li[data-entity-key=\"knightsofpenandpaper_hauntedfall_storefront\"],\n    li[data-entity-key=\"ironcladtactics_storefront\"],\n    li[data-entity-key=\"heroesofloot_storefront\"],\n    li[data-entity-key=\"hammerwatch_storefront\"],\n    li[data-entity-key=\"gunsoficarusonline_storefront\"],\n    li[data-entity-key=\"gabrielknight_sinsofthefathers_storefront\"],\n    li[data-entity-key=\"fullbore_storefront\"],\n    li[data-entity-key=\"farsky_storefront\"],\n    li[data-entity-key=\"forced_storefront\"],\n    li[data-entity-key=\"eldritch_storefront\"],\n    li[data-entity-key=\"therealtexas_dustyskiesedition_storefront\"],\n    li[data-entity-key=\"undertale_storefront\"],\n    li[data-entity-key=\"darkestdungeon_storefront\"],\n    li[data-entity-key=\"dontstarve_storefront\"],\n    li[data-entity-key=\"moveordie_storefront\"],\n    li[data-entity-key=\"ultimate_chicken_horse_storefront\"],\n    li[data-entity-key=\"trainvalley_storefront\"],\n    li[data-entity-key=\"thewarlockoffiretopmountain_storefront\"],\n    li[data-entity-key=\"thespatials_storefront\"],\n    li[data-entity-key=\"therealtexas_cellpop_storefront\"],\n    li[data-entity-key=\"talesofmajeyal_collection_storefront\"],\n    li[data-entity-key=\"talesofmajeyal_embersofrage_storefront\"],\n    li[data-entity-key=\"systemshock2_storefront\"],\n    li[data-entity-key=\"systemshock_pack_storefront\"],\n    li[data-entity-key=\"teleglitch_diemoreedition_storefront\"],\n    li[data-entity-key=\"syderarcade_storefront\"],\n    li[data-entity-key=\"sunlesssea_zubmariner_storefront\"],\n    li[data-entity-key=\"sunlesssea_storefront\"],\n    li[data-entity-key=\"startactics_storefront\"],\n    li[data-entity-key=\"starshiptraveller_storefront\"],\n    li[data-entity-key=\"spychameleon_rgbagent_storefront\"],\n    li[data-entity-key=\"spirits_storefront\"],\n    li[data-entity-key=\"spaz_storefront\"],\n    li[data-entity-key=\"snapshot_storefront\"],\n    li[data-entity-key=\"skyrogue_storefront\"],\n    li[data-entity-key=\"shelter_theheartedition_storefront\"],\n    li[data-entity-key=\"shelter_complete_storefront\"],\n    li[data-entity-key=\"shelter2_mountains_storefront\"],\n    li[data-entity-key=\"shadowwarrior_storefront\"],\n    li[data-entity-key=\"shadowwarrior_classicredux_storefront\"],\n    li[data-entity-key=\"serpentinthestaglands_storefront\"],\n    li[data-entity-key=\"secretsofraetikon_storefront\"],\n    li[data-entity-key=\"secretofthemagiccrystals_storefront\"],\n    li[data-entity-key=\"secretofthemagiccrystals_therace_storefront\"],\n    li[data-entity-key=\"savant_ascent_storefront\"],\n    li[data-entity-key=\"saturdaymorningrpg_storefront\"],\n    li[data-entity-key=\"samorost2_storefront\"],\n    li[data-entity-key=\"rymdkapsel_storefront\"],\n    li[data-entity-key=\"ryannorths_tobeornottobe_storefront\"],\n    li[data-entity-key=\"rochard_storefront\"],\n    li[data-entity-key=\"riskofrain_storefront\"],\n    li[data-entity-key=\"reus_storefront\"],\n    li[data-entity-key=\"retrocityrampage_storefront\"],\n    li[data-entity-key=\"renownedexplorers_moretoexplore_storefront\"],\n    li[data-entity-key=\"renownedexplorers_intsociety_storefront\"],\n    li[data-entity-key=\"renownedexplorers_theemperorschallenge_storefront\"],\n    li[data-entity-key=\"renownedexplorerscompletebundle_storefront\"],\n    li[data-entity-key=\"reigns_storefront\"],\n    li[data-entity-key=\"reignmaker_storefront\"],\n    li[data-entity-key=\"regencysolitaire_storefront\"],\n    li[data-entity-key=\"racethesun_sunrise_storefront\"],\n    li[data-entity-key=\"questofdungeons_storefront\"],\n    li[data-entity-key=\"questforinfamy_storefront\"],\n    li[data-entity-key=\"qube_directorscut_storefront\"],\n    li[data-entity-key=\"qbqbqb_storefront\"],\n    li[data-entity-key=\"puppygamesultrabundle_storefront\"],\n    li[data-entity-key=\"pulstar_storefront\"],\n    li[data-entity-key=\"puddle_storefront\"],\n    li[data-entity-key=\"proteus_storefront\"],\n    li[data-entity-key=\"pixelpiracy_storefront\"],\n    li[data-entity-key=\"pixelheroes_byteandmagic_storefront\"],\n    li[data-entity-key=\"pillarsofeternity_whitemarch_p2_storefront\"],\n    li[data-entity-key=\"pillarsofeternity_whitemarch_p1_storefront\"],\n    li[data-entity-key=\"pillarsofeternity_whitemarch_ep_storefront\"],\n    li[data-entity-key=\"pillarsofeternity_royal_storefront\"],\n    li[data-entity-key=\"pillarsofeternity_hero_storefront\"],\n    li[data-entity-key=\"pillarsofeternity_champion_storefront\"],\n    li[data-entity-key=\"parcel_storefront\"],\n    li[data-entity-key=\"parallax_storefront\"],\n    li[data-entity-key=\"papoandyo_storefront\"],\n    li[data-entity-key=\"papersorcerer_storefront\"],\n    li[data-entity-key=\"pajamasamssockworks_storefront\"],\n    li[data-entity-key=\"pajamasamslostandfound_storefront\"],\n    li[data-entity-key=\"pajamasam_nnthwido_storefront\"],\n    li[data-entity-key=\"pajamasam_gamestoplayonanyday_storefront\"],\n    li[data-entity-key=\"pajamasam_complete_storefront\"],\n    li[data-entity-key=\"pajamasam3_youarewhatyoueat_storefront\"],\n    li[data-entity-key=\"pajamasam2_thunderandlightning_storefront\"],\n    li[data-entity-key=\"otttd_storefront\"],\n    li[data-entity-key=\"osmos_storefront\"],\n    li[data-entity-key=\"orderofthethorne_kingschallenge_storefront\"],\n    li[data-entity-key=\"onrustytrails_storefront\"],\n    li[data-entity-key=\"oniken_storefront\"],\n    li[data-entity-key=\"okhlos_storefront\"],\n    li[data-entity-key=\"olliolli_storefront\"],\n    li[data-entity-key=\"offspringfling_storefront\"],\n    li[data-entity-key=\"oddworld_newntasty_storefront\"],\n    li[data-entity-key=\"octodad_dadliestcatch_storefront\"],\n    li[data-entity-key=\"nuclearthrone_storefront\"],\n    li[data-entity-key=\"nottherobots_storefront\"],\n    li[data-entity-key=\"nightsky_storefront\"],\n    li[data-entity-key=\"neondrive_storefront\"],\n    li[data-entity-key=\"mushroom11_storefront\"],\n    li[data-entity-key=\"mushroom11_soundtrackbundle_storefront\"],\n    li[data-entity-key=\"mousecraft_storefront\"],\n    li[data-entity-key=\"mountandblade_warband_viking_storefront\"],\n    li[data-entity-key=\"mountandblade_napoleonicwars_storefront\"],\n    li[data-entity-key=\"monstrum_storefront\"],\n    li[data-entity-key=\"monaco_storefront\"],\n    li[data-entity-key=\"mcpixel_storefront\"],\n    li[data-entity-key=\"mcdroid_storefront\"],\n    li[data-entity-key=\"masteroforion_storefront\"],\n    li[data-entity-key=\"masteroforion1_2_storefront\"],\n    li[data-entity-key=\"machinarium_storefront\"],\n    li[data-entity-key=\"lyne_storefront\"],\n    li[data-entity-key=\"luftrausers_storefront\"],\n    li[data-entity-key=\"lordsofxulima_storefront\"],\n    li[data-entity-key=\"littleinferno_storefront\"],\n    li[data-entity-key=\"lifelessplanet_storefront\"],\n    li[data-entity-key=\"legendofgrimrock_storefront\"],\n    li[data-entity-key=\"legendofdungeon_storefront\"],\n    li[data-entity-key=\"lastfederation_losttechnologies_storefront\"],\n    li[data-entity-key=\"knightsofpenandpaper_deluxier_storefront\"],\n    li[data-entity-key=\"kingdomrush_storefront\"],\n    li[data-entity-key=\"kingarthursgold_storefront\"],\n    li[data-entity-key=\"keeperrl_storefront\"],\n    li[data-entity-key=\"jaggedalliance_flashback_storefront\"],\n    li[data-entity-key=\"jaggedalliance_backinaction_storefront\"],\n    li[data-entity-key=\"jaggedalliance1_goldedition_storefront\"],\n    li[data-entity-key=\"jacklumber_storefront\"],\n    li[data-entity-key=\"ittledew_storefront\"],\n    li[data-entity-key=\"jotun_storefront\"],\n    li[data-entity-key=\"interstellaria_storefront\"],\n    li[data-entity-key=\"insanelytwistedshadowplanet_storefront\"],\n    li[data-entity-key*=\"influent_\"],\n    li[data-entity-key=\"infinifactory_storefront\"],\n    li[data-entity-key=\"incredipede_storefront\"],\n    li[data-entity-key=\"icantescape_darkness_storefront\"],\n    li[data-entity-key=\"humanresourcemachine_storefront\"],\n    li[data-entity-key=\"hotlinemiami_storefront\"],\n    li[data-entity-key=\"hook_storefront\"],\n    li[data-entity-key=\"hoard_storefront\"],\n    li[data-entity-key=\"hexcellscompletepack_storefront\"],\n    li[data-entity-key=\"heavybullets_storefront\"],\n    li[data-entity-key=\"hearthlands_storefront\"],\n    li[data-entity-key=\"hardwest_storefront\"],\n    li[data-entity-key=\"handoffate_storefront\"],\n    li[data-entity-key=\"hardwest_collectorsedition_storefront\"],\n    li[data-entity-key=\"halfway_storefront\"],\n    li[data-entity-key=\"hackslashloot_storefront\"],\n    li[data-entity-key=\"gunpoint_storefront\"],\n    li[data-entity-key=\"gonehome_storefront\"],\n    li[data-entity-key=\"godswillbewatching_storefront\"],\n    li[data-entity-key=\"godswillbewatching_se_storefront\"],\n    li[data-entity-key=\"goatsimulator_storefront\"],\n    li[data-entity-key=\"gnomoria_storefront\"],\n    li[data-entity-key=\"ga8_curseoftheassassin_storefront\"],\n    li[data-entity-key=\"ga5_catacombsoftheundercity_storefront\"],\n    li[data-entity-key=\"ga1_anassassininorlandes_storefront\"],\n    li[data-entity-key=\"galakz_storefront\"],\n    li[data-entity-key=\"frozensynapse_storefront\"],\n    li[data-entity-key*=\"freddifish\"],\n    li[data-entity-key=\"foxandflock_storefront\"],\n    li[data-entity-key=\"findingteddy_storefront\"],\n    li[data-entity-key=\"fez_storefront\"],\n    li[data-entity-key=\"feist_storefront\"],\n    li[data-entity-key=\"feist_deluxe_storefront\"],\n    li[data-entity-key=\"f117a_nighthawkstealthfighter_20_storefront\"],\n    li[data-entity-key=\"expeditions_conquistador_storefront\"],\n    li[data-entity-key=\"expand_withsoundtrack_storefront\"],\n    li[data-entity-key=\"expand_storefront\"],\n    li[data-entity-key=\"eufloriahd_storefront\"],\n    li[data-entity-key=\"eufloriahd_deluxe_storefront\"],\n    li[data-entity-key=\"englishcountrytune_storefront\"],\n    li[data-entity-key=\"electronicsuperjoy_storefront\"],\n    li[data-entity-key=\"electronicsuperjoy_groovecity_storefront\"],\n    li[data-entity-key=\"dustforce_storefront\"],\n    li[data-entity-key=\"dust_anelysiantail_storefront\"],\n    li[data-entity-key=\"dungeondefenders_eternity_storefront\"],\n    li[data-entity-key=\"dungeondefenders_storefront\"],\n    li[data-entity-key=\"dungeonhearts_storefront\"],\n    li[data-entity-key=\"droxoperative_storefront\"],\n    li[data-entity-key=\"droxoperative_invasionoftheancients_storefront\"],\n    li[data-entity-key=\"drawastickmanepic_storefront\"],\n    li[data-entity-key=\"doodlegod_storefront\"],\n    li[data-entity-key=\"dontstarve_reignofgiants_storefront\"],\n    li[data-entity-key=\"divinity_originalsin_enhanced_storefront\"],\n    li[data-entity-key=\"dinscurse_storefront\"],\n    li[data-entity-key=\"dinscurse_demonwar_storefront\"],\n    li[data-entity-key*=\"deusex_mankinddivided\"],\n    li[data-entity-key=\"detectivegrimoire_storefront\"],\n    li[data-entity-key=\"desktopdungeons_storefront\"],\n    li[data-entity-key*=\"democracy3\"],\n    li[data-entity-key=\"defendersquest_storefront\"],\n    li[data-entity-key=\"darkscavenger_storefront\"],\n    li[data-entity-key=\"darklands_storefront\"],\n    li[data-entity-key=\"crystalcatacombs_storefront\"],\n    li[data-entity-key=\"crowntakers_storefront\"],\n    li[data-entity-key=\"crea_storefront\"],\n    li[data-entity-key=\"cosmochoria_storefront\"],\n    li[data-entity-key=\"cornerstone_thesongoftyrim_storefront\"],\n    li[data-entity-key=\"convoy_storefront\"],\n    li[data-entity-key=\"continue_9876543210_storefront\"],\n    li[data-entity-key=\"closure_storefront\"],\n    li[data-entity-key=\"capsized_storefront\"],\n    li[data-entity-key=\"cardcitynights_storefront\"],\n    li[data-entity-key=\"broforce_storefront\"],\n    li[data-entity-key=\"bridgeconstructorplayground_storefront\"],\n    li[data-entity-key=\"bridgeconstructor_storefront\"],\n    li[data-entity-key=\"braveland_storefront\"],\n    li[data-entity-key=\"botanicula_storefront\"],\n    li[data-entity-key=\"bookofunwrittentales_collection_storefront\"],\n    li[data-entity-key=\"blocksthatmatter_storefront\"],\n    li[data-entity-key=\"bleed_storefront\"],\n    li[data-entity-key=\"bittriprunner2_storefront\"],\n    li[data-entity-key=\"bittripbeat_storefront\"],\n    li[data-entity-key=\"bindingofisaac_rebirth_storefront\"],\n    li[data-entity-key=\"bindingofisaac_afterbirth_storefront\"],\n    li[data-entity-key=\"big_pharma_marketing_malpractice_storefront\"],\n    li[data-entity-key=\"besiege_storefront\"],\n    li[data-entity-key=\"beathazardultra_storefront\"],\n    li[data-entity-key=\"battle_worlds_kronos_storefront\"],\n    li[data-entity-key=\"barony_storefront\"],\n    li[data-entity-key=\"bastion_storefront\"],\n    li[data-entity-key=\"badhotel_storefront\"],\n    li[data-entity-key=\"backtobed_storefront\"],\n    li[data-entity-key=\"awizardslizard_storefront\"],\n    li[data-entity-key=\"ascendant_storefront\"],\n    li[data-entity-key=\"aquaticadventureofthelasthuman_storefront\"],\n    li[data-entity-key=\"apotheon_storefront\"],\n    li[data-entity-key=\"anodyne_storefront\"],\n    li[data-entity-key=\"amongthesleep_storefront\"],\n    li[data-entity-key=\"amnesia_thedarkdescent_storefront\"],\n    li[data-entity-key=\"aaaaaa_fortheawesome_storefront\"],\n    li[data-entity-key=\"10000000_storefront\"],\n    li[data-entity-key=\"gunnheim_storefront\"],\n    li[data-entity-key=\"pyxelknight_storefront\"],\n    li[data-entity-key=\"lostworldzero_storefront\"],\n    li[data-entity-key=\"140_storefront\"],\n    li[data-entity-key=\"ballistick_storefront\"],\n    li[data-entity-key=\"lorentheamazonprincess_deluxe_storefront\"],\n    li[data-entity-key=\"roommates_deluxeedition_storefront\"],\n    li[data-entity-key=\"va11hallacyberpunkbartenderactn_storefront\"],\n    li[data-entity-key=\"shadowsofadam_storefront\"],\n    li[data-entity-key=\"starcrawlers_storefront\"],\n    li[data-entity-key=\"wheelsofaurelia_storefront\"],\n    li[data-entity-key=\"roguelegacy_storefront\"],\n    li[data-entity-key=\"sproggiwood_storefront\"],\n    li[data-entity-key=\"megabytepunch_storefront\"],\n    li[data-entity-key=\"brokenage_storefront\"],\n    li[data-entity-key=\"stranded_storefront\"],\n    li[data-entity-key=\"bittriprunner_storefront\"],\n    li[data-entity-key=\"sunset_storefront\"],\n    li[data-entity-key=\"lumini_deluxe_storefront\"],\n    li[data-entity-key=\"ladykillerinabind_storefront\"],\n    li[data-entity-key=\"lumini_storefront\"],\n    li[data-entity-key=\"probablyarchery_storefront\"],\n    li[data-entity-key=\"doorways_theunderworld_storefront\"],\n    li[data-entity-key=\"screencheat_storefront\"],\n    li[data-entity-key=\"screencheat_4pack_storefront\"],\n    li[data-entity-key=\"screencheat_deluxeedition_storefront\"],\n    li[data-entity-key=\"doorways_holymountainsofflesh_storefront\"],\n    li[data-entity-key=\"lumo_deluxe_storefront\"],\n    li[data-entity-key=\"lumo_storefront\"],\n    li[data-entity-key=\"tharsis_storefront\"],\n    li[data-entity-key=\"braid_storefront\"],\n    li[data-entity-key=\"amnesia_amachineforpigs_storefront\"],\n    li[data-entity-key=\"doorways_storefront\"],\n    li[data-entity-key=\"owlboy_storefront\"],\n    li[data-entity-key=\"owlboy_collectorsedition_storefront\"],\n    li[data-entity-key=\"spacehulk_ultimatepack_storefront\"],\n    li[data-entity-key=\"spacehulk_storefront\"],\n    li[data-entity-key=\"spacehulk_ascension_storefront\"],\n    li[data-entity-key=\"warhammerquest_storefront\"],\n    li[data-entity-key=\"warhammerquest_deluxe_storefront\"],\n    li[data-entity-key=\"warhammer_40000tm_dawn_of_war_iii_storefront\"],\n    li[data-entity-key=\"totalwar_warhammer_storefront\"],\n    li[data-entity-key=\"youtuberslife_storefront\"],\n    li[data-entity-key=\"balancity_storefront\"],\n    li[data-entity-key=\"spacebase_df9_storefront\"],\n    li[data-entity-key=\"thewitcher2_storefront\"],\n    li[data-entity-key=\"theforgottenspell_storefront\"],\n    li[data-entity-key=\"spacehulk_spacewolvesdlc_storefront\"],\n    li[data-entity-key=\"ga_infiniteuniverse_storefront\"],\n    li[data-entity-key=\"ga2_siegeofthenecromancer_storefront\"],\n    li[data-entity-key=\"ga3_slavesofrema_storefront\"],\n    li[data-entity-key=\"ga4_revenantrising_storefront\"],\n    li[data-entity-key=\"ga6_thewizardfromtarnathtor_storefront\"],\n    li[data-entity-key=\"ga7_templeofthespidergod_storefront\"],\n    li[data-entity-key=\"ga9_sultansofrema_storefront\"],\n    li[data-entity-key=\"aurorarl_storefront\"],\n    li[data-entity-key=\"airconflictsvietnam_storefront\"],\n    li[data-entity-key=\"airconflicts_collection_storefront\"],\n    li[data-entity-key=\"wormsreloaded_gotyupgradepack_storefront\"],\n    li[data-entity-key=\"thebookofunwrittentales_storefront\"],\n    li[data-entity-key=\"killingfloor_storefront\"],\n    li[data-entity-key=\"gunsoficarus_alliance_storefront\"],\n    li[data-entity-key=\"bridgeconstructormedieval_storefront\"],\n    li[data-entity-key=\"aiwarcollection_2014_storefront\"],\n    li[data-entity-key=\"letsexplorethejungle_storefront\"],\n    li[data-entity-key=\"letsexplorethefarm_storefront\"],\n    li[data-entity-key=\"letsexploretheairport_storefront\"],\n    li[data-entity-key=\"starwhal_justthetip_storefront\"],\n    li[data-entity-key=\"lethalleague_storefront\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"\"],\n    li[data-entity-key=\"torchlight2_storefront\"]\n    { \n        display : none !important; \n    }",
+				"code": "/* Listed games will be hidden in Humble's store. Includes:\n   Games I've bought, at Humble or elsewhere\n   Ones that came in a bundle\n   Games I have no interest in buying  */\n.hero-banner {\n    display: none ! important;\n}\nli[data-entity-key=\"torchlight_storefront\"],\nli[data-entity-key=\"torchlight2_storefront\"],\nli[data-entity-key=\"maxsbigbust_acaptainnekoraitale_storefront\"],\nli[data-entity-key=\"huniepop_storefront\"],\nli[data-entity-key=\"tis_100_storefront\"],\nli[data-entity-key=\"prisonarchitect_storefront\"],\nli[data-entity-key=\"papersplease_storefront\"],\nli[data-entity-key=\"hotlinemiami_wildlife_complete_storefront\"],\nli[data-entity-key=\"bindingofisaac_storefront\"],\nli[data-entity-key=\"hotlinemiami2_special_storefront\"],\nli[data-entity-key=\"elseheart_break_storefront\"],\nli[data-entity-key=\"minimetro_storefront\"],\nli[data-entity-key=\"outlast_storefront\"],\nli[data-entity-key=\"dayofthetentacle_storefront\"],\nli[data-entity-key=\"reassembly_storefront\"],\nli[data-entity-key=\"cavestoryplus_storefront\"],\nli[data-entity-key=\"crimsonland_storefront\"],\nli[data-entity-key=\"huniecam_studio_storefront\"],\nli[data-entity-key=\"ponyisland_storefront\"],\nli[data-entity-key=\"ironclad_storefront\"],\nli[data-entity-key=\"xenonauts_storefront\"],\nli[data-entity-key=\"zenbound2_storefront\"],\nli[data-entity-key=\"wormsreloaded_worms2armageddon_storefront\"],\nli[data-entity-key=\"wizorb_storefront\"],\nli[data-entity-key=\"windosill_storefront\"],\nli[data-entity-key=\"weirdworlds_rtis_storefront\"],\nli[data-entity-key=\"vvvvvv_storefront\"],\nli[data-entity-key=\"wakingmars_storefront\"],\nli[data-entity-key=\"vessel_storefront\"],\nli[data-entity-key=\"unsummoning_thespectralhorde_storefront\"],\nli[data-entity-key=\"unrest_storefront\"],\nli[data-entity-key=\"unmechanical_storefront\"],\nli[data-entity-key=\"unityofcommand_redturn_storefront\"],\nli[data-entity-key=\"unityofcommand_blackturn_storefront\"],\nli[data-entity-key=\"unepic_storefront\"],\nli[data-entity-key=\"type_rider_storefront\"],\nli[data-entity-key=\"trine_storefront\"],\nli[data-entity-key=\"trine3_storefront\"],\nli[data-entity-key=\"trine2complete_storefront\"],\nli[data-entity-key=\"tri_storefront\"],\nli[data-entity-key=\"towerofguns_storefront\"],\nli[data-entity-key=\"towerfall_darkworld_storefront\"],\nli[data-entity-key=\"tothemoon_storefront\"],\nli[data-entity-key=\"tomboftyrants_storefront\"],\nli[data-entity-key=\"tokitori2_storefront\"],\nli[data-entity-key=\"toby_thesecretmine_storefront\"],\nli[data-entity-key=\"tinykeep_storefront\"],\nli[data-entity-key=\"tinyandbig_storefront\"],\nli[data-entity-key=\"tidalis_storefront\"],\nli[data-entity-key=\"theswapper_storefront\"],\nli[data-entity-key=\"therealtexas_storefront\"],\nli[data-entity-key=\"thelasttinker_storefront\"],\nli[data-entity-key=\"thelastfederation_storefront\"],\nli[data-entity-key=\"thelastfederation_betrayedhope_storefront\"],\nli[data-entity-key=\"theinnerworld_storefront\"],\nli[data-entity-key=\"theforestofdoom_storefront\"],\nli[data-entity-key=\"thebridge_storefront\"],\nli[data-entity-key=\"tetrobotandco_storefront\"],\nli[data-entity-key=\"teslagrad_storefront\"],\nli[data-entity-key=\"talesofmajeyal_storefront\"],\nli[data-entity-key=\"talesofmajeyal_ashesofurhrok_storefront\"],\nli[data-entity-key=\"swordandsworcery_storefront\"],\nli[data-entity-key=\"survivorsquad_storefront\"],\nli[data-entity-key=\"surgeonsimulator2013_storefront\"],\nli[data-entity-key=\"supertimeforce_ultra_storefront\"],\nli[data-entity-key=\"supermeatboy_storefront\"],\nli[data-entity-key=\"superhexagon_storefront\"],\nli[data-entity-key=\"ftlfasterthanlight_storefront\"],\nli[data-entity-key=\"starbound_storefront\"],\nli[data-entity-key=\"loversinadangerousspacetime_storefront\"],\nli[data-entity-key=\"bigpharma_storefront\"],\nli[data-entity-key=\"antichamber_storefront\"],\nli[data-entity-key=\"limbo_storefront\"],\nli[data-entity-key=\"splice_storefront\"],\nli[data-entity-key=\"tw_warhammer_realmofthewoodelves_storefront\"],\nli[data-entity-key=\"total_wartm_warhammer__chaos_warriors_race_pack_storefront\"],\nli[data-entity-key=\"twwh_thegrimandthegrave_storefront\"],\nli[data-entity-key=\"tw_warhammer_thekingandthewarlod_storefront\"],\nli[data-entity-key=\"victorvran_storefront\"],\nli[data-entity-key=\"factorio_storefront\"],\nli[data-entity-key=\"tw_warhammer_callofthebeastmen_storefront\"],\nli[data-entity-key=\"tw_warhammer_bloodforthebloodgod_storefront\"],\nli[data-entity-key=\"stardewvalley_storefront\"],\nli[data-entity-key=\"terraria_storefront\"],\nli[data-entity-key=\"shatteredhaven_storefront\"],\nli[data-entity-key=\"tokitori_storefront\"],\nli[data-entity-key=\"stardustvanguards_storefront\"],\nli[data-entity-key=\"stacking_storefront\"],\nli[data-entity-key=\"solarflux_storefront\"],\nli[data-entity-key=\"shadowgrounds_survivor_storefront\"],\nli[data-entity-key=\"shadowgrounds_storefront\"],\nli[data-entity-key=\"the39steps_storefront\"],\nli[data-entity-key=\"trainfever_storefront\"],\nli[data-entity-key=\"psychonauts_storefront\"],\nli[data-entity-key=\"massivechalice_storefront\"],\nli[data-entity-key=\"journeyofaroach_storefront\"],\nli[data-entity-key=\"hacknslash_withsoundtrack_storefront\"],\nli[data-entity-key=\"goodbyedeponia_storefront\"],\nli[data-entity-key=\"brutallegend_storefront\"],\nli[data-entity-key=\"costumequest_storefront\"],\nli[data-entity-key=\"deponia_storefront\"],\nli[data-entity-key=\"edge_storefront\"],\nli[data-entity-key=\"breachandclear_storefront\"],\nli[data-entity-key=\"battlestation_harbinger_storefront\"],\nli[data-entity-key=\"curseofthecrescentisledx_storefront\"],\nli[data-entity-key=\"unityofcommand_storefront\"],\nli[data-entity-key=\"uplink_storefront\"],\nli[data-entity-key=\"pixeljunkshooter_storefront\"],\nli[data-entity-key=\"pixeljunkmonstersultimate_storefront\"],\nli[data-entity-key=\"doorkickers_storefront\"],\nli[data-entity-key=\"deponia_completejourney_storefront\"],\nli[data-entity-key=\"bionicdues_storefront\"],\nli[data-entity-key=\"avalleywithoutwind_1and2_storefront\"],\nli[data-entity-key=\"shelter2_storefront\"],\nli[data-entity-key=\"wearethedwarves_storefront\"],\nli[data-entity-key=\"chaosondeponia_storefront\"],\nli[data-entity-key=\"theybleedpixels_storefront\"],\nli[data-entity-key=\"thelastfederation_collection_storefront\"],\nli[data-entity-key=\"thenovelist_storefront\"],\nli[data-entity-key=\"surgeonsimulator_ae_storefront\"],\nli[data-entity-key=\"surgeonsimulator_ae_content_storefront\"],\nli[data-entity-key=\"skywardcollapse_complete_storefront\"],\nli[data-entity-key=\"siryouarebeinghunted_storefront\"],\nli[data-entity-key=\"shadowrunreturns_storefront\"],\nli[data-entity-key=\"shadowruncompletecollection_storefront\"],\nli[data-entity-key=\"solar2_storefront\"],\nli[data-entity-key=\"shadowrun_dragonfall_dc_storefront\"],\nli[data-entity-key=\"shadowgate_storefront\"],\nli[data-entity-key=\"shadowgate_se_storefront\"],\nli[data-entity-key=\"sentrisstandard_storefront\"],\nli[data-entity-key=\"shadowrun_triplepack_storefront\"],\nli[data-entity-key=\"sentris_storefront\"],\nli[data-entity-key=\"penumbra_collection_storefront\"],\nli[data-entity-key=\"paranauticalactivity_storefront\"],\nli[data-entity-key=\"never_alone_arctic_collection_storefront\"],\nli[data-entity-key=\"mirrormoonep_storefront\"],\nli[data-entity-key=\"grimfandango_storefront\"],\nli[data-entity-key=\"fotonica_storefront\"],\nli[data-entity-key=\"cubeandstar_anarbitrarylove_storefront\"],\nli[data-entity-key=\"dex_storefront\"],\nli[data-entity-key=\"fire_storefront\"],\nli[data-entity-key=\"darkecho_storefront\"],\nli[data-entity-key=\"beatbuddy_storefront\"],\nli[data-entity-key=\"badland_goty_storefront\"],\nli[data-entity-key=\"anomalykorea_storefront\"],\nli[data-entity-key=\"anomalydefenders_storefront\"],\nli[data-entity-key=\"anomaly2_storefront\"],\nli[data-entity-key=\"anomaly_warzoneearth_storefront\"],\nli[data-entity-key=\"ziggurat_storefront\"],\nli[data-entity-key=\"wormsreloaded_goty_storefront\"],\nli[data-entity-key=\"wizardry_complete_storefront\"],\nli[data-entity-key=\"wasteland_storefront\"],\nli[data-entity-key=\"thebardstale_storefront\"],\nli[data-entity-key=\"texmurphy_complete_storefront\"],\nli[data-entity-key=\"survivorsquad_gauntlets_storefront\"],\nli[data-entity-key=\"surgeonsimulatorae_iambread_pack_storefront\"],\nli[data-entity-key=\"steamworlddig_storefront\"],\nli[data-entity-key=\"starwardrogue_storefront\"],\nli[data-entity-key=\"spiritsofxanadu_storefront\"],\nli[data-entity-key=\"sokobond_storefront\"],\nli[data-entity-key=\"strikesuitzero_storefront\"],\nli[data-entity-key=\"silentservice2_storefront\"],\nli[data-entity-key=\"silentservice_storefront\"],\nli[data-entity-key=\"sid_meiers_colonization_classic_storefront\"],\nli[data-entity-key=\"shadowrun_hongkong_storefront\"],\nli[data-entity-key=\"racethesun_storefront\"],\nli[data-entity-key=\"planetaryannihilation_titans_storefront\"],\nli[data-entity-key=\"poncho_storefront\"],\nli[data-entity-key=\"shadwen_storefront\"],\nli[data-entity-key=\"shadowrun_hongkong_deluxe_storefront\"],\nli[data-entity-key=\"outthere_storefront\"],\nli[data-entity-key=\"outthere_omegaedition_storefront\"],\nli[data-entity-key=\"outlast_whistleblower_storefront\"],\nli[data-entity-key=\"oscura_lostlight_storefront\"],\nli[data-entity-key=\"neverendingnightmares_storefront\"],\nli[data-entity-key=\"neo_scavenger_storefront\"],\nli[data-entity-key=\"knightsofpenandpaper_storefront\"],\nli[data-entity-key=\"knightsofpenandpaper_hauntedfall_storefront\"],\nli[data-entity-key=\"ironcladtactics_storefront\"],\nli[data-entity-key=\"heroesofloot_storefront\"],\nli[data-entity-key=\"hammerwatch_storefront\"],\nli[data-entity-key=\"gunsoficarusonline_storefront\"],\nli[data-entity-key=\"gabrielknight_sinsofthefathers_storefront\"],\nli[data-entity-key=\"fullbore_storefront\"],\nli[data-entity-key=\"farsky_storefront\"],\nli[data-entity-key=\"forced_storefront\"],\nli[data-entity-key=\"eldritch_storefront\"],\nli[data-entity-key=\"therealtexas_dustyskiesedition_storefront\"],\nli[data-entity-key=\"undertale_storefront\"],\nli[data-entity-key=\"darkestdungeon_storefront\"],\nli[data-entity-key=\"dontstarve_storefront\"],\nli[data-entity-key=\"moveordie_storefront\"],\nli[data-entity-key=\"ultimate_chicken_horse_storefront\"],\nli[data-entity-key=\"trainvalley_storefront\"],\nli[data-entity-key=\"thewarlockoffiretopmountain_storefront\"],\nli[data-entity-key=\"thespatials_storefront\"],\nli[data-entity-key=\"therealtexas_cellpop_storefront\"],\nli[data-entity-key=\"talesofmajeyal_collection_storefront\"],\nli[data-entity-key=\"talesofmajeyal_embersofrage_storefront\"],\nli[data-entity-key=\"systemshock2_storefront\"],\nli[data-entity-key=\"systemshock_pack_storefront\"],\nli[data-entity-key=\"teleglitch_diemoreedition_storefront\"],\nli[data-entity-key=\"syderarcade_storefront\"],\nli[data-entity-key=\"sunlesssea_zubmariner_storefront\"],\nli[data-entity-key=\"sunlesssea_storefront\"],\nli[data-entity-key=\"startactics_storefront\"],\nli[data-entity-key=\"starshiptraveller_storefront\"],\nli[data-entity-key=\"spychameleon_rgbagent_storefront\"],\nli[data-entity-key=\"spirits_storefront\"],\nli[data-entity-key=\"spaz_storefront\"],\nli[data-entity-key=\"snapshot_storefront\"],\nli[data-entity-key=\"skyrogue_storefront\"],\nli[data-entity-key=\"shelter_theheartedition_storefront\"],\nli[data-entity-key=\"shelter_complete_storefront\"],\nli[data-entity-key=\"shelter2_mountains_storefront\"],\nli[data-entity-key=\"shadowwarrior_storefront\"],\nli[data-entity-key=\"shadowwarrior_classicredux_storefront\"],\nli[data-entity-key=\"serpentinthestaglands_storefront\"],\nli[data-entity-key=\"secretsofraetikon_storefront\"],\nli[data-entity-key=\"secretofthemagiccrystals_storefront\"],\nli[data-entity-key=\"secretofthemagiccrystals_therace_storefront\"],\nli[data-entity-key=\"savant_ascent_storefront\"],\nli[data-entity-key=\"saturdaymorningrpg_storefront\"],\nli[data-entity-key=\"samorost2_storefront\"],\nli[data-entity-key=\"rymdkapsel_storefront\"],\nli[data-entity-key=\"ryannorths_tobeornottobe_storefront\"],\nli[data-entity-key=\"rochard_storefront\"],\nli[data-entity-key=\"riskofrain_storefront\"],\nli[data-entity-key=\"reus_storefront\"],\nli[data-entity-key=\"retrocityrampage_storefront\"],\nli[data-entity-key=\"renownedexplorers_moretoexplore_storefront\"],\nli[data-entity-key=\"renownedexplorers_intsociety_storefront\"],\nli[data-entity-key=\"renownedexplorers_theemperorschallenge_storefront\"],\nli[data-entity-key=\"renownedexplorerscompletebundle_storefront\"],\nli[data-entity-key=\"reigns_storefront\"],\nli[data-entity-key=\"reignmaker_storefront\"],\nli[data-entity-key=\"regencysolitaire_storefront\"],\nli[data-entity-key=\"racethesun_sunrise_storefront\"],\nli[data-entity-key=\"questofdungeons_storefront\"],\nli[data-entity-key=\"questforinfamy_storefront\"],\nli[data-entity-key=\"qube_directorscut_storefront\"],\nli[data-entity-key=\"qbqbqb_storefront\"],\nli[data-entity-key=\"puppygamesultrabundle_storefront\"],\nli[data-entity-key=\"pulstar_storefront\"],\nli[data-entity-key=\"puddle_storefront\"],\nli[data-entity-key=\"proteus_storefront\"],\nli[data-entity-key=\"pixelpiracy_storefront\"],\nli[data-entity-key=\"pixelheroes_byteandmagic_storefront\"],\nli[data-entity-key=\"pillarsofeternity_whitemarch_p2_storefront\"],\nli[data-entity-key=\"pillarsofeternity_whitemarch_p1_storefront\"],\nli[data-entity-key=\"pillarsofeternity_whitemarch_ep_storefront\"],\nli[data-entity-key=\"pillarsofeternity_royal_storefront\"],\nli[data-entity-key=\"pillarsofeternity_hero_storefront\"],\nli[data-entity-key=\"pillarsofeternity_champion_storefront\"],\nli[data-entity-key=\"parcel_storefront\"],\nli[data-entity-key=\"parallax_storefront\"],\nli[data-entity-key=\"papoandyo_storefront\"],\nli[data-entity-key=\"papersorcerer_storefront\"],\nli[data-entity-key=\"pajamasamssockworks_storefront\"],\nli[data-entity-key=\"pajamasamslostandfound_storefront\"],\nli[data-entity-key=\"pajamasam_nnthwido_storefront\"],\nli[data-entity-key=\"pajamasam_gamestoplayonanyday_storefront\"],\nli[data-entity-key=\"pajamasam_complete_storefront\"],\nli[data-entity-key=\"pajamasam3_youarewhatyoueat_storefront\"],\nli[data-entity-key=\"pajamasam2_thunderandlightning_storefront\"],\nli[data-entity-key=\"otttd_storefront\"],\nli[data-entity-key=\"osmos_storefront\"],\nli[data-entity-key=\"orderofthethorne_kingschallenge_storefront\"],\nli[data-entity-key=\"onrustytrails_storefront\"],\nli[data-entity-key=\"oniken_storefront\"],\nli[data-entity-key=\"okhlos_storefront\"],\nli[data-entity-key=\"olliolli_storefront\"],\nli[data-entity-key=\"offspringfling_storefront\"],\nli[data-entity-key=\"oddworld_newntasty_storefront\"],\nli[data-entity-key=\"octodad_dadliestcatch_storefront\"],\nli[data-entity-key=\"nuclearthrone_storefront\"],\nli[data-entity-key=\"nottherobots_storefront\"],\nli[data-entity-key=\"nightsky_storefront\"],\nli[data-entity-key=\"neondrive_storefront\"],\nli[data-entity-key=\"mushroom11_storefront\"],\nli[data-entity-key=\"mushroom11_soundtrackbundle_storefront\"],\nli[data-entity-key=\"mousecraft_storefront\"],\nli[data-entity-key=\"mountandblade_warband_viking_storefront\"],\nli[data-entity-key=\"mountandblade_napoleonicwars_storefront\"],\nli[data-entity-key=\"monstrum_storefront\"],\nli[data-entity-key=\"monaco_storefront\"],\nli[data-entity-key=\"mcpixel_storefront\"],\nli[data-entity-key=\"mcdroid_storefront\"],\nli[data-entity-key=\"masteroforion_storefront\"],\nli[data-entity-key=\"masteroforion1_2_storefront\"],\nli[data-entity-key=\"machinarium_storefront\"],\nli[data-entity-key=\"lyne_storefront\"],\nli[data-entity-key=\"luftrausers_storefront\"],\nli[data-entity-key=\"lordsofxulima_storefront\"],\nli[data-entity-key=\"littleinferno_storefront\"],\nli[data-entity-key=\"lifelessplanet_storefront\"],\nli[data-entity-key=\"legendofgrimrock_storefront\"],\nli[data-entity-key=\"legendofdungeon_storefront\"],\nli[data-entity-key=\"lastfederation_losttechnologies_storefront\"],\nli[data-entity-key=\"knightsofpenandpaper_deluxier_storefront\"],\nli[data-entity-key=\"kingdomrush_storefront\"],\nli[data-entity-key=\"kingarthursgold_storefront\"],\nli[data-entity-key=\"keeperrl_storefront\"],\nli[data-entity-key=\"jaggedalliance_flashback_storefront\"],\nli[data-entity-key=\"jaggedalliance_backinaction_storefront\"],\nli[data-entity-key=\"jaggedalliance1_goldedition_storefront\"],\nli[data-entity-key=\"jacklumber_storefront\"],\nli[data-entity-key=\"ittledew_storefront\"],\nli[data-entity-key=\"jotun_storefront\"],\nli[data-entity-key=\"interstellaria_storefront\"],\nli[data-entity-key=\"insanelytwistedshadowplanet_storefront\"],\nli[data-entity-key*=\"influent_\"],\nli[data-entity-key=\"infinifactory_storefront\"],\nli[data-entity-key=\"incredipede_storefront\"],\nli[data-entity-key=\"icantescape_darkness_storefront\"],\nli[data-entity-key=\"humanresourcemachine_storefront\"],\nli[data-entity-key=\"hotlinemiami_storefront\"],\nli[data-entity-key=\"hook_storefront\"],\nli[data-entity-key=\"hoard_storefront\"],\nli[data-entity-key=\"hexcellscompletepack_storefront\"],\nli[data-entity-key=\"heavybullets_storefront\"],\nli[data-entity-key=\"hearthlands_storefront\"],\nli[data-entity-key=\"hardwest_storefront\"],\nli[data-entity-key=\"handoffate_storefront\"],\nli[data-entity-key=\"hardwest_collectorsedition_storefront\"],\nli[data-entity-key=\"halfway_storefront\"],\nli[data-entity-key=\"hackslashloot_storefront\"],\nli[data-entity-key=\"gunpoint_storefront\"],\nli[data-entity-key=\"gonehome_storefront\"],\nli[data-entity-key=\"godswillbewatching_storefront\"],\nli[data-entity-key=\"godswillbewatching_se_storefront\"],\nli[data-entity-key=\"goatsimulator_storefront\"],\nli[data-entity-key=\"gnomoria_storefront\"],\nli[data-entity-key=\"ga8_curseoftheassassin_storefront\"],\nli[data-entity-key=\"ga5_catacombsoftheundercity_storefront\"],\nli[data-entity-key=\"ga1_anassassininorlandes_storefront\"],\nli[data-entity-key=\"galakz_storefront\"],\nli[data-entity-key=\"frozensynapse_storefront\"],\nli[data-entity-key*=\"freddifish\"],\nli[data-entity-key=\"foxandflock_storefront\"],\nli[data-entity-key=\"findingteddy_storefront\"],\nli[data-entity-key=\"fez_storefront\"],\nli[data-entity-key=\"feist_storefront\"],\nli[data-entity-key=\"feist_deluxe_storefront\"],\nli[data-entity-key=\"f117a_nighthawkstealthfighter_20_storefront\"],\nli[data-entity-key=\"expeditions_conquistador_storefront\"],\nli[data-entity-key=\"expand_withsoundtrack_storefront\"],\nli[data-entity-key=\"expand_storefront\"],\nli[data-entity-key=\"eufloriahd_storefront\"],\nli[data-entity-key=\"eufloriahd_deluxe_storefront\"],\nli[data-entity-key=\"englishcountrytune_storefront\"],\nli[data-entity-key=\"electronicsuperjoy_storefront\"],\nli[data-entity-key=\"electronicsuperjoy_groovecity_storefront\"],\nli[data-entity-key=\"dustforce_storefront\"],\nli[data-entity-key=\"dust_anelysiantail_storefront\"],\nli[data-entity-key=\"dungeondefenders_eternity_storefront\"],\nli[data-entity-key=\"dungeondefenders_storefront\"],\nli[data-entity-key=\"dungeonhearts_storefront\"],\nli[data-entity-key=\"droxoperative_storefront\"],\nli[data-entity-key=\"droxoperative_invasionoftheancients_storefront\"],\nli[data-entity-key=\"drawastickmanepic_storefront\"],\nli[data-entity-key=\"doodlegod_storefront\"],\nli[data-entity-key=\"dontstarve_reignofgiants_storefront\"],\nli[data-entity-key=\"divinity_originalsin_enhanced_storefront\"],\nli[data-entity-key=\"dinscurse_storefront\"],\nli[data-entity-key=\"dinscurse_demonwar_storefront\"],\nli[data-entity-key*=\"deusex_mankinddivided\"],\nli[data-entity-key=\"detectivegrimoire_storefront\"],\nli[data-entity-key=\"desktopdungeons_storefront\"],\nli[data-entity-key*=\"democracy3\"],\nli[data-entity-key=\"defendersquest_storefront\"],\nli[data-entity-key=\"darkscavenger_storefront\"],\nli[data-entity-key=\"darklands_storefront\"],\nli[data-entity-key=\"crystalcatacombs_storefront\"],\nli[data-entity-key=\"crowntakers_storefront\"],\nli[data-entity-key=\"crea_storefront\"],\nli[data-entity-key=\"cosmochoria_storefront\"],\nli[data-entity-key=\"cornerstone_thesongoftyrim_storefront\"],\nli[data-entity-key=\"convoy_storefront\"],\nli[data-entity-key=\"continue_9876543210_storefront\"],\nli[data-entity-key=\"closure_storefront\"],\nli[data-entity-key=\"capsized_storefront\"],\nli[data-entity-key=\"cardcitynights_storefront\"],\nli[data-entity-key=\"broforce_storefront\"],\nli[data-entity-key=\"bridgeconstructorplayground_storefront\"],\nli[data-entity-key=\"bridgeconstructor_storefront\"],\nli[data-entity-key=\"braveland_storefront\"],\nli[data-entity-key=\"botanicula_storefront\"],\nli[data-entity-key=\"bookofunwrittentales_collection_storefront\"],\nli[data-entity-key=\"blocksthatmatter_storefront\"],\nli[data-entity-key=\"bleed_storefront\"],\nli[data-entity-key=\"bittriprunner2_storefront\"],\nli[data-entity-key=\"bittripbeat_storefront\"],\nli[data-entity-key=\"bindingofisaac_rebirth_storefront\"],\nli[data-entity-key=\"bindingofisaac_afterbirth_storefront\"],\nli[data-entity-key=\"big_pharma_marketing_malpractice_storefront\"],\nli[data-entity-key=\"besiege_storefront\"],\nli[data-entity-key=\"beathazardultra_storefront\"],\nli[data-entity-key=\"battle_worlds_kronos_storefront\"],\nli[data-entity-key=\"barony_storefront\"],\nli[data-entity-key=\"bastion_storefront\"],\nli[data-entity-key=\"badhotel_storefront\"],\nli[data-entity-key=\"backtobed_storefront\"],\nli[data-entity-key=\"awizardslizard_storefront\"],\nli[data-entity-key=\"ascendant_storefront\"],\nli[data-entity-key=\"aquaticadventureofthelasthuman_storefront\"],\nli[data-entity-key=\"apotheon_storefront\"],\nli[data-entity-key=\"anodyne_storefront\"],\nli[data-entity-key=\"amongthesleep_storefront\"],\nli[data-entity-key=\"amnesia_thedarkdescent_storefront\"],\nli[data-entity-key=\"aaaaaa_fortheawesome_storefront\"],\nli[data-entity-key=\"10000000_storefront\"],\nli[data-entity-key=\"gunnheim_storefront\"],\nli[data-entity-key=\"pyxelknight_storefront\"],\nli[data-entity-key=\"lostworldzero_storefront\"],\nli[data-entity-key=\"140_storefront\"],\nli[data-entity-key=\"ballistick_storefront\"],\nli[data-entity-key=\"lorentheamazonprincess_deluxe_storefront\"],\nli[data-entity-key=\"roommates_deluxeedition_storefront\"],\nli[data-entity-key=\"va11hallacyberpunkbartenderactn_storefront\"],\nli[data-entity-key=\"shadowsofadam_storefront\"],\nli[data-entity-key=\"starcrawlers_storefront\"],\nli[data-entity-key=\"wheelsofaurelia_storefront\"],\nli[data-entity-key=\"roguelegacy_storefront\"],\nli[data-entity-key=\"sproggiwood_storefront\"],\nli[data-entity-key=\"megabytepunch_storefront\"],\nli[data-entity-key=\"brokenage_storefront\"],\nli[data-entity-key=\"stranded_storefront\"],\nli[data-entity-key=\"bittriprunner_storefront\"],\nli[data-entity-key=\"sunset_storefront\"],\nli[data-entity-key=\"lumini_deluxe_storefront\"],\nli[data-entity-key=\"ladykillerinabind_storefront\"],\nli[data-entity-key=\"lumini_storefront\"],\nli[data-entity-key=\"probablyarchery_storefront\"],\nli[data-entity-key=\"doorways_theunderworld_storefront\"],\nli[data-entity-key=\"screencheat_storefront\"],\nli[data-entity-key=\"screencheat_4pack_storefront\"],\nli[data-entity-key=\"screencheat_deluxeedition_storefront\"],\nli[data-entity-key=\"doorways_holymountainsofflesh_storefront\"],\nli[data-entity-key=\"lumo_deluxe_storefront\"],\nli[data-entity-key=\"lumo_storefront\"],\nli[data-entity-key=\"tharsis_storefront\"],\nli[data-entity-key=\"braid_storefront\"],\nli[data-entity-key=\"amnesia_amachineforpigs_storefront\"],\nli[data-entity-key=\"doorways_storefront\"],\nli[data-entity-key=\"owlboy_storefront\"],\nli[data-entity-key=\"owlboy_collectorsedition_storefront\"],\nli[data-entity-key=\"spacehulk_ultimatepack_storefront\"],\nli[data-entity-key=\"spacehulk_storefront\"],\nli[data-entity-key=\"spacehulk_ascension_storefront\"],\nli[data-entity-key=\"warhammerquest_storefront\"],\nli[data-entity-key=\"warhammerquest_deluxe_storefront\"],\nli[data-entity-key=\"warhammer_40000tm_dawn_of_war_iii_storefront\"],\nli[data-entity-key=\"totalwar_warhammer_storefront\"],\nli[data-entity-key=\"youtuberslife_storefront\"],\nli[data-entity-key=\"balancity_storefront\"],\nli[data-entity-key=\"spacebase_df9_storefront\"],\nli[data-entity-key=\"thewitcher2_storefront\"],\nli[data-entity-key=\"theforgottenspell_storefront\"],\nli[data-entity-key=\"spacehulk_spacewolvesdlc_storefront\"],\nli[data-entity-key=\"ga_infiniteuniverse_storefront\"],\nli[data-entity-key=\"ga2_siegeofthenecromancer_storefront\"],\nli[data-entity-key=\"ga3_slavesofrema_storefront\"],\nli[data-entity-key=\"ga4_revenantrising_storefront\"],\nli[data-entity-key=\"ga6_thewizardfromtarnathtor_storefront\"],\nli[data-entity-key=\"ga7_templeofthespidergod_storefront\"],\nli[data-entity-key=\"ga9_sultansofrema_storefront\"],\nli[data-entity-key=\"aurorarl_storefront\"],\nli[data-entity-key=\"airconflictsvietnam_storefront\"],\nli[data-entity-key=\"airconflicts_collection_storefront\"],\nli[data-entity-key=\"wormsreloaded_gotyupgradepack_storefront\"],\nli[data-entity-key=\"thebookofunwrittentales_storefront\"],\nli[data-entity-key=\"killingfloor_storefront\"],\nli[data-entity-key=\"gunsoficarus_alliance_storefront\"],\nli[data-entity-key=\"bridgeconstructormedieval_storefront\"],\nli[data-entity-key=\"aiwarcollection_2014_storefront\"],\nli[data-entity-key=\"letsexplorethejungle_storefront\"],\nli[data-entity-key=\"letsexplorethefarm_storefront\"],\nli[data-entity-key=\"letsexploretheairport_storefront\"],\nli[data-entity-key=\"starwhal_justthetip_storefront\"],\nli[data-entity-key=\"lethalleague_storefront\"],\nli[data-entity-key=\"murder_storefront\"],\nli[data-entity-key=\"redoutdigitalartbook_storefront\"],\nli[data-entity-key=\"\"],\nli[data-entity-key=\"\"],\nli[data-entity-key=\"\"],\nli[data-entity-key=\"\"],\nli[data-entity-key=\"\"],\nli[data-entity-key=\"\"],\nli[data-entity-key=\"\"],\nli[data-entity-key=\"\"],\nli[data-entity-key=\"\"],\nli[data-entity-key=\"\"],\nli[data-entity-key=\"\"],\nli[data-entity-key=\"\"],\nli[data-entity-key=\"\"],\nli[data-entity-key=\"\"],\nli[data-entity-key=\"\"],\nli[data-entity-key=\"torchlight2_storefront\"] {\n    display: none !important;\n}",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -1026,6 +1077,7 @@
 		"id": 52
 	},
 	{
+		"installDate": 1512347947333,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1046,6 +1098,7 @@
 		"id": 53
 	},
 	{
+		"installDate": 1512347947379,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1066,6 +1119,7 @@
 		"id": 54
 	},
 	{
+		"installDate": 1512347947385,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1086,6 +1140,7 @@
 		"id": 55
 	},
 	{
+		"installDate": 1512347947399,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1106,6 +1161,7 @@
 		"id": 56
 	},
 	{
+		"installDate": 1512347947415,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1126,6 +1182,7 @@
 		"id": 57
 	},
 	{
+		"installDate": 1512347947431,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1146,6 +1203,7 @@
 		"id": 58
 	},
 	{
+		"installDate": 1512347947437,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1166,6 +1224,7 @@
 		"id": 59
 	},
 	{
+		"installDate": 1512347947440,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1186,6 +1245,7 @@
 		"id": 60
 	},
 	{
+		"installDate": 1512347947444,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1206,6 +1266,7 @@
 		"id": 61
 	},
 	{
+		"installDate": 1512347947448,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1227,6 +1288,7 @@
 		"id": 62
 	},
 	{
+		"installDate": 1512347947460,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1247,6 +1309,7 @@
 		"id": 63
 	},
 	{
+		"installDate": 1512347947464,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1267,6 +1330,7 @@
 		"id": 64
 	},
 	{
+		"installDate": 1512347947477,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1287,6 +1351,7 @@
 		"id": 65
 	},
 	{
+		"installDate": 1512347947481,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1307,6 +1372,7 @@
 		"id": 66
 	},
 	{
+		"installDate": 1512347947492,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1327,6 +1393,7 @@
 		"id": 67
 	},
 	{
+		"installDate": 1512347947496,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1347,6 +1414,7 @@
 		"id": 68
 	},
 	{
+		"installDate": 1512347947508,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1367,6 +1435,7 @@
 		"id": 69
 	},
 	{
+		"installDate": 1512347947512,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1387,6 +1456,7 @@
 		"id": 70
 	},
 	{
+		"installDate": 1512347947516,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1407,6 +1477,7 @@
 		"id": 71
 	},
 	{
+		"installDate": 1512347947529,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1427,6 +1498,7 @@
 		"id": 72
 	},
 	{
+		"installDate": 1512347947539,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1447,6 +1519,7 @@
 		"id": 73
 	},
 	{
+		"installDate": 1512347947543,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1467,6 +1540,7 @@
 		"id": 74
 	},
 	{
+		"installDate": 1512347947548,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1487,6 +1561,7 @@
 		"id": 75
 	},
 	{
+		"installDate": 1512347947561,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1507,6 +1582,7 @@
 		"id": 76
 	},
 	{
+		"installDate": 1512347947565,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1527,6 +1603,7 @@
 		"id": 77
 	},
 	{
+		"installDate": 1512347947577,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1547,6 +1624,7 @@
 		"id": 78
 	},
 	{
+		"installDate": 1512347947582,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1567,6 +1645,7 @@
 		"id": 79
 	},
 	{
+		"installDate": 1512347947595,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1587,6 +1666,7 @@
 		"id": 80
 	},
 	{
+		"installDate": 1512347947599,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1607,6 +1687,7 @@
 		"id": 81
 	},
 	{
+		"installDate": 1512347947612,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1627,6 +1708,7 @@
 		"id": 82
 	},
 	{
+		"installDate": 1512347947623,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1647,6 +1729,7 @@
 		"id": 83
 	},
 	{
+		"installDate": 1512347947627,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1667,6 +1750,7 @@
 		"id": 84
 	},
 	{
+		"installDate": 1512347947631,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1688,6 +1772,7 @@
 		"id": 85
 	},
 	{
+		"installDate": 1512347947648,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1708,6 +1793,7 @@
 		"id": 86
 	},
 	{
+		"installDate": 1512347947679,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1728,6 +1814,7 @@
 		"id": 87
 	},
 	{
+		"installDate": 1512347947690,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1748,6 +1835,7 @@
 		"id": 88
 	},
 	{
+		"installDate": 1512347947695,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1768,6 +1856,7 @@
 		"id": 89
 	},
 	{
+		"installDate": 1512347947699,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1788,6 +1877,7 @@
 		"id": 90
 	},
 	{
+		"installDate": 1512347947710,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1808,6 +1898,7 @@
 		"id": 91
 	},
 	{
+		"installDate": 1512347947714,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1828,6 +1919,7 @@
 		"id": 92
 	},
 	{
+		"installDate": 1512347947724,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1848,6 +1940,7 @@
 		"id": 93
 	},
 	{
+		"installDate": 1512347947728,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1868,6 +1961,7 @@
 		"id": 94
 	},
 	{
+		"installDate": 1512347947732,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1888,6 +1982,7 @@
 		"id": 95
 	},
 	{
+		"installDate": 1512347947746,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1908,6 +2003,7 @@
 		"id": 96
 	},
 	{
+		"installDate": 1512347947751,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1928,6 +2024,7 @@
 		"id": 97
 	},
 	{
+		"installDate": 1512347947756,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1948,6 +2045,7 @@
 		"id": 98
 	},
 	{
+		"installDate": 1512347947761,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1968,6 +2066,7 @@
 		"id": 99
 	},
 	{
+		"installDate": 1512347947772,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -1988,6 +2087,7 @@
 		"id": 100
 	},
 	{
+		"installDate": 1512347947777,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2008,6 +2108,7 @@
 		"id": 101
 	},
 	{
+		"installDate": 1512347947781,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2028,6 +2129,7 @@
 		"id": 102
 	},
 	{
+		"installDate": 1512347947795,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2048,6 +2150,7 @@
 		"id": 103
 	},
 	{
+		"installDate": 1512347947962,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2068,6 +2171,7 @@
 		"id": 104
 	},
 	{
+		"installDate": 1512347947996,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2088,6 +2192,7 @@
 		"id": 105
 	},
 	{
+		"installDate": 1512347948014,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2108,6 +2213,7 @@
 		"id": 106
 	},
 	{
+		"installDate": 1512347948027,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2128,6 +2234,7 @@
 		"id": 107
 	},
 	{
+		"installDate": 1512347948032,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2151,6 +2258,7 @@
 		"id": 108
 	},
 	{
+		"installDate": 1512347948047,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2171,6 +2279,7 @@
 		"id": 109
 	},
 	{
+		"installDate": 1512347948058,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2191,6 +2300,7 @@
 		"id": 110
 	},
 	{
+		"installDate": 1512347948063,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2211,6 +2321,7 @@
 		"id": 111
 	},
 	{
+		"installDate": 1512347948077,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2231,6 +2342,7 @@
 		"id": 112
 	},
 	{
+		"installDate": 1512347948081,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2251,6 +2363,7 @@
 		"id": 113
 	},
 	{
+		"installDate": 1512347948093,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2271,6 +2384,7 @@
 		"id": 114
 	},
 	{
+		"installDate": 1512347948098,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2291,6 +2405,7 @@
 		"id": 115
 	},
 	{
+		"installDate": 1512347948109,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2311,6 +2426,7 @@
 		"id": 116
 	},
 	{
+		"installDate": 1512347948113,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2331,6 +2447,7 @@
 		"id": 117
 	},
 	{
+		"installDate": 1512347948123,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2351,6 +2468,7 @@
 		"id": 118
 	},
 	{
+		"installDate": 1512347948128,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2371,6 +2489,7 @@
 		"id": 119
 	},
 	{
+		"installDate": 1512347948132,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2391,6 +2510,7 @@
 		"id": 120
 	},
 	{
+		"installDate": 1512347948143,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2399,7 +2519,7 @@
 		"name": "Twitter",
 		"sections": [
 			{
-				"code": "    .dashboard, #side_lists, #trends, #following,\n    .empty-home, .get-started-steps,\n    .empty-timeline, #global-nav-search, #user-dropdown-toggle,\n    .actions, .profile-header-inner-overlay, .profile-card.profile-header,\n    .promptbird, .BannersContainer, .promoted-tweet,\n    .ProfileSidebar, .ProfileCanopy, .ProfileHeading,\n    .PromptbirdPrompt-streamItem,  .modal-overlay,\n    #introduce_retweet_banner, .promotion round,\n    .js-recommended-followers, #empty-timeline-recommendations,\n    .dashboard-left, .dashboard-right, .ProfileTweet-actionList,\n    .js-more-ProfileTweet-actions\n    { \n        display:none ! important; \n    }\n    \n    .ProfileTweet-actionCountList, .ProfileTweet-action--retweet,\n    .ProfileTweet-action--favorite\n    { \n        display: inline ! important;    \n        position: relative ! important; \n    }\n\n    .flex-module, .profile-card, .js-content-top, #page-container,\n    .ProfileTweet \n    { \n        width: 500px ! important; \n    }\n    \n    .pull-right { \n        float: left ! important; \n        clear: none ! important; \n    }",
+				"code": "    .dashboard, #side_lists, #trends, #following,\n    .empty-home, .get-started-steps,\n    .empty-timeline, #global-nav-search, #user-dropdown-toggle,\n    .actions, .profile-header-inner-overlay, .profile-card.profile-header,\n    .promptbird, .BannersContainer, .promoted-tweet,\n    .ProfileSidebar, .ProfileCanopy, .ProfileHeading,\n    .PromptbirdPrompt-streamItem,  .modal-overlay,\n    #introduce_retweet_banner, .promotion round,\n    .js-recommended-followers, #empty-timeline-recommendations,\n    .dashboard-left, .dashboard-right, .ProfileTweet-actionList,\n    .js-more-ProfileTweet-actions\n    { \n        display:none ! important; \n    }\n    \n    .ProfileTweet-actionCountList, .ProfileTweet-action--retweet,\n    .ProfileTweet-action--favorite\n    { \n        display: inline ! important;    \n        position: relative ! important; \n    }\n\n    .flex-module, .profile-card, .js-content-top, #page-container,\n    .ProfileTweet \n    { \n        width: 600px ! important; \n    }\n\n    .pull-right { \n        float: left ! important; \n        clear: none ! important; \n    }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -2411,6 +2531,7 @@
 		"id": 121
 	},
 	{
+		"installDate": 1512347948148,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2431,6 +2552,7 @@
 		"id": 122
 	},
 	{
+		"installDate": 1512347948158,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2451,6 +2573,7 @@
 		"id": 123
 	},
 	{
+		"installDate": 1512347948163,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2471,6 +2594,7 @@
 		"id": 124
 	},
 	{
+		"installDate": 1512347948176,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2491,6 +2615,7 @@
 		"id": 125
 	},
 	{
+		"installDate": 1512347948181,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2511,6 +2636,7 @@
 		"id": 126
 	},
 	{
+		"installDate": 1512347948192,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2531,6 +2657,7 @@
 		"id": 127
 	},
 	{
+		"installDate": 1512347948196,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2551,6 +2678,7 @@
 		"id": 128
 	},
 	{
+		"installDate": 1512347948209,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2571,6 +2699,7 @@
 		"id": 129
 	},
 	{
+		"installDate": 1512347948213,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2591,6 +2720,7 @@
 		"id": 130
 	},
 	{
+		"installDate": 1512347948225,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2611,6 +2741,7 @@
 		"id": 131
 	},
 	{
+		"installDate": 1512347948230,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2631,6 +2762,7 @@
 		"id": 132
 	},
 	{
+		"installDate": 1512347948241,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2651,6 +2783,7 @@
 		"id": 133
 	},
 	{
+		"installDate": 1512347948245,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2671,6 +2804,7 @@
 		"id": 134
 	},
 	{
+		"installDate": 1512347948258,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2691,6 +2825,7 @@
 		"id": 135
 	},
 	{
+		"installDate": 1512347948263,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2711,6 +2846,7 @@
 		"id": 136
 	},
 	{
+		"installDate": 1512347948278,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2731,6 +2867,7 @@
 		"id": 137
 	},
 	{
+		"installDate": 1512347948290,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2751,6 +2888,7 @@
 		"id": 138
 	},
 	{
+		"installDate": 1512347948294,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2771,6 +2909,7 @@
 		"id": 139
 	},
 	{
+		"installDate": 1512347948298,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2791,6 +2930,7 @@
 		"id": 140
 	},
 	{
+		"installDate": 1512347948310,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2811,6 +2951,7 @@
 		"id": 141
 	},
 	{
+		"installDate": 1512347948314,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2831,6 +2972,7 @@
 		"id": 142
 	},
 	{
+		"installDate": 1512347948327,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2851,6 +2993,7 @@
 		"id": 143
 	},
 	{
+		"installDate": 1512347948331,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2871,6 +3014,7 @@
 		"id": 144
 	},
 	{
+		"installDate": 1512347948342,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -2891,6 +3035,7 @@
 		"id": 145
 	},
 	{
+		"installDate": 1512347948348,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
