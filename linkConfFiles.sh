@@ -1,4 +1,42 @@
+#!/bin/bash
 
+## This script manages configuration files held in the symlinks/
+## folder that accompanies the script. The subfolder structure will be
+## preserved, anchored in $HOME.
+
+##   1. Some dynamic symlinks are made:
+##      * stndProfile pointing to the presumed FireFox profile
+##      * Normalization of the TOR browser profile folder
+##   2. The starting directory (symlinks/) is scanned for files and
+##      links. They are symlinked into $HOME.
+##      * . and .. are excluded
+##      * Text editor backup files are excluded
+##      * READMEs are excluded
+##      * If ${FILE}-NoLink exists, no link is made
+##   3. Each subfolder is then recursively analyzed
+##      * The target location in $HOME will be under the relevent subdir
+##      * If the subfolder contains a file '.asDir', then a symlink will
+##        be generated directly to the subfolder (no recursion)
+
+## Copyright (C) 2017 Charles A. Tilford
+##   Where I have used (or been inspired by) public code it will be noted
+
+LICENSE_GPL3="
+
+    This program is free software: you can redistribute it and/or
+    modify it under the terms of the GNU General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see http://www.gnu.org/licenses/
+
+"
 
 my_dir="$(dirname "$0")"
 ## Make script path absolute: https://stackoverflow.com/a/4175545
@@ -6,6 +44,10 @@ my_dir=`readlink -f "$my_dir"`
 . "$my_dir/systemSetup/_util_functions.sh"
 
 FORCE="$1"
+export LINKDIR="$my_dir/symlinks"
+msg "35" "
+LINKDIR=$LINKDIR
+"
 
 function link () {
     # SRC = file in repository, TRG = where we will make a link
@@ -21,15 +63,19 @@ function link () {
         SRCC=`readlink -f "$SRC"`
         TRGC=`readlink -f "$TRG"`
         if [ "$SRCC" == "$TRGC" ]; then
-            msg "1;36" "Exists: $TRG -> $SRC"
+            ## sed with slashes: https://unix.stackexchange.com/a/39802
+            TH=`echo "$TRG" | sed "s|$HOME|~|"`
+            SH=`echo "$SRC" | sed "s|$LINKDIR|LINKDIR|"`
+            msg "1;36" "Exists: $TH -> \$$SH"
         else
-            err "Want:\n  $TRG -> $SRC\nHave:\n  $TRG -> $TRGC"
+            err "Want:  $TRG -> $SRC\nHave:  $TRG -> $TRGC"
+            echo
         fi
         return
     fi
     if [ -f "$TRG" ] || [ -d "$TRG" ]; then
         # The file already exists
-        BKUP="${TRG}-BKUP"        
+        BKUP="${TRG}-BKUP"
         if [ -z "$FORCE" ]; then
             # No request to force link creation
             err "Target file already exists: $TRG
@@ -42,6 +88,20 @@ function link () {
             msg "1;46" "Existing target $TRG backed up to $BKUP"
         fi
     fi
+
+    ## Allow the presence of a local file with a "-NoLink" suffix to
+    ## prevent replacement with a symlink, even when force is on:
+    noLink="$TRG"-NoLink
+    if [[ -e "$noLnk" ]]; then
+        msg "33" "
+NoLink file prevents linking of standard files
+   Blocking file: $noLnk
+  Ignored source: $SRC
+"
+        echo
+        return
+    fi
+    
     CHKLINK=`ln -s "$SRC" "$TRG"`
     if [ -z "$CHKLINK" ]; then
         # Success - the file is now symlinked to the repo
@@ -56,53 +116,83 @@ function noisy_cd () {
     msg "46;0;35" "Now in: "`pwd`
 }
 
-noisy_cd "$HOME"
-CDIR="$my_dir"
+function link_dir () {
+    ## Recursively crawls through $LINKDIR and links files into $HOME/
+    srcdir="$1"
 
-## Basic conf files:
-link "$CDIR/.tmux.conf"    ".tmux.conf"
-link "$CDIR/.bashrc"       ".bashrc"
-link "$CDIR/.emacs"        ".emacs"
-link "$CDIR/.psqlrc"       ".psqlrc"
-link "$CDIR/.bash_profile" ".bash_profile"
-link "$CDIR/.inputrc"      ".inputrc"
+    ## Relative 'offset' of $srcdir compared to $LINKDIR
+    ##    https://unix.stackexchange.com/a/233882
+    relpath=`realpath --relative-to="$LINKDIR" "$srcdir"`
+    ## Single level find: https://stackoverflow.com/a/2107982
+    ## Loop with spaces:  https://stackoverflow.com/a/7039208
+    find "$srcdir" -maxdepth 1 -mindepth 1 -type f -or -type l | while read srcfile
+    do
+        bn=`basename "$srcfile"`
+        ## Ignore backup files
+        bkup=`echo "$bn" | egrep '(^#|#$|~$)'`
+        [[ -z "$bkup" ]] || continue
+        ## Ignore support files
+        isSup=`echo "$bn" | egrep -i '(readme)'`
+        [[ -z "$isSup" ]] || continue
+        
+        targfile=`readlink -f "$HOME"/"$relpath"`/"$bn"
 
-## FireFox 57 is MESSING EVERYTHING UP. Tiddlywikis now can only be
-## loaded from a subfolder in ~/Downloads (WHY WHY WHY). Create
-## symlink that points to filer location:
-link "/abyss/Common/TW" "$HOME/Downloads/tiddlywikilocations"
+        #msg "31" "FILE: $srcfile -> $targfile" # && continue
+        
+        ## Normal file - make symlink at target location back to confFiles
+        link "$srcfile" "$targfile"
+    done
 
+    ## Now recurse through the subdirectories
+    find "$srcdir" -maxdepth 1 -mindepth 1 -type d | while read subdir
+    do
+        bn=`basename "$subdir"`
+        ## Should not come up in find, but skip . and ..
+        [[ "$bn" == '.' || "$bn" == '..' ]] && continue
+        
 
-## KDE files
-kdir=".kde/share/apps/konsole"
-mkdir -p "$kdir"
-link "$CDIR/KDE/konsoleui.rc"   "$kdir/konsoleui.rc"
-## not sure what folder the profile should be in?? Changed at some point?
-link "$CDIR/KDE/Shell.profile"  "$kdir/Shell.profile"
+        #msg "32" "DIR: $subdir -> $targfile" # && continue
+        noRec="$subdir"/.asDir
 
-kdir=".kde/share/config"
-mkdir -p "$kdir"
-link "$CDIR/KDE/okularpartrc"   "$kdir/okularpartrc"
-link "$CDIR/KDE/Shell.profile"  "$kdir/Shell.profile"
-link "$CDIR/KDE/konsolerc"      "$kdir/konsolerc"
+        if [[ -e "$noRec" ]]; then
+            ## The directory contains a '.asDir' file. This is a flag
+            ## to indicate that the direcory should be linked
+            ## directly, rather than analyzed by recursion
+            relpath=`realpath --relative-to="$LINKDIR" "$subdir"`
+            targfile=`readlink -f "$HOME"/"$relpath"`
+            if [[ "$targfile" == "$subdir" ]]; then
+                msg "1;34" "Dir Symlink exists: ~/$relpath/ -> \$LINKDIR/$relpath/"
+            else 
+                ## msg "33" "LINKDIR: $subdir ->\n   $targfile\n   [$relpath]" # && continue
+                link "$subdir" "$targfile"
+            fi
+        else
+            ## Recurse into directories
+            link_dir "$subdir"
+        fi
+    done
+}
 
-
-## Firefox stuff
+## Symlink the FireFox profile to a standard symlink
 FFPROF=`$my_dir/systemSetup/findFirefoxProfile.sh 1`
-## Greasemonkey:
-link "$my_dir/gm_scripts" "$FFPROF/gm_scripts"
-## User styles:
-mkdir -p "$FFPROF/chrome"
-link "$my_dir/firefox/userChrome.css" "$FFPROF/chrome/userChrome.css"
-
-
-TORPROF="$HOME/tor-browser_en-US/profile.default"
-if [[ -d "$TORPROF" ]]; then
-    ## Also manage TOR Browser
-    link "$my_dir/gm_scripts" "$TORPROF/gm_scripts"
-    mkdir -p "$TORPROF/chrome"
-    link "$my_dir/firefox/userChrome.css" "$TORPROF/chrome/userChrome.css"
+if [[ ! -z "$FFPROF" ]]; then
+    bn=`basename "$FFPROF"`
+    bd=`dirname "$FFPROF"`
+    ln -sf "$bn" "$bd"/stndProfile
 fi
+
+## Normalize the TOR default profile directory
+TORDIR="$HOME/tor-browser_en-US"
+NEWTP="Browser/TorBrowser/Data/Browser/profile.default"
+if [[ -d "$TORDIR/$NEWTP" ]]; then
+    lnk="$TORDIR/profile.default"
+    if [[ ! -d "$lnk" && ! -L "$lnk" ]]; then
+        ln -sf "$NEWTP" "$lnk"
+    fi
+fi
+
+## Build symlinks to mirrored structure in ./symlinks :
+link_dir "$LINKDIR"
 
 msg "1;35" "
 Finished.
