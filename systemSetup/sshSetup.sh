@@ -117,11 +117,19 @@ fi
 
 msg "34;103" "
 Your key is available and attached to the agent.
-  To test GitHub:   ssh -T git@github.com
   Remote hosts should be given your public key:"
 
 pub=`cat "$keyFile".pub`
 
 msg "36" "
-$pub
+$pub"
+
+wai=`whoami`
+
+## ssh-copy-id: https://askubuntu.com/a/875058
+msg "30;47" "
+Usage examples:
+         Test GitHub:   ssh -T git@github.com
+  Add to remote host:   ssh-copy-id -i ${keyFile}.pub ${wai}@<hostname>
+                        ## Host needs 'PasswordAuthentication yes' in /etc/ssh/sshd_config
 "
