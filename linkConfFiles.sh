@@ -64,8 +64,8 @@ function link () {
         TRGC=`readlink -f "$TRG"`
         if [ "$SRCC" == "$TRGC" ]; then
             ## sed with slashes: https://unix.stackexchange.com/a/39802
-            TH=`echo "$TRG" | sed "s|$HOME|~|"`
-            SH=`echo "$SRC" | sed "s|$LINKDIR|LINKDIR|"`
+            TH=`setTilda "$TRG"`
+            SH=`setTilda "$SRC" "$LINKDIR" "LINKDIR"`
             msg "1;36" "Exists: $TH -> \$$SH"
         else
             err "Want:  $TRG -> $SRC\nHave:  $TRG -> $TRGC"
