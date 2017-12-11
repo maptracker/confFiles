@@ -34,6 +34,8 @@ amazon.com m.media-amazon.com script allow
 amazon.com ssl-images-amazon.com script allow
 amazon.com z-ecx.images-amazon.com script allow
 askubuntu.com ajax.googleapis.com script allow
+askubuntu.com askubuntu.com script allow
+askubuntu.com askubuntu.com xhr allow
 askubuntu.com sstatic.net script allow
 atlassian.com ajax.googleapis.com script allow
 atlassian.com atlassian.net script allow
@@ -122,6 +124,8 @@ dpreview.com img-dpreview.com script allow
 ebi.ac.uk ajax.googleapis.com script allow
 ebi.ac.uk reactome.org script allow
 ebi.ac.uk reactome.org xhr allow
+ensembl.org ensembl.org script allow
+ensembl.org ensembl.org xhr allow
 file-scheme canvasxpress.org script allow
 file-scheme localhost xhr allow
 file-scheme mathjax.org script allow
@@ -259,6 +263,13 @@ khanacademy.org khanacademy.org xhr allow
 khanacademy.org s3.amazonaws.com script allow
 legalplans.com maps.googleapis.com script allow
 live.com cdn.office.net script allow
+live.com live.com plugin allow
+live.com live.com script allow
+live.com live.com xhr allow
+lync.com lync.com plugin allow
+lync.com lync.com script allow
+lync.com lync.com xhr allow
+lync.com vo.msecnd.net script allow
 lynda.com akamaihd.net plugin allow
 lynda.com lynda.sc.omtrdc.net image allow
 lynda.com tags.tiqcdn.com script allow
@@ -281,6 +292,8 @@ netflix.com nflxext.com script allow
 netflix.com nflximg.net script allow
 newegg.com newegg.com script allow
 newegg.com newegg.com xhr allow
+nih.gov nih.gov script allow
+nih.gov nih.gov xhr allow
 nih.gov static.pubmed.gov script allow
 nih.gov vo.msecnd.net script allow
 noaa.gov arcgis.com script allow
