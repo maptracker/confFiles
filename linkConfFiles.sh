@@ -119,10 +119,7 @@ function noisy_cd () {
 function link_dir () {
     ## Recursively crawls through $LINKDIR and links files into $HOME/
     srcdir="$1"
-
-    ## Relative 'offset' of $srcdir compared to $LINKDIR
-    ##    https://unix.stackexchange.com/a/233882
-    relpath=`realpath --relative-to="$LINKDIR" "$srcdir"`
+    relpath=`relativePath "$LINKDIR" "$srcdir"`
     ## Single level find: https://stackoverflow.com/a/2107982
     ## Loop with spaces:  https://stackoverflow.com/a/7039208
     find "$srcdir" -maxdepth 1 -mindepth 1 -type f -or -type l | while read srcfile
@@ -158,7 +155,7 @@ function link_dir () {
             ## The directory contains a '.asDir' file. This is a flag
             ## to indicate that the direcory should be linked
             ## directly, rather than analyzed by recursion
-            relpath=`realpath --relative-to="$LINKDIR" "$subdir"`
+            relpath=`relativePath "$LINKDIR" "$subdir"`
             targfile=`readlink -f "$HOME"/"$relpath"`
             if [[ "$targfile" == "$subdir" ]]; then
                 msg "1;34" "Dir Symlink exists: ~/$relpath/ -> \$LINKDIR/$relpath/"
