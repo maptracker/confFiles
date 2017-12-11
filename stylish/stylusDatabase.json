@@ -1275,7 +1275,7 @@
 		"name": "Ixquick",
 		"sections": [
 			{
-				"code": "    /* Generally I'm looking for one of these: */\n    a[href*='stackoverflow'], a[href*='stackexchange'],\n    a[href*='serverfault'], a[href*='superuser'], \n    a[href*=\"wikipedia.org\"]\n    { \n        background-color: lime ! important;\n    }\n\n    #sponsored, iframe, .banner-container\n    { \n        display: none ! important; \n    }\n\n    a:visited { \n        color: purple !important;\n    }",
+				"code": "    /* Generally I'm looking for one of these: */\n    a[href*='stackoverflow'], a[href*='stackexchange'],\n    a[href*='serverfault'], a[href*='superuser'], \n    a[href*=\"wikipedia.org\"]\n    { \n        background-color: lime ! important;\n    }\n\t/* ... or these ... */\na[href*=\"tldp.org\"]\n{ background-color: yellowgreen ! important; }\n\n    #sponsored, iframe, .banner-container\n    { \n        display: none ! important; \n    }\n\n    a:visited { \n        color: purple !important;\n    }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -3054,5 +3054,26 @@
 			}
 		],
 		"id": 146
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "MiamiHerald",
+		"sections": [
+			{
+				"code": "#video-widget, .subscription-cta-widget, .highline-quote, #footer,\n.commenting-container, .share-tools-wrapper\n{ display: none ! important; }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"miamiherald.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 147,
+		"installDate": 1512989395500
 	}
 ]
