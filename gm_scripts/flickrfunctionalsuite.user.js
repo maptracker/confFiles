@@ -6,6 +6,7 @@
 // @include       http://flickr.com/*
 // @include       https://*.flickr.com/*
 // @include       https://flickr.com/*
+// @version       1.0.1
 // @grant       GM_getValue
 // @grant       GM_setValue
 // @grant       GM_log
@@ -230,7 +231,7 @@ var CatFlickrSuite = {
     },
     init: function() {
         // The primary initialization function
-        // GM_log("Starting: " + new Date());
+        // console.log("Starting: " + new Date());
         var now = new Date();
         this.ms = now.getTime().toString();
         this.setEnvironment();
@@ -244,7 +245,7 @@ var CatFlickrSuite = {
         this.cleanComments();
         this.colorStats();
         this.finalize();
-        GM_log("Initialized Flickr Functional Suite");
+        console.log("Initialized Flickr Functional Suite");
         window.addEventListener('click', function (e) {
                 // alert('new data!');
                 CatFlickrSuite.checkClickEvent(e);
@@ -268,7 +269,7 @@ var CatFlickrSuite = {
             if (data.flickr && data.flickr.user && data.flickr.user.pathalias) {
                 this.you = data.flickr.user.pathalias;
             } else {
-                GM_log("Could not find path alias");
+                console.log("Could not find path alias");
             }
         }
         return this.you;
@@ -280,7 +281,7 @@ var CatFlickrSuite = {
             if (data.flickr && data.flickr.user && data.flickr.user.nsid) {
                 this.nsid = data.flickr.user.nsid;
             } else {
-                GM_log("Could not find NSID");
+                console.log("Could not find NSID");
             }
         }
         return this.nsid;
@@ -299,7 +300,7 @@ var CatFlickrSuite = {
             }
             if (!this.yconf) {
                 this.yconf = new Object();
-                GM_log("Failed to find Flickr yconf hash object");
+                console.log("Failed to find Flickr yconf hash object");
             }
         }
         return this.yconf;
@@ -415,7 +416,7 @@ var CatFlickrSuite = {
     msg: function() {
         // Record some debugging information. These messages will
         // appear in the FireFox javascript Console, under 'Messages'
-        if (this.gmMsg != "") GM_log("Execution messages:\n"+this.gmMsg);
+        if (this.gmMsg != "") console.log("Execution messages:\n"+this.gmMsg);
         this.gmMsg = "";
     },
     err: function (msg, e) {
@@ -424,7 +425,7 @@ var CatFlickrSuite = {
             if (e.description) msg += "\n  DESC: " + e.description;
             msg += "\n  ERR: " + e;
         }
-        GM_log(msg);
+        console.log(msg);
     },
     finalize: function() {
         // Final code to execute after all parsing is done.
@@ -460,17 +461,17 @@ var CatFlickrSuite = {
         if (evt) {
             evt.preventDefault();
             evt.stopPropagation();
-            GM_log(evt);
+            console.log(evt);
             evt.returnValue = false;
         }
         // Establish the new pop-up menu that will be used for "/photos/UserName/" links:
-        // GM_log(el.id + ' from ' + this.ms);
+        // console.log(el.id + ' from ' + this.ms);
         var dispid    = this.registerUserPhoto(el);
         var uname     = this.getTranslation(dispid, 'uname');
         var purl      = this.getTranslation(dispid, 'purl');
         var nsid      = this.getTranslation(dispid, 'nsid');
         var colHash   = this.colors4user( purl );
-        // GM_log("User click on "+el.id+" ("+el+") = "+dispid);
+        // console.log("User click on "+el.id+" ("+el+") = "+dispid);
         // Close box and name:
         var html = "<span class='CancelButt'>[x]</span>&nbsp;<b>"+
         (uname ? uname : dispid)+
@@ -561,7 +562,7 @@ var CatFlickrSuite = {
         this.privateHash(div, 'onclose', function() {
                 CatFlickrSuite.updateUser( el );
             } );
-        GM_log("DEBUG="+el.href);
+        console.log("DEBUG="+el.href);
         return false;
     },
     userColorBlock: function(col, cname) {
@@ -842,7 +843,7 @@ var CatFlickrSuite = {
             word     = word.replace(/[^a-z0-9]/g, '');
             tagList.push( isNot + word );
         }
-        // GM_log("Raw: "+raw+" | Parsed: "+tagList.join(' '));
+        // console.log("Raw: "+raw+" | Parsed: "+tagList.join(' '));
         return tagList.join(' ');
     },
     searchTagAssociations: function () {
@@ -873,7 +874,7 @@ var CatFlickrSuite = {
         if (maxA) {
             commonFlickrArgs.max_upload_date = this.flickrDateFormat( maxA );
         }
-        // GM_log("Date range: "+commonFlickrArgs.min_upload_date + ' to ' + commonFlickrArgs.max_upload_date);
+        // console.log("Date range: "+commonFlickrArgs.min_upload_date + ' to ' + commonFlickrArgs.max_upload_date);
 
         if (type == 'Set') {
         } else if (type == 'Group') {
@@ -1151,7 +1152,7 @@ var CatFlickrSuite = {
             targ.appendChild(form);
             // Arm the various buttons
             form.addEventListener('submit', function (e) {
-                    // GM_log("E: " +e);
+                    // console.log("E: " +e);
                 e.preventDefault();
                 return CatFlickrSuite.tagAssocSubmit(form);}, false);
             clr.addEventListener('click', function (e) {
@@ -1262,7 +1263,7 @@ var CatFlickrSuite = {
         } else {
             el.style.color = 'red';
             var err = cfsArgs.error;
-            if (!err) { err = "|Unknown Error|"; GM_log(txt) }
+            if (!err) { err = "|Unknown Error|"; console.log(txt) }
             el.innerHTML = err + ' ';
        }
     },
@@ -1319,7 +1320,7 @@ var CatFlickrSuite = {
             var li = sorted[l][0];
             var ul = li.parentNode;
             if (!ul) continue;
-            // GM_log("#"+l+" = "+li+" Group: "+li.cfsGroup+" Num: "+sorted[l][1]);
+            // console.log("#"+l+" = "+li+" Group: "+li.cfsGroup+" Num: "+sorted[l][1]);
             ul.removeChild(li);
             ul.appendChild(li);
         }
@@ -1552,7 +1553,7 @@ var CatFlickrSuite = {
     },
     checkClickEvent: function(evt) {
         if (!evt) {
-            GM_log("Click event fails to pass the event object!");
+            console.log("Click event fails to pass the event object!");
             return false;
         }
         if (evt.which != 1) return false; // Only consider for left button
@@ -1565,7 +1566,7 @@ var CatFlickrSuite = {
             if (!el.parentNode) break;
             el = el.parentNode;
         }
-        // GM_log("Click on "+el+" deemed not a user photo link");
+        // console.log("Click on "+el+" deemed not a user photo link");
         return false;
     },
     registerUserPhoto: function(el) {
@@ -1589,7 +1590,7 @@ var CatFlickrSuite = {
         // Add a settings menu
         var targ = document.getElementById(this.fids.navOrg);
         if (!targ) {
-            GM_log("Failed to find 'Organize' menu item for settings");
+            console.log("Failed to find 'Organize' menu item for settings");
             return;
         }
         var liL  = document.createElement('li');
@@ -1926,7 +1927,7 @@ var CatFlickrSuite = {
         } else {
             msg += "/null/\n";
         }
-        GM_log(msg);
+        console.log(msg);
     },
     valuesForNamedInput: function(form, name) {
         /* Huh. It used to work that if I had an <input> named 'foo' in a form
@@ -1975,7 +1976,7 @@ var CatFlickrSuite = {
                 txt += "  !! Hash expected, found '"+kh+"'\n";
             }
         }
-        GM_log(txt);
+        console.log(txt);
     },
     setTranslation: function (data, debugMsg) {
         // Are any other data associated with these?
@@ -2120,7 +2121,7 @@ var CatFlickrSuite = {
         // Try to get token from local store:
         this.authTok = GM_getValue("FlickrAuthTok");
         if (this.authTok) {
-            GM_log("Authorization token recovered from local storage - " + this.authTok);
+            console.log("Authorization token recovered from local storage - " + this.authTok);
             return this.authTok;
         }
         // Need to generate new token:
@@ -2142,7 +2143,7 @@ var CatFlickrSuite = {
         if (toks.length == 1) {
             this.authTok = toks[0];
             GM_setValue("FlickrAuthTok", toks[0]);
-            GM_log("Authorization token returned by Flickr API");
+            console.log("Authorization token returned by Flickr API");
         } else {
             this.err("Failed to recover auth_token");
         }
@@ -2153,7 +2154,7 @@ var CatFlickrSuite = {
         // Try to get frob from local store:
         this.frob = GM_getValue("FlickrFrob");
         if (this.frob) {
-            GM_log("Frob recovered from local storage");
+            console.log("Frob recovered from local storage");
             return this.frob;
         }
         // Need to go to authentication page
@@ -2179,7 +2180,7 @@ var CatFlickrSuite = {
         var mat = loc.match(this.re.frob);
         if (!mat) return;
         GM_setValue("FlickrFrob", this.frob = mat[1]);
-        GM_log("Frob recognized from Flickr authentication page");
+        console.log("Frob recognized from Flickr authentication page");
     },
     flickrApi: function( args, cbname, cfsArgs ) {
         /* Generic method for an AJAX call to the Flickr API
@@ -2227,7 +2228,7 @@ var CatFlickrSuite = {
         while (lStck.length) {
             var dat = lStck.shift();
             var ticket = this.flickrApi( dat[0], dat[1], dat[2] );
-            GM_log("Resuming API call: "+dat[1]);
+            console.log("Resuming API call: "+dat[1]);
         }
     },
     parseXML: function(response, cbname, args,cfsArgs, url) {

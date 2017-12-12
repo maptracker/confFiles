@@ -2,6 +2,7 @@
 // @name           Filter BarnesNoble
 // @namespace      tilford.net
 // @include        http://*barnesandnoble.com/*
+// @version        1.0.1
 // ==/UserScript==
 
 /* Allows shift+ctrl clicking on a movie to hide from future
@@ -22,29 +23,29 @@ function main () {
         getCode = /\/ip\/([0-9]+)$/;
         register_wm();
     } else {
-        GM_log("Could not determine domain from" + loc);
+        console.log("Could not determine domain from" + loc);
         return;
     }
 }
 
 function register_bn () {
     var as = document.getElementsByTagName('a');
-    GM_log("Looking at "+as.length+" anchor elements");
+    console.log("Looking at "+as.length+" anchor elements");
     for (var i = 0; i < as.length; i++) {
         var anc = as[i];
         var par = anc.parentNode;
         var cn  = anc.className;
         var pcn = par ? par.className : "";
-        //GM_log("Considered "+cn+" / " + pcn);
+        //console.log("Considered "+cn+" / " + pcn);
         if (!(/(linked-image|thumb)/.test(cn) ||
               /(image-block|wgt-product-image-module)/.test(pcn))) 
             continue;
-        //GM_log("Considered "+cn+" / " + pcn);
+        //console.log("Considered "+cn+" / " + pcn);
         var cd = codeForElement( anc );
         if (!cd) continue;
         if (checkCode( cd[0] )) hideEl( anc );
         addEventSimple(anc, 'click', checkClick);
-        // GM_log("Registered "+anc+" in " + par);
+        // console.log("Registered "+anc+" in " + par);
     }
     var ss = document.getElementsByTagName('span');
     for (var i = 0; i < ss.length; i++) {
@@ -76,14 +77,14 @@ function register_wm () {
     for (var i = 0; i < as.length; i++) {
         var img = as[i];
         var cn  = img.className;
-        GM_log("Saw "+cn);
+        console.log("Saw "+cn);
         if (!(/(prodImg)/.test(img))) 
             continue;
         var cd = codeForElement( img );
         if (!cd) continue;
         if (checkCode( cd[0] )) hideEl( img );
         addEventSimple(img, 'click', checkClick);
-        GM_log("Registered "+img);
+        console.log("Registered "+img);
     }
 }
 
@@ -95,7 +96,7 @@ function checkClick (evt) {
         return hideThumb(evt);
     }
     evt.stopPropagation();
-    // GM_log("Ignoring click "+evt+evt.shiftKey+evt.altKey);
+    // console.log("Ignoring click "+evt+evt.shiftKey+evt.altKey);
     return false;
 }
 
@@ -104,7 +105,7 @@ function hideThumb (evt) {
     if (!cd) return true;
     var code = cd[0];
     var el   = cd[1];
-    // GM_log("Hiding "+code+" in " + el);
+    // console.log("Hiding "+code+" in " + el);
     hideEl( el );
     GM_setValue(prfx + code, 1);
     evt.stopPropagation();
@@ -117,14 +118,14 @@ function codeForElement (el, vb) {
         el = el.parentNode;
     }
     if (el.tagName != 'A') {
-        if (vb) GM_log("Failed to find anchor "+el);
+        if (vb) console.log("Failed to find anchor "+el);
         return null;
     }
     var href = el.href;
     var code = href.match( getCode );
     if (!code || code.length != 2) return null;
     code = code[1];
-    // GM_log(code);
+    // console.log(code);
     return [code, el];
 }
 
@@ -161,9 +162,9 @@ function removeEventSimple(obj,evt,fn) {
 
 function is_not_dvd_object (el) {
     if (!el) return 1;
-    // GM_log(el.tagName);
+    // console.log(el.tagName);
     if (el.tagName.toLowerCase() != 'li') return 1;
-    // GM_log(el.className);
+    // console.log(el.className);
     if (targCl.test(el.className)) return 0;
     var bnt = el.getAttribute('data-bntrack');
     if (bnt) return 0;

@@ -2,7 +2,7 @@
 // @name        Disqus Filter
 // @namespace   tilford.net
 // @include     http://disqus.com/*
-// @version     1
+// @version     1.0.1
 // ==/UserScript==
 
 var isNumber = new RegExp('\d+$');
@@ -13,18 +13,18 @@ function scanVotes () {
     // return;
     var as = document.getElementsByTagName('a');
     var al = as.length;
-    GM_log(al + ' links found in Disqus scan');
+    console.log(al + ' links found in Disqus scan');
     var kept = 0;
     var tot  = 0;
     for (var i = 0; i < al; i++) {
         var el = as[i];
         var cn = el.className;
         if (!cn) continue;
-        // GM_log("'" + cn + "'");
+        // console.log("'" + cn + "'");
         if (! /^\s*vote-(up|down)/.test(cn)) continue;
         var votes = parseInt(el.textContent);
         if (typeof(votes) != 'number') continue;
-        // GM_log("'" + votes + "'");
+        // console.log("'" + votes + "'");
         var par = el;
         while (par && ! is_main_post(par)) { par = par.parentNode; }
         if (! is_main_post(par)) continue;
@@ -43,7 +43,7 @@ function scanVotes () {
             // second discovery, priory was better vote
             continue;
         }
-        // GM_log(cn + " = '" + votes + "' ("+pvc+")");
+        // console.log(cn + " = '" + votes + "' ("+pvc+")");
         if (votes < showAt) {
             par.style.display = 'none';
         } else {
@@ -53,13 +53,13 @@ function scanVotes () {
             
     }
     var head = document.getElementById('post-count');
-    GM_log(head);
+    console.log(head);
     if (!head) return;
     if (kept == tot) return;
     var span = document.createElement('span');
     span.innerHTML = " <i style='color:brown'>Disqus Filter : Showing <b>"+kept+" of " +tot+ "</b> comments with at least "+showAt+" votes</i>";
     head.appendChild(span);
-    // GM_log('Kept '+kept+'/'+tot);
+    // console.log('Kept '+kept+'/'+tot);
 }
 
 function is_main_post (el) {

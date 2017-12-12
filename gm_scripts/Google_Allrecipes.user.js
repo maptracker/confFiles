@@ -4,7 +4,7 @@
 // @include     http://www.google.com/search?*allrecipes.com*
 // @include     https://www.google.com/search?*allrecipes.com*
 // @include     https://encrypted.google.com/search?*allrecipes.com*
-// @version     1
+// @version     1.0.1
 // ==/UserScript==
 
 // Masks search results that do not have any reviews
@@ -57,14 +57,14 @@ function main () {
             }
             if (sCol) liH = liH.replace(sHit,"<span style='background-color:"+
                                     sCol+ "'>"+sHit+"</span>");
-            GM_log(revNum+" reviews ("+rCol+"), Score "+sc+" ("+sCol+")");
+            console.log(revNum+" reviews ("+rCol+"), Score "+sc+" ("+sCol+")");
         }
         if (rCol) liH = liH.replace(revHit,"<span style='background-color:"+
                                     rCol+ "'>"+revHit+"</span>");
         
         li.innerHTML = liH;
     }
-    if (found) GM_log(found+" targets marked up");
+    if (found) console.log(found+" targets marked up");
     setTimeout(main, 1000);
 
 }

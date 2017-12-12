@@ -2,6 +2,7 @@
 // @name           Filter Walmart DVDs
 // @namespace      tilford.net
 // @include        http://www.walmart.com/*
+// @version        1.0.1
 // ==/UserScript==
 
 /* Allows shift-clicking on a video to hide it from future
@@ -17,7 +18,7 @@ function main () {
     for (var i = 0; i < as.length; i++) {
         var anc = as[i];
         var cn  = anc.className;
-        // if (cn) GM_log("Saw "+cn);
+        // if (cn) console.log("Saw "+cn);
         if (!/prodImg/.test(cn)) continue;
         var cd = codeForElement( anc );
         if (!cd) continue;
@@ -33,7 +34,7 @@ function checkClick (evt) {
         evt.stopPropagation();
         return hideThumb(evt);
     }
-     // GM_log("Ignoring click "+evt+evt.shiftKey+evt.altKey);
+     // console.log("Ignoring click "+evt+evt.shiftKey+evt.altKey);
     return false;
 }
 
@@ -42,7 +43,7 @@ function hideThumb (evt) {
     if (!cd) return true;
     var code = cd[0];
     var el   = cd[1];
-    // GM_log("Hiding "+code+" in " + el);
+    // console.log("Hiding "+code+" in " + el);
     hideEl( el );
     GM_setValue(prfx + code, 1);
     evt.stopPropagation();
@@ -55,14 +56,14 @@ function codeForElement (el, vb) {
         el = el.parentNode;
     }
     if (el.tagName != 'A') {
-        if (vb) GM_log("Failed to find anchor "+el);
+        if (vb) console.log("Failed to find anchor "+el);
         return null;
     }
     var href = el.href;
     var code = href.match( getCode );
     if (!code || code.length != 2) return null;
     code = code[1];
-    GM_log(code);
+    console.log(code);
     return [code, el];
 }
 

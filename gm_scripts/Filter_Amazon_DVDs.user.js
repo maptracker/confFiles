@@ -2,6 +2,7 @@
 // @name           Filter Amazon DVDs
 // @namespace      tilford.net
 // @include        http://www.amazon.com/*
+// @version        1.0.1
 // @grant          GM_getValue
 // @grant          GM_setValue
 // @grant          GM_log
@@ -21,7 +22,7 @@ function main () {
     for (var i = 0; i < as.length; i++) {
         var anc = as[i];
         var id  = anc.id;
-        // if (id) GM_log("Saw "+id);
+        // if (id) console.log("Saw "+id);
         if (!topId.test(id)) continue;
         var cd = codeForElement( anc );
         if (!cd) continue;
@@ -36,7 +37,7 @@ function checkClick (evt) {
         return hideThumb(evt);
     }
     evt.stopPropagation();
-    // GM_log("Ignoring click "+evt+evt.shiftKey+evt.altKey);
+    // console.log("Ignoring click "+evt+evt.shiftKey+evt.altKey);
     return false;
 }
 
@@ -45,7 +46,7 @@ function hideThumb (evt) {
     if (!cd) return true;
     var code = cd[0];
     var el   = cd[1];
-    // GM_log("Hiding "+code+" in " + el);
+    // console.log("Hiding "+code+" in " + el);
     hideEl( el );
     GM_setValue(prfx + code, 1);
     evt.preventDefault();
@@ -78,18 +79,18 @@ function codeForElement (el, vb) {
 
     var code = href.match( getCode );
     if (!code || code.length != 2) {
-        //GM_log("Not found: "+href);
+        //console.log("Not found: "+href);
         return null;
     }
     code = code[1];
-    //GM_log(code);
+    //console.log(code);
     return [code, el];
 }
 
 function children ( el ) {
     var kids = [];
     if (!el) return kids;
-    // GM_log("Getting kids:" + el);
+    // console.log("Getting kids:" + el);
     
     var tryNodes = el.childNodes;
     var tl  = tryNodes.length;
@@ -97,7 +98,7 @@ function children ( el ) {
         var n = tryNodes[t];
         var tn = n.tagName;
         if (!tn) continue;
-        // GM_log(tn);
+        // console.log(tn);
         kids.push(n);
     }
     return kids;

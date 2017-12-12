@@ -2,7 +2,7 @@
 // @name        NewEgg Filter
 // @namespace   tilford.net
 // @include     http://*.newegg.com/*
-// @version     1
+// @version     1.0.1
 // ==/UserScript==
 
 /* Allows shift-click on a product to remove it from
@@ -30,9 +30,9 @@ function register_newegg () {
         if (checkCode( cd[0] )) hideEl( anc );
         addEventSimple(anc, 'click', checkClick);
         num++;
-        // GM_log("Registered "+ cd[0] + " in " +anc );
+        // console.log("Registered "+ cd[0] + " in " +anc );
     }
-    GM_log("Registered "+num+" from "+as.length+" anchor elements in "+
+    console.log("Registered "+num+" from "+as.length+" anchor elements in "+
            document.location);
 }
 
@@ -43,7 +43,7 @@ function checkClick (evt) {
         // shift + ctrl = hide this image!
         return hideThumb(evt);
     }
-    // GM_log("Ignoring click "+evt+evt.shiftKey+evt.altKey);
+    // console.log("Ignoring click "+evt+evt.shiftKey+evt.altKey);
     return false;
 }
 
@@ -52,7 +52,7 @@ function hideThumb (evt) {
     if (!cd) return true;
     var code = cd[0];
     var el   = cd[1];
-    // GM_log("Hiding "+code+" in " + el);
+    // console.log("Hiding "+code+" in " + el);
     hideEl( el );
     GM_setValue(prfx + code, 1);
     evt.stopPropagation();
@@ -65,15 +65,15 @@ function codeForElement (el, vb) {
         el = el.parentNode;
     }
     if (el.tagName != 'A') {
-        if (vb) GM_log("Failed to find anchor "+el);
+        if (vb) console.log("Failed to find anchor "+el);
         return null;
     }
     var href = el.href;
     var code = href.match( getCode );
-    // GM_log(code + ' via ' + href);
+    // console.log(code + ' via ' + href);
     if (!code || code.length != 2) return null;
     code = code[1];
-    // GM_log(code);
+    // console.log(code);
     return [code, el];
 }
 
@@ -91,7 +91,7 @@ function hideEl (el) {
     if (is_not_product_object(targ)) {
         targ = el;
     }
-    // GM_log(targ.className);
+    // console.log(targ.className);
     targ.style.display = 'none';
 }
 
@@ -111,9 +111,9 @@ function removeEventSimple(obj,evt,fn) {
 
 function is_not_product_object (el) {
     if (!el) return 1;
-    // GM_log(el.tagName);
+    // console.log(el.tagName);
     if (el.tagName.toLowerCase() != 'div') return 1;
-    // GM_log(el.className);
+    // console.log(el.className);
     if (targCl.test(el.className)) return 0;
     return 1;
 
