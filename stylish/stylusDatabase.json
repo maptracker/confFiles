@@ -3056,6 +3056,7 @@
 		"id": 146
 	},
 	{
+		"installDate": 1512989395500,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -3073,7 +3074,47 @@
 				"regexps": []
 			}
 		],
-		"id": 147,
-		"installDate": 1512989395500
+		"id": 147
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "TamperMonkey",
+		"sections": [
+			{
+				"code": "#curtain { display: none ! important; }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"tampermonkey.net"
+				],
+				"regexps": []
+			}
+		],
+		"id": 148
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "PRI",
+		"sections": [
+			{
+				"code": ".donate__story-msg, .sharing-links__list, .promo-box--promo,\n.secondary, .sponsors, footer, .navbar__wrapper, .pane-comments,\n.pane-custom-social-networking-links-header\n{ display: none ! important; }\n\nbody { background: unset ! important }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"pri.org"
+				],
+				"regexps": []
+			}
+		],
+		"id": 149,
+		"installDate": 1513594059500
 	}
 ]
