@@ -1696,7 +1696,7 @@
 		"name": "NYT",
 		"sections": [
 			{
-				"code": "    #cColumn, .runaroundLeft, .shareTools, .emailAlertModule,\n    #insideNYTimesHeader, #footer, .metaFootnote, #breaking-news-email-promo,\n    #ribbon, #masthead, #site-index-navigation, #whats-next,\n    #TopAd1, #site-index, .interactive-image-container, .interactive,\n    #navigation, #masthead, #memberTools, #cCol, #blogroll,\n    .socialMediaModule, .ad, #footer, .subNavigation, .share, #header, .tabs,\n    .external-links, .interactive-embedded, .newsletter-signup,\n    #site-index, #whats-next, .text-ad, #page-footer, .ribbon, .navigation,\n    .video\n    { \n        display: none ! important; \n    }\n\n    #abColumn, #article { \n        width: 100% ! important; \n    }",
+				"code": "    #cColumn, .runaroundLeft, .shareTools, .emailAlertModule,\n    #insideNYTimesHeader, #footer, .metaFootnote, #breaking-news-email-promo,\n    #ribbon, #masthead, #site-index-navigation, #whats-next,\n    #TopAd1, #site-index, .interactive-image-container, .interactive,\n    #navigation, #masthead, #memberTools, #cCol, #blogroll,\n    .socialMediaModule, .ad, #footer, .subNavigation, .share, #header, .tabs,\n    .external-links, .interactive-embedded, .newsletter-signup,\n    #site-index, #whats-next, .text-ad, #page-footer, .ribbon, .navigation,\n    .video, [class*='Masthead'], [class*='ResponsiveAd'], [class*='shareMenu'],\n[class*='Newsletter']\n    { \n        display: none ! important; \n    }\n\n    #abColumn, #article { \n        width: 100% ! important; \n    }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
