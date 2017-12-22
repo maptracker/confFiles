@@ -6,8 +6,9 @@
 ## those styles to what's in the repo, to see if there are any rules
 ## to move over. This script makes that easier
 
-main_dir="$(dirname "$0")"
- . "$main_dir/../systemSetup/_util_functions.sh"
+## script folder: https://stackoverflow.com/a/246128
+my_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+. "$my_dir/../generalUtilities/_util_functions.sh" 
 
 repoDir="$main_dir/styles"
 browserDir="$main_dir/ts/styles"

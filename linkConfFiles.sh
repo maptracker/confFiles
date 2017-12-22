@@ -38,10 +38,9 @@ LICENSE_GPL3="
 
 "
 
-my_dir="$(dirname "$0")"
-## Make script path absolute: https://stackoverflow.com/a/4175545
-my_dir=`readlink -f "$my_dir"`
-. "$my_dir/systemSetup/_util_functions.sh"
+## script folder: https://stackoverflow.com/a/246128
+my_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+. "$my_dir/generalUtilities/_util_functions.sh"
 
 FORCE="$1"
 export LINKDIR="$my_dir/symlinks"

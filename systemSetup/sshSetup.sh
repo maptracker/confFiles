@@ -28,12 +28,9 @@ LICENSE_GPL3="
 ## Make sure id_rsa is established, that the SSH agent is running
 ## https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
 
-my_dir="$(dirname "$0")"
-## Make script path absolute: https://stackoverflow.com/a/4175545
-## Normalize my_dir to be the confFiles directory:
-my_dir=`readlink -f "$my_dir"/..`
-. "$my_dir/systemSetup/_util_functions.sh"
-
+## script folder: https://stackoverflow.com/a/246128
+my_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+. "$my_dir/../generalUtilities/_util_functions.sh"
 
 keyFile="$HOME/.ssh/id_rsa"
 

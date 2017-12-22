@@ -30,8 +30,9 @@ Dependency Details:
 COMMENTBLOCK
 ##############################################
 
-my_dir="$(dirname "$0")"
-. "$my_dir/_util_functions.sh"
+## script folder: https://stackoverflow.com/a/246128
+my_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+. "$my_dir/../generalUtilities/_util_functions.sh"
 
 ## https://askubuntu.com/a/798342
 
