@@ -65,19 +65,25 @@ function link () {
             ## sed with slashes: https://unix.stackexchange.com/a/39802
             TH=`setTilda "$TRG"`
             SH=`setTilda "$SRC" "$LINKDIR" "LINKDIR"`
-            msg "1;36" "Exists: $TH -> \$$SH"
+            msg "1;36" "Exists: $TH ->\n        \$$SH"
         else
             err "Want:  $TRG -> $SRC\nHave:  $TRG -> $TRGC"
             echo
         fi
         return
     fi
+    TH=`setTilda "$TRG"`
+    SH=`setTilda "$SRC" "$LINKDIR" "LINKDIR"`
     if [ -f "$TRG" ] || [ -d "$TRG" ]; then
         # The file already exists
         BKUP="${TRG}-BKUP"
         if [ -z "$FORCE" ]; then
             # No request to force link creation
-            err "Target file already exists: $TRG
+            err "
+Target file already exists:
+  Target: $TH
+  Source: \$$SH
+
   Pass a true value to the script to force creation of link
     Forcing will create a backup of the target under: $BKUP"
             return
@@ -104,7 +110,7 @@ NoLink file prevents linking of standard files
     CHKLINK=`ln -s "$SRC" "$TRG"`
     if [ -z "$CHKLINK" ]; then
         # Success - the file is now symlinked to the repo
-        msg "1;34" "Create: $SRC -> $TRG"
+        msg "1;34" "Create: \$$SH ->\n  $TH"
     else
         die "Failed to create link:\n  $SRC -> $TRG\n  Error: $CHKLINK"
     fi
