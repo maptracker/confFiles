@@ -3097,6 +3097,7 @@
 		"id": 148
 	},
 	{
+		"installDate": 1513594059500,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -3114,7 +3115,27 @@
 				"regexps": []
 			}
 		],
-		"id": 149,
-		"installDate": 1513594059500
+		"id": 149
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "Vice",
+		"sections": [
+			{
+				"code": ".hz, header, .post-content, .frames, .av {display:none ! important;}\n\n.ii {height: unset ! important;}\n.ih {width: unset ! important; }\n.if {left:unset ! important;}\n.o { overflow: unset ! important;}\n.k {position: unset ! important;}",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"vice.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 150,
+		"installDate": 1514048573900
 	}
 ]
