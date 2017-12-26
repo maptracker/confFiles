@@ -3118,7 +3118,8 @@
 		"id": 149
 	},
 	{
-		"enabled": true,
+		"installDate": 1514048573900,
+		"enabled": false,
 		"updateUrl": null,
 		"md5Url": null,
 		"url": null,
@@ -3135,7 +3136,6 @@
 				"regexps": []
 			}
 		],
-		"id": 150,
-		"installDate": 1514048573900
+		"id": 150
 	}
 ]
