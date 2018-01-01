@@ -3,13 +3,48 @@
 ## The version of R in my system's repo (14.04 LTS) is ancient...
 ## Code to install from source.
 
-## Can pass an alternative version as first argument
-VERS=${1:-"3.4.0"}
+## Can pass an alternative version as first argument. Browse here:
+##     https://cran.rstudio.com/src/base/
+VERS=${1:-"3.4.3"}
 MAJVERS=`echo $VERS | cut -c1` ## "1.2.3" -> "1"
 
 ## Block comments: https://stackoverflow.com/a/947936
 : <<'COMMENTBLOCK'
 
+      Adventures encountered while compiling
+            (generally in configure)
+
+#######################################
+###### 3.4.3 on Mint 18.3 Sylvia ######
+
+### configure: error: No F77 compiler found
+## https://stackoverflow.com/a/17721091
+
+     sudo apt-get install gfortran
+
+### configure: error: C++ preprocessor "/lib/cpp" fails sanity check
+## https://askubuntu.com/a/509671
+
+     sudo apt-get install g++
+
+### error: --with-readline=yes (default) and headers/libs are not available
+## https://stackoverflow.com/a/25691602
+
+     sudo apt-get install libreadline-dev
+
+### error: --with-x=yes (default) and X11 headers/libs are not available
+## https://stackoverflow.com/a/25691602
+
+     sudo apt-get install xorg-dev
+
+
+### error: bzip2 library and headers are required
+
+     ## DID NOT WORK sudo apt-get install lbzip2
+
+
+##########################################
+###### 3.4.1 on Ubuntu 14.04 LTS #########
 I needed to install two Dev packages to get through ./configure :
 
      sudo apt-get install libxt-dev liblzma-dev
