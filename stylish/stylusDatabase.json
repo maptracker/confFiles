@@ -1006,7 +1006,8 @@
 					"chicagotribune.com",
 					"latimes.com",
 					"baltimoresun.com",
-					"orlandosentinel.com"
+					"orlandosentinel.com",
+					"sltrib.com"
 				],
 				"regexps": []
 			}
@@ -3138,5 +3139,26 @@
 			}
 		],
 		"id": 150
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "IrishTimes",
+		"sections": [
+			{
+				"code": "amp-sidebar, amp-app-banner, amp-analytics, .sponsored, \ndiv[class*='amp-'], #subscribe-body-amp, section,\nfooter, aside, .pull-out-cta_dark { display: none !important; }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"irishtimes.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 151,
+		"installDate": 1514765853600
 	}
 ]
