@@ -1,4 +1,4 @@
-﻿// ==UserScript==
+// ==UserScript==
 // @name        StackExchange
 // @namespace   *
 // @include     https://*.stackexchange.com/*
@@ -20,7 +20,7 @@ function highlight() {
     votes  =  Array.prototype.slice.call(votes).concat(Array.prototype.slice.call(mini));
     var vl = votes.length;
     var msg = "";
-    var comSty = "; padding:5px"
+    var comSty = "; padding:5px";
     for (var v = 0; v < vl; v++) {
         var sp = votes[v];
         var n = sp.innerText;
@@ -33,7 +33,7 @@ function highlight() {
                 n = pow[1] * 1000000;
             }
         }
-        var sty = ""
+        var sty = "";
         if (n >= 1000) {
             sty = "background-color:#000; color: #fff";
         } else if (n > 100) {
