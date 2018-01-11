@@ -2415,7 +2415,7 @@
 		"name": "TheTelegraph",
 		"sections": [
 			{
-				"code": "    .mnIframe, #tmg-related-links, .storyFt,\n    #section_puffs_01, .oneSixth, #top_stories_05, .pictureGrid\n    { \n        display: none ! important; \n    }",
+				"code": "    .mnIframe, #tmg-related-links, .storyFt,\n    #section_puffs_01, .oneSixth, #top_stories_05, .pictureGrid,\namp-instagram, .tmg-amp-follow-platforms, amp-iframe\n    { \n        display: none ! important; \n    }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
