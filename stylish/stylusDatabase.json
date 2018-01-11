@@ -346,7 +346,7 @@
 		"name": "CNN",
 		"sections": [
 			{
-				"code": "    .cnnStryVidCont, .map-canvas, .cnn_stryshrwdgtbtm, #cnn_ftrcntnt, \n    .js-owl-filmstrip, #cnn_hdr-main, #large-media, iframe, \n    #leaf-footer-article-zone, .el__featured-video, .pg-rail-tall__head,\n    footer, #story-bottom\n    { \n        display : none ! important; \n    }\n    .media__image { transition: unset ! important; }",
+				"code": "    .cnnStryVidCont, .map-canvas, .cnn_stryshrwdgtbtm, #cnn_ftrcntnt, \n    .js-owl-filmstrip, #cnn_hdr-main, #large-media, iframe, \n    #leaf-footer-article-zone, .el__featured-video, .pg-rail-tall__head,\n    footer, #story-bottom, header, .m-share, .fb-send-to-messenger-container\n    { \n        display : none ! important; \n    }\n    .media__image { transition: unset ! important; }\nbody { background-color: unset ! important; }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -2415,7 +2415,7 @@
 		"name": "TheTelegraph",
 		"sections": [
 			{
-				"code": "    .mnIframe, #tmg-related-links, .storyFt,\n    #section_puffs_01, .oneSixth, #top_stories_05, .pictureGrid\n    { \n        display: none ! important; \n    }",
+				"code": "    .mnIframe, #tmg-related-links, .storyFt,\n    #section_puffs_01, .oneSixth, #top_stories_05, .pictureGrid,\namp-instagram, .tmg-amp-follow-platforms, amp-iframe\n    { \n        display: none ! important; \n    }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -3141,6 +3141,7 @@
 		"id": 150
 	},
 	{
+		"installDate": 1514765853600,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -3158,7 +3159,6 @@
 				"regexps": []
 			}
 		],
-		"id": 151,
-		"installDate": 1514765853600
+		"id": 151
 	}
 ]
