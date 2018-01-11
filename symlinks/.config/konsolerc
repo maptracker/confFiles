@@ -5,10 +5,10 @@ update_info=konsole.upd:2.9.0-global-options
 CurrentPalette=Forty Colors
 
 [Desktop Entry]
-DefaultProfile=
+DefaultProfile=Shell.profile
 
 [Favorite Profiles]
-Favorites=test2.profile
+Favorites=Shell.profile
 
 [FileDialogSize]
 Height 1200=480
@@ -24,7 +24,7 @@ Width 3440=1720
 Height 1080=853
 Height 1200=586
 Height 1440=922
-State=AAAA/wAAAAD9AAAAAAAABGQAAALAAAAABAAAAAQAAAAIAAAACPwAAAAA
+State=AAAA/wAAAAD9AAAAAAAAA48AAAOBAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
 Width 1920=1124
 Width 3440=911
