@@ -8,7 +8,7 @@ CurrentPalette=Forty Colors
 DefaultProfile=
 
 [Favorite Profiles]
-Favorites=test2.profile
+Favorites=
 
 [FileDialogSize]
 Height 1200=480
@@ -24,7 +24,7 @@ Width 3440=1720
 Height 1080=853
 Height 1200=586
 Height 1440=922
-State=AAAA/wAAAAD9AAAAAAAABGQAAALAAAAABAAAAAQAAAAIAAAACPwAAAAA
+State=AAAA/wAAAAD9AAAAAAAABGQAAAIsAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
 Width 1920=1124
 Width 3440=911
