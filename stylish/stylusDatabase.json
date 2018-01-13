@@ -1037,7 +1037,7 @@
 	},
 	{
 		"installDate": 1512347947115,
-		"enabled": false,
+		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
 		"url": null,
@@ -1045,7 +1045,7 @@
 		"name": "Habitica",
 		"sections": [
 			{
-				"code": "  .modal, .modal-backdrop { display : none ! important;}",
+				"code": "  .media { display : none ! important;}",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
