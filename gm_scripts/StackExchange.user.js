@@ -5,11 +5,12 @@
 // @include     https://serverfault.com/*
 // @include     https://stackoverflow.com/*
 // @include     https://superuser.com/*
-// @version     1
+// @include     https://mathoverflow.net/*
+// @version     1.0.1
 // @grant       none
 // ==/UserScript==
 
-/* Color code vote counts */
+/* Color-code vote counts */
 
 highlight();
 
