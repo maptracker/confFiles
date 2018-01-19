@@ -2251,7 +2251,8 @@
 					"stackexchange.com",
 					"serverfault.com",
 					"stackoverflow.com",
-					"superuser.com"
+					"superuser.com",
+					"mathoverflow.net"
 				],
 				"regexps": []
 			}
@@ -3078,12 +3079,32 @@
 		"id": 147
 	},
 	{
-		"installDate": 1514310773671,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
 		"url": null,
 		"originalMd5": null,
+		"name": "CodeWeavers",
+		"sections": [
+			{
+				"code": "#nojsalert { display: none ! important; }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"codeweavers.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 148
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1514310773671,
 		"name": "TamperMonkey",
 		"sections": [
 			{
@@ -3096,15 +3117,15 @@
 				"regexps": []
 			}
 		],
-		"id": 148
+		"id": 149
 	},
 	{
-		"installDate": 1513594059500,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
 		"url": null,
 		"originalMd5": null,
+		"installDate": 1513594059500,
 		"name": "PRI",
 		"sections": [
 			{
@@ -3117,15 +3138,15 @@
 				"regexps": []
 			}
 		],
-		"id": 149
+		"id": 150
 	},
 	{
-		"installDate": 1514048573900,
 		"enabled": false,
 		"updateUrl": null,
 		"md5Url": null,
 		"url": null,
 		"originalMd5": null,
+		"installDate": 1514048573900,
 		"name": "Vice",
 		"sections": [
 			{
@@ -3138,10 +3159,9 @@
 				"regexps": []
 			}
 		],
-		"id": 150
+		"id": 151
 	},
 	{
-		"installDate": 1514765853600,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
@@ -3159,6 +3179,7 @@
 				"regexps": []
 			}
 		],
-		"id": 151
+		"installDate": 1514765853600,
+		"id": 152
 	}
 ]
