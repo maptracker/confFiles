@@ -63,6 +63,7 @@ bms.com cloudflare.com script allow
 bms.com d3sbxpiag177w8.cloudfront.net script allow
 bms.com dominodatalab.com script allow
 bms.com dominoup.zendesk.com xhr allow
+bms.com eastus22-sphomep.svc.ms xhr allow
 bms.com insite.bms.com cookie allow
 bms.com intercom.io xhr allow
 bms.com intercomcdn.com script allow
@@ -99,6 +100,8 @@ charitynavigator.org ajax.googleapis.com script allow
 charitynavigator.org code.jquery.com script allow
 charitynavigator.org d2wy8f7a9ursnm.cloudfront.net script allow
 cityofnewyork.us ajax.googleapis.com script allow
+clinicaltrials.gov clinicaltrials.gov script allow
+clinicaltrials.gov clinicaltrials.gov xhr allow
 corante.com c.statcounter.com image block
 corante.com rcm.amazon.com frame block
 coursera.help jquery.com script allow
@@ -276,6 +279,8 @@ lynda.com tags.tiqcdn.com script allow
 maptracker.github.io mathjax.org script allow
 mathoverflow.net cdn.mathjax.org script allow
 mathoverflow.net cdn.sstatic.net script allow
+mathoverflow.net cdnjs.cloudflare.com script allow
+mathoverflow.net mathoverflow.net script allow
 microsoftonline.com microsoftonline.com script allow
 microsoftonline.com microsoftonline.com xhr allow
 mozilla.org addons.cdn.mozilla.net script allow
@@ -283,6 +288,8 @@ mozilla.org addons.mozilla.org other allow
 mozilla.org addons.mozilla.org xhr allow
 mozilla.org mozilla.net script allow
 mozilla.org mozillademos.org frame allow
+myworkday.com myworkday.com script allow
+myworkday.com myworkday.com xhr allow
 nature.com a.disquscdn.com script allow
 nature.com disqus.com frame allow
 nature.com disqus.com script allow
@@ -311,6 +318,8 @@ pbs.org www.ustream.tv frame allow
 pbs.org www.ustream.tv script allow
 plaintextoffenders.com www.tumblr.com frame allow
 plateau.com fpdownload.adobe.com plugin allow
+plateau.com plateau.com script allow
+plateau.com plateau.com xhr allow
 playstarbound.com ytimg.com script allow
 plos.org ajax.googleapis.com script allow
 plos.org cdn.mathjax.org script allow
@@ -369,8 +378,11 @@ serverfault.com serverfault.com xhr allow
 serverfault.com sockets.stackexchange.com xhr allow
 serverfault.com sstatic.net script allow
 sfgov.org ajax.googleapis.com script allow
+shinyapps.io shinyapps.io script allow
+shinyapps.io shinyapps.io xhr allow
 slashdot.org a.fsdn.com script allow
 slashdot.org fsdn.com script allow
+slashdot.org news.slashdot.org xhr allow
 slashdot.org slashcdn.com script allow
 slashdot.org slashdot.org script allow
 stackexchange.com ajax.googleapis.com script allow
@@ -473,3 +485,7 @@ youtube.com www.gstatic.com script allow
 youtube.com www.youtube.com script allow
 youtube.com www.youtube.com xhr allow
 youtube.com ytimg.com script allow
+zoom.us d24cgw3uvb9a9h.cloudfront.net script allow
+zoom.us zoom.us plugin allow
+zoom.us zoom.us script allow
+zoom.us zoom.us xhr allow
