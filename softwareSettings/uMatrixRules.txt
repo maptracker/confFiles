@@ -237,6 +237,8 @@ imgur.com facebook.com frame block
 imgur.com facebook.com other block
 imgur.com facebook.com script block
 imgur.com facebook.com xhr block
+imgur.com imgur.com script allow
+imgur.com s.imgur.com script allow
 imgur.com www.facebook.com * block
 indiegamestand.com api.stripe.com script allow
 indiegamestand.com api.stripe.com xhr allow
@@ -382,7 +384,6 @@ shinyapps.io shinyapps.io script allow
 shinyapps.io shinyapps.io xhr allow
 slashdot.org a.fsdn.com script allow
 slashdot.org fsdn.com script allow
-slashdot.org news.slashdot.org xhr allow
 slashdot.org slashcdn.com script allow
 slashdot.org slashdot.org script allow
 stackexchange.com ajax.googleapis.com script allow
