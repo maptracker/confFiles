@@ -1087,7 +1087,7 @@
 		"name": "HumbleStore",
 		"sections": [
 			{
-				"code": "    .featured-view, .js-featured-view,.about-storefront, #site-xpromo-banner\n    { \n        display : none ! important; \n    }\n    a[href*=\"hmb_campaign\"],\n    label[for='rb-windows'], label[for='rb-android'], label[for='rb-mac'],\n    label[for='rb-alphabetical'], label[for='rb-mac'],\n    label[for='rb-steam'], label[for='rb-uplay']\n    { \n        display: none ! important; \n    }",
+				"code": "    .featured-view, .js-featured-view,.about-storefront, #site-xpromo-banner\n    { \n        display : none ! important; \n    }\n    a[href*=\"hmb_campaign\"],\n    label[for='rb-windows'], label[for='rb-android'], label[for='rb-mac'],\n    label[for='rb-alphabetical'], label[for='rb-mac'],\n    label[for='rb-steam'], label[for='rb-uplay']\n    { \n        display: none ! important; \n    }\n\na[href*=\"hmb_campaign\"] { display: unset ! important; }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
