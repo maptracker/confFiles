@@ -46,6 +46,9 @@ atlassian.net d2uowa935fr33t.cloudfront.net script allow
 bellingcat.com www.youtube.com frame allow
 bellingcat.com www.youtube.com script allow
 bing.com virtualearth.net script allow
+bing.com www.bing.com script allow
+bing.com www.bing.com xhr allow
+bing.com www2.bing.com script allow
 bms.com 1st-party cookie allow
 bms.com ajax.googleapis.com script allow
 bms.com aspnetcdn.com script allow
@@ -141,6 +144,11 @@ fortawesome.github.io ajax.aspnetcdn.com script allow
 fortawesome.github.io ajax.googleapis.com script allow
 fortawesome.github.io cdnjs.cloudflare.com script allow
 fortawesome.github.io maxcdn.bootstrapcdn.com script allow
+gamingonlinux.com googlevideo.com xhr allow
+gamingonlinux.com www.youtube.com frame allow
+gamingonlinux.com www.youtube.com other allow
+gamingonlinux.com www.youtube.com script allow
+gamingonlinux.com www.youtube.com xhr allow
 geneontology.org stanford.edu script allow
 github.com github-cloud.s3.amazonaws.com xhr allow
 github.com github.com script allow
@@ -237,7 +245,9 @@ imgur.com facebook.com frame block
 imgur.com facebook.com other block
 imgur.com facebook.com script block
 imgur.com facebook.com xhr block
+imgur.com i.imgur.com plugin allow
 imgur.com imgur.com script allow
+imgur.com imgur.com xhr allow
 imgur.com s.imgur.com script allow
 imgur.com www.facebook.com * block
 indiegamestand.com api.stripe.com script allow
@@ -346,6 +356,7 @@ r-project.org xmpalantir.wu.ac.at frame allow
 rawgit.com mathjax.org script allow
 reddit.com cdn.embedly.com frame allow
 reddit.com g.redditmedia.com other allow
+reddit.com g.redditmedia.com plugin allow
 reddit.com redditstatic.com script allow
 reddit.com v.redd.it xhr allow
 reddit.com www.redditmedia.com frame allow
@@ -434,6 +445,8 @@ twitter.com twitter.com xhr allow
 usps.com serverapi.arcgisonline.com script allow
 vimeo.com f.vimeocdn.com script allow
 vimeo.com fpdl.vimeocdn.com other allow
+vimeo.com player.vimeo.com other allow
+vimeo.com player.vimeo.com script allow
 vimeo.com vimeocdn.com frame allow
 vimeo.com vimeocdn.com other allow
 vimeo.com vimeocdn.com script allow
@@ -458,6 +471,13 @@ winehq.org bootstrapcdn.com script allow
 winehq.org google.com script allow
 winehq.org jquery.com script allow
 winehq.org www.googleapis.com script allow
+wunderground.com mapbox.com xhr allow
+wunderground.com polyfill.io script allow
+wunderground.com weather.com xhr allow
+wunderground.com wunderground.com script allow
+wunderground.com wunderground.com xhr allow
+wunderground.com www.wunderground.com script allow
+wunderground.com wxug.com script allow
 xkcd.com ajax.googleapis.com script allow
 xkcd.com cdn.mathjax.org script allow
 yahoo.com * cookie block
