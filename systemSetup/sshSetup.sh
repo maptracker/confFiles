@@ -5,6 +5,9 @@
 ##   2. Start the SSH agent if it's not already running
 ##   3. Add the key if it hasn't already been attached
 
+## It has one optional argument, which will be the name of the key
+## file in ~/.ssh . By default 'id_rsa' will be used.
+
 ## Copyright (C) 2017 Charles A. Tilford
 ##   Where I have used (or been inspired by) public code it will be noted
 
@@ -28,14 +31,32 @@ LICENSE_GPL3="
 ## Make sure id_rsa is established, that the SSH agent is running
 ## https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
 
+keyName=${1:-id_rsa}
+
 ## script folder: https://stackoverflow.com/a/246128
 my_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 . "$my_dir/../generalUtilities/_util_functions.sh"
 
-keyFile="$HOME/.ssh/id_rsa"
+if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+    ## Determine if script has been sourced:
+    ##   https://stackoverflow.com/a/2684300
+    msg "$FgRed" "
+
+To properly attach the ssh-agent to your current shell, you need to
+*source* this script, rather than simply running it. To do so, call
+the script with a period and whitespace ('. ') at the front of the
+script, eg:
+
+. $0 '$keyName'
+
+"
+    exit
+fi
+
+keyFile="$HOME/.ssh/$keyName"
 
 if [[ -s "$keyFile" ]]; then
-    msg "102;34" "
+    msg "102;$FgBlue" "
 Keyfile already exists:
   $keyFile
 Random art:"
@@ -44,10 +65,14 @@ Random art:"
     ssh-keygen -lv -f "$keyFile"
 else
     ## Generate new SSH key
-    msg "35" "
+    msg "$FgMagenta" "
 Setting up SSH keys and adding to agent
   $keyFile
-"
+
+    It is strongly recommended you use a passphrase to protect the
+    private key, but of course you need to remember or record it for
+    the key to be used later."
+    echo
     my_host=`hostname`
     ssh-keygen -t rsa -b 4096 -f "$keyFile" -C "$my_host"
 
@@ -55,16 +80,16 @@ fi
 
 ## Isolate the fingerprint, we will use it to verify it has been added.
 foundKey=`ssh-keygen -l -f "$keyFile"`
-keyFingerprint=`echo "$foundKey" | egrep -o "SHA256:[A-Za-z0-9]"\+`
+keyFingerprint=`echo "$foundKey" | egrep -o "SHA256:[A-Za-z0-9\+]"\+`
 if [[ -z "$keyFingerprint" ]]; then
-    msg "31;43" "
+    msg "$FgRed;$BgYellow" "
 [!!] Failed to determine your key fingerprint!
      This is probably because I am presuming  it starts with 'SHA256'
      Here is what I found:
        $foundKey
      Exiting...
 "
-    exit
+    return
 fi
 
 
@@ -72,61 +97,63 @@ if [[ -z "$SSH_AGENT_PID" ]]; then
     ## Check if agent is running: https://stackoverflow.com/a/40549864
     eval $(ssh-agent -s)
     if [[ -z "$SSH_AGENT_PID" ]]; then
-        msg "31;43" "
+        msg "$FgRed;$BgYellow" "
 [!!] Failed to start SSH agent!
      Exiting...
 "
-        exit
+        return
     else
-        msg "46;0;35" "
+        msg "$BgCyan;0;$FgMagenta" "
 SSH agent has been started
   PID $SSH_AGENT_PID"
         echo
     fi
 else
-    msg "102;34" "
+    msg "102;$FgBlue" "
 SSH agent is already running
   PID $SSH_AGENT_PID"
     echo
 fi
 
 ## Check if key is added to agent: https://unix.stackexchange.com/a/58977
-keyThere=`ssh-add -l | egrep -o "$keyFingerprint"`
+keyThere=`ssh-add -l | grep -oF "$keyFingerprint"`
+
 if [[ -z "$keyThere" ]]; then
-    msg "35" "
+    msg "$FgMagenta" "
 Adding your key to the agent - you will be asked for your passphrase
 "
     ssh-add "$keyFile"
-    keyThere=`ssh-add -l | egrep -o "$keyFingerprint"`
+    keyThere=`ssh-add -l | grep -oF "$keyFingerprint"`
     if [[ -z "$keyThere" ]]; then
-        msg "31;43" "
+        msg "$FgRed;$BgYellow" "
 [!!] Apparently failed to add your key to the agent...
      Exiting...
 "
-        exit
+        return
     fi
 else
-    msg "102;34" "
+    msg "102;$FgBlue" "
 Your key is already added to the agent:
   $keyFingerprint"
     echo
 fi
 
-msg "34;103" "
+msg "$FgBlue;103" "
 Your key is available and attached to the agent.
   Remote hosts should be given your public key:"
 
 pub=`cat "$keyFile".pub`
 
-msg "36" "
+msg "$FgCyan" "
 $pub"
 
 wai=`whoami`
 
 ## ssh-copy-id: https://askubuntu.com/a/875058
-msg "30;47" "
+msg "$FgBlack;$BgWhite" "
 Usage examples:
          Test GitHub:   ssh -T git@github.com
+   Multiple SSH keys:   https://stackoverflow.com/a/3828682
   Add to remote host:   ssh-copy-id -i ${keyFile}.pub ${wai}@<hostname>
-                        ## Host needs 'PasswordAuthentication yes' in /etc/ssh/sshd_config
-"
+                        ## Host needs 'PasswordAuthentication yes' in /etc/ssh/sshd_config"
+echo
