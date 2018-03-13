@@ -33,14 +33,10 @@ LICENSE_GPL3="
 
 keyName=${1:-id_rsa}
 
-## script folder: https://stackoverflow.com/a/246128
-my_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-. "$my_dir/../generalUtilities/_util_functions.sh"
-
 if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
     ## Determine if script has been sourced:
     ##   https://stackoverflow.com/a/2684300
-    msg "$FgRed" "
+    echo "
 
 To properly attach the ssh-agent to your current shell, you need to
 *source* this script, rather than simply running it. To do so, call
@@ -53,8 +49,31 @@ script, eg:
     exit
 fi
 
+## script folder: https://stackoverflow.com/a/246128
+my_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+utilFunc=`readlink -f $my_dir/../generalUtilities/_util_functions.sh`
+if [[ -e "$utilFunc" ]]; then
+    ## Source in the utility functions, here used for colorized messaging
+    . "$utilFunc"
+else
+    ## Stop after warning the user the util script will be needed:
+    echo "
+
+This script expects a set of utility functions at this location:
+
+  $utilFunc
+
+The file can be downloaded here:
+
+  https://raw.githubusercontent.com/VCF/generalUtilities/master/_util_functions.sh
+
+"
+    return
+fi
+
 keyFile="$HOME/.ssh/$keyName"
 
+## Do we need to make the keyfile?
 if [[ -s "$keyFile" ]]; then
     msg "102;$FgBlue" "
 Keyfile already exists:
@@ -93,6 +112,7 @@ if [[ -z "$keyFingerprint" ]]; then
 fi
 
 
+## Is the SSH agent running?
 if [[ -z "$SSH_AGENT_PID" ]]; then
     ## Check if agent is running: https://stackoverflow.com/a/40549864
     eval $(ssh-agent -s)
