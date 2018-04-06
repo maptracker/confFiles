@@ -14,6 +14,11 @@ MAJVERS=`echo $VERS | cut -c1` ## "1.2.3" -> "1"
       Adventures encountered while compiling
             (generally in configure)
 
+In aggregate:
+
+sudo apt-get -y install gfortran g++ libreadline-dev xorg-dev \
+    lbzip2 libbz2-dev libxt-dev liblzma-dev
+
 #######################################
 ###### 3.4.3 on Mint 18.3 Sylvia ######
 
@@ -40,7 +45,14 @@ MAJVERS=`echo $VERS | cut -c1` ## "1.2.3" -> "1"
 
 ### error: bzip2 library and headers are required
 
-     ## DID NOT WORK sudo apt-get install lbzip2
+     ## Was not sufficient to just install lbzip2
+
+     ## May be an issue with how ./configure checking version numbers
+     ## with strcmp:  https://stackoverflow.com/q/40639138
+
+     ## For some reason installing the dev package resolved the isse
+
+     sudo apt-get install lbzip2 libbz2-dev
 
 
 ##########################################
