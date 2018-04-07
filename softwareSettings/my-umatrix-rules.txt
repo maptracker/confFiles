@@ -6,8 +6,10 @@ matrix-off: chrome-scheme true
 matrix-off: localhost true
 matrix-off: moz-extension-scheme true
 matrix-off: opera-scheme true
+matrix-off: wyciwyg-scheme true
+noscript-spoof: * true
+referrer-spoof: * true
 referrer-spoof: behind-the-scene false
-ua-spoof: behind-the-scene false
 * * * block
 * * css allow
 * * frame block
@@ -53,12 +55,12 @@ bms.com 1st-party cookie allow
 bms.com ajax.googleapis.com script allow
 bms.com aspnetcdn.com script allow
 bms.com bms.com cookie allow
+bms.com bms.com media allow
 bms.com bms.com other allow
-bms.com bms.com plugin allow
 bms.com bms.com script allow
 bms.com bms.com xhr allow
 bms.com bms.plateau.com cookie allow
-bms.com bms.plateau.com plugin allow
+bms.com bms.plateau.com media allow
 bms.com browser.pipe.aria.microsoft.com xhr allow
 bms.com canvasxpress.org script allow
 bms.com cdn.mathjax.org script allow
@@ -102,6 +104,14 @@ canvasxpress.org raw.githubusercontent.com xhr allow
 charitynavigator.org ajax.googleapis.com script allow
 charitynavigator.org code.jquery.com script allow
 charitynavigator.org d2wy8f7a9ursnm.cloudfront.net script allow
+citi.com accountonline.com script allow
+citi.com citi.com script allow
+citi.com dir.citi.com xhr allow
+citi.com online.citi.com media allow
+citi.com online.citi.com other allow
+citi.com online.citi.com xhr allow
+citi.com www.accountonline.com script allow
+citi.com www.cardbenefits.citi.com xhr allow
 cityofnewyork.us ajax.googleapis.com script allow
 clinicaltrials.gov clinicaltrials.gov script allow
 clinicaltrials.gov clinicaltrials.gov xhr allow
@@ -176,7 +186,7 @@ google.com ajax.googleapis.com script allow
 google.com content.googleapis.com frame allow
 google.com doubleclick.net frame block
 google.com ggpht.com xhr allow
-google.com google.com plugin allow
+google.com google.com media allow
 google.com google.com script allow
 google.com google.com xhr allow
 google.com google.nl cookie allow
@@ -184,7 +194,7 @@ google.com gstatic.com cookie allow
 google.com gstatic.com script allow
 google.com gstatic.com xhr allow
 google.com maps.googleapis.com script allow
-google.com ssl.gstatic.com plugin allow
+google.com ssl.gstatic.com media allow
 google.com ssl.gstatic.com script allow
 google.com translate.googleusercontent.com frame allow
 google.com www.gstatic.com script allow
@@ -245,7 +255,7 @@ imgur.com facebook.com frame block
 imgur.com facebook.com other block
 imgur.com facebook.com script block
 imgur.com facebook.com xhr block
-imgur.com i.imgur.com plugin allow
+imgur.com i.imgur.com media allow
 imgur.com imgur.com script allow
 imgur.com imgur.com xhr allow
 imgur.com s.imgur.com script allow
@@ -278,14 +288,14 @@ khanacademy.org khanacademy.org xhr allow
 khanacademy.org s3.amazonaws.com script allow
 legalplans.com maps.googleapis.com script allow
 live.com cdn.office.net script allow
-live.com live.com plugin allow
+live.com live.com media allow
 live.com live.com script allow
 live.com live.com xhr allow
-lync.com lync.com plugin allow
+lync.com lync.com media allow
 lync.com lync.com script allow
 lync.com lync.com xhr allow
 lync.com vo.msecnd.net script allow
-lynda.com akamaihd.net plugin allow
+lynda.com akamaihd.net media allow
 lynda.com lynda.sc.omtrdc.net image allow
 lynda.com tags.tiqcdn.com script allow
 maptracker.github.io mathjax.org script allow
@@ -318,8 +328,8 @@ nih.gov vo.msecnd.net script allow
 noaa.gov arcgis.com script allow
 noaa.gov arcgis.com xhr allow
 noaa.gov arcgisonline.com xhr allow
+npr.org npr.org media block
 npr.org npr.org other block
-npr.org npr.org plugin block
 pbs.org d2ok2u3bz752mp.cloudfront.net script allow
 pbs.org d3aef1qbbv7i5v.cloudfront.net script allow
 pbs.org d3i6fh83elv35t.cloudfront.net script allow
@@ -329,7 +339,7 @@ pbs.org static-cdn2.ustream.tv script allow
 pbs.org www.ustream.tv frame allow
 pbs.org www.ustream.tv script allow
 plaintextoffenders.com www.tumblr.com frame allow
-plateau.com fpdownload.adobe.com plugin allow
+plateau.com fpdownload.adobe.com media allow
 plateau.com plateau.com script allow
 plateau.com plateau.com xhr allow
 playstarbound.com ytimg.com script allow
@@ -355,8 +365,8 @@ r-project.org xmpalantir.wu.ac.at cookie allow
 r-project.org xmpalantir.wu.ac.at frame allow
 rawgit.com mathjax.org script allow
 reddit.com cdn.embedly.com frame allow
+reddit.com g.redditmedia.com media allow
 reddit.com g.redditmedia.com other allow
-reddit.com g.redditmedia.com plugin allow
 reddit.com redditstatic.com script allow
 reddit.com v.redd.it xhr allow
 reddit.com www.redditmedia.com frame allow
@@ -464,8 +474,8 @@ wikipathways.org wikipathways.org script allow
 wikipedia.org 1st-party * inherit
 wikipedia.org commons.wikimedia.org other allow
 wikipedia.org meta.wikimedia.org script allow
+wikipedia.org upload.wikimedia.org media allow
 wikipedia.org upload.wikimedia.org other allow
-wikipedia.org upload.wikimedia.org plugin allow
 wikipedia.org wikipedia.org script allow
 winehq.org bootstrapcdn.com script allow
 winehq.org google.com script allow
@@ -494,11 +504,11 @@ youtube.com google.com cookie allow
 youtube.com google.com frame allow
 youtube.com google.com script allow
 youtube.com google.com xhr allow
-youtube.com googlevideo.com plugin allow
+youtube.com googlevideo.com media allow
 youtube.com googlevideo.com xhr allow
 youtube.com gstatic.com frame allow
 youtube.com gstatic.com script allow
-youtube.com s.ytimg.com plugin allow
+youtube.com s.ytimg.com media allow
 youtube.com s.ytimg.com script allow
 youtube.com ssl.gstatic.com script allow
 youtube.com www.google.com script allow
@@ -507,6 +517,6 @@ youtube.com www.youtube.com script allow
 youtube.com www.youtube.com xhr allow
 youtube.com ytimg.com script allow
 zoom.us d24cgw3uvb9a9h.cloudfront.net script allow
-zoom.us zoom.us plugin allow
+zoom.us zoom.us media allow
 zoom.us zoom.us script allow
 zoom.us zoom.us xhr allow
