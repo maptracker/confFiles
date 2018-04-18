@@ -3079,90 +3079,6 @@
 		"id": 147
 	},
 	{
-		"installDate": 1514310773671,
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"name": "TamperMonkey",
-		"sections": [
-			{
-				"code": "#curtain { display: none ! important; }",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"tampermonkey.net"
-				],
-				"regexps": []
-			}
-		],
-		"id": 148
-	},
-	{
-		"installDate": 1513594059500,
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"name": "PRI",
-		"sections": [
-			{
-				"code": ".donate__story-msg, .sharing-links__list, .promo-box--promo,\n.secondary, .sponsors, footer, .navbar__wrapper, .pane-comments,\n.pane-custom-social-networking-links-header\n{ display: none ! important; }\n\nbody { background: unset ! important }",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"pri.org"
-				],
-				"regexps": []
-			}
-		],
-		"id": 149
-	},
-	{
-		"installDate": 1514048573900,
-		"enabled": false,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"name": "Vice",
-		"sections": [
-			{
-				"code": ".hz, header, .post-content, .frames, .av {display:none ! important;}\n\n.ii {height: unset ! important;}\n.ih {width: unset ! important; }\n.if {left:unset ! important;}\n.o { overflow: unset ! important;}\n.k {position: unset ! important;}",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"vice.com"
-				],
-				"regexps": []
-			}
-		],
-		"id": 150
-	},
-	{
-		"installDate": 1514765853600,
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"name": "IrishTimes",
-		"sections": [
-			{
-				"code": "amp-sidebar, amp-app-banner, amp-analytics, .sponsored, \ndiv[class*='amp-'], #subscribe-body-amp, section,\nfooter, aside, .pull-out-cta_dark { display: none !important; }",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"irishtimes.com"
-				],
-				"regexps": []
-			}
-		],
-		"id": 151
-	},
-	{
 		"installDate": 1516561189700,
 		"enabled": true,
 		"updateUrl": null,
@@ -3181,6 +3097,111 @@
 				"regexps": []
 			}
 		],
+		"id": 148
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1514310773671,
+		"name": "TamperMonkey",
+		"sections": [
+			{
+				"code": "#curtain { display: none ! important; }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"tampermonkey.net"
+				],
+				"regexps": []
+			}
+		],
+		"id": 149
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1513594059500,
+		"name": "PRI",
+		"sections": [
+			{
+				"code": ".donate__story-msg, .sharing-links__list, .promo-box--promo,\n.secondary, .sponsors, footer, .navbar__wrapper, .pane-comments,\n.pane-custom-social-networking-links-header\n{ display: none ! important; }\n\nbody { background: unset ! important }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"pri.org"
+				],
+				"regexps": []
+			}
+		],
+		"id": 150
+	},
+	{
+		"enabled": false,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1514048573900,
+		"name": "Vice",
+		"sections": [
+			{
+				"code": ".hz, header, .post-content, .frames, .av {display:none ! important;}\n\n.ii {height: unset ! important;}\n.ih {width: unset ! important; }\n.if {left:unset ! important;}\n.o { overflow: unset ! important;}\n.k {position: unset ! important;}",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"vice.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 151
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "IrishTimes",
+		"sections": [
+			{
+				"code": "amp-sidebar, amp-app-banner, amp-analytics, .sponsored, \ndiv[class*='amp-'], #subscribe-body-amp, section,\nfooter, aside, .pull-out-cta_dark { display: none !important; }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"irishtimes.com"
+				],
+				"regexps": []
+			}
+		],
+		"installDate": 1514765853600,
 		"id": 152
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1524058198984,
+		"name": "Zillow",
+		"sections": [
+			{
+				"code": "#seller-lead-contact-form-c, .owner-dashboard, #seller-lead-contact-form-ab,\n.zsgxw-subfooter, .hdp-ov-inline, div[data-usabilla=\"contact-form\"],\n.nfs-popup, #search-map-upsell, .zss-account-popup-container,\n.cf-la-agent-module, .yui3-ajax-form-content, #listing-provided-by\n{ display: none ! important; }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"zillow.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 153
 	}
 ]
