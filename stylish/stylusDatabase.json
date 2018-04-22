@@ -1087,7 +1087,7 @@
 		"name": "HumbleStore",
 		"sections": [
 			{
-				"code": "    .featured-view, .js-featured-view,.about-storefront, #site-xpromo-banner\n    { \n        display : none ! important; \n    }\n    a[href*=\"hmb_campaign\"],\n    label[for='rb-windows'], label[for='rb-android'], label[for='rb-mac'],\n    label[for='rb-alphabetical'], label[for='rb-mac'],\n    label[for='rb-steam'], label[for='rb-uplay']\n    { \n        display: none ! important; \n    }\n\na[href*=\"hmb_campaign\"] { display: unset ! important; }",
+				"code": "    .featured-view, .js-featured-view,.about-storefront, #site-xpromo-banner\n    { \n        display : none ! important; \n    }\n    a[href*=\"hmb_campaign\"],\n    label[for='rb-windows'], label[for='rb-android'], label[for='rb-mac'],\n    label[for='rb-alphabetical'], label[for='rb-mac'],\n    label[for='rb-steam'], label[for='rb-uplay']\n    { \n        display: none ! important; \n    }\n\na[href*=\"hmb_campaign\"] { display: unset ! important; }\n.timer { background-color: yellow ! important; }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -3079,6 +3079,90 @@
 		"id": 147
 	},
 	{
+		"installDate": 1514310773671,
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "TamperMonkey",
+		"sections": [
+			{
+				"code": "#curtain { display: none ! important; }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"tampermonkey.net"
+				],
+				"regexps": []
+			}
+		],
+		"id": 148
+	},
+	{
+		"installDate": 1513594059500,
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "PRI",
+		"sections": [
+			{
+				"code": ".donate__story-msg, .sharing-links__list, .promo-box--promo,\n.secondary, .sponsors, footer, .navbar__wrapper, .pane-comments,\n.pane-custom-social-networking-links-header\n{ display: none ! important; }\n\nbody { background: unset ! important }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"pri.org"
+				],
+				"regexps": []
+			}
+		],
+		"id": 149
+	},
+	{
+		"installDate": 1514048573900,
+		"enabled": false,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "Vice",
+		"sections": [
+			{
+				"code": ".hz, header, .post-content, .frames, .av {display:none ! important;}\n\n.ii {height: unset ! important;}\n.ih {width: unset ! important; }\n.if {left:unset ! important;}\n.o { overflow: unset ! important;}\n.k {position: unset ! important;}",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"vice.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 150
+	},
+	{
+		"installDate": 1514765853600,
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "IrishTimes",
+		"sections": [
+			{
+				"code": "amp-sidebar, amp-app-banner, amp-analytics, .sponsored, \ndiv[class*='amp-'], #subscribe-body-amp, section,\nfooter, aside, .pull-out-cta_dark { display: none !important; }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"irishtimes.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 151
+	},
+	{
 		"installDate": 1516561189700,
 		"enabled": true,
 		"updateUrl": null,
@@ -3097,99 +3181,15 @@
 				"regexps": []
 			}
 		],
-		"id": 148
-	},
-	{
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"installDate": 1514310773671,
-		"name": "TamperMonkey",
-		"sections": [
-			{
-				"code": "#curtain { display: none ! important; }",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"tampermonkey.net"
-				],
-				"regexps": []
-			}
-		],
-		"id": 149
-	},
-	{
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"installDate": 1513594059500,
-		"name": "PRI",
-		"sections": [
-			{
-				"code": ".donate__story-msg, .sharing-links__list, .promo-box--promo,\n.secondary, .sponsors, footer, .navbar__wrapper, .pane-comments,\n.pane-custom-social-networking-links-header\n{ display: none ! important; }\n\nbody { background: unset ! important }",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"pri.org"
-				],
-				"regexps": []
-			}
-		],
-		"id": 150
-	},
-	{
-		"enabled": false,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"installDate": 1514048573900,
-		"name": "Vice",
-		"sections": [
-			{
-				"code": ".hz, header, .post-content, .frames, .av {display:none ! important;}\n\n.ii {height: unset ! important;}\n.ih {width: unset ! important; }\n.if {left:unset ! important;}\n.o { overflow: unset ! important;}\n.k {position: unset ! important;}",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"vice.com"
-				],
-				"regexps": []
-			}
-		],
-		"id": 151
-	},
-	{
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"name": "IrishTimes",
-		"sections": [
-			{
-				"code": "amp-sidebar, amp-app-banner, amp-analytics, .sponsored, \ndiv[class*='amp-'], #subscribe-body-amp, section,\nfooter, aside, .pull-out-cta_dark { display: none !important; }",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"irishtimes.com"
-				],
-				"regexps": []
-			}
-		],
-		"installDate": 1514765853600,
 		"id": 152
 	},
 	{
+		"installDate": 1524058198984,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
 		"url": null,
 		"originalMd5": null,
-		"installDate": 1524058198984,
 		"name": "Zillow",
 		"sections": [
 			{
