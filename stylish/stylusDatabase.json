@@ -1887,7 +1887,7 @@
 		"name": "Politico",
 		"sections": [
 			{
-				"code": "    .story-suggestions, .nav-micro, .global-header, aside, \n    .story-continued, .story-interrupt, .story-tools, .story-share,\n    .story-supplement, nav, .global-footer, .video-object,\n#superComments\n    { \n        display: none ! important;\n    }",
+				"code": "    .story-suggestions, .nav-micro, .global-header, aside, \n    .story-continued, .story-interrupt, .story-tools, .story-share,\n    .story-supplement, nav, .global-footer, .video-object,\n#superComments, .reveal-at-extra, .fixed-top, #js-top-header, footer\n    { \n        display: none ! important;\n    }\n\nbody { visibility: unset ! important; }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -3203,5 +3203,36 @@
 			}
 		],
 		"id": 153
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1526829859300,
+		"name": "Test",
+		"sections": [
+			{
+				"code": "/* URL style */\ndiv.example { background-color: purple; }",
+				"urls": [
+					"https://www.example.com"
+				],
+				"urlPrefixes": [],
+				"domains": [],
+				"regexps": []
+			},
+			{
+				"code": "/* domain style, two domains */\ndiv.example { background-color: gold; }\nspan.test { font-weight: bold ! important;}",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"www.example.com",
+					"store.example.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 154
 	}
 ]
