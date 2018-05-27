@@ -178,7 +178,7 @@
 		"name": "Bloomberg",
 		"sections": [
 			{
-				"code": "    noscript, #nav_news_dropdown_container, #disqus_thread, \n    #story_social_toolbar_bottom, #market_snapshot_simple,\n    #footer, .dropdown_section, .story_inline, .ham_nav_container, \n    #story_social_toolbar_top_container, #header_container,\n    .header_top_unit, .social_tout, header.global,aside, #global_footer  \n    { \n        display: none ! important; \n    }",
+				"code": "    noscript, #nav_news_dropdown_container, #disqus_thread, \n    #story_social_toolbar_bottom, #market_snapshot_simple,\n    #footer, .dropdown_section, .story_inline, .ham_nav_container, \n    #story_social_toolbar_top_container, #header_container,\n    .header_top_unit, .social_tout, header.global,aside, #global_footer,\n.secure-tip-tout-v2, .terminal-tout-v2, footer\n    { \n        display: none ! important; \n    }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -346,7 +346,7 @@
 		"name": "CNN",
 		"sections": [
 			{
-				"code": "    .cnnStryVidCont, .map-canvas, .cnn_stryshrwdgtbtm, #cnn_ftrcntnt, \n    .js-owl-filmstrip, #cnn_hdr-main, #large-media, iframe, \n    #leaf-footer-article-zone, .el__featured-video, .pg-rail-tall__head,\n    footer, #story-bottom, header, .m-share, .fb-send-to-messenger-container\n    { \n        display : none ! important; \n    }\n    .media__image { transition: unset ! important; }\nbody { background-color: unset ! important; }",
+				"code": "    .cnnStryVidCont, .map-canvas, .cnn_stryshrwdgtbtm, #cnn_ftrcntnt, \n    .js-owl-filmstrip, #cnn_hdr-main, #large-media, iframe, \n    #leaf-footer-article-zone, .el__featured-video, .pg-rail-tall__head,\n    footer, #story-bottom, header, .m-share, .fb-send-to-messenger-container,\n.nav-expanded, .nav, .breaking-news, #nav__plain-header, .cn, .zn-body__read-more\n    { \n        display : none ! important; \n    }\n    .media__image { transition: unset ! important; }\nbody { background-color: unset ! important; }\n\n.pg-vertical { right: unset !important; }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -451,7 +451,7 @@
 		"name": "DailyBeast",
 		"sections": [
 			{
-				"code": "    .blockquote, .cheatSignUp, .comments-link, .social, .cheatAd, .ad,\n    #utilitiyLinks, .fb-like, .login-search-nav, .topicHeading,\n    .brightcove, .cheat-aside \n    { \n        display: none ! important; \n    }",
+				"code": "    .blockquote, .cheatSignUp, .comments-link, .social, .cheatAd, .ad,\n    #utilitiyLinks, .fb-like, .login-search-nav, .topicHeading,\n    .brightcove, .cheat-aside , .InlineNewsletter, footer\n    { \n        display: none ! important; \n    }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -2013,7 +2013,7 @@
 		"name": "Reuters",
 		"sections": [
 			{
-				"code": "    .footer-trnetwork, .footer-disclaimer, .footer-top, #specialFeature,\n    .slider-module,\n    div[class*='TopBar'], div[class*='CanvasAd'], div[class^='Header_'],\n    div[data-template='footer']\n    { \n        display: none !important;\n    }\n    div[class^='ArticleHeader_'] \n    { \n      padding: unset ! important; \n      margin-left: unset ! important;\n      margin-right: unset ! important;\n    }\n    p { margin-bottom: 5px ! important; }\n\ndiv[class*='TwoColumnLayout_column'] { width: unset ! important; }",
+				"code": "    .footer-trnetwork, .footer-disclaimer, .footer-top, #specialFeature,\n    .slider-module,\n    div[class*='TopBar'], div[class*='CanvasAd'], div[class^='Header_'],\n    div[data-template='footer'] ,.module, div[class^='inline-container']\n    { \n        display: none !important;\n    }\n    div[class^='ArticleHeader_'] \n    { \n      padding: unset ! important; \n      margin-left: unset ! important;\n      margin-right: unset ! important;\n    }\n    p { margin-bottom: 5px ! important; }\n\ndiv[class*='TwoColumnLayout_column'] { width: unset ! important; }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
