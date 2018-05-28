@@ -2752,7 +2752,7 @@
 		"name": "Wikipedia",
 		"sections": [
 			{
-				"code": "    #cn-sliding-ad, #centralNotice,#p-lang, \n    #siteNotice, #articleFeedbackv5-bottomrighttab , #frbanner3, #frbanner4,\n    #mw-panel, #frb-inline\n    { \n        display:none ! important; \n    }",
+				"code": "    #cn-sliding-ad, #centralNotice,#p-lang, \n    #siteNotice, #articleFeedbackv5-bottomrighttab , #frbanner3, #frbanner4,\n    #mw-panel, #frb-inline, .mwe-popups\n    { \n        display:none ! important; \n    }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
