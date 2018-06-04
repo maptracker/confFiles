@@ -135,7 +135,7 @@
 		"name": "BBC",
 		"sections": [
 			{
-				"code": "    .share, #comp-pattern-library-2, #core-navigation, .tags-container,\n    .orb-footer-inner, #comp-features-and-analysis, .related-links,\n    #comp-top-stories-promo, .player-with-placeholder__caption,\n.navigation, #orb-header, .comments-button\n    { display : none ! important; }",
+				"code": "    .share, #comp-pattern-library-2, #core-navigation, .tags-container,\n    .orb-footer-inner, #comp-features-and-analysis, .related-links,\n    #comp-top-stories-promo, .player-with-placeholder__caption,\n.navigation, #orb-header, .comments-button, [class^=\"primary-nav\"],\n[class^=\"secondary-nav\"], .sp-media-asset, .story-share, #get-inspired\n    { display : none ! important; }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -1508,7 +1508,7 @@
 		"name": "NbcNews",
 		"sections": [
 			{
-				"code": "    .inlineVideo, #siteheader, footer, .paginationDiv,\n    .stack-l-image-lede-container,.sitewide-footer\n    { \n        display : none ! important; \n    }",
+				"code": "    .inlineVideo, #siteheader, footer, .paginationDiv,\n    .stack-l-image-lede-container,.sitewide-footer, header,\n#editors-picks, .panel_show-tease, #js-facebook-timeline,\n.item-heading_sm, .twitter-timeline, .alert, .social-list\n    { \n        display : none ! important; \n    }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -3064,14 +3064,15 @@
 		"md5Url": null,
 		"url": null,
 		"originalMd5": null,
-		"name": "MiamiHerald",
+		"name": "McClatchyCompany",
 		"sections": [
 			{
 				"code": "#video-widget, .subscription-cta-widget, .highline-quote, #footer,\n.commenting-container, .share-tools-wrapper\n{ display: none ! important; }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
-					"miamiherald.com"
+					"miamiherald.com",
+					"sacbee.com"
 				],
 				"regexps": []
 			}
