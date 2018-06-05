@@ -3235,5 +3235,26 @@
 			}
 		],
 		"id": 154
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1528194352000,
+		"name": "Vox",
+		"sections": [
+			{
+				"code": "#privacy-consent, .c-social-buttons, .c-newsletter_signup_box, .c-compact-river,\nfooter, header, .l-header\n{ display: none ! important; }\n\n.l-wrapper {margin-top: unset ! important; }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"vox.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 155
 	}
 ]
