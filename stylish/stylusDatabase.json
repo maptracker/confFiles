@@ -1129,7 +1129,7 @@
 		"name": "Imgur",
 		"sections": [
 			{
-				"code": "    #cta-container-placeholder, #fixed-side-footer-links, #promoted-spotlight\n    { \n        display : none ! important; \n    }\n\n.promoted-tag { font-size: 600% ! important; \n    background-color: red ! important;\n\tcolor: yellow ! important; \n    display: block ! important;\n    z-index: 1000 ! important;\n    height: 1000px ! important; }\n",
+				"code": "    #cta-container-placeholder, #fixed-side-footer-links, #promoted-spotlight,\n.BetaSignUp\n    { \n        display : none ! important; \n    }\n\n.promoted-tag { font-size: 600% ! important; \n    background-color: red ! important;\n\tcolor: yellow ! important; \n    display: block ! important;\n    z-index: 1000 ! important;\n    height: 1000px ! important; }\n",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -1508,11 +1508,12 @@
 		"name": "NbcNews",
 		"sections": [
 			{
-				"code": "    .inlineVideo, #siteheader, footer, .paginationDiv,\n    .stack-l-image-lede-container,.sitewide-footer, header,\n#editors-picks, .panel_show-tease, #js-facebook-timeline,\n.item-heading_sm, .twitter-timeline, .alert, .social-list\n    { \n        display : none ! important; \n    }",
+				"code": "    .inlineVideo, #siteheader, footer, .paginationDiv,\n    .stack-l-image-lede-container,.sitewide-footer, header,\n#editors-picks, .panel_show-tease, #js-facebook-timeline,\n.item-heading_sm, .twitter-timeline, .alert, .social-list,\n#tbFilmStrip, .newsletterSignupBox, .socialNetworks-top, .footer,\n#article-comments, .adcontainer, #fb-root, .video, .videoPlayButton,\ndiv[id^='embeddedVideo']\n    { \n        display : none ! important; \n    }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
-					"nbcnews.com"
+					"nbcnews.com",
+					"nbcmiami.com"
 				],
 				"regexps": []
 			}
@@ -1971,7 +1972,7 @@
 		"name": "Reddit",
 		"sections": [
 			{
-				"code": "    div.entry.unvoted ul.flat-list.buttons { \n        display: block ! important; \n    }\n    body { background : none !important;  }\n\n/* 2018-04-09 - drastic rewrite of DOM, not sure how many classes are stable */\n\n/* Ick. Stupid pop-up subscription pane*/\n.modal-open { overflow: unset ! important; }\n\n    .promotedlink, #siteTable_promoted,  .promoted, .arrow, div.side,\n    #header-bottom-right, .footer-parent, #cta-container-placeholder,\n    #fixed-side-footer-links, #recommendations, #promoted-spotlight,\n    #eu-cookie-policy, .report-button, .flair, .morecomments,\n.commentsignupbar, .listingsignupbar, .welcome, #onboarding-splash,\n#hamburgers, .s6prp9s-8, .s1l07lbt-0, .s1cwcagp-6, #block-homepage\n    { \n        display: none ! important; \n    }\n\n/* Pop-up menu for hamburger - interfers with essentially all other elements */\n.gCimVU::before { width: 0px ! important; }\n\n.s1w22l7l-0, .s6prp9s-7 {width: 900px ! important; }\n\n    ul.flat-list.buttons { \n        display: none ! important; \n    }\n\n    .comment { \n        padding: 0px ! important; \n        margin-bottom: 0px ! important; \n    }\n\n    body div.content { \n        margin: 0px 0px 0px 0px ! important; \n    }\n\n    /* Sites that don't play well with my addons */\n    a[href*=\"gfycat.com\"], a[href*=\"streamable.com\"]\n    {\n        color: red ! important;\n        background-color: #999 ! important;\n    }",
+				"code": "    div.entry.unvoted ul.flat-list.buttons { \n        display: block ! important; \n    }\n    body { background : none !important;  }\n\n/* 2018-04-09 - drastic rewrite of DOM, not sure how many classes are stable */\n\n/* Ick. Stupid pop-up subscription pane*/\n.modal-open { overflow: unset ! important; }\n\n    .promotedlink, #siteTable_promoted,  .promoted, .arrow, div.side,\n    #header-bottom-right, .footer-parent, #cta-container-placeholder,\n    #fixed-side-footer-links, #recommendations, #promoted-spotlight,\n    #eu-cookie-policy, .report-button, .flair, .morecomments,\n.commentsignupbar, .listingsignupbar, .welcome, #onboarding-splash,\n#hamburgers, .s6prp9s-8, .s1l07lbt-0, .s1cwcagp-6, #block-homepage\n    { \n        display: none ! important; \n    }\n\n/* Pop-up menu for hamburger - interfers with essentially all other elements */\n.gCimVU::before { width: 0px ! important; }\n\n.s1w22l7l-0, .s6prp9s-7 {width: 900px ! important; }\n\n    ul.flat-list.buttons { \n        display: none ! important; \n    }\n\n    .comment { \n        padding: 0px ! important; \n        margin-bottom: 0px ! important; \n    }\n\n    body div.content { \n        margin: 0px 0px 0px 0px ! important; \n    }\n\n    /* Sites that don't play well with my addons */\n    a[href*=\"gfycat.com\"], a[href*=\"streamable.com\"], a[href*=\"v.reddit.com\"]\n    {\n        color: red ! important;\n        background-color: #999 ! important;\n    }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -2353,7 +2354,7 @@
 		"name": "TheHill",
 		"sections": [
 			{
-				"code": "    .region-column-left, .left-sidebar-space, .blogs-social-wrp, .left-sidebar,\n    .block-disqus, #block-thehill-blocks-footer-signup, .region-bottom-column2,\n    .item-pos\n    { \n        display: none!important;\n    }\n    \n    .content-wrapper {\n        padding-left: 0px ! important;\n    }\n    \n    #main, .mostpopular-item, #block-mostpopular-1 { \n        padding: 0 0 0 0  ! important; \n    }\n    \n    .content-wrapper { \n        padding-left: 5px ! important; \n    }\n    .xxxxsidebars { \n        width: 200px ! important;\n    }",
+				"code": "    .region-column-left, .left-sidebar-space, .blogs-social-wrp, .left-sidebar,\n    .block-disqus, #block-thehill-blocks-footer-signup, .region-bottom-column2,\n    .item-pos, .page-bottom\n    { \n        display: none!important;\n    }\n    \n    .content-wrapper {\n        padding-left: 0px ! important;\n    }\n    \n    #main, .mostpopular-item, #block-mostpopular-1 { \n        padding: 0 0 0 0  ! important; \n    }\n    \n    .content-wrapper { \n        padding-left: 5px ! important; \n    }\n    .xxxxsidebars { \n        width: 200px ! important;\n    }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -3237,12 +3238,12 @@
 		"id": 154
 	},
 	{
+		"installDate": 1528194352000,
 		"enabled": true,
 		"updateUrl": null,
 		"md5Url": null,
 		"url": null,
 		"originalMd5": null,
-		"installDate": 1528194352000,
 		"name": "Vox",
 		"sections": [
 			{
@@ -3256,5 +3257,47 @@
 			}
 		],
 		"id": 155
+	},
+	{
+		"installDate": 1528278388200,
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "bing.com",
+		"sections": [
+			{
+				"code": "#contentid { width: 1000px ! important; }\n\ndiv[url^='http://www.espn.com'],\ndiv[url^='http://www.tmz.com'],\ndiv[url^='https://www.thesun.co.uk'],\ndiv[url^='https://www.foxsports.com'],\ndiv[url^='https://www.stuff.co.nz'],\ndiv[url^='https://www.wsj.com'],\ndiv[url^='https://www.mirror.co.uk'],\ndiv[url^='http://www.nydailynews.com'],\ndiv[url^='zzzz'],\ndiv[url^='zzzz'],\ndiv[url^='zzzz'],\ndiv[url^='zzzz'],\ndiv[url^='zzzz'],\ndiv[url^='zzzz'],\ndiv[url^='zzzz'],\ndiv[url^='zzzz'],\ndiv[url^='http://www.dailymail']\n{ display: none ! important; }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"bing.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 156
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1528623401800,
+		"name": "TheGuardian",
+		"sections": [
+			{
+				"code": ".submeta__share, .submeta__syndication, .js-most-popular-footer, footer, .new-header__inner\n{ display: none ! important; }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"theguardian.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 157
 	}
 ]
