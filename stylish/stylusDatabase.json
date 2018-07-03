@@ -135,7 +135,7 @@
 		"name": "BBC",
 		"sections": [
 			{
-				"code": "    .share, #comp-pattern-library-2, #core-navigation, .tags-container,\n    .orb-footer-inner, #comp-features-and-analysis, .related-links,\n    #comp-top-stories-promo, .player-with-placeholder__caption,\n.navigation, #orb-header, .comments-button\n    { display : none ! important; }",
+				"code": "    .share, #comp-pattern-library-2, #core-navigation, .tags-container,\n    .orb-footer-inner, #comp-features-and-analysis, .related-links,\n    #comp-top-stories-promo, .player-with-placeholder__caption,\n.navigation, #orb-header, .comments-button, [class^=\"primary-nav\"],\n[class^=\"secondary-nav\"], .sp-media-asset, .story-share, #get-inspired\n    { display : none ! important; }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -178,7 +178,7 @@
 		"name": "Bloomberg",
 		"sections": [
 			{
-				"code": "    noscript, #nav_news_dropdown_container, #disqus_thread, \n    #story_social_toolbar_bottom, #market_snapshot_simple,\n    #footer, .dropdown_section, .story_inline, .ham_nav_container, \n    #story_social_toolbar_top_container, #header_container,\n    .header_top_unit, .social_tout, header.global,aside, #global_footer  \n    { \n        display: none ! important; \n    }",
+				"code": "    noscript, #nav_news_dropdown_container, #disqus_thread, \n    #story_social_toolbar_bottom, #market_snapshot_simple,\n    #footer, .dropdown_section, .story_inline, .ham_nav_container, \n    #story_social_toolbar_top_container, #header_container,\n    .header_top_unit, .social_tout, header.global,aside, #global_footer,\n.secure-tip-tout-v2, .terminal-tout-v2, footer\n    { \n        display: none ! important; \n    }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -346,7 +346,7 @@
 		"name": "CNN",
 		"sections": [
 			{
-				"code": "    .cnnStryVidCont, .map-canvas, .cnn_stryshrwdgtbtm, #cnn_ftrcntnt, \n    .js-owl-filmstrip, #cnn_hdr-main, #large-media, iframe, \n    #leaf-footer-article-zone, .el__featured-video, .pg-rail-tall__head,\n    footer, #story-bottom, header, .m-share, .fb-send-to-messenger-container\n    { \n        display : none ! important; \n    }\n    .media__image { transition: unset ! important; }\nbody { background-color: unset ! important; }",
+				"code": "    .cnnStryVidCont, .map-canvas, .cnn_stryshrwdgtbtm, #cnn_ftrcntnt, \n    .js-owl-filmstrip, #cnn_hdr-main, #large-media, iframe, \n    #leaf-footer-article-zone, .el__featured-video, .pg-rail-tall__head,\n    footer, #story-bottom, header, .m-share, .fb-send-to-messenger-container,\n.nav-expanded, .nav, .breaking-news, #nav__plain-header, .cn, .zn-body__read-more\n    { \n        display : none ! important; \n    }\n    .media__image { transition: unset ! important; }\nbody { background-color: unset ! important; }\n\n.pg-vertical { right: unset !important; }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -451,7 +451,7 @@
 		"name": "DailyBeast",
 		"sections": [
 			{
-				"code": "    .blockquote, .cheatSignUp, .comments-link, .social, .cheatAd, .ad,\n    #utilitiyLinks, .fb-like, .login-search-nav, .topicHeading,\n    .brightcove, .cheat-aside \n    { \n        display: none ! important; \n    }",
+				"code": "    .blockquote, .cheatSignUp, .comments-link, .social, .cheatAd, .ad,\n    #utilitiyLinks, .fb-like, .login-search-nav, .topicHeading,\n    .brightcove, .cheat-aside , .InlineNewsletter, footer\n    { \n        display: none ! important; \n    }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -1129,7 +1129,7 @@
 		"name": "Imgur",
 		"sections": [
 			{
-				"code": "    #cta-container-placeholder, #fixed-side-footer-links, #promoted-spotlight\n    { \n        display : none ! important; \n    }\n\n.promoted-tag { font-size: 600% ! important; \n    background-color: red ! important;\n\tcolor: yellow ! important; \n    display: block ! important;\n    z-index: 1000 ! important;\n    height: 1000px ! important; }\n",
+				"code": "    #cta-container-placeholder, #fixed-side-footer-links, #promoted-spotlight,\n.BetaSignUp\n    { \n        display : none ! important; \n    }\n\n.promoted-tag { font-size: 600% ! important; \n    background-color: red ! important;\n\tcolor: yellow ! important; \n    display: block ! important;\n    z-index: 1000 ! important;\n    height: 1000px ! important; }\n",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -1508,11 +1508,12 @@
 		"name": "NbcNews",
 		"sections": [
 			{
-				"code": "    .inlineVideo, #siteheader, footer, .paginationDiv,\n    .stack-l-image-lede-container,.sitewide-footer\n    { \n        display : none ! important; \n    }",
+				"code": "    .inlineVideo, #siteheader, footer, .paginationDiv,\n    .stack-l-image-lede-container,.sitewide-footer, header,\n#editors-picks, .panel_show-tease, #js-facebook-timeline,\n.item-heading_sm, .twitter-timeline, .alert, .social-list,\n#tbFilmStrip, .newsletterSignupBox, .socialNetworks-top, .footer,\n#article-comments, .adcontainer, #fb-root, .video, .videoPlayButton,\ndiv[id^='embeddedVideo']\n    { \n        display : none ! important; \n    }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
-					"nbcnews.com"
+					"nbcnews.com",
+					"nbcmiami.com"
 				],
 				"regexps": []
 			}
@@ -1887,7 +1888,7 @@
 		"name": "Politico",
 		"sections": [
 			{
-				"code": "    .story-suggestions, .nav-micro, .global-header, aside, \n    .story-continued, .story-interrupt, .story-tools, .story-share,\n    .story-supplement, nav, .global-footer, .video-object,\n#superComments\n    { \n        display: none ! important;\n    }\n\nbody { visibility: visible ! important; }",
+				"code": "    .story-suggestions, .nav-micro, .global-header, aside, \n    .story-continued, .story-interrupt, .story-tools, .story-share,\n    .story-supplement, nav, .global-footer, .video-object,\n#superComments, .reveal-at-extra, .fixed-top, #js-top-header, footer\n    { \n        display: none ! important;\n    }\n\nbody { visibility: unset ! important; }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -1971,7 +1972,7 @@
 		"name": "Reddit",
 		"sections": [
 			{
-				"code": "    div.entry.unvoted ul.flat-list.buttons { \n        display: block ! important; \n    }\n    body { background : none !important;  }\n\n/* 2018-04-09 - drastic rewrite of DOM, not sure how many classes are stable */\n\n/* Ick. Stupid pop-up subscription pane*/\n.modal-open { overflow: unset ! important; }\n\n    .promotedlink, #siteTable_promoted,  .promoted, .arrow, div.side,\n    #header-bottom-right, .footer-parent, #cta-container-placeholder,\n    #fixed-side-footer-links, #recommendations, #promoted-spotlight,\n    #eu-cookie-policy, .report-button, .flair, .morecomments,\n.commentsignupbar, .listingsignupbar, .welcome, #onboarding-splash,\n#hamburgers, .s6prp9s-8, .s1l07lbt-0, .s1cwcagp-6, #block-homepage\n    { \n        display: none ! important; \n    }\n\n/* Pop-up menu for hamburger - interfers with essentially all other elements */\n.gCimVU::before { width: 0px ! important; }\n\n.s1w22l7l-0, .s6prp9s-7 {width: 900px ! important; }\n\n    ul.flat-list.buttons { \n        display: none ! important; \n    }\n\n    .comment { \n        padding: 0px ! important; \n        margin-bottom: 0px ! important; \n    }\n\n    body div.content { \n        margin: 0px 0px 0px 0px ! important; \n    }\n\n    /* Sites that don't play well with my addons */\n    a[href*=\"gfycat.com\"], a[href*=\"streamable.com\"]\n    {\n        color: red ! important;\n        background-color: #999 ! important;\n    }",
+				"code": "    div.entry.unvoted ul.flat-list.buttons { \n        display: block ! important; \n    }\n    body { background : none !important;  }\n\n/* 2018-04-09 - drastic rewrite of DOM, not sure how many classes are stable */\n\n/* Ick. Stupid pop-up subscription pane*/\n.modal-open { overflow: unset ! important; }\n\n    .promotedlink, #siteTable_promoted,  .promoted, .arrow, div.side,\n    #header-bottom-right, .footer-parent, #cta-container-placeholder,\n    #fixed-side-footer-links, #recommendations, #promoted-spotlight,\n    #eu-cookie-policy, .report-button, .flair, .morecomments,\n.commentsignupbar, .listingsignupbar, .welcome, #onboarding-splash,\n#hamburgers, .s6prp9s-8, .s1l07lbt-0, .s1cwcagp-6, #block-homepage\n    { \n        display: none ! important; \n    }\n\n/* Pop-up menu for hamburger - interfers with essentially all other elements */\n.gCimVU::before { width: 0px ! important; }\n\n.s1w22l7l-0, .s6prp9s-7 {width: 900px ! important; }\n\n    ul.flat-list.buttons { \n        display: none ! important; \n    }\n\n    .comment { \n        padding: 0px ! important; \n        margin-bottom: 0px ! important; \n    }\n\n    body div.content { \n        margin: 0px 0px 0px 0px ! important; \n    }\n\n    /* Sites that don't play well with my addons */\n    a[href*=\"gfycat.com\"], a[href*=\"streamable.com\"], a[href*=\"v.reddit.com\"]\n    {\n        color: red ! important;\n        background-color: #999 ! important;\n    }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -2013,7 +2014,7 @@
 		"name": "Reuters",
 		"sections": [
 			{
-				"code": "    .footer-trnetwork, .footer-disclaimer, .footer-top, #specialFeature,\n    .slider-module,\n    div[class*='TopBar'], div[class*='CanvasAd'], div[class^='Header_'],\n    div[data-template='footer']\n    { \n        display: none !important;\n    }\n    div[class^='ArticleHeader_'] \n    { \n      padding: unset ! important; \n      margin-left: unset ! important;\n      margin-right: unset ! important;\n    }\n    p { margin-bottom: 5px ! important; }\n\ndiv[class*='TwoColumnLayout_column'] { width: unset ! important; }",
+				"code": "    .footer-trnetwork, .footer-disclaimer, .footer-top, #specialFeature,\n    .slider-module,\n    div[class*='TopBar'], div[class*='CanvasAd'], div[class^='Header_'],\n    div[data-template='footer'] ,.module, div[class^='inline-container']\n    { \n        display: none !important;\n    }\n    div[class^='ArticleHeader_'] \n    { \n      padding: unset ! important; \n      margin-left: unset ! important;\n      margin-right: unset ! important;\n    }\n    p { margin-bottom: 5px ! important; }\n\ndiv[class*='TwoColumnLayout_column'] { width: unset ! important; }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -2353,7 +2354,7 @@
 		"name": "TheHill",
 		"sections": [
 			{
-				"code": "    .region-column-left, .left-sidebar-space, .blogs-social-wrp, .left-sidebar,\n    .block-disqus, #block-thehill-blocks-footer-signup, .region-bottom-column2,\n    .item-pos\n    { \n        display: none!important;\n    }\n    \n    .content-wrapper {\n        padding-left: 0px ! important;\n    }\n    \n    #main, .mostpopular-item, #block-mostpopular-1 { \n        padding: 0 0 0 0  ! important; \n    }\n    \n    .content-wrapper { \n        padding-left: 5px ! important; \n    }\n    .xxxxsidebars { \n        width: 200px ! important;\n    }",
+				"code": "    .region-column-left, .left-sidebar-space, .blogs-social-wrp, .left-sidebar,\n    .block-disqus, #block-thehill-blocks-footer-signup, .region-bottom-column2,\n    .item-pos, .page-bottom\n    { \n        display: none!important;\n    }\n    \n    .content-wrapper {\n        padding-left: 0px ! important;\n    }\n    \n    #main, .mostpopular-item, #block-mostpopular-1 { \n        padding: 0 0 0 0  ! important; \n    }\n    \n    .content-wrapper { \n        padding-left: 5px ! important; \n    }\n    .xxxxsidebars { \n        width: 200px ! important;\n    }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -2752,7 +2753,7 @@
 		"name": "Wikipedia",
 		"sections": [
 			{
-				"code": "    #cn-sliding-ad, #centralNotice,#p-lang, \n    #siteNotice, #articleFeedbackv5-bottomrighttab , #frbanner3, #frbanner4,\n    #mw-panel, #frb-inline\n    { \n        display:none ! important; \n    }",
+				"code": "    #cn-sliding-ad, #centralNotice,#p-lang, \n    #siteNotice, #articleFeedbackv5-bottomrighttab , #frbanner3, #frbanner4,\n    #mw-panel, #frb-inline, .mwe-popups\n    { \n        display:none ! important; \n    }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
@@ -3064,14 +3065,15 @@
 		"md5Url": null,
 		"url": null,
 		"originalMd5": null,
-		"name": "MiamiHerald",
+		"name": "McClatchyCompany",
 		"sections": [
 			{
 				"code": "#video-widget, .subscription-cta-widget, .highline-quote, #footer,\n.commenting-container, .share-tools-wrapper\n{ display: none ! important; }",
 				"urls": [],
 				"urlPrefixes": [],
 				"domains": [
-					"miamiherald.com"
+					"miamiherald.com",
+					"sacbee.com"
 				],
 				"regexps": []
 			}
@@ -3203,5 +3205,99 @@
 			}
 		],
 		"id": 153
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1526829859300,
+		"name": "Test",
+		"sections": [
+			{
+				"code": "/* URL style */\ndiv.example { background-color: purple; }",
+				"urls": [
+					"https://www.example.com"
+				],
+				"urlPrefixes": [],
+				"domains": [],
+				"regexps": []
+			},
+			{
+				"code": "/* domain style, two domains */\ndiv.example { background-color: gold; }\nspan.test { font-weight: bold ! important;}",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"www.example.com",
+					"store.example.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 154
+	},
+	{
+		"installDate": 1528194352000,
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "Vox",
+		"sections": [
+			{
+				"code": "#privacy-consent, .c-social-buttons, .c-newsletter_signup_box, .c-compact-river,\nfooter, header, .l-header\n{ display: none ! important; }\n\n.l-wrapper {margin-top: unset ! important; }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"vox.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 155
+	},
+	{
+		"installDate": 1528278388200,
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "bing.com",
+		"sections": [
+			{
+				"code": "#contentid { width: 1000px ! important; }\n\ndiv[url^='http://www.espn.com'],\ndiv[url^='http://www.tmz.com'],\ndiv[url^='https://www.thesun.co.uk'],\ndiv[url^='https://www.foxsports.com'],\ndiv[url^='https://www.stuff.co.nz'],\ndiv[url^='https://www.wsj.com'],\ndiv[url^='https://www.mirror.co.uk'],\ndiv[url^='http://www.nydailynews.com'],\ndiv[url^='zzzz'],\ndiv[url^='zzzz'],\ndiv[url^='zzzz'],\ndiv[url^='zzzz'],\ndiv[url^='zzzz'],\ndiv[url^='zzzz'],\ndiv[url^='zzzz'],\ndiv[url^='zzzz'],\ndiv[url^='http://www.dailymail']\n{ display: none ! important; }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"bing.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 156
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1528623401800,
+		"name": "TheGuardian",
+		"sections": [
+			{
+				"code": ".submeta__share, .submeta__syndication, .js-most-popular-footer, footer, .new-header__inner\n{ display: none ! important; }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"theguardian.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 157
 	}
 ]

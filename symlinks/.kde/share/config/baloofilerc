@@ -1,0 +1,6 @@
+[Basic Settings]
+Indexing-Enabled=false
+
+[General]
+exclude folders[$e]=/media/OldDisk/,/abyss/Media/,/abyss/Common/,/abyss/Installers/,$HOME/ToFile/
+folders[$e]=$HOME/
