@@ -51,7 +51,7 @@ fi
 
 ## script folder: https://stackoverflow.com/a/246128
 my_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-utilFunc=`readlink -f $my_dir/../generalUtilities/_util_functions.sh`
+utilFunc="$my_dir/../../generalUtilities/_util_functions.sh"
 if [[ -e "$utilFunc" ]]; then
     ## Source in the utility functions, here used for colorized messaging
     . "$utilFunc"
