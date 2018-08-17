@@ -18,7 +18,7 @@
     .external-links, .interactive-embedded, .newsletter-signup,
     #site-index, #whats-next, .text-ad, #page-footer, .ribbon, .navigation,
     .video, [class*='Masthead'], [class*='ResponsiveAd'], [class*='shareMenu'],
-    [class*='Newsletter'], #nytint-hp-watching { 
+    [class*='Newsletter'], #nytint-hp-watching, #masthead-placeholder { 
         display: none ! important; 
     }
 
