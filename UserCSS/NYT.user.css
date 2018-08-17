@@ -1,0 +1,28 @@
+/* ==UserStyle==
+@name        NYT
+@description New York Times user style, mostly masks components
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("nytimes.com") {
+    
+    #cColumn, .runaroundLeft, .shareTools, .emailAlertModule,
+    #insideNYTimesHeader, #footer, .metaFootnote, #breaking-news-email-promo,
+    #ribbon, #masthead, #site-index-navigation, #whats-next,
+    #TopAd1, #site-index, .interactive-image-container, .interactive,
+    #navigation, #masthead, #memberTools, #cCol, #blogroll,
+    .socialMediaModule, .ad, #footer, .subNavigation, .share, #header, .tabs,
+    .external-links, .interactive-embedded, .newsletter-signup,
+    #site-index, #whats-next, .text-ad, #page-footer, .ribbon, .navigation,
+    .video, [class*='Masthead'], [class*='ResponsiveAd'], [class*='shareMenu'],
+    [class*='Newsletter'], #nytint-hp-watching { 
+        display: none ! important; 
+    }
+
+    #abColumn, #article { 
+        width: 100% ! important; 
+    }
+}
