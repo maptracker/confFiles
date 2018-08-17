@@ -16,7 +16,7 @@ margins and paddings, and user style plugins excel at such cleanup:
 
 Links below will be recoginzed by Stylus.
 
-[![Install New York Times](https://img.shields.io/badge/New York Times-00adad.svg)][NYT]
+[![Install New York Times](https://img.shields.io/badge/New%20York%20Times-00adad.svg)][NYT]
 
 [Firefox]: https://addons.mozilla.org/en-US/firefox/addon/styl-us/
 [Chrome]: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en
