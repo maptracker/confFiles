@@ -3,12 +3,13 @@
 @description New York Times user style, mostly masks components
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("nytimes.com") {
-    
+
+    /* Mask a whole bunch of cruft */
     #cColumn, .runaroundLeft, .shareTools, .emailAlertModule,
     #insideNYTimesHeader, #footer, .metaFootnote, #breaking-news-email-promo,
     #ribbon, #masthead, #site-index-navigation, #whats-next,
@@ -22,6 +23,7 @@
         display: none ! important; 
     }
 
+    /* allow content to use full width of screen */
     #abColumn, #article { 
         width: 100% ! important; 
     }
