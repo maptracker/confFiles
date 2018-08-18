@@ -12,14 +12,7 @@ margins and paddings, and user style plugins excel at such cleanup:
 * Occasionally whole sections I'm not interested in (eg "Technology"
   on many sites is just another advertising block)
 
-### Individual Styles
-
-Links below will be recoginzed by Stylus.
-
-[![Install New York Times](https://img.shields.io/badge/New%20York%20Times-00adad.svg)][NYT]
-
 [Firefox]: https://addons.mozilla.org/en-US/firefox/addon/styl-us/
 [Chrome]: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en
 [UserCSS]: https://github.com/openstyles/stylus/wiki/Usercss
 
-[NYT]: https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/NYT.user.css
