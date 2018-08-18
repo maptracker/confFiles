@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name        Wunderground
+@description Mask add block in widget panel
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("wunderground.com") {
+    ad-wx-top-300-small,
+    [class~='ad-box'] {
+        display: none ! important;
+    }
+}

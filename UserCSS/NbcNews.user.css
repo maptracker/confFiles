@@ -1,0 +1,28 @@
+/* ==UserStyle==
+@name        NBC News
+@description Mostly masking components, expanding used width
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("nbcnews.com"), domain("nbcmiami.com") {
+
+    /* Element masking */
+    .inlineVideo, #siteheader, footer, .paginationDiv,
+    .stack-l-image-lede-container,.sitewide-footer, header,
+    #editors-picks, .panel_show-tease, #js-facebook-timeline,
+    .item-heading_sm, .twitter-timeline, .alert, .social-list,
+    #tbFilmStrip, .newsletterSignupBox, .socialNetworks-top, .footer,
+    #article-comments, .adcontainer, #fb-root, .video, .videoPlayButton,
+    div[id^='embeddedVideo'], div[class^='rightRail'], nav { 
+        display : none ! important; 
+    }
+
+    /* Use full page width */
+    div[class^='heroMedia'], div[class^='body_'],
+    article[class^='gridContainer'] {
+        width: unset ! important;
+    }
+}
