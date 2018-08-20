@@ -3,7 +3,7 @@
 @description Mask various stuff, deal with lazy loading
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -11,8 +11,8 @@
     .story-suggestions, .nav-micro, .global-header, aside, 
     .story-continued, .story-interrupt, .story-tools, .story-share,
     .story-supplement, nav, .global-footer, .video-object,
-    #superComments, .reveal-at-extra, .fixed-top, #js-top-header, footer,
-    body a { 
+    #superComments, .reveal-at-extra, .fixed-top, #js-top-header,
+    footer { 
         display: none ! important;
     }
 
