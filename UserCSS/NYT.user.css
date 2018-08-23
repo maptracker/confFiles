@@ -3,7 +3,7 @@
 @description New York Times user style, mostly masks components
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.3
+@version     1.0.4
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -19,13 +19,20 @@
     .external-links, .interactive-embedded, .newsletter-signup,
     #site-index, #whats-next, .text-ad, #page-footer, .ribbon, .navigation,
     .video, [class*='Masthead'], [class*='ResponsiveAd'], [class*='shareMenu'],
-    [class*='Newsletter'], #nytint-hp-watching, #masthead-placeholder,
-    #app > div:nth-child(1) { 
+    [class*='Newsletter'], #nytint-hp-watching, #masthead-placeholder { 
         display: none ! important; 
     }
 
     /* allow content to use full width of screen */
     #abColumn, #article { 
         width: 100% ! important; 
+    }
+}
+
+@-moz-document url("https://www.nytimes.com/") {
+
+    /* Landing page (only) has a big ad block at top */
+    #app > div:nth-child(1) { 
+        display: none ! important; 
     }
 }
