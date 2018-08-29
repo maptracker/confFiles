@@ -1,0 +1,17 @@
+/* ==UserStyle==
+@name        Niche
+@description Display all hidden text
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("niche.com") {
+    /* Show all hidden blocks */
+    .overflow-text {
+        position: unset ! important;
+        overflow: unset ! important;
+        max-height: unset ! important;
+    }
+}
