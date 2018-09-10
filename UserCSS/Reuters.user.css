@@ -1,0 +1,28 @@
+/* ==UserStyle==
+@name        Reuters
+@description Mask various bits that won't render without JS
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("reuters.com") {
+    .footer-trnetwork, .footer-disclaimer, .footer-top, #specialFeature,
+    .slider-module, .BreakpointDetector_container, .BylineBar_reading-time, 
+    .Image_expand-button, .StandardArticleBody_trustBadgeContainer,
+    div[class*='TopBar'], div[class*='CanvasAd'], div[class^='Header_'],
+    div[data-template='footer'] ,.module, div[class^='inline-container'] { 
+        display: none !important;
+    }
+    
+    div[class^='ArticleHeader_'] 
+    { 
+        padding: unset ! important; 
+        margin-left: unset ! important;
+        margin-right: unset ! important;
+    }
+    p { margin-bottom: 5px ! important; }
+
+    div[class*='TwoColumnLayout_column'] { width: unset ! important; }
+}
