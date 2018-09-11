@@ -3,7 +3,7 @@
 @description Masks various cruft
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -17,7 +17,7 @@
     #block-ec_components-print_sub, #comments-header, 
     a[href*='www.economist.com/digital/apps'], .navigation-sticky-scroller,
     .main-content__video-collection, #bottom-page-wrapper,
-    .latest-printed, .share-component, .newsletter-form, .carousel
+    .latest-printed, .share-component, .newsletter-form, .carousel,
     a[class*='-promo'] { 
         display: none ! important; 
     }
