@@ -1,0 +1,39 @@
+/* ==UserStyle==
+@name        Twitter
+@description Strip out a lot of the UI, hide a bunch of cruft
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("twitter.com") {
+    .dashboard, #side_lists, #trends, #following, .modal-overlay,
+    .empty-home, .get-started-steps, .PromptbirdPrompt-streamItem,  
+    .empty-timeline, #global-nav-search, #user-dropdown-toggle,
+    .actions, .profile-header-inner-overlay, .profile-card.profile-header,
+    .promptbird, .promoted-tweet, .follow-bar, #introduce_retweet_banner,
+    .ProfileSidebar, .ProfileCanopy, .ProfileHeading, .promotion round,
+    .js-recommended-followers, #empty-timeline-recommendations,
+    .dashboard-left, .dashboard-right, .ProfileTweet-actionList,
+    .js-more-ProfileTweet-actions, .PlayableMedia-reactWrapper,
+    .BannersContainer { 
+        display: none ! important; 
+    }
+    
+    .ProfileTweet-actionCountList, .ProfileTweet-action--retweet,
+    .ProfileTweet-action--favorite { 
+         display: inline ! important;    
+         position: relative ! important; 
+     }
+
+    .flex-module, .profile-card, .js-content-top, #page-container,
+    .ProfileTweet { 
+         width: 600px ! important; 
+     }
+
+    .pull-right { 
+        float: left ! important; 
+        clear: none ! important; 
+    }
+}
