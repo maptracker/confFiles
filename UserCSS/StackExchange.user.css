@@ -1,0 +1,33 @@
+/* ==UserStyle==
+@name        StackExchange
+@description Remove random cruft and overlays
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("stackexchange.com"),
+domain("serverfault.com"),
+domain("stackoverflow.com"),
+domain("superuser.com"),
+domain("mathoverflow.net") {
+    
+    .hero-box, #herobox, #newsletter-ad, .community-bulletin, #hero-content,
+    #chat-feature, #hlogo, #footer, #feed-link, #post-form, .newsletter-anon,
+    .hero-container, .s-hero, #js-gdpr-consent-banner { 
+        display: none !important;
+    }
+    a:visited { 
+        color: purple ! important;
+    }
+    a.js-gps-track:visited { 
+        color : rgb(20, 121, 188) ! important;  
+    }
+    a.js-gps-track { 
+        color : rgb(20, 121, 188) ! important;  
+    }
+    #header { 
+        background-image: url('') ! important
+    }
+}
