@@ -1,0 +1,22 @@
+/* ==UserStyle==
+@name        Soylent
+@description Mask cruft
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("soylentnews.org") {
+    
+    .commentSub, .sig , .score0, .noTH, .commentHider, .commentBelow,
+    #slashboxes { 
+        display: none ! important; 
+    }
+    a.visited { 
+        color:purple ! important;
+    }
+    #articles { 
+        margin: 0 0 1em 0; 
+    }
+}
