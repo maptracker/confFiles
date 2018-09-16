@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name        SF Gate
+@description Mask cruft and video frames
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("sfgate.com") {
+    .article-share, .hearst-jwplayer-container, .ctpl-fullbanner,
+    .menu-bar, header, .article-comments, footer {
+        display: none ! important;
+    }
+}
