@@ -1,0 +1,22 @@
+/* ==UserStyle==
+@name        ABC News
+@description Mask out various cruft
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("go.com") {
+    #siteSubNav, #rsslisting, #show_promo, #itremble, .footer, .story_rail,
+    .show_tools, #story-features, .comments, #social-bar,
+    .headerbg, .headerBgContainer, #share-bottom , .short_nav, 
+    #disqus, #_fs_container, #nav, noscript, .dsq-brlink,
+    #sectionnav, .abcn-interests { 
+        display: none ! important; 
+    }
+    
+    #storyText p { 
+        left: 0px ! important; 
+    }
+}
