@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name        CBC
+@description Hide cruft and JS menus
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("cbc.ca") {
+    #sidebar-right, .ad, .newsletter, .commentIndicator, #banner,
+    .contentFeedback, .discover-articles, div[id^='comments'] {
+        display: none ! important;
+    }
+}
