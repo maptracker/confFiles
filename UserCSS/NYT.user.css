@@ -2,8 +2,8 @@
 @name        NYT
 @description New York Times user style, mostly masks components
 @namespace   github.com/maptracker/confFiles
-@homepageURL https://github.com/maptracker/confFiles/UserCSS
-@version     1.0.1
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.5
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -14,11 +14,12 @@
     #insideNYTimesHeader, #footer, .metaFootnote, #breaking-news-email-promo,
     #ribbon, #masthead, #site-index-navigation, #whats-next,
     #TopAd1, #site-index, .interactive-image-container, .interactive,
-    #navigation, #masthead, #memberTools, #cCol, #blogroll,
+    #navigation, #masthead, #memberTools, #cCol, #blogroll, div[role="toolbar"],
     .socialMediaModule, .ad, #footer, .subNavigation, .share, #header, .tabs,
-    .external-links, .interactive-embedded, .newsletter-signup,
+    .external-links, .interactive-embedded, .newsletter-signup, footer,
     #site-index, #whats-next, .text-ad, #page-footer, .ribbon, .navigation,
     .video, [class*='Masthead'], [class*='ResponsiveAd'], [class*='shareMenu'],
+    div[class*="RelatedCoverageNode-imageContent"],
     [class*='Newsletter'], #nytint-hp-watching, #masthead-placeholder { 
         display: none ! important; 
     }
@@ -26,5 +27,13 @@
     /* allow content to use full width of screen */
     #abColumn, #article { 
         width: 100% ! important; 
+    }
+}
+
+@-moz-document url("https://www.nytimes.com/") {
+
+    /* Landing page (only) has a big ad block at top */
+    #app > div:nth-child(1) { 
+        display: none ! important; 
     }
 }

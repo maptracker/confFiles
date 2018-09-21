@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name        Wikipedia
+@description Hide periodic notices
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("wikipedia.org") {
+    #cn-sliding-ad, #centralNotice,#p-lang, 
+    #siteNotice, #articleFeedbackv5-bottomrighttab , #frbanner3, #frbanner4,
+    #mw-panel, #frb-inline, .mwe-popups { 
+        display:none ! important; 
+    }
+}

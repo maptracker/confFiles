@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name        Boston Globe
+@description Mask out various bits
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("bostonglobe.com") {
+    #masthead, #section-nav, .tools, footer, .inlineNewsletter__wrapper,
+    .inline-newsletter, aside { 
+        display: none ! important; 
+    }
+}

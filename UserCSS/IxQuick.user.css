@@ -1,0 +1,33 @@
+/* ==UserStyle==
+@name        IxQuick
+@description Highlight commonly used sites
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("ixquick.com"), domain("startpage.com") {
+    
+    /* Generally I'm looking for one of these: */
+    a[href*='stackoverflow'], a[href*='stackexchange'],
+    a[href*='serverfault'], a[href*='superuser'], 
+    a[href*="wikipedia.org"] { 
+        background-color: lime ! important;
+    }
+    
+    /* ... or these ... */
+    a[href*="tldp.org"] {
+        background-color: yellowgreen ! important;
+    }
+
+    /* Mask cruft */
+    #sponsored, iframe, .banner-container { 
+        display: none ! important; 
+    }
+
+    /* Make sure visited links show as such */
+    a:visited { 
+        color: purple !important;
+    }
+}

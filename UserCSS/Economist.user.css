@@ -1,0 +1,42 @@
+/* ==UserStyle==
+@name        The Economist
+@description Masks various cruft
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.1
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("economist.com") {
+
+    /* Random unintersting stuff */
+    .ec-homepage-player, #product-events, .footer-stripe-bottom,
+    .footer-stripe-top, .mh-stripe, #ec-cookie-messages-container,
+    #block-ec_social-right_rail_social_share_buttons,
+    #block-ec_components-page_tools_compact, .share_inline_header,
+    #block-ec_components-print_sub, #comments-header, 
+    a[href*='www.economist.com/digital/apps'], .navigation-sticky-scroller,
+    .main-content__video-collection, #bottom-page-wrapper,
+    .latest-printed, .share-component, .newsletter-form, .carousel,
+    a[class*='-promo'] { 
+        display: none ! important; 
+    }
+
+    /* Use more real estate */
+    article { max-width: unset ! important; }
+
+    p {
+        margin-left: 1em ! important; 
+    }
+
+    /* Make visited links show as much */
+    a:visited,
+    a:visited * { 
+        color : purple ! important; 
+    }
+    
+    .imagefield { 
+        position: relative !important; 
+        z-index: 999999 ! important; 
+    }
+}
