@@ -1,0 +1,18 @@
+/* ==UserStyle==
+@name        Seattle Times
+@description The entire body was marked as hidden - make visible
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("seattletimes.com") {
+    /* Probably some sort of lazy load framework... */
+    body { visibility: unset ! important; }
+
+    /* Random cruft */
+    .social-share, .marketing-placeholder-full, #showcomments, footer {
+        display: none !important;
+    }
+}
