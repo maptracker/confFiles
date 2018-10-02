@@ -75,6 +75,20 @@ fi
 
 keyFile="$HOME/.ssh/$keyName"
 
+otherKeys=""
+## Note other key files that are also on the system
+for ok in "$HOME/.ssh/"*.pub ; do
+    pubOk=$(echo "$ok" | sed 's/.pub$//')
+    bok=$(basename "$pubOk")
+    if [[ "$bok" != "$keyName" ]]; then
+        otherKeys="$otherKeys\n  $bok"
+    fi
+done
+
+if [[ "$otherKeys" != "" ]]; then
+    msg "$FgCyan" "\nOther SSH keys available on this account:$otherKeys\n"
+fi
+
 ## Do we need to make the keyfile?
 if [[ -s "$keyFile" ]]; then
     msg "102;$FgBlue" "
@@ -94,14 +108,14 @@ Setting up SSH keys and adding to agent
     private key, but of course you need to remember or record it for
     the key to be used later."
     echo
-    my_host=`hostname`
+    my_host=$(hostname)
     ssh-keygen -t rsa -b 4096 -f "$keyFile" -C "$my_host"
 
 fi
 
 ## Isolate the fingerprint, we will use it to verify it has been added.
-foundKey=`ssh-keygen -l -f "$keyFile"`
-keyFingerprint=`echo "$foundKey" | egrep -o "SHA256:[A-Za-z0-9\+]"\+`
+foundKey=$(ssh-keygen -l -f "$keyFile")
+keyFingerprint=$(echo "$foundKey" | egrep -o "SHA256:[A-Za-z0-9\+]"\+)
 if [[ -z "$keyFingerprint" ]]; then
     msg "$FgRed;$BgYellow" "
 [!!] Failed to determine your key fingerprint!
@@ -138,14 +152,14 @@ SSH agent is already running
 fi
 
 ## Check if key is added to agent: https://unix.stackexchange.com/a/58977
-keyThere=`ssh-add -l | grep -oF "$keyFingerprint"`
+keyThere=$(ssh-add -l | grep -oF "$keyFingerprint")
 
 if [[ -z "$keyThere" ]]; then
     msg "$FgMagenta" "
 Adding your key to the agent - you will be asked for your passphrase
 "
     ssh-add "$keyFile"
-    keyThere=`ssh-add -l | grep -oF "$keyFingerprint"`
+    keyThere=$(ssh-add -l | grep -oF "$keyFingerprint")
     if [[ -z "$keyThere" ]]; then
         msg "$FgRed;$BgYellow" "
 [!!] Apparently failed to add your key to the agent...
@@ -164,12 +178,12 @@ msg "$FgBlue;103" "
 Your key is available and attached to the agent.
   Remote hosts should be given your public key:"
 
-pub=`cat "$keyFile".pub`
+pub=$(cat "$keyFile".pub)
 
 msg "$FgCyan" "
 $pub"
 
-wai=`whoami`
+wai=$(whoami)
 
 ## ssh-copy-id: https://askubuntu.com/a/875058
 msg "$FgBlack;$BgWhite" "
