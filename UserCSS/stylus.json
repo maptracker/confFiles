@@ -864,27 +864,6 @@
 		"id": 45
 	},
 	{
-		"installDate": 1512347947077,
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"name": "Google",
-		"sections": [
-			{
-				"code": "    #s_PERSONALIZATION, .additional-video,\n    .video box, .media-strip, .footer, #rt-col,\n    .share-button-wrapper, .gsid-FVD, #FEATURED_VIDEOS,\n    #en_us-e, #en_us-s, #en_us-m, #en_us-b, \n    .section-en_us-e, .section-en_us-s, .section-en_us-m,\n    #taw, #bottomads, #fll, #fblqf, #fblsh, #gbvg, #wmxmsg,\n    #promo-section, #settings-button, #gbgs4, .pmoabs, #dftvp,\n    .gb_ga, .gb_g, .gb_Mb.gb_ee.gb_R, .section-me-oscars-2016,\n    .section-en_us-b, section-en_us-e, .section-me-ncaa-tournament-2016,\n    .section-en_us-tc, .section-me-masters-2016,\n    .gb_ha, .section-en_uk-e, .section-en_uk-s, #gbw,\n    #gbwa, #gbw, #ad-source, #ad-label, #groups, #topstuff,\n    #ms, #lc, .share-bar-table, #gbgs4, #gbgs5, .side-appbar,\n    .plusone-box, #gf-foot, .appbar-add, #ad, #calendar, .SP_calendar,\n    .sfe-break-right-em, .gpost,\n    .ad-target2-wrapper, .hdg, #gmm-panel-promo, #copyright, #gbu, #notify-box,\n    .rmi-rpl-bottom, #s_SPORTS_GADGET, #s_EDITORS_PICK, #s_INTERESTING\n    { \n        display: none ! important; \n    }\n\n    a[href*=\"forbes.com\"]\n    {\n        /* does not play well with my browser configuration */\n        color: red ! important;\n    }",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"google.com"
-				],
-				"regexps": []
-			}
-		],
-		"id": 46
-	},
-	{
 		"installDate": 1512347947082,
 		"enabled": true,
 		"updateUrl": null,
@@ -3823,5 +3802,165 @@
 		"description": "Mask cruft",
 		"originalDigest": "19ad8d6c50b0daab647623a11d1cc1ff7a54d906",
 		"id": 180
+	},
+	{
+		"enabled": true,
+		"updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/Esquire.user.css",
+		"md5Url": null,
+		"url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+		"originalMd5": null,
+		"installDate": 1537783868607,
+		"sourceCode": "/* ==UserStyle==\n@name        Esquire\n@description Deal with aggresively broken NoJS styling\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"esquire.com\") {\n\n    /* There's a .no-js body * style that makes life harder here */\n    \n    .no-js body .site-content {\n        display: unset ! important;\n        visibility: unset ! important;\n    }\n\n    .no-js body .vertical-ad, .no-js body script, .no-js body footer,\n    .no-js body .seo-tags-container, .no-js body .transporter,\n    .no-js body .embed, .no-js body .content-lede-image,\n    .no-js body .social-button-group, .no-js body nav,\n    .no-js body .search-overlay, .no-js body nav,\n    .no-js body .top-pathing-inner  {\n        display: none ! important;\n        visibility: hidden ! important;\n    }\n\n    /* Kinda hard to see quote context */\n    blockquote { \n        color: gray\n    }\n}",
+		"sections": [
+			{
+				"code": "/* ==UserStyle==\n@name        Esquire\n@description Deal with aggresively broken NoJS styling\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [],
+				"regexps": []
+			},
+			{
+				"code": "/* There's a .no-js body * style that makes life harder here */\n    \n    .no-js body .site-content {\n        display: unset ! important;\n        visibility: unset ! important;\n    }\n\n    .no-js body .vertical-ad, .no-js body script, .no-js body footer,\n    .no-js body .seo-tags-container, .no-js body .transporter,\n    .no-js body .embed, .no-js body .content-lede-image,\n    .no-js body .social-button-group, .no-js body nav,\n    .no-js body .search-overlay, .no-js body nav,\n    .no-js body .top-pathing-inner  {\n        display: none ! important;\n        visibility: hidden ! important;\n    }\n\n    /* Kinda hard to see quote context */\n    blockquote { \n        color: gray\n    }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"esquire.com"
+				],
+				"regexps": []
+			}
+		],
+		"usercssData": {
+			"vars": {},
+			"name": "Esquire",
+			"description": "Deal with aggresively broken NoJS styling",
+			"namespace": "github.com/maptracker/confFiles",
+			"homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+			"version": "1.0.0",
+			"license": "GPL-3.0-or-later"
+		},
+		"name": "Esquire",
+		"description": "Deal with aggresively broken NoJS styling",
+		"originalDigest": "733b159155eed90465986545474e5c9fd69cbef9",
+		"id": 181
+	},
+	{
+		"enabled": true,
+		"updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/CBC.user.css",
+		"md5Url": null,
+		"url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+		"originalMd5": null,
+		"installDate": 1537783895950,
+		"sourceCode": "/* ==UserStyle==\n@name        CBC\n@description Hide cruft and JS menus\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"cbc.ca\") {\n    #sidebar-right, .ad, .newsletter, .commentIndicator, #banner,\n    .contentFeedback, .discover-articles, div[id^='comments'] {\n        display: none ! important;\n    }\n}\n",
+		"sections": [
+			{
+				"code": "/* ==UserStyle==\n@name        CBC\n@description Hide cruft and JS menus\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [],
+				"regexps": []
+			},
+			{
+				"code": "#sidebar-right, .ad, .newsletter, .commentIndicator, #banner,\n    .contentFeedback, .discover-articles, div[id^='comments'] {\n        display: none ! important;\n    }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"cbc.ca"
+				],
+				"regexps": []
+			}
+		],
+		"usercssData": {
+			"vars": {},
+			"name": "CBC",
+			"description": "Hide cruft and JS menus",
+			"namespace": "github.com/maptracker/confFiles",
+			"homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+			"version": "1.0.0",
+			"license": "GPL-3.0-or-later"
+		},
+		"name": "CBC",
+		"description": "Hide cruft and JS menus",
+		"originalDigest": "a450aaf303530514f819357527534009437f47c3",
+		"id": 182
+	},
+	{
+		"enabled": true,
+		"updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/SeattleTimes.user.css",
+		"md5Url": null,
+		"url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+		"originalMd5": null,
+		"installDate": 1538474824039,
+		"sourceCode": "/* ==UserStyle==\n@name        Seattle Times\n@description The entire body was marked as hidden - make visible\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"seattletimes.com\") {\n    /* Probably some sort of lazy load framework... */\n    body { visibility: unset ! important; }\n\n    /* Random cruft */\n    .social-share, .marketing-placeholder-full, #showcomments, footer {\n        display: none !important;\n    }\n}\n",
+		"sections": [
+			{
+				"code": "/* ==UserStyle==\n@name        Seattle Times\n@description The entire body was marked as hidden - make visible\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [],
+				"regexps": []
+			},
+			{
+				"code": "/* Probably some sort of lazy load framework... */\n    body { visibility: unset ! important; }\n\n    /* Random cruft */\n    .social-share, .marketing-placeholder-full, #showcomments, footer {\n        display: none !important;\n    }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"seattletimes.com"
+				],
+				"regexps": []
+			}
+		],
+		"usercssData": {
+			"vars": {},
+			"name": "Seattle Times",
+			"description": "The entire body was marked as hidden - make visible",
+			"namespace": "github.com/maptracker/confFiles",
+			"homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+			"version": "1.0.0",
+			"license": "GPL-3.0-or-later"
+		},
+		"name": "Seattle Times",
+		"description": "The entire body was marked as hidden - make visible",
+		"originalDigest": "31c968694154d691c27a326c8996d1990280f95e",
+		"id": 183
+	},
+	{
+		"enabled": true,
+		"updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/Google.user.css",
+		"md5Url": null,
+		"url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+		"originalMd5": null,
+		"installDate": 1539458089310,
+		"sourceCode": "/* ==UserStyle==\n@name        Google\n@description Mask out various cruft\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"google.com\") {\n    #s_PERSONALIZATION, .additional-video,\n    .video box, .media-strip, .footer, #rt-col,\n    .share-button-wrapper, .gsid-FVD, #FEATURED_VIDEOS,\n    #en_us-e, #en_us-s, #en_us-m, #en_us-b, .onegoogle,\n    .section-en_us-e, .section-en_us-s, .section-en_us-m,\n    #taw, #bottomads, #fll, #fblqf, #fblsh, #gbvg, #wmxmsg,\n    #promo-section, #settings-button, #gbgs4, .pmoabs, #dftvp,\n    .gb_ga, .gb_g, .gb_Mb.gb_ee.gb_R, .section-me-oscars-2016,\n    .section-en_us-b, section-en_us-e, .section-me-ncaa-tournament-2016,\n    .section-en_us-tc, .section-me-masters-2016, #consent-bump,\n    .gb_ha, .section-en_uk-e, .section-en_uk-s, #gbw,\n    #gbwa, #gbw, #ad-source, #ad-label, #groups, #topstuff,\n    #ms, #lc, .share-bar-table, #gbgs4, #gbgs5, .side-appbar,\n    .plusone-box, #gf-foot, .appbar-add, #ad, #calendar, .SP_calendar,\n    .sfe-break-right-em, .gpost,\n    .ad-target2-wrapper, .hdg, #gmm-panel-promo, #copyright, #gbu, #notify-box,\n    .rmi-rpl-bottom, #s_SPORTS_GADGET, #s_EDITORS_PICK, #s_INTERESTING { \n        display: none ! important; \n    }\n\n    a[href*=\"forbes.com\"] {\n        /* does not play well with my browser configuration */\n        color: red ! important;\n    }\n}\n",
+		"sections": [
+			{
+				"code": "/* ==UserStyle==\n@name        Google\n@description Mask out various cruft\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [],
+				"regexps": []
+			},
+			{
+				"code": "#s_PERSONALIZATION, .additional-video,\n    .video box, .media-strip, .footer, #rt-col,\n    .share-button-wrapper, .gsid-FVD, #FEATURED_VIDEOS,\n    #en_us-e, #en_us-s, #en_us-m, #en_us-b, .onegoogle,\n    .section-en_us-e, .section-en_us-s, .section-en_us-m,\n    #taw, #bottomads, #fll, #fblqf, #fblsh, #gbvg, #wmxmsg,\n    #promo-section, #settings-button, #gbgs4, .pmoabs, #dftvp,\n    .gb_ga, .gb_g, .gb_Mb.gb_ee.gb_R, .section-me-oscars-2016,\n    .section-en_us-b, section-en_us-e, .section-me-ncaa-tournament-2016,\n    .section-en_us-tc, .section-me-masters-2016, #consent-bump,\n    .gb_ha, .section-en_uk-e, .section-en_uk-s, #gbw,\n    #gbwa, #gbw, #ad-source, #ad-label, #groups, #topstuff,\n    #ms, #lc, .share-bar-table, #gbgs4, #gbgs5, .side-appbar,\n    .plusone-box, #gf-foot, .appbar-add, #ad, #calendar, .SP_calendar,\n    .sfe-break-right-em, .gpost,\n    .ad-target2-wrapper, .hdg, #gmm-panel-promo, #copyright, #gbu, #notify-box,\n    .rmi-rpl-bottom, #s_SPORTS_GADGET, #s_EDITORS_PICK, #s_INTERESTING { \n        display: none ! important; \n    }\n\n    a[href*=\"forbes.com\"] {\n        /* does not play well with my browser configuration */\n        color: red ! important;\n    }",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"google.com"
+				],
+				"regexps": []
+			}
+		],
+		"usercssData": {
+			"vars": {},
+			"name": "Google",
+			"description": "Mask out various cruft",
+			"namespace": "github.com/maptracker/confFiles",
+			"homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+			"version": "1.0.0",
+			"license": "GPL-3.0-or-later"
+		},
+		"name": "Google",
+		"description": "Mask out various cruft",
+		"originalDigest": "d0b549b3f2a2d4c408cde6b14bd440049526581f",
+		"id": 184
 	}
 ]
