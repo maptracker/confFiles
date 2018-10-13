@@ -1,0 +1,35 @@
+/* ==UserStyle==
+@name        Google
+@description Mask out various cruft
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("google.com") {
+    #s_PERSONALIZATION, .additional-video,
+    .video box, .media-strip, .footer, #rt-col,
+    .share-button-wrapper, .gsid-FVD, #FEATURED_VIDEOS,
+    #en_us-e, #en_us-s, #en_us-m, #en_us-b, .onegoogle,
+    .section-en_us-e, .section-en_us-s, .section-en_us-m,
+    #taw, #bottomads, #fll, #fblqf, #fblsh, #gbvg, #wmxmsg,
+    #promo-section, #settings-button, #gbgs4, .pmoabs, #dftvp,
+    .gb_ga, .gb_g, .gb_Mb.gb_ee.gb_R, .section-me-oscars-2016,
+    .section-en_us-b, section-en_us-e, .section-me-ncaa-tournament-2016,
+    .section-en_us-tc, .section-me-masters-2016, #consent-bump,
+    .gb_ha, .section-en_uk-e, .section-en_uk-s, #gbw,
+    #gbwa, #gbw, #ad-source, #ad-label, #groups, #topstuff,
+    #ms, #lc, .share-bar-table, #gbgs4, #gbgs5, .side-appbar,
+    .plusone-box, #gf-foot, .appbar-add, #ad, #calendar, .SP_calendar,
+    .sfe-break-right-em, .gpost,
+    .ad-target2-wrapper, .hdg, #gmm-panel-promo, #copyright, #gbu, #notify-box,
+    .rmi-rpl-bottom, #s_SPORTS_GADGET, #s_EDITORS_PICK, #s_INTERESTING { 
+        display: none ! important; 
+    }
+
+    a[href*="forbes.com"] {
+        /* does not play well with my browser configuration */
+        color: red ! important;
+    }
+}
