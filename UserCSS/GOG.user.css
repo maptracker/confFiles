@@ -1,0 +1,307 @@
+/* ==UserStyle==
+@name        GOG
+@description Mask out unwanted or owned tiles
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("gog.com") {
+    .is-owned { 
+        display: none ! important
+    }
+    .icon-linux { 
+        background-color: darkorange ! important;
+        margin:3px; 
+        border: solid orange 2px;  
+    }
+    .product-row__rating {
+        display: inline ! important; 
+        width: 3px ! important;
+    }
+    .icon-win, .icon-mac, .icon-plus { 
+        display: none ! important
+    }
+
+    /* #wishlistHolder .invisible { display: block ! important } */
+    
+    .star-rating--50 { background-color: lime; }
+    .star-rating--45 { background-color: green; }
+    .star-rating--40 { background-color: yellowgreen; }
+    .star-rating--35 { background-color: yellow; }
+    .star-rating--30 { background-color: pink; }
+    .star-rating--25 { background-color: red; }
+    .star-rating--20 { background-color: red; }
+    .star-rating--15 { background-color: black; }
+    .star-rating--10 { background-color: black; }
+    
+    /* These attributes are no longer being set */
+    .product-row__rating[star-rating="50"] { background-color: lime; }
+    .product-row__rating[star-rating="49"] { background-color: lime; }
+    .product-row__rating[star-rating="48"] { background-color: lime; }
+    .product-row__rating[star-rating="47"] { background-color: green; }
+    .product-row__rating[star-rating="46"] { background-color: green; }
+    .product-row__rating[star-rating="45"] { background-color: green; }
+    .product-row__rating[star-rating="44"] { background-color: yellowgreen; }
+    .product-row__rating[star-rating="43"] { background-color: yellowgreen; }
+    .product-row__rating[star-rating="42"] { background-color: yellowgreen; }
+    .product-row__rating[star-rating="41"] { background-color: yellow; }
+    .product-row__rating[star-rating="40"] { background-color: yellow; }
+    .product-row__rating[star-rating^="3"] { background-color: pink; }
+    .product-row__rating[star-rating^="2"] { background-color: red; }
+    .product-row__rating[star-rating^="1"] { background-color: black; }
+    
+    /* Owned games from other sources */
+    *[product-tile-id="1207659024"], /* botanicula */
+    *[product-tile-id="1207659753"], /* vvvvvvvv */
+    *[product-tile-id="1207664843"], /* space_pirates_and_zombies */
+    *[product-tile-id="1207660134"], /* race_the_sun */
+    *[product-tile-id="1425657908"], /* skulls_of_the_shogun */
+    *[product-tile-id="1207659018"], /* spacechem */
+    *[product-tile-id="1207659017"], /* machinarium */
+    *[product-tile-id="1207659209"], /* Papers Please */
+    *[product-tile-id="1207659259"], /* Amnesia */
+    *[product-tile-id="1421855536"], /* world of goo */
+    *[product-tile-id="1430398832"], /* aquaria */
+    *[product-tile-id="1207659016"], /* grimrock */
+    *[product-tile-id="1207660913"], /* shadowrun */
+    *[product-tile-id="1207665343"], /* ai war */
+    *[product-tile-id="1207659020"], /* trine */
+    *[product-tile-id="1207659033"], /* uplink */
+    *[product-tile-id="1207659072"], /* to the moon */
+    *[product-tile-id="1438343741"], /* frozen_synapse */
+    *[product-tile-id="1207659014"], /* darwinia */
+    *[product-tile-id="1207659124"], /* deponia 2 */
+    *[product-tile-id="1207660563"], /* risk of rain */
+    *[product-tile-id="1207664703"], /* Desktop Dungeons */
+    *[product-tile-id="1207665283"], /* kingdom rush */
+    *[product-tile-id="1436866438"], /* shadowrun hk */
+    *[product-tile-id="1207659145"], /* stacking */
+    *[product-tile-id="1207659513"], /* guacamelee */
+    *[product-tile-id="1207660104"], /* pixeljunk */
+    *[product-tile-id="1207660253"], /* dustforce */
+    *[product-tile-id="1207665323"], /* ai war */
+    *[product-tile-id="1207659132"], /* costume quest */
+    *[product-tile-id="1207659220"], /* eschalon */
+    *[product-tile-id="1207665333"], /* ai war */
+    *[product-tile-id="1207664603"], /* among the sleep */
+    *[product-tile-id="1207667123"], /* anomaly */
+    *[product-tile-id="1207667133"], /* anomaly korea */
+    *[product-tile-id="1207659164"], /* bards tale */
+    *[product-tile-id="1207666373"], /* baldurs gate ii */
+    *[product-tile-id="1207666353"], /* baldurs gate */
+    *[product-tile-id="1207665193"], /* blocks that matter */
+    *[product-tile-id="1434013541"], /* breach and clear */
+    *[product-tile-id="1434036647"], /* breach and clear */
+    *[product-tile-id="1207659253"], /* brutal legend */
+    *[product-tile-id="1446823701"], /* card city nights */
+    *[product-tile-id="1207659075"], /* defcon */
+    *[product-tile-id="1207659953"], /* democracy 3 */
+    *[product-tile-id="1207666613"], /* democracy 3 */
+    *[product-tile-id="1207664493"], /* democracy 3 */
+    *[product-tile-id="1207660663"], /* democracy 3 */
+    *[product-tile-id="1207660233"], /* deponia 3 */
+    *[product-tile-id="1207660683"], /* eschalon iii */
+    *[product-tile-id="1207665163"], /* gone home */
+    *[product-tile-id="1207666533"], /* halfway */
+    *[product-tile-id="1207659483"], /* hammerwatch */
+    *[product-tile-id="1207666683"], /* icewind dale */
+    *[product-tile-id="1434445160"], /* ironclad tactics */
+    *[product-tile-id="1444053723"], /* little inferno */
+    *[product-tile-id="1446797453"], /* last federation */
+    *[product-tile-id="1207661993"], /* luftrausers */
+    *[product-tile-id="1207659074"], /* multiwinia */
+    *[product-tile-id="1207665033"], /* olliolli */
+    *[product-tile-id="1207660064"], /* outlast */
+    *[product-tile-id="1207664463"], /* outlast */
+    *[product-tile-id="1207667073"], /* pixel piracy */
+    *[product-tile-id="1207659049"], /* retro city */
+    *[product-tile-id="1207660413"], /* shadowrun returns */
+    *[product-tile-id="1440061546"], /* shadowrun hk */
+    *[product-tile-id="1439900139"], /* shadowrun hk */
+    *[product-tile-id="1207659160"], /* Shattered Haven */
+    *[product-tile-id="1207660263"], /* Shivah */
+    *[product-tile-id="1207664303"], /* Sir You are Being Hunted */
+    *[product-tile-id="1207665863"], /* spacecom */
+    *[product-tile-id="1207660733"], /* steamworld dig */
+    *[product-tile-id="1207660213"], /* super hexagon */
+    *[product-tile-id="1446796759"], /* last federation */
+    *[product-tile-id="1207660863"], /* tower of guns */
+    *[product-tile-id="1207665053"], /* unrest */
+    *[product-tile-id="1207665063"], /* unrest */
+    *[product-tile-id="1207665073"], /* unrest */
+    *[product-tile-id="1207665843"], /* shadowgate */
+    *[product-tile-id="1207665263"], /* crawl */
+    *[product-tile-id="1457519353"], /* oxenfree  */
+    *[product-tile-id="1207666243"], /* tri */
+    *[product-tile-id="1839729056"], /* real texas */
+    *[product-tile-id="2140144873"], /* rel texas */
+    *[product-tile-id="1735987864"], /* shadow warrior */
+    *[product-tile-id="1207658828"], /* gabriel knight */
+    *[product-tile-id="1207664393"], /* blackwell */
+    *[product-tile-id="1207658837"], /* gabriel knight */
+    *[product-tile-id="1207660094"], /* dust */
+    *[product-tile-id="1423058311"], /* bastion */
+    *[product-tile-id="1445250653"], /* pirates */
+    *[product-tile-id="1452686647"], /* samorost */
+    *[product-tile-id="1453277526"], /* samorost */
+    *[product-tile-id="1207658843"], /* gabriel knight */
+    *[product-tile-id="1440603706"], /* stasis */
+    *[product-tile-id="1461061433"], /* braid */
+    *[product-tile-id="1207665633"], /* dreamfall */
+    *[product-tile-id="1447947499"], /* besiege */
+    *[product-tile-id="1207659166"], /* avadon */
+    *[product-tile-id="1440603896"], /* stasis */
+    *[product-tile-id="1207664733"], /* shelter2 */
+    *[product-tile-id="1424868860"], /* shelter2 */
+    *[product-tile-id="1207659223"], /* reus */
+    *[product-tile-id="2107856782"], /* ren.expl */
+    *[product-tile-id="1938069609"], /* cryptark */
+    *[product-tile-id="1588437651"], /* owlboy */
+    *[product-tile-id="1456922969"], /* DotT */
+    *[product-tile-id="1159880091"], /* owlboy */
+    *[product-tile-id="1958228073"], /* torchlight 2 */
+    *[product-tile-id="1421064427"], /* sunless sea */
+    *[product-tile-id="1207660553"], /* octodad */
+    *[product-tile-id="1445349952"], /* hard west */
+    *[product-tile-id="1344895033"], /* PoE */
+    *[product-tile-id="1437060567"], /* feist */
+    *[product-tile-id="1203613131"], /* planescape */
+    *[product-tile-id="1207662943"], /* broken age */
+    *[product-tile-id="1434554947"], /* mini metro */
+    *[product-tile-id="1096313866"], /* 140 */
+    *[product-tile-id="1432894004"], /* massive chalice */
+    *[product-tile-id="1207664863"], /* anomaly defenders */
+    *[product-tile-id="1584866499"], /* beat cop */
+    *[product-tile-id="1428054996"], /* satellite reign */
+    *[product-tile-id="1440698356"], /* satellite reign */
+    *[product-tile-id="1440698146"], /* satellite reign */
+    *[product-tile-id="1207658748"], /* HoMM */
+    *[product-tile-id="1446111517"], /* galak-z */
+    *[product-tile-id="1207659192"], /* Anodyne */
+    *[product-tile-id="1207665553"], /* time force */
+    *[product-tile-id="1457453536"], /* deadbolt */
+    *[product-tile-id="1207667103"], /* lumino city */
+    *[product-tile-id="1452863102"], /* aquatic adventure */
+    *[product-tile-id="1207664533"], /* strike suit zero */
+    *[product-tile-id="1207659181"], /* waking mars */
+    *[product-tile-id="1566652906"], /* headlander */
+    *[product-tile-id="1415931005"], /* headlander */
+    *[product-tile-id="1207659117"], /* la mulana */
+    *[product-tile-id="1207659242"], /* rogue legacy */
+    *[product-tile-id="1436869408"], /* TIS-100 */
+    *[product-tile-id="1196955511"], /* Titan Quest */
+    *[product-tile-id="1207660353"], /* Trine 2 */
+    *[product-tile-id="1436435983"], /* Infinifactory */
+    *[product-tile-id="1913968552"], /* Army Men II */
+    *[product-tile-id="2014697223"], /* Delta Force II */
+    *[product-tile-id="1337763972"], /* Army Men */
+    *[product-tile-id="1420648438"], /* Lords of Xulima */
+    *[product-tile-id="1932981761"], /* Army Men RTS */
+    *[product-tile-id="1207660433"], /* Teslagrad */
+    *[product-tile-id="1207660623"], /* Red Faction */
+    *[product-tile-id="1317709786"], /* Army Men in Space */
+    *[product-tile-id="1420648167"], /* Lords of Xulima */
+    *[product-tile-id="1435329098"], /* Renowned Explorers */
+    *[product-tile-id="1207658851"], /* Aquanox 2 */
+    *[product-tile-id="1421250907"], /* Lords of Xulima */
+    *[product-tile-id="1207659038"], /* Alan Wake */
+    *[product-tile-id="1207658717"], /* Alien Nations */
+    *[product-tile-id="0"], /*  */
+    *[product-tile-id="0"], /*  */
+    *[product-tile-id="0"], /*  */
+    *[product-tile-id="0"], /*  */
+    *[product-tile-id="0"], /*  */
+    *[product-tile-id="0"], /*  */
+    *[product-tile-id="0"], /*  */
+    *[product-tile-id="0"], /*  */
+    /* Stuff I simply do not want, or is horribly rated */
+
+    *[product-tile-id="0"], /*  */
+    *[product-tile-id="0"], /*  */
+    *[product-tile-id="0"], /*  */
+    *[product-tile-id="0"], /*  */
+    *[product-tile-id="0"], /*  */
+    *[product-tile-id="1388775843"], /* soundtrack */
+    *[product-tile-id="1443692774"], /* soundtrack */
+    *[product-tile-id="1443428641"], /* soundtrack */
+    *[product-tile-id="1417848963"], /* soundtrack */
+    *[product-tile-id="1932600080"], /* soundtrack */
+    *[product-tile-id="1087788668"], /* soundtrack */
+    *[product-tile-id="1192269393"], /* soundtrack */
+    *[product-tile-id="1866912153"], /* soundtrack */
+    *[product-tile-id="2103924881"], /* soundtrack */
+    *[product-tile-id="1800426735"], /* soundtrack */
+    *[product-tile-id="1783204498"], /* soundtrack */
+    *[product-tile-id="1479677489"], /* soundtrack */
+    *[product-tile-id="1470685745"], /* soundtrack */
+    *[product-tile-id="1969367608"], /* soundtrack */
+    *[product-tile-id="1163019077"], /* soundtrack */
+    *[product-tile-id="1460734645"], /* soundtrack */
+    *[product-tile-id="1460735586"], /* soundtrack */
+    *[product-tile-id="1455788247"], /* soundtrack */
+    *[product-tile-id="1329181727"], /* soundtrack */
+    *[product-tile-id="1460735025"], /* soundtrack */
+    *[product-tile-id="1409132640"], /* soundtrack */
+    *[product-tile-id="1556868718"], /* soundtrack */
+    *[product-tile-id="1372401911"], /* soundtrack */
+    *[product-tile-id="1673921602"], /* soundtrack */
+    *[product-tile-id="1621931815"], /* soundtrack */
+    *[product-tile-id="1120436601"], /* soundtrack */
+    *[product-tile-id="1604832403"], /* soundtrack */
+    *[product-tile-id="2031197911"], /* soundtrack */
+    *[product-tile-id="2038860941"], /* soundtrack */
+    *[product-tile-id="1150654907"], /* soundtrack */
+    *[product-tile-id="1765912842"], /* soundtrack */
+    *[product-tile-id="1207665723"], /* wasteland 2 (did notwork) */
+    *[product-tile-id="2136436018"], /* soundtrack */
+    *[product-tile-id="1500539331"], /* soundtrack */
+    *[product-tile-id="1824632967"], /* artbook */
+    *[product-tile-id="1984697392"], /* soundtrack */
+    *[product-tile-id="1444756063"], /* soundtrack */
+    *[product-tile-id="1535923517"], /* soundtrack */
+    *[product-tile-id="1419503362"], /* soundtrack */
+    *[product-tile-id="1452238359"], /* soundtrack */
+    *[product-tile-id="1788373596"], /*  */
+    *[product-tile-id="1443432851"],
+    *[product-tile-id="1432563933"],
+    *[product-tile-id="1432925124"],
+    *[product-tile-id="1432925592"],
+    *[product-tile-id="1428489988"],
+    *[product-tile-id="1437732694"],
+    *[product-tile-id="1445245918"],
+    *[product-tile-id="1433148949"],
+    *[product-tile-id="1444761329"],
+    *[product-tile-id="1440698774"],
+    *[product-tile-id="1207666873"],
+    *[product-tile-id="1429612255"],
+    *[product-tile-id="1436531655"],
+    *[product-tile-id="1207658834"], /* phantasmagoria */
+    *[product-tile-id="1446465369"],
+    *[product-tile-id="1443779037"],
+    *[product-tile-id="1443778814"],
+    *[product-tile-id="1442564308"],
+    *[product-tile-id="1442910108"],
+    *[product-tile-id="1443778954"],
+    *[product-tile-id="1441717336"],
+    *[product-tile-id="1207665143"], /* mark of the ninja */
+    *[product-tile-id="1439377578"],
+    *[product-tile-id="1450092067"],
+    *[product-tile-id="1450100911"],
+    *[product-tile-id="1207658941"], /* lil devil */
+    *[product-tile-id="1207664403"], /* pinball world */
+    *[product-tile-id="1207658856"], /* blood */
+    *[product-tile-id="1207665153"], /* wasteland 2 */
+    *[product-tile-id="1436885138"], /* dungeons 2 poor ratings */
+    *[product-tile-id="1513949567"], /* everspace - garbage wine */
+    *[product-tile-id="1207666123"], /* starpoint gemini 2 - garbage wine (directx 11) */
+    *[product-tile-id="1422618200"], /* paranautical activity 2 stars */
+    *[product-tile-id="1444830704"], /* owned */
+    *[product-tile-id="1207664993"], /* owned */
+
+    *[product-tile-id="0"] /*  */  
+     {
+         display: none ! important;
+     }
+}
