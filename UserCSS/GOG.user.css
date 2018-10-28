@@ -3,7 +3,7 @@
 @description Mask out unwanted or owned tiles
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -208,8 +208,23 @@
     *[product-tile-id="1421250907"], /* Lords of Xulima */
     *[product-tile-id="1207659038"], /* Alan Wake */
     *[product-tile-id="1207658717"], /* Alien Nations */
-    *[product-tile-id="0"], /*  */
-    *[product-tile-id="0"], /*  */
+    *[product-tile-id="1207658914"], /* Shadowgrounds */
+    *[product-tile-id="1440151507"], /* Shelter 2 */
+    *[product-tile-id="1207659102"], /* FTL */
+    *[product-tile-id="1429612159"], /* Transistor */
+    *[product-tile-id="1207659087"], /* Unmechanical */
+    *[product-tile-id="1207665503"], /* Terraria */
+    *[product-tile-id="1605427427"], /* Inner World */
+    *[product-tile-id="1420648479"], /* Gettysburg */
+    *[product-tile-id="1432538826"], /* Convoy */
+    *[product-tile-id="1427876902"], /* Star Ruler 2 */
+    *[product-tile-id="1458127099"], /* Jotun */
+    *[product-tile-id="1425568340"], /* The Fall */
+    *[product-tile-id="1625207125"], /* Caves of Qud */
+    *[product-tile-id="1405492047"], /* Darkest Dungeon */
+    *[product-tile-id="1183536009"], /* Reigns */
+    *[product-tile-id="1225510575"], /* Reigns */
+    *[product-tile-id="1522206233"], /* Reigns */
     *[product-tile-id="0"], /*  */
     *[product-tile-id="0"], /*  */
     *[product-tile-id="0"], /*  */
