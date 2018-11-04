@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name        Amazon AWD
+@description Hide a couple components
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("amazon.com") {
+    /* AWS stuff */
+    #marketingimagelink, #link_root_account_signin {
+        display:none!important;
+    }
+}

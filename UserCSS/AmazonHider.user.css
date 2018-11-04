@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name        Amazon Hider
+@description Just hide a whole bunch of irritating stuff
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("amazon.com") {
+    #related_adsLazyLoad, #AUI_A9AdsMiddleBoxTop, #nav-ad-background-style,
+    #ask-btf_feature_div, #hmdFormDiv, div.navFooterLine:nth-child(4),
+    div.navFooterLine:nth-child(2), div.navFooterLine:nth-child(5),
+    #nav-bar-inner.nav-sprite, #marketing, #wrapper-credit-account,
+    #wrapper-add-bank-account, #cart-upsell, #hlbcc, .prime-ad-banner-content,
+    #footer, #hows-my-search, #poweredBy { 
+        display: none ! important; 
+    }
+}
