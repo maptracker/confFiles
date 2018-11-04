@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name        InspectApedia
+@description Unhide JS-toggle FAQs
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("inspectapedia.com") {
+    /* The FAQ section is toggled by JS, which I'm not allowing */
+    .hidden {
+        display: unset ! important;
+    }
+}

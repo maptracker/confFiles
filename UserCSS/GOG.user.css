@@ -3,7 +3,7 @@
 @description Mask out unwanted or owned tiles
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.1
+@version     1.0.2
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -225,6 +225,41 @@
     *[product-tile-id="1183536009"], /* Reigns */
     *[product-tile-id="1225510575"], /* Reigns */
     *[product-tile-id="1522206233"], /* Reigns */
+    *[product-tile-id="1445250340"], /* XCom UFO */
+    *[product-tile-id="1207658807"], /* Psychonauts */
+    *[product-tile-id="1207659096"], /* King of Dragon Pass */
+    *[product-tile-id="1207666913"], /* Warband */
+    *[product-tile-id="1445249430"], /* XCom Apocalypse */
+    *[product-tile-id="1445249983"], /* Xcom deep */
+    *[product-tile-id="1312818781"], /* Dead Space */
+    *[product-tile-id="2071628374"], /* zombie night terror */
+    *[product-tile-id="1207659593"], /* i have no mouth */
+    *[product-tile-id="1207659593"], /* painkiller */
+    *[product-tile-id="1207658672"], /* earthworm jim */
+    *[product-tile-id="1445250806"], /* freedom force */
+    *[product-tile-id="1207658870"], /* freedom force */
+    *[product-tile-id="1207665563"], /* cosmo */
+    *[product-tile-id="1207666893"], /* mount and blade */
+    *[product-tile-id="1207666923"], /* mount and blade */
+    *[product-tile-id="1207666903"], /* mount and blade */
+    *[product-tile-id="1207658744"], /* gorky 17 */
+    *[product-tile-id="1207666433"], /* gabriel knight */
+    *[product-tile-id="1431942210"], /* shadow of the comet */
+    *[product-tile-id="1442827661"], /* hard west */
+    *[product-tile-id="1207659236"], /* magrunner */
+    *[product-tile-id="1432222749"], /* prisoner of ice */
+    *[product-tile-id="1457427157"], /* lumo */
+    *[product-tile-id="1207659131"], /* pid */
+    *[product-tile-id="1115004086"], /* we are the dwarves */
+    *[product-tile-id="0"], /*  */
+    *[product-tile-id="0"], /*  */
+    *[product-tile-id="0"], /*  */
+    *[product-tile-id="0"], /*  */
+    *[product-tile-id="0"], /*  */
+    *[product-tile-id="0"], /*  */
+    *[product-tile-id="0"], /*  */
+    *[product-tile-id="0"], /*  */
+    *[product-tile-id="0"], /*  */
     *[product-tile-id="0"], /*  */
     *[product-tile-id="0"], /*  */
     *[product-tile-id="0"], /*  */
@@ -238,6 +273,14 @@
     *[product-tile-id="0"], /*  */
     *[product-tile-id="0"], /*  */
     *[product-tile-id="0"], /*  */
+    *[product-tile-id="0"], /*  */
+    *[product-tile-id="0"], /*  */
+    *[product-tile-id="0"], /*  */
+    *[product-tile-id="0"], /*  */
+    *[product-tile-id="0"], /*  */
+    *[product-tile-id="1439548178"], /* stasis */
+    *[product-tile-id="1207664913"], /* black mirror */
+    *[product-tile-id="1207658921"], /* realms of haunting */
     *[product-tile-id="1388775843"], /* soundtrack */
     *[product-tile-id="1443692774"], /* soundtrack */
     *[product-tile-id="1443428641"], /* soundtrack */
