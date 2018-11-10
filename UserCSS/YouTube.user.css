@@ -1,0 +1,31 @@
+/* ==UserStyle==
+@name        YouTube
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("youtube.com") {
+    #action-panel-details { 
+        display: block ! important; 
+    }
+
+    .promoted-videos, .branded-page-v2-top-row, #video-masthead, 
+    .signup-promo, #footer, #action-panel-share, #yt-uix-clickcard-card13,
+    #dftvp, #watch7-sidebar-discussion, #watch-sidebar-live-chat,
+    #item-section-054769, #item-section-033661, #item-section-652998,
+    #item-section-648146, #item-section-392757, #item-section-296230,
+    #item-section-046460, #item-section-204995, #item-section-031197,
+    #item-section-650712, #item-section-006100, #item-section-855594,
+    #item-section-840628, #item-section-202600, #item-section-884364,
+    .mealbar-promo-renderer, .messages, ytd-mealbar-promo-watch-renderer,
+    #subscribe-button, #end, #chat-messages, yt-live-chat-renderer,
+    yt-live-chat-app, #chatframe, ytd-live-chat-frame,
+    ytd-mealbar-promo-renderer,
+    ytd-popup-container, #watch-discussion, #ticker-content,
+    ytd-comment-thread-renderer, ytd-comments { 
+        display: none ! important; 
+    }
+}
