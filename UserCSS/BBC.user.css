@@ -1,0 +1,18 @@
+/* ==UserStyle==
+@name        BBC
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("bbc.co.uk"), domain("bbc.com") {
+    .share, #comp-pattern-library-2, #core-navigation, .tags-container,
+    .orb-footer-inner, #comp-features-and-analysis, .related-links,
+    #comp-top-stories-promo, .player-with-placeholder__caption,
+    .navigation, #orb-header, .comments-button, [class^="primary-nav"],
+    [class^="secondary-nav"], .sp-media-asset, .story-share, #get-inspired {
+        display : none ! important;
+    }
+}
