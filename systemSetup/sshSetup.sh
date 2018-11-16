@@ -49,11 +49,9 @@ script, eg:
     exit
 fi
 
-srcScript=$(readlink -f "${BASH_SOURCE[0]}")
 ## script folder: https://stackoverflow.com/a/246128
-my_dir="$( cd "$( dirname "$srcScript" )" && pwd )"
-utilDir=$(readlink -f $my_dir/../generalUtilities)
-utilFunc="$utilDir/_util_functions.sh"
+my_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+utilFunc="$my_dir/../../generalUtilities/_util_functions.sh"
 
 if [[ -e "$utilFunc" ]]; then
     ## Source in the utility functions, here used for colorized messaging
