@@ -1,0 +1,24 @@
+/* ==UserStyle==
+@name        Popular Mechanics
+@description No javascript = lots of mess. Clean up
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.1
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("popularmechanics.com") {
+    /* aggressive no-js section at top of style sheet */
+    .no-js body nav, .no-js body .top-pathing, .no-js body .feed,
+    .no-js body .content-info-social-buttons, .no-js body .transporter,
+    .no-js body footer, .no-js body script, .no-js body .seo-tags-container,
+    .no-js body .social-menu {
+        display: none ! important;
+    }
+
+    /* Probably not needed... */
+    nav, .sidepanel-submenu-item, .sidepanel-item {
+        display: none ! important;
+        position: unset ! important;
+    }
+}

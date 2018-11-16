@@ -44,6 +44,17 @@ ssh() {
     fi
 }
 
+## Terminator does not have a keyboard shortcut to set terminal title
+## Make function to make it easier ...
+tt() {
+    ## https://stackoverflow.com/a/8850484
+    ORIG=$PS1
+    TITLE="\e]2;$1\a"
+    PS1=${ORIG}${TITLE}
+    ## terminator-gtk3 has keyboard shortcuts for both the window and
+    ## the terminal, but they don't seem to be reflected in the
+    ## system's task panel.
+}
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # http://alexteichman.com/octo/blog/2014/01/01/x11-forwarding-and-terminal-multiplexers/

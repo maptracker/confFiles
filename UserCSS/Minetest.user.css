@@ -1,0 +1,13 @@
+/* ==UserStyle==
+@name        Minetest
+@description Show expandable tips by default
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("minetest.net") {
+    /* Show toggle boxes without activating JS */
+    .spoiler_content { display: unset ! important; }
+}

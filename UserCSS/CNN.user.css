@@ -1,0 +1,23 @@
+/* ==UserStyle==
+@name        CNN
+@description Mask out irritations, tweak images
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("cnn.com") {
+    .cnnStryVidCont, .map-canvas, .cnn_stryshrwdgtbtm, #cnn_ftrcntnt, 
+    .js-owl-filmstrip, #cnn_hdr-main, #large-media, iframe, 
+    #leaf-footer-article-zone, .el__featured-video, .pg-rail-tall__head,
+    footer, #story-bottom, header, .m-share, .fb-send-to-messenger-container,
+    .nav-expanded, .nav, .breaking-news, #nav__plain-header, .cn,
+    .zn-body__read-more { 
+        display : none ! important; 
+    }
+    .media__image { transition: unset ! important; }
+    body { background-color: unset ! important; }
+
+    .pg-vertical { right: unset !important; }
+}

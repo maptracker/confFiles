@@ -1,0 +1,13 @@
+/* ==UserStyle==
+@name        WikiHow
+@description Allow images to be visible without allowing JS
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("wikihow.com") {
+    img { display: unset ! important;
+          position: unset ! important;  }
+}

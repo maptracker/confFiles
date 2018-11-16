@@ -1,0 +1,62 @@
+/* ==UserStyle==
+@name        Amazon Offers
+@description SO. MUCH. SPAM. 
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("amazon.com") {
+
+    .updp-right-option, .prime-updp-messaging,  .adStripe2 ,
+    #sbbop-yes-button, .smTabCDiv, #cbcc_banner_container,
+    #availableForPrimeBox, #navFooter, #tellAFriendBox_feature_div,
+    #cbcc_banner, #wrapper-credit-account, #wrapper-add-bank-account,
+    #mom-child-form, #bbop-sbbop-container, #va-rel-videos-carousel,
+    #momSignupButton, .mom-check-mark, #mom-shipping-note, 
+    #pe-bb-join-prime-section, #benefit-list, #quickPromoBucketContent,
+    iframe, #customer_discussions_lazy_load_div, #giveaway_feature_div,
+    .SP-Ad-Feedback, #sims-fbt, #tradeInButton_feature_div, 
+    #oneClickSignIn, #unifiedLocation_feature_div, #siAddCoverage,
+    .GB-SHOVELER, .acs-bgtext-widget, #hows-my-search, #rhf, .advertisingTable,
+    .iss-ad-row, .bit-aa-install-widget-contents, #hero-quick-promo,
+    #alternativeOfferEligibilityMessaging_feature_div, 
+    #edpIngress_feature_diva , #student_benefit_container { 
+        display: none ! important; 
+    }
+    
+    .itemPriceDrop {
+        /* Highlight wish list items with price drop */
+        background-color: lime ! important; 
+    }
+    
+    .itemAvailOfferedBy b { 
+        color: red ! important; 
+        background-color: yellow; 
+    }
+    
+    #sbbop-no-button *, .no-thanks-link *, #mom-no-thanks *, 
+    #siNoCoverage-announce {
+        /* Highlight and emphasize the links to decline their offer */
+        font-size: 2em; 
+        font-weight: bold; 
+        color: darkgreen ! important; 
+        background-color: yellow; 
+    }
+
+    .no-thanks-link, #cancel_button_container { 
+        height: 3em ! important; 
+        width: 1000px ! important; 
+        border: solid green 1px; 
+    }
+    #cancel_button_container a { 
+        background-color: yellow; 
+        font-size: 2em ! important; 
+        font-weight: bold; 
+        color: red; 
+    }
+    #pe-fallback-msgbox { 
+        background-color: yellow ! important; 
+    }
+}

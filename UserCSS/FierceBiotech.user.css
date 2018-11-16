@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name        FierceBiotech
+@description Mask bits
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.2
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("fiercebiotech.com"), domain("fiercepharma.com") {
+    #sidebar, #footer, .pane-sister-sites, .pane-sponsored-content,
+    .block-qtx-promo-banner, .promo_banner, #mobile-ad-wrapper,
+    .node--type-embed-promo {
+        display: none ! important;
+    }
+}

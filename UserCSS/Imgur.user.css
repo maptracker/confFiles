@@ -1,0 +1,27 @@
+/* ==UserStyle==
+@name        Imgur
+@description Masks random cruft
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.1
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("imgur.com") {
+    #cta-container-placeholder, #fixed-side-footer-links, #promoted-spotlight,
+    .BetaSignUp, .upload, .video-play, .social-icon, .caption-create,
+    .post-action-upvote, .post-action-downvote, .post-action-favorite,
+    .Open-Save-To-Folder-Button, .NavbarButtonSS-tooltip, .Footer { 
+        display : none ! important; 
+    }
+
+    .promoted-tag {
+        font-size: 600% ! important; 
+        background-color: red ! important;
+	color: yellow ! important; 
+        display: block ! important;
+        z-index: 1000 ! important;
+        height: 1000px ! important;
+    }
+
+}

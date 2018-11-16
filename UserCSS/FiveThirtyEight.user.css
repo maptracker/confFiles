@@ -1,0 +1,23 @@
+/* ==UserStyle==
+@name        FiveThirtyEight
+@description Mask cruft and sports
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("fivethirtyeight.com") {
+    
+    /* A lot of these no longer work after CSS updates to the site */
+    iframe[src*='nfl'], iframe[src*='football'], iframe[src*='nba'],
+    iframe[src*='soccer'],
+    .tag-college-football, .tag-nfl, .vertical-sports,
+    .footer-section-secondary-links,
+    .footer-section-get-more, .comments, #footer-additional-info {
+        display: none ! important;
+    }
+
+    .widget { border-bottom: unset; }
+    #colophon { padding: unset; }
+}
