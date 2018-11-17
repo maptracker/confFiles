@@ -1,0 +1,307 @@
+/* ==UserStyle==
+@name        Reddit
+@description Mask add block in widget panel. Media Bias Fact Check coloration
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.1.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("reddit.com") {
+
+    /* ---    ---    ---    ---    ---    ---    ---    ---    ---    ---
+       Media Bias Fact Check
+       https://mediabiasfactcheck.com
+
+       Rates Left <-> Right bias, as well as conspiracy theory sites
+       Also rates factual reporting level
+
+       https://mediabiasfactcheck.com/methodology/
+
+       ... and who checks MBFC? If any site is of interest to you, and
+       you're skeptical of the quality or provenance of the
+       information, you should obviously spend some time investigating
+       the owners of the site, its methods, and its history.
+
+       Also note: The domain name patterns I am using are not
+       carefully anchored. That is, the pattern 'nymag.com' will also
+       match 'therealnymag.com'. So some patterns may flag unrelated
+       sites.
+
+   */
+
+    /* Copy-paste blocks (just makes it easier to add new entries)
+
+     
+     , a[href*='voanews.com']
+     , a[href*='pastingPlaceHolder']
+     , a[href*='pastingPlaceHolder']
+     , a[href*='pastingPlaceHolder']
+     , a[href*='pastingPlaceHolder']
+     , a[href*='pastingPlaceHolder']
+     , a[href*='pastingPlaceHolder']
+     , a[href*='pastingPlaceHolder']
+
+
+   */
+
+    /* MBFC Sites: Very High factual reporting
+
+      "source is always factual, sources to credible information and
+       makes immediate corrections to incorrect information and has
+       never failed a fact check"
+   */
+    a[href*='.bbc.com'], a[href*='apnews.com'], a[href*='reuters.com'] {
+        
+        background-color: #9f9 ! important; /* light green */
+    }
+    
+    /* MBFC Sites: High factual reporting
+
+      "source is almost always factual, sources to mostly credible low
+       biased or high factual information and makes immediate
+       corrections to incorrect information and has failed only 1 fact
+       check"
+   */
+    a[href*='washingtonpost.com'], a[href*='theguardian.com'],
+    a[href*='businessinsider.com'], a[href*='cbsnews.com'], a[href*='.upi.com'],
+    a[href*='politico.com'], a[href*='commondreams.org'], a[href*='nymag.com'],
+    a[href*='news.com.au'], a[href*='.cbc.ca/'], a[href*='thehill.com'],
+    a[href*='telegraph.co.uk'], a[href*='engadget.com'], a[href*='.cnbc.com'],
+    a[href*='nationalgeographic.com'], a[href*='.sky.com'],
+    a[href*='nytimes.com'], a[href*='.philly.com'], a[href*='denverpost.com'],
+    a[href*='nbcnews.com'], a[href*='abcnews.go.com'], a[href*='spectator.org'],
+    a[href*='washingtontimes.com'], a[href*='.pe.com'], a[href*='theweek.com'],
+    a[href*='chicagotribune.com'], a[href*='newrepublic.com'],
+    a[href*='washingtonexaminer.com'], a[href*='fivethirtyeight.com'],
+    a[href*='bridgemi.com'], a[href*='washingtonmonthly.com'],
+    a[href*='bangordailynews.com'], a[href*='prospect.org'], a[href*='.dw.com'],
+    a[href*='.independent.co.uk'], a[href*='/fortune.com'],
+    a[href*='.standard.co.uk'], a[href*='globalnews.ca'],
+    a[href*='voanews.com'] {
+        
+        background-color: #cff ! important; /* light blue */
+    }
+    
+    /* MBFC Sites: Mixed factual reporting
+
+      "source does not always use proper sourcing or sources to other
+       biased/mixed sources.  They may also report well sourced
+       information as well. Mixed sources will have failed one or more
+       fact checks and does not immediately correct false or
+       misleading information. While the majority of the information
+       may be factual on these sources, they need to be
+       checked. Further, any source that does not disclose a mission
+       or ownership information will automatically be deemed mixed"
+   */
+    a[href*='cnn.com'], a[href*='mirror.co.uk'], a[href*='foxnews.com'],
+    a[href*='newsweek.com'], a[href*='hurriyetdailynews.com'],
+    a[href*='buzzfeed.com'], a[href*='buzzfeednews.com'],
+    a[href*='middleeastmonitor.com'], a[href*='komonews.com'],
+    a[href*='americanthinker.com'], a[href*='bizpacreview.com'],
+    a[href*='townhall.com'], a[href*='dailycaller.com'],
+    a[href*='alternet.org'], a[href*='thinkprogress.org'],
+    a[href*='crooksandliars.com'], a[href*='patheos.com'] {
+        
+        background-color: #ff6 ! important; /* yellow */
+    }
+    
+    /* MBFC Sites: Low factual reporting
+
+      "source rarely uses credible sources and is simply not
+       trustworthy for reliable information. These are the sources
+       that need to be fact checked for intentional fake news,
+       conspiracy and propaganda"
+   */
+    a[href*='pastingPlaceHolder'] {
+        background-color: #fc3 ! important; /* Orange */
+    }
+    
+    /* MBFC Sites: Very Low factual reporting
+
+      "source almost never uses credible sources and is simply not
+       trustworthy for reliable information at all. These are the
+       sources that always need to be fact checked for intentional
+       fake news, conspiracy and propaganda"
+   */
+    a[href*='pastingPlaceHolder'] {
+        background-color: #f00 ! important; /* red */
+    }
+
+    /* MBFC Sites: Conspiracy/Pseudoscience Sites
+
+      "reserved for sources that publish unverifiable information that
+       relates to known conspiracies such as the New World Order,
+       Illuminati, False Flags, Aliens, etc. Pseudoscience is
+       determined by publishing unverified health and scientific
+       claims. In order to be classified in this group the central
+       theme of the source must revolve around conspiracies or
+       pseudoscience"
+   */
+    a[href*='wearechange.org'], a[href*='rinf.com'] {
+        background-color: #303 ! important;
+        color: #ff6 ! important;
+    }
+
+    /* MBFC Sites: No entry available
+
+       The fact that they haven't analyzed the site yet implies that
+       it's not heavily visited, at least by the (presumably Western)
+       population of visitors that use MBFC
+   */
+    a[href*='yenisafak.com'], a[href*='masslive.com'],
+    a[href*='physicsworld.com'], a[href*='etherail.com'],
+    a[href*='middleeasteye.net'] {
+        background-color: #fc9 ! important; /* light brown */
+    }
+
+    /* MBFC Sites: Satire
+
+      "sources exclusively use humor, irony, exaggeration, or ridicule
+       to expose and criticize people’s stupidity or vices,
+       particularly in the context of contemporary politics and other
+       topical issues. Primarily these sources are clear that they are
+       satire and do not attempt to deceive"
+   */
+    a[href*='cracked.com'] {
+        background-color: #ccc ! important; /* light gray */
+        /* Upside down text:
+            https://priteshgupta.com/2011/09/flip-or-reverse-text-using-css/
+       */
+        -webkit-transform:rotate(-180deg) ! important;
+        -moz-transform:rotate(-180deg) ! important;
+        -o-transform:rotate(-180deg) ! important;
+        transform:rotate(-180deg) ! important;
+        ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)" ! important;
+        filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2) ! important;
+    }
+
+    /* Flagging MBFC bias ratings with little icons to left of link
+       Extreme Left:  LLL Dark Blue
+       Left:           LL Blue 
+       Center Left:     L Light Blue 
+       Least Biased:  --- Green
+       'Science':       0 Green
+       Center Left:     R Light Red 
+       Left:           RR Red 
+       Extreme Right: RRR Dark Red
+       No MBFC Entry:   ? Brown
+    
+    /* MBFC Sites: Extreme Left */
+    a[href*='pastingPlaceHolder'] {
+        background-image:
+        url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwYZMUBZuQAAACRJREFUOMtjYBgF1AL//5MrxkSp1cPAAEbsgcPISLzYKKAYAACjxQwEXv/lEAAAAABJRU5ErkJggg==)
+           ! important;
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
+    }
+    
+    /* MBFC Sites: Left */
+    a[href*='mirror.co.uk'], a[href*='cnn.com'], a[href*='newsweek.com'],
+    a[href*='middleeastmonitor.com'], a[href*='commondreams.org'],
+    a[href*='newsweek.com'], a[href*='nymag.com'], a[href*='newrepublic.com'],
+    a[href*='alternet.org'], a[href*='washingtonmonthly.com'],
+    a[href*='thinkprogress.org'], a[href*='prospect.org'],
+    a[href*='cracked.com'], a[href*='crooksandliars.com'] {
+        background-image:
+        url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwYKtf4YZwAAACpJREFUOMtjYBgF1AfGxv//EyMGA0yUWjgMDGAkFGBnzzIyYhMbTW5UBAD/1wzS7pLB9AAAAABJRU5ErkJggg==)
+           ! important;
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
+    }
+    
+    /* MBFC Sites: Left-Center */
+    a[href*='businessinsider.com'], a[href*='theguardian.com'],
+    a[href*='washingtonpost.com'], a[href*='cbsnews.com'], a[href*='.bbc.com'],
+    a[href*='politico.com'], a[href*='news.com.au'], a[href*='.cbc.ca/'],
+    a[href*='thehill.com'], a[href*='hurriyetdailynews.com'],
+    a[href*='engadget.com'], a[href*='.cnbc.com'], a[href*='buzzfeed.com'],
+    a[href*='buzzfeednews.com'], a[href*='.sky.com'], a[href*='nytimes.com'],
+    a[href*='.philly.com'], a[href*='denverpost.com'], a[href*='nbcnews.com'],
+    a[href*='abcnews.go.com'], a[href*='fivethirtyeight.com'],
+    a[href*='bangordailynews.com'], a[href*='theweek.com'],
+    a[href*='.independent.co.uk'], a[href*='.dw.com'],
+    a[href*='globalnews.ca'] {
+        background-image:
+        url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwU5IQMqsgAAACdJREFUOMtjYBgFtANpaf//E6OOiVKLhoEBjMQG4qxZjIyjSYtGAAAxUAbUce9dmgAAAABJRU5ErkJggg==)
+           ! important;
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
+    }
+    
+    /* MBFC Sites: Least-Biased */
+    a[href*='.upi.com'], a[href*='apnews.com'], a[href*='reuters.com'],
+    a[href*='bridgemi.com'], a[href*='patheos.com'], a[href*='voanews.com'] {
+        background-image:
+        url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwwucxIUPAAAABxJREFUOMtjYBgFowAGZjL8Z5jJ8J8ssVEwHAAAWeoJkREpGMwAAAAASUVORK5CYII=)
+           ! important;
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
+    }
+    
+    /* MBFC Sites: Science */
+    a[href*='nationalgeographic.com'] {
+        background-image:
+        url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRECYyHwJgFgAAAEdJREFUOMtjYBjygBGnzEyG/3B2Om51THg1wzQiG0YQzGT4j6EBmxheF5AAmAi6hiIDKHYBntCnkwvIBsjRhicKqZISBx4AAC2nFmnZuwV7AAAAAElFTkSuQmCC)
+           ! important;
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
+    }
+    
+    /* MBFC Sites: Right-Center */
+    a[href*='telegraph.co.uk'], a[href*='washingtontimes.com'],
+    a[href*='.pe.com'], a[href*='chicagotribune.com'],
+    a[href*='/fortune.com'], a[href*='.standard.co.uk'] {
+        background-image:
+        url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwQ336A29AAAADJJREFUOMtjYBgFFANGXBL/09L+oyicNYuRJJORDUA3DBkw0cULJDufJl7AZ8gooBAAANugFfnCrgsLAAAAAElFTkSuQmCC)
+           ! important;
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
+    }
+    
+    /* MBFC Sites: Right */
+    a[href*='foxnews.com'], a[href*='komonews.com'], a[href*='townhall.com'],
+    a[href*='americanthinker.com'], a[href*='bizpacreview.com'],
+    a[href*='spectator.org'], a[href*='washingtonexaminer.com'],
+    a[href*='dailycaller.com'] {
+        background-image:
+        url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwQkWx53KgAAADhJREFUOMtjYBgFFANGdIH/xsb/URScPcuITQyniciKYWxsYjDARFMvwJyKTYx+XkDXgEtsFFAAALHMJ+9VjEruAAAAAElFTkSuQmCC)
+           ! important;
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
+    }
+    
+    /* MBFC Sites: Extreme Right */
+    a[href*='rinf.com'] {
+        background-image:
+        url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwMu9IoI8wAAADVJREFUOMtjYBgFFANGBgYGhv8MDP/RBBmJFWNANwDGJlaMiepeYCRRjDZeQA8sUsRGARkAAHTgKenRjGaPAAAAAElFTkSuQmCC)
+           ! important;
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
+    }
+
+    /* MBFC Sites: No entry 
+
+       The fact that they haven't analyzed the site yet implies that
+       it's not heavily visited, at least by the (presumably Western)
+       population of visitors that use MBFC
+   */
+    a[href*='yenisafak.com'], a[href*='masslive.com'], a[href*='etherail.com'],
+    a[href*='physicsworld.com'], a[href*='middleeasteye.net'] {
+        background-image:
+        url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsREB0U8b0K0wAAADlJREFUOMtjYBgFjPgk04wZ/sPYs87iV4tXc5oxw39kPjJgwmUAyTbicwku26mimWlwx/Ew8AJdAABtFRLIrXPiBQAAAABJRU5ErkJggg==)
+           ! important;
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
+    }
+
+}
