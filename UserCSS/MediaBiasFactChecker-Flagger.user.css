@@ -3,11 +3,11 @@
 @description Colorize news links according to MBFC ratings
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.4
+@version     1.0.5
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
-@-moz-document domain("reddit.com"), domain("wikipedia.org"){
+@-moz-document domain("reddit.com"), domain("wikipedia.org") {
 
     /* ---    ---    ---    ---    ---    ---    ---    ---    ---    ---
        Media Bias Fact Check
@@ -33,7 +33,7 @@
     /* Copy-paste blocks (just makes it easier to add new entries)
 
      
-     , a[href*='abc7news.com']
+     , a[href*='.who.int/']
      , a[href*='pastingPlaceHolder']
      , a[href*='pastingPlaceHolder']
      , a[href*='pastingPlaceHolder']
@@ -52,7 +52,7 @@
        never failed a fact check"
    */
     a[href*='.bbc.com'], a[href*='.bbc.co.uk'], a[href*='apnews.com'],
-    a[href*='reuters.com'] {
+    a[href*='reuters.com'], a[href*='.who.int/'] {
         
         background-color: #9f9 ! important; /* light green */
     }
@@ -86,8 +86,10 @@
     a[href*='thedailybeast.com'], a[href*='thehindu.com'],
     a[href*='.sbs.com.au'], a[href*='straitstimes.com'],
     a[href*='nzherald.co.nz'], a[href*='tennessean.com'],
-    a[href*='usatoday.com'], a[href*='arkansasonline.com'],
-    a[href*='mercurynews.com'] {
+    a[href*='usatoday.com'], a[href*='arkansasonline.com'], a[href*='/mic.com'],
+    a[href*='mercurynews.com'], a[href*='sacbee.com'], a[href*='.pri.org'],
+    a[href*='politifact.com'], a[href*='foreignpolicy.com'],
+    a[href*='msmagazine.com'] {
         
         background-color: #cff ! important; /* light blue */
     }
@@ -191,8 +193,8 @@
        Center Left:     L Light Blue 
        Least Biased:  --- Green
        'Science':       0 Green
-       Center Left:     R Light Red 
-       Left:           RR Red 
+       Center Right:    R Light Red 
+       Right:          RR Red 
        Extreme Right: RRR Dark Red
        No MBFC Entry:   ? Brown
     
@@ -213,7 +215,8 @@
     a[href*='alternet.org'], a[href*='washingtonmonthly.com'],
     a[href*='thinkprogress.org'], a[href*='prospect.org'],
     a[href*='cracked.com'], a[href*='crooksandliars.com'],
-    a[href*='rappler.com'], a[href*='thedailybeast.com'] {
+    a[href*='rappler.com'], a[href*='thedailybeast.com'],
+    a[href*='msmagazine.com'] {
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwYKtf4YZwAAACpJREFUOMtjYBgF1AfGxv//EyMGA0yUWjgMDGAkFGBnzzIyYhMbTW5UBAD/1wzS7pLB9AAAAABJRU5ErkJggg==)
            ! important;
@@ -237,9 +240,9 @@
     a[href*='.independent.co.uk'], a[href*='.dw.com'], a[href*='.bbc.co.uk'],
     a[href*='globalnews.ca'], a[href*='ynetnews.com'], a[href*='thehindu.com'],
     a[href*='almasdarnews.com'], a[href*='aljazeera.com'],
-    a[href*='timesofisrael.com'], a[href*='uawire.org'],
-    a[href*='.sbs.com.au'], a[href*='usatoday.com'],
-    a[href*='mercurynews.com'] {
+    a[href*='timesofisrael.com'], a[href*='uawire.org'], a[href*='/mic.com'],
+    a[href*='.sbs.com.au'], a[href*='usatoday.com'], a[href*='.pri.org'],
+    a[href*='mercurynews.com'], a[href*='sacbee.com'] {
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwU5IQMqsgAAACdJREFUOMtjYBgFtANpaf//E6OOiVKLhoEBjMQG4qxZjIyjSYtGAAAxUAbUce9dmgAAAABJRU5ErkJggg==)
            ! important;
@@ -251,7 +254,8 @@
     /* MBFC Sites: Least-Biased */
     a[href*='.upi.com'], a[href*='apnews.com'], a[href*='reuters.com'],
     a[href*='bridgemi.com'], a[href*='patheos.com'], a[href*='voanews.com'],
-    a[href*='.abc.net.au'], a[href*='nzherald.co.nz'] {
+    a[href*='.abc.net.au'], a[href*='nzherald.co.nz'],
+    a[href*='politifact.com'], a[href*='foreignpolicy.com'] {
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwwucxIUPAAAABxJREFUOMtjYBgFowAGZjL8Z5jJ8J8ssVEwHAAAWeoJkREpGMwAAAAASUVORK5CYII=)
            ! important;
@@ -261,7 +265,7 @@
     }
     
     /* MBFC Sites: Science */
-    a[href*='nationalgeographic.com'] {
+    a[href*='nationalgeographic.com'], a[href*='.who.int/'] {
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRECYyHwJgFgAAAEdJREFUOMtjYBjygBGnzEyG/3B2Om51THg1wzQiG0YQzGT4j6EBmxheF5AAmAi6hiIDKHYBntCnkwvIBsjRhicKqZISBx4AAC2nFmnZuwV7AAAAAElFTkSuQmCC)
            ! important;
@@ -325,4 +329,29 @@
         padding-left: 18px ! important;
     }
 
+}
+
+
+@-moz-document domain("reddit.com") {
+    /* Highlight Wikipedia links, but not on Wikipedia
+
+       I'll admit I'm somewhat skeptical of labeling WP articles as
+       "least biased" and "highly factual". Moderation helps, but
+       there are pockets of bias controlled by all parts of the
+       political spectrum as well as varying levels of factual
+       integrity.
+
+       https://mediabiasfactcheck.com/wikipedia/
+
+     */
+    
+    a[href*='wikipedia.org'] {
+        background-color: #cff ! important; /* light blue */
+        background-image:
+        url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwwucxIUPAAAABxJREFUOMtjYBgFowAGZjL8Z5jJ8J8ssVEwHAAAWeoJkREpGMwAAAAASUVORK5CYII=)
+           ! important;
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
+    }
 }
