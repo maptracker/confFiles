@@ -3,7 +3,7 @@
 @description Colorize news links according to MBFC ratings
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.2
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -33,7 +33,7 @@
     /* Copy-paste blocks (just makes it easier to add new entries)
 
      
-     , a[href*='voanews.com']
+     , a[href*='abc7news.com']
      , a[href*='pastingPlaceHolder']
      , a[href*='pastingPlaceHolder']
      , a[href*='pastingPlaceHolder']
@@ -51,7 +51,8 @@
        makes immediate corrections to incorrect information and has
        never failed a fact check"
    */
-    a[href*='.bbc.com'], a[href*='apnews.com'], a[href*='reuters.com'] {
+    a[href*='.bbc.com'], a[href*='.bbc.co.uk'], a[href*='apnews.com'],
+    a[href*='reuters.com'] {
         
         background-color: #9f9 ! important; /* light green */
     }
@@ -71,6 +72,8 @@
     a[href*='nationalgeographic.com'], a[href*='.sky.com'],
     a[href*='nytimes.com'], a[href*='.philly.com'], a[href*='denverpost.com'],
     a[href*='nbcnews.com'], a[href*='abcnews.go.com'], a[href*='spectator.org'],
+    a[href*='nbcsandiego.com'],
+    a[href*='abc7news.com'],
     a[href*='washingtontimes.com'], a[href*='.pe.com'], a[href*='theweek.com'],
     a[href*='chicagotribune.com'], a[href*='newrepublic.com'],
     a[href*='washingtonexaminer.com'], a[href*='fivethirtyeight.com'],
@@ -78,7 +81,13 @@
     a[href*='bangordailynews.com'], a[href*='prospect.org'], a[href*='.dw.com'],
     a[href*='.independent.co.uk'], a[href*='/fortune.com'],
     a[href*='.standard.co.uk'], a[href*='globalnews.ca'],
-    a[href*='voanews.com'] {
+    a[href*='voanews.com'], a[href*='ynetnews.com'], a[href*='aljazeera.com'],
+    a[href*='timesofisrael.com'], a[href*='.abc.net.au'],
+    a[href*='thedailybeast.com'], a[href*='thehindu.com'],
+    a[href*='.sbs.com.au'], a[href*='straitstimes.com'],
+    a[href*='nzherald.co.nz'], a[href*='tennessean.com'],
+    a[href*='usatoday.com'], a[href*='arkansasonline.com'],
+    a[href*='mercurynews.com'] {
         
         background-color: #cff ! important; /* light blue */
     }
@@ -95,13 +104,15 @@
        or ownership information will automatically be deemed mixed"
    */
     a[href*='cnn.com'], a[href*='mirror.co.uk'], a[href*='foxnews.com'],
+    a[href*='fox5atlanta.com'],
     a[href*='newsweek.com'], a[href*='hurriyetdailynews.com'],
     a[href*='buzzfeed.com'], a[href*='buzzfeednews.com'],
     a[href*='middleeastmonitor.com'], a[href*='komonews.com'],
     a[href*='americanthinker.com'], a[href*='bizpacreview.com'],
     a[href*='townhall.com'], a[href*='dailycaller.com'],
     a[href*='alternet.org'], a[href*='thinkprogress.org'],
-    a[href*='crooksandliars.com'], a[href*='patheos.com'] {
+    a[href*='crooksandliars.com'], a[href*='patheos.com'], a[href*='.rt.com'],
+    a[href*='almasdarnews.com'], a[href*='rappler.com'], a[href*='uawire.org'] {
         
         background-color: #ff6 ! important; /* yellow */
     }
@@ -151,7 +162,7 @@
    */
     a[href*='yenisafak.com'], a[href*='masslive.com'],
     a[href*='physicsworld.com'], a[href*='etherail.com'],
-    a[href*='middleeasteye.net'] {
+    a[href*='middleeasteye.net'], a[href*='news-leader.com'] {
         background-color: #fc9 ! important; /* light brown */
     }
 
@@ -201,7 +212,8 @@
     a[href*='newsweek.com'], a[href*='nymag.com'], a[href*='newrepublic.com'],
     a[href*='alternet.org'], a[href*='washingtonmonthly.com'],
     a[href*='thinkprogress.org'], a[href*='prospect.org'],
-    a[href*='cracked.com'], a[href*='crooksandliars.com'] {
+    a[href*='cracked.com'], a[href*='crooksandliars.com'],
+    a[href*='rappler.com'], a[href*='thedailybeast.com'] {
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwYKtf4YZwAAACpJREFUOMtjYBgF1AfGxv//EyMGA0yUWjgMDGAkFGBnzzIyYhMbTW5UBAD/1wzS7pLB9AAAAABJRU5ErkJggg==)
            ! important;
@@ -218,10 +230,16 @@
     a[href*='engadget.com'], a[href*='.cnbc.com'], a[href*='buzzfeed.com'],
     a[href*='buzzfeednews.com'], a[href*='.sky.com'], a[href*='nytimes.com'],
     a[href*='.philly.com'], a[href*='denverpost.com'], a[href*='nbcnews.com'],
+    a[href*='nbcsandiego.com'],
     a[href*='abcnews.go.com'], a[href*='fivethirtyeight.com'],
+    a[href*='abc7news.com'],
     a[href*='bangordailynews.com'], a[href*='theweek.com'],
-    a[href*='.independent.co.uk'], a[href*='.dw.com'],
-    a[href*='globalnews.ca'] {
+    a[href*='.independent.co.uk'], a[href*='.dw.com'], a[href*='.bbc.co.uk'],
+    a[href*='globalnews.ca'], a[href*='ynetnews.com'], a[href*='thehindu.com'],
+    a[href*='almasdarnews.com'], a[href*='aljazeera.com'],
+    a[href*='timesofisrael.com'], a[href*='uawire.org'],
+    a[href*='.sbs.com.au'], a[href*='usatoday.com'],
+    a[href*='mercurynews.com'] {
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwU5IQMqsgAAACdJREFUOMtjYBgFtANpaf//E6OOiVKLhoEBjMQG4qxZjIyjSYtGAAAxUAbUce9dmgAAAABJRU5ErkJggg==)
            ! important;
@@ -232,7 +250,8 @@
     
     /* MBFC Sites: Least-Biased */
     a[href*='.upi.com'], a[href*='apnews.com'], a[href*='reuters.com'],
-    a[href*='bridgemi.com'], a[href*='patheos.com'], a[href*='voanews.com'] {
+    a[href*='bridgemi.com'], a[href*='patheos.com'], a[href*='voanews.com'],
+    a[href*='.abc.net.au'], a[href*='nzherald.co.nz'] {
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwwucxIUPAAAABxJREFUOMtjYBgFowAGZjL8Z5jJ8J8ssVEwHAAAWeoJkREpGMwAAAAASUVORK5CYII=)
            ! important;
@@ -254,7 +273,9 @@
     /* MBFC Sites: Right-Center */
     a[href*='telegraph.co.uk'], a[href*='washingtontimes.com'],
     a[href*='.pe.com'], a[href*='chicagotribune.com'],
-    a[href*='/fortune.com'], a[href*='.standard.co.uk'] {
+    a[href*='/fortune.com'], a[href*='.standard.co.uk'], a[href*='.rt.com'],
+    a[href*='straitstimes.com'], a[href*='tennessean.com'],
+    a[href*='arkansasonline.com'] {
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwQ336A29AAAADJJREFUOMtjYBgFFANGXBL/09L+oyicNYuRJJORDUA3DBkw0cULJDufJl7AZ8gooBAAANugFfnCrgsLAAAAAElFTkSuQmCC)
            ! important;
@@ -265,6 +286,7 @@
     
     /* MBFC Sites: Right */
     a[href*='foxnews.com'], a[href*='komonews.com'], a[href*='townhall.com'],
+    a[href*='fox5atlanta.com'],
     a[href*='americanthinker.com'], a[href*='bizpacreview.com'],
     a[href*='spectator.org'], a[href*='washingtonexaminer.com'],
     a[href*='dailycaller.com'] {
@@ -293,7 +315,8 @@
        population of visitors that use MBFC
    */
     a[href*='yenisafak.com'], a[href*='masslive.com'], a[href*='etherail.com'],
-    a[href*='physicsworld.com'], a[href*='middleeasteye.net'] {
+    a[href*='physicsworld.com'], a[href*='middleeasteye.net'],
+    a[href*='news-leader.com'] {
         background-image:
         url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsREB0U8b0K0wAAADlJREFUOMtjYBgFjPgk04wZ/sPYs87iV4tXc5oxw39kPjJgwmUAyTbicwku26mimWlwx/Ew8AJdAABtFRLIrXPiBQAAAABJRU5ErkJggg==)
            ! important;
