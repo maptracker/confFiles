@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name        Reddit
-@description Mask add block in widget panel. Media Bias Fact Check coloration
+@name        Media Bias Fact Checker Flagger
+@description Colorize news links according to MBFC ratings
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.1.0
+@version     1.0.0
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -172,8 +172,6 @@
         -moz-transform:rotate(-180deg) ! important;
         -o-transform:rotate(-180deg) ! important;
         transform:rotate(-180deg) ! important;
-        ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)" ! important;
-        filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2) ! important;
     }
 
     /* Flagging MBFC bias ratings with little icons to left of link
