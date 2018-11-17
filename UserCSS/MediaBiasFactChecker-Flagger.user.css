@@ -3,7 +3,7 @@
 @description Colorize news links according to MBFC ratings
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.6
+@version     1.0.7
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -32,7 +32,7 @@
 
     /* Copy-paste blocks (just makes it easier to add new entries)
      
-     , a[href*='abc7.com/']
+     , a[href*='.tmz.com']
      , a[href*='pastingPlaceHolder']
  
    */
@@ -85,7 +85,7 @@
     a[href*='bostonherald.com'], a[href*='.boston.com'], a[href*='tucson.com'],
     a[href*='.thestar.com'], a[href*='stardem.com'], a[href*='.advocate.com'],
     a[href*='desertsun.com'] {
-        
+        /* High */
         background-color: #cff ! important; /* light blue */
     }
     
@@ -106,12 +106,12 @@
     a[href*='buzzfeed.com'], a[href*='buzzfeednews.com'],
     a[href*='middleeastmonitor.com'], a[href*='komonews.com'],
     a[href*='americanthinker.com'], a[href*='bizpacreview.com'],
-    a[href*='townhall.com'], a[href*='dailycaller.com'],
+    a[href*='townhall.com'], a[href*='dailycaller.com'], a[href*='.tmz.com'],
     a[href*='alternet.org'], a[href*='thinkprogress.org'],
     a[href*='crooksandliars.com'], a[href*='patheos.com'], a[href*='.rt.com'],
     a[href*='almasdarnews.com'], a[href*='rappler.com'], a[href*='uawire.org'],
-    a[href*='unionleader.com'] {
-        
+    a[href*='unionleader.com'], a[href*='.inquisitr.com'] {
+        /* Mixed */
         background-color: #ff6 ! important; /* yellow */
     }
     
@@ -240,8 +240,9 @@
     a[href*='timesofisrael.com'], a[href*='uawire.org'], a[href*='/mic.com'],
     a[href*='.sbs.com.au'], a[href*='usatoday.com'], a[href*='.pri.org'],
     a[href*='mercurynews.com'], a[href*='sacbee.com'], a[href*='tucson.com'],
-    a[href*='bostonglobe.com'], a[href*='.boston.com'],
-    a[href*='.thestar.com'] {
+    a[href*='bostonglobe.com'], a[href*='.boston.com'], a[href*='.tmz.com'],
+    a[href*='.thestar.com'], a[href*='.inquisitr.com'] {
+        /* Left Center */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwU5IQMqsgAAACdJREFUOMtjYBgFtANpaf//E6OOiVKLhoEBjMQG4qxZjIyjSYtGAAAxUAbUce9dmgAAAABJRU5ErkJggg==)
            ! important;
@@ -325,6 +326,17 @@
         background-image:
         url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsREB0U8b0K0wAAADlJREFUOMtjYBgFjPgk04wZ/sPYs87iV4tXc5oxw39kPjJgwmUAyTbicwku26mimWlwx/Ew8AJdAABtFRLIrXPiBQAAAABJRU5ErkJggg==)
            ! important;
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
+    }
+
+    /* Mark up some social media sites with their own favicon */
+
+    a[href*='twitter.com'] {
+        background-image: url(https://abs.twimg.com/favicons/favicon.ico)
+                             ! important;
+        background-size: 16px 16px;
         background-repeat: no-repeat ! important;
         background-position: center left ! important;
         padding-left: 18px ! important;
