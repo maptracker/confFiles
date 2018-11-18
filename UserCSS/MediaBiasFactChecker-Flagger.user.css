@@ -3,7 +3,7 @@
 @description Colorize news links according to MBFC ratings
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.7
+@version     1.0.8
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -32,7 +32,7 @@
 
     /* Copy-paste blocks (just makes it easier to add new entries)
      
-     , a[href*='.tmz.com']
+     , a[href*='.trust.org']
      , a[href*='pastingPlaceHolder']
  
    */
@@ -76,7 +76,7 @@
     a[href*='voanews.com'], a[href*='ynetnews.com'], a[href*='aljazeera.com'],
     a[href*='timesofisrael.com'], a[href*='.abc.net.au'],
     a[href*='thedailybeast.com'], a[href*='thehindu.com'],
-    a[href*='.sbs.com.au'], a[href*='straitstimes.com'],
+    a[href*='.sbs.com.au'], a[href*='straitstimes.com'], a[href*='.jpost.com'],
     a[href*='nzherald.co.nz'], a[href*='tennessean.com'], a[href*='.pnj.com'],
     a[href*='usatoday.com'], a[href*='arkansasonline.com'], a[href*='/mic.com'],
     a[href*='mercurynews.com'], a[href*='sacbee.com'], a[href*='.pri.org'],
@@ -84,7 +84,10 @@
     a[href*='msmagazine.com'], a[href*='bostonglobe.com'],
     a[href*='bostonherald.com'], a[href*='.boston.com'], a[href*='tucson.com'],
     a[href*='.thestar.com'], a[href*='stardem.com'], a[href*='.advocate.com'],
-    a[href*='desertsun.com'] {
+    a[href*='desertsun.com'], a[href*='.france24.com'], a[href*='.trust.org'],
+    a[href*='newyorker.com'], a[href*='japantoday.com'],
+    a[href*='arabnews.com'], a[href*='irishtimes.com'],
+    a[href*='bangkokpost.com'] {
         /* High */
         background-color: #cff ! important; /* light blue */
     }
@@ -103,14 +106,15 @@
     a[href*='cnn.com'], a[href*='mirror.co.uk'], a[href*='foxnews.com'],
     a[href*='fox5atlanta.com'], a[href*='fox5dc.com'],
     a[href*='newsweek.com'], a[href*='hurriyetdailynews.com'],
-    a[href*='buzzfeed.com'], a[href*='buzzfeednews.com'],
+    a[href*='buzzfeed.com'], a[href*='buzzfeednews.com'], a[href*='yahoo.com'],
     a[href*='middleeastmonitor.com'], a[href*='komonews.com'],
     a[href*='americanthinker.com'], a[href*='bizpacreview.com'],
     a[href*='townhall.com'], a[href*='dailycaller.com'], a[href*='.tmz.com'],
     a[href*='alternet.org'], a[href*='thinkprogress.org'],
     a[href*='crooksandliars.com'], a[href*='patheos.com'], a[href*='.rt.com'],
     a[href*='almasdarnews.com'], a[href*='rappler.com'], a[href*='uawire.org'],
-    a[href*='unionleader.com'], a[href*='.inquisitr.com'] {
+    a[href*='unionleader.com'], a[href*='.inquisitr.com'],
+    a[href*='westernjournal.com'], a[href*='dailymail.co.uk'] {
         /* Mixed */
         background-color: #ff6 ! important; /* yellow */
     }
@@ -213,7 +217,9 @@
     a[href*='thinkprogress.org'], a[href*='prospect.org'],
     a[href*='cracked.com'], a[href*='crooksandliars.com'],
     a[href*='rappler.com'], a[href*='thedailybeast.com'],
-    a[href*='msmagazine.com'], a[href*='.advocate.com'] {
+    a[href*='msmagazine.com'], a[href*='.advocate.com'],
+    a[href*='newyorker.com'] {
+        /* Left */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwYKtf4YZwAAACpJREFUOMtjYBgF1AfGxv//EyMGA0yUWjgMDGAkFGBnzzIyYhMbTW5UBAD/1wzS7pLB9AAAAABJRU5ErkJggg==)
            ! important;
@@ -236,12 +242,13 @@
     a[href*='bangordailynews.com'], a[href*='theweek.com'],
     a[href*='.independent.co.uk'], a[href*='.dw.com'], a[href*='.bbc.co.uk'],
     a[href*='globalnews.ca'], a[href*='ynetnews.com'], a[href*='thehindu.com'],
-    a[href*='almasdarnews.com'], a[href*='aljazeera.com'],
+    a[href*='almasdarnews.com'], a[href*='aljazeera.com'], a[href*='yahoo.com'],
     a[href*='timesofisrael.com'], a[href*='uawire.org'], a[href*='/mic.com'],
     a[href*='.sbs.com.au'], a[href*='usatoday.com'], a[href*='.pri.org'],
     a[href*='mercurynews.com'], a[href*='sacbee.com'], a[href*='tucson.com'],
     a[href*='bostonglobe.com'], a[href*='.boston.com'], a[href*='.tmz.com'],
-    a[href*='.thestar.com'], a[href*='.inquisitr.com'] {
+    a[href*='.thestar.com'], a[href*='.inquisitr.com'], a[href*='.trust.org'],
+    a[href*='.france24.com'], a[href*='irishtimes.com'] {
         /* Left Center */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwU5IQMqsgAAACdJREFUOMtjYBgFtANpaf//E6OOiVKLhoEBjMQG4qxZjIyjSYtGAAAxUAbUce9dmgAAAABJRU5ErkJggg==)
@@ -256,7 +263,8 @@
     a[href*='bridgemi.com'], a[href*='patheos.com'], a[href*='voanews.com'],
     a[href*='.abc.net.au'], a[href*='nzherald.co.nz'] , a[href*='.pnj.com'],
     a[href*='politifact.com'], a[href*='foreignpolicy.com'],
-    a[href*='stardem.com'] {
+    a[href*='stardem.com'], a[href*='.jpost.com'], a[href*='bangkokpost.com'] {
+        /* Least Biased */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwwucxIUPAAAABxJREFUOMtjYBgFowAGZjL8Z5jJ8J8ssVEwHAAAWeoJkREpGMwAAAAASUVORK5CYII=)
            ! important;
@@ -267,6 +275,7 @@
     
     /* MBFC Sites: Science */
     a[href*='nationalgeographic.com'], a[href*='.who.int/'] {
+        /* Science */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRECYyHwJgFgAAAEdJREFUOMtjYBjygBGnzEyG/3B2Om51THg1wzQiG0YQzGT4j6EBmxheF5AAmAi6hiIDKHYBntCnkwvIBsjRhicKqZISBx4AAC2nFmnZuwV7AAAAAElFTkSuQmCC)
            ! important;
@@ -281,7 +290,9 @@
     a[href*='/fortune.com'], a[href*='.standard.co.uk'], a[href*='.rt.com'],
     a[href*='straitstimes.com'], a[href*='tennessean.com'],
     a[href*='arkansasonline.com'], a[href*='bostonherald.com'],
-    a[href*='desertsun.com'] {
+    a[href*='desertsun.com'], a[href*='japantoday.com'],
+    a[href*='arabnews.com'] {
+        /* Right Center */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwQ336A29AAAADJJREFUOMtjYBgFFANGXBL/09L+oyicNYuRJJORDUA3DBkw0cULJDufJl7AZ8gooBAAANugFfnCrgsLAAAAAElFTkSuQmCC)
            ! important;
@@ -295,7 +306,9 @@
     a[href*='fox5atlanta.com'], a[href*='fox5dc.com'],
     a[href*='americanthinker.com'], a[href*='bizpacreview.com'],
     a[href*='spectator.org'], a[href*='washingtonexaminer.com'],
-    a[href*='dailycaller.com'], a[href*='unionleader.com'] {
+    a[href*='dailycaller.com'], a[href*='unionleader.com'],
+    a[href*='westernjournal.com'], a[href*='dailymail.co.uk'] {
+        /* Right */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwQkWx53KgAAADhJREFUOMtjYBgFFANGdIH/xsb/URScPcuITQyniciKYWxsYjDARFMvwJyKTYx+XkDXgEtsFFAAALHMJ+9VjEruAAAAAElFTkSuQmCC)
            ! important;
@@ -336,6 +349,20 @@
     a[href*='twitter.com'] {
         background-image: url(https://abs.twimg.com/favicons/favicon.ico)
                              ! important;
+    }
+    
+    a[href*='twitter.com'] {
+        background-image: url(https://abs.twimg.com/favicons/favicon.ico)
+                             ! important;
+    }
+
+    a[href*='youtube.com'] {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAq1BMVEX////5+fnTWFiRAAD26urQSUntx8e4OzkvLy/PQ0PNPj4hISH49vb48/O6Pz3/p6LitLTgY2GhAQC+SkjgUE3ttbTswcGwIiDjeXXCAwL2nJjfZ2bRT0+mISGWAACeHh7ZpaXy3NzlpKTHICDfioqfGBjWZGTimJiqEg80NDQ7OzvLy8u7u7spKSlsbGzW1tZISEiRkZGFhYWgoKC0MC3wfXjIZ2V3d3dkZGQQ6krCAAAAn0lEQVQYlW3M5w6CQBBG0RlccJGmSBEUFGy0pSiK7/9kbsCgRu+/Ock3AL/VVXf9gkuTag0toQY6QMGPLGeQARsAWQE0Vzgor01aAeNAR6AVlMoD6k6Bf8Wt27bTPl3X7xEkBNG+GRaufcPwV0swPSLgAgWUNMtWHXcAkcMMZfWACYRvEPF8Mj9BRkEy4eiRDXH6H/s4sgPYbSdjYRjMn+E0DSQr0BbwAAAAAElFTkSuQmCC)
+                             ! important;
+    }
+    
+    
+    a[href*='twitter.com'], a[href*='youtube.com'] {
         background-size: 16px 16px;
         background-repeat: no-repeat ! important;
         background-position: center left ! important;
