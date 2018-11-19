@@ -3,7 +3,7 @@
 @description Colorize news links according to MBFC ratings
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.9
+@version     1.0.10
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -32,7 +32,7 @@
 
     /* Copy-paste blocks (just makes it easier to add new entries)
      
-     , a[href*='.icij.org']
+     , a[href*='abc13.com/']
      , a[href*='pastingPlaceHolder']
  
    */
@@ -64,8 +64,8 @@
     a[href*='nationalgeographic.com'], a[href*='.sky.com'],
     a[href*='nytimes.com'], a[href*='.philly.com'], a[href*='denverpost.com'],
     a[href*='nbcnews.com'], a[href*='abcnews.go.com'], a[href*='spectator.org'],
-    a[href*='nbcsandiego.com'],
-    a[href*='abc7news.com'], a[href*='abc7.com/'],
+    a[href*='nbcsandiego.com'], a[href*='nbcwashington.com'],
+    a[href*='abc7news.com'], a[href*='abc7.com/'], a[href*='abc13.com/'],
     a[href*='washingtontimes.com'], a[href*='.pe.com'], a[href*='theweek.com'],
     a[href*='chicagotribune.com'], a[href*='newrepublic.com'],
     a[href*='washingtonexaminer.com'], a[href*='fivethirtyeight.com'],
@@ -80,7 +80,7 @@
     a[href*='nzherald.co.nz'], a[href*='tennessean.com'], a[href*='.pnj.com'],
     a[href*='usatoday.com'], a[href*='arkansasonline.com'], a[href*='/mic.com'],
     a[href*='mercurynews.com'], a[href*='sacbee.com'], a[href*='.pri.org'],
-    a[href*='politifact.com'], a[href*='foreignpolicy.com'],
+    a[href*='politifact.com'], a[href*='foreignpolicy.com'], a[href*='.gq.com'],
     a[href*='msmagazine.com'], a[href*='bostonglobe.com'],
     a[href*='bostonherald.com'], a[href*='.boston.com'], a[href*='tucson.com'],
     a[href*='.thestar.com'], a[href*='stardem.com'], a[href*='.advocate.com'],
@@ -89,7 +89,8 @@
     a[href*='arabnews.com'], a[href*='irishtimes.com'],
     a[href*='bangkokpost.com'], a[href*='bloomberg.com'],
     a[href*='.stuff.co.nz'], a[href*='weeklystandard.com'],
-    a[href*='.smh.com.au'] {
+    a[href*='.smh.com.au'], a[href*='theintercept.com'],
+    a[href*='miamiherald.com'], a[href*='seattletimes.com'] {
         /* High */
         background-color: #cff ! important; /* light blue */
     }
@@ -217,7 +218,7 @@
     a[href*='middleeastmonitor.com'], a[href*='commondreams.org'],
     a[href*='newsweek.com'], a[href*='nymag.com'], a[href*='newrepublic.com'],
     a[href*='alternet.org'], a[href*='washingtonmonthly.com'],
-    a[href*='thinkprogress.org'], a[href*='prospect.org'],
+    a[href*='thinkprogress.org'], a[href*='prospect.org'], a[href*='.gq.com'],
     a[href*='cracked.com'], a[href*='crooksandliars.com'],
     a[href*='rappler.com'], a[href*='thedailybeast.com'],
     a[href*='msmagazine.com'], a[href*='.advocate.com'],
@@ -239,9 +240,9 @@
     a[href*='engadget.com'], a[href*='.cnbc.com'], a[href*='buzzfeed.com'],
     a[href*='buzzfeednews.com'], a[href*='.sky.com'], a[href*='nytimes.com'],
     a[href*='.philly.com'], a[href*='denverpost.com'], a[href*='nbcnews.com'],
-    a[href*='nbcsandiego.com'],
+    a[href*='nbcsandiego.com'], a[href*='nbcwashington.com'],
     a[href*='abcnews.go.com'], a[href*='fivethirtyeight.com'],
-    a[href*='abc7news.com'], a[href*='abc7.com/'],
+    a[href*='abc7news.com'], a[href*='abc7.com/'], a[href*='abc13.com/'],
     a[href*='bangordailynews.com'], a[href*='theweek.com'],
     a[href*='.independent.co.uk'], a[href*='.dw.com'], a[href*='.bbc.co.uk'],
     a[href*='globalnews.ca'], a[href*='ynetnews.com'], a[href*='thehindu.com'],
@@ -252,7 +253,9 @@
     a[href*='bostonglobe.com'], a[href*='.boston.com'], a[href*='.tmz.com'],
     a[href*='.thestar.com'], a[href*='.inquisitr.com'], a[href*='.trust.org'],
     a[href*='.france24.com'], a[href*='irishtimes.com'], a[href*='.vice.com'],
-    a[href*='bloomberg.com'], a[href*='.stuff.co.nz'], a[href*='.smh.com.au'] {
+    a[href*='bloomberg.com'], a[href*='.stuff.co.nz'], a[href*='.smh.com.au'],
+    a[href*='theintercept.com'], a[href*='miamiherald.com'],
+    a[href*='seattletimes.com'] {
         /* Left Center */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwU5IQMqsgAAACdJREFUOMtjYBgFtANpaf//E6OOiVKLhoEBjMQG4qxZjIyjSYtGAAAxUAbUce9dmgAAAABJRU5ErkJggg==)
@@ -350,7 +353,10 @@
         padding-left: 18px ! important;
     }
 
-    /* Mark up some social media sites with their own favicon */
+    /* Mark up some social media sites with their own favicon
+       Also shopping sites like Amazon, which are often linked to in order
+       to refrence a physical book.
+   */
 
     a[href*='twitter.com'] {
         background-image: url(https://abs.twimg.com/favicons/favicon.ico)
@@ -361,8 +367,13 @@
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAq1BMVEX////5+fnTWFiRAAD26urQSUntx8e4OzkvLy/PQ0PNPj4hISH49vb48/O6Pz3/p6LitLTgY2GhAQC+SkjgUE3ttbTswcGwIiDjeXXCAwL2nJjfZ2bRT0+mISGWAACeHh7ZpaXy3NzlpKTHICDfioqfGBjWZGTimJiqEg80NDQ7OzvLy8u7u7spKSlsbGzW1tZISEiRkZGFhYWgoKC0MC3wfXjIZ2V3d3dkZGQQ6krCAAAAn0lEQVQYlW3M5w6CQBBG0RlccJGmSBEUFGy0pSiK7/9kbsCgRu+/Ock3AL/VVXf9gkuTag0toQY6QMGPLGeQARsAWQE0Vzgor01aAeNAR6AVlMoD6k6Bf8Wt27bTPl3X7xEkBNG+GRaufcPwV0swPSLgAgWUNMtWHXcAkcMMZfWACYRvEPF8Mj9BRkEy4eiRDXH6H/s4sgPYbSdjYRjMn+E0DSQr0BbwAAAAAElFTkSuQmCC)
                              ! important;
     }
+
+    a[href*='.amazon.com'] {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAqFBMVEX///8EBQUDBQX/pwDGxsb//PkeICD/9+3/47Xz8/P//fxAQUEJCgrb29sNDg4SExPn5+ft7e2UlJQmJyczNDT/8+DPz8+Cg4P/4K7/vUN8fX3X19f/rRX/0oL/5Lr/0X3/zG//xVr/58H+sSO5urqrq6v/yWf/1pL/vUf/7dD/sSH/79b+3Z//6cf/uTb/wk9jZGRWV1dLS0tvcHCen59DREQuLy+Njo7z4jxpAAABdElEQVQ4ja2S23aCMBBFIUGQREAg3ISiKKC23kCL//9nzYSqLWT1qcMDWTN7Tc6ZjKL8Y5ha1Pqqw66VK627Fx3xUBGym1RST6mK1O9A+nwMXNVXIBSN6hbknSa0PB8AOmpxg3TL1ZE7yGDWEAiblrISThpo8UOJy7llisu4E1XXJD7IvLwtLtQHmTKARNRBwoIc0Civ8c/WgRkDJhNjaryyQlLgDkPWb+BHCrifADRgo4QXGQFpB9rucPSkLjQdxgMv4LYA2NWoA6RZqJiLGfRC1BxqEM/ILq2NxFao3qCFJ1ZFTKmDHs4QMKkoIjRrQsZdeGQ4CDfqHDTzaUUUi3VgwjAmfSkwxI+kZVWFYlEsvpPHOkmWPRGfYmPYTzHqbbzb9flJnCX5ZEgEy3xVPISsE7x5mwZPyPg4FHhzTPJHggQFxtnpvDxMeWzrZINxsd/XP9qS4znDr8jOMb/697XGevX+KK8kqnth63gb58FoRn/GF9yLGMGsb49uAAAAAElFTkSuQmCC) ! important;
+    }
     
-    a[href*='twitter.com'], a[href*='youtube.com'], a[href*='wikipedia.org'] {
+    a[href*='twitter.com'], a[href*='youtube.com'], a[href*='wikipedia.org'],
+    a[href*='.amazon.com'] {
         background-size: 16px 16px;
         background-repeat: no-repeat ! important;
         background-position: center left ! important;
