@@ -3,7 +3,7 @@
 @description Colorize news links according to MBFC ratings
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.13
+@version     1.0.14
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -397,6 +397,9 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsWDjYy3q/EhAAAAj9JREFUOMu1U09oUnEc//ye7+n2dCxEWwRuenAO2iHs3yKGCpMtlHTtsNMOY7QtYiBR67IOUeBBcHjuFEJ4aPYEL+Ul6yJCl8nK54jho8tgbg/JZ+29569DLGZQUbDv6Xv4/PnC9/MBTmJWVlYAABcveK1jY1dcf8KSoyUSmUYu9xKUUhKNRkY5Y+/mcSDHMv6dnU/lUqncjkajEAShW8Dv95lttoFbIGQdADweT5eTKIoAANrpPFXVr3eXlpZboVCIEgAIBoPl/lPWS78SJUnC+aH3AIB93ARAIVZ/CMkHDaVQKFgZACgUCpeVVusM7WhJURRhMBgAAIODg9jTb6ChTcKKLMSqiHZbO3S5XGdnZmb6CSHfyPEzvV6v2T088kXXdQCAy+mE0WiEWKsBAK6OfMC7iqclCC8sRxwmHA7/FDCZjCzDMGBZFhzHoba9jc1KBRzHgWVZAICuK12mTD6fRyqVep1Op/N2+2lns9ksq5qmaqoKvrcXFosFAIWmqgAAh63R9R02EAiMLy4uBhVFwfWpqZCQE2pbT1LZz2Pnnkn1un2vsU943tSam1t+Sw8+7vb1HL7pEuB5vp7L5ZoTExMWEMKMDrmHe3aVYbZSn519dA+yLO9KkjSwunqnT9M08tsgJZNJ81a1+sD1/NVDp25AsF6CgWFgMpmwtrZ2wPO8PR6P63+N8bXbC+b7k9OPsxsbVJZlWiwWaSwWozabzf3PnUgkEuuZTIbOz8+X/rtYDodjHAB8Pt+JFBffAV8612it8DFVAAAAAElFTkSuQmCC)
                              ! important;
         background-color: #ddd ! important; /* light gray */
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
     }
 
     /* Government
@@ -411,6 +414,9 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsWEBoaxJOJqgAAAoBJREFUOMuVk7tPFFEUh3/nzszOPtllV1hAZcH1BYWPRCOGRCmsLQydFGLARzAaYmFlYaN/AA8lQtgYpEFtNGqDMTQmRtFCY1SIRBGBLOxjFnZ2Zu69FoiBLCb4Vb/inO+cnOQQ1nD7VA8uPuoAAAzG+veRiU4SlLNdvKvt57kv2ABaDT1N3eh4eQm9Ld2xwBPfUzKpfm2h8IhX6Qaj+fKzKzOn0Yz7eLBeMFB996SWUa6TRYdIEjaEAUIVY045v3F2ov0FAFDiyMAe8Y2PKoayFf/oK1pbEmyf/ZUdVE+oTFEmCkvmjuUt+S5ZkO5NGaR07Xpe37pwdc7+O7M/3teVz+TjPuZ76OhOrVWwGr3kHeYuESiYZrOXee+RgGU4RruHeR63JS/cJCKwVYHuuLSgETycy+cSnDuToVywiTM+NIOfo6XLoaMKYyPxW7tHIsuRhtJt4XEiWj3LCkbKcFRdYZU1leRf8HMICPeijjplrya4gExK+e77e6+ERFJLlqy56wphPey1uY351DzUWq0cKhirUli+wgyRIJSej0R/9E4JECA+CFEksN12ieIoMpQKIp1KkeASucUcFiYXJBHh7cdx9/GaYzokULa/LFYksFIWSCcPVTLyp/1gjCHgCqCKVWiSJOJvamk2Oh8AgOlf01QkcJNH5Q6HkTSgbteiUgpYaoHsqAhDAFqjqyY7lhYgoCITda0TDCNBwi0cxljGL3xkLGVNEEye4zQ3N2uRRtbUpykrFompUGCLalm67heG3InXYKgDwCCwBIILBO1PVkHQIWECkCB4ANjgGGwpnOmkOwd6Wn2fvX0kScN/IBWY2Z3ZazSkJ+Rmf6DYAvwGPxoHfbmihZwAAAAASUVORK5CYII=)
                              ! important;
         background-color: #ffc ! important; /* pale yellow */
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
     }
 
     /* Mark up some social media sites with their own favicon
@@ -421,25 +427,26 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
     a[href*='twitter.com'] {
         background-image: url(https://abs.twimg.com/favicons/favicon.ico)
                              ! important;
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
     }
     
     a[href*='youtube.com'], a[href*='youtu.be'] {
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAq1BMVEX////5+fnTWFiRAAD26urQSUntx8e4OzkvLy/PQ0PNPj4hISH49vb48/O6Pz3/p6LitLTgY2GhAQC+SkjgUE3ttbTswcGwIiDjeXXCAwL2nJjfZ2bRT0+mISGWAACeHh7ZpaXy3NzlpKTHICDfioqfGBjWZGTimJiqEg80NDQ7OzvLy8u7u7spKSlsbGzW1tZISEiRkZGFhYWgoKC0MC3wfXjIZ2V3d3dkZGQQ6krCAAAAn0lEQVQYlW3M5w6CQBBG0RlccJGmSBEUFGy0pSiK7/9kbsCgRu+/Ock3AL/VVXf9gkuTag0toQY6QMGPLGeQARsAWQE0Vzgor01aAeNAR6AVlMoD6k6Bf8Wt27bTPl3X7xEkBNG+GRaufcPwV0swPSLgAgWUNMtWHXcAkcMMZfWACYRvEPF8Mj9BRkEy4eiRDXH6H/s4sgPYbSdjYRjMn+E0DSQr0BbwAAAAAElFTkSuQmCC)
                              ! important;
-    }
-
-    a[href*='.amazon.com'] {
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAqFBMVEX///8EBQUDBQX/pwDGxsb//PkeICD/9+3/47Xz8/P//fxAQUEJCgrb29sNDg4SExPn5+ft7e2UlJQmJyczNDT/8+DPz8+Cg4P/4K7/vUN8fX3X19f/rRX/0oL/5Lr/0X3/zG//xVr/58H+sSO5urqrq6v/yWf/1pL/vUf/7dD/sSH/79b+3Z//6cf/uTb/wk9jZGRWV1dLS0tvcHCen59DREQuLy+Njo7z4jxpAAABdElEQVQ4ja2S23aCMBBFIUGQREAg3ISiKKC23kCL//9nzYSqLWT1qcMDWTN7Tc6ZjKL8Y5ha1Pqqw66VK627Fx3xUBGym1RST6mK1O9A+nwMXNVXIBSN6hbknSa0PB8AOmpxg3TL1ZE7yGDWEAiblrISThpo8UOJy7llisu4E1XXJD7IvLwtLtQHmTKARNRBwoIc0Civ8c/WgRkDJhNjaryyQlLgDkPWb+BHCrifADRgo4QXGQFpB9rucPSkLjQdxgMv4LYA2NWoA6RZqJiLGfRC1BxqEM/ILq2NxFao3qCFJ1ZFTKmDHs4QMKkoIjRrQsZdeGQ4CDfqHDTzaUUUi3VgwjAmfSkwxI+kZVWFYlEsvpPHOkmWPRGfYmPYTzHqbbzb9flJnCX5ZEgEy3xVPISsE7x5mwZPyPg4FHhzTPJHggQFxtnpvDxMeWzrZINxsd/XP9qS4znDr8jOMb/697XGevX+KK8kqnth63gb58FoRn/GF9yLGMGsb49uAAAAAElFTkSuQmCC) ! important;
-    }
-    
-    a[href*='twitter.com'], a[href*='youtube.com'], a[href*='wikipedia.org'],
-    a[href*='.amazon.com'], a[href*='youtu.be'], a[href*='.edu/'] {
-        background-size: 16px 16px;
         background-repeat: no-repeat ! important;
         background-position: center left ! important;
         padding-left: 18px ! important;
     }
 
+    a[href*='.amazon.com'] {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAqFBMVEX///8EBQUDBQX/pwDGxsb//PkeICD/9+3/47Xz8/P//fxAQUEJCgrb29sNDg4SExPn5+ft7e2UlJQmJyczNDT/8+DPz8+Cg4P/4K7/vUN8fX3X19f/rRX/0oL/5Lr/0X3/zG//xVr/58H+sSO5urqrq6v/yWf/1pL/vUf/7dD/sSH/79b+3Z//6cf/uTb/wk9jZGRWV1dLS0tvcHCen59DREQuLy+Njo7z4jxpAAABdElEQVQ4ja2S23aCMBBFIUGQREAg3ISiKKC23kCL//9nzYSqLWT1qcMDWTN7Tc6ZjKL8Y5ha1Pqqw66VK627Fx3xUBGym1RST6mK1O9A+nwMXNVXIBSN6hbknSa0PB8AOmpxg3TL1ZE7yGDWEAiblrISThpo8UOJy7llisu4E1XXJD7IvLwtLtQHmTKARNRBwoIc0Civ8c/WgRkDJhNjaryyQlLgDkPWb+BHCrifADRgo4QXGQFpB9rucPSkLjQdxgMv4LYA2NWoA6RZqJiLGfRC1BxqEM/ILq2NxFao3qCFJ1ZFTKmDHs4QMKkoIjRrQsZdeGQ4CDfqHDTzaUUUi3VgwjAmfSkwxI+kZVWFYlEsvpPHOkmWPRGfYmPYTzHqbbzb9flJnCX5ZEgEy3xVPISsE7x5mwZPyPg4FHhzTPJHggQFxtnpvDxMeWzrZINxsd/XP9qS4znDr8jOMb/697XGevX+KK8kqnth63gb58FoRn/GF9yLGMGsb49uAAAAAElFTkSuQmCC) ! important;
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
+    }
+    
 }
 
 
