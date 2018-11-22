@@ -3,17 +3,22 @@
 @description Colorize news links according to MBFC ratings
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.12
+@version     1.0.13
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
-@-moz-document domain("reddit.com"), domain("wikipedia.org") {
+@-moz-document domain("reddit.com"), domain("wikipedia.org"),
+domain("bing.com"), regexp("Google-Full.rss.html") {
+
+    /* Copy-paste block (just makes it easier to add new entries)
+     , a[href*='.nola.com/']
+   */
 
     /* ---    ---    ---    ---    ---    ---    ---    ---    ---    ---
        Media Bias Fact Check
        https://mediabiasfactcheck.com
 
-       Rates Left <-> Right bias, as well as conspiracy theory sites
+       Rates Left <-> Right bias, as well as conspiracy theory sites.
        Also rates factual reporting level
 
        https://mediabiasfactcheck.com/methodology/
@@ -30,11 +35,12 @@
 
    */
 
-    /* Copy-paste blocks (just makes it easier to add new entries)
-     
-     , a[href*='.mprnews.org/']
-     , a[href*='pastingPlaceHolder'] 
-   */
+    /* Google now redirects every link through their own domain (the
+       better to track you with, my dear!), so it's not possible to
+       apply these styles to google results. Similarly, Yahoo wraps
+       all external news sources in their own (largely extraneous)
+       summary pages. Kudos to Bing for using the web as designed:
+       Deep-linking to the target. */
 
     /* MBFC Sites: Very High factual reporting
 
@@ -73,7 +79,7 @@
     a[href*='bridgemi.com'], a[href*='washingtonmonthly.com'],
     a[href*='bangordailynews.com'], a[href*='prospect.org'], a[href*='.dw.com'],
     a[href*='.independent.co.uk'], a[href*='/fortune.com'], a[href*='.wsj.com'],
-    a[href*='.standard.co.uk'], a[href*='globalnews.ca'],
+    a[href*='.standard.co.uk'], a[href*='globalnews.ca'], a[href*='.rfa.org/'],
     a[href*='voanews.com'], a[href*='ynetnews.com'], a[href*='aljazeera.com'],
     a[href*='timesofisrael.com'], a[href*='.abc.net.au'],
     a[href*='thedailybeast.com'], a[href*='thehindu.com'], a[href*='.scmp.com'],
@@ -94,7 +100,9 @@
     a[href*='miamiherald.com'], a[href*='seattletimes.com'],
     a[href*='haaretz.com/'], a[href*='.cleveland.com'], a[href*='.koco.com/'],
     a[href*='seattletimes.com/'], a[href*='oregonlive.com'],
-    a[href*='financialpost.com'], a[href*='.mprnews.org/'] {
+    a[href*='financialpost.com'], a[href*='.mprnews.org/'],
+    a[href*='.jsonline.com/'], a[href*='.usnews.com/'], a[href*='.nola.com/'],
+    a[href*='opendemocracy.net/'], a[href*='huffingtonpost.com/'] {
         /* High */
         background-color: #cff ! important; /* light blue */
     }
@@ -123,7 +131,8 @@
     a[href*='almasdarnews.com'], a[href*='rappler.com'], a[href*='uawire.org'],
     a[href*='unionleader.com'], a[href*='.inquisitr.com'], a[href*='.vice.com'],
     a[href*='westernjournal.com'], a[href*='dailymail.co.uk'],
-    a[href*='timeslive.co.za'] {
+    a[href*='timeslive.co.za'], a[href*='.pravdareport.com/'],
+    a[href*='.telesurtv.net/'] {
         /* Mixed */
         background-color: #ff6 ! important; /* yellow */
     }
@@ -228,7 +237,8 @@
     a[href*='cracked.com'], a[href*='crooksandliars.com'], a[href*='.vox.com/'],
     a[href*='rappler.com'], a[href*='thedailybeast.com'],
     a[href*='msmagazine.com'], a[href*='.advocate.com'],
-    a[href*='newyorker.com'] {
+    a[href*='newyorker.com'], a[href*='pravdareport.com/'],
+    a[href*='huffingtonpost.com/'], a[href*='.telesurtv.net/'] {
         /* Left */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwYKtf4YZwAAACpJREFUOMtjYBgF1AfGxv//EyMGA0yUWjgMDGAkFGBnzzIyYhMbTW5UBAD/1wzS7pLB9AAAAABJRU5ErkJggg==)
@@ -264,9 +274,10 @@
     a[href*='theintercept.com'], a[href*='miamiherald.com'],
     a[href*='seattletimes.com'], a[href*='.npr.org/'], a[href*='haaretz.com/'],
     a[href*='.cleveland.com'], a[href*='/time.com/'], a[href*='.koco.com/'],
-    a[href*='seattletimes.com/'], a[href*='.freep.com/'],
-    a[href*='.mprnews.org/'],
-    a[href*='.wired.com'] {
+    a[href*='seattletimes.com/'], a[href*='.freep.com/'], a[href*='.rfa.org/'],
+    a[href*='.mprnews.org/'], a[href*='.jsonline.com/'],
+    a[href*='.usnews.com/'], a[href*='.wired.com'], a[href*='.nola.com/'],
+    a[href*='opendemocracy.net/'] {
         /* Left Center */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwU5IQMqsgAAACdJREFUOMtjYBgFtANpaf//E6OOiVKLhoEBjMQG4qxZjIyjSYtGAAAxUAbUce9dmgAAAABJRU5ErkJggg==)
@@ -295,8 +306,9 @@
     /* MBFC Sites: Science */
     a[href*='nationalgeographic.com'], a[href*='.who.int/'] {
         /* Science */
+        /* Little blue and yellow flasks */
         background-image:
-        url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRECYyHwJgFgAAAEdJREFUOMtjYBjygBGnzEyG/3B2Om51THg1wzQiG0YQzGT4j6EBmxheF5AAmAi6hiIDKHYBntCnkwvIBsjRhicKqZISBx4AAC2nFmnZuwV7AAAAAElFTkSuQmCC)
+        url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsWDw0HtWyFqAAAAtJJREFUOMtlkktoU2kYhp//Pyfn5OR2oklNYuug1gltURRctCs3gqIbxSujmxnRRdXFwDCIeBlcSDcKwgzIDIioG1GQInhBkFbtpoiCUNSqtRZr2kib9BJzOUnOP4ukWu27fPne73++7/8EdY2kR9CUQFYUeafEokiUiL0YgF279yrmafkqZZ/rujEDIOfMqWxW5HK5OLAOVEt2anLl/NDhzoOTu3dtB2BN60Zzzte/Erwftq5evj42P/Swfyiwsb35C4CmmY6UtfLZGac6V/OVoFyoVAG6znbx1+mTAMyFASzLlIGAHwDTNMQCAlfVxvT5/Wi64EcFgt4lVTcIQDgcjACT6Yk3yNR4jdrv9wBg2zaBoL2ggWFowuv11Jv5VwPEoknkmSuXAEg2t+p1PEJ11L6+3vWfp3rDAFJ7j+kdrY+Tu6XqxPq/x05y99lDJgrFJQCpLzNU3dqr49nctguHrp3683iW0dRRpAzw+x8eLpxHea3MKmBIB3g38FGbLn/YAXDwzhMc3aAB6B4ZPg2cMn0vcSlSKjpY3gAAXqN3CEAAtG3b42kzhNOzdS+V6GKQOq6AzZf/ZsvOnLt/+6j0GAblskLXbLKZEp1HGrl547pHKqU48OtvFkAl0YQba8KJN0JiGQBtyX4pcJmensAtZymVUlTJA/Bq8HZFv/X0mTCC5joAV0qqjsIRLuVvX83zgVkMPY8dBo9pUszXlvT2zQO0UNNPYvDe3Q+PEj/j6gbKkXiQ6IUCAy3tZC+O421I0xgtUHYFhmVjWQ3cvxOioyN2Rh9OfRaLgNmRNEbpJTI2i295M07RwclMAtDTvZ6e7u/v4sQJI1ooaOjBeEyRSWPEE+QjcYQvTLWi4Rh+tEYTXvB2LBJK9l38j9vd/2BaETZ0/IIvXBtRb5EVVWhtad/06nU/mcEFF/h4xdpkqPdmVAgx8c3dx8dPKdG0NKH+B4diA8PmUZ9OAAAAAElFTkSuQmCC)
            ! important;
         background-repeat: no-repeat ! important;
         background-position: center left ! important;
@@ -366,6 +378,41 @@
         padding-left: 18px ! important;
     }
 
+    /* Educational Institutions
+
+      MBFC does not have a category for colleges and
+      universities. While the quality of information from such
+      organizations is generally quite high, they also run the risk of
+      acting not much differently than corporations. That is, many
+      academic institutions have very active Technology Transfer
+      departments tasked with "monetizing" their faculty's
+      discoveries. As such, I feel that information from such a source
+      should be viewed with some caution.
+
+     */
+
+    a[href*='.edu/'] {
+        /* The '.edu/' selector may have a lot of false positives */
+        /* Little motorboard and diploma icon */
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsWDjYy3q/EhAAAAj9JREFUOMu1U09oUnEc//ye7+n2dCxEWwRuenAO2iHs3yKGCpMtlHTtsNMOY7QtYiBR67IOUeBBcHjuFEJ4aPYEL+Ul6yJCl8nK54jho8tgbg/JZ+29569DLGZQUbDv6Xv4/PnC9/MBTmJWVlYAABcveK1jY1dcf8KSoyUSmUYu9xKUUhKNRkY5Y+/mcSDHMv6dnU/lUqncjkajEAShW8Dv95lttoFbIGQdADweT5eTKIoAANrpPFXVr3eXlpZboVCIEgAIBoPl/lPWS78SJUnC+aH3AIB93ARAIVZ/CMkHDaVQKFgZACgUCpeVVusM7WhJURRhMBgAAIODg9jTb6ChTcKKLMSqiHZbO3S5XGdnZmb6CSHfyPEzvV6v2T088kXXdQCAy+mE0WiEWKsBAK6OfMC7iqclCC8sRxwmHA7/FDCZjCzDMGBZFhzHoba9jc1KBRzHgWVZAICuK12mTD6fRyqVep1Op/N2+2lns9ksq5qmaqoKvrcXFosFAIWmqgAAh63R9R02EAiMLy4uBhVFwfWpqZCQE2pbT1LZz2Pnnkn1un2vsU943tSam1t+Sw8+7vb1HL7pEuB5vp7L5ZoTExMWEMKMDrmHe3aVYbZSn519dA+yLO9KkjSwunqnT9M08tsgJZNJ81a1+sD1/NVDp25AsF6CgWFgMpmwtrZ2wPO8PR6P63+N8bXbC+b7k9OPsxsbVJZlWiwWaSwWozabzf3PnUgkEuuZTIbOz8+X/rtYDodjHAB8Pt+JFBffAV8612it8DFVAAAAAElFTkSuQmCC)
+                             ! important;
+        background-color: #ddd ! important; /* light gray */
+    }
+
+    /* Government
+
+      Highlight websites hosted on a government domain.
+
+     */
+
+    a[href*='.gov/'] {
+        /* The '.gov/' selector may have a lot of false positives */
+        /* Purple greek temple */
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsWEBoaxJOJqgAAAoBJREFUOMuVk7tPFFEUh3/nzszOPtllV1hAZcH1BYWPRCOGRCmsLQydFGLARzAaYmFlYaN/AA8lQtgYpEFtNGqDMTQmRtFCY1SIRBGBLOxjFnZ2Zu69FoiBLCb4Vb/inO+cnOQQ1nD7VA8uPuoAAAzG+veRiU4SlLNdvKvt57kv2ABaDT1N3eh4eQm9Ld2xwBPfUzKpfm2h8IhX6Qaj+fKzKzOn0Yz7eLBeMFB996SWUa6TRYdIEjaEAUIVY045v3F2ov0FAFDiyMAe8Y2PKoayFf/oK1pbEmyf/ZUdVE+oTFEmCkvmjuUt+S5ZkO5NGaR07Xpe37pwdc7+O7M/3teVz+TjPuZ76OhOrVWwGr3kHeYuESiYZrOXee+RgGU4RruHeR63JS/cJCKwVYHuuLSgETycy+cSnDuToVywiTM+NIOfo6XLoaMKYyPxW7tHIsuRhtJt4XEiWj3LCkbKcFRdYZU1leRf8HMICPeijjplrya4gExK+e77e6+ERFJLlqy56wphPey1uY351DzUWq0cKhirUli+wgyRIJSej0R/9E4JECA+CFEksN12ieIoMpQKIp1KkeASucUcFiYXJBHh7cdx9/GaYzokULa/LFYksFIWSCcPVTLyp/1gjCHgCqCKVWiSJOJvamk2Oh8AgOlf01QkcJNH5Q6HkTSgbteiUgpYaoHsqAhDAFqjqyY7lhYgoCITda0TDCNBwi0cxljGL3xkLGVNEEye4zQ3N2uRRtbUpykrFompUGCLalm67heG3InXYKgDwCCwBIILBO1PVkHQIWECkCB4ANjgGGwpnOmkOwd6Wn2fvX0kScN/IBWY2Z3ZazSkJ+Rmf6DYAvwGPxoHfbmihZwAAAAASUVORK5CYII=)
+                             ! important;
+        background-color: #ffc ! important; /* pale yellow */
+    }
+
     /* Mark up some social media sites with their own favicon
        Also shopping sites like Amazon, which are often linked to in order
        to refrence a physical book.
@@ -386,7 +433,7 @@
     }
     
     a[href*='twitter.com'], a[href*='youtube.com'], a[href*='wikipedia.org'],
-    a[href*='.amazon.com'], a[href*='youtu.be'] {
+    a[href*='.amazon.com'], a[href*='youtu.be'], a[href*='.edu/'] {
         background-size: 16px 16px;
         background-repeat: no-repeat ! important;
         background-position: center left ! important;
@@ -416,4 +463,25 @@
         background-position: center left ! important;
         padding-left: 18px ! important;
     }
+    
+    /* Tor-Unfriendly, or require Javascript to use
+
+       Websites that don't play well with the Tor Browser, or require
+       Javascript to be turned on. 
+
+   */
+    
+    a[href*='.cnbc.com'] {
+        /* 'do not enter' circle with slash */
+
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsWEAE1xnR/aQAAAnBJREFUOMttk81LlFEYxX/3zjsfMNZQmzZGECk0WjiTo87MQswI2rWsaKHROlvV1v6B6LuWGkV/QEFomWA4WtZAi7ZBTZsWZfaB0/txT4tXp2x64HLh3Mt5znPuuYaNCo6Mknw6hysPlfH9MZw7ZqJoN4ASiQbWPiaVmrJLy0ubdwFMi2Cg5CXCcNY0myObGKlUvPs+GAMSymTmI887mny5EgKYcKAfk0x5Zu3bRyO3iyhCIyMweQnT0RETrH5BFy5iXr8Cz0PGflJuW6eCMATAFfrm1ZOXevLSgV65pZr+V255SeraJ/Xk5Qp98wDGlYcqZm1tkSiKJUsQhmhqGjM4yL+lWg0zPhYryeWqFt8fA9Dx4+jyFYgiSCQwp07Ci+U2AlOp4A4dij3x/TFcsdBQb17uy+dYZq0mdXfF43R3y809aR/lw3spv1+uWGhYEwSdpNKYdCbuUC6je/fBRZD0MOcm0MzMVhU7dkIyiQmCTou1G6j5c6FUQjdvtXBzfgItLLSNg7VYWdvA92F9fWuXkcPo6jVwLvbkzDh6HpNo7SsEAbK2YfG8WZwjunG93bDRUTR9F4IAMhnM2bPo2RxMTsaKPW/WRIOliv3+Y5EwRI8eYbq626W+eQMnT4C18QoCsBa3raMaB6lYmFFPXir1y719+98Q6dWKVOjTZuBcsTATR3lwAGPS1v5cfYdze2g2ceNnsKdPw/btG1Fexd25jX34EBIJsPa9y+7YK/1y5m+lYbG4mPjVrPwxYeNYakFROlPz6vVq6yFav3F4GK9eryqXO6hs9oHS6XjWIEDpNMpmHyiXO+jV69VgeLhF+Bvni1uzEUs9fQAAAABJRU5ErkJggg==)
+                             ! important;
+        background-color: #999 ! important; /* gray */
+        font-size: 75; /* decrease font size */
+        background-size: 16px 16px;
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
+    }
+    
 }
