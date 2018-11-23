@@ -3,7 +3,7 @@
 @description Mask out unwanted or owned tiles
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.2
+@version     1.0.3
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -251,33 +251,120 @@
     *[product-tile-id="1457427157"], /* lumo */
     *[product-tile-id="1207659131"], /* pid */
     *[product-tile-id="1115004086"], /* we are the dwarves */
-    *[product-tile-id="0"], /*  */
-    *[product-tile-id="0"], /*  */
-    *[product-tile-id="0"], /*  */
-    *[product-tile-id="0"], /*  */
-    *[product-tile-id="0"], /*  */
-    *[product-tile-id="0"], /*  */
-    *[product-tile-id="0"], /*  */
-    *[product-tile-id="0"], /*  */
-    *[product-tile-id="0"], /*  */
-    *[product-tile-id="0"], /*  */
-    *[product-tile-id="0"], /*  */
-    *[product-tile-id="0"], /*  */
-    *[product-tile-id="0"], /*  */
-    *[product-tile-id="0"], /*  */
-    *[product-tile-id="0"], /*  */
+    *[product-tile-id="1207658995"], /* DeusEx */
+    *[product-tile-id="1207659001"], /* Thief */
+    *[product-tile-id="1207659040"], /* Quest for Glory */
+    *[product-tile-id="1207666273"], /* Tie Fighter */
+    *[product-tile-id="1207666293"], /* fate of atlantis */
+    *[product-tile-id="5"], /* Freespace 2 */
+    *[product-tile-id="4"], /* descent freespace */
+    *[product-tile-id="1207663083"], /* descent */
+    *[product-tile-id="1207663093"], /* descent 2 */
+    *[product-tile-id="1207658930"], /* witcher 2 */
+    *[product-tile-id="1207658936"], /* alpha centauri 2 */
+    *[product-tile-id="1207658966"], /* wing commander */
+    *[product-tile-id="1207658984"], /* ultima 7 */
+    *[product-tile-id="1207658997"], /* thief */
+    *[product-tile-id="1207659039"], /* zeus + poseidon */
+    *[product-tile-id="1207659046"], /* pharaoh + cleopatra */
+    *[product-tile-id="1207659051"], /* colonization */
+    *[product-tile-id="1207659051"], /* f-117 */
+    *[product-tile-id="1207664473"], /* f-117 2 */
+    *[product-tile-id="1207666263"], /* x-wing */
+    *[product-tile-id="1207666283"], /* KotR */
+    *[product-tile-id="1312824873"], /* Fallout new vegas */
+    *[product-tile-id="1440163901"], /* morrowind */
+    *[product-tile-id="1440166436"], /* fallout 2 */
+    *[product-tile-id="1440166436"], /* civ 4 */
+    *[product-tile-id="1330235937"], /* divinity 2 */
+    *[product-tile-id="1879910422"], /* divinity 2 */
+    *[product-tile-id="1584823040"], /* divinity 2 */
+    *[product-tile-id="1584823040"], /* divinity 2 */
+    *[product-tile-id="2027346477"], /* divinity 2 */
+    *[product-tile-id="1207658924"], /* witcher */
+    *[product-tile-id="1207658937"], /* ultima underworld */
+    *[product-tile-id="1207658938"], /* wing commander privateer */
+    *[product-tile-id="1207658960"], /* wing commander 1/2 */
+    *[product-tile-id="1207658965"], /* ultima 4/5/6 */
+    *[product-tile-id="1207659026"], /* theme hospital */
+    *[product-tile-id="1207664593"], /* simcity 4 */
+    *[product-tile-id="1207666303"], /* sam & max */
+    *[product-tile-id="1207666633"], /* toonstruck */
+    *[product-tile-id="1330235937"], /* star trek */
+    *[product-tile-id="1429089605"], /* star trek */
+    *[product-tile-id="1440166342"], /* fallout */
+    *[product-tile-id="1949616134"], /* dragon age */
+    *[product-tile-id="1207658829"], /* arcanum */
+    *[product-tile-id="1207658833"], /* space quest 4/5/6 */
+    *[product-tile-id="1207658835"], /* caesar iii */
+    *[product-tile-id="1207658839"], /* kings quest 4/5/6 */
+    *[product-tile-id="1207658850"], /* betrayal at krondor */
+    *[product-tile-id="1207658885"], /* age of wonders */
+    *[product-tile-id="1207658903"], /* zork */
+    *[product-tile-id="1207658933"], /* crusader */
+    *[product-tile-id="1207658934"], /* dungeon keeper */
+    *[product-tile-id="1207658948"], /* zork */
+    *[product-tile-id="1207658972"], /* darklands */
+    *[product-tile-id="1207658980"], /* lands of lore 1/2 */
+    *[product-tile-id="1207658983"], /* starflight 1/2 */
+    *[product-tile-id="1207658991"], /* worms */
+    *[product-tile-id="1207658992"], /* syndicate */
+    *[product-tile-id="1207659012"], /* anachronox */
+    *[product-tile-id="1207659030"], /* soul reaver */
+    *[product-tile-id="1207659052"], /* tomb raider 1/2/3 */
+    *[product-tile-id="1207659813"], /* kyrandia */
+    *[product-tile-id="1207660463"], /* covert action */
+    *[product-tile-id="1207666253"], /* monkey island */
+    *[product-tile-id="1421404581"], /* KotR */
+    *[product-tile-id="1421404701"], /* SW battlefront */
+    *[product-tile-id="1421405068"], /* SW Jedi */
+    *[product-tile-id="1425039730"], /* monkey island */
+    *[product-tile-id="1425040088"], /* zak mckracken */
+    *[product-tile-id="1425299904"], /* the dig */
+    *[product-tile-id="1428935726"], /* jedi academy */
+    *[product-tile-id="1207658651"], /* sacrifice */
+    *[product-tile-id="1207658935"], /* magic carpet */
+    *[product-tile-id="1207658946"], /* swat 3 */
+    *[product-tile-id="1207658959"], /* DK2 */
+    *[product-tile-id="1207658964"], /* Nox */
+    *[product-tile-id="1207658969"], /* SC2000 */
+    *[product-tile-id="1207658982"], /* crusader */
+    *[product-tile-id="1207659027"], /* populous */
+    *[product-tile-id="1207659044"], /* torins passage */
+    *[product-tile-id="1207659060"], /* pirates */
+    *[product-tile-id="1207659141"], /* screamer 2 */
+    *[product-tile-id="1207659176"], /* sensible soccer */
+    *[product-tile-id="1207660513"], /* silent service */
+    *[product-tile-id="1207661733"], /* sword of samurai */
+    *[product-tile-id="1421404646"], /* SW battlegrounds */
+    *[product-tile-id="z"], /*  */
+    *[product-tile-id="z"], /*  */
+    *[product-tile-id="z"], /*  */
+    *[product-tile-id="z"], /*  */
+    *[product-tile-id="z"], /*  */
+    *[product-tile-id="z"], /*  */
+    *[product-tile-id="z"], /*  */
+    *[product-tile-id="z"], /*  */
+    *[product-tile-id="z"], /*  */
+    *[product-tile-id="z"], /*  */
+    *[product-tile-id="z"], /*  */
+    *[product-tile-id="z"], /*  */
+    *[product-tile-id="z"], /*  */
+    *[product-tile-id="z"], /*  */
+    *[product-tile-id="z"], /*  */
+    *[product-tile-id="z"], /*  */
     /* Stuff I simply do not want, or is horribly rated */
 
-    *[product-tile-id="0"], /*  */
-    *[product-tile-id="0"], /*  */
-    *[product-tile-id="0"], /*  */
-    *[product-tile-id="0"], /*  */
-    *[product-tile-id="0"], /*  */
-    *[product-tile-id="0"], /*  */
-    *[product-tile-id="0"], /*  */
-    *[product-tile-id="0"], /*  */
-    *[product-tile-id="0"], /*  */
-    *[product-tile-id="0"], /*  */
+    *[product-tile-id="z"], /*  */
+    *[product-tile-id="z"], /*  */
+    *[product-tile-id="z"], /*  */
+    *[product-tile-id="z"], /*  */
+    *[product-tile-id="z"], /*  */
+    *[product-tile-id="z"], /*  */
+    *[product-tile-id="z"], /*  */
+    *[product-tile-id="z"], /*  */
+    *[product-tile-id="z"], /*  */
+    *[product-tile-id="1453277092"], /* soundtrack */
     *[product-tile-id="1439548178"], /* stasis */
     *[product-tile-id="1207664913"], /* black mirror */
     *[product-tile-id="1207658921"], /* realms of haunting */
@@ -358,7 +445,7 @@
     *[product-tile-id="1444830704"], /* owned */
     *[product-tile-id="1207664993"], /* owned */
 
-    *[product-tile-id="0"] /*  */  
+    *[product-tile-id="z"] /*  */  
      {
          display: none ! important;
      }
