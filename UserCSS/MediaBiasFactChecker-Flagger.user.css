@@ -3,7 +3,7 @@
 @description Colorize news links according to MBFC ratings
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.15
+@version     1.0.16
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -11,7 +11,7 @@
 domain("bing.com"), regexp("Google-Full.rss.html") {
 
     /* Copy-paste block (just makes it easier to add new entries)
-     , a[href*='.sfgate.com/']
+     , a[href*='.japantimes.co.jp/']
    */
 
     /* ---    ---    ---    ---    ---    ---    ---    ---    ---    ---
@@ -107,7 +107,8 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
     a[href*='opendemocracy.net/'], a[href*='huffingtonpost.com/'],
     a[href*='.nhk.or.jp/'], a[href*='themoscowtimes.com/'],
     a[href*='.dawn.com/'], a[href*='.goerie.com/'], a[href*='.sfgate.com/'],
-    a[href*='talkingpointsmemo.com/'], a[href*='.atimes.com/'] {
+    a[href*='talkingpointsmemo.com/'], a[href*='.atimes.com/'],
+    a[href*='.heraldsun.com.au/'], a[href*='.japantimes.co.jp/'] {
         /* High */
         background-color: #cff ! important; /* light blue */
     }
@@ -137,7 +138,8 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
     a[href*='unionleader.com'], a[href*='.inquisitr.com'], a[href*='.vice.com'],
     a[href*='westernjournal.com'], a[href*='dailymail.co.uk'],
     a[href*='timeslive.co.za'], a[href*='.pravdareport.com/'],
-    a[href*='.telesurtv.net/'], a[href*='.express.co.uk/'] {
+    a[href*='.telesurtv.net/'], a[href*='telesurenglish.net/'],
+    a[href*='.express.co.uk/'] {
         /* Mixed */
         background-color: #ff6 ! important; /* yellow */
     }
@@ -243,7 +245,8 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
     a[href*='rappler.com'], a[href*='thedailybeast.com'],
     a[href*='msmagazine.com'], a[href*='.advocate.com'],
     a[href*='newyorker.com'], a[href*='pravdareport.com/'],
-    a[href*='huffingtonpost.com/'], a[href*='.telesurtv.net/'],
+    a[href*='huffingtonpost.com/'],
+    a[href*='.telesurtv.net/'], a[href*='telesurenglish.net/'],
     a[href*='talkingpointsmemo.com/'] {
         /* Left */
         background-image:
@@ -303,7 +306,7 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
     a[href*='/scmp.com/'], a[href*='.icij.org'], a[href*='.afp.com/'],
     a[href*='.nhk.or.jp/'], a[href*='bellingcat.com/'],
     a[href*='.atimes.com/'], a[href*='.alarabiya.net/'],
-    a[href*='.goerie.com/'] {
+    a[href*='.goerie.com/'], a[href*='.japantimes.co.jp/'] {
         /* Least Biased */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwwucxIUPAAAABxJREFUOMtjYBgFowAGZjL8Z5jJ8J8ssVEwHAAAWeoJkREpGMwAAAAASUVORK5CYII=)
@@ -334,7 +337,8 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
     a[href*='arkansasonline.com'], a[href*='bostonherald.com'],
     a[href*='desertsun.com'], a[href*='japantoday.com'],
     a[href*='arabnews.com'], a[href*='timeslive.co.za'],
-    a[href*='oregonlive.com'], a[href*='financialpost.com'] {
+    a[href*='oregonlive.com'], a[href*='financialpost.com'],
+    a[href*='.heraldsun.com.au/'] {
         /* Right Center */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwQ336A29AAAADJJREFUOMtjYBgFFANGXBL/09L+oyicNYuRJJORDUA3DBkw0cULJDufJl7AZ8gooBAAANugFfnCrgsLAAAAAElFTkSuQmCC)
@@ -491,13 +495,13 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
    */
     
     a[href*='.cnbc.com'], a[href*='.wgrz.com/'], a[href*='.wvtm13.com/'],
-    a[href*='.popsci.com/'] {
+    a[href*='.popsci.com/'], a[href*='.nhk.or.jp/'] {
         /* 'do not enter' circle with slash */
 
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsWEAE1xnR/aQAAAnBJREFUOMttk81LlFEYxX/3zjsfMNZQmzZGECk0WjiTo87MQswI2rWsaKHROlvV1v6B6LuWGkV/QEFomWA4WtZAi7ZBTZsWZfaB0/txT4tXp2x64HLh3Mt5znPuuYaNCo6Mknw6hysPlfH9MZw7ZqJoN4ASiQbWPiaVmrJLy0ubdwFMi2Cg5CXCcNY0myObGKlUvPs+GAMSymTmI887mny5EgKYcKAfk0x5Zu3bRyO3iyhCIyMweQnT0RETrH5BFy5iXr8Cz0PGflJuW6eCMATAFfrm1ZOXevLSgV65pZr+V255SeraJ/Xk5Qp98wDGlYcqZm1tkSiKJUsQhmhqGjM4yL+lWg0zPhYryeWqFt8fA9Dx4+jyFYgiSCQwp07Ci+U2AlOp4A4dij3x/TFcsdBQb17uy+dYZq0mdXfF43R3y809aR/lw3spv1+uWGhYEwSdpNKYdCbuUC6je/fBRZD0MOcm0MzMVhU7dkIyiQmCTou1G6j5c6FUQjdvtXBzfgItLLSNg7VYWdvA92F9fWuXkcPo6jVwLvbkzDh6HpNo7SsEAbK2YfG8WZwjunG93bDRUTR9F4IAMhnM2bPo2RxMTsaKPW/WRIOliv3+Y5EwRI8eYbq626W+eQMnT4C18QoCsBa3raMaB6lYmFFPXir1y719+98Q6dWKVOjTZuBcsTATR3lwAGPS1v5cfYdze2g2ceNnsKdPw/btG1Fexd25jX34EBIJsPa9y+7YK/1y5m+lYbG4mPjVrPwxYeNYakFROlPz6vVq6yFav3F4GK9eryqXO6hs9oHS6XjWIEDpNMpmHyiXO+jV69VgeLhF+Bvni1uzEUs9fQAAAABJRU5ErkJggg==)
                              ! important;
         background-color: #999 ! important; /* gray */
-        font-size: 50% ! important; /* decrease font size */
+        font-size: 70% ! important; /* decrease font size */
         background-size: 16px 16px ! important;
         background-repeat: no-repeat ! important;
         background-position: center left ! important;
