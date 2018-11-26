@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name        USA Today
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("usatoday.com") {
+    .more-stories-content, .inline-share-tools, .ui-video-wrapper,
+    header, .close-wrap, #Adv10, .oembed-asset, .banner, .footer-links,
+    .copyright {
+        display: none !important;
+    }
+}

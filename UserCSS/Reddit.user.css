@@ -1,0 +1,57 @@
+/* ==UserStyle==
+@name        Reddit
+@description Mask add block in widget panel
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.1
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("reddit.com") {
+    div.entry.unvoted ul.flat-list.buttons { 
+        display: block ! important; 
+    }
+    body { background : none !important;  }
+
+    /* 2018-04-09 - drastic rewrite of DOM, not sure how many classes are
+       stable */
+
+    /* Ick. Stupid pop-up subscription pane*/
+    .modal-open { overflow: unset ! important; }
+
+    .promotedlink, #siteTable_promoted,  .promoted, .arrow, div.side,
+    #header-bottom-right, .footer-parent, #cta-container-placeholder,
+    #fixed-side-footer-links, #recommendations, #promoted-spotlight,
+    #eu-cookie-policy, .report-button, .flair, .morecomments,
+    .commentsignupbar, .listingsignupbar, .welcome, #onboarding-splash,
+    #hamburgers, .s6prp9s-8, .s1l07lbt-0, .s1cwcagp-6,
+    #block-homepage { 
+        display: none ! important; 
+    }
+
+    /* Pop-up menu for hamburger - interfers with essentially all other
+       elements */
+    .gCimVU::before { width: 0px ! important; }
+
+    .s1w22l7l-0, .s6prp9s-7 {width: 900px ! important; }
+
+    ul.flat-list.buttons { 
+        display: none ! important; 
+    }
+
+    .comment { 
+        padding: 0px ! important; 
+        margin-bottom: 0px ! important; 
+    }
+
+    body div.content { 
+        margin: 0px 0px 0px 0px ! important; 
+    }
+
+    /* Sites that don't play well with my addons */
+    a[href*="gfycat.com"], a[href*="streamable.com"],
+    a[href*="v.reddit.com"], a[href*="v.redd.it"] {
+        color: red ! important;
+        background-color: #999 ! important;
+    }
+}

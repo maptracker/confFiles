@@ -1,0 +1,18 @@
+/* ==UserStyle==
+@name        CBS
+@description Hide random cruft
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("cbsnews.com") {
+    .shortcode, .media-list, iframe, .social, .embed--type-video,
+    .site-nav__item-anchor, .article-video-container,
+    .listing-media-feature, .module, footer, .smart-banner-cbsn,
+    .module-rem, .media-block, .media-figure {
+        display: none !important; 
+    }
+    header { height: auto ! important; }
+}

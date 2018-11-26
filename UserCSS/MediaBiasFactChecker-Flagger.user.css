@@ -1,0 +1,534 @@
+/* ==UserStyle==
+@name        Media Bias Fact Checker Flagger
+@description Colorize news links according to MBFC ratings
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.18
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("reddit.com"), domain("wikipedia.org"),
+domain("bing.com"), regexp("Google-Full.rss.html") {
+
+    /* Copy-paste block (just makes it easier to add new entries)
+     , a[href*='.9news.com/']
+   */
+
+    /* ---    ---    ---    ---    ---    ---    ---    ---    ---    ---
+       Media Bias Fact Check
+       https://mediabiasfactcheck.com
+
+       Rates Left <-> Right bias, as well as conspiracy theory sites.
+       Also rates factual reporting level
+
+       https://mediabiasfactcheck.com/methodology/
+
+       ... and who checks MBFC? If any site is of interest to you, and
+       you're skeptical of the quality or provenance of the
+       information, you should obviously spend some time investigating
+       the owners of the site, its methods, and its history.
+
+       NOTE: After going through a bunch of entries, it seems that the
+       default initial assignment for a website is "High factuality"
+       and "Least Biased". I based this on multiple relatively small
+       websites being given this designation.
+
+       Also note: The domain name patterns I am using are not
+       carefully anchored. That is, the pattern 'nymag.com' will also
+       match 'therealnymag.com'. So some patterns may flag unrelated
+       sites.
+
+   */
+
+    /* Google now redirects every link through their own domain (the
+       better to track you with, my dear!), so it's not possible to
+       apply these styles to google results. Similarly, Yahoo wraps
+       all external news sources in their own (largely extraneous)
+       summary pages. Kudos to Bing for using the web as designed:
+       Deep-linking to the target. */
+
+    /* MBFC Sites: Very High factual reporting
+
+      "source is always factual, sources to credible information and
+       makes immediate corrections to incorrect information and has
+       never failed a fact check"
+   */
+    a[href*='.bbc.com/'], a[href*='.bbc.co.uk/'],
+    a[href*='/bbc.com/'], a[href*='/bbc.co.uk/'],
+    a[href*='apnews.com'],
+    a[href*='reuters.com'], a[href*='.who.int/'], a[href*='.icij.org'],
+    a[href*='.npr.org/'], a[href*='.technologyreview.com/'],
+    a[href*='.sciencemag.org/'], a[href*='.alarabiya.net/'],
+    a[href*='/ballotpedia.org/'] {
+        /* Very High */
+        background-color: #9f9 ! important; /* light green */
+    }
+    
+    /* MBFC Sites: High factual reporting
+
+      "source is almost always factual, sources to mostly credible low
+       biased or high factual information and makes immediate
+       corrections to incorrect information and has failed only 1 fact
+       check"
+   */
+    a[href*='washingtonpost.com'], a[href*='theguardian.com'],
+    a[href*='businessinsider.com'], a[href*='cbsnews.com'], a[href*='.upi.com'],
+    a[href*='politico.com'], a[href*='commondreams.org'], a[href*='nymag.com'],
+    a[href*='news.com.au'], a[href*='.cbc.ca/'], a[href*='thehill.com'],
+    a[href*='telegraph.co.uk'], a[href*='engadget.com'],
+    a[href*='nationalgeographic.com'], a[href*='.sky.com'],
+    a[href*='nytimes.com'], a[href*='.philly.com'], a[href*='denverpost.com'],
+    a[href*='nbcnews.com'], a[href*='abcnews.go.com'], a[href*='spectator.org'],
+    a[href*='nbcsandiego.com'], a[href*='nbcwashington.com'],
+    a[href*='nbcphiladelphia.com'], a[href*='.tmj4.com'],
+    a[href*='.9news.com/'],
+    a[href*='abc7news.com'], a[href*='abc7.com/'], a[href*='abc13.com/'],
+    a[href*='/abc11.com/'],
+    a[href*='washingtontimes.com'], a[href*='.pe.com'], a[href*='theweek.com'],
+    a[href*='chicagotribune.com'], a[href*='newrepublic.com'],
+    a[href*='washingtonexaminer.com'], a[href*='fivethirtyeight.com'],
+    a[href*='bridgemi.com'], a[href*='washingtonmonthly.com'],
+    a[href*='bangordailynews.com'], a[href*='prospect.org'], a[href*='.dw.com'],
+    a[href*='.independent.co.uk'], a[href*='/fortune.com'], a[href*='.wsj.com'],
+    a[href*='.standard.co.uk'], a[href*='globalnews.ca'], a[href*='.rfa.org/'],
+    a[href*='voanews.com'], a[href*='ynetnews.com'], a[href*='aljazeera.com'],
+    a[href*='timesofisrael.com'], a[href*='.abc.net.au'], a[href*='.cnbc.com'],
+    a[href*='thedailybeast.com'], a[href*='thehindu.com'], a[href*='.msn.com/'],
+    a[href*='/scmp.com/'], a[href*='.scmp.com/'],
+    a[href*='bellingcat.com/'],
+    a[href*='.sbs.com.au'], a[href*='straitstimes.com'], a[href*='.jpost.com'],
+    a[href*='nzherald.co.nz'], a[href*='tennessean.com'], a[href*='.pnj.com'],
+    a[href*='usatoday.com'], a[href*='arkansasonline.com'], a[href*='/mic.com'],
+    a[href*='mercurynews.com'], a[href*='sacbee.com'], a[href*='.pri.org'],
+    a[href*='politifact.com'], a[href*='foreignpolicy.com'], a[href*='.gq.com'],
+    a[href*='msmagazine.com'], a[href*='bostonglobe.com'], a[href*='.afp.com/'],
+    a[href*='bostonherald.com'], a[href*='.boston.com'], a[href*='tucson.com'],
+    a[href*='.thestar.com'], a[href*='stardem.com'], a[href*='.advocate.com'],
+    a[href*='desertsun.com'], a[href*='.france24.com'], a[href*='.trust.org'],
+    a[href*='newyorker.com'], a[href*='japantoday.com'], a[href*='.vox.com/'],
+    a[href*='arabnews.com'], a[href*='irishtimes.com'], a[href*='.wired.com'],
+    a[href*='bangkokpost.com'], a[href*='bloomberg.com'], a[href*='/time.com/'],
+    a[href*='.stuff.co.nz'], a[href*='weeklystandard.com'], a[href*='.nj.com/'],
+    a[href*='.smh.com.au'], a[href*='theintercept.com'], a[href*='.freep.com/'],
+    a[href*='miamiherald.com'], a[href*='seattletimes.com'],
+    a[href*='haaretz.com/'], a[href*='.cleveland.com'], a[href*='.koco.com/'],
+    a[href*='seattletimes.com/'], a[href*='oregonlive.com'],
+    a[href*='financialpost.com'], a[href*='.mprnews.org/'],
+    a[href*='.jsonline.com/'], a[href*='.usnews.com/'], a[href*='.nola.com/'],
+    a[href*='opendemocracy.net/'], a[href*='huffingtonpost.com/'],
+    a[href*='.nhk.or.jp/'], a[href*='themoscowtimes.com/'],
+    a[href*='.dawn.com/'], a[href*='.goerie.com/'], a[href*='.sfgate.com/'],
+    a[href*='talkingpointsmemo.com/'], a[href*='.atimes.com/'],
+    a[href*='.heraldsun.com.au/'], a[href*='.japantimes.co.jp/'],
+    a[href*='.indiatimes.com/'], a[href*='.ctvnews.ca/'], a[href*='.dw.com/'],
+    a[href*='/people.com/'], a[href*='.startribune.com/'],
+    a[href*='/indianexpress.com/'], a[href*='/techcrunch.com/'],
+    a[href*='.thenews.com.pk/'], a[href*='.thenational.ae/'] {
+        /* High */
+        background-color: #cff ! important; /* light blue */
+    }
+    
+    /* MBFC Sites: Mixed factual reporting
+
+      "source does not always use proper sourcing or sources to other
+       biased/mixed sources.  They may also report well sourced
+       information as well. Mixed sources will have failed one or more
+       fact checks and does not immediately correct false or
+       misleading information. While the majority of the information
+       may be factual on these sources, they need to be
+       checked. Further, any source that does not disclose a mission
+       or ownership information will automatically be deemed mixed"
+   */
+    a[href*='foxnews.com'], a[href*='fox2detroit.com'],
+    a[href*='fox5atlanta.com'], a[href*='fox5dc.com'], a[href*='.wbrc.com/'],
+    
+    a[href*='cnn.com'], a[href*='mirror.co.uk'], 
+    a[href*='newsweek.com'], a[href*='hurriyetdailynews.com'],
+    a[href*='buzzfeed.com'], a[href*='buzzfeednews.com'], a[href*='yahoo.com'],
+    a[href*='middleeastmonitor.com'], a[href*='komonews.com'],
+    a[href*='americanthinker.com'], a[href*='bizpacreview.com'],
+    a[href*='townhall.com'], a[href*='dailycaller.com'], a[href*='.tmz.com'],
+    a[href*='alternet.org'], a[href*='thinkprogress.org'],
+    a[href*='crooksandliars.com'], a[href*='patheos.com'], a[href*='.rt.com'],
+    a[href*='almasdarnews.com'], a[href*='rappler.com'], a[href*='uawire.org'],
+    a[href*='unionleader.com'], a[href*='.inquisitr.com'], a[href*='.vice.com'],
+    a[href*='westernjournal.com'], a[href*='dailymail.co.uk'],
+    a[href*='timeslive.co.za'], a[href*='.pravdareport.com/'],
+    a[href*='.telesurtv.net/'], a[href*='telesurenglish.net/'],
+    a[href*='.express.co.uk/'], a[href*='.euractiv.com/'],
+    a[href*='.forbes.com/'], a[href*='.presstv.com/'] {
+        /* Mixed */
+        background-color: #ff6 ! important; /* yellow */
+    }
+    
+    /* MBFC Sites: Low factual reporting
+
+      "source rarely uses credible sources and is simply not
+       trustworthy for reliable information. These are the sources
+       that need to be fact checked for intentional fake news,
+       conspiracy and propaganda"
+   */
+    a[href*='pastingPlaceHolder'] {
+        background-color: #fc3 ! important; /* Orange */
+    }
+    
+    /* MBFC Sites: Very Low factual reporting
+
+      "source almost never uses credible sources and is simply not
+       trustworthy for reliable information at all. These are the
+       sources that always need to be fact checked for intentional
+       fake news, conspiracy and propaganda"
+   */
+    a[href*='pastingPlaceHolder'] {
+        background-color: #f00 ! important; /* red */
+    }
+
+    /* MBFC Sites: Conspiracy / Propaganda / Pseudoscience Sites
+
+      "reserved for sources that publish unverifiable information that
+       relates to known conspiracies such as the New World Order,
+       Illuminati, False Flags, Aliens, etc. Pseudoscience is
+       determined by publishing unverified health and scientific
+       claims. In order to be classified in this group the central
+       theme of the source must revolve around conspiracies or
+       pseudoscience"
+   */
+    a[href*='wearechange.org'], a[href*='rinf.com'], a[href*='breitbart.com'],
+    a[href*='liberalsociety.com'] {
+        background-color: #303 ! important;
+        color: #ff6 ! important;
+    }
+
+    /* MBFC Sites: Satire
+
+      "sources exclusively use humor, irony, exaggeration, or ridicule
+       to expose and criticize people’s stupidity or vices,
+       particularly in the context of contemporary politics and other
+       topical issues. Primarily these sources are clear that they are
+       satire and do not attempt to deceive"
+   */
+    a[href*='cracked.com'] {
+        background-color: #ccc ! important; /* light gray */
+        /* Upside down text:
+            https://priteshgupta.com/2011/09/flip-or-reverse-text-using-css/
+       */
+        -webkit-transform:rotate(-180deg) ! important;
+        -moz-transform:rotate(-180deg) ! important;
+        -o-transform:rotate(-180deg) ! important;
+        transform:rotate(-180deg) ! important;
+    }
+
+    /* Flagging MBFC bias ratings with little icons to left of link
+       Extreme Left:  LLL Dark Blue
+       Left:           LL Blue 
+       Center Left:     L Light Blue 
+       Least Biased:  --- Green
+       'Science':       0 Green
+       Center Right:    R Light Red 
+       Right:          RR Red 
+       Extreme Right: RRR Dark Red
+       No MBFC Entry:   ? Brown
+    
+    /* MBFC Sites: Extreme Left */
+    a[href*='liberalsociety.com'] {
+        background-image:
+        url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwYZMUBZuQAAACRJREFUOMtjYBgF1AL//5MrxkSp1cPAAEbsgcPISLzYKKAYAACjxQwEXv/lEAAAAABJRU5ErkJggg==)
+           ! important;
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
+    }
+    
+    /* MBFC Sites: Left */
+    a[href*='mirror.co.uk'], a[href*='cnn.com'], a[href*='newsweek.com'],
+    a[href*='middleeastmonitor.com'], a[href*='commondreams.org'],
+    a[href*='newsweek.com'], a[href*='nymag.com'], a[href*='newrepublic.com'],
+    a[href*='alternet.org'], a[href*='washingtonmonthly.com'],
+    a[href*='thinkprogress.org'], a[href*='prospect.org'], a[href*='.gq.com'],
+    a[href*='cracked.com'], a[href*='crooksandliars.com'], a[href*='.vox.com/'],
+    a[href*='rappler.com'], a[href*='thedailybeast.com'],
+    a[href*='msmagazine.com'], a[href*='.advocate.com'],
+    a[href*='newyorker.com'], a[href*='pravdareport.com/'],
+    a[href*='huffingtonpost.com/'], a[href*='/people.com/'],
+    a[href*='.telesurtv.net/'], a[href*='telesurenglish.net/'],
+    a[href*='talkingpointsmemo.com/'] {
+        /* Left */
+        background-image:
+        url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwYKtf4YZwAAACpJREFUOMtjYBgF1AfGxv//EyMGA0yUWjgMDGAkFGBnzzIyYhMbTW5UBAD/1wzS7pLB9AAAAABJRU5ErkJggg==)
+           ! important;
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
+    }
+    
+    /* MBFC Sites: Left-Center */
+    a[href*='nbcsandiego.com'], a[href*='nbcwashington.com'],
+    a[href*='.9news.com/'],
+
+    a[href*='abc7news.com'], a[href*='abc7.com/'], a[href*='abc13.com/'],
+    a[href*='/abc11.com/'],
+
+    a[href*='businessinsider.com'], a[href*='theguardian.com'],
+    a[href*='.bbc.com/'], a[href*='.bbc.co.uk/'],
+    a[href*='/bbc.com/'], a[href*='/bbc.co.uk/'],
+    a[href*='washingtonpost.com'], a[href*='cbsnews.com'],
+    a[href*='politico.com'], a[href*='news.com.au'],
+    a[href*='thehill.com'], a[href*='hurriyetdailynews.com'],
+    a[href*='engadget.com'], a[href*='.cnbc.com'], a[href*='buzzfeed.com'],
+    a[href*='buzzfeednews.com'], a[href*='.sky.com'], a[href*='nytimes.com'],
+    a[href*='.philly.com'], a[href*='denverpost.com'], a[href*='nbcnews.com'],
+    a[href*='nbcphiladelphia.com'], a[href*='.tmj4.com'],
+    a[href*='abcnews.go.com'], a[href*='fivethirtyeight.com'],
+    a[href*='bangordailynews.com'], a[href*='theweek.com'], a[href*='.nj.com/'],
+    a[href*='.independent.co.uk'], a[href*='.dw.com'], a[href*='.cbc.ca/'],
+    a[href*='globalnews.ca'], a[href*='ynetnews.com'], a[href*='thehindu.com'],
+    a[href*='almasdarnews.com'], a[href*='aljazeera.com'], a[href*='yahoo.com'],
+    a[href*='timesofisrael.com'], a[href*='uawire.org'], a[href*='/mic.com'],
+    a[href*='.sbs.com.au'], a[href*='usatoday.com'], a[href*='.pri.org'],
+    a[href*='mercurynews.com'], a[href*='sacbee.com'], a[href*='tucson.com'],
+    a[href*='bostonglobe.com'], a[href*='.boston.com'], a[href*='.tmz.com'],
+    a[href*='.thestar.com'], a[href*='.inquisitr.com'], a[href*='.trust.org'],
+    a[href*='.france24.com'], a[href*='irishtimes.com'], a[href*='.vice.com'],
+    a[href*='bloomberg.com'], a[href*='.stuff.co.nz'], a[href*='.smh.com.au'],
+    a[href*='theintercept.com'], a[href*='miamiherald.com'],
+    a[href*='seattletimes.com'], a[href*='.npr.org/'], a[href*='haaretz.com/'],
+    a[href*='.cleveland.com'], a[href*='/time.com/'], a[href*='.koco.com/'],
+    a[href*='seattletimes.com/'], a[href*='.freep.com/'], a[href*='.rfa.org/'],
+    a[href*='.mprnews.org/'], a[href*='.jsonline.com/'], a[href*='.msn.com/'],
+    a[href*='.usnews.com/'], a[href*='.wired.com'], a[href*='.nola.com/'],
+    a[href*='opendemocracy.net/'], a[href*='themoscowtimes.com/'],
+    a[href*='.dawn.com/'], a[href*='.sfgate.com/'], a[href*='.euractiv.com/'],
+    a[href*='.ctvnews.ca/'], a[href*='.startribune.com/'], a[href*='.dw.com/'],
+    a[href*='/techcrunch.com/'], a[href*='.presstv.com/'] {
+        /* Left Center */
+        background-image:
+        url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwU5IQMqsgAAACdJREFUOMtjYBgFtANpaf//E6OOiVKLhoEBjMQG4qxZjIyjSYtGAAAxUAbUce9dmgAAAABJRU5ErkJggg==)
+           ! important;
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
+    }
+    
+    /* MBFC Sites: Least-Biased */
+    a[href*='.upi.com'], a[href*='apnews.com'], a[href*='reuters.com'],
+    a[href*='bridgemi.com'], a[href*='patheos.com'], a[href*='voanews.com'],
+    a[href*='.abc.net.au'], a[href*='nzherald.co.nz'] , a[href*='.pnj.com'],
+    a[href*='politifact.com'], a[href*='foreignpolicy.com'],
+    a[href*='stardem.com'], a[href*='.jpost.com'], a[href*='bangkokpost.com'],
+    a[href*='/scmp.com/'], a[href*='.scmp.com/'],
+    a[href*='.icij.org'], a[href*='.afp.com/'],
+    a[href*='.nhk.or.jp/'], a[href*='bellingcat.com/'],
+    a[href*='.atimes.com/'], a[href*='.alarabiya.net/'],
+    a[href*='.goerie.com/'], a[href*='.japantimes.co.jp/'],
+    a[href*='.indiatimes.com/'], a[href*='/ballotpedia.org/'],
+    a[href*='/indianexpress.com/'], a[href*='.thenews.com.pk/'] {
+        /* Least Biased */
+        background-image:
+        url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwwucxIUPAAAABxJREFUOMtjYBgFowAGZjL8Z5jJ8J8ssVEwHAAAWeoJkREpGMwAAAAASUVORK5CYII=)
+           ! important;
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
+    }
+    
+    /* MBFC Sites: Science */
+    a[href*='nationalgeographic.com'], a[href*='.who.int/'],
+    a[href*='.technologyreview.com/'], a[href*='.sciencemag.org/'] {
+        /* Science */
+        /* Little blue and yellow flasks */
+        background-image:
+        url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsWDw0HtWyFqAAAAtJJREFUOMtlkktoU2kYhp//Pyfn5OR2oklNYuug1gltURRctCs3gqIbxSujmxnRRdXFwDCIeBlcSDcKwgzIDIioG1GQInhBkFbtpoiCUNSqtRZr2kib9BJzOUnOP4ukWu27fPne73++7/8EdY2kR9CUQFYUeafEokiUiL0YgF279yrmafkqZZ/rujEDIOfMqWxW5HK5OLAOVEt2anLl/NDhzoOTu3dtB2BN60Zzzte/Erwftq5evj42P/Swfyiwsb35C4CmmY6UtfLZGac6V/OVoFyoVAG6znbx1+mTAMyFASzLlIGAHwDTNMQCAlfVxvT5/Wi64EcFgt4lVTcIQDgcjACT6Yk3yNR4jdrv9wBg2zaBoL2ggWFowuv11Jv5VwPEoknkmSuXAEg2t+p1PEJ11L6+3vWfp3rDAFJ7j+kdrY+Tu6XqxPq/x05y99lDJgrFJQCpLzNU3dqr49nctguHrp3683iW0dRRpAzw+x8eLpxHea3MKmBIB3g38FGbLn/YAXDwzhMc3aAB6B4ZPg2cMn0vcSlSKjpY3gAAXqN3CEAAtG3b42kzhNOzdS+V6GKQOq6AzZf/ZsvOnLt/+6j0GAblskLXbLKZEp1HGrl547pHKqU48OtvFkAl0YQba8KJN0JiGQBtyX4pcJmensAtZymVUlTJA/Bq8HZFv/X0mTCC5joAV0qqjsIRLuVvX83zgVkMPY8dBo9pUszXlvT2zQO0UNNPYvDe3Q+PEj/j6gbKkXiQ6IUCAy3tZC+O421I0xgtUHYFhmVjWQ3cvxOioyN2Rh9OfRaLgNmRNEbpJTI2i295M07RwclMAtDTvZ6e7u/v4sQJI1ooaOjBeEyRSWPEE+QjcYQvTLWi4Rh+tEYTXvB2LBJK9l38j9vd/2BaETZ0/IIvXBtRb5EVVWhtad/06nU/mcEFF/h4xdpkqPdmVAgx8c3dx8dPKdG0NKH+B4diA8PmUZ9OAAAAAElFTkSuQmCC)
+           ! important;
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
+    }
+    
+    /* MBFC Sites: Right-Center */
+    a[href*='telegraph.co.uk'], a[href*='washingtontimes.com'],
+    a[href*='.pe.com'], a[href*='chicagotribune.com'],
+    a[href*='/fortune.com'], a[href*='.standard.co.uk'], a[href*='.rt.com'],
+    a[href*='straitstimes.com'], a[href*='tennessean.com'], a[href*='.wsj.com'],
+    a[href*='arkansasonline.com'], a[href*='bostonherald.com'],
+    a[href*='desertsun.com'], a[href*='japantoday.com'],
+    a[href*='arabnews.com'], a[href*='timeslive.co.za'],
+    a[href*='oregonlive.com'], a[href*='financialpost.com'],
+    a[href*='.heraldsun.com.au/'], a[href*='.forbes.com/'],
+    a[href*='.thenational.ae/'] {
+        /* Right Center */
+        background-image:
+        url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwQ336A29AAAADJJREFUOMtjYBgFFANGXBL/09L+oyicNYuRJJORDUA3DBkw0cULJDufJl7AZ8gooBAAANugFfnCrgsLAAAAAElFTkSuQmCC)
+           ! important;
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
+    }
+    
+    /* MBFC Sites: Right */
+    a[href*='foxnews.com'], a[href*='fox2detroit.com'],
+    a[href*='fox5atlanta.com'], a[href*='fox5dc.com'], a[href*='.wbrc.com/'],
+    
+    a[href*='komonews.com'], a[href*='townhall.com'],
+    a[href*='americanthinker.com'], a[href*='bizpacreview.com'],
+    a[href*='spectator.org'], a[href*='washingtonexaminer.com'],
+    a[href*='dailycaller.com'], a[href*='unionleader.com'],
+    a[href*='westernjournal.com'], a[href*='dailymail.co.uk'],
+    a[href*='weeklystandard.com'], a[href*='.express.co.uk/'] {
+        /* Right */
+        background-image:
+        url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwQkWx53KgAAADhJREFUOMtjYBgFFANGdIH/xsb/URScPcuITQyniciKYWxsYjDARFMvwJyKTYx+XkDXgEtsFFAAALHMJ+9VjEruAAAAAElFTkSuQmCC)
+           ! important;
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
+    }
+    
+    /* MBFC Sites: Extreme Right */
+    a[href*='rinf.com'], a[href*='breitbart.com'] {
+        background-image:
+        url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwMu9IoI8wAAADVJREFUOMtjYBgFFANGBgYGhv8MDP/RBBmJFWNANwDGJlaMiepeYCRRjDZeQA8sUsRGARkAAHTgKenRjGaPAAAAAElFTkSuQmCC)
+           ! important;
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
+    }
+
+    /* Educational Institutions
+
+      MBFC does not have a category for colleges and
+      universities. While the quality of information from such
+      organizations is generally quite high, they also run the risk of
+      acting not much differently than corporations. That is, many
+      academic institutions have very active Technology Transfer
+      departments tasked with "monetizing" their faculty's
+      discoveries. As such, I feel that information from such a source
+      should be viewed with some caution.
+
+     */
+
+    a[href*='.edu/'] {
+        /* The '.edu/' selector may have a lot of false positives */
+        /* Little motorboard and diploma icon */
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsWDjYy3q/EhAAAAj9JREFUOMu1U09oUnEc//ye7+n2dCxEWwRuenAO2iHs3yKGCpMtlHTtsNMOY7QtYiBR67IOUeBBcHjuFEJ4aPYEL+Ul6yJCl8nK54jho8tgbg/JZ+29569DLGZQUbDv6Xv4/PnC9/MBTmJWVlYAABcveK1jY1dcf8KSoyUSmUYu9xKUUhKNRkY5Y+/mcSDHMv6dnU/lUqncjkajEAShW8Dv95lttoFbIGQdADweT5eTKIoAANrpPFXVr3eXlpZboVCIEgAIBoPl/lPWS78SJUnC+aH3AIB93ARAIVZ/CMkHDaVQKFgZACgUCpeVVusM7WhJURRhMBgAAIODg9jTb6ChTcKKLMSqiHZbO3S5XGdnZmb6CSHfyPEzvV6v2T088kXXdQCAy+mE0WiEWKsBAK6OfMC7iqclCC8sRxwmHA7/FDCZjCzDMGBZFhzHoba9jc1KBRzHgWVZAICuK12mTD6fRyqVep1Op/N2+2lns9ksq5qmaqoKvrcXFosFAIWmqgAAh63R9R02EAiMLy4uBhVFwfWpqZCQE2pbT1LZz2Pnnkn1un2vsU943tSam1t+Sw8+7vb1HL7pEuB5vp7L5ZoTExMWEMKMDrmHe3aVYbZSn519dA+yLO9KkjSwunqnT9M08tsgJZNJ81a1+sD1/NVDp25AsF6CgWFgMpmwtrZ2wPO8PR6P63+N8bXbC+b7k9OPsxsbVJZlWiwWaSwWozabzf3PnUgkEuuZTIbOz8+X/rtYDodjHAB8Pt+JFBffAV8612it8DFVAAAAAElFTkSuQmCC)
+                             ! important;
+        background-color: #ddd ! important; /* light gray */
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
+    }
+
+    /* Government
+
+      Highlight websites hosted on a government domain.
+
+     */
+
+    a[href*='.gov/'] {
+        /* The '.gov/' selector may have a lot of false positives */
+        /* Purple greek temple */
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsWEBoaxJOJqgAAAoBJREFUOMuVk7tPFFEUh3/nzszOPtllV1hAZcH1BYWPRCOGRCmsLQydFGLARzAaYmFlYaN/AA8lQtgYpEFtNGqDMTQmRtFCY1SIRBGBLOxjFnZ2Zu69FoiBLCb4Vb/inO+cnOQQ1nD7VA8uPuoAAAzG+veRiU4SlLNdvKvt57kv2ABaDT1N3eh4eQm9Ld2xwBPfUzKpfm2h8IhX6Qaj+fKzKzOn0Yz7eLBeMFB996SWUa6TRYdIEjaEAUIVY045v3F2ov0FAFDiyMAe8Y2PKoayFf/oK1pbEmyf/ZUdVE+oTFEmCkvmjuUt+S5ZkO5NGaR07Xpe37pwdc7+O7M/3teVz+TjPuZ76OhOrVWwGr3kHeYuESiYZrOXee+RgGU4RruHeR63JS/cJCKwVYHuuLSgETycy+cSnDuToVywiTM+NIOfo6XLoaMKYyPxW7tHIsuRhtJt4XEiWj3LCkbKcFRdYZU1leRf8HMICPeijjplrya4gExK+e77e6+ERFJLlqy56wphPey1uY351DzUWq0cKhirUli+wgyRIJSej0R/9E4JECA+CFEksN12ieIoMpQKIp1KkeASucUcFiYXJBHh7cdx9/GaYzokULa/LFYksFIWSCcPVTLyp/1gjCHgCqCKVWiSJOJvamk2Oh8AgOlf01QkcJNH5Q6HkTSgbteiUgpYaoHsqAhDAFqjqyY7lhYgoCITda0TDCNBwi0cxljGL3xkLGVNEEye4zQ3N2uRRtbUpykrFompUGCLalm67heG3InXYKgDwCCwBIILBO1PVkHQIWECkCB4ANjgGGwpnOmkOwd6Wn2fvX0kScN/IBWY2Z3ZazSkJ+Rmf6DYAvwGPxoHfbmihZwAAAAASUVORK5CYII=)
+                             ! important;
+        background-color: #ffc ! important; /* pale yellow */
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
+    }
+
+    /* Mark up some social media sites with their own favicon
+       Also shopping sites like Amazon, which are often linked to in order
+       to refrence a physical book.
+   */
+
+    a[href*='twitter.com'] {
+        background-image: url(https://abs.twimg.com/favicons/favicon.ico)
+                             ! important;
+        background-repeat: no-repeat ! important;
+        background-size: 16px 16px;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
+    }
+    
+    a[href*='youtube.com'], a[href*='youtu.be'] {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAq1BMVEX////5+fnTWFiRAAD26urQSUntx8e4OzkvLy/PQ0PNPj4hISH49vb48/O6Pz3/p6LitLTgY2GhAQC+SkjgUE3ttbTswcGwIiDjeXXCAwL2nJjfZ2bRT0+mISGWAACeHh7ZpaXy3NzlpKTHICDfioqfGBjWZGTimJiqEg80NDQ7OzvLy8u7u7spKSlsbGzW1tZISEiRkZGFhYWgoKC0MC3wfXjIZ2V3d3dkZGQQ6krCAAAAn0lEQVQYlW3M5w6CQBBG0RlccJGmSBEUFGy0pSiK7/9kbsCgRu+/Ock3AL/VVXf9gkuTag0toQY6QMGPLGeQARsAWQE0Vzgor01aAeNAR6AVlMoD6k6Bf8Wt27bTPl3X7xEkBNG+GRaufcPwV0swPSLgAgWUNMtWHXcAkcMMZfWACYRvEPF8Mj9BRkEy4eiRDXH6H/s4sgPYbSdjYRjMn+E0DSQr0BbwAAAAAElFTkSuQmCC)
+                             ! important;
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
+    }
+
+    a[href*='.amazon.com'] {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAqFBMVEX///8EBQUDBQX/pwDGxsb//PkeICD/9+3/47Xz8/P//fxAQUEJCgrb29sNDg4SExPn5+ft7e2UlJQmJyczNDT/8+DPz8+Cg4P/4K7/vUN8fX3X19f/rRX/0oL/5Lr/0X3/zG//xVr/58H+sSO5urqrq6v/yWf/1pL/vUf/7dD/sSH/79b+3Z//6cf/uTb/wk9jZGRWV1dLS0tvcHCen59DREQuLy+Njo7z4jxpAAABdElEQVQ4ja2S23aCMBBFIUGQREAg3ISiKKC23kCL//9nzYSqLWT1qcMDWTN7Tc6ZjKL8Y5ha1Pqqw66VK627Fx3xUBGym1RST6mK1O9A+nwMXNVXIBSN6hbknSa0PB8AOmpxg3TL1ZE7yGDWEAiblrISThpo8UOJy7llisu4E1XXJD7IvLwtLtQHmTKARNRBwoIc0Civ8c/WgRkDJhNjaryyQlLgDkPWb+BHCrifADRgo4QXGQFpB9rucPSkLjQdxgMv4LYA2NWoA6RZqJiLGfRC1BxqEM/ILq2NxFao3qCFJ1ZFTKmDHs4QMKkoIjRrQsZdeGQ4CDfqHDTzaUUUi3VgwjAmfSkwxI+kZVWFYlEsvpPHOkmWPRGfYmPYTzHqbbzb9flJnCX5ZEgEy3xVPISsE7x5mwZPyPg4FHhzTPJHggQFxtnpvDxMeWzrZINxsd/XP9qS4znDr8jOMb/697XGevX+KK8kqnth63gb58FoRn/GF9yLGMGsb49uAAAAAElFTkSuQmCC) ! important;
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
+    }
+    
+}
+
+
+@-moz-document domain("reddit.com") {
+    /* Highlight Wikipedia links, but not on Wikipedia
+
+       We'll flag it as "High" for factuality, even though sound
+       arguments can be made against that stance. Also assigning its
+       own shortcut icon rather than one of the bias icons.
+
+       https://mediabiasfactcheck.com/wikipedia/
+
+     */
+    
+    a[href*='wikipedia.org'] {
+        background-image: url(https://en.m.wikipedia.org/static/favicon/wikipedia.ico)
+                             ! important;
+        background-color: #cff ! important; /* light blue */
+        background-size: 16px 16px;
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
+    }
+    
+    /* Tor-Unfriendly, or require Javascript to use
+
+       Websites that don't play well with the Tor Browser, or require
+       Javascript to be turned on. 
+
+   */
+    
+    a[href*='.cnbc.com'], a[href*='.wgrz.com/'], a[href*='.wvtm13.com/'],
+    a[href*='.popsci.com/'], a[href*='.nhk.or.jp/'],
+    a[href*='japantimes.co.jp/'] {
+        /* 'do not enter' circle with slash */
+
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsWEAE1xnR/aQAAAnBJREFUOMttk81LlFEYxX/3zjsfMNZQmzZGECk0WjiTo87MQswI2rWsaKHROlvV1v6B6LuWGkV/QEFomWA4WtZAi7ZBTZsWZfaB0/txT4tXp2x64HLh3Mt5znPuuYaNCo6Mknw6hysPlfH9MZw7ZqJoN4ASiQbWPiaVmrJLy0ubdwFMi2Cg5CXCcNY0myObGKlUvPs+GAMSymTmI887mny5EgKYcKAfk0x5Zu3bRyO3iyhCIyMweQnT0RETrH5BFy5iXr8Cz0PGflJuW6eCMATAFfrm1ZOXevLSgV65pZr+V255SeraJ/Xk5Qp98wDGlYcqZm1tkSiKJUsQhmhqGjM4yL+lWg0zPhYryeWqFt8fA9Dx4+jyFYgiSCQwp07Ci+U2AlOp4A4dij3x/TFcsdBQb17uy+dYZq0mdXfF43R3y809aR/lw3spv1+uWGhYEwSdpNKYdCbuUC6je/fBRZD0MOcm0MzMVhU7dkIyiQmCTou1G6j5c6FUQjdvtXBzfgItLLSNg7VYWdvA92F9fWuXkcPo6jVwLvbkzDh6HpNo7SsEAbK2YfG8WZwjunG93bDRUTR9F4IAMhnM2bPo2RxMTsaKPW/WRIOliv3+Y5EwRI8eYbq626W+eQMnT4C18QoCsBa3raMaB6lYmFFPXir1y719+98Q6dWKVOjTZuBcsTATR3lwAGPS1v5cfYdze2g2ceNnsKdPw/btG1Fexd25jX34EBIJsPa9y+7YK/1y5m+lYbG4mPjVrPwxYeNYakFROlPz6vVq6yFav3F4GK9eryqXO6hs9oHS6XjWIEDpNMpmHyiXO+jV69VgeLhF+Bvni1uzEUs9fQAAAABJRU5ErkJggg==)
+                             ! important;
+        background-color: #999 ! important; /* gray */
+        font-size: 70% ! important; /* decrease font size */
+        background-size: 16px 16px ! important;
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
+    }
+    
+    /* MBFC Sites: No entry 
+
+       The fact that they haven't analyzed the site yet implies that
+       it's not heavily visited, at least by the (presumably Western)
+       population of visitors that use MBFC
+   */
+    a[href*='yenisafak.com'], a[href*='masslive.com'], a[href*='etherail.com'],
+    a[href*='physicsworld.com'], a[href*='middleeasteye.net'],
+    a[href*='news-leader.com'], a[href*='channelnewsasia.com'],
+    a[href*='differentimpulse.com/'], a[href*='.kyodonews.net/'],
+    a[href*='camdenadvertiser.com.au/'], a[href*='thedefensepost.com/'],
+    a[href*='israelpalestinenews.org/']  {
+        /* No Entry on MBFC */
+        background-image:
+        url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsREB0U8b0K0wAAADlJREFUOMtjYBgFjPgk04wZ/sPYs87iV4tXc5oxw39kPjJgwmUAyTbicwku26mimWlwx/Ew8AJdAABtFRLIrXPiBQAAAABJRU5ErkJggg==)
+           ! important;
+        background-repeat: no-repeat ! important;
+        background-position: center left ! important;
+        padding-left: 18px ! important;
+        background-color: #fc9 ! important; /* light brown */
+    }
+
+}
