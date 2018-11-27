@@ -3,7 +3,7 @@
 @description Colorize news links according to MBFC ratings
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.18
+@version     1.0.19
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -11,7 +11,7 @@
 domain("bing.com"), regexp("Google-Full.rss.html") {
 
     /* Copy-paste block (just makes it easier to add new entries)
-     , a[href*='.9news.com/']
+     , [href*='.pewresearch.org/']
    */
 
     /* ---    ---    ---    ---    ---    ---    ---    ---    ---    ---
@@ -55,11 +55,11 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
    */
     a[href*='.bbc.com/'], a[href*='.bbc.co.uk/'],
     a[href*='/bbc.com/'], a[href*='/bbc.co.uk/'],
-    a[href*='apnews.com'],
+    a[href*='apnews.com'], a[href*='.jstor.org/'],
     a[href*='reuters.com'], a[href*='.who.int/'], a[href*='.icij.org'],
     a[href*='.npr.org/'], a[href*='.technologyreview.com/'],
     a[href*='.sciencemag.org/'], a[href*='.alarabiya.net/'],
-    a[href*='/ballotpedia.org/'] {
+    a[href*='/ballotpedia.org/'], [href*='.pewresearch.org/'] {
         /* Very High */
         background-color: #9f9 ! important; /* light green */
     }
@@ -123,7 +123,11 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
     a[href*='.indiatimes.com/'], a[href*='.ctvnews.ca/'], a[href*='.dw.com/'],
     a[href*='/people.com/'], a[href*='.startribune.com/'],
     a[href*='/indianexpress.com/'], a[href*='/techcrunch.com/'],
-    a[href*='.thenews.com.pk/'], a[href*='.thenational.ae/'] {
+    a[href*='.thenews.com.pk/'], a[href*='.thenational.ae/'],
+    a[href*='.mediaite.com/'], a[href*='/abovethelaw.com/'],
+    [href*='.theroot.com/'], [href*='.salon.com/'], [href*='.esquire.com/'],
+    [href*='.marketwatch.com/'], [href*='.axios.com/'],
+    [href*='.democracynow.org/'], [href*='.theatlantic.com/'] {
         /* High */
         background-color: #cff ! important; /* light blue */
     }
@@ -251,7 +255,9 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
     a[href*='newyorker.com'], a[href*='pravdareport.com/'],
     a[href*='huffingtonpost.com/'], a[href*='/people.com/'],
     a[href*='.telesurtv.net/'], a[href*='telesurenglish.net/'],
-    a[href*='talkingpointsmemo.com/'] {
+    a[href*='talkingpointsmemo.com/'], a[href*='.mediaite.com/'],
+    [href*='.theroot.com/'], [href*='.salon.com/'], [href*='.esquire.com/'],
+    [href*='.democracynow.org/'] {
         /* Left */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwYKtf4YZwAAACpJREFUOMtjYBgF1AfGxv//EyMGA0yUWjgMDGAkFGBnzzIyYhMbTW5UBAD/1wzS7pLB9AAAAABJRU5ErkJggg==)
@@ -299,7 +305,9 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
     a[href*='opendemocracy.net/'], a[href*='themoscowtimes.com/'],
     a[href*='.dawn.com/'], a[href*='.sfgate.com/'], a[href*='.euractiv.com/'],
     a[href*='.ctvnews.ca/'], a[href*='.startribune.com/'], a[href*='.dw.com/'],
-    a[href*='/techcrunch.com/'], a[href*='.presstv.com/'] {
+    a[href*='/techcrunch.com/'], a[href*='.presstv.com/'],
+    a[href*='/abovethelaw.com/'], [href*='.axios.com/'],
+    [href*='.theatlantic.com/'] {
         /* Left Center */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwU5IQMqsgAAACdJREFUOMtjYBgFtANpaf//E6OOiVKLhoEBjMQG4qxZjIyjSYtGAAAxUAbUce9dmgAAAABJRU5ErkJggg==)
@@ -321,7 +329,8 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
     a[href*='.atimes.com/'], a[href*='.alarabiya.net/'],
     a[href*='.goerie.com/'], a[href*='.japantimes.co.jp/'],
     a[href*='.indiatimes.com/'], a[href*='/ballotpedia.org/'],
-    a[href*='/indianexpress.com/'], a[href*='.thenews.com.pk/'] {
+    a[href*='/indianexpress.com/'], a[href*='.thenews.com.pk/'],
+    [href*='.marketwatch.com/'], [href*='.pewresearch.org/'] {
         /* Least Biased */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwwucxIUPAAAABxJREFUOMtjYBgFowAGZjL8Z5jJ8J8ssVEwHAAAWeoJkREpGMwAAAAASUVORK5CYII=)
@@ -333,6 +342,7 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
     
     /* MBFC Sites: Science */
     a[href*='nationalgeographic.com'], a[href*='.who.int/'],
+    a[href*='.jstor.org/'],
     a[href*='.technologyreview.com/'], a[href*='.sciencemag.org/'] {
         /* Science */
         /* Little blue and yellow flasks */
@@ -423,7 +433,7 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
 
      */
 
-    a[href*='.gov/'] {
+    a[href*='.gov/'], a[href*='.gov.ua/'] {
         /* The '.gov/' selector may have a lot of false positives */
         /* Purple greek temple */
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsWEBoaxJOJqgAAAoBJREFUOMuVk7tPFFEUh3/nzszOPtllV1hAZcH1BYWPRCOGRCmsLQydFGLARzAaYmFlYaN/AA8lQtgYpEFtNGqDMTQmRtFCY1SIRBGBLOxjFnZ2Zu69FoiBLCb4Vb/inO+cnOQQ1nD7VA8uPuoAAAzG+veRiU4SlLNdvKvt57kv2ABaDT1N3eh4eQm9Ld2xwBPfUzKpfm2h8IhX6Qaj+fKzKzOn0Yz7eLBeMFB996SWUa6TRYdIEjaEAUIVY045v3F2ov0FAFDiyMAe8Y2PKoayFf/oK1pbEmyf/ZUdVE+oTFEmCkvmjuUt+S5ZkO5NGaR07Xpe37pwdc7+O7M/3teVz+TjPuZ76OhOrVWwGr3kHeYuESiYZrOXee+RgGU4RruHeR63JS/cJCKwVYHuuLSgETycy+cSnDuToVywiTM+NIOfo6XLoaMKYyPxW7tHIsuRhtJt4XEiWj3LCkbKcFRdYZU1leRf8HMICPeijjplrya4gExK+e77e6+ERFJLlqy56wphPey1uY351DzUWq0cKhirUli+wgyRIJSej0R/9E4JECA+CFEksN12ieIoMpQKIp1KkeASucUcFiYXJBHh7cdx9/GaYzokULa/LFYksFIWSCcPVTLyp/1gjCHgCqCKVWiSJOJvamk2Oh8AgOlf01QkcJNH5Q6HkTSgbteiUgpYaoHsqAhDAFqjqyY7lhYgoCITda0TDCNBwi0cxljGL3xkLGVNEEye4zQ3N2uRRtbUpykrFompUGCLalm67heG3InXYKgDwCCwBIILBO1PVkHQIWECkCB4ANjgGGwpnOmkOwd6Wn2fvX0kScN/IBWY2Z3ZazSkJ+Rmf6DYAvwGPxoHfbmihZwAAAAASUVORK5CYII=)
