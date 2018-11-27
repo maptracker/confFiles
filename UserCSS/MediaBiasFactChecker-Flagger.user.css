@@ -3,15 +3,15 @@
 @description Colorize news links according to MBFC ratings
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.19
+@version     1.0.20
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("reddit.com"), domain("wikipedia.org"),
-domain("bing.com"), regexp("Google-Full.rss.html") {
+domain("bing.com") {
 
     /* Copy-paste block (just makes it easier to add new entries)
-     , [href*='.pewresearch.org/']
+     , a[href*='.newsbusters.org/']
    */
 
     /* ---    ---    ---    ---    ---    ---    ---    ---    ---    ---
@@ -59,7 +59,7 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
     a[href*='reuters.com'], a[href*='.who.int/'], a[href*='.icij.org'],
     a[href*='.npr.org/'], a[href*='.technologyreview.com/'],
     a[href*='.sciencemag.org/'], a[href*='.alarabiya.net/'],
-    a[href*='/ballotpedia.org/'], [href*='.pewresearch.org/'] {
+    a[href*='/ballotpedia.org/'], a[href*='.pewresearch.org/'] {
         /* Very High */
         background-color: #9f9 ! important; /* light green */
     }
@@ -125,9 +125,13 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
     a[href*='/indianexpress.com/'], a[href*='/techcrunch.com/'],
     a[href*='.thenews.com.pk/'], a[href*='.thenational.ae/'],
     a[href*='.mediaite.com/'], a[href*='/abovethelaw.com/'],
-    [href*='.theroot.com/'], [href*='.salon.com/'], [href*='.esquire.com/'],
-    [href*='.marketwatch.com/'], [href*='.axios.com/'],
-    [href*='.democracynow.org/'], [href*='.theatlantic.com/'] {
+    a[href*='.theroot.com/'], a[href*='.salon.com/'], a[href*='.esquire.com/'],
+    a[href*='.marketwatch.com/'], a[href*='.axios.com/'], a[href*='.ajc.com/'],
+    a[href*='.democracynow.org/'], a[href*='.theatlantic.com/'],
+    a[href*='.slate.com/'], a[href*='/atlantablackstar.com/'],
+    a[href*='.propublica.org/'], a[href*='.statnews.com/'],
+    a[href*='.epi.org/'] , a[href*='/fee.org/'],
+    a[href*='/thefederalist.com/'], a[href*='.powerlineblog.com/'] {
         /* High */
         background-color: #cff ! important; /* light blue */
     }
@@ -156,11 +160,15 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
     a[href*='crooksandliars.com'], a[href*='patheos.com'], a[href*='.rt.com'],
     a[href*='almasdarnews.com'], a[href*='rappler.com'], a[href*='uawire.org'],
     a[href*='unionleader.com'], a[href*='.inquisitr.com'], a[href*='.vice.com'],
-    a[href*='westernjournal.com'], a[href*='dailymail.co.uk'],
+    a[href*='westernjournal.com'], a[href*='/freebeacon.com/'],
+    a[href*='dailymail.co.uk'], a[href*='/dailym.ai/'],
     a[href*='timeslive.co.za'], a[href*='.pravdareport.com/'],
     a[href*='.telesurtv.net/'], a[href*='telesurenglish.net/'],
     a[href*='.express.co.uk/'], a[href*='.euractiv.com/'],
-    a[href*='.forbes.com/'], a[href*='.presstv.com/'] {
+    a[href*='.forbes.com/'], a[href*='.presstv.com/'], a[href*='/twitchy.com/'],
+    a[href*='.rightwingwatch.org/'], a[href*='.dailywire.com/'],
+    a[href*='/nypost.com/'], a[href*='.redstate.com/'],
+    a[href*='.lifezette.com/'], a[href*='.newsbusters.org/'] {
         /* Mixed */
         background-color: #ff6 ! important; /* yellow */
     }
@@ -187,7 +195,7 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
         background-color: #f00 ! important; /* red */
     }
 
-    /* MBFC Sites: Conspiracy / Propaganda / Pseudoscience Sites
+    /* MBFC Sites: Questionable / Conspiracy / Propaganda / Pseudoscience Sites
 
       "reserved for sources that publish unverifiable information that
        relates to known conspiracies such as the New World Order,
@@ -198,7 +206,9 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
        pseudoscience"
    */
     a[href*='wearechange.org'], a[href*='rinf.com'], a[href*='breitbart.com'],
-    a[href*='liberalsociety.com'] {
+    a[href*='liberalsociety.com'], a[href*='.conservapedia.com/'],
+    a[href*='.jihadwatch.org/'], a[href*='.thegatewaypundit.com/'],
+    a[href*='.cnsnews.com/'], a[href*='breaking911.com/'] {
         background-color: #303 ! important;
         color: #ff6 ! important;
     }
@@ -211,7 +221,8 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
        topical issues. Primarily these sources are clear that they are
        satire and do not attempt to deceive"
    */
-    a[href*='cracked.com'] {
+    a[href*='cracked.com'], a[href*='/babylonbee.com/'],
+    a[href*='.theonion.com/'] {
         background-color: #ccc ! important; /* light gray */
         /* Upside down text:
             https://priteshgupta.com/2011/09/flip-or-reverse-text-using-css/
@@ -256,8 +267,9 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
     a[href*='huffingtonpost.com/'], a[href*='/people.com/'],
     a[href*='.telesurtv.net/'], a[href*='telesurenglish.net/'],
     a[href*='talkingpointsmemo.com/'], a[href*='.mediaite.com/'],
-    [href*='.theroot.com/'], [href*='.salon.com/'], [href*='.esquire.com/'],
-    [href*='.democracynow.org/'] {
+    a[href*='.theroot.com/'], a[href*='.salon.com/'], a[href*='.esquire.com/'],
+    a[href*='.democracynow.org/'] , a[href*='.rightwingwatch.org/'],
+    a[href*='.slate.com/'] {
         /* Left */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwYKtf4YZwAAACpJREFUOMtjYBgF1AfGxv//EyMGA0yUWjgMDGAkFGBnzzIyYhMbTW5UBAD/1wzS7pLB9AAAAABJRU5ErkJggg==)
@@ -306,8 +318,9 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
     a[href*='.dawn.com/'], a[href*='.sfgate.com/'], a[href*='.euractiv.com/'],
     a[href*='.ctvnews.ca/'], a[href*='.startribune.com/'], a[href*='.dw.com/'],
     a[href*='/techcrunch.com/'], a[href*='.presstv.com/'],
-    a[href*='/abovethelaw.com/'], [href*='.axios.com/'],
-    [href*='.theatlantic.com/'] {
+    a[href*='/abovethelaw.com/'], a[href*='.axios.com/'], a[href*='.ajc.com/'],
+    a[href*='.theatlantic.com/'], a[href*='/atlantablackstar.com/'],
+    a[href*='.propublica.org/'], a[href*='.epi.org/'] {
         /* Left Center */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwU5IQMqsgAAACdJREFUOMtjYBgFtANpaf//E6OOiVKLhoEBjMQG4qxZjIyjSYtGAAAxUAbUce9dmgAAAABJRU5ErkJggg==)
@@ -330,7 +343,8 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
     a[href*='.goerie.com/'], a[href*='.japantimes.co.jp/'],
     a[href*='.indiatimes.com/'], a[href*='/ballotpedia.org/'],
     a[href*='/indianexpress.com/'], a[href*='.thenews.com.pk/'],
-    [href*='.marketwatch.com/'], [href*='.pewresearch.org/'] {
+    a[href*='.marketwatch.com/'], a[href*='.pewresearch.org/'],
+    a[href*='.statnews.com/'] {
         /* Least Biased */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwwucxIUPAAAABxJREFUOMtjYBgFowAGZjL8Z5jJ8J8ssVEwHAAAWeoJkREpGMwAAAAASUVORK5CYII=)
@@ -342,7 +356,7 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
     
     /* MBFC Sites: Science */
     a[href*='nationalgeographic.com'], a[href*='.who.int/'],
-    a[href*='.jstor.org/'],
+    a[href*='.jstor.org/'], a[href*='/arstechnica.com/'],
     a[href*='.technologyreview.com/'], a[href*='.sciencemag.org/'] {
         /* Science */
         /* Little blue and yellow flasks */
@@ -356,7 +370,7 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
     
     /* MBFC Sites: Right-Center */
     a[href*='telegraph.co.uk'], a[href*='washingtontimes.com'],
-    a[href*='.pe.com'], a[href*='chicagotribune.com'],
+    a[href*='.pe.com'], a[href*='chicagotribune.com'] , a[href*='/fee.org/'],
     a[href*='/fortune.com'], a[href*='.standard.co.uk'], a[href*='.rt.com'],
     a[href*='straitstimes.com'], a[href*='tennessean.com'], a[href*='.wsj.com'],
     a[href*='arkansasonline.com'], a[href*='bostonherald.com'],
@@ -364,7 +378,7 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
     a[href*='arabnews.com'], a[href*='timeslive.co.za'],
     a[href*='oregonlive.com'], a[href*='financialpost.com'],
     a[href*='.heraldsun.com.au/'], a[href*='.forbes.com/'],
-    a[href*='.thenational.ae/'] {
+    a[href*='.thenational.ae/'], a[href*='/nypost.com/'] {
         /* Right Center */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwQ336A29AAAADJJREFUOMtjYBgFFANGXBL/09L+oyicNYuRJJORDUA3DBkw0cULJDufJl7AZ8gooBAAANugFfnCrgsLAAAAAElFTkSuQmCC)
@@ -382,8 +396,13 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
     a[href*='americanthinker.com'], a[href*='bizpacreview.com'],
     a[href*='spectator.org'], a[href*='washingtonexaminer.com'],
     a[href*='dailycaller.com'], a[href*='unionleader.com'],
-    a[href*='westernjournal.com'], a[href*='dailymail.co.uk'],
-    a[href*='weeklystandard.com'], a[href*='.express.co.uk/'] {
+    a[href*='westernjournal.com'], a[href*='/thefederalist.com/'],
+    a[href*='dailymail.co.uk'], a[href*='/dailym.ai/'],
+    a[href*='weeklystandard.com'], a[href*='.express.co.uk/'],
+    a[href*='.dailywire.com/'], a[href*='/twitchy.com/'],
+    a[href*='/freebeacon.com/'], a[href*='.redstate.com/'],
+    a[href*='.powerlineblog.com/'], a[href*='.lifezette.com/'],
+    a[href*='.newsbusters.org/'] {
         /* Right */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwQkWx53KgAAADhJREFUOMtjYBgFFANGdIH/xsb/URScPcuITQyniciKYWxsYjDARFMvwJyKTYx+XkDXgEtsFFAAALHMJ+9VjEruAAAAAElFTkSuQmCC)
@@ -394,7 +413,9 @@ domain("bing.com"), regexp("Google-Full.rss.html") {
     }
     
     /* MBFC Sites: Extreme Right */
-    a[href*='rinf.com'], a[href*='breitbart.com'] {
+    a[href*='rinf.com'], a[href*='breitbart.com'],
+    a[href*='.conservapedia.com/'], a[href*='.jihadwatch.org/'],
+    a[href*='.thegatewaypundit.com/'], a[href*='.cnsnews.com/'] {
         background-image:
         url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwMu9IoI8wAAADVJREFUOMtjYBgFFANGBgYGhv8MDP/RBBmJFWNANwDGJlaMiepeYCRRjDZeQA8sUsRGARkAAHTgKenRjGaPAAAAAElFTkSuQmCC)
            ! important;
