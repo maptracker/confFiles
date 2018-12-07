@@ -83,7 +83,7 @@ domain("bing.com") {
     a[href*='nbcnews.com'], a[href*='/lex18.com/'],
     a[href*='.9news.com/'], a[href*='.nbc12.com/'], a[href*='/nbc24.com/'],
     a[href*='.nbcdfw.com/'], a[href*='news3lv.com/'], a[href*='.ksdk.com/'],
-    , a[href*='.nbclosangeles.com/'], a[href*='nbcphiladelphia.com'],
+    a[href*='.nbclosangeles.com/'], a[href*='nbcphiladelphia.com'],
     
     a[href*='bloomberg.com'], a[href*='/.bloombergquint.com/'],
 
