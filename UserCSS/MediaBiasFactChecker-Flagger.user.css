@@ -3,7 +3,7 @@
 @description Colorize news links according to MBFC ratings
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.25
+@version     1.0.26
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -11,7 +11,7 @@
 domain("bing.com") {
 
     /* Copy-paste block (just makes it easier to add new entries)
-     , a[href*='.techtimes.com/']
+     , a[href*='.pressdemocrat.com/']
    */
 
     /* ---    ---    ---    ---    ---    ---    ---    ---    ---    ---
@@ -77,13 +77,14 @@ domain("bing.com") {
     a[href*='/abc11.com/'], a[href*='/abcnews4.com/'], a[href*='.abc15.com/'],
     a[href*='abcnews.go.com'], a[href*='.abc10.com/'],
     
-    a[href*='.wibw.com/'], a[href*='cbsnews.com'],
+    a[href*='.wibw.com/'], a[href*='cbsnews.com'], a[href*='.wkbn.com/'],
     
     a[href*='nbcsandiego.com'], a[href*='nbcwashington.com'],
-    a[href*='nbcnews.com'], a[href*='/lex18.com/'],
+    a[href*='nbcnews.com'], a[href*='/lex18.com/'], a[href*='.nbc4i.com/'],
     a[href*='.9news.com/'], a[href*='.nbc12.com/'], a[href*='/nbc24.com/'],
     a[href*='.nbcdfw.com/'], a[href*='news3lv.com/'], a[href*='.ksdk.com/'],
     a[href*='.nbclosangeles.com/'], a[href*='nbcphiladelphia.com'],
+    a[href*='.wbir.com/'],
     
     a[href*='bloomberg.com'], a[href*='/.bloombergquint.com/'],
 
@@ -160,7 +161,8 @@ domain("bing.com") {
     a[href*='.miaminewtimes.com/'], a[href*='.intoday.in/'],
     a[href*='boingboing.net/'], a[href*='.ocregister.com/'],
     a[href*='durangoherald.com/'], a[href*='/the-japan-news.com/'],
-    a[href*='.eff.org/'] {
+    a[href*='.eff.org/'], a[href*='.nextgov.com/'], a[href*='.jns.org/'],
+    a[href*='.pressdemocrat.com/'] {
         /* High */
         background-color: #cff ! important; /* light blue */
     }
@@ -203,7 +205,7 @@ domain("bing.com") {
     a[href*='.msnbc.com/'], a[href*='sputniknews.com/'],
     a[href*='antiwar.com/'], a[href*='.theepochtimes.com/'],
     a[href*='/bearingarms.com/'], a[href*='egyptianstreets.com/'],
-    a[href*='.thesun.co.uk/'] {
+    a[href*='.thesun.co.uk/'], a[href*='.thewrap.com/'] {
         /* Mixed */
         background-color: #ff6 ! important; /* yellow */
     }
@@ -325,12 +327,12 @@ domain("bing.com") {
     a[href*='/abc11.com/'], a[href*='/abcnews4.com/'], a[href*='.abc15.com/'],
     a[href*='.abc10.com/'],
 
-    a[href*='cbsnews.com'], a[href*='.wibw.com/'],
+    a[href*='cbsnews.com'], a[href*='.wibw.com/'], a[href*='.wkbn.com/'],
 
     a[href*='nbcsandiego.com'],
     a[href*='.nbcdfw.com/'], a[href*='.9news.com/'], a[href*='.ksdk.com/'],
     a[href*='news3lv.com/'], a[href*='.nbc12.com/'], a[href*='/nbc24.com/'],
-    a[href*='/lex18.com/'],
+    a[href*='/lex18.com/'], a[href*='.nbc4i.com/'], a[href*='.wbir.com/'],
     a[href*='.nbclosangeles.com/'], a[href*='nbcwashington.com'],
     
     a[href*='.bbc.com/'], a[href*='.bbc.co.uk/'],
@@ -376,7 +378,8 @@ domain("bing.com") {
     a[href*='.theage.com.au/'], a[href*='.alaraby.co.uk/'],
     a[href*='.nationalobserver.com/'], a[href*='.newsy.com/'],
     a[href*='/deadline.com/'], a[href*='.inquirer.net/'], a[href*='.eff.org/'],
-    a[href*='.hindustantimes.com/'], a[href*='egyptianstreets.com/'] {
+    a[href*='.hindustantimes.com/'], a[href*='egyptianstreets.com/'],
+    a[href*='.pressdemocrat.com/'] {
         /* Left Center */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwU5IQMqsgAAACdJREFUOMtjYBgFtANpaf//E6OOiVKLhoEBjMQG4qxZjIyjSYtGAAAxUAbUce9dmgAAAABJRU5ErkJggg==)
@@ -404,7 +407,8 @@ domain("bing.com") {
     a[href*='.statnews.com/'], a[href*='.mlive.com/'], a[href*='.intoday.in/'],
     a[href*='.stripes.com/'], a[href*='.thejakartapost.com/'],
     a[href*='.digitaljournal.com/'], a[href*='/taskandpurpose.com/'],
-    a[href*='.goodnewsnetwork.org/'], a[href*='.rferl.org/'] {
+    a[href*='.goodnewsnetwork.org/'], a[href*='.rferl.org/'],
+    a[href*='.nextgov.com/'], a[href*='.thewrap.com/'] {
         /* Least Biased */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwwucxIUPAAAABxJREFUOMtjYBgFowAGZjL8Z5jJ8J8ssVEwHAAAWeoJkREpGMwAAAAASUVORK5CYII=)
@@ -446,7 +450,8 @@ domain("bing.com") {
     a[href*='.deseretnews.com/'], a[href*='.theglobeandmail.com/'],
     a[href*='sputniknews.com/'], a[href*='antiwar.com/'],
     a[href*='.theepochtimes.com/'], a[href*='.ocregister.com/'],
-    a[href*='durangoherald.com/'], a[href*='/the-japan-news.com/'] {
+    a[href*='durangoherald.com/'], a[href*='/the-japan-news.com/'],
+    a[href*='.jns.org/'] {
         /* Right Center */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwQ336A29AAAADJJREFUOMtjYBgFFANGXBL/09L+oyicNYuRJJORDUA3DBkw0cULJDufJl7AZ8gooBAAANugFfnCrgsLAAAAAElFTkSuQmCC)
@@ -636,9 +641,12 @@ domain("bing.com") {
     a[href*='hawaiinewsnow.com/'], a[href*='militarytimes.com/'],
     a[href*='syrianobserver.com/'], a[href*='canadiangeographic.ca/'],
     a[href*='/.essence.com/'], a[href*='/nebraska.tv/'],
-    a[href*='/myrtlebeachonline.com/'], a[href*='.techtimes.com/']  {
+    a[href*='/myrtlebeachonline.com/'], a[href*='.techtimes.com/'],
+    a[href*='.polygon.com/'], a[href*='thedenverchannel.com/'],
+    a[href*='bigeasymagazine.com/'], a[href*='grayzoneproject.com/'],
+    a[href*='boredpanda.com/'], a[href*='pulsenews.co.kr/']   {
         /* No Entry on MBFC */
-        /* Cut'n'Paste:     , a[href*='canadiangeographic.ca/']  */
+        /* Cut'n'Paste:     , a[href*='pulsenews.co.kr/']  */
         background-image:
         url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsREB0U8b0K0wAAADlJREFUOMtjYBgFjPgk04wZ/sPYs87iV4tXc5oxw39kPjJgwmUAyTbicwku26mimWlwx/Ew8AJdAABtFRLIrXPiBQAAAABJRU5ErkJggg==)
            ! important;
