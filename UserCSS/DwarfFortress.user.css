@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name        USA Today
+@description Un-hide spoilers
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("bay12forums.com") {
+    .spoiler, .spoilerheader,.spoilerbody { 
+        display: block ! important; 
+    }
+}

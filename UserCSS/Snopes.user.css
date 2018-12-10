@@ -1,0 +1,21 @@
+/* ==UserStyle==
+@name        Snopes
+@description Attempt to reset img hidden flags (failed)
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("snopes.com") {
+  img {
+      /*
+    Arg. Does not work. The hidden _attribute_ does not seem to be accessible via CSS
+    https://stackoverflow.com/a/6708403
+    https://w3c.github.io/html/editing.html#the-hidden-attribute
+     */
+      box-sizing: unset ! important;
+      display: block ! important;
+      visibility: visible ! important;
+  }
+}

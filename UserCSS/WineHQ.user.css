@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name        Wine HQ
+@description Un-collapse hidden content
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("winehq.org") {
+    .collapse {
+        display: unset ! important;
+    }
+}
