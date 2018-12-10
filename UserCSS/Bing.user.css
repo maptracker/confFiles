@@ -1,0 +1,35 @@
+/* ==UserStyle==
+@name        Bing
+@description Mask out sites I'm not really interested in
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("bing.com") {
+    #contentid { width: 1000px ! important; }
+
+    /* Reset link color */
+    a { color: unset ! important; }
+
+    div[url^='http://www.espn.com'],
+    div[url^='http://www.tmz.com'],
+    div[url^='https://www.thesun.co.uk'],
+    div[url^='https://www.foxsports.com'],
+    div[url^='https://www.stuff.co.nz'],
+    div[url^='https://www.wsj.com'],
+    div[url^='https://www.mirror.co.uk'],
+    div[url^='http://www.nydailynews.com'],
+    div[url^='zzzz'],
+    div[url^='zzzz'],
+    div[url^='zzzz'],
+    div[url^='zzzz'],
+    div[url^='zzzz'],
+    div[url^='zzzz'],
+    div[url^='zzzz'],
+    div[url^='zzzz'],
+    div[url^='http://www.dailymail'] {
+        display: none ! important;
+    }
+}
