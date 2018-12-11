@@ -3,33 +3,51 @@
 @description Mask out sites I'm not really interested in
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("bing.com") {
     #contentid { width: 1000px ! important; }
 
+    /* Tinker with header */
+    #b_header { width: 900px; }
+    #id_h     { float: right; margin-left: -20px; }
+    #id_sc    { text-align: left; }
+    #id_l, div[id*="notificationContainer"]  {
+        display: none ! important;
+    }
+    
     /* Reset link color */
     a { color: unset ! important; }
 
-    div[url^='http://www.espn.com'],
-    div[url^='http://www.tmz.com'],
-    div[url^='https://www.thesun.co.uk'],
-    div[url^='https://www.foxsports.com'],
-    div[url^='https://www.stuff.co.nz'],
-    div[url^='https://www.wsj.com'],
-    div[url^='https://www.mirror.co.uk'],
-    div[url^='http://www.nydailynews.com'],
-    div[url^='zzzz'],
-    div[url^='zzzz'],
-    div[url^='zzzz'],
-    div[url^='zzzz'],
-    div[url^='zzzz'],
-    div[url^='zzzz'],
-    div[url^='zzzz'],
-    div[url^='zzzz'],
-    div[url^='http://www.dailymail'] {
+    a[href^='http://www.espn.com'],
+    a[href^='http://www.nydailynews.com'],
+    a[href^='http://www.tmz.com'],
+    a[href^='https://hellogiggles.com'],
+    a[href^='https://hollywoodlife.com'],
+    a[href^='https://people.com/'],
+    a[href^='https://sports.yahoo.com'],
+    a[href^='https://www.billboard.com'],
+    a[href^='https://www.cbssports.com'],
+    a[href^='https://www.entrepreneur.com'],
+    a[href^='https://www.eonline.com'],
+    a[href^='https://www.foxsports.com'],
+    a[href^='https://www.menshealth.com'],
+    a[href^='https://www.mirror.co.uk'],
+    a[href^='https://www.msn.com/en-us/sports'],
+    a[href^='https://www.stuff.co.nz'],
+    a[href^='https://www.thesun.co.uk'],
+    a[href^='https://www.usmagazine.com'],
+    a[href^='https://www.wsj.com'],
+    a[href^='zzzz'],
+    a[href^='zzzz'],
+    a[href^='zzzz'],
+    a[href^='zzzz'],
+    a[href^='zzzz'],
+    a[href^='zzzz'],
+    a[href^='zzzz'],
+    a[href^='http://www.dailymail'] {
         display: none ! important;
     }
 }
