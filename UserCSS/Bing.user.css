@@ -3,7 +3,7 @@
 @description Mask out sites I'm not really interested in
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.1
+@version     1.0.2
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -21,26 +21,42 @@
     /* Reset link color */
     a { color: unset ! important; }
 
+    a[href*='.nbcsports.com/'],
+    a[href^='http://theconversation.com'],
     a[href^='http://www.espn.com'],
     a[href^='http://www.nydailynews.com'],
     a[href^='http://www.tmz.com'],
+    a[href^='https://appleinsider.com'],
     a[href^='https://hellogiggles.com'],
     a[href^='https://hollywoodlife.com'],
     a[href^='https://people.com/'],
     a[href^='https://sports.yahoo.com'],
+    a[href^='https://venturebeat.com'],
+    a[href^='https://venturebeat.com'],
+    a[href^='https://venturebeat.com'],
+    a[href^='https://www.aarp.org'],
+    a[href^='https://www.aol.com'],
     a[href^='https://www.billboard.com'],
     a[href^='https://www.cbssports.com'],
+    a[href^='https://www.digitaltrends.com'],
     a[href^='https://www.entrepreneur.com'],
     a[href^='https://www.eonline.com'],
     a[href^='https://www.foxsports.com'],
+    a[href^='https://www.hollywoodreporter.com'],
+    a[href^='https://www.indiewire.com'],
     a[href^='https://www.menshealth.com'],
     a[href^='https://www.mirror.co.uk'],
     a[href^='https://www.msn.com/en-us/sports'],
+    a[href^='https://www.popsugar.com'],
+    a[href^='https://www.screendaily.com'],
+    a[href^='https://www.screendaily.com'],
     a[href^='https://www.stuff.co.nz'],
     a[href^='https://www.thesun.co.uk'],
+    a[href^='https://www.townandcountrymag.com'],
     a[href^='https://www.usmagazine.com'],
+    a[href^='https://www.vibe.com'],
+    a[href^='https://www.vogue.com'],
     a[href^='https://www.wsj.com'],
-    a[href^='zzzz'],
     a[href^='zzzz'],
     a[href^='zzzz'],
     a[href^='zzzz'],
