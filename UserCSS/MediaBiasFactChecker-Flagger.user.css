@@ -11,7 +11,7 @@
 domain("bing.com") {
 
     /* Copy-paste block (just makes it easier to add new entries)
-     , a[href*='.courant.com/']
+     , a[href*='.eastbaytimes.com/']
    */
 
     /* ---    ---    ---    ---    ---    ---    ---    ---    ---    ---
@@ -176,7 +176,9 @@ domain("bing.com") {
     a[href*='.thenewstribune.com/'], a[href*='.mcall.com/'],
     a[href*='.providencejournal.com/'], a[href*='/patch.com/'],
     a[href*='.pennlive.com/'], a[href*='/metro.co.uk/'],
-    a[href*='/bgr.com/'], a[href*='.dailydot.com/'], a[href*='.courant.com/'] {
+    a[href*='.snopes.com/'],
+    a[href*='/bgr.com/'], a[href*='.dailydot.com/'], a[href*='.courant.com/'],
+    a[href*='.realclearpolitics.com/'], a[href*='.eastbaytimes.com/'] {
         /* High */
         background-color: #cff ! important; /* light blue */
     }
@@ -401,7 +403,8 @@ domain("bing.com") {
     a[href*='.kansascity.com/'], a[href*='.tampabay.com/'],
     a[href*='.thenewstribune.com/'], a[href*='.ibtimes.com/'],
     a[href*='.providencejournal.com/'], a[href*='.pennlive.com/'],
-    a[href*='/metro.co.uk/'], a[href*='/bgr.com/'], a[href*='.courant.com/'] {
+    a[href*='/metro.co.uk/'], a[href*='/bgr.com/'], a[href*='.courant.com/'],
+    a[href*='.eastbaytimes.com/'] {
         /* Left Center */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwU5IQMqsgAAACdJREFUOMtjYBgFtANpaf//E6OOiVKLhoEBjMQG4qxZjIyjSYtGAAAxUAbUce9dmgAAAABJRU5ErkJggg==)
@@ -430,7 +433,7 @@ domain("bing.com") {
     a[href*='.stripes.com/'], a[href*='.thejakartapost.com/'],
     a[href*='.digitaljournal.com/'], a[href*='/taskandpurpose.com/'],
     a[href*='.goodnewsnetwork.org/'], a[href*='.rferl.org/'],
-    a[href*='.nextgov.com/'], a[href*='.thewrap.com/'],
+    a[href*='.nextgov.com/'], a[href*='.thewrap.com/'], a[href*='.snopes.com/'],
     a[href*='.thejournal.ie/'], a[href*='.mcall.com/'],
     a[href*='.factcheck.org/'],
     a[href*='/patch.com/'] {
@@ -479,7 +482,8 @@ domain("bing.com") {
     a[href*='durangoherald.com/'], a[href*='/the-japan-news.com/'],
     a[href*='.jns.org/'], a[href*='.al.com/'],
     a[href*='.israelhayom.com/'], a[href*='/mynorthwest.com/'],
-    a[href*='.orlandosentinel.com/'], a[href*='.dallasnews.com/'] {
+    a[href*='.orlandosentinel.com/'], a[href*='.dallasnews.com/'],
+    a[href*='.realclearpolitics.com/'] {
         /* Right Center */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwQ336A29AAAADJJREFUOMtjYBgFFANGXBL/09L+oyicNYuRJJORDUA3DBkw0cULJDufJl7AZ8gooBAAANugFfnCrgsLAAAAAElFTkSuQmCC)
@@ -635,7 +639,8 @@ domain("bing.com") {
     
     a[href*='.cnbc.com'], a[href*='.wgrz.com/'], a[href*='.wvtm13.com/'],
     a[href*='.popsci.com/'], a[href*='.nhk.or.jp/'],
-    a[href*='japantimes.co.jp/'] {
+    a[href*='japantimes.co.jp/'], a[href*='.usnews.com/'],
+    a[href*='.orlandosentinel.com/'] {
         /* 'do not enter' circle with slash */
 
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsWEAE1xnR/aQAAAnBJREFUOMttk81LlFEYxX/3zjsfMNZQmzZGECk0WjiTo87MQswI2rWsaKHROlvV1v6B6LuWGkV/QEFomWA4WtZAi7ZBTZsWZfaB0/txT4tXp2x64HLh3Mt5znPuuYaNCo6Mknw6hysPlfH9MZw7ZqJoN4ASiQbWPiaVmrJLy0ubdwFMi2Cg5CXCcNY0myObGKlUvPs+GAMSymTmI887mny5EgKYcKAfk0x5Zu3bRyO3iyhCIyMweQnT0RETrH5BFy5iXr8Cz0PGflJuW6eCMATAFfrm1ZOXevLSgV65pZr+V255SeraJ/Xk5Qp98wDGlYcqZm1tkSiKJUsQhmhqGjM4yL+lWg0zPhYryeWqFt8fA9Dx4+jyFYgiSCQwp07Ci+U2AlOp4A4dij3x/TFcsdBQb17uy+dYZq0mdXfF43R3y809aR/lw3spv1+uWGhYEwSdpNKYdCbuUC6je/fBRZD0MOcm0MzMVhU7dkIyiQmCTou1G6j5c6FUQjdvtXBzfgItLLSNg7VYWdvA92F9fWuXkcPo6jVwLvbkzDh6HpNo7SsEAbK2YfG8WZwjunG93bDRUTR9F4IAMhnM2bPo2RxMTsaKPW/WRIOliv3+Y5EwRI8eYbq626W+eQMnT4C18QoCsBa3raMaB6lYmFFPXir1y719+98Q6dWKVOjTZuBcsTATR3lwAGPS1v5cfYdze2g2ceNnsKdPw/btG1Fexd25jX34EBIJsPa9y+7YK/1y5m+lYbG4mPjVrPwxYeNYakFROlPz6vVq6yFav3F4GK9eryqXO6hs9oHS6XjWIEDpNMpmHyiXO+jV69VgeLhF+Bvni1uzEUs9fQAAAABJRU5ErkJggg==)
