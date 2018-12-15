@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name        Independent
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("independent.co.uk") {
+    /* Essentially all media requires JS to render, so just mask it all out */
+    .video-player, .video-playlist, iframe, .type-gallery,
+    .type-video, .box-comments, .syndication-btn, #i100-0,
+    #most_popular-0, #ines_video_sidebar-0, .fb-info, .partner-slots,
+    .taboola, .hero-wrapper, [class*='video'], .inline-media, #comments, footer,
+    .share-bar-syndication, .subscription, .article-actions, .sidebar {
+        display: none ! important;
+    }
+}

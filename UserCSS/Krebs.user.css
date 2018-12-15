@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name        Krebs on Security
+@description Mask out random bits
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("krebsonsecurity.com") {
+    #header, #sidebar, #top-banner, #pg-nav, a[href*='/cpm/'] {
+        display: none ! important;
+    }
+}

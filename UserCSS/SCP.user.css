@@ -1,0 +1,24 @@
+/* ==UserStyle==
+@name        Secure. Contain. Protect.
+@description Show collapsed content without JS
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("scp-wiki.net") {
+    .collapsible-block, .collapsible-block-content, 
+    .collapsible-block-unfolded, .collapsible-block-folded {
+        display: block !important;
+    }
+
+    div[id|='wiki-tab'] { 
+        display: block !important; 
+        border-top: solid red 3px;
+    }
+
+    a:visited { 
+        color: purple !important;
+    }
+}

@@ -1,0 +1,20 @@
+/* ==UserStyle==
+@name        MSN
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("msn.com") {
+    .xnetvidplayer, .paddle, .sharingtb, #nav, .head, head,
+    .pagination_control, .two-back-home-buttons,
+    .facebook-comments-disabled-container, #foot, .circularhub,
+    div[data-aop*="social"], #sticky-footer {
+        display: none ! important;
+    }
+
+    body { overflow-x: unset ! important; }
+    #precontent { margin-top: unset ! important; }
+}

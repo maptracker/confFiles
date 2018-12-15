@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name        Daily Show
+@description Random clean-up
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("www.thedailyshow.com") {
+    #oo_container { 
+        display: none ! important;
+    }
+}

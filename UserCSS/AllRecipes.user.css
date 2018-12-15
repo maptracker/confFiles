@@ -1,0 +1,37 @@
+/* ==UserStyle==
+@name        allrecipes
+@description Mask out irritations, fix lists
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("allrecipes.com") {
+    #divGoBack, #divGoNext, .lo-container, #shareRecipe, [class*="ad-mag"],
+    #btn-addtolist, .magazine-bar, .lo-reservespace, .recipe-navbar,
+    .toolbar-i-made-it, .share, footer, #recipe-notes {
+        display: none ! important;
+    }
+    
+    /* I don't use the (+) "add item" feature, and it bulks up the line
+       height. Remove it */
+    .added::before {
+        content: "" ! important;
+        border: unset ! important;
+        height: unset ! important;
+    }
+    .checkList__line {
+        line-height: unset ! important;
+        margin: unset ! important;
+    }
+
+    /* Fix time formatting */
+    .prepTime__item--type {
+        display: inline ! important;
+    }
+    .prepTime__item--type::after {
+        content: ": "
+    }
+    .prepTime__item { box-sizing: unset ! important; }
+}
