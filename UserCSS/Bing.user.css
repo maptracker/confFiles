@@ -3,7 +3,7 @@
 @description Mask out sites I'm not really interested in
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.3
+@version     1.0.4
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -14,16 +14,33 @@
     #b_header { width: 900px; }
     #id_h     { float: right; margin-left: -20px; }
     #id_sc    { text-align: left; }
-    #id_l, div[id*="notificationContainer"]  {
+    #id_l, #id_rh, div[id*="notificationContainer"], .global-action {
         display: none ! important;
     }
+
+    /* Trim top menu of topics */
+    div[data-k="5155.1"], div[data-k="5156.1"], div[data-k="5157.1"],
+    div[data-k="5122.1"], div[data-k="5128.1"], div[data-k="5130.1"],
+    div[data-k="5131.1"], div[data-k="5153.1"], div[data-k="5154.1"] {
+        display: none ! important;
+    }
+
+    /* Try to compact the cards some */
+    .pfcard-imp    { height: unset ! important;
+                     width: unset ! important; max-width: 258px ! important; }
     
-    html-body { min-width: 800px ! important; }
+    .pfcard-imp.bg { height: unset ! important; }
+    .caption       { height: unset ! important; }
+    .bottom        { display: none ! important; }
+    
+    html body { min-width: 800px ! important; }
     body { width: 800px ! important; }
+    
    
     /* Reset link color */
-    a { color: unset ! important; }
+    a { color: blue ! important; background-color: white ! important; }
 
+    /* Sites I'm not interested in visiting, or don't work in Tor */
     a[href*='aarp.org'],
     a[href*='aol.com'],
     a[href*='appleinsider.com'],
@@ -38,10 +55,12 @@
     a[href*='hollywoodlife.com'],
     a[href*='hollywoodreporter.com'],
     a[href*='indiewire.com'],
+    a[href*='jalopnik.com'],
     a[href*='lifehacker.com'],
     a[href*='lifestyle'],
     a[href*='menshealth.com'],
     a[href*='mirror.co.uk'],
+    a[href*='mmajunkie.com'],
     a[href*='nbcsports.com'],
     a[href*='nfl.com'],
     a[href*='nydailynews.com'],
@@ -51,9 +70,8 @@
     a[href*='popsugar.com'],
     a[href*='screendaily.com'],
     a[href*='sport'],
-    a[href*='sportingnews.com'],
-    a[href*='sports.yahoo.com'],
     a[href*='stuff.co.nz'],
+    a[href*='thebiglead.com'],
     a[href*='theconversation.com'],
     a[href*='thesun.co.uk'],
     a[href*='tmz.com'],
@@ -63,6 +81,8 @@
     a[href*='vibe.com'],
     a[href*='vogue.com'],
     a[href*='wsj.com'],
+    a[href*='zzzz'],
+    a[href*='zzzz'],
     a[href*='zzzz'],
     a[href*='zzzz'],
     a[href*='zzzz'],
