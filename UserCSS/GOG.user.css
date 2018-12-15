@@ -3,7 +3,7 @@
 @description Mask out unwanted or owned tiles
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.3
+@version     1.0.4
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -337,11 +337,70 @@
     *[product-tile-id="1207660513"], /* silent service */
     *[product-tile-id="1207661733"], /* sword of samurai */
     *[product-tile-id="1421404646"], /* SW battlegrounds */
-    *[product-tile-id="z"], /*  */
-    *[product-tile-id="z"], /*  */
-    *[product-tile-id="z"], /*  */
-    *[product-tile-id="z"], /*  */
-    *[product-tile-id="z"], /*  */
+    *[product-tile-id="1207658854"], /* orion */
+    *[product-tile-id="1434984562"], /* terra nova */
+    *[product-tile-id="1453375253"], /* stardew valley */
+    *[product-tile-id="1207658768"], /* pandora directive */
+    *[product-tile-id="1207659144"], /* primordia */
+    *[product-tile-id="1207660523"], /* flatout 2 */
+    *[product-tile-id="1436868249"], /* forgotten realms */
+    *[product-tile-id="1436871302"], /* forgotten realms */
+    *[product-tile-id="1444390881"], /* D&D dark sun */
+    *[product-tile-id="1207658900"], /* broken sword */
+    *[product-tile-id="1207659059"], /* fragile alliance */
+    *[product-tile-id="1207659118"], /* Hotline Miami */
+    *[product-tile-id="1207659773"], /* Escape Goat */
+    *[product-tile-id="1207660443"], /* DROD 1+2+3 */
+    *[product-tile-id="1207664293"], /* Don't Starve: Reign of Giants */
+    *[product-tile-id="1427108887"], /* Star Trek™: 25th Anniversary */
+    *[product-tile-id="1444390670"], /* Dungeons &amp; Dragons: Krynn Series */
+    *[product-tile-id="1207659041"], /* Silver */
+    *[product-tile-id="1207659050"], /* Blackwell Bundle */
+    *[product-tile-id="1207659073"], /* Gemini Rue */
+    *[product-tile-id="1207659210"], /* Don't Starve */
+    *[product-tile-id="1207659573"], /* Shadow Warrior (2013) */
+    *[product-tile-id="1207660163"], /* Wasteland 1: The Original Classic */
+    *[product-tile-id="1207665293"], /* Crimsonland */
+    *[product-tile-id="1207666523"], /* Tales of Maj'Eyal */
+    *[product-tile-id="1254614904"], /* Imperium Galactica II: Alliances */
+    *[product-tile-id="1430136345"], /* Fantasy General */
+    *[product-tile-id="1432899949"], /* The Original Strife: Veteran Edition */
+    *[product-tile-id="1434542135"], /* Pajama Sam Vol. 1 */
+    *[product-tile-id="1435136567"], /* Pajama Sam Vol. 2 */
+    *[product-tile-id="1436873631"], /* Forgotten Realms: - Collection Three */
+    *[product-tile-id="1441039322"], /* X3: Terran War Pack */
+    *[product-tile-id="1470490225"], /* Broforce */
+    *[product-tile-id="1207658707"], /* Broken Sword 2: Remastered */
+    *[product-tile-id="1207658745"], /* Cannon Fodder */
+    *[product-tile-id="1207659043"], /* Resonance */
+    *[product-tile-id="1207659188"], /* Secret Agent */
+    *[product-tile-id="1207664343"], /* Edna &amp; Harvey: Harvey's New Eyes */
+    *[product-tile-id="1207666463"], /* Door Kickers */
+    *[product-tile-id="1207666753"], /* Tales of Maj'Eyal: Ashes of Urh'Rok */
+    *[product-tile-id="1207667263"], /* NEO Scavenger */
+    *[product-tile-id="1425293328"], /* LOOM™ */
+    *[product-tile-id="1427292148"], /* Pillars of Eternity: Hero Edition */
+    *[product-tile-id="1430913339"], /* Prehistorik 1+2 */
+    *[product-tile-id="1440410803"], /* Indiana Jones® and the Last Crusade™ */
+    *[product-tile-id="1441096843"], /* Al-Qadim: The Genie's Curse */
+    *[product-tile-id="1444391327"], /* Dungeons & Dragons: Ravenloft Series */
+    *[product-tile-id="1445516929"], /* Divinity: Original Sin - Enhanced */
+    *[product-tile-id="1773820830"], /* Star Ruler 2: Wake of the Heralds */
+    *[product-tile-id="1207658826"], /* Constructor Classic 1997 */
+    *[product-tile-id="1207658926"], /* Desperados: Wanted Dead or Alive */
+    *[product-tile-id="1207659173"], /* Hocus Pocus */
+    *[product-tile-id="1207659227"], /* Unepic */
+    *[product-tile-id="1207667183"], /* Grim Fandango Remastered */
+    *[product-tile-id="1441096928"], /* D&amp;D Stronghold: Kingdom Simulator */
+    *[product-tile-id="1207658693"], /* FlatOut */
+    *[product-tile-id="1207658953"], /* Slipstream 5000 */
+    *[product-tile-id="1207659087"], /* Unmechanical: Extended */
+    *[product-tile-id="1207659103"], /* Deponia */
+    *[product-tile-id="1207664833"], /* MouseCraft */
+    *[product-tile-id="1207665483"], /* Wacky Wheels */
+    *[product-tile-id="1207665923"], /* Din's Curse */
+    *[product-tile-id="1207666713"], /* Dragon Wars */
+    *[product-tile-id="1430123043"], /* Chroma Squad */
     *[product-tile-id="z"], /*  */
     *[product-tile-id="z"], /*  */
     *[product-tile-id="z"], /*  */
