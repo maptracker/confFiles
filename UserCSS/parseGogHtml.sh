@@ -23,3 +23,9 @@ egrep -v '^ *\/\/images' "$HTML" | \
     sed -E 's/.+="([^"]*)".*"([0-9]+)"/    *[product-tile-id="\2"], \/* \1 *\//'
 
 
+echo ""
+## Find soundtracks
+
+egrep -i '(soundtrack|artbook)' "$HTML" | \
+    egrep -o 'cart-title.+cart-id="[0-9]+"' | \
+    sed -E 's/.+="([^"]*)".*"([0-9]+)"/    *[product-tile-id="\2"], \/* \1 *\//'
