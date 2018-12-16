@@ -3,7 +3,7 @@
 @description Colorize news links according to MBFC ratings
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.30
+@version     1.0.31
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -11,7 +11,7 @@
 domain("bing.com") {
 
     /* Copy-paste block (just makes it easier to add new entries)
-     , a[href*='.eastbaytimes.com/']
+     , a[href*='/.newsday.com/']
    */
 
     /* ---    ---    ---    ---    ---    ---    ---    ---    ---    ---
@@ -61,9 +61,9 @@ domain("bing.com") {
     a[href*='.sciencemag.org/'], a[href*='.alarabiya.net/'],
     a[href*='/ballotpedia.org/'], a[href*='.pewresearch.org/'],
     a[href*='.sciencedaily.com/'], a[href*='.astronomy.com/'],
-    a[href*='.sciencealert.com/'], a[href*='.space.com/'],
+    a[href*='.space.com/'], a[href*='/phys.org/'],
     a[href*='.popularmechanics.com/'], a[href*='.smithsonianmag.com/'],
-    a[href*='.factcheck.org/'] {
+    a[href*='.sciencealert.com/'], a[href*='.factcheck.org/'] {
         /* Very High */
         background-color: #9f9 ! important; /* light green */
     }
@@ -88,7 +88,7 @@ domain("bing.com") {
     a[href*='.nbcdfw.com/'], a[href*='news3lv.com/'], a[href*='.ksdk.com/'],
     a[href*='.nbclosangeles.com/'], a[href*='nbcphiladelphia.com'],
     a[href*='.nbcnewyork.com/'],
-    a[href*='.wbir.com/'],
+    a[href*='.wbir.com/'], a[href*='/.today.com/'],
     
     a[href*='bloomberg.com'], a[href*='.bloombergquint.com/'],
 
@@ -178,7 +178,8 @@ domain("bing.com") {
     a[href*='.pennlive.com/'], a[href*='/metro.co.uk/'],
     a[href*='.snopes.com/'],
     a[href*='/bgr.com/'], a[href*='.dailydot.com/'], a[href*='.courant.com/'],
-    a[href*='.realclearpolitics.com/'], a[href*='.eastbaytimes.com/'] {
+    a[href*='.realclearpolitics.com/'], a[href*='.eastbaytimes.com/'],
+    a[href*='/.newsday.com/'] {
         /* High */
         background-color: #cff ! important; /* light blue */
     }
@@ -353,6 +354,7 @@ domain("bing.com") {
     a[href*='news3lv.com/'], a[href*='.nbc12.com/'], a[href*='/nbc24.com/'],
     a[href*='/lex18.com/'], a[href*='.nbc4i.com/'], a[href*='.wbir.com/'],
     a[href*='.nbclosangeles.com/'], a[href*='nbcwashington.com'],
+    a[href*='/.today.com/'],
     
     a[href*='.bbc.com/'], a[href*='.bbc.co.uk/'],
     a[href*='/bbc.com/'], a[href*='/bbc.co.uk/'],
@@ -404,7 +406,7 @@ domain("bing.com") {
     a[href*='.thenewstribune.com/'], a[href*='.ibtimes.com/'],
     a[href*='.providencejournal.com/'], a[href*='.pennlive.com/'],
     a[href*='/metro.co.uk/'], a[href*='/bgr.com/'], a[href*='.courant.com/'],
-    a[href*='.eastbaytimes.com/'] {
+    a[href*='.eastbaytimes.com/'], a[href*='/.newsday.com/'] {
         /* Left Center */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwU5IQMqsgAAACdJREFUOMtjYBgFtANpaf//E6OOiVKLhoEBjMQG4qxZjIyjSYtGAAAxUAbUce9dmgAAAABJRU5ErkJggg==)
@@ -454,6 +456,7 @@ domain("bing.com") {
     a[href*='.cnet.com/'], a[href*='.zdnet.com/'], a[href*='.space.com/'],
     a[href*='.livescience.com/'], a[href*='.sciencealert.com/'],
     a[href*='.nature.com/'], a[href*='.popularmechanics.com/'],
+    a[href*='/phys.org/'],
     a[href*='.smithsonianmag.com/'] {
         /* Science */
         /* Little blue and yellow flasks */
@@ -638,9 +641,10 @@ domain("bing.com") {
    */
     
     a[href*='.cnbc.com'], a[href*='.wgrz.com/'], a[href*='.wvtm13.com/'],
-    a[href*='.popsci.com/'], a[href*='.nhk.or.jp/'],
+    a[href*='.popsci.com/'], a[href*='.nhk.or.jp/'], a[href*='.11alive.com/'],
     a[href*='japantimes.co.jp/'], a[href*='.usnews.com/'],
-    a[href*='.orlandosentinel.com/'] {
+    a[href*='.orlandosentinel.com/'], a[href*='pressrepublican.com/'] {
+        /* Cut'n'Paste:     , a[href*='pressrepublican.com/']  */
         /* 'do not enter' circle with slash */
 
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsWEAE1xnR/aQAAAnBJREFUOMttk81LlFEYxX/3zjsfMNZQmzZGECk0WjiTo87MQswI2rWsaKHROlvV1v6B6LuWGkV/QEFomWA4WtZAi7ZBTZsWZfaB0/txT4tXp2x64HLh3Mt5znPuuYaNCo6Mknw6hysPlfH9MZw7ZqJoN4ASiQbWPiaVmrJLy0ubdwFMi2Cg5CXCcNY0myObGKlUvPs+GAMSymTmI887mny5EgKYcKAfk0x5Zu3bRyO3iyhCIyMweQnT0RETrH5BFy5iXr8Cz0PGflJuW6eCMATAFfrm1ZOXevLSgV65pZr+V255SeraJ/Xk5Qp98wDGlYcqZm1tkSiKJUsQhmhqGjM4yL+lWg0zPhYryeWqFt8fA9Dx4+jyFYgiSCQwp07Ci+U2AlOp4A4dij3x/TFcsdBQb17uy+dYZq0mdXfF43R3y809aR/lw3spv1+uWGhYEwSdpNKYdCbuUC6je/fBRZD0MOcm0MzMVhU7dkIyiQmCTou1G6j5c6FUQjdvtXBzfgItLLSNg7VYWdvA92F9fWuXkcPo6jVwLvbkzDh6HpNo7SsEAbK2YfG8WZwjunG93bDRUTR9F4IAMhnM2bPo2RxMTsaKPW/WRIOliv3+Y5EwRI8eYbq626W+eQMnT4C18QoCsBa3raMaB6lYmFFPXir1y719+98Q6dWKVOjTZuBcsTATR3lwAGPS1v5cfYdze2g2ceNnsKdPw/btG1Fexd25jX34EBIJsPa9y+7YK/1y5m+lYbG4mPjVrPwxYeNYakFROlPz6vVq6yFav3F4GK9eryqXO6hs9oHS6XjWIEDpNMpmHyiXO+jV69VgeLhF+Bvni1uzEUs9fQAAAABJRU5ErkJggg==)
@@ -679,9 +683,9 @@ domain("bing.com") {
     a[href*='bigeasymagazine.com/'], a[href*='grayzoneproject.com/'],
     a[href*='boredpanda.com/'], a[href*='pulsenews.co.kr/'],
     a[href*='.brecorder.com/'], a[href*='.timesfreepress.com/'],
-    a[href*='acainternational.org/']   {
+    a[href*='acainternational.org/'], a[href*='.fool.com/']   {
         /* No Entry on MBFC */
-        /* Cut'n'Paste:     , a[href*='pulsenews.co.kr/']  */
+        /* Cut'n'Paste:     , a[href*='.fool.com/']  */
         background-image:
         url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsREB0U8b0K0wAAADlJREFUOMtjYBgFjPgk04wZ/sPYs87iV4tXc5oxw39kPjJgwmUAyTbicwku26mimWlwx/Ew8AJdAABtFRLIrXPiBQAAAABJRU5ErkJggg==)
            ! important;
