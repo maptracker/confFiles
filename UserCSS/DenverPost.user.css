@@ -1,0 +1,17 @@
+/* ==UserStyle==
+@name        Denver Post
+@description Mask out irritations, fix image handling
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("denverpost.com") {
+    img { transform: none ! important }
+    .slide-caption { display: block ! important; }
+
+    .related, .more-news, iframe, footer, header, aside {
+        display: none ! important;
+    }
+}

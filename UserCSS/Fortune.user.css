@@ -1,0 +1,13 @@
+/* ==UserStyle==
+@name        Fortune
+@description Get content to actually show
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("fortune.com") {
+    /* what a weird way to manage a page... */
+    p, a { visibility: unset ! important; }
+}

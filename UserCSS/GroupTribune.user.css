@@ -1,0 +1,25 @@
+/* ==UserStyle==
+@name        Group - Tribune
+@description Mask out irritations for Tribune publications
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("chicagotribune.com"), domain("latimes.com"),
+domain("baltimoresun.com"), domain("orlandosentinel.com"),
+domain("sltrib.com") {
+    /* Tribune papers share the same CSS */
+    .div[data-adloader-adtype], .trb_cm, .trb_sc, .trb_nls_c,
+    .trb_bnn, .trb_bottomAdBanner, .trb_ar_summary_load,
+    .trb_ar_taboolaCmpn, .trb_masthead, .trb_nh_uw, .trb_embed_media_link,
+    .trb_nh, .trb_bnn, .trb_socialize, .trb_cm, .trb_nls_c,
+    .trb_ar_summary_load, .trb_video_embeddedvideo,
+    .trb_embed_imageContainer_figure, iframe, .mod-adcpc,
+    *[data-role='notification'], *[data-role='nls'],
+    *[data-role='cm_expandable'], *[data-role*='delayload'],
+    .video { 
+         display : none ! important; 
+     }
+}

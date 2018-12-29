@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name        Daily Beast
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("thedailybeast.com") {
+    .blockquote, .cheatSignUp, .comments-link, .social, .cheatAd, .ad,
+    #utilitiyLinks, .fb-like, .login-search-nav, .topicHeading,
+    .brightcove, .cheat-aside , .InlineNewsletter, footer { 
+        display: none ! important; 
+    }
+}

@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name        Go Fund Me
+@description Show all content by default
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("gofundme.com") {
+    /* Just show all content */
+
+    .truncate-text { height: unset ! important; background: unset ! important; }
+
+    #updates, .js-pagination-panel { display: unset ! important; }
+}

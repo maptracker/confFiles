@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name        Guardian
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("guardian.co.uk") {
+    .m-guardianbookshop, .named-trailblock, .twitter-container, .jobs-box,
+    .share-links, .facebook, .tweet, #footer, #header,
+    .list-of-trails { 
+        display: none ! important; 
+    }
+}

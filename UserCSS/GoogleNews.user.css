@@ -1,0 +1,41 @@
+/* ==UserStyle==
+@name        Google News
+@description Mask out irritations and uninteresting sites
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("news.google.com") {
+    /* Mostly broken due to constant CSS updates at Google */
+    .personalization-video-pane, .additional-video, .a2-edit-icon, .bottom,
+    .share-icons, #en_us-s, #en_us-m, #en_us-e, .section-en_us-s, 
+    .section-en_us-e, .section-en_us-m, #promo-section, .footer-disclaimer,
+    .section-en_us-tc, .section-en_us-b, .media-strip,
+    .section-me-us-open-2015, .section-me-ncaa-tournament-2016,
+    .section-me-masters-2016, .section-me-nba-finals-2016,
+    .gb_sc, .ovLBK, .QWO3dd, div[jsname="dNnLb"], .fkWPz, .jjs37b, footer,
+    c-wiz[jsdata*="promos"],
+    c-wiz[data-label="Business"],
+    c-wiz[data-label="Technology"],
+    c-wiz[data-label="Health"],
+    c-wiz[data-label="Sports"],
+    c-wiz[data-label="Entertainment"] {
+        display: none ! important;
+    }
+    
+    a[href*="forbes.com"], a[href*="japantimes.co.jp"],
+    a[href*=".wsj.com"] {
+        /* does not play well with my browser configuration 
+           or is paywalled */
+        background-color: #faa ! important; 
+        color: #888 ! important; 
+        font-size: 0.7em ! important
+    }
+    .zQTmif {
+        margin-left: 10px ! important;
+    }
+    /* Suppress vieo results */
+    c-wiz[data-yt-video-id] { display: none ! important; }
+}
