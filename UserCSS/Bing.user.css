@@ -3,48 +3,63 @@
 @description Mask out sites I'm not really interested in
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.7
+@version     1.0.8
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("bing.com") {
-    #contentid { width: 1000px ! important; }
-
+    /* Random junk */
+    #id_l, #id_rh, div[id*="notificationContainer"], .global-action,
+    .snippet, .arrw, .localnews, .rightrail, .news_fc_hint, .bottom {
+        display: none ! important;
+    }
+    
+    /* Uninteresting buttons at top. Not convinced these are stable accessors */
+    a[h="ID=news,5007.1"], a[h="ID=news,5008.1"], a[h="ID=news,5011.1"],
+    a[h="ID=news,5018.1"] {
+        display: none ! important;
+    }
+    
+    /* stop forced page width */
+    #contentid, #categorycontainer, #categorycontainer.ctop #polymerbar,
+    #categorycontainer #polymerbar, .feed-cnt-imp { 
+        width: unset ! important;
+    }
+    .slide { width : unset ! important; }
+    html body { min-width: 800px ! important; }
+    body      { width: 800px ! important; }
+    
     /* Tinker with header */
     #b_header { width: 900px; }
     #id_h     { float: right; margin-left: -20px; }
     #id_sc    { text-align: left; }
-    #id_l, #id_rh, div[id*="notificationContainer"], .global-action,
-    .snippet, .arrw {
-        display: none ! important;
-    }
+
+    .hdln-sect { height: unset ! important; }
 
     /* Trim top menu of topics */
-    /* Blech. These aren't stable accessions */
-    /*
+    /* Blech. These aren't stable accessions ... or are they? */
     div[data-k="5155.1"], div[data-k="5156.1"], div[data-k="5157.1"],
     div[data-k="5122.1"], div[data-k="5128.1"], div[data-k="5130.1"],
     div[data-k="5131.1"], div[data-k="5153.1"], div[data-k="5154.1"] {
         display: none ! important;
     }
-   */
-
+   
     /* Try to compact the cards some */
-    .pfcard-imp    { height: unset ! important;
-                     width: unset ! important; max-width: 258px ! important; }
+    .pfcard-imp, .caption, .pfcard-imp.bg {
+        margin : unset ! important;
+        height:  unset ! important;
+        width:   unset ! important; 
+        padding: unset ! important;
+    }
+    .pfcard-imp    { max-width: 258px ! important; }
     
-    .pfcard-imp.bg { height: unset ! important; }
-    .caption       { height: unset ! important; }
-    .bottom        { display: none ! important; }
-    
-    html body { min-width: 800px ! important; }
-    body { width: 800px ! important; }
     
    
     /* Reset link color */
     a { color: blue ! important; background-color: white ! important; }
 
-    /* Sites I'm not interested in visiting, or don't work in Tor */
+    /* Sites I'm not interested in visiting, or don't work in Tor or
+       without Javascript */
     a[href*='.bicycling.com/'],
     a[href*='.comingsoon.net/'],
     a[href*='.inc.com/'],
@@ -149,6 +164,24 @@
     a[href*='whowhatwear'],
     a[href*='womenshealthmag.com'],
     a[href*='wsj.com'],
+    a[href*='investors.com'],
+    a[href*='flickeringmyth'],
+    a[href*='sbnation'],
+    a[href*='fubiz.net'],
+    a[href*='weather.com'],
+    a[href*='Sports_News'],
+    a[href*='espn.go.com'],
+    a[href*='silverscreenandroll'],
+    a[href*='/celebrity/'],
+    a[href*='perezhilton'],
+    a[href*='allure.com'],
+    a[href*='gearpatrol'],
+    a[href*='shefinds.com'],
+    a[href*='instyle.com'],
+    a[href*='marieclaire'],
+    a[href*='.gq.com'],
+    a[href*='zzzz'],
+    a[href*='zzzz'],
     a[href*='zzzz'],
     a[href*='zzzz'],
     a[href*='zzzz'],
