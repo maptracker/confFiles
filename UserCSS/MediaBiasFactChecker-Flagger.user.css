@@ -3,7 +3,7 @@
 @description Colorize news links according to MBFC ratings
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.33
+@version     1.0.34
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -12,7 +12,7 @@
 */
 
 @-moz-document domain("reddit.com"), domain("wikipedia.org"),
-domain("bing.com"), domain("google.com") {
+domain("bing.com"), domain("google.com"), domain("startpage.com") {
     /* ---    ---    ---    ---    ---    ---    ---    ---    ---    ---
        Media Bias Fact Check
        https://mediabiasfactcheck.com
