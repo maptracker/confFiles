@@ -3,11 +3,12 @@
 @description Mostly masking components, expanding used width
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.1
+@version     1.0.2
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
-@-moz-document domain("nbcnews.com"), domain("nbcmiami.com") {
+@-moz-document domain("nbcnews.com"), domain("nbcmiami.com"),
+domain("nbc4i.com") {
 
     /* Element masking */
     .inlineVideo, #siteheader, footer, .paginationDiv,
