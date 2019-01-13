@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name        Astronomy
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("astronomy.com") {
+    .rightColumn, .comments, .footer, .productSuggest, .ladderTripsTours,
+    .callouts, .loginArea, .headerContainer {
+        display: none ! important;
+    }
+}
