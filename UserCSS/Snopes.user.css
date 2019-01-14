@@ -3,7 +3,7 @@
 @description Attempt to reset img hidden flags (failed)
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -17,5 +17,9 @@
       box-sizing: unset ! important;
       display: block ! important;
       visibility: visible ! important;
+  }
+  .creative, .message, .featured-asset, .share-links, footer,
+  img[src*='lazyload'] {
+      display : none ! important;
   }
 }
