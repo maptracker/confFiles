@@ -3,7 +3,7 @@
 @description Hide random cruft
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.4
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -11,7 +11,12 @@
     .shortcode, .media-list, iframe, .social, .embed--type-video,
     .site-nav__item-anchor, .article-video-container,
     .listing-media-feature, .module, footer, .smart-banner-cbsn,
-    .module-rem, .media-block, .media-figure {
+    .module-rem, .media-block, .media-figure, .sharebar, .lazyload,
+    [id*="market-data"], [id*="streaming"], [id*="market-news"],
+    [id*="moneywatch"], [id*="watchlist"], [id*="-promo"], [id*="-emergency"],
+    [id*="-topic-stack"], [id*="-quote-of-the-day"], [id*="-evening-news"],
+    [id*="-cbsn-originals"], [id*="-show-"], [class*="player-overlay"],
+    [id*="-uplift"] {
         display: none !important; 
     }
     header { height: auto ! important; }

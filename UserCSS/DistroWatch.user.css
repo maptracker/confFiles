@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name        Distro Watch
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("distrowatch.com") {
+    a[href*='3cx'], a[href*='acunetix']  { 
+        display: none ! important; 
+    }
+}

@@ -3,17 +3,16 @@
 @description Colorize news links according to MBFC ratings
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.31
+@version     1.0.34
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
+/* Copy-paste block (just makes it easier to add new entries)
+     , a[href*='/abc30.com/']
+*/
+
 @-moz-document domain("reddit.com"), domain("wikipedia.org"),
-domain("bing.com") {
-
-    /* Copy-paste block (just makes it easier to add new entries)
-     , a[href*='/.newsday.com/']
-   */
-
+domain("bing.com"), domain("google.com"), domain("startpage.com") {
     /* ---    ---    ---    ---    ---    ---    ---    ---    ---    ---
        Media Bias Fact Check
        https://mediabiasfactcheck.com
@@ -45,7 +44,9 @@ domain("bing.com") {
        apply these styles to google results. Similarly, Yahoo wraps
        all external news sources in their own (largely extraneous)
        summary pages. Kudos to Bing for using the web as designed:
-       Deep-linking to the target. */
+       Deep-linking to the target.
+       Exception: Google Finance appears to still have direct links (Dec 2018)
+   */
 
     /* MBFC Sites: Very High factual reporting
 
@@ -78,9 +79,10 @@ domain("bing.com") {
     a[href*='abc7news.com'], a[href*='abc7.com/'], a[href*='abc13.com/'],
     a[href*='/abc11.com/'], a[href*='/abcnews4.com/'], a[href*='.abc15.com/'],
     a[href*='abcnews.go.com'], a[href*='.abc10.com/'], a[href*='.13abc.com/'],
+    a[href*='/abc30.com/'],
     
     a[href*='.wibw.com/'], a[href*='cbsnews.com'], a[href*='.wkbn.com/'],
-    a[href*='/wsbt.com/'],
+    a[href*='/wsbt.com/'], a[href*='.cbs17.com/'],
     
     a[href*='nbcsandiego.com'], a[href*='nbcwashington.com'],
     a[href*='nbcnews.com'], a[href*='/lex18.com/'], a[href*='.nbc4i.com/'],
@@ -88,11 +90,15 @@ domain("bing.com") {
     a[href*='.nbcdfw.com/'], a[href*='news3lv.com/'], a[href*='.ksdk.com/'],
     a[href*='.nbclosangeles.com/'], a[href*='nbcphiladelphia.com'],
     a[href*='.nbcnewyork.com/'],
-    a[href*='.wbir.com/'], a[href*='/.today.com/'],
+    a[href*='.wbir.com/'], a[href*='.today.com/'],
     
     a[href*='bloomberg.com'], a[href*='.bloombergquint.com/'],
 
     a[href*='businessinsider.com'], a[href*='.businessinsider.de/'],
+
+    a[href*='huffingtonpost.com/'], a[href*='.huffingtonpost.ca/'],
+
+    a[href*='.dw.com/'], a[href*='/dw.com/'],
 
     a[href*='washingtonpost.com'], a[href*='theguardian.com'],
     a[href*='.upi.com'], a[href*='.tmj4.com'],
@@ -133,13 +139,12 @@ domain("bing.com") {
     a[href*='seattletimes.com/'], a[href*='oregonlive.com'],
     a[href*='financialpost.com'], a[href*='.mprnews.org/'],
     a[href*='.jsonline.com/'], a[href*='.usnews.com/'], a[href*='.nola.com/'],
-    a[href*='opendemocracy.net/'], a[href*='huffingtonpost.com/'],
+    a[href*='opendemocracy.net/'], 
     a[href*='.nhk.or.jp/'], a[href*='themoscowtimes.com/'],
     a[href*='.dawn.com/'], a[href*='.goerie.com/'], a[href*='.sfgate.com/'],
     a[href*='talkingpointsmemo.com/'], a[href*='.atimes.com/'],
     a[href*='.heraldsun.com.au/'], a[href*='.japantimes.co.jp/'],
     a[href*='.indiatimes.com/'], a[href*='.ctvnews.ca/'],
-    a[href*='.dw.com/'], a[href*='/dw.com/'],
     a[href*='/people.com/'], a[href*='.startribune.com/'],
     a[href*='/indianexpress.com/'], a[href*='/techcrunch.com/'],
     a[href*='.thenews.com.pk/'], a[href*='.thenational.ae/'],
@@ -164,7 +169,7 @@ domain("bing.com") {
     a[href*='.inquirer.net/'], a[href*='.pinknews.co.uk/'],
     a[href*='.goodnewsnetwork.org/'], a[href*='.rferl.org/'],
     a[href*='.hindustantimes.com/'], a[href*='.motherjones.com/'],
-    a[href*='.miaminewtimes.com/'], a[href*='.intoday.in/'],
+    a[href*='miaminewtimes.com/'], a[href*='.intoday.in/'],
     a[href*='boingboing.net/'], a[href*='.ocregister.com/'],
     a[href*='durangoherald.com/'], a[href*='/the-japan-news.com/'],
     a[href*='.eff.org/'], a[href*='.nextgov.com/'], a[href*='.jns.org/'],
@@ -176,10 +181,13 @@ domain("bing.com") {
     a[href*='.thenewstribune.com/'], a[href*='.mcall.com/'],
     a[href*='.providencejournal.com/'], a[href*='/patch.com/'],
     a[href*='.pennlive.com/'], a[href*='/metro.co.uk/'],
-    a[href*='.snopes.com/'],
+    a[href*='.snopes.com/'], a[href*='.mnn.com/'], a[href*='.hrw.org/'],
     a[href*='/bgr.com/'], a[href*='.dailydot.com/'], a[href*='.courant.com/'],
     a[href*='.realclearpolitics.com/'], a[href*='.eastbaytimes.com/'],
-    a[href*='/.newsday.com/'] {
+    a[href*='.newsday.com/'], a[href*='.csmonitor.com/'], a[href*='.pbs.org/'],
+    a[href*='.sbs.com.au/'], a[href*='/tass.com/'],
+    a[href*='.taiwannews.com.tw/'], a[href*='.suntimes.com/'],
+    a[href*='.azcentral.com/'] {
         /* High */
         background-color: #cff ! important; /* light blue */
     }
@@ -199,6 +207,7 @@ domain("bing.com") {
     a[href*='fox5atlanta.com'], a[href*='fox5dc.com'], a[href*='.wbrc.com/'],
     a[href*='/fox17.com/'], a[href*='.ktvu.com/'], a[href*='/fox4kc.com/'],
     a[href*='/fox28spokane.com/'], a[href*='.foxcarolina.com/'],
+    a[href*='.fox4news.com/'], a[href*='.fox19.com/'],
     
     a[href*='cnn.com'], a[href*='mirror.co.uk'], 
     a[href*='newsweek.com'], a[href*='hurriyetdailynews.com'],
@@ -223,7 +232,8 @@ domain("bing.com") {
     a[href*='antiwar.com/'], a[href*='.theepochtimes.com/'],
     a[href*='/bearingarms.com/'], a[href*='egyptianstreets.com/'],
     a[href*='.thesun.co.uk/'], a[href*='.thewrap.com/'],
-    a[href*='.ibtimes.com/'], a[href*='/jezebel.com/'] {
+    a[href*='.ibtimes.com/'], a[href*='/jezebel.com/'],
+    a[href*='.lfpress.com/'] {
         /* Mixed */
         background-color: #ff6 ! important; /* yellow */
     }
@@ -313,6 +323,8 @@ domain("bing.com") {
     }
     
     /* MBFC Sites: Left */
+    a[href*='huffingtonpost.com/'], a[href*='.huffingtonpost.ca/'],
+
     a[href*='mirror.co.uk'], a[href*='cnn.com'], a[href*='newsweek.com'],
     a[href*='middleeastmonitor.com'], a[href*='commondreams.org'],
     a[href*='newsweek.com'], a[href*='nymag.com'], a[href*='newrepublic.com'],
@@ -322,14 +334,14 @@ domain("bing.com") {
     a[href*='rappler.com'], a[href*='thedailybeast.com'],
     a[href*='msmagazine.com'], a[href*='.advocate.com'],
     a[href*='newyorker.com'], a[href*='pravdareport.com/'],
-    a[href*='huffingtonpost.com/'], a[href*='/people.com/'],
+    a[href*='/people.com/'],
     a[href*='.telesurtv.net/'], a[href*='telesurenglish.net/'],
     a[href*='talkingpointsmemo.com/'], a[href*='.mediaite.com/'],
     a[href*='.theroot.com/'], a[href*='.salon.com/'], a[href*='.esquire.com/'],
     a[href*='.democracynow.org/'] , a[href*='.rightwingwatch.org/'],
     a[href*='.slate.com/'], a[href*='.msnbc.com/'],
     a[href*='.pinknews.co.uk/'], a[href*='.motherjones.com/'],
-    a[href*='.miaminewtimes.com/'], a[href*='boingboing.net/'],
+    a[href*='miaminewtimes.com/'], a[href*='boingboing.net/'],
     a[href*='.ecowatch.com/'], a[href*='/gizmodo.com/'],
     a[href*='.dailydot.com/'], a[href*='/jezebel.com/'] {
         /* Left */
@@ -344,17 +356,17 @@ domain("bing.com") {
     /* MBFC Sites: Left-Center */
     a[href*='abc7news.com'], a[href*='abc7.com/'], a[href*='abc13.com/'],
     a[href*='/abc11.com/'], a[href*='/abcnews4.com/'], a[href*='.abc15.com/'],
-    a[href*='.abc10.com/'], a[href*='.13abc.com/'],
+    a[href*='.abc10.com/'], a[href*='.13abc.com/'], a[href*='/abc30.com/'],
 
     a[href*='cbsnews.com'], a[href*='.wibw.com/'], a[href*='.wkbn.com/'],
-    a[href*='/wsbt.com/'],
+    a[href*='/wsbt.com/'], a[href*='.cbs17.com/'],
 
     a[href*='nbcsandiego.com'], a[href*='.nbcnewyork.com/'],
     a[href*='.nbcdfw.com/'], a[href*='.9news.com/'], a[href*='.ksdk.com/'],
     a[href*='news3lv.com/'], a[href*='.nbc12.com/'], a[href*='/nbc24.com/'],
     a[href*='/lex18.com/'], a[href*='.nbc4i.com/'], a[href*='.wbir.com/'],
     a[href*='.nbclosangeles.com/'], a[href*='nbcwashington.com'],
-    a[href*='/.today.com/'],
+    a[href*='.today.com/'],
     
     a[href*='.bbc.com/'], a[href*='.bbc.co.uk/'],
     a[href*='/bbc.com/'], a[href*='/bbc.co.uk/'],
@@ -406,7 +418,9 @@ domain("bing.com") {
     a[href*='.thenewstribune.com/'], a[href*='.ibtimes.com/'],
     a[href*='.providencejournal.com/'], a[href*='.pennlive.com/'],
     a[href*='/metro.co.uk/'], a[href*='/bgr.com/'], a[href*='.courant.com/'],
-    a[href*='.eastbaytimes.com/'], a[href*='/.newsday.com/'] {
+    a[href*='.eastbaytimes.com/'], a[href*='.newsday.com/'],
+    a[href*='.mnn.com/'], a[href*='.hrw.org/'], a[href*='.suntimes.com/'],
+    a[href*='.sbs.com.au/'], a[href*='.pbs.org/'] {
         /* Left Center */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwU5IQMqsgAAACdJREFUOMtjYBgFtANpaf//E6OOiVKLhoEBjMQG4qxZjIyjSYtGAAAxUAbUce9dmgAAAABJRU5ErkJggg==)
@@ -437,8 +451,9 @@ domain("bing.com") {
     a[href*='.goodnewsnetwork.org/'], a[href*='.rferl.org/'],
     a[href*='.nextgov.com/'], a[href*='.thewrap.com/'], a[href*='.snopes.com/'],
     a[href*='.thejournal.ie/'], a[href*='.mcall.com/'],
-    a[href*='.factcheck.org/'],
-    a[href*='/patch.com/'] {
+    a[href*='.factcheck.org/'], a[href*='.csmonitor.com/'],
+    a[href*='/patch.com/'],
+    a[href*='.taiwannews.com.tw/'] {
         /* Least Biased */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwwucxIUPAAAABxJREFUOMtjYBgFowAGZjL8Z5jJ8J8ssVEwHAAAWeoJkREpGMwAAAAASUVORK5CYII=)
@@ -483,10 +498,11 @@ domain("bing.com") {
     a[href*='sputniknews.com/'], a[href*='antiwar.com/'],
     a[href*='.theepochtimes.com/'], a[href*='.ocregister.com/'],
     a[href*='durangoherald.com/'], a[href*='/the-japan-news.com/'],
-    a[href*='.jns.org/'], a[href*='.al.com/'],
+    a[href*='.jns.org/'], a[href*='.al.com/'], a[href*='/tass.com/'],
     a[href*='.israelhayom.com/'], a[href*='/mynorthwest.com/'],
     a[href*='.orlandosentinel.com/'], a[href*='.dallasnews.com/'],
-    a[href*='.realclearpolitics.com/'] {
+    a[href*='.realclearpolitics.com/'], a[href*='.lfpress.com/'],
+    a[href*='.azcentral.com/'] {
         /* Right Center */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwQ336A29AAAADJJREFUOMtjYBgFFANGXBL/09L+oyicNYuRJJORDUA3DBkw0cULJDufJl7AZ8gooBAAANugFfnCrgsLAAAAAElFTkSuQmCC)
@@ -501,6 +517,7 @@ domain("bing.com") {
     a[href*='fox5atlanta.com'], a[href*='fox5dc.com'], a[href*='.wbrc.com/'],
     a[href*='/fox17.com/'], a[href*='.ktvu.com/'], a[href*='/fox4kc.com/'],
     a[href*='/fox28spokane.com/'], a[href*='.foxcarolina.com/'],
+    a[href*='.fox4news.com/'], a[href*='.fox19.com/'],
     
     a[href*='komonews.com'], a[href*='townhall.com'],
     a[href*='americanthinker.com'], a[href*='bizpacreview.com'],
@@ -683,9 +700,12 @@ domain("bing.com") {
     a[href*='bigeasymagazine.com/'], a[href*='grayzoneproject.com/'],
     a[href*='boredpanda.com/'], a[href*='pulsenews.co.kr/'],
     a[href*='.brecorder.com/'], a[href*='.timesfreepress.com/'],
-    a[href*='acainternational.org/'], a[href*='.fool.com/']   {
+    a[href*='acainternational.org/'], a[href*='.fool.com/'],
+    a[href*='.thelocal.se/'], a[href*='downtoearth.org'],
+    a[href*='ebony.com/'], a[href*='.rdmag.com/'],
+    a[href*='.insideedition.com/']   {
         /* No Entry on MBFC */
-        /* Cut'n'Paste:     , a[href*='.fool.com/']  */
+        /* Cut'n'Paste:     , a[href*='.insideedition.com/']  */
         background-image:
         url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsREB0U8b0K0wAAADlJREFUOMtjYBgFjPgk04wZ/sPYs87iV4tXc5oxw39kPjJgwmUAyTbicwku26mimWlwx/Ew8AJdAABtFRLIrXPiBQAAAABJRU5ErkJggg==)
            ! important;

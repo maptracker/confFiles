@@ -3,98 +3,228 @@
 @description Mask out sites I'm not really interested in
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.5
+@version     1.0.11
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("bing.com") {
-    #contentid { width: 1000px ! important; }
-
+    /* Random junk */
+    #id_l, #id_rh, div[id*="notificationContainer"], .global-action,
+    .snippet, .arrw, .localnews, .rightrail, .news_fc_hint, .bottom {
+        display: none ! important;
+    }
+    
+    /* Uninteresting buttons at top. Not convinced these are stable accessors */
+    a[h="ID=news,5007.1"], a[h="ID=news,5008.1"], a[h="ID=news,5011.1"],
+    a[h="ID=news,5018.1"] {
+        display: none ! important;
+    }
+    
+    /* stop forced page width */
+    #contentid, #categorycontainer, #categorycontainer.ctop #polymerbar,
+    #categorycontainer #polymerbar, .feed-cnt-imp { 
+        width: unset ! important;
+    }
+    .slide { width : unset ! important; }
+    html body { min-width: 800px ! important; }
+    body      { width: 800px ! important; }
+    
     /* Tinker with header */
     #b_header { width: 900px; }
     #id_h     { float: right; margin-left: -20px; }
     #id_sc    { text-align: left; }
-    #id_l, #id_rh, div[id*="notificationContainer"], .global-action {
-        display: none ! important;
-    }
+
+    .hdln-sect { height: unset ! important; }
 
     /* Trim top menu of topics */
-    /* Blech. These aren't stable accessions */
-    /*
+    /* Blech. These aren't stable accessions ... or are they? */
     div[data-k="5155.1"], div[data-k="5156.1"], div[data-k="5157.1"],
     div[data-k="5122.1"], div[data-k="5128.1"], div[data-k="5130.1"],
     div[data-k="5131.1"], div[data-k="5153.1"], div[data-k="5154.1"] {
         display: none ! important;
     }
-   */
-
+   
     /* Try to compact the cards some */
-    .pfcard-imp    { height: unset ! important;
-                     width: unset ! important; max-width: 258px ! important; }
+    .pfcard-imp, .caption, .pfcard-imp.bg {
+        margin : unset ! important;
+        height:  unset ! important;
+        width:   unset ! important; 
+        padding: unset ! important;
+    }
+    .pfcard-imp    { max-width: 258px ! important; }
     
-    .pfcard-imp.bg { height: unset ! important; }
-    .caption       { height: unset ! important; }
-    .bottom        { display: none ! important; }
-    
-    html body { min-width: 800px ! important; }
-    body { width: 800px ! important; }
     
    
     /* Reset link color */
     a { color: blue ! important; background-color: white ! important; }
 
-    /* Sites I'm not interested in visiting, or don't work in Tor */
+    /* Sites I'm not interested in visiting, or don't work in Tor or
+       without Javascript */
+    a[href*='.avclub.com'],
+    a[href*='.bicycling.com/'],
+    a[href*='.cnet.com'],
+    a[href*='.comingsoon.net/'],
+    a[href*='.delish.com/'],
+    a[href*='.gq.com'],
+    a[href*='.inc.com/'],
+    a[href*='.inquisitr.com/'],
+    a[href*='.mlive.com/'],
+    a[href*='.mtv.com/'],
+    a[href*='.nascar.com/'],
+    a[href*='.nba.com/'],
+    a[href*='.nhl.com/'],
+    a[href*='.oregonlive.com/'],
+    a[href*='.pe.com/'],
+    a[href*='.scout.com'],
+    a[href*='.si.com/'],
+    a[href*='.spin.com'],
+    a[href*='.yahoo.com/entertainment/'],
+    a[href*='/arts/'],
+    a[href*='/cars/'],
+    a[href*='/celebrity/'],
+    a[href*='/collider.com'],
+    a[href*='/courts/'],
+    a[href*='/crime--law/'],
+    a[href*='/crime/'],
+    a[href*='/entertainment/'],
+    a[href*='/ew.com/'],
+    a[href*='/fashion/'],
+    a[href*='/film/'],
+    a[href*='/food/'],
+    a[href*='/investing/'],
+    a[href*='/life/'],
+    a[href*='/movies/'],
+    a[href*='/music/'],
+    a[href*='/news/av/'],
+    a[href*='/nymag.com/'],
+    a[href*='/nypost.com/'],
+    a[href*='/realestate.usnews'],
+    a[href*='/style/'],
+    a[href*='/style/'],
+    a[href*='/tv/'],
+    a[href*='/tv/'],
+    a[href*='/video/'],
+    a[href*='/weather/'],
+    a[href*='/world-cafe/'],
+    a[href*='Entertainment'],
+    a[href*='Sports_News'],
     a[href*='aarp.org'],
+    a[href*='allure.com'],
     a[href*='aol.com'],
+    a[href*='apartmenttherapy.com'],
     a[href*='appleinsider.com'],
+    a[href*='arrowheadpride'],
+    a[href*='barkpost.com'],
     a[href*='billboard.com'],
+    a[href*='bleacherreport.com'],
+    a[href*='bloggingtheboys'],
     a[href*='boredpanda.com'],
+    a[href*='bravotv.com/'],
+    a[href*='buzzfeed'],
     a[href*='cbssports.com'],
     a[href*='celbrity'],
+    a[href*='cosmopolitan.com'],
+    a[href*='dailymail.co.uk'],
+    a[href*='deadline.com/'],
     a[href*='decider.com'],
     a[href*='digitaltrends.com'],
     a[href*='entrepreneur.com'],
     a[href*='eonline.com'],
     a[href*='espn.com'],
+    a[href*='espn.go.com'],
+    a[href*='espnfc.com/'],
+    a[href*='fashionista'],
+    a[href*='flickeringmyth'],
+    a[href*='foodandwine'],
     a[href*='foxsports.com'],
+    a[href*='fubiz.net'],
+    a[href*='gamespot.com/'],
+    a[href*='gearpatrol'],
+    a[href*='geekwire'],
+    a[href*='glamour.com'],
+    a[href*='golfdigest'],
     a[href*='hellogiggles.com'],
+    a[href*='hellomagazine'],
+    a[href*='highsnobiety'],
     a[href*='hollywoodlife.com'],
     a[href*='hollywoodreporter.com'],
+    a[href*='hypebeast'],
+    a[href*='iflscience.com'],
     a[href*='indiewire.com'],
+    a[href*='instyle.com'],
+    a[href*='investors.com'],
     a[href*='jalopnik.com'],
+    a[href*='justjared.com'],
     a[href*='justjaredjr'],
     a[href*='lifehacker.com'],
     a[href*='lifestyle'],
+    a[href*='luxatic'],
+    a[href*='mansionglobal'],
+    a[href*='marieclaire'],
     a[href*='mashable.com'],
     a[href*='medicalnewstoday'],
+    a[href*='medpagetoday.com'],
     a[href*='menshealth.com'],
+    a[href*='mentalfloss'],
     a[href*='mirror.co.uk'],
+    a[href*='mmafighting'],
     a[href*='mmajunkie.com'],
+    a[href*='movieweb.com'],
+    a[href*='music.com'],
     a[href*='nbcsports.com'],
     a[href*='nerdist.com'],
+    a[href*='nerdwallet'],
+    a[href*='nesn.com/'],
+    a[href*='newatlas.com'],
     a[href*='nfl.com'],
     a[href*='nydailynews.com'],
     a[href*='opinion'],
     a[href*='pagesix.com'],
     a[href*='people.com'],
+    a[href*='perezhilton'],
+    a[href*='pitchfork.com/'],
     a[href*='popsugar.com'],
+    a[href*='popularmechanics'],
     a[href*='pressrepublican.com'],
+    a[href*='prideofdetroit'],
+    a[href*='realtor.com/'],
+    a[href*='reuters.com'],
+    a[href*='rotoworld'],
+    a[href*='sbnation'],
     a[href*='screendaily.com'],
+    a[href*='shefinds.com'],
+    a[href*='silverscreenandroll'],
+    a[href*='slashfilm.com'],
+    a[href*='snopes.com'], /* really don't need these in a news feed */
     a[href*='sport'],
+    a[href*='stltoday.com'],
     a[href*='stuff.co.nz'],
+    a[href*='stylecaster'],
     a[href*='teamusa.org'],
     a[href*='thebiglead.com'],
     a[href*='theconversation.com'],
     a[href*='theinertia.com'],
+    a[href*='thenextweb.com'],
+    a[href*='thephinsider'],
     a[href*='thesun.co.uk'],
     a[href*='tmz.com'],
     a[href*='townandcountrymag.com'],
+    a[href*='tvguide'],
     a[href*='usmagazine.com'],
     a[href*='vanityfair.com'],
     a[href*='venturebeat.com'],
     a[href*='vibe.com'],
     a[href*='vogue.com'],
+    a[href*='washingtontimes.com'],
+    a[href*='weather.com'],
+    a[href*='webmd.com/'],
+    a[href*='wellandgood'],
+    a[href*='whowhatwear'],
+    a[href*='womenshealthmag.com'],
     a[href*='wsj.com'],
+    a[href*='xxlmag.com'],
+    a[href*='yanksgoyard'],
+    a[href*='yardbarker'],
     a[href*='zzzz'],
     a[href*='zzzz'],
     a[href*='zzzz'],
@@ -103,7 +233,9 @@
     a[href*='zzzz'],
     a[href*='zzzz'],
     a[href*='zzzz'],
-    a[href*='dailymail.co.uk'] {
+    a[href*='zzzz'],
+    
+    a[href*='zzzz'] {
         display: none ! important;
     }
 }

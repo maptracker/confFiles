@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name        Dreamwidth
+@description Mask out irritations. Can't recall why the site was of interest
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("dreamwidth.org") {
+    /* What were we doing with this? Wiki option at some point? */
+    .comment-content { min-height: 0px}
+    div.footer { 
+        display: none ! important;
+    }
+}

@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name        GenAcc Atom
+@description Style tinkering
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document url-prefix("http://bioinformatics.bms.com/biocgi/tilfordc/working/maptracker/MapTracker/genacc_service.pl"), url-prefix("http://bioinformatics.bms.com/biocgi/genacc_service.pl") {
+    .entry { border: solid black 2px; float: left;
+             padding: 0.5em; margin: 2px; }
+    .lastUpdated { font-style: italic; }
+    .feedEntryContent { font-weight: bold; color: orange; }
+    /* div { clear: none ! important; } */
+}

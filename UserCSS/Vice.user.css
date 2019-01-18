@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name        Vice
+@description Mask irritating bits
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("vice.com") {
+    hr, .site-header, .share-icons, .interstitial, div[class*='embed'],
+    img[data-src*='video'] {
+        display: none ! important;
+    }
+}

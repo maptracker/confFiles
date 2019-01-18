@@ -3,20 +3,23 @@
 @description Allow content to wrap to page, block various cruft
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.2
+@version     1.0.3
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("thehill.com") {
     .region-column-left, .left-sidebar-space, .blogs-social-wrp, .left-sidebar,
     .block-disqus, #block-thehill-blocks-footer-signup, .region-bottom-column2,
-    .item-pos, .page-bottom, #block-views-hill-tv-block-video-widget,
-    .sidebars { 
+    .item-pos, .page-bottom, #block-views-hill-tv-block-video-widget, .logo,
+    .sidebars, #navigation, iframe, #block-views-hill-tv-block-related,
+    .share-box { 
         display: none!important;
     }
+    
+    #main { overflow: unset ! important; }
 
     /* Just let the browser scale the content to the window */
-    #content, .content-wrp, .content-wrapper, #page {
+    #content, .content-wrp, .content-wrapper, #page, .title-wrapper, .top-row {
         width: unset ! important;
     }
 

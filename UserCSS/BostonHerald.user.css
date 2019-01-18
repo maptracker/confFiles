@@ -3,13 +3,15 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("bostonherald.com") {
     .inform-embed, .view-photo-box, #page-header, #radio,
-    footer, .comments, .social {
+    footer, .comments, .social, #mobile-adhesion, .sign-up-follow,
+    .article-share, .comments-link {
         display: none ! important;
     }
+    .full-view .article-body { width: unset ! important; }
 }

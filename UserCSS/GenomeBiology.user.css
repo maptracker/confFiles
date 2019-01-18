@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name        Genome Biology
+@description Minor font tweak
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("genomebiology.com") {
+    p {
+        font-size: 1.5em ! important; 
+    }
+}
