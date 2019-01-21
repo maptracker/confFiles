@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name        Coursera
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("coursera.org") {
+    .c-verification-info-text, .c-setup-info, .rc-PromoBanner,
+    .rc-ExploreCourses, .rc-PageFooter { 
+        display: none ! important; 
+    }
+}

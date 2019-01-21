@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name        CS Monitor
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("csmonitor.com") {
+    #ezve-right-col-2-r14, #ui-right-column, .promo_link, #full_width_promo,
+    #ui-page-above-footer-1, #ui-page-above-footer-2, #ui-page-footer { 
+        display: none !important; 
+    }
+}

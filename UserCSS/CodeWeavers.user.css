@@ -1,0 +1,12 @@
+/* ==UserStyle==
+@name        Code Weavers
+@description Get rid of JS warnign
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("codeweavers.com") {
+    #nojsalert { display: none ! important; }
+}
