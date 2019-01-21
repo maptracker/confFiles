@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name        Irish Times
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("irishtimes.com") {
+    amp-sidebar, amp-app-banner, amp-analytics, .sponsored, 
+    div[class*='amp-'], #subscribe-body-amp, section,
+    footer, aside, .pull-out-cta_dark {
+        display: none !important;
+    }
+}

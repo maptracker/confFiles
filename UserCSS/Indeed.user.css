@@ -1,0 +1,50 @@
+/* ==UserStyle==
+@name        Indeed
+@description Mark up tags
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("indeed.com") {
+    a[href*="tag=Stats"], 
+    a[href*="tag=Java"], 
+    a[href*="tag=Contractor"], 
+    a[href*="tag=Bio"],
+    a[href*="tag=Other"],
+    a[href*="tag=Crazy"],
+    a[href*="tag=Postdoc"],
+    a[href*="tag=Reject"],
+    a[href*="tag=Low"] { 
+        color:yellow ! important; 
+        background-color:red; 
+    }
+
+    a[href*="tag=Boston"] { 
+        color:orange ! important; 
+        background-color: lime; 
+    }
+    
+    a[href*="tag=Repeat"] { 
+        color:red ! important; 
+        background-color: yellow; 
+    }
+
+    a[href*="tag=Medium"], 
+    a[href*="tag=Pub"] { 
+        color:yellow ! important; 
+        background-color:blue; 
+    }
+    
+    a[href*="tag=Maybe"] { 
+        color:black ! important; 
+        background-color:lime; 
+    }
+    
+    a[href*="tag=Perfect"] { 
+        color:black ! important; 
+        background-color:lime; 
+        text-decoration: blink ! important; 
+    }
+}

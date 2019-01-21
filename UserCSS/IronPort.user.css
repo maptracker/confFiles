@@ -1,0 +1,12 @@
+/* ==UserStyle==
+@name        IronPort
+@description Don't constrain table
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("meusiprly04.net.bms.com") {
+    #slbl_list_table { height: 1500px ! important; }
+}

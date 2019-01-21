@@ -1,0 +1,18 @@
+/* ==UserStyle==
+@name        Interactive Browser
+@description Show all cell contents
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document url("http://bioinformatics.bms.com/biohtml/mutationViewer/map.html*") {
+    .x-grid3-hd { -moz-user-select:all ! important; }
+    /*
+.x-grid3-hd-inner { overflow:visible ! important; }
+.x-grid3-cell-inner { overflow:visible ! important;}
+   */
+    .x-grid3-row { -moz-user-select:all ! important;}
+
+}
