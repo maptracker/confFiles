@@ -42,111 +42,6 @@
 		"id": 14
 	},
 	{
-		"installDate": 1512347946865,
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"name": "CheckFreeWeb",
-		"sections": [
-			{
-				"code": "    #upsellheader,  #upsellContainer, #ebillSignUpUpSellSlideBoxArea,\n    .intrstl-body, .intrstl-hero-heading, .proceedToRegistration,\n    .learnMore, .reg-features-half, .reg-features-full,\n    #bankDepositHeading, .ad-lrg\n    { \n        display: none ! important; \n    }\n    \n    .internal-link.odd-link-fl { \n        font-size: 300%; \n        color: darkgreen; \n        font-weight: bold;\n    }\n    \n    #payAsstContainer, #pabody, #payAsstAmtView\n    { \n        height: 300px ! important; \n    }\n    \n    .def-data { \n        background-color: yellow ! important; \n        font-size: 2em;\n        font-family: Courier; \n        font-weight: bold; \n        padding: 10px 0 10px 0; \n    }\n    \n    .deliver-month, .deliver-day { \n        background-color: cyan ! important;  \n    }",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"checkfreeweb.com"
-				],
-				"regexps": []
-			}
-		],
-		"id": 16
-	},
-	{
-		"installDate": 1512347946873,
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"name": "Citicard",
-		"sections": [
-			{
-				"code": "    #virtualImage, .cA-DD-offer, .cA-spf-rewardsWrapper,\n    .cA-spf-rewardsLinkWrapper, .cA-ada-offersBenefitsDoubleContainer\n    { \n        display: none ! important;\n    }\n    \n    .cA-ada-quickLinkContainer, .cA-ada-quickLinkWrapper {\n        background-color: red ! important; \n        color: yellow ! important;\n    }\n    \n    #cmlink_SvcVANEnroll { \n        font-size: 2em ! important; \n        font-weight:\n        bold !important; \n    }",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"citi.com"
-				],
-				"regexps": []
-			}
-		],
-		"id": 17
-	},
-	{
-		"installDate": 1512347946899,
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"name": "Coursera",
-		"sections": [
-			{
-				"code": "    .c-verification-info-text, .c-setup-info, .rc-PromoBanner,\n    .rc-ExploreCourses, .rc-PageFooter\n    { \n        display: none ! important; \n    }",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"coursera.org"
-				],
-				"regexps": []
-			}
-		],
-		"id": 20
-	},
-	{
-		"installDate": 1512347946903,
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"name": "Crea",
-		"sections": [
-			{
-				"code": "    .quotecontent div \n    { \n        display: block ! important; \n    }",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"siegegames.com"
-				],
-				"regexps": []
-			}
-		],
-		"id": 21
-	},
-	{
-		"installDate": 1512347946910,
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"name": "CSMonitor",
-		"sections": [
-			{
-				"code": "    #ezve-right-col-2-r14, #ui-right-column, .promo_link, #full_width_promo,\n    #ui-page-above-footer-1, #ui-page-above-footer-2, #ui-page-footer\n    { \n        display: none !important; \n    }",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"csmonitor.com"
-				],
-				"regexps": []
-			}
-		],
-		"id": 22
-	},
-	{
 		"installDate": 1512347947379,
 		"enabled": true,
 		"updateUrl": null,
@@ -166,174 +61,6 @@
 			}
 		],
 		"id": 54
-	},
-	{
-		"installDate": 1512347947399,
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"name": "Indeed",
-		"sections": [
-			{
-				"code": "    a[href*=\"tag=Stats\"], \n    a[href*=\"tag=Java\"], \n    a[href*=\"tag=Contractor\"], \n    a[href*=\"tag=Bio\"],\n    a[href*=\"tag=Other\"],\n    a[href*=\"tag=Crazy\"],\n    a[href*=\"tag=Postdoc\"],\n    a[href*=\"tag=Reject\"],\n    a[href*=\"tag=Low\"] \n    { \n        color:yellow ! important; \n        background-color:red; \n    }\n\n    a[href*=\"tag=Boston\"] \n    { \n        color:orange ! important; \n        background-color: lime; \n    }\n    \n    a[href*=\"tag=Repeat\"] \n    { \n        color:red ! important; \n        background-color: yellow; \n    }\n\n    a[href*=\"tag=Medium\"], \n    a[href*=\"tag=Pub\"] \n    { \n        color:yellow ! important; \n        background-color:blue; \n    }\n    \n    a[href*=\"tag=Maybe\"] \n    { \n        color:black ! important; \n        background-color:lime; \n    }\n    \n    a[href*=\"tag=Perfect\"] \n    { \n        color:black ! important; \n        background-color:lime; \n        text-decoration: blink ! important; \n    }",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"indeed.com"
-				],
-				"regexps": []
-			}
-		],
-		"id": 56
-	},
-	{
-		"installDate": 1512347947431,
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"name": "Insite",
-		"sections": [
-			{
-				"code": " a:visited { color:purple ! important; }",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"insite.bms.com"
-				],
-				"regexps": []
-			}
-		],
-		"id": 58
-	},
-	{
-		"installDate": 1512347947437,
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"name": "InteractiveBrowser",
-		"sections": [
-			{
-				"code": ".x-grid3-hd { -moz-user-select:all ! important; }\n//.x-grid3-hd-inner { overflow:visible ! important; }\n//.x-grid3-cell-inner { overflow:visible ! important;}\n.x-grid3-row { -moz-user-select:all ! important;}\n",
-				"urls": [
-					"http://bioinformatics.bms.com/biohtml/mutationViewer/map.html*"
-				],
-				"urlPrefixes": [],
-				"domains": [],
-				"regexps": []
-			}
-		],
-		"id": 59
-	},
-	{
-		"installDate": 1512347947440,
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"name": "InteractiveViewer1",
-		"sections": [
-			{
-				"code": "// Select Hack\n.x-grid3-hd { -moz-user-select:all ! important; }\n.x-grid3-row { -moz-user-select:all ! important;}",
-				"urls": [],
-				"urlPrefixes": [
-					"http://bioinformatics.bms.com/biohtml/mutationViewer/map.html"
-				],
-				"domains": [],
-				"regexps": []
-			}
-		],
-		"id": 60
-	},
-	{
-		"installDate": 1512347947444,
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"name": "IronPort",
-		"sections": [
-			{
-				"code": "#slbl_list_table { height: 1500px ! important; }",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"meusiprly04.net.bms.com"
-				],
-				"regexps": []
-			}
-		],
-		"id": 61
-	},
-	{
-		"installDate": 1512347947460,
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"name": "Khan",
-		"sections": [
-			{
-				"code": "    .donate-notification {\n        display: none!important\n    }",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"khanacademy.org"
-				],
-				"regexps": []
-			}
-		],
-		"id": 63
-	},
-	{
-		"installDate": 1512347947477,
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"name": "LinkedIn",
-		"sections": [
-			{
-				"code": "    #today-news-wrapper, .feature-promo, .upsell, .guided-setup\n    { \n        display: none; \n    }",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"linkedin.com"
-				],
-				"regexps": []
-			}
-		],
-		"id": 65
-	},
-	{
-		"installDate": 1512347947481,
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"name": "LinuxQuestions",
-		"sections": [
-			{
-				"code": "    #navbar_notice_1 { \n        display: none !important; \n    }",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"linuxquestions.org"
-				],
-				"regexps": []
-			}
-		],
-		"id": 66
 	},
 	{
 		"installDate": 1512347947508,
@@ -1366,27 +1093,6 @@
 		"id": 141
 	},
 	{
-		"installDate": 1512347948327,
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"name": "Jira",
-		"sections": [
-			{
-				"code": "/* Random irrelevant plugins */\n#tts-sla-panel { display: none ! important }",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"dashboard.pri.bms.com"
-				],
-				"regexps": []
-			}
-		],
-		"id": 143
-	},
-	{
 		"installDate": 1512347948331,
 		"enabled": true,
 		"updateUrl": null,
@@ -1491,69 +1197,6 @@
 			}
 		],
 		"id": 149
-	},
-	{
-		"installDate": 1514048573900,
-		"enabled": false,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"name": "Vice",
-		"sections": [
-			{
-				"code": ".hz, header, .post-content, .frames, .av {display:none ! important;}\n\n.ii {height: unset ! important;}\n.ih {width: unset ! important; }\n.if {left:unset ! important;}\n.o { overflow: unset ! important;}\n.k {position: unset ! important;}",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"vice.com"
-				],
-				"regexps": []
-			}
-		],
-		"id": 150
-	},
-	{
-		"installDate": 1514765853600,
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"name": "IrishTimes",
-		"sections": [
-			{
-				"code": "amp-sidebar, amp-app-banner, amp-analytics, .sponsored, \ndiv[class*='amp-'], #subscribe-body-amp, section,\nfooter, aside, .pull-out-cta_dark { display: none !important; }",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"irishtimes.com"
-				],
-				"regexps": []
-			}
-		],
-		"id": 151
-	},
-	{
-		"installDate": 1516561189700,
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"name": "CodeWeavers",
-		"sections": [
-			{
-				"code": "#nojsalert { display: none ! important; }",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"codeweavers.com"
-				],
-				"regexps": []
-			}
-		],
-		"id": 152
 	},
 	{
 		"installDate": 1524058198984,
@@ -3240,38 +2883,30 @@
 		"url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
 		"originalMd5": null,
 		"installDate": 1542243273714,
-		"sourceCode": "/* ==UserStyle==\n@name        CBS\n@description Hide random cruft\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"cbsnews.com\") {\n    .shortcode, .media-list, iframe, .social, .embed--type-video,\n    .site-nav__item-anchor, .article-video-container,\n    .listing-media-feature, .module, footer, .smart-banner-cbsn,\n    .module-rem, .media-block, .media-figure {\n        display: none !important; \n    }\n    header { height: auto ! important; }\n}\n",
+		"sourceCode": "/* ==UserStyle==\n@name        CBS\n@description Hide random cruft\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.4\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"cbsnews.com\") {\n    .shortcode, .media-list, iframe, .social, .embed--type-video,\n    .site-nav__item-anchor, .article-video-container,\n    .listing-media-feature, .module, footer, .smart-banner-cbsn,\n    .module-rem, .media-block, .media-figure, .sharebar, .lazyload,\n    [id*=\"market-data\"], [id*=\"streaming\"], [id*=\"market-news\"],\n    [id*=\"moneywatch\"], [id*=\"watchlist\"], [id*=\"-promo\"], [id*=\"-emergency\"],\n    [id*=\"-topic-stack\"], [id*=\"-quote-of-the-day\"], [id*=\"-evening-news\"],\n    [id*=\"-cbsn-originals\"], [id*=\"-show-\"], [class*=\"player-overlay\"],\n    [id*=\"-uplift\"] {\n        display: none !important; \n    }\n    header { height: auto ! important; }\n}\n",
 		"sections": [
 			{
-				"code": "/* ==UserStyle==\n@name        CBS\n@description Hide random cruft\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [],
-				"regexps": []
-			},
-			{
-				"code": ".shortcode, .media-list, iframe, .social, .embed--type-video,\n    .site-nav__item-anchor, .article-video-container,\n    .listing-media-feature, .module, footer, .smart-banner-cbsn,\n    .module-rem, .media-block, .media-figure {\n        display: none !important; \n    }\n    header { height: auto ! important; }",
-				"urls": [],
-				"urlPrefixes": [],
+				"code": ".shortcode, .media-list, iframe, .social, .embed--type-video,\n    .site-nav__item-anchor, .article-video-container,\n    .listing-media-feature, .module, footer, .smart-banner-cbsn,\n    .module-rem, .media-block, .media-figure, .sharebar, .lazyload,\n    [id*=\"market-data\"], [id*=\"streaming\"], [id*=\"market-news\"],\n    [id*=\"moneywatch\"], [id*=\"watchlist\"], [id*=\"-promo\"], [id*=\"-emergency\"],\n    [id*=\"-topic-stack\"], [id*=\"-quote-of-the-day\"], [id*=\"-evening-news\"],\n    [id*=\"-cbsn-originals\"], [id*=\"-show-\"], [class*=\"player-overlay\"],\n    [id*=\"-uplift\"] {\n        display: none !important; \n    }\n    header { height: auto ! important; }",
+				"start": 40,
 				"domains": [
 					"cbsnews.com"
-				],
-				"regexps": []
+				]
 			}
 		],
 		"usercssData": {
-			"vars": {},
 			"name": "CBS",
 			"description": "Hide random cruft",
 			"namespace": "github.com/maptracker/confFiles",
 			"homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
-			"version": "1.0.0",
+			"version": "1.0.4",
 			"license": "GPL-3.0-or-later"
 		},
 		"name": "CBS",
 		"description": "Hide random cruft",
-		"originalDigest": "d3609427681c486642fe8889877130019543772f",
-		"id": 199
+		"originalDigest": "85ba7f7164a28b99bb3bf133c5d0bdf2c65c2d64",
+		"id": 199,
+		"updateDate": 1547558687225,
+		"originalName": "CBS"
 	},
 	{
 		"enabled": true,
@@ -3755,10 +3390,10 @@
 		"url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
 		"originalMd5": null,
 		"installDate": 1544483022697,
-		"sourceCode": "/* ==UserStyle==\n@name        Bing\n@description Mask out sites I'm not really interested in\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.10\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"bing.com\") {\n    /* Random junk */\n    #id_l, #id_rh, div[id*=\"notificationContainer\"], .global-action,\n    .snippet, .arrw, .localnews, .rightrail, .news_fc_hint, .bottom {\n        display: none ! important;\n    }\n    \n    /* Uninteresting buttons at top. Not convinced these are stable accessors */\n    a[h=\"ID=news,5007.1\"], a[h=\"ID=news,5008.1\"], a[h=\"ID=news,5011.1\"],\n    a[h=\"ID=news,5018.1\"] {\n        display: none ! important;\n    }\n    \n    /* stop forced page width */\n    #contentid, #categorycontainer, #categorycontainer.ctop #polymerbar,\n    #categorycontainer #polymerbar, .feed-cnt-imp { \n        width: unset ! important;\n    }\n    .slide { width : unset ! important; }\n    html body { min-width: 800px ! important; }\n    body      { width: 800px ! important; }\n    \n    /* Tinker with header */\n    #b_header { width: 900px; }\n    #id_h     { float: right; margin-left: -20px; }\n    #id_sc    { text-align: left; }\n\n    .hdln-sect { height: unset ! important; }\n\n    /* Trim top menu of topics */\n    /* Blech. These aren't stable accessions ... or are they? */\n    div[data-k=\"5155.1\"], div[data-k=\"5156.1\"], div[data-k=\"5157.1\"],\n    div[data-k=\"5122.1\"], div[data-k=\"5128.1\"], div[data-k=\"5130.1\"],\n    div[data-k=\"5131.1\"], div[data-k=\"5153.1\"], div[data-k=\"5154.1\"] {\n        display: none ! important;\n    }\n   \n    /* Try to compact the cards some */\n    .pfcard-imp, .caption, .pfcard-imp.bg {\n        margin : unset ! important;\n        height:  unset ! important;\n        width:   unset ! important; \n        padding: unset ! important;\n    }\n    .pfcard-imp    { max-width: 258px ! important; }\n    \n    \n   \n    /* Reset link color */\n    a { color: blue ! important; background-color: white ! important; }\n\n    /* Sites I'm not interested in visiting, or don't work in Tor or\n       without Javascript */\n    a[href*='.bicycling.com/'],\n    a[href*='.cnet.com'],\n    a[href*='.comingsoon.net/'],\n    a[href*='.delish.com/'],\n    a[href*='.gq.com'],\n    a[href*='.inc.com/'],\n    a[href*='.inquisitr.com/'],\n    a[href*='.mtv.com/'],\n    a[href*='.nascar.com/'],\n    a[href*='.nba.com/'],\n    a[href*='.nhl.com/'],\n    a[href*='.scout.com'],\n    a[href*='.si.com/'],\n    a[href*='.spin.com'],\n    a[href*='.yahoo.com/entertainment/'],\n    a[href*='/arts/'],\n    a[href*='/cars/'],\n    a[href*='/celebrity/'],\n    a[href*='/collider.com'],\n    a[href*='/entertainment/'],\n    a[href*='/ew.com/'],\n    a[href*='/fashion/'],\n    a[href*='/film/'],\n    a[href*='/food/'],\n    a[href*='/investing/'],\n    a[href*='/movies/'],\n    a[href*='/music/'],\n    a[href*='/nymag.com/'],\n    a[href*='/nypost.com/'],\n    a[href*='/realestate.usnews'],\n    a[href*='/style/'],\n    a[href*='/style/'],\n    a[href*='/tv/'],\n    a[href*='/tv/'],\n    a[href*='/video/'],\n    a[href*='/weather/'],\n    a[href*='/world-cafe/'],\n    a[href*='Entertainment'],\n    a[href*='Sports_News'],\n    a[href*='aarp.org'],\n    a[href*='allure.com'],\n    a[href*='aol.com'],\n    a[href*='apartmenttherapy.com'],\n    a[href*='appleinsider.com'],\n    a[href*='arrowheadpride'],\n    a[href*='billboard.com'],\n    a[href*='bleacherreport.com'],\n    a[href*='boredpanda.com'],\n    a[href*='bravotv.com/'],\n    a[href*='cbssports.com'],\n    a[href*='celbrity'],\n    a[href*='cosmopolitan.com'],\n    a[href*='dailymail.co.uk'],\n    a[href*='deadline.com/'],\n    a[href*='decider.com'],\n    a[href*='digitaltrends.com'],\n    a[href*='entrepreneur.com'],\n    a[href*='eonline.com'],\n    a[href*='espn.com'],\n    a[href*='espn.go.com'],\n    a[href*='espnfc.com/'],\n    a[href*='fashionista'],\n    a[href*='flickeringmyth'],\n    a[href*='foodandwine'],\n    a[href*='foxsports.com'],\n    a[href*='fubiz.net'],\n    a[href*='gamespot.com/'],\n    a[href*='gearpatrol'],\n    a[href*='geekwire'],\n    a[href*='glamour.com'],\n    a[href*='golfdigest'],\n    a[href*='hellogiggles.com'],\n    a[href*='hellomagazine'],\n    a[href*='highsnobiety'],\n    a[href*='hollywoodlife.com'],\n    a[href*='hollywoodreporter.com'],\n    a[href*='hypebeast'],\n    a[href*='iflscience.com'],\n    a[href*='indiewire.com'],\n    a[href*='instyle.com'],\n    a[href*='investors.com'],\n    a[href*='jalopnik.com'],\n    a[href*='justjared.com'],\n    a[href*='justjaredjr'],\n    a[href*='lifehacker.com'],\n    a[href*='lifestyle'],\n    a[href*='luxatic'],\n    a[href*='mansionglobal'],\n    a[href*='marieclaire'],\n    a[href*='mashable.com'],\n    a[href*='medicalnewstoday'],\n    a[href*='medpagetoday.com'],\n    a[href*='menshealth.com'],\n    a[href*='mentalfloss'],\n    a[href*='mirror.co.uk'],\n    a[href*='mmafighting'],\n    a[href*='mmajunkie.com'],\n    a[href*='movieweb.com'],\n    a[href*='music.com'],\n    a[href*='nbcsports.com'],\n    a[href*='nerdist.com'],\n    a[href*='nerdwallet'],\n    a[href*='nesn.com/'],\n    a[href*='newatlas.com'],\n    a[href*='nfl.com'],\n    a[href*='nydailynews.com'],\n    a[href*='opinion'],\n    a[href*='pagesix.com'],\n    a[href*='people.com'],\n    a[href*='perezhilton'],\n    a[href*='pitchfork.com/'],\n    a[href*='popsugar.com'],\n    a[href*='pressrepublican.com'],\n    a[href*='realtor.com/'],\n    a[href*='reuters.com'],\n    a[href*='rotoworld'],\n    a[href*='sbnation'],\n    a[href*='screendaily.com'],\n    a[href*='shefinds.com'],\n    a[href*='silverscreenandroll'],\n    a[href*='slashfilm.com'],\n    a[href*='snopes.com'], /* really don't need these in a news feed */\n    a[href*='sport'],\n    a[href*='stltoday.com'],\n    a[href*='stuff.co.nz'],\n    a[href*='stylecaster'],\n    a[href*='teamusa.org'],\n    a[href*='thebiglead.com'],\n    a[href*='theconversation.com'],\n    a[href*='theinertia.com'],\n    a[href*='thenextweb.com'],\n    a[href*='thesun.co.uk'],\n    a[href*='tmz.com'],\n    a[href*='townandcountrymag.com'],\n    a[href*='tvguide'],\n    a[href*='usmagazine.com'],\n    a[href*='vanityfair.com'],\n    a[href*='venturebeat.com'],\n    a[href*='vibe.com'],\n    a[href*='vogue.com'],\n    a[href*='washingtontimes.com'],\n    a[href*='weather.com'],\n    a[href*='webmd.com/'],\n    a[href*='wellandgood'],\n    a[href*='whowhatwear'],\n    a[href*='womenshealthmag.com'],\n    a[href*='wsj.com'],\n    a[href*='xxlmag.com'],\n    a[href*='yardbarker'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    \n    a[href*='zzzz'] {\n        display: none ! important;\n    }\n}\n",
+		"sourceCode": "/* ==UserStyle==\n@name        Bing\n@description Mask out sites I'm not really interested in\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.11\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"bing.com\") {\n    /* Random junk */\n    #id_l, #id_rh, div[id*=\"notificationContainer\"], .global-action,\n    .snippet, .arrw, .localnews, .rightrail, .news_fc_hint, .bottom {\n        display: none ! important;\n    }\n    \n    /* Uninteresting buttons at top. Not convinced these are stable accessors */\n    a[h=\"ID=news,5007.1\"], a[h=\"ID=news,5008.1\"], a[h=\"ID=news,5011.1\"],\n    a[h=\"ID=news,5018.1\"] {\n        display: none ! important;\n    }\n    \n    /* stop forced page width */\n    #contentid, #categorycontainer, #categorycontainer.ctop #polymerbar,\n    #categorycontainer #polymerbar, .feed-cnt-imp { \n        width: unset ! important;\n    }\n    .slide { width : unset ! important; }\n    html body { min-width: 800px ! important; }\n    body      { width: 800px ! important; }\n    \n    /* Tinker with header */\n    #b_header { width: 900px; }\n    #id_h     { float: right; margin-left: -20px; }\n    #id_sc    { text-align: left; }\n\n    .hdln-sect { height: unset ! important; }\n\n    /* Trim top menu of topics */\n    /* Blech. These aren't stable accessions ... or are they? */\n    div[data-k=\"5155.1\"], div[data-k=\"5156.1\"], div[data-k=\"5157.1\"],\n    div[data-k=\"5122.1\"], div[data-k=\"5128.1\"], div[data-k=\"5130.1\"],\n    div[data-k=\"5131.1\"], div[data-k=\"5153.1\"], div[data-k=\"5154.1\"] {\n        display: none ! important;\n    }\n   \n    /* Try to compact the cards some */\n    .pfcard-imp, .caption, .pfcard-imp.bg {\n        margin : unset ! important;\n        height:  unset ! important;\n        width:   unset ! important; \n        padding: unset ! important;\n    }\n    .pfcard-imp    { max-width: 258px ! important; }\n    \n    \n   \n    /* Reset link color */\n    a { color: blue ! important; background-color: white ! important; }\n\n    /* Sites I'm not interested in visiting, or don't work in Tor or\n       without Javascript */\n    a[href*='.avclub.com'],\n    a[href*='.bicycling.com/'],\n    a[href*='.cnet.com'],\n    a[href*='.comingsoon.net/'],\n    a[href*='.delish.com/'],\n    a[href*='.gq.com'],\n    a[href*='.inc.com/'],\n    a[href*='.inquisitr.com/'],\n    a[href*='.mlive.com/'],\n    a[href*='.mtv.com/'],\n    a[href*='.nascar.com/'],\n    a[href*='.nba.com/'],\n    a[href*='.nhl.com/'],\n    a[href*='.oregonlive.com/'],\n    a[href*='.pe.com/'],\n    a[href*='.scout.com'],\n    a[href*='.si.com/'],\n    a[href*='.spin.com'],\n    a[href*='.yahoo.com/entertainment/'],\n    a[href*='/arts/'],\n    a[href*='/cars/'],\n    a[href*='/celebrity/'],\n    a[href*='/collider.com'],\n    a[href*='/courts/'],\n    a[href*='/crime--law/'],\n    a[href*='/crime/'],\n    a[href*='/entertainment/'],\n    a[href*='/ew.com/'],\n    a[href*='/fashion/'],\n    a[href*='/film/'],\n    a[href*='/food/'],\n    a[href*='/investing/'],\n    a[href*='/life/'],\n    a[href*='/movies/'],\n    a[href*='/music/'],\n    a[href*='/news/av/'],\n    a[href*='/nymag.com/'],\n    a[href*='/nypost.com/'],\n    a[href*='/realestate.usnews'],\n    a[href*='/style/'],\n    a[href*='/style/'],\n    a[href*='/tv/'],\n    a[href*='/tv/'],\n    a[href*='/video/'],\n    a[href*='/weather/'],\n    a[href*='/world-cafe/'],\n    a[href*='Entertainment'],\n    a[href*='Sports_News'],\n    a[href*='aarp.org'],\n    a[href*='allure.com'],\n    a[href*='aol.com'],\n    a[href*='apartmenttherapy.com'],\n    a[href*='appleinsider.com'],\n    a[href*='arrowheadpride'],\n    a[href*='barkpost.com'],\n    a[href*='billboard.com'],\n    a[href*='bleacherreport.com'],\n    a[href*='bloggingtheboys'],\n    a[href*='boredpanda.com'],\n    a[href*='bravotv.com/'],\n    a[href*='buzzfeed'],\n    a[href*='cbssports.com'],\n    a[href*='celbrity'],\n    a[href*='cosmopolitan.com'],\n    a[href*='dailymail.co.uk'],\n    a[href*='deadline.com/'],\n    a[href*='decider.com'],\n    a[href*='digitaltrends.com'],\n    a[href*='entrepreneur.com'],\n    a[href*='eonline.com'],\n    a[href*='espn.com'],\n    a[href*='espn.go.com'],\n    a[href*='espnfc.com/'],\n    a[href*='fashionista'],\n    a[href*='flickeringmyth'],\n    a[href*='foodandwine'],\n    a[href*='foxsports.com'],\n    a[href*='fubiz.net'],\n    a[href*='gamespot.com/'],\n    a[href*='gearpatrol'],\n    a[href*='geekwire'],\n    a[href*='glamour.com'],\n    a[href*='golfdigest'],\n    a[href*='hellogiggles.com'],\n    a[href*='hellomagazine'],\n    a[href*='highsnobiety'],\n    a[href*='hollywoodlife.com'],\n    a[href*='hollywoodreporter.com'],\n    a[href*='hypebeast'],\n    a[href*='iflscience.com'],\n    a[href*='indiewire.com'],\n    a[href*='instyle.com'],\n    a[href*='investors.com'],\n    a[href*='jalopnik.com'],\n    a[href*='justjared.com'],\n    a[href*='justjaredjr'],\n    a[href*='lifehacker.com'],\n    a[href*='lifestyle'],\n    a[href*='luxatic'],\n    a[href*='mansionglobal'],\n    a[href*='marieclaire'],\n    a[href*='mashable.com'],\n    a[href*='medicalnewstoday'],\n    a[href*='medpagetoday.com'],\n    a[href*='menshealth.com'],\n    a[href*='mentalfloss'],\n    a[href*='mirror.co.uk'],\n    a[href*='mmafighting'],\n    a[href*='mmajunkie.com'],\n    a[href*='movieweb.com'],\n    a[href*='music.com'],\n    a[href*='nbcsports.com'],\n    a[href*='nerdist.com'],\n    a[href*='nerdwallet'],\n    a[href*='nesn.com/'],\n    a[href*='newatlas.com'],\n    a[href*='nfl.com'],\n    a[href*='nydailynews.com'],\n    a[href*='opinion'],\n    a[href*='pagesix.com'],\n    a[href*='people.com'],\n    a[href*='perezhilton'],\n    a[href*='pitchfork.com/'],\n    a[href*='popsugar.com'],\n    a[href*='popularmechanics'],\n    a[href*='pressrepublican.com'],\n    a[href*='prideofdetroit'],\n    a[href*='realtor.com/'],\n    a[href*='reuters.com'],\n    a[href*='rotoworld'],\n    a[href*='sbnation'],\n    a[href*='screendaily.com'],\n    a[href*='shefinds.com'],\n    a[href*='silverscreenandroll'],\n    a[href*='slashfilm.com'],\n    a[href*='snopes.com'], /* really don't need these in a news feed */\n    a[href*='sport'],\n    a[href*='stltoday.com'],\n    a[href*='stuff.co.nz'],\n    a[href*='stylecaster'],\n    a[href*='teamusa.org'],\n    a[href*='thebiglead.com'],\n    a[href*='theconversation.com'],\n    a[href*='theinertia.com'],\n    a[href*='thenextweb.com'],\n    a[href*='thephinsider'],\n    a[href*='thesun.co.uk'],\n    a[href*='tmz.com'],\n    a[href*='townandcountrymag.com'],\n    a[href*='tvguide'],\n    a[href*='usmagazine.com'],\n    a[href*='vanityfair.com'],\n    a[href*='venturebeat.com'],\n    a[href*='vibe.com'],\n    a[href*='vogue.com'],\n    a[href*='washingtontimes.com'],\n    a[href*='weather.com'],\n    a[href*='webmd.com/'],\n    a[href*='wellandgood'],\n    a[href*='whowhatwear'],\n    a[href*='womenshealthmag.com'],\n    a[href*='wsj.com'],\n    a[href*='xxlmag.com'],\n    a[href*='yanksgoyard'],\n    a[href*='yardbarker'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    \n    a[href*='zzzz'] {\n        display: none ! important;\n    }\n}\n",
 		"sections": [
 			{
-				"code": "/* Random junk */\n    #id_l, #id_rh, div[id*=\"notificationContainer\"], .global-action,\n    .snippet, .arrw, .localnews, .rightrail, .news_fc_hint, .bottom {\n        display: none ! important;\n    }\n    \n    /* Uninteresting buttons at top. Not convinced these are stable accessors */\n    a[h=\"ID=news,5007.1\"], a[h=\"ID=news,5008.1\"], a[h=\"ID=news,5011.1\"],\n    a[h=\"ID=news,5018.1\"] {\n        display: none ! important;\n    }\n    \n    /* stop forced page width */\n    #contentid, #categorycontainer, #categorycontainer.ctop #polymerbar,\n    #categorycontainer #polymerbar, .feed-cnt-imp { \n        width: unset ! important;\n    }\n    .slide { width : unset ! important; }\n    html body { min-width: 800px ! important; }\n    body      { width: 800px ! important; }\n    \n    /* Tinker with header */\n    #b_header { width: 900px; }\n    #id_h     { float: right; margin-left: -20px; }\n    #id_sc    { text-align: left; }\n\n    .hdln-sect { height: unset ! important; }\n\n    /* Trim top menu of topics */\n    /* Blech. These aren't stable accessions ... or are they? */\n    div[data-k=\"5155.1\"], div[data-k=\"5156.1\"], div[data-k=\"5157.1\"],\n    div[data-k=\"5122.1\"], div[data-k=\"5128.1\"], div[data-k=\"5130.1\"],\n    div[data-k=\"5131.1\"], div[data-k=\"5153.1\"], div[data-k=\"5154.1\"] {\n        display: none ! important;\n    }\n   \n    /* Try to compact the cards some */\n    .pfcard-imp, .caption, .pfcard-imp.bg {\n        margin : unset ! important;\n        height:  unset ! important;\n        width:   unset ! important; \n        padding: unset ! important;\n    }\n    .pfcard-imp    { max-width: 258px ! important; }\n    \n    \n   \n    /* Reset link color */\n    a { color: blue ! important; background-color: white ! important; }\n\n    /* Sites I'm not interested in visiting, or don't work in Tor or\n       without Javascript */\n    a[href*='.bicycling.com/'],\n    a[href*='.cnet.com'],\n    a[href*='.comingsoon.net/'],\n    a[href*='.delish.com/'],\n    a[href*='.gq.com'],\n    a[href*='.inc.com/'],\n    a[href*='.inquisitr.com/'],\n    a[href*='.mtv.com/'],\n    a[href*='.nascar.com/'],\n    a[href*='.nba.com/'],\n    a[href*='.nhl.com/'],\n    a[href*='.scout.com'],\n    a[href*='.si.com/'],\n    a[href*='.spin.com'],\n    a[href*='.yahoo.com/entertainment/'],\n    a[href*='/arts/'],\n    a[href*='/cars/'],\n    a[href*='/celebrity/'],\n    a[href*='/collider.com'],\n    a[href*='/entertainment/'],\n    a[href*='/ew.com/'],\n    a[href*='/fashion/'],\n    a[href*='/film/'],\n    a[href*='/food/'],\n    a[href*='/investing/'],\n    a[href*='/movies/'],\n    a[href*='/music/'],\n    a[href*='/nymag.com/'],\n    a[href*='/nypost.com/'],\n    a[href*='/realestate.usnews'],\n    a[href*='/style/'],\n    a[href*='/style/'],\n    a[href*='/tv/'],\n    a[href*='/tv/'],\n    a[href*='/video/'],\n    a[href*='/weather/'],\n    a[href*='/world-cafe/'],\n    a[href*='Entertainment'],\n    a[href*='Sports_News'],\n    a[href*='aarp.org'],\n    a[href*='allure.com'],\n    a[href*='aol.com'],\n    a[href*='apartmenttherapy.com'],\n    a[href*='appleinsider.com'],\n    a[href*='arrowheadpride'],\n    a[href*='billboard.com'],\n    a[href*='bleacherreport.com'],\n    a[href*='boredpanda.com'],\n    a[href*='bravotv.com/'],\n    a[href*='cbssports.com'],\n    a[href*='celbrity'],\n    a[href*='cosmopolitan.com'],\n    a[href*='dailymail.co.uk'],\n    a[href*='deadline.com/'],\n    a[href*='decider.com'],\n    a[href*='digitaltrends.com'],\n    a[href*='entrepreneur.com'],\n    a[href*='eonline.com'],\n    a[href*='espn.com'],\n    a[href*='espn.go.com'],\n    a[href*='espnfc.com/'],\n    a[href*='fashionista'],\n    a[href*='flickeringmyth'],\n    a[href*='foodandwine'],\n    a[href*='foxsports.com'],\n    a[href*='fubiz.net'],\n    a[href*='gamespot.com/'],\n    a[href*='gearpatrol'],\n    a[href*='geekwire'],\n    a[href*='glamour.com'],\n    a[href*='golfdigest'],\n    a[href*='hellogiggles.com'],\n    a[href*='hellomagazine'],\n    a[href*='highsnobiety'],\n    a[href*='hollywoodlife.com'],\n    a[href*='hollywoodreporter.com'],\n    a[href*='hypebeast'],\n    a[href*='iflscience.com'],\n    a[href*='indiewire.com'],\n    a[href*='instyle.com'],\n    a[href*='investors.com'],\n    a[href*='jalopnik.com'],\n    a[href*='justjared.com'],\n    a[href*='justjaredjr'],\n    a[href*='lifehacker.com'],\n    a[href*='lifestyle'],\n    a[href*='luxatic'],\n    a[href*='mansionglobal'],\n    a[href*='marieclaire'],\n    a[href*='mashable.com'],\n    a[href*='medicalnewstoday'],\n    a[href*='medpagetoday.com'],\n    a[href*='menshealth.com'],\n    a[href*='mentalfloss'],\n    a[href*='mirror.co.uk'],\n    a[href*='mmafighting'],\n    a[href*='mmajunkie.com'],\n    a[href*='movieweb.com'],\n    a[href*='music.com'],\n    a[href*='nbcsports.com'],\n    a[href*='nerdist.com'],\n    a[href*='nerdwallet'],\n    a[href*='nesn.com/'],\n    a[href*='newatlas.com'],\n    a[href*='nfl.com'],\n    a[href*='nydailynews.com'],\n    a[href*='opinion'],\n    a[href*='pagesix.com'],\n    a[href*='people.com'],\n    a[href*='perezhilton'],\n    a[href*='pitchfork.com/'],\n    a[href*='popsugar.com'],\n    a[href*='pressrepublican.com'],\n    a[href*='realtor.com/'],\n    a[href*='reuters.com'],\n    a[href*='rotoworld'],\n    a[href*='sbnation'],\n    a[href*='screendaily.com'],\n    a[href*='shefinds.com'],\n    a[href*='silverscreenandroll'],\n    a[href*='slashfilm.com'],\n    a[href*='snopes.com'], /* really don't need these in a news feed */\n    a[href*='sport'],\n    a[href*='stltoday.com'],\n    a[href*='stuff.co.nz'],\n    a[href*='stylecaster'],\n    a[href*='teamusa.org'],\n    a[href*='thebiglead.com'],\n    a[href*='theconversation.com'],\n    a[href*='theinertia.com'],\n    a[href*='thenextweb.com'],\n    a[href*='thesun.co.uk'],\n    a[href*='tmz.com'],\n    a[href*='townandcountrymag.com'],\n    a[href*='tvguide'],\n    a[href*='usmagazine.com'],\n    a[href*='vanityfair.com'],\n    a[href*='venturebeat.com'],\n    a[href*='vibe.com'],\n    a[href*='vogue.com'],\n    a[href*='washingtontimes.com'],\n    a[href*='weather.com'],\n    a[href*='webmd.com/'],\n    a[href*='wellandgood'],\n    a[href*='whowhatwear'],\n    a[href*='womenshealthmag.com'],\n    a[href*='wsj.com'],\n    a[href*='xxlmag.com'],\n    a[href*='yardbarker'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    \n    a[href*='zzzz'] {\n        display: none ! important;\n    }",
+				"code": "/* Random junk */\n    #id_l, #id_rh, div[id*=\"notificationContainer\"], .global-action,\n    .snippet, .arrw, .localnews, .rightrail, .news_fc_hint, .bottom {\n        display: none ! important;\n    }\n    \n    /* Uninteresting buttons at top. Not convinced these are stable accessors */\n    a[h=\"ID=news,5007.1\"], a[h=\"ID=news,5008.1\"], a[h=\"ID=news,5011.1\"],\n    a[h=\"ID=news,5018.1\"] {\n        display: none ! important;\n    }\n    \n    /* stop forced page width */\n    #contentid, #categorycontainer, #categorycontainer.ctop #polymerbar,\n    #categorycontainer #polymerbar, .feed-cnt-imp { \n        width: unset ! important;\n    }\n    .slide { width : unset ! important; }\n    html body { min-width: 800px ! important; }\n    body      { width: 800px ! important; }\n    \n    /* Tinker with header */\n    #b_header { width: 900px; }\n    #id_h     { float: right; margin-left: -20px; }\n    #id_sc    { text-align: left; }\n\n    .hdln-sect { height: unset ! important; }\n\n    /* Trim top menu of topics */\n    /* Blech. These aren't stable accessions ... or are they? */\n    div[data-k=\"5155.1\"], div[data-k=\"5156.1\"], div[data-k=\"5157.1\"],\n    div[data-k=\"5122.1\"], div[data-k=\"5128.1\"], div[data-k=\"5130.1\"],\n    div[data-k=\"5131.1\"], div[data-k=\"5153.1\"], div[data-k=\"5154.1\"] {\n        display: none ! important;\n    }\n   \n    /* Try to compact the cards some */\n    .pfcard-imp, .caption, .pfcard-imp.bg {\n        margin : unset ! important;\n        height:  unset ! important;\n        width:   unset ! important; \n        padding: unset ! important;\n    }\n    .pfcard-imp    { max-width: 258px ! important; }\n    \n    \n   \n    /* Reset link color */\n    a { color: blue ! important; background-color: white ! important; }\n\n    /* Sites I'm not interested in visiting, or don't work in Tor or\n       without Javascript */\n    a[href*='.avclub.com'],\n    a[href*='.bicycling.com/'],\n    a[href*='.cnet.com'],\n    a[href*='.comingsoon.net/'],\n    a[href*='.delish.com/'],\n    a[href*='.gq.com'],\n    a[href*='.inc.com/'],\n    a[href*='.inquisitr.com/'],\n    a[href*='.mlive.com/'],\n    a[href*='.mtv.com/'],\n    a[href*='.nascar.com/'],\n    a[href*='.nba.com/'],\n    a[href*='.nhl.com/'],\n    a[href*='.oregonlive.com/'],\n    a[href*='.pe.com/'],\n    a[href*='.scout.com'],\n    a[href*='.si.com/'],\n    a[href*='.spin.com'],\n    a[href*='.yahoo.com/entertainment/'],\n    a[href*='/arts/'],\n    a[href*='/cars/'],\n    a[href*='/celebrity/'],\n    a[href*='/collider.com'],\n    a[href*='/courts/'],\n    a[href*='/crime--law/'],\n    a[href*='/crime/'],\n    a[href*='/entertainment/'],\n    a[href*='/ew.com/'],\n    a[href*='/fashion/'],\n    a[href*='/film/'],\n    a[href*='/food/'],\n    a[href*='/investing/'],\n    a[href*='/life/'],\n    a[href*='/movies/'],\n    a[href*='/music/'],\n    a[href*='/news/av/'],\n    a[href*='/nymag.com/'],\n    a[href*='/nypost.com/'],\n    a[href*='/realestate.usnews'],\n    a[href*='/style/'],\n    a[href*='/style/'],\n    a[href*='/tv/'],\n    a[href*='/tv/'],\n    a[href*='/video/'],\n    a[href*='/weather/'],\n    a[href*='/world-cafe/'],\n    a[href*='Entertainment'],\n    a[href*='Sports_News'],\n    a[href*='aarp.org'],\n    a[href*='allure.com'],\n    a[href*='aol.com'],\n    a[href*='apartmenttherapy.com'],\n    a[href*='appleinsider.com'],\n    a[href*='arrowheadpride'],\n    a[href*='barkpost.com'],\n    a[href*='billboard.com'],\n    a[href*='bleacherreport.com'],\n    a[href*='bloggingtheboys'],\n    a[href*='boredpanda.com'],\n    a[href*='bravotv.com/'],\n    a[href*='buzzfeed'],\n    a[href*='cbssports.com'],\n    a[href*='celbrity'],\n    a[href*='cosmopolitan.com'],\n    a[href*='dailymail.co.uk'],\n    a[href*='deadline.com/'],\n    a[href*='decider.com'],\n    a[href*='digitaltrends.com'],\n    a[href*='entrepreneur.com'],\n    a[href*='eonline.com'],\n    a[href*='espn.com'],\n    a[href*='espn.go.com'],\n    a[href*='espnfc.com/'],\n    a[href*='fashionista'],\n    a[href*='flickeringmyth'],\n    a[href*='foodandwine'],\n    a[href*='foxsports.com'],\n    a[href*='fubiz.net'],\n    a[href*='gamespot.com/'],\n    a[href*='gearpatrol'],\n    a[href*='geekwire'],\n    a[href*='glamour.com'],\n    a[href*='golfdigest'],\n    a[href*='hellogiggles.com'],\n    a[href*='hellomagazine'],\n    a[href*='highsnobiety'],\n    a[href*='hollywoodlife.com'],\n    a[href*='hollywoodreporter.com'],\n    a[href*='hypebeast'],\n    a[href*='iflscience.com'],\n    a[href*='indiewire.com'],\n    a[href*='instyle.com'],\n    a[href*='investors.com'],\n    a[href*='jalopnik.com'],\n    a[href*='justjared.com'],\n    a[href*='justjaredjr'],\n    a[href*='lifehacker.com'],\n    a[href*='lifestyle'],\n    a[href*='luxatic'],\n    a[href*='mansionglobal'],\n    a[href*='marieclaire'],\n    a[href*='mashable.com'],\n    a[href*='medicalnewstoday'],\n    a[href*='medpagetoday.com'],\n    a[href*='menshealth.com'],\n    a[href*='mentalfloss'],\n    a[href*='mirror.co.uk'],\n    a[href*='mmafighting'],\n    a[href*='mmajunkie.com'],\n    a[href*='movieweb.com'],\n    a[href*='music.com'],\n    a[href*='nbcsports.com'],\n    a[href*='nerdist.com'],\n    a[href*='nerdwallet'],\n    a[href*='nesn.com/'],\n    a[href*='newatlas.com'],\n    a[href*='nfl.com'],\n    a[href*='nydailynews.com'],\n    a[href*='opinion'],\n    a[href*='pagesix.com'],\n    a[href*='people.com'],\n    a[href*='perezhilton'],\n    a[href*='pitchfork.com/'],\n    a[href*='popsugar.com'],\n    a[href*='popularmechanics'],\n    a[href*='pressrepublican.com'],\n    a[href*='prideofdetroit'],\n    a[href*='realtor.com/'],\n    a[href*='reuters.com'],\n    a[href*='rotoworld'],\n    a[href*='sbnation'],\n    a[href*='screendaily.com'],\n    a[href*='shefinds.com'],\n    a[href*='silverscreenandroll'],\n    a[href*='slashfilm.com'],\n    a[href*='snopes.com'], /* really don't need these in a news feed */\n    a[href*='sport'],\n    a[href*='stltoday.com'],\n    a[href*='stuff.co.nz'],\n    a[href*='stylecaster'],\n    a[href*='teamusa.org'],\n    a[href*='thebiglead.com'],\n    a[href*='theconversation.com'],\n    a[href*='theinertia.com'],\n    a[href*='thenextweb.com'],\n    a[href*='thephinsider'],\n    a[href*='thesun.co.uk'],\n    a[href*='tmz.com'],\n    a[href*='townandcountrymag.com'],\n    a[href*='tvguide'],\n    a[href*='usmagazine.com'],\n    a[href*='vanityfair.com'],\n    a[href*='venturebeat.com'],\n    a[href*='vibe.com'],\n    a[href*='vogue.com'],\n    a[href*='washingtontimes.com'],\n    a[href*='weather.com'],\n    a[href*='webmd.com/'],\n    a[href*='wellandgood'],\n    a[href*='whowhatwear'],\n    a[href*='womenshealthmag.com'],\n    a[href*='wsj.com'],\n    a[href*='xxlmag.com'],\n    a[href*='yanksgoyard'],\n    a[href*='yardbarker'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    a[href*='zzzz'],\n    \n    a[href*='zzzz'] {\n        display: none ! important;\n    }",
 				"start": 37,
 				"domains": [
 					"bing.com"
@@ -3770,14 +3405,14 @@
 			"description": "Mask out sites I'm not really interested in",
 			"namespace": "github.com/maptracker/confFiles",
 			"homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
-			"version": "1.0.10",
+			"version": "1.0.11",
 			"license": "GPL-3.0-or-later"
 		},
 		"description": "Mask out sites I'm not really interested in",
 		"name": "Bing",
-		"originalDigest": "5b5cb271d869632d492473ed85e5d9fdb3a6fbcc",
+		"originalDigest": "f6f2d4357654b24c9690cf069a468dd603bc79ff",
 		"id": 215,
-		"updateDate": 1547390478923,
+		"updateDate": 1547853943199,
 		"originalName": "Bing"
 	},
 	{
@@ -4117,10 +3752,10 @@
 		"url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
 		"originalMd5": null,
 		"installDate": 1544484521914,
-		"sourceCode": "/* ==UserStyle==\n@name        Snopes\n@description Attempt to reset img hidden flags (failed)\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"snopes.com\") {\n  img {\n      /*\n    Arg. Does not work. The hidden _attribute_ does not seem to be accessible via CSS\n    https://stackoverflow.com/a/6708403\n    https://w3c.github.io/html/editing.html#the-hidden-attribute\n     */\n      box-sizing: unset ! important;\n      display: block ! important;\n      visibility: visible ! important;\n  }\n}\n",
+		"sourceCode": "/* ==UserStyle==\n@name        Snopes\n@description Attempt to reset img hidden flags (failed)\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.1\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"snopes.com\") {\n  img {\n      /*\n    Arg. Does not work. The hidden _attribute_ does not seem to be accessible via CSS\n    https://stackoverflow.com/a/6708403\n    https://w3c.github.io/html/editing.html#the-hidden-attribute\n     */\n      box-sizing: unset ! important;\n      display: block ! important;\n      visibility: visible ! important;\n  }\n  .creative, .message, .featured-asset, .share-links, footer,\n  img[src*='lazyload'] {\n      display : none ! important;\n  }\n}\n",
 		"sections": [
 			{
-				"code": "img {\n      /*\n    Arg. Does not work. The hidden _attribute_ does not seem to be accessible via CSS\n    https://stackoverflow.com/a/6708403\n    https://w3c.github.io/html/editing.html#the-hidden-attribute\n     */\n      box-sizing: unset ! important;\n      display: block ! important;\n      visibility: visible ! important;\n  }",
+				"code": "img {\n      /*\n    Arg. Does not work. The hidden _attribute_ does not seem to be accessible via CSS\n    https://stackoverflow.com/a/6708403\n    https://w3c.github.io/html/editing.html#the-hidden-attribute\n     */\n      box-sizing: unset ! important;\n      display: block ! important;\n      visibility: visible ! important;\n  }\n  .creative, .message, .featured-asset, .share-links, footer,\n  img[src*='lazyload'] {\n      display : none ! important;\n  }",
 				"start": 39,
 				"domains": [
 					"snopes.com"
@@ -4132,13 +3767,15 @@
 			"description": "Attempt to reset img hidden flags (failed)",
 			"namespace": "github.com/maptracker/confFiles",
 			"homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
-			"version": "1.0.0",
+			"version": "1.0.1",
 			"license": "GPL-3.0-or-later"
 		},
 		"description": "Attempt to reset img hidden flags (failed)",
 		"name": "Snopes",
-		"originalDigest": "6f367501af1d16a10d9889cf5cbea18fde94efe9",
-		"id": 227
+		"originalDigest": "b7bfc104716cfa788cebaba0917b91ce5e9949a8",
+		"id": 227,
+		"updateDate": 1547558687534,
+		"originalName": "Snopes"
 	},
 	{
 		"enabled": true,
@@ -4984,5 +4621,516 @@
 		"name": "Vice",
 		"originalDigest": "37672f9cc70d267528c87fcb7bee91bc5a96e06e",
 		"id": 255
+	},
+	{
+		"enabled": true,
+		"updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/BusinessInsider.user.css",
+		"md5Url": null,
+		"url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+		"originalMd5": null,
+		"installDate": 1548102429806,
+		"sourceCode": "/* ==UserStyle==\n@name        Business Insider\n@description Remove unwanted bits\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"businessinsider.com.au\"), domain(\"businessinsider.com\") {\n    header, footer, amp-sidebar, amp-social-share, #mc-signup-in-post,\n    [class*=\"widget\"], [class*=\"sidebar\"], [class*=\"video\"],\n    [class^=\"aol\"], [class^=\"share\"] {\n        display: none ! important;\n    }\n    /* img tags are actually amp-img, need to be reset with JS */\n}\n",
+		"sections": [
+			{
+				"code": "header, footer, amp-sidebar, amp-social-share, #mc-signup-in-post,\n    [class*=\"widget\"], [class*=\"sidebar\"], [class*=\"video\"],\n    [class^=\"aol\"], [class^=\"share\"] {\n        display: none ! important;\n    }\n    /* img tags are actually amp-img, need to be reset with JS */",
+				"start": 82,
+				"domains": [
+					"businessinsider.com.au",
+					"businessinsider.com"
+				]
+			}
+		],
+		"usercssData": {
+			"name": "Business Insider",
+			"description": "Remove unwanted bits",
+			"namespace": "github.com/maptracker/confFiles",
+			"homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+			"version": "1.0.0",
+			"license": "GPL-3.0-or-later"
+		},
+		"description": "Remove unwanted bits",
+		"name": "Business Insider",
+		"originalDigest": "5556114d62451f4b50ac9d4e4058c44902e1c3f4",
+		"id": 256
+	},
+	{
+		"enabled": true,
+		"updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/CSMonitor.user.css",
+		"md5Url": null,
+		"url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+		"originalMd5": null,
+		"installDate": 1548102440271,
+		"sourceCode": "/* ==UserStyle==\n@name        CS Monitor\n@description Mask out irritations\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"csmonitor.com\") {\n    #ezve-right-col-2-r14, #ui-right-column, .promo_link, #full_width_promo,\n    #ui-page-above-footer-1, #ui-page-above-footer-2, #ui-page-footer { \n        display: none !important; \n    }\n}\n",
+		"sections": [
+			{
+				"code": "#ezve-right-col-2-r14, #ui-right-column, .promo_link, #full_width_promo,\n    #ui-page-above-footer-1, #ui-page-above-footer-2, #ui-page-footer { \n        display: none !important; \n    }",
+				"start": 42,
+				"domains": [
+					"csmonitor.com"
+				]
+			}
+		],
+		"usercssData": {
+			"name": "CS Monitor",
+			"description": "Mask out irritations",
+			"namespace": "github.com/maptracker/confFiles",
+			"homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+			"version": "1.0.0",
+			"license": "GPL-3.0-or-later"
+		},
+		"description": "Mask out irritations",
+		"name": "CS Monitor",
+		"originalDigest": "f211fd798c24fdb4c476ffd10806607ccb8dd5f8",
+		"id": 257
+	},
+	{
+		"enabled": true,
+		"updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/CheckFreeWeb.user.css",
+		"md5Url": null,
+		"url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+		"originalMd5": null,
+		"installDate": 1548102452455,
+		"sourceCode": "/* ==UserStyle==\n@name        Check Free Web\n@description Mask out irritations\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"checkfreeweb.com\") {\n    #upsellheader,  #upsellContainer, #ebillSignUpUpSellSlideBoxArea,\n    .intrstl-body, .intrstl-hero-heading, .proceedToRegistration,\n    .learnMore, .reg-features-half, .reg-features-full,\n    #bankDepositHeading, .ad-lrg { \n        display: none ! important; \n    }\n    \n    .internal-link.odd-link-fl { \n        font-size: 300%; \n        color: darkgreen; \n        font-weight: bold;\n    }\n    \n    #payAsstContainer, #pabody, #payAsstAmtView { \n        height: 300px ! important; \n    }\n    \n    .def-data { \n        background-color: yellow ! important; \n        font-size: 2em;\n        font-family: Courier; \n        font-weight: bold; \n        padding: 10px 0 10px 0; \n    }\n    \n    .deliver-month, .deliver-day { \n        background-color: cyan ! important;  \n    }\n}\n",
+		"sections": [
+			{
+				"code": "#upsellheader,  #upsellContainer, #ebillSignUpUpSellSlideBoxArea,\n    .intrstl-body, .intrstl-hero-heading, .proceedToRegistration,\n    .learnMore, .reg-features-half, .reg-features-full,\n    #bankDepositHeading, .ad-lrg { \n        display: none ! important; \n    }\n    \n    .internal-link.odd-link-fl { \n        font-size: 300%; \n        color: darkgreen; \n        font-weight: bold;\n    }\n    \n    #payAsstContainer, #pabody, #payAsstAmtView { \n        height: 300px ! important; \n    }\n    \n    .def-data { \n        background-color: yellow ! important; \n        font-size: 2em;\n        font-family: Courier; \n        font-weight: bold; \n        padding: 10px 0 10px 0; \n    }\n    \n    .deliver-month, .deliver-day { \n        background-color: cyan ! important;  \n    }",
+				"start": 45,
+				"domains": [
+					"checkfreeweb.com"
+				]
+			}
+		],
+		"usercssData": {
+			"name": "Check Free Web",
+			"description": "Mask out irritations",
+			"namespace": "github.com/maptracker/confFiles",
+			"homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+			"version": "1.0.0",
+			"license": "GPL-3.0-or-later"
+		},
+		"description": "Mask out irritations",
+		"name": "Check Free Web",
+		"originalDigest": "38b2556cc9ed7be82148ec30404632e08994f1f9",
+		"id": 258
+	},
+	{
+		"enabled": true,
+		"updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/CitiCard.user.css",
+		"md5Url": null,
+		"url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+		"originalMd5": null,
+		"installDate": 1548102461735,
+		"sourceCode": "/* ==UserStyle==\n@name        CitiCard\n@description Mask out irritations\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"citi.com\") {\n    #virtualImage, .cA-DD-offer, .cA-spf-rewardsWrapper,\n    .cA-spf-rewardsLinkWrapper, .cA-ada-offersBenefitsDoubleContainer { \n        display: none ! important;\n    }\n    \n    .cA-ada-quickLinkContainer, .cA-ada-quickLinkWrapper {\n        background-color: red ! important; \n        color: yellow ! important;\n    }\n    \n    #cmlink_SvcVANEnroll { \n        font-size: 2em ! important; \n        font-weight:\n        bold !important; \n    }\n}\n",
+		"sections": [
+			{
+				"code": "#virtualImage, .cA-DD-offer, .cA-spf-rewardsWrapper,\n    .cA-spf-rewardsLinkWrapper, .cA-ada-offersBenefitsDoubleContainer { \n        display: none ! important;\n    }\n    \n    .cA-ada-quickLinkContainer, .cA-ada-quickLinkWrapper {\n        background-color: red ! important; \n        color: yellow ! important;\n    }\n    \n    #cmlink_SvcVANEnroll { \n        font-size: 2em ! important; \n        font-weight:\n        bold !important; \n    }",
+				"start": 37,
+				"domains": [
+					"citi.com"
+				]
+			}
+		],
+		"usercssData": {
+			"name": "CitiCard",
+			"description": "Mask out irritations",
+			"namespace": "github.com/maptracker/confFiles",
+			"homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+			"version": "1.0.0",
+			"license": "GPL-3.0-or-later"
+		},
+		"description": "Mask out irritations",
+		"name": "CitiCard",
+		"originalDigest": "e53a514a0dc05b767a3949caf93a6a13a94ea09c",
+		"id": 259
+	},
+	{
+		"enabled": true,
+		"updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/CodeWeavers.user.css",
+		"md5Url": null,
+		"url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+		"originalMd5": null,
+		"installDate": 1548102470012,
+		"sourceCode": "/* ==UserStyle==\n@name        Code Weavers\n@description Get rid of JS warnign\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"codeweavers.com\") {\n    #nojsalert { display: none ! important; }\n}\n",
+		"sections": [
+			{
+				"code": "#nojsalert { display: none ! important; }",
+				"start": 44,
+				"domains": [
+					"codeweavers.com"
+				]
+			}
+		],
+		"usercssData": {
+			"name": "Code Weavers",
+			"description": "Get rid of JS warnign",
+			"namespace": "github.com/maptracker/confFiles",
+			"homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+			"version": "1.0.0",
+			"license": "GPL-3.0-or-later"
+		},
+		"description": "Get rid of JS warnign",
+		"name": "Code Weavers",
+		"originalDigest": "ff26c4ea9787c62c69e5abaeb630e6982ae2375f",
+		"id": 260
+	},
+	{
+		"enabled": true,
+		"updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/Coursera.user.css",
+		"md5Url": null,
+		"url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+		"originalMd5": null,
+		"installDate": 1548102480404,
+		"sourceCode": "/* ==UserStyle==\n@name        Coursera\n@description Mask out irritations\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"coursera.org\") {\n    .c-verification-info-text, .c-setup-info, .rc-PromoBanner,\n    .rc-ExploreCourses, .rc-PageFooter { \n        display: none ! important; \n    }\n}",
+		"sections": [
+			{
+				"code": ".c-verification-info-text, .c-setup-info, .rc-PromoBanner,\n    .rc-ExploreCourses, .rc-PageFooter { \n        display: none ! important; \n    }",
+				"start": 41,
+				"domains": [
+					"coursera.org"
+				]
+			}
+		],
+		"usercssData": {
+			"name": "Coursera",
+			"description": "Mask out irritations",
+			"namespace": "github.com/maptracker/confFiles",
+			"homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+			"version": "1.0.0",
+			"license": "GPL-3.0-or-later"
+		},
+		"description": "Mask out irritations",
+		"name": "Coursera",
+		"originalDigest": "eb78901e3b280ed9f7b875b404391878683e947a",
+		"id": 261
+	},
+	{
+		"enabled": true,
+		"updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/Crea.user.css",
+		"md5Url": null,
+		"url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+		"originalMd5": null,
+		"installDate": 1548102489016,
+		"sourceCode": "/* ==UserStyle==\n@name        Crea\n@description Show toggleable elements\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"siegegames.com\") {\n    .quotecontent div { \n        display: block ! important; \n    }\n}\n",
+		"sections": [
+			{
+				"code": ".quotecontent div { \n        display: block ! important; \n    }",
+				"start": 43,
+				"domains": [
+					"siegegames.com"
+				]
+			}
+		],
+		"usercssData": {
+			"name": "Crea",
+			"description": "Show toggleable elements",
+			"namespace": "github.com/maptracker/confFiles",
+			"homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+			"version": "1.0.0",
+			"license": "GPL-3.0-or-later"
+		},
+		"description": "Show toggleable elements",
+		"name": "Crea",
+		"originalDigest": "f3e9ad52418bca4781cea4710a1781af0c33d9b4",
+		"id": 262
+	},
+	{
+		"enabled": true,
+		"updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/Indeed.user.css",
+		"md5Url": null,
+		"url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+		"originalMd5": null,
+		"installDate": 1548103165245,
+		"sourceCode": "/* ==UserStyle==\n@name        Indeed\n@description Mark up tags\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"indeed.com\") {\n    a[href*=\"tag=Stats\"], \n    a[href*=\"tag=Java\"], \n    a[href*=\"tag=Contractor\"], \n    a[href*=\"tag=Bio\"],\n    a[href*=\"tag=Other\"],\n    a[href*=\"tag=Crazy\"],\n    a[href*=\"tag=Postdoc\"],\n    a[href*=\"tag=Reject\"],\n    a[href*=\"tag=Low\"] { \n        color:yellow ! important; \n        background-color:red; \n    }\n\n    a[href*=\"tag=Boston\"] { \n        color:orange ! important; \n        background-color: lime; \n    }\n    \n    a[href*=\"tag=Repeat\"] { \n        color:red ! important; \n        background-color: yellow; \n    }\n\n    a[href*=\"tag=Medium\"], \n    a[href*=\"tag=Pub\"] { \n        color:yellow ! important; \n        background-color:blue; \n    }\n    \n    a[href*=\"tag=Maybe\"] { \n        color:black ! important; \n        background-color:lime; \n    }\n    \n    a[href*=\"tag=Perfect\"] { \n        color:black ! important; \n        background-color:lime; \n        text-decoration: blink ! important; \n    }\n}\n",
+		"sections": [
+			{
+				"code": "a[href*=\"tag=Stats\"], \n    a[href*=\"tag=Java\"], \n    a[href*=\"tag=Contractor\"], \n    a[href*=\"tag=Bio\"],\n    a[href*=\"tag=Other\"],\n    a[href*=\"tag=Crazy\"],\n    a[href*=\"tag=Postdoc\"],\n    a[href*=\"tag=Reject\"],\n    a[href*=\"tag=Low\"] { \n        color:yellow ! important; \n        background-color:red; \n    }\n\n    a[href*=\"tag=Boston\"] { \n        color:orange ! important; \n        background-color: lime; \n    }\n    \n    a[href*=\"tag=Repeat\"] { \n        color:red ! important; \n        background-color: yellow; \n    }\n\n    a[href*=\"tag=Medium\"], \n    a[href*=\"tag=Pub\"] { \n        color:yellow ! important; \n        background-color:blue; \n    }\n    \n    a[href*=\"tag=Maybe\"] { \n        color:black ! important; \n        background-color:lime; \n    }\n    \n    a[href*=\"tag=Perfect\"] { \n        color:black ! important; \n        background-color:lime; \n        text-decoration: blink ! important; \n    }",
+				"start": 39,
+				"domains": [
+					"indeed.com"
+				]
+			}
+		],
+		"usercssData": {
+			"name": "Indeed",
+			"description": "Mark up tags",
+			"namespace": "github.com/maptracker/confFiles",
+			"homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+			"version": "1.0.0",
+			"license": "GPL-3.0-or-later"
+		},
+		"description": "Mark up tags",
+		"name": "Indeed",
+		"originalDigest": "126ce194afd4643e8900e497b19404b661fda718",
+		"id": 263
+	},
+	{
+		"enabled": true,
+		"updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/Insite.user.css",
+		"md5Url": null,
+		"url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+		"originalMd5": null,
+		"installDate": 1548103231396,
+		"sourceCode": "/* ==UserStyle==\n@name        Insite\n@description Color visited links\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"insite.bms.com\") {\n    a:visited { color:purple ! important; }\n}\n",
+		"sections": [
+			{
+				"code": "a:visited { color:purple ! important; }",
+				"start": 43,
+				"domains": [
+					"insite.bms.com"
+				]
+			}
+		],
+		"usercssData": {
+			"name": "Insite",
+			"description": "Color visited links",
+			"namespace": "github.com/maptracker/confFiles",
+			"homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+			"version": "1.0.0",
+			"license": "GPL-3.0-or-later"
+		},
+		"description": "Color visited links",
+		"name": "Insite",
+		"originalDigest": "9742ca921827b93cb0ad05ef74e232c6c6b1a982",
+		"id": 264
+	},
+	{
+		"enabled": true,
+		"updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/InteractiveBrowser.user.css",
+		"md5Url": null,
+		"url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+		"originalMd5": null,
+		"installDate": 1548103240796,
+		"sourceCode": "/* ==UserStyle==\n@name        Interactive Browser\n@description Show all cell contents\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document url(\"http://bioinformatics.bms.com/biohtml/mutationViewer/map.html*\") {\n    .x-grid3-hd { -moz-user-select:all ! important; }\n    /*\n.x-grid3-hd-inner { overflow:visible ! important; }\n.x-grid3-cell-inner { overflow:visible ! important;}\n   */\n    .x-grid3-row { -moz-user-select:all ! important;}\n\n}\n",
+		"sections": [
+			{
+				"code": ".x-grid3-hd { -moz-user-select:all ! important; }\n    /*\n.x-grid3-hd-inner { overflow:visible ! important; }\n.x-grid3-cell-inner { overflow:visible ! important;}\n   */\n    .x-grid3-row { -moz-user-select:all ! important;}",
+				"start": 88,
+				"urls": [
+					"http://bioinformatics.bms.com/biohtml/mutationViewer/map.html*"
+				]
+			}
+		],
+		"usercssData": {
+			"name": "Interactive Browser",
+			"description": "Show all cell contents",
+			"namespace": "github.com/maptracker/confFiles",
+			"homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+			"version": "1.0.0",
+			"license": "GPL-3.0-or-later"
+		},
+		"description": "Show all cell contents",
+		"name": "Interactive Browser",
+		"originalDigest": "1f99f3f35cf96022e8076fa51b42879a523fcd95",
+		"id": 265
+	},
+	{
+		"enabled": true,
+		"updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/InteractiveViewer.user.css",
+		"md5Url": null,
+		"url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+		"originalMd5": null,
+		"installDate": 1548103248764,
+		"sourceCode": "/* ==UserStyle==\n@name        Interactive Viewer\n@description Allow selection of table cells\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document url-prefix(\"http://bioinformatics.bms.com/biohtml/mutationViewer/map.html\") {\n    .x-grid3-hd  { -moz-user-select:all ! important; }\n    .x-grid3-row { -moz-user-select:all ! important;}\n}\n",
+		"sections": [
+			{
+				"code": ".x-grid3-hd  { -moz-user-select:all ! important; }\n    .x-grid3-row { -moz-user-select:all ! important;}",
+				"start": 94,
+				"urlPrefixes": [
+					"http://bioinformatics.bms.com/biohtml/mutationViewer/map.html"
+				]
+			}
+		],
+		"usercssData": {
+			"name": "Interactive Viewer",
+			"description": "Allow selection of table cells",
+			"namespace": "github.com/maptracker/confFiles",
+			"homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+			"version": "1.0.0",
+			"license": "GPL-3.0-or-later"
+		},
+		"description": "Allow selection of table cells",
+		"name": "Interactive Viewer",
+		"originalDigest": "28cfcfbb75b4712b3de451feeb5ae4808ae4d900",
+		"id": 266
+	},
+	{
+		"enabled": true,
+		"updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/IrishTimes.user.css",
+		"md5Url": null,
+		"url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+		"originalMd5": null,
+		"installDate": 1548103257463,
+		"sourceCode": "/* ==UserStyle==\n@name        Irish Times\n@description Mask out irritations\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"irishtimes.com\") {\n    amp-sidebar, amp-app-banner, amp-analytics, .sponsored, \n    div[class*='amp-'], #subscribe-body-amp, section,\n    footer, aside, .pull-out-cta_dark {\n        display: none !important;\n    }\n}\n",
+		"sections": [
+			{
+				"code": "amp-sidebar, amp-app-banner, amp-analytics, .sponsored, \n    div[class*='amp-'], #subscribe-body-amp, section,\n    footer, aside, .pull-out-cta_dark {\n        display: none !important;\n    }",
+				"start": 43,
+				"domains": [
+					"irishtimes.com"
+				]
+			}
+		],
+		"usercssData": {
+			"name": "Irish Times",
+			"description": "Mask out irritations",
+			"namespace": "github.com/maptracker/confFiles",
+			"homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+			"version": "1.0.0",
+			"license": "GPL-3.0-or-later"
+		},
+		"description": "Mask out irritations",
+		"name": "Irish Times",
+		"originalDigest": "ab9e947011addcd802db3e2da54b63a9f903cec4",
+		"id": 267
+	},
+	{
+		"enabled": true,
+		"updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/IronPort.user.css",
+		"md5Url": null,
+		"url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+		"originalMd5": null,
+		"installDate": 1548103264626,
+		"sourceCode": "/* ==UserStyle==\n@name        IronPort\n@description Don't constrain table\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"meusiprly04.net.bms.com\") {\n    #slbl_list_table { height: 1500px ! important; }\n}\n",
+		"sections": [
+			{
+				"code": "#slbl_list_table { height: 1500px ! important; }",
+				"start": 52,
+				"domains": [
+					"meusiprly04.net.bms.com"
+				]
+			}
+		],
+		"usercssData": {
+			"name": "IronPort",
+			"description": "Don't constrain table",
+			"namespace": "github.com/maptracker/confFiles",
+			"homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+			"version": "1.0.0",
+			"license": "GPL-3.0-or-later"
+		},
+		"description": "Don't constrain table",
+		"name": "IronPort",
+		"originalDigest": "77a226ea5c7113fd12539326ca5a7e1e9e5508df",
+		"id": 268
+	},
+	{
+		"enabled": true,
+		"updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/Jira.user.css",
+		"md5Url": null,
+		"url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+		"originalMd5": null,
+		"installDate": 1548103272889,
+		"sourceCode": "/* ==UserStyle==\n@name        Jira\n@description Hide irrelevant plugins\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"dashboard.pri.bms.com\") {\n    /* Random irrelevant plugins */\n    #tts-sla-panel { display: none ! important }\n}\n",
+		"sections": [
+			{
+				"code": "/* Random irrelevant plugins */\n    #tts-sla-panel { display: none ! important }",
+				"start": 50,
+				"domains": [
+					"dashboard.pri.bms.com"
+				]
+			}
+		],
+		"usercssData": {
+			"name": "Jira",
+			"description": "Hide irrelevant plugins",
+			"namespace": "github.com/maptracker/confFiles",
+			"homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+			"version": "1.0.0",
+			"license": "GPL-3.0-or-later"
+		},
+		"description": "Hide irrelevant plugins",
+		"name": "Jira",
+		"originalDigest": "df0d5f7ecd2f9fde523da56b4d9d3f35855e3539",
+		"id": 269
+	},
+	{
+		"enabled": true,
+		"updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/Khan.user.css",
+		"md5Url": null,
+		"url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+		"originalMd5": null,
+		"installDate": 1548103280145,
+		"sourceCode": "/* ==UserStyle==\n@name        Khan Academy\n@description Mask out irritations\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"khanacademy.org\") {\n    .donate-notification {\n        display: none!important\n    }\n}\n",
+		"sections": [
+			{
+				"code": ".donate-notification {\n        display: none!important\n    }",
+				"start": 44,
+				"domains": [
+					"khanacademy.org"
+				]
+			}
+		],
+		"usercssData": {
+			"name": "Khan Academy",
+			"description": "Mask out irritations",
+			"namespace": "github.com/maptracker/confFiles",
+			"homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+			"version": "1.0.0",
+			"license": "GPL-3.0-or-later"
+		},
+		"description": "Mask out irritations",
+		"name": "Khan Academy",
+		"originalDigest": "42c32e37c60470c0ecb357cbf0554891b3e30812",
+		"id": 270
+	},
+	{
+		"enabled": true,
+		"updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/LinkedIn.user.css",
+		"md5Url": null,
+		"url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+		"originalMd5": null,
+		"installDate": 1548103287661,
+		"sourceCode": "/* ==UserStyle==\n@name        LinkedIn\n@description Mask out irritations\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"linkedin.com\") {\n    #today-news-wrapper, .feature-promo, .upsell, .guided-setup { \n        display: none; \n    }\n}\n",
+		"sections": [
+			{
+				"code": "#today-news-wrapper, .feature-promo, .upsell, .guided-setup { \n        display: none; \n    }",
+				"start": 41,
+				"domains": [
+					"linkedin.com"
+				]
+			}
+		],
+		"usercssData": {
+			"name": "LinkedIn",
+			"description": "Mask out irritations",
+			"namespace": "github.com/maptracker/confFiles",
+			"homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+			"version": "1.0.0",
+			"license": "GPL-3.0-or-later"
+		},
+		"description": "Mask out irritations",
+		"name": "LinkedIn",
+		"originalDigest": "72d75c0ddf15c19878c7bf06c90a5f89106dc676",
+		"id": 271
+	},
+	{
+		"enabled": true,
+		"updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/LinuxQuestions.user.css",
+		"md5Url": null,
+		"url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+		"originalMd5": null,
+		"installDate": 1548103296568,
+		"sourceCode": "/* ==UserStyle==\n@name        Linux Questions\n@description Mask out irritations\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"linuxquestions.org\") {\n    #navbar_notice_1 { \n        display: none !important; \n    }\n}\n",
+		"sections": [
+			{
+				"code": "#navbar_notice_1 { \n        display: none !important; \n    }",
+				"start": 47,
+				"domains": [
+					"linuxquestions.org"
+				]
+			}
+		],
+		"usercssData": {
+			"name": "Linux Questions",
+			"description": "Mask out irritations",
+			"namespace": "github.com/maptracker/confFiles",
+			"homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+			"version": "1.0.0",
+			"license": "GPL-3.0-or-later"
+		},
+		"description": "Mask out irritations",
+		"name": "Linux Questions",
+		"originalDigest": "b2d68fd34bfc0b4d9584fd058e5da48ac7e4a956",
+		"id": 272
 	}
 ]
