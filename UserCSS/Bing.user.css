@@ -3,14 +3,17 @@
 @description Mask out sites I'm not really interested in
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.11
+@version     1.0.12
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("bing.com") {
     /* Random junk */
     #id_l, #id_rh, div[id*="notificationContainer"], .global-action,
-    .snippet, .arrw, .localnews, .rightrail, .news_fc_hint, .bottom {
+    .snippet, .arrw, .localnews, .rightrail, .news_fc_hint, .bottom, .source,
+    .nlr-interests, .rt_Sports, .rt_ScienceAndTechnology, .rt_Business,
+    .rt_Entertainment, .rt_FactCheck, .rt_Health, .rt_Products,
+    .rt_TopicBar_Auto, .rt_TopicBar_Fashion, .rt_TopicBar_Personal {
         display: none ! important;
     }
     
@@ -19,6 +22,8 @@
     a[h="ID=news,5018.1"] {
         display: none ! important;
     }
+    
+    html, body { overflow: unset ! important; }
     
     /* stop forced page width */
     #contentid, #categorycontainer, #categorycontainer.ctop #polymerbar,
@@ -33,7 +38,7 @@
     #b_header { width: 900px; }
     #id_h     { float: right; margin-left: -20px; }
     #id_sc    { text-align: left; }
-
+    
     .hdln-sect { height: unset ! important; }
 
     /* Trim top menu of topics */
@@ -45,11 +50,15 @@
     }
    
     /* Try to compact the cards some */
-    .pfcard-imp, .caption, .pfcard-imp.bg {
+    .pfcard-imp, .caption, .pfcard-imp.bg, .news-card, body {
         margin : unset ! important;
         height:  unset ! important;
         width:   unset ! important; 
         padding: unset ! important;
+    }
+    .title, .caption {
+        overflow : unset ! important;
+        max-height : unset ! important;
     }
     .pfcard-imp    { max-width: 258px ! important; }
     
@@ -225,6 +234,16 @@
     a[href*='xxlmag.com'],
     a[href*='yanksgoyard'],
     a[href*='yardbarker'],
+    a[href*='gossipcop.com'],
+    a[href*='dezeen.com/'],
+    a[href*='.mlb.com/'],
+    a[href*='.today.com/'],
+    a[href*='zzzz'],
+    a[href*='zzzz'],
+    a[href*='zzzz'],
+    a[href*='zzzz'],
+    a[href*='zzzz'],
+    a[href*='zzzz'],
     a[href*='zzzz'],
     a[href*='zzzz'],
     a[href*='zzzz'],
