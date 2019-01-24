@@ -3,7 +3,7 @@
 @description Hide unused bulky bits
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -13,4 +13,8 @@
         /* Mask out bulky graph controls, which I never use */
         display: none ! important;
     }
+    
+    /* Show 7-day pop-up details without JS */
+    #headline-detail-now, #headline-detail { display: unset ! important; }
+    .fa-info-circle {display: none ! important; }
 }
