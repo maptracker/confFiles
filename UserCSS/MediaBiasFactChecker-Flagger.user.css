@@ -3,12 +3,12 @@
 @description Colorize news links according to MBFC ratings
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.35
+@version     1.0.36
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 /* Copy-paste block (just makes it easier to add new entries)
-     , a[href*='.wxyz.com/']
+     , a[href*='.wistv.com/']
 */
 
 @-moz-document domain("reddit.com"), domain("wikipedia.org"),
@@ -79,22 +79,28 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
        corrections to incorrect information and has failed only 1 fact
        check"
    */
+
+    /* ABC - 'abc' logo */
     a[href*='abc7news.com'], a[href*='abc7.com/'], a[href*='abc13.com/'],
     a[href*='/abc11.com/'], a[href*='/abcnews4.com/'], a[href*='.abc15.com/'],
     a[href*='abcnews.go.com'], a[href*='.abc10.com/'], a[href*='.13abc.com/'],
     a[href*='/abc30.com/'], a[href*='.local10.com/'], a[href*='.wxyz.com/'],
+    a[href*='.wcvb.com/'],
     
+    /* CBS - Eye logo */
     a[href*='.wibw.com/'], a[href*='cbsnews.com'], a[href*='.wkbn.com/'],
     a[href*='/wsbt.com/'], a[href*='.cbs17.com/'], a[href*='.khou.com/'],
     a[href*='.live5news.com/'],
     
+    /* NBC - Peacock logo */
     a[href*='nbcsandiego.com'], a[href*='nbcwashington.com'],
     a[href*='nbcnews.com'], a[href*='/lex18.com/'], a[href*='.nbc4i.com/'],
     a[href*='.9news.com/'], a[href*='.nbc12.com/'], a[href*='/nbc24.com/'],
     a[href*='.nbcdfw.com/'], a[href*='news3lv.com/'], a[href*='.ksdk.com/'],
     a[href*='.nbclosangeles.com/'], a[href*='nbcphiladelphia.com'],
-    a[href*='.nbcnewyork.com/'],
+    a[href*='.nbcnewyork.com/'], a[href*='.nbcbayarea.com/'],
     a[href*='.wbir.com/'], a[href*='.today.com/'], a[href*='.wral.com/'],
+    a[href*='.wsfa.com/'], a[href*='.wistv.com/'],
     
     a[href*='bloomberg.com'], a[href*='.bloombergquint.com/'],
 
@@ -191,7 +197,8 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='.newsday.com/'], a[href*='.csmonitor.com/'], a[href*='.pbs.org/'],
     a[href*='.sbs.com.au/'], a[href*='/tass.com/'], a[href*='/slate.com/'],
     a[href*='.taiwannews.com.tw/'], a[href*='.suntimes.com/'],
-    a[href*='.azcentral.com/'], a[href*='.i24news.tv/'] {
+    a[href*='.azcentral.com/'], a[href*='.i24news.tv/'],
+    a[href*='.spokesman.com/'] {
         /* High */
         background-color: #cff ! important; /* light blue */
     }
@@ -212,6 +219,7 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='/fox17.com/'], a[href*='.ktvu.com/'], a[href*='/fox4kc.com/'],
     a[href*='/fox28spokane.com/'], a[href*='.foxcarolina.com/'],
     a[href*='.fox4news.com/'], a[href*='.fox19.com/'], a[href*='fox6now.com/'],
+    a[href*='fox43.com/'],
     
     a[href*='cnn.com'], a[href*='mirror.co.uk'], 
     a[href*='newsweek.com'], a[href*='hurriyetdailynews.com'],
@@ -359,22 +367,28 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     }
     
     /* MBFC Sites: Left-Center */
+    
+    /* ABC - 'abc' logo */
     a[href*='abc7news.com'], a[href*='abc7.com/'], a[href*='abc13.com/'],
     a[href*='/abc11.com/'], a[href*='/abcnews4.com/'], a[href*='.abc15.com/'],
     a[href*='abcnews.go.com'], a[href*='.abc10.com/'], a[href*='.13abc.com/'],
     a[href*='/abc30.com/'], a[href*='.local10.com/'], a[href*='.wxyz.com/'],
+    a[href*='.wcvb.com/'],
 
-    a[href*='cbsnews.com'], a[href*='.wibw.com/'], a[href*='.wkbn.com/'],
+    /* CBS - Eye logo */
+    a[href*='.wibw.com/'], a[href*='cbsnews.com'], a[href*='.wkbn.com/'],
     a[href*='/wsbt.com/'], a[href*='.cbs17.com/'], a[href*='.khou.com/'],
     a[href*='.live5news.com/'],
 
-    a[href*='nbcsandiego.com'], a[href*='.nbcnewyork.com/'],
-    a[href*='.nbcdfw.com/'], a[href*='.9news.com/'], a[href*='.ksdk.com/'],
-    a[href*='news3lv.com/'], a[href*='.nbc12.com/'], a[href*='/nbc24.com/'],
-    a[href*='/lex18.com/'], a[href*='.nbc4i.com/'], a[href*='.wbir.com/'],
-    a[href*='.nbclosangeles.com/'], a[href*='nbcwashington.com'],
-    a[href*='.today.com/'], a[href*='nbcnews.com'],
-    a[href*='nbcphiladelphia.com'], a[href*='.wral.com/'],
+    /* NBC - Peacock logo */
+    a[href*='nbcsandiego.com'], a[href*='nbcwashington.com'],
+    a[href*='nbcnews.com'], a[href*='/lex18.com/'], a[href*='.nbc4i.com/'],
+    a[href*='.9news.com/'], a[href*='.nbc12.com/'], a[href*='/nbc24.com/'],
+    a[href*='.nbcdfw.com/'], a[href*='news3lv.com/'], a[href*='.ksdk.com/'],
+    a[href*='.nbclosangeles.com/'], a[href*='nbcphiladelphia.com'],
+    a[href*='.nbcnewyork.com/'], a[href*='.nbcbayarea.com/'],
+    a[href*='.wbir.com/'], a[href*='.today.com/'], a[href*='.wral.com/'],
+    a[href*='.wsfa.com/'], a[href*='.wistv.com/'],
     
     a[href*='.bbc.com/'], a[href*='.bbc.co.uk/'],
     a[href*='/bbc.com/'], a[href*='/bbc.co.uk/'],
@@ -514,7 +528,7 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='.israelhayom.com/'], a[href*='/mynorthwest.com/'],
     a[href*='.orlandosentinel.com/'], a[href*='.dallasnews.com/'],
     a[href*='.realclearpolitics.com/'], a[href*='.lfpress.com/'],
-    a[href*='.azcentral.com/'] {
+    a[href*='.azcentral.com/'], a[href*='.spokesman.com/'] {
         /* Right Center */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwQ336A29AAAADJJREFUOMtjYBgFFANGXBL/09L+oyicNYuRJJORDUA3DBkw0cULJDufJl7AZ8gooBAAANugFfnCrgsLAAAAAElFTkSuQmCC)
@@ -530,6 +544,7 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='/fox17.com/'], a[href*='.ktvu.com/'], a[href*='/fox4kc.com/'],
     a[href*='/fox28spokane.com/'], a[href*='.foxcarolina.com/'],
     a[href*='.fox4news.com/'], a[href*='.fox19.com/'], a[href*='fox6now.com/'],
+    a[href*='fox43.com/'],
     
     a[href*='komonews.com'], a[href*='townhall.com'],
     a[href*='americanthinker.com'], a[href*='bizpacreview.com'],
@@ -716,7 +731,7 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='acainternational.org/'], a[href*='.fool.com/'],
     a[href*='.thelocal.se/'], a[href*='downtoearth.org'],
     a[href*='ebony.com/'], a[href*='.rdmag.com/'],
-    a[href*='.insideedition.com/'], a[href*='.reuters.com/'] {
+    a[href*='.insideedition.com/'] {
         /* No Entry on MBFC */
         /* Cut'n'Paste:     , a[href*='.reuters.com/']  */
         background-image:
