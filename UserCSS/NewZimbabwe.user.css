@@ -1,0 +1,12 @@
+/* ==UserStyle==
+@name        New Zimbabwe
+@description Restore mouse select
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("newzimbabwe.com") {
+    * { -webkit-user-select: auto ! important; }
+}

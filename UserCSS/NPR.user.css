@@ -1,0 +1,18 @@
+/* ==UserStyle==
+@name        NPR
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("npr.org") {
+    footer, .branding, #global-navigation-wrap, .share-tools,
+    iframe, .statichtml {
+        display: none ! important;
+    }
+    a:visited { color: purple ! important; }
+    #dsq1 { overflow: visible; }
+    #qqqdisqus_thread { border: solid 2px red ! important; }
+}

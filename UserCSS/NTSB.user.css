@@ -1,0 +1,13 @@
+/* ==UserStyle==
+@name        NTSB
+@description Restore scrolling
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("ntsb.gov") {
+    /* why do people want to handle scrolling with JS?? */
+    body { overflow: unset ! important; }
+}

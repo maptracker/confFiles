@@ -1,0 +1,17 @@
+/* ==UserStyle==
+@name        nj.com
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("nj.com") {
+    #newsletter_promo, #social_icons, #active_discussions, #most_read,
+    #disclaimer, .icn-link, .social_sidebar, #adv_header, #commentButton,
+    #multimedia_main_gallery, iframe, noscript, .storify,
+    footer { 
+        display : none ! important; 
+    }
+}

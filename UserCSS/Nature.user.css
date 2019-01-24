@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name        Nature
+@description Minor tweaks
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("nature.com") {
+    p.norm { 
+        font-size: 1.5em ! important; 
+    }
+}

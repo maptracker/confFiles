@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name        Illumos
+@description Show content
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("illumos.org") {
+    .codeContent, .panelContent { 
+        display: block ! important; 
+    }
+}

@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name        Newsweek
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("newsweek.com") {
+    .trial-promo, .nw-subscribe-today, .hidden-xs, #discussion,
+    #taboola-below-main-column, noscript, .trial-link, .social-share,
+    .brand, .header-top, .newsletter-signup, .subscription, .social { 
+        display: none ! important; 
+    }
+}
