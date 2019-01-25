@@ -3,12 +3,12 @@
 @description Colorize news links according to MBFC ratings
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.36
+@version     1.0.37
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 /* Copy-paste block (just makes it easier to add new entries)
-     , a[href*='.wistv.com/']
+     , a[href*='.wdbj7.com/']
 */
 
 @-moz-document domain("reddit.com"), domain("wikipedia.org"),
@@ -90,7 +90,7 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     /* CBS - Eye logo */
     a[href*='.wibw.com/'], a[href*='cbsnews.com'], a[href*='.wkbn.com/'],
     a[href*='/wsbt.com/'], a[href*='.cbs17.com/'], a[href*='.khou.com/'],
-    a[href*='.live5news.com/'],
+    a[href*='.live5news.com/'], a[href*='.wdbj7.com/'], a[href*='.wwltv.com/'],
     
     /* NBC - Peacock logo */
     a[href*='nbcsandiego.com'], a[href*='nbcwashington.com'],
@@ -100,7 +100,8 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='.nbclosangeles.com/'], a[href*='nbcphiladelphia.com'],
     a[href*='.nbcnewyork.com/'], a[href*='.nbcbayarea.com/'],
     a[href*='.wbir.com/'], a[href*='.today.com/'], a[href*='.wral.com/'],
-    a[href*='.wsfa.com/'], a[href*='.wistv.com/'],
+    a[href*='.wsfa.com/'], a[href*='.wistv.com/'], a[href*='.wlwt.com/'],
+    a[href*='.wavy.com/'],
     
     a[href*='bloomberg.com'], a[href*='.bloombergquint.com/'],
 
@@ -198,7 +199,7 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='.sbs.com.au/'], a[href*='/tass.com/'], a[href*='/slate.com/'],
     a[href*='.taiwannews.com.tw/'], a[href*='.suntimes.com/'],
     a[href*='.azcentral.com/'], a[href*='.i24news.tv/'],
-    a[href*='.spokesman.com/'] {
+    a[href*='.spokesman.com/'], a[href*='.revealnews.org/'] {
         /* High */
         background-color: #cff ! important; /* light blue */
     }
@@ -378,7 +379,7 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     /* CBS - Eye logo */
     a[href*='.wibw.com/'], a[href*='cbsnews.com'], a[href*='.wkbn.com/'],
     a[href*='/wsbt.com/'], a[href*='.cbs17.com/'], a[href*='.khou.com/'],
-    a[href*='.live5news.com/'],
+    a[href*='.live5news.com/'], a[href*='.wdbj7.com/'], a[href*='.wwltv.com/'],
 
     /* NBC - Peacock logo */
     a[href*='nbcsandiego.com'], a[href*='nbcwashington.com'],
@@ -388,7 +389,8 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='.nbclosangeles.com/'], a[href*='nbcphiladelphia.com'],
     a[href*='.nbcnewyork.com/'], a[href*='.nbcbayarea.com/'],
     a[href*='.wbir.com/'], a[href*='.today.com/'], a[href*='.wral.com/'],
-    a[href*='.wsfa.com/'], a[href*='.wistv.com/'],
+    a[href*='.wsfa.com/'], a[href*='.wistv.com/'], a[href*='.wlwt.com/'],
+    a[href*='.wavy.com/'],
     
     a[href*='.bbc.com/'], a[href*='.bbc.co.uk/'],
     a[href*='/bbc.com/'], a[href*='/bbc.co.uk/'],
@@ -446,7 +448,7 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='/metro.co.uk/'], a[href*='/bgr.com/'], a[href*='.courant.com/'],
     a[href*='.eastbaytimes.com/'], a[href*='.newsday.com/'],
     a[href*='.mnn.com/'], a[href*='.hrw.org/'], a[href*='.suntimes.com/'],
-    a[href*='.sbs.com.au/'], a[href*='.pbs.org/'] {
+    a[href*='.sbs.com.au/'], a[href*='.pbs.org/'], a[href*='.revealnews.org/'] {
         /* Left Center */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwU5IQMqsgAAACdJREFUOMtjYBgFtANpaf//E6OOiVKLhoEBjMQG4qxZjIyjSYtGAAAxUAbUce9dmgAAAABJRU5ErkJggg==)
