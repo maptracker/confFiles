@@ -3,7 +3,7 @@
 @description Allow content to wrap to page, block various cruft
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.3
+@version     1.0.4
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -12,7 +12,7 @@
     .block-disqus, #block-thehill-blocks-footer-signup, .region-bottom-column2,
     .item-pos, .page-bottom, #block-views-hill-tv-block-video-widget, .logo,
     .sidebars, #navigation, iframe, #block-views-hill-tv-block-related,
-    .share-box { 
+    .share-box, .dfp-tag-wrapper { 
         display: none!important;
     }
     
