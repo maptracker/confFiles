@@ -1,18 +1,18 @@
 // ==UserScript==
-// @name           Reddit Comments
-// @namespace      http://www.tilford.net/
-// @include        http://www.reddit.com/*/comments/*
-// @include        http://np.reddit.com/*/comments/*
-// @include        https://np.reddit.com/*/comments/*
-// @include        http://www.reddit.com/user/*
-// @include        https://www.reddit.com/*/comments/*
-// @include        https://www.reddit.com/comments/*
-// @include        https://www.reddit.com/user/*
-// @include        https://www.reddit.com/r/*
-// @include        https://www.reddit.com/
-// @include        https://old.reddit.com/*
-// @version        1.0.2
-// @grant          none
+// @name          Reddit Comments
+// @namespace     https://github.com/maptracker/confFiles/tree/master/UserScript
+// @include       http://www.reddit.com/*/comments/*
+// @include       http://np.reddit.com/*/comments/*
+// @include       https://np.reddit.com/*/comments/*
+// @include       http://www.reddit.com/user/*
+// @include       https://www.reddit.com/*/comments/*
+// @include       https://www.reddit.com/comments/*
+// @include       https://www.reddit.com/user/*
+// @include       https://www.reddit.com/r/*
+// @include       https://www.reddit.com/
+// @include       https://old.reddit.com/*
+// @version       1.0.3
+// @grant         none
 // ==/UserScript==
 
 useOld()
