@@ -3,7 +3,7 @@
 @description Mask out sites I'm not really interested in
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.13
+@version     1.0.14
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -14,12 +14,6 @@
     .nlr-interests, .rt_Sports, .rt_ScienceAndTechnology, .rt_Business,
     .rt_Entertainment, .rt_FactCheck, .rt_Health, .rt_Products,
     .rt_TopicBar_Auto, .rt_TopicBar_Fashion, .rt_TopicBar_Personal {
-        display: none ! important;
-    }
-    
-    /* Uninteresting buttons at top. Not convinced these are stable accessors */
-    a[h="ID=news,5007.1"], a[h="ID=news,5008.1"], a[h="ID=news,5011.1"],
-    a[h="ID=news,5018.1"] {
         display: none ! important;
     }
     
@@ -40,17 +34,10 @@
     #id_sc    { text-align: left; }
     
     .hdln-sect { height: unset ! important; }
-
-    /* Trim top menu of topics */
-    /* Blech. These aren't stable accessions ... or are they? */
-    div[data-k="5155.1"], div[data-k="5156.1"], div[data-k="5157.1"],
-    div[data-k="5122.1"], div[data-k="5128.1"], div[data-k="5130.1"],
-    div[data-k="5131.1"], div[data-k="5153.1"], div[data-k="5154.1"] {
-        display: none ! important;
-    }
    
     /* Try to compact the cards some */
-    .pfcard-imp, .caption, .pfcard-imp.bg, .news-card, body {
+    .pfcard-imp, .caption, .pfcard-imp.bg, .news-card, body,
+    .cardcommon div {
         margin : unset ! important;
         height:  unset ! important;
         width:   unset ! important; 
@@ -67,13 +54,55 @@
     /* Reset link color */
     a { color: blue ! important; background-color: white ! important; }
 
+    /* I'm tiring of all the local crime reports, both 'my' local and
+       'local' around the world. Easily half of Bing's feed can be
+       made up of these articles. The filters below will have a high
+       false positive rate (both events like 'crash' matching 'stock
+       market crash' as well as masking stories of higher national
+       interest), but I'm relying on other news sources to cover
+       those. */
+
+    a[href*='abuse'],
+    a[href*='accused'],
+    a[href*='alarm'],
+    a[href*='arrest'],
+    a[href*='charged'],
+    a[href*='convict'],
+    a[href*='crime'],
+    a[href*='execution'],
+    a[href*='guilty'],
+    a[href*='inmate'],
+    a[href*='jail'],
+    a[href*='kidnap'],
+    a[href*='knife'],
+    a[href*='murder'],
+    a[href*='offender'],
+    a[href*='police'],
+    a[href*='prison'],
+    a[href*='rape'],
+    a[href*='robber'],
+    a[href*='scam'],
+    a[href*='sentenced'],
+    a[href*='shooting'],
+    a[href*='shot'],
+    a[href*='suspect'],
+    a[href*='trooper'],
+    a[href*='victim'],
+    a[href*='wounded'],
+    a[href*='zzzz'],
+    a[href*='zzzz'],
+    a[href*='zzzz'],
+    a[href*='zzzz'],
+    a[href*='zzzz'],
+    a[href*='zzzz'],
+    
     /* Sites I'm not interested in visiting, or don't work in Tor or
        without Javascript */
-    a[href*='.avclub.com'],
-    a[href*='.bicycling.com/'],
+    a[href    a[href*='.bicycling.com/'],
     a[href*='.cnet.com'],
     a[href*='.comingsoon.net/'],
     a[href*='.delish.com/'],
+    a[href*='.eater.com/'],
     a[href*='.gq.com'],
     a[href*='.inc.com/'],
     a[href*='.inquisitr.com/'],
@@ -99,6 +128,7 @@
     a[href*='/courts/'],
     a[href*='/crime--law/'],
     a[href*='/crime/'],
+    a[href*='/decorating/'],
     a[href*='/eagles/'],
     a[href*='/entertainment/'],
     a[href*='/ew.com/'],
@@ -114,10 +144,9 @@
     a[href*='/nymag.com/'],
     a[href*='/nypost.com/'],
     a[href*='/realestate.usnews'],
+    a[href*='/realestate/'],
     a[href*='/saints/'],
     a[href*='/style/'],
-    a[href*='/style/'],
-    a[href*='/tv/'],
     a[href*='/tv/'],
     a[href*='/video/'],
     a[href*='/weather/'],
@@ -131,6 +160,7 @@
     a[href*='appleinsider.com'],
     a[href*='arrowheadpride'],
     a[href*='barkpost.com'],
+    a[href*='bgr.com/'],
     a[href*='billboard.com'],
     a[href*='bleacherreport.com'],
     a[href*='bloggingtheboys'],
@@ -140,6 +170,7 @@
     a[href*='cbssports.com'],
     a[href*='celbrity'],
     a[href*='cosmopolitan.com'],
+    a[href*='dailydot.com/'],
     a[href*='dailymail.co.uk'],
     a[href*='deadline.com/'],
     a[href*='decider.com'],
@@ -161,7 +192,9 @@
     a[href*='geekwire'],
     a[href*='glamour.com'],
     a[href*='golfdigest'],
+    a[href*='golfweek'],
     a[href*='gossipcop.com'],
+    a[href*='guidelive.com'],
     a[href*='hellogiggles.com'],
     a[href*='hellomagazine'],
     a[href*='highsnobiety'],
@@ -199,6 +232,7 @@
     a[href*='nydailynews.com'],
     a[href*='opinion'],
     a[href*='pagesix.com'],
+    a[href*='patspulpit'],
     a[href*='people.com'],
     a[href*='perezhilton'],
     a[href*='pitchfork.com/'],
@@ -211,6 +245,8 @@
     a[href*='rotoworld'],
     a[href*='sbnation'],
     a[href*='screendaily.com'],
+    a[href*='searchengineland'],
+    a[href*='seoroundtable'],
     a[href*='shefinds.com'],
     a[href*='silverscreenandroll'],
     a[href*='slashfilm.com'],
@@ -241,12 +277,13 @@
     a[href*='webmd.com/'],
     a[href*='wellandgood'],
     a[href*='whowhatwear'],
-    a[href*='womenshealthmag.com'],
+    a[href*='womenshealthmag'],
     a[href*='wsj.com'],
     a[href*='xxlmag.com'],
     a[href*='yanksgoyard'],
     a[href*='yardbarker'],
     a[href*='zzzz'],
+*='.avclub.com'],
     a[href*='zzzz'],
     a[href*='zzzz'],
     a[href*='zzzz'],
