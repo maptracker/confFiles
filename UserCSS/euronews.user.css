@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name        euronews
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("euronews.com") {
+    *[class*='social'], *[class*='spotim'], footer, aside,
+    .c-article-footer__section {
+        display: none ! important;
+    }
+}
