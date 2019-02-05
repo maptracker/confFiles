@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name        Open Clip Art
+@description Hide Shutterstock
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("openclipart.org") {
+    #shutterstock_results, #shutterstock_search { 
+        display: none ! important; 
+    }
+}

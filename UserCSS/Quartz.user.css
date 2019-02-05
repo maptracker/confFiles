@@ -1,0 +1,13 @@
+/* ==UserStyle==
+@name        Quartz
+@description Manage image visibility
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("qz.com") {
+    .progressive-image-thumbnail { display: none ! important; }
+    .progressive-image-large { opacity: unset ! important; }
+}

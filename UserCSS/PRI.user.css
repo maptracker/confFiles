@@ -1,0 +1,18 @@
+/* ==UserStyle==
+@name        PRI
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("pri.org") {
+    .donate__story-msg, .sharing-links__list, .promo-box--promo,
+    .secondary, .sponsors, footer, .navbar__wrapper, .pane-comments,
+    .pane-custom-social-networking-links-header {
+        display: none ! important;
+    }
+
+    body { background: unset ! important }
+}

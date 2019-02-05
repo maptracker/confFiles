@@ -1,0 +1,28 @@
+/* ==UserStyle==
+@name        Robtex
+@description Mask out irritations, tweak details display
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("robtex.com") {
+    .filler, .separator, #x_discussion, #x_contact, #x_similar,
+    .inuls, header { 
+        display: none !important; 
+        height: 0px ! important;  
+    }
+
+    div, section, .sep1, .sep2 { 
+        height: auto ! important; 
+    }
+    
+    #x_summary { 
+        background-color: #afa; 
+        position: absolute; 
+        left: 0px; 
+        top: 0px; 
+        width: 30em;
+    }  
+}

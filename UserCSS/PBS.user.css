@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name        PBS
+@description Suppress pop-up
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("pbs.org") {
+    .eloqua-popup-container { 
+        display: none ! important; 
+    }
+}

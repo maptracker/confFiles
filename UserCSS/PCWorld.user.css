@@ -1,0 +1,17 @@
+/* ==UserStyle==
+@name        PC World
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("pcworld.com") {
+    #shoppingMod, #topXMod,  #footerMoreSMB,  #smbRightSubscribe,
+    #resourceLinks, #smbBlogLinks,  #artCommentDiv,  #smbWhitepaperWrap, 
+    #footer, #smbFooterAd, #smbWhitepaperWrap, #miniHeader, #mainNav, #header, 
+    #artCommentDiv, #resourceLinks, .chicklet { 
+        display: none ! important; 
+    }
+}
