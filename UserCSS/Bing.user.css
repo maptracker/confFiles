@@ -3,7 +3,7 @@
 @description Mask out sites I'm not really interested in
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.16
+@version     1.0.17
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -65,13 +65,16 @@
     a[href*='abuse' i],
     a[href*='accused' i],
     a[href*='alarm' i],
+    a[href*='alleged' i],
     a[href*='arrest' i],
     a[href*='assault' i],
+    a[href*='autopsy' i],
     a[href*='charged' i],
     a[href*='convict' i],
     a[href*='crash' i],
     a[href*='crime' i],
     a[href*='execution' i],
+    a[href*='funeral' i],
     a[href*='guilty' i],
     a[href*='inmate' i],
     a[href*='jail' i],
@@ -79,12 +82,14 @@
     a[href*='knife' i],
     a[href*='murder' i],
     a[href*='offender' i],
+    a[href*='officer' i],
     a[href*='police' i],
     a[href*='prison' i],
     a[href*='rape' i],
     a[href*='robber' i],
     a[href*='scam' i],
-    a[href*='sentenced' i],
+    a[href*='sentence' i],
+    a[href*='sheriff' i],
     a[href*='shooting' i],
     a[href*='shot' i],
     a[href*='suspect' i],
@@ -92,6 +97,10 @@
     a[href*='vandal' i],
     a[href*='victim' i],
     a[href*='wounded' i],
+    a[href*='wreck' i],
+    a[href*='zzzz' i],
+    a[href*='zzzz' i],
+    a[href*='zzzz' i],
     a[href*='zzzz' i],
     a[href*='zzzz' i],
     a[href*='zzzz' i],
@@ -140,6 +149,7 @@
     a[href*='/food/'],
     a[href*='/giants/'],
     a[href*='/investing/'],
+    a[href*='/irl/'],
     a[href*='/life/'],
     a[href*='/movies/'],
     a[href*='/music/'],
@@ -285,7 +295,6 @@
     a[href*='xxlmag.com'],
     a[href*='yanksgoyard'],
     a[href*='yardbarker'],
-    a[href*='zzzz'],
     a[href*='zzzz'],
     a[href*='zzzz'],
     a[href*='zzzz'],
