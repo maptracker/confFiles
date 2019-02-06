@@ -3,7 +3,7 @@
 @description Mask out various cruft
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.1
+@version     1.0.2
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -24,7 +24,8 @@
     .plusone-box, #gf-foot, .appbar-add, #ad, #calendar, .SP_calendar,
     .sfe-break-right-em, .gpost, #passive-assist, #footer,
     .ad-target2-wrapper, .hdg, #gmm-panel-promo, #copyright, #gbu, #notify-box,
-    .rmi-rpl-bottom, #s_SPORTS_GADGET, #s_EDITORS_PICK, #s_INTERESTING { 
+    .rmi-rpl-bottom, #s_SPORTS_GADGET, #s_EDITORS_PICK, #s_INTERESTING,
+    *[class*='merch-'], *[id*='merch-']{ 
         display: none ! important; 
     }
 
