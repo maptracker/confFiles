@@ -3,7 +3,7 @@
 @description Mask out sites I'm not really interested in
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.17
+@version     1.0.18
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -61,7 +61,7 @@
        market crash' as well as masking stories of higher national
        interest), but I'm relying on other news sources to cover
        those. */
-
+    
     a[href*='abuse' i],
     a[href*='accused' i],
     a[href*='alarm' i],
@@ -83,14 +83,18 @@
     a[href*='murder' i],
     a[href*='offender' i],
     a[href*='officer' i],
+    a[href*='pedestrian' i],
     a[href*='police' i],
     a[href*='prison' i],
     a[href*='rape' i],
+    a[href*='rapist' i],
+    a[href*='robbed' i],
     a[href*='robber' i],
     a[href*='scam' i],
     a[href*='sentence' i],
     a[href*='sheriff' i],
     a[href*='shooting' i],
+    a[href*='shoplift' i],
     a[href*='shot' i],
     a[href*='suspect' i],
     a[href*='trooper' i],
@@ -98,10 +102,6 @@
     a[href*='victim' i],
     a[href*='wounded' i],
     a[href*='wreck' i],
-    a[href*='zzzz' i],
-    a[href*='zzzz' i],
-    a[href*='zzzz' i],
-    a[href*='zzzz' i],
     a[href*='zzzz' i],
     a[href*='zzzz' i],
     a[href*='zzzz' i],
@@ -129,6 +129,7 @@
     a[href*='.scout.com'],
     a[href*='.si.com/'],
     a[href*='.spin.com'],
+    a[href*='.thestreet.com'],
     a[href*='.today.com/'],
     a[href*='.yahoo.com/entertainment/'],
     a[href*='/90minutes/'],
@@ -159,6 +160,7 @@
     a[href*='/realestate.usnews'],
     a[href*='/realestate/'],
     a[href*='/saints/'],
+    a[href*='/sponsored/'],
     a[href*='/style/'],
     a[href*='/tv/'],
     a[href*='/video/'],
@@ -241,6 +243,7 @@
     a[href*='nerdwallet'],
     a[href*='nesn.com/'],
     a[href*='newatlas.com'],
+    a[href*='newsoneplace'],
     a[href*='nfl.com'],
     a[href*='nydailynews.com'],
     a[href*='opinion'],
@@ -260,6 +263,7 @@
     a[href*='screendaily.com'],
     a[href*='searchengineland'],
     a[href*='seoroundtable'],
+    a[href*='seroundtable'],
     a[href*='shefinds.com'],
     a[href*='silverscreenandroll'],
     a[href*='slashfilm.com'],
@@ -295,9 +299,6 @@
     a[href*='xxlmag.com'],
     a[href*='yanksgoyard'],
     a[href*='yardbarker'],
-    a[href*='zzzz'],
-    a[href*='zzzz'],
-    a[href*='zzzz'],
     a[href*='zzzz'],
     a[href*='zzzz'],
     a[href*='zzzz'],
