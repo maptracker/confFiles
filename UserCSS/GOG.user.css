@@ -3,7 +3,7 @@
 @description Mask out unwanted or owned tiles
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.5
+@version     1.0.6
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -22,6 +22,17 @@
     }
     .icon-win, .icon-mac, .icon-plus { 
         display: none ! important
+    }
+
+    div[class*='-in-library'] span {
+        background: red ! important;
+        color: yellow ! important;
+        font-size: 2em ! important;
+        padding: 45px 15px ! important
+    }
+    div[class*='platforms--linux'] {
+        background-color: lime ! important;
+        padding: 10px 10px ! important;
     }
 
     /* #wishlistHolder .invisible { display: block ! important } */
@@ -674,6 +685,12 @@
     *[product-tile-id="1207664253"], /* The Last Federation */
     *[product-tile-id="1437564865"], /* Ziggurat */
     *[product-tile-id="1769415595"], /* Balrum */
+    *[product-tile-id="1207658855"], /* Master of Magic */
+    *[product-tile-id="1207658945"], /* RollerCoaster Tycoon: Deluxe */
+    *[product-tile-id="1207658957"], /* RollerCoaster Tycoon 2: Triple Thrill */
+    *[product-tile-id="1207660583"], /* S.T.A.L.K.E.R.: Call of Pripyat */
+    *[product-tile-id="1207660573"], /* S.T.A.L.K.E.R.: Shadow of Chernobyl */
+    *[product-tile-id="1438168222"], /* Anno 1602 A.D. */
     *[product-tile-id="z"], /*  */
     *[product-tile-id="z"], /*  */
     *[product-tile-id="z"], /*  */
