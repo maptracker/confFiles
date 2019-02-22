@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name        Yelp
+@description Mask out irritations, incuding overlay
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("yelp.com") {
+    .main-footer, div[class*="compose"], div[class*="consumer-alert-overlay"],
+    .questions, .biz-page-actions {
+        display: none ! important;
+    }
+}
