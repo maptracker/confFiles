@@ -6,6 +6,15 @@ use File::Copy qw(copy);
 ## Will need to install with cpan / cpanm
 use DBI;
 use DBD::SQLite;
+use JSON;
+
+
+## Stylish SQLite metadata columns:
+my @metaCols = qw(enabled applyBackgroundUpdates url updateUrl md5Url
+                  originalCode idUrl originalMd5);
+
+
+my $test = 1; # Testmode prevents alteration of sources
 
 ## I maintain a lot of user styles. It is becomming a hassle to
 ## synchronize these styles across browsers (Firefox, Tor, Waterfox
@@ -19,16 +28,20 @@ use DBD::SQLite;
 ## recent, and then synchronizes that version across all browsers.
 
 my $xpiLocs = {
+    ## Relative file paths where styles might reside
     Stylish => "stylish.sqlite",
     Stylus  => 'browser-extension-data/{7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}/storage.js',
 };
 
+## Identify browser sources on this computer
 my $srcs = &find_sources();
+my %styles; # Will hold aggregate style information
+## Parse and aggregate styles and their metadata from each source
 foreach my $src (@{$srcs}) {
-    &explore_source($src)
+    &gather_source($src)
 }
 
-sub explore_source {
+sub gather_source {
     ## Identify style manifest for different addons
     my $src = shift;
     my $dir = $src->{path};
@@ -40,6 +53,9 @@ sub explore_source {
             my $file = join('/', $dir, $subPath);
             next unless (-s $file);
             warn "[+] Found: $stype + $type:\n    $file\n";
+            if ($stype eq 'Stylish') {
+                &gather_stylish_styles($file, $src);
+            }
         }
     }
 }
@@ -99,4 +115,65 @@ sub find_sources {
         path => $ldir,
     } if ( -d $ldir );
     return \@sources;
+}
+
+## Nice way to pretty print JSON for inspection:
+##  python -m json.tool my_json.json | less -S
+##  https://stackoverflow.com/a/1920585
+
+sub gather_stylus_styles {
+    my ($path, $src) = @_;
+    ## Stylus uses a JSON file. It also appears to have the most
+    ## complex 'schema' for representing the user styles, so it will
+    ## be used as the template for how we will structure and
+    ## manipulate the styles and associated metadata.
+    open(JIN, "<$path") || die "Failed to read stylus JSON:\n  $path\n  $!";
+    my $jtxt = "";
+    while (<JIN>) { $jtxt .= $_; }
+    close JIN;
+    my $json = decode_json( $jtxt );
+    
+}
+
+sub gather_stylish_styles {
+    my ($path, $src) = @_;
+    ## Stylish uses a SQLite database. Primary information is style
+    ## name and CSS code Metadata will indicate domains, if code is
+    ## active, etc
+    my $dbh = &sqlite_dbh( $path );
+    my $get = $dbh->prepare
+        ("SELECT ".join(', ', 'name', 'code', @metaCols)." FROM styles");
+    $get->execute();
+    my $rows = $get->fetchall_arrayref();
+    my @noChange;
+    foreach my $row ( sort { $a->[0] cmp $b->[0] } @{$rows}) {
+        my $name = shift @{$row};
+        my $rec  = &style_record($name);
+        my $val  = {
+            src  => $src,
+            name => $name,
+            css  => shift @{$row},
+        }; 
+    }
+    ## Do I need to do something to close a SQLite handle?
+}
+
+sub style_record {
+    ## Return the hash structure from %styles, primary keyed to
+    ## name. Create record if needed.
+    my $name = shift || "";
+    return $styles{$name} ||= {
+        name => $name,
+        vals => [],
+    };
+}
+
+sub sqlite_dbh {
+    my $path = shift;
+    my $dbh = DBI->connect("dbi:SQLite:dbname=$path",'','', {
+        sqlite_open_flags => $test ? DBD::SQLite::OPEN_READONLY : undef,
+        AutoCommit => 1,
+        RaiseError => 1,
+        PrintError => 0 });
+    return $dbh;
 }

@@ -3,7 +3,7 @@
 use strict;
 use File::Basename;
 use DBI;
-use DBD::SQLite;   ## Will need to install with cpan
+use DBD::SQLite;   ## Will need to install with cpan / cpanm
 use File::Copy qw(copy);
 
 my $workDir = dirname($0);
