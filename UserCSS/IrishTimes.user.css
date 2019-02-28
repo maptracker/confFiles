@@ -3,14 +3,17 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("irishtimes.com") {
+    article_body { display: block ! important; }
+
     amp-sidebar, amp-app-banner, amp-analytics, .sponsored, 
-    div[class*='amp-'], #subscribe-body-amp, section,
-    footer, aside, .pull-out-cta_dark {
+    div[class*='amp-'], video, .video-player, #it_videos,
+    footer, aside, .pull-out-cta_dark, #no-script, .soa,
+    .newsletter-card  {
         display: none !important;
     }
 }
