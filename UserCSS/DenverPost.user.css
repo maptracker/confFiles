@@ -3,7 +3,7 @@
 @description Mask out irritations, fix image handling
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -11,7 +11,7 @@
     img { transform: none ! important }
     .slide-caption { display: block ! important; }
 
-    .related, .more-news, iframe, footer, header, aside {
+    .related, .more-news, iframe, footer, header, aside, #mobile-adhesion {
         display: none ! important;
     }
 }
