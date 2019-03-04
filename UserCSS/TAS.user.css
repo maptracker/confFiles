@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name        TAS
+@description Allow text selection
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document url("https://bi.bms.com/irj/portal") {
+    td, th { 
+        -moz-user-select:all ! important; 
+    }
+    td, th { 
+        -moz-user-select:all ! important; 
+    }
+    /* Don't recall what I was trying to do with two lines - one of those
+       should presumably be different */
+}

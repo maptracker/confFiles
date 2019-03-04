@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name        TechCrunch
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("techcrunch.com") {
+    .article-extra, footer, .social-share, .l-sidebar, .announcement,
+    .nav-bar {
+        display: none ! important;
+    }
+}

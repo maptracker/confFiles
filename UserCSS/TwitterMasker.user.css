@@ -1,0 +1,41 @@
+/* ==UserStyle==
+@name        Twitter Masker
+@description Hide pointless meme-spam
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("twitter.com") {
+    /* various spammers, folks that just post the same thing over and over
+       again, or tired memes ... */
+    div[data-screen-name="4evaneverMalsi"],
+    div[data-screen-name="AHamiltonSpirit"],
+    div[data-screen-name="ColumbiaBugle"],
+    div[data-screen-name="DC_Resister_Bee"],
+    div[data-screen-name="DeniseRapp1"],
+    div[data-screen-name="FarhanKVirk"],
+    div[data-screen-name="Fuctupmind"],
+    div[data-screen-name="HuevosDeChivo"],
+    div[data-screen-name="Impeach_D_Trump"],
+    div[data-screen-name="MAGAPILL"],
+    div[data-screen-name="ProudConse"],
+    div[data-screen-name="SLandinSoCal"],
+    div[data-screen-name="Team_Trump45"],
+    div[data-screen-name="TexaPauline"],
+    div[data-screen-name="TheRynheart"],
+    div[data-screen-name="deplorablemax1"],
+    div[data-screen-name="jackschofield"],
+    div[data-screen-name="jamesclarke1123"],
+    div[data-screen-name="peplamb"],
+    div[data-screen-name="trumpsterMG"],
+    div[data-screen-name=""],
+    div[data-screen-name=""],
+    div[data-screen-name=""],
+    div[data-screen-name=""],
+    div[data-screen-name=""],
+    div[data-screen-name="wmmII88"] { 
+        display: none ! important; 
+    }
+}

@@ -1,0 +1,17 @@
+/* ==UserStyle==
+@name        Vox
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("vox.com") {
+    #privacy-consent, .c-social-buttons, .c-newsletter_signup_box,
+    .c-compact-river, footer, header, .l-header {
+        display: none ! important;
+    }
+
+    .l-wrapper {margin-top: unset ! important; }
+}

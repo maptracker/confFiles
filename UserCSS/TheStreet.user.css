@@ -1,0 +1,21 @@
+/* ==UserStyle==
+@name        The Street
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("thestreet.com") {
+    .whiteBox, .brokerage, .rightHandTextLinks, .premiumServices,
+    .blueHdrTitle, .whiteBorderBox, #boxAdContainer, #nl, #rightCol, #nav,
+    #opinion, #subHdr, #promoLink, #extraContent, #directory,
+    #logo, #hd, #footer { 
+        display: none ! important; 
+    }
+
+    #twoCol_left { 
+        width: 100% ! important; 
+    }
+}

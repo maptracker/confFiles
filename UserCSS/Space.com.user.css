@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name        space.com
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("space.com") {
+    .partner-banner, #stickyShare, .social-mod, iframe, footer,
+    .subscribe {
+        display: none ! important;
+    }
+    img { 
+        opacity: 1 ! important; 
+        transition: none ! important; 
+    }
+}

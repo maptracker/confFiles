@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name        The Telegraph
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("telegraph.co.uk") {
+    .mnIframe, #tmg-related-links, .storyFt, .tmg-amp-follow-platforms, 
+    #section_puffs_01, .oneSixth, #top_stories_05, .pictureGrid,
+    amp-instagram, amp-iframe { 
+        display: none ! important; 
+    }
+}
