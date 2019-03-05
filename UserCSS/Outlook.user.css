@@ -1,0 +1,61 @@
+/* ==UserStyle==
+@name        Outlook OWA
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+
+
+@-moz-document domain("webmail.bms.com"), domain("mailo365.bms.com") {
+    .vis  { background-color: #ff9; }
+    .t    { background-color: #f60 ! important; }
+    .f    { background-color: #9cf ! important; }
+    .txt  { font-size: 1em ! important; }
+    .rwRO { background-color: #dfd; border: none ! important; }
+
+    span[title="Inbox and sweep rules"],
+    a[href="#path=/options/mail"] {
+        background-color: yellow; color: red;
+    }
+    a[href="https://www.yammer.com/account/profile_info"],
+    a[href="https://portal.office.com/settings/"] {
+        display: none ! important;
+    }
+
+    .bdy, .txtbdy { font-size: 1.2em ! important; }
+    td.fb a { color: red ! important; }
+    td, th { font-size: 100% ! important }
+    td.tm, td.tme, td.vis, td.frd, td.frn, td.txt, td.v, td.frl {
+        height: 100% ! important;
+    }
+    .rwRO { font-weight: bold; font-size: 1.3em; border-left: 1px solid #aaa;
+            border-right: 1px solid #aaa; margin-right: 0.5em;
+            white-space: pre; padding: 2px; }
+    #evt td { background-color: #f88 ! important }
+    #selBsl { height: 30em ! important; }
+
+    .popupContent, .popupContent * {
+        height: unset ! important;
+        overflow-y: unset ! important;
+        max-height: unset ! important;
+    }
+
+    /* Newer OWA */
+    .ms-bg-color-themeLight { background-color: lime ! important; }
+    
+    .disableTextSelection {
+        
+        -khtml-user-select: default ! important;
+        -moz-user-select: text ! important;
+        /*
+    -webkit-user-select: default ! important;
+    -o-user-select: default ! important;
+    -ms-user-select: default ! important;
+       */
+        user-select: text ! important;
+        cursor:default
+    }
+}
