@@ -3,11 +3,11 @@
 @description Remove unwanted bits
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
-@-moz-document domain("businessinsider.com.au"), domain("businessinsider.com") {
+@-moz-document domain("businessinsider.com.au"), domain("businessinsider.de"), domain("businessinsider.com") {
     header, footer, amp-sidebar, amp-social-share, #mc-signup-in-post,
     [class*="widget"], [class*="sidebar"], [class*="video"],
     [class^="aol"], [class^="share"] {
