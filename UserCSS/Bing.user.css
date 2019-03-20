@@ -3,7 +3,7 @@
 @description Mask out sites I'm not really interested in
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.20
+@version     1.0.21
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -199,6 +199,7 @@
     a[href*='bloggingtheboys'],
     a[href*='boredpanda.com'],
     a[href*='bravotv.com/'],
+    a[href*='broadwayworld'],
     a[href*='buzzfeed'],
     a[href*='cbssports.com'],
     a[href*='celbrity'],
@@ -237,6 +238,7 @@
     a[href*='hypebeast'],
     a[href*='iflscience.com'],
     a[href*='indiewire.com'],
+    a[href*='inhabitat.com'],
     a[href*='instyle.com'],
     a[href*='investors.com'],
     a[href*='jalopnik.com'],
@@ -244,15 +246,18 @@
     a[href*='justjaredjr'],
     a[href*='lifehacker.com'],
     a[href*='lifestyle'],
+    a[href*='lpga.com'],
     a[href*='luxatic'],
     a[href*='mansionglobal'],
     a[href*='marieclaire'],
     a[href*='mashable.com'],
     a[href*='medicalnewstoday'],
+    a[href*='medicalxpress'],
     a[href*='medpagetoday.com'],
     a[href*='menshealth.com'],
     a[href*='mentalfloss'],
     a[href*='mirror.co.uk'],
+    a[href*='mlssoccer'],
     a[href*='mmafighting'],
     a[href*='mmajunkie.com'],
     a[href*='movieweb.com'],
@@ -273,6 +278,7 @@
     a[href*='pitchfork.com/'],
     a[href*='popsugar.com'],
     a[href*='popularmechanics'],
+    a[href*='powerball'],
     a[href*='pressrepublican.com'],
     a[href*='prideofdetroit'],
     a[href*='realtor.com/'],
@@ -284,10 +290,12 @@
     a[href*='searchengineland'],
     a[href*='seoroundtable'],
     a[href*='seroundtable'],
+    a[href*='sextuplet'],
     a[href*='shefinds.com'],
     a[href*='silverscreenandroll'],
     a[href*='slashfilm.com'],
     a[href*='slashgear'],
+    a[href*='smithsonianmag'],
     a[href*='snopes.com'], /* really don't need these in a news feed */
     a[href*='sport'],
     a[href*='stltoday.com'],
@@ -320,8 +328,6 @@
     a[href*='xxlmag.com'],
     a[href*='yanksgoyard'],
     a[href*='yardbarker'],
-    a[href*='broadwayworld'],
-    a[href*='zzzz'],
     a[href*='zzzz'],
     a[href*='zzzz'],
     a[href*='zzzz'],
