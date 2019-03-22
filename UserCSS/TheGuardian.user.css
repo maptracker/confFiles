@@ -3,13 +3,14 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("theguardian.com") {
     .submeta__share, .submeta__syndication, .js-most-popular-footer, footer,
-    .new-header__inner, iframe, [data-alt*="Sign up"], .block-share {
+    .new-header__inner, iframe, [data-alt*="Sign up"], .block-share,
+    #the-adconsent-element {
         display: none ! important;
     }
 }
