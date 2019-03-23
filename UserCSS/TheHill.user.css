@@ -3,7 +3,7 @@
 @description Allow content to wrap to page, block various cruft
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.4
+@version     1.0.5
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -19,9 +19,17 @@
     #main { overflow: unset ! important; }
 
     /* Just let the browser scale the content to the window */
-    #content, .content-wrp, .content-wrapper, #page, .title-wrapper, .top-row {
+    #content, .content-wrp, .content-wrapper, #page, .title-wrapper, .top-row,
+    .scrolling-content  {
         width: unset ! important;
     }
+
+    #main .content-wrapper.title {
+        margin-left: unset ! important;
+        min-height: unset ! important;
+    }
+
+    .region { margin: unset ! important; }
 
     body { min-width: unset ! important; }
     
