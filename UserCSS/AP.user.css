@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name        AP News
+@description Mask out irritations, compact layout
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.1
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("apnews.com") {
+    .Footer, .SocialShare, .LazyImage, .GenericCarousel, .thumbnail {
+        display: none ! important; 
+    }
+
+    .FeedCard { padding: unset ! important; }
+}
