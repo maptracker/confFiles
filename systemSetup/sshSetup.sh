@@ -114,7 +114,9 @@ fi
 
 ## Isolate the fingerprint, we will use it to verify it has been added.
 foundKey=$(ssh-keygen -l -f "$keyFile")
-keyFingerprint=$(echo "$foundKey" | egrep -o "SHA256:[A-Za-z0-9\+]"\+)
+## The fingerprint will have bits first, then the fingerprint string,
+## which varies depending on the encoding algorithm used:
+keyFingerprint=$(echo "$foundKey" | egrep -o "[0-9]{3,4} (SHA256:[A-Za-z0-9\+]+|[:a-f0-9]+)" | sed 's/^[0-9]* //')
 if [[ -z "$keyFingerprint" ]]; then
     msg "$FgRed;$BgYellow" "
 [!!] Failed to determine your key fingerprint!
