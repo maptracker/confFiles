@@ -8,7 +8,7 @@
 ==/UserStyle== */
 
 /* Copy-paste block (just makes it easier to add new entries)
-     , a[href*='.cbslocal.com/']
+     , a[href*='abc7chicago.com/']
 */
 
 @-moz-document domain("reddit.com"), domain("wikipedia.org"),
@@ -87,6 +87,7 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='abcnews.go.com'], a[href*='.abc10.com/'], a[href*='.13abc.com/'],
     a[href*='/abc30.com/'], a[href*='.local10.com/'], a[href*='.wxyz.com/'],
     a[href*='.wcvb.com/'], a[href*='.kxxv.com/'], a[href*='/wset.com/'],
+    a[href*='abc7chicago.com/'],
     
     /* CBS - Eye logo */
     a[href*='.wibw.com/'], a[href*='cbsnews.com'], a[href*='.wkbn.com/'],
@@ -107,6 +108,7 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='.wsfa.com/'], a[href*='.wistv.com/'], a[href*='.wlwt.com/'],
     a[href*='.wavy.com/'], a[href*='.wect.com/'], a[href*='.kob.com/'],
     a[href*='.wpxi.com/'], a[href*='.wthr.com/'], a[href*='.kxan.com/'],
+    a[href*='.wwlp.com/'],
     
     a[href*='bloomberg.com'], a[href*='.bloombergquint.com/'],
 
@@ -212,7 +214,7 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='hillreporter.com/'], a[href*='.euronews.com/'],
     a[href*='.indiatoday.in/'], a[href*='.economist.com/'],
     a[href*='nationalpost.com/'], a[href*='/triblive.com/'],
-    a[href*='/oilprice.com/'] {
+    a[href*='/oilprice.com/'], a[href*='/forward.com/'] {
         /* High */
         background-color: #cff ! important; /* light blue */
     }
@@ -234,7 +236,8 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='/fox28spokane.com/'], a[href*='.foxcarolina.com/'],
     a[href*='.fox4news.com/'], a[href*='.fox19.com/'], a[href*='fox6now.com/'],
     a[href*='fox43.com/'],
-    a[href*='fox13memphis.com/'],
+    a[href*='fox13memphis.com/'], a[href*='.fox5vegas.com/'],
+    a[href*='.fox35orlando.com/'], a[href*='.fox13news.com/'],
     
     a[href*='cnn.com'], a[href*='mirror.co.uk'], 
     a[href*='newsweek.com'], a[href*='hurriyetdailynews.com'],
@@ -390,6 +393,7 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='abcnews.go.com'], a[href*='.abc10.com/'], a[href*='.13abc.com/'],
     a[href*='/abc30.com/'], a[href*='.local10.com/'], a[href*='.wxyz.com/'],
     a[href*='.wcvb.com/'], a[href*='.kxxv.com/'], a[href*='/wset.com/'],
+    a[href*='abc7chicago.com/'],
 
     /* CBS - Eye logo */
     a[href*='.wibw.com/'], a[href*='cbsnews.com'], a[href*='.wkbn.com/'],
@@ -410,6 +414,7 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='.wsfa.com/'], a[href*='.wistv.com/'], a[href*='.wlwt.com/'],
     a[href*='.wavy.com/'], a[href*='.wect.com/'], a[href*='.kob.com/'],
     a[href*='.wpxi.com/'], a[href*='.wthr.com/'], a[href*='.kxan.com/'],
+    a[href*='.wwlp.com/'],
     
     a[href*='.bbc.com/'], a[href*='.bbc.co.uk/'],
     a[href*='/bbc.com/'], a[href*='/bbc.co.uk/'],
@@ -469,7 +474,8 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='/metro.co.uk/'], a[href*='/bgr.com/'], a[href*='.courant.com/'],
     a[href*='.eastbaytimes.com/'], a[href*='.newsday.com/'],
     a[href*='.mnn.com/'], a[href*='.hrw.org/'], a[href*='.suntimes.com/'],
-    a[href*='.sbs.com.au/'], a[href*='.pbs.org/'], a[href*='.revealnews.org/'] {
+    a[href*='.sbs.com.au/'], a[href*='.pbs.org/'], a[href*='.revealnews.org/'],
+    a[href*='/forward.com/'] {
         /* Left Center */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwU5IQMqsgAAACdJREFUOMtjYBgFtANpaf//E6OOiVKLhoEBjMQG4qxZjIyjSYtGAAAxUAbUce9dmgAAAABJRU5ErkJggg==)
@@ -572,7 +578,8 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='/fox28spokane.com/'], a[href*='.foxcarolina.com/'],
     a[href*='.fox4news.com/'], a[href*='.fox19.com/'], a[href*='fox6now.com/'],
     a[href*='fox43.com/'],
-    a[href*='fox13memphis.com/'],
+    a[href*='fox13memphis.com/'], a[href*='.fox5vegas.com/'],
+    a[href*='.fox35orlando.com/'], a[href*='.fox13news.com/'],
     
     a[href*='komonews.com'], a[href*='townhall.com'],
     a[href*='americanthinker.com'], a[href*='bizpacreview.com'],
@@ -779,7 +786,7 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='news8000.com/'], a[href*='plantbasednews.org/'],
     a[href*='iran-hrm.com/'], a[href*='madmimi.com/'],
     a[href*='thepointsguy.com/'], a[href*='stejay.co.uk/'],
-    a[href*='vettimes.co.uk/'] {
+    a[href*='vettimes.co.uk/'], a[href*='/journalstar.com/'] {
         /* Unknown, No Entry on MBFC */
         /* Cut'n'Paste:     , a[href*='vettimes.co.uk/']  */
         background-image:
