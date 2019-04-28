@@ -3,7 +3,7 @@
 @description Mask out sites I'm not really interested in
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.21
+@version     1.0.22
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -69,6 +69,7 @@
     a[href*='arrest' i],
     a[href*='assault' i],
     a[href*='autopsy' i],
+    a[href*='blotter' i],
     a[href*='carjack' i],
     a[href*='charged' i],
     a[href*='convict' i],
@@ -120,15 +121,17 @@
     a[href*='zzzz' i],
     a[href*='zzzz' i],
     a[href*='zzzz' i],
-    a[href*='zzzz' i],
     
     /* Sites I'm not interested in visiting, or don't work in Tor or
        without Javascript */
     a[href*='.avclub.com'],
     a[href*='.bicycling.com/'],
+    a[href*='.businessinsider.com/'],
+    a[href*='.cio.com'],
     a[href*='.cnbc.com'],
     a[href*='.cnet.com'],
     a[href*='.comingsoon.net/'],
+    a[href*='.ctpost.com/'],
     a[href*='.delish.com/'],
     a[href*='.eater.com/'],
     a[href*='.gq.com'],
@@ -164,6 +167,7 @@
     a[href*='/fashion/'],
     a[href*='/film/'],
     a[href*='/food/'],
+    a[href*='/football/'],
     a[href*='/giants/'],
     a[href*='/investing/'],
     a[href*='/irl/'],
@@ -177,12 +181,14 @@
     a[href*='/realestate.usnews'],
     a[href*='/realestate/'],
     a[href*='/saints/'],
+    a[href*='/sixers/'],
     a[href*='/sponsored/'],
     a[href*='/style/'],
     a[href*='/tv/'],
     a[href*='/video/'],
     a[href*='/weather/'],
     a[href*='/world-cafe/'],
+    a[href*='businessinsider.com'], /* 9 cult-favorite micellar waters that lift dirt and grime out of your skin like a magnet */
     a[href*='Entertainment'],
     a[href*='Sports_News'],
     a[href*='aarp.org'],
@@ -190,10 +196,12 @@
     a[href*='aol.com'],
     a[href*='apartmenttherapy.com'],
     a[href*='appleinsider.com'],
+    a[href*='archdaily'],
     a[href*='arrowheadpride'],
     a[href*='barkpost.com'],
     a[href*='bgr.com/'],
     a[href*='billboard.com'],
+    a[href*='bitcoin'],
     a[href*='bizjournals'],
     a[href*='bleacherreport.com'],
     a[href*='bloggingtheboys'],
@@ -228,6 +236,7 @@
     a[href*='golfdigest'],
     a[href*='golfweek'],
     a[href*='gossipcop.com'],
+    a[href*='grubstreet'],
     a[href*='guidelive.com'],
     a[href*='hellogiggles.com'],
     a[href*='hellomagazine'],
@@ -242,10 +251,12 @@
     a[href*='instyle.com'],
     a[href*='investors.com'],
     a[href*='jalopnik.com'],
+    a[href*='jezebel.com'],
     a[href*='justjared.com'],
     a[href*='justjaredjr'],
     a[href*='lifehacker.com'],
     a[href*='lifestyle'],
+    a[href*='lottery'],
     a[href*='lpga.com'],
     a[href*='luxatic'],
     a[href*='mansionglobal'],
@@ -256,6 +267,7 @@
     a[href*='medpagetoday.com'],
     a[href*='menshealth.com'],
     a[href*='mentalfloss'],
+    a[href*='mercurynews.com'], /* Video: Baby was scratched by ghost caught on camera, parents say */
     a[href*='mirror.co.uk'],
     a[href*='mlssoccer'],
     a[href*='mmafighting'],
@@ -301,6 +313,8 @@
     a[href*='stltoday.com'],
     a[href*='stuff.co.nz'],
     a[href*='stylecaster'],
+    a[href*='tarheel'],
+    a[href*='teamspeedkills'],
     a[href*='teamusa.org'],
     a[href*='thebiglead.com'],
     a[href*='theconversation.com'],
@@ -326,9 +340,9 @@
     a[href*='womenshealthmag'],
     a[href*='wsj.com'],
     a[href*='xxlmag.com'],
+    a[href*='yahoo'],
     a[href*='yanksgoyard'],
     a[href*='yardbarker'],
-    a[href*='zzzz'],
     a[href*='zzzz'],
     a[href*='zzzz'],
     a[href*='zzzz'],
