@@ -3,12 +3,12 @@
 @description Colorize news links according to MBFC ratings
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.42
+@version     1.0.43
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 /* Copy-paste block (just makes it easier to add new entries)
-     , a[href*='abc7chicago.com/']
+     , a[href*='.thehindubusinessline.com/']
 */
 
 @-moz-document domain("reddit.com"), domain("wikipedia.org"),
@@ -95,7 +95,8 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='.live5news.com/'], a[href*='.wdbj7.com/'], a[href*='.wwltv.com/'],
     a[href*='/local12.com/'], a[href*='.cbs58.com/'], a[href*='.wnky.com/'],
     a[href*='cbsaustin.com/'], a[href*='/kutv.com/'], a[href*='.thv11.com/'],
-    a[href*='.kxnet.com/'], a[href*='.cbslocal.com/'],
+    a[href*='.kxnet.com/'], a[href*='.cbslocal.com/'], a[href*='.kmov.com/'],
+    a[href*='.wymt.com/'],
     
     /* NBC - Peacock logo */
     a[href*='nbcsandiego.com'], a[href*='nbcwashington.com'],
@@ -214,7 +215,11 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='hillreporter.com/'], a[href*='.euronews.com/'],
     a[href*='.indiatoday.in/'], a[href*='.economist.com/'],
     a[href*='nationalpost.com/'], a[href*='/triblive.com/'],
-    a[href*='/oilprice.com/'], a[href*='/forward.com/'] {
+    a[href*='/oilprice.com/'], a[href*='/forward.com/'],
+    a[href*='.firstpost.com/'], a[href*='.thetrace.com/'],
+    a[href*='.timesofindia.com/'], a[href*='.sltrib.com/'],
+    a[href*='.consumerreports.org/'], a[href*='/elpais.com/'],
+    a[href*='.thehindubusinessline.com/'] {
         /* High */
         background-color: #cff ! important; /* light blue */
     }
@@ -238,8 +243,11 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='fox43.com/'],
     a[href*='fox13memphis.com/'], a[href*='.fox5vegas.com/'],
     a[href*='.fox35orlando.com/'], a[href*='.fox13news.com/'],
+
+    /* CNN */
+    a[href*='cnn.com'], a[href*='.news18.com/'], 
     
-    a[href*='cnn.com'], a[href*='mirror.co.uk'], 
+    a[href*='mirror.co.uk'], 
     a[href*='newsweek.com'], a[href*='hurriyetdailynews.com'],
     a[href*='buzzfeed.com'], a[href*='buzzfeednews.com'], a[href*='yahoo.com'],
     a[href*='middleeastmonitor.com'], a[href*='komonews.com'],
@@ -356,7 +364,10 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     /* MBFC Sites: Left */
     a[href*='huffingtonpost.com/'], a[href*='.huffingtonpost.ca/'],
 
-    a[href*='mirror.co.uk'], a[href*='cnn.com'], a[href*='newsweek.com'],
+    /* CNN */
+    a[href*='cnn.com'], a[href*='.news18.com/'], 
+
+    a[href*='mirror.co.uk'], a[href*='newsweek.com'],
     a[href*='middleeastmonitor.com'], a[href*='commondreams.org'],
     a[href*='newsweek.com'], a[href*='nymag.com'], a[href*='newrepublic.com'],
     a[href*='alternet.org'], a[href*='washingtonmonthly.com'],
@@ -375,7 +386,8 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='miaminewtimes.com/'], a[href*='boingboing.net/'],
     a[href*='.ecowatch.com/'], a[href*='/gizmodo.com/'],
     a[href*='.dailydot.com/'], a[href*='/jezebel.com/'],
-    a[href*='.rawstory.com/'], a[href*='hillreporter.com/'] {
+    a[href*='.rawstory.com/'], a[href*='hillreporter.com/'],
+    a[href*='.firstpost.com/'] {
         /* Left */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwYKtf4YZwAAACpJREFUOMtjYBgF1AfGxv//EyMGA0yUWjgMDGAkFGBnzzIyYhMbTW5UBAD/1wzS7pLB9AAAAABJRU5ErkJggg==)
@@ -401,7 +413,8 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='.live5news.com/'], a[href*='.wdbj7.com/'], a[href*='.wwltv.com/'],
     a[href*='/local12.com/'], a[href*='.cbs58.com/'], a[href*='.wnky.com/'],
     a[href*='cbsaustin.com/'], a[href*='/kutv.com/'], a[href*='.thv11.com/'],
-    a[href*='.kxnet.com/'], a[href*='.cbslocal.com/'],
+    a[href*='.kxnet.com/'], a[href*='.cbslocal.com/'], a[href*='.kmov.com/'],
+    a[href*='.wymt.com/'],
 
     /* NBC - Peacock logo */
     a[href*='nbcsandiego.com'], a[href*='nbcwashington.com'],
@@ -475,7 +488,8 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='.eastbaytimes.com/'], a[href*='.newsday.com/'],
     a[href*='.mnn.com/'], a[href*='.hrw.org/'], a[href*='.suntimes.com/'],
     a[href*='.sbs.com.au/'], a[href*='.pbs.org/'], a[href*='.revealnews.org/'],
-    a[href*='/forward.com/'] {
+    a[href*='/forward.com/'], a[href*='.thetrace.com/'],
+    a[href*='.sltrib.com/'], a[href*='/elpais.com/'] {
         /* Left Center */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwU5IQMqsgAAACdJREFUOMtjYBgFtANpaf//E6OOiVKLhoEBjMQG4qxZjIyjSYtGAAAxUAbUce9dmgAAAABJRU5ErkJggg==)
@@ -510,7 +524,8 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='/patch.com/'], a[href*='.economist.com/'],
     a[href*='.taiwannews.com.tw/'], a[href*='.i24news.tv/'],
     a[href*='.euronews.com/'], a[href*='.indiatoday.in/'],
-    a[href*='.rollcall.com/'], a[href*='.opensecrets.org/'] {
+    a[href*='.rollcall.com/'], a[href*='.opensecrets.org/'],
+    a[href*='.timesofindia.com/'], a[href*='.consumerreports.org/'] {
         /* Least Biased */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwwucxIUPAAAABxJREFUOMtjYBgFowAGZjL8Z5jJ8J8ssVEwHAAAWeoJkREpGMwAAAAASUVORK5CYII=)
@@ -529,7 +544,7 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='.livescience.com/'], a[href*='.sciencealert.com/'],
     a[href*='.nature.com/'], a[href*='.popularmechanics.com/'],
     a[href*='/phys.org/'], a[href*='.pnas.org/'],
-    a[href*='.smithsonianmag.com/'] {
+    a[href*='.smithsonianmag.com/'], a[href*='/neurosciencenews.com/'] {
         /* Science */
         /* Little blue and yellow flasks */
         background-image:
@@ -561,7 +576,7 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='.realclearpolitics.com/'], a[href*='.lfpress.com/'],
     a[href*='.azcentral.com/'], a[href*='.spokesman.com/'],
     a[href*='nationalpost.com/'], a[href*='/triblive.com/'],
-    a[href*='/oilprice.com/'] {
+    a[href*='/oilprice.com/'], a[href*='.thehindubusinessline.com/'] {
         /* Right Center */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwQ336A29AAAADJJREFUOMtjYBgFFANGXBL/09L+oyicNYuRJJORDUA3DBkw0cULJDufJl7AZ8gooBAAANugFfnCrgsLAAAAAElFTkSuQmCC)
@@ -765,7 +780,7 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='differentimpulse.com/'], a[href*='.kyodonews.net/'],
     a[href*='camdenadvertiser.com.au/'], a[href*='thedefensepost.com/'],
     a[href*='israelpalestinenews.org/'], a[href*='.tiredearth.com/'],
-    a[href*='.news18.com/'], a[href*='.businesstimes.com.sg/'],
+    a[href*='.businesstimes.com.sg/'],
     a[href*='.alberta.ca/'], a[href*='/luxtimes.lu/'],
     a[href*='.tellerreport.com/'], a[href*='icelandmonitor.mbl.is/'],
     a[href*='.asiaone.com/'], a[href*='.avclub.com/'],
@@ -786,9 +801,12 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='news8000.com/'], a[href*='plantbasednews.org/'],
     a[href*='iran-hrm.com/'], a[href*='madmimi.com/'],
     a[href*='thepointsguy.com/'], a[href*='stejay.co.uk/'],
-    a[href*='vettimes.co.uk/'], a[href*='/journalstar.com/'] {
+    a[href*='vettimes.co.uk/'], a[href*='/journalstar.com/'],
+    a[href*='chicagobusiness.com/'], a[href*='sanjoseinside.com/'],
+    a[href*='/click2houston.com/'], a[href*='technode.com/'],
+    a[href*='.billboard.com/'] {
         /* Unknown, No Entry on MBFC */
-        /* Cut'n'Paste:     , a[href*='vettimes.co.uk/']  */
+        /* Cut'n'Paste:     , a[href*='.billboard.com/']  */
         background-image:
         url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsREB0U8b0K0wAAADlJREFUOMtjYBgFjPgk04wZ/sPYs87iV4tXc5oxw39kPjJgwmUAyTbicwku26mimWlwx/Ew8AJdAABtFRLIrXPiBQAAAABJRU5ErkJggg==)
            ! important;
