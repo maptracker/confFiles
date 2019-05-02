@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name        War on the Rocks
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("warontherocks.com") {
+    .member-button-container, .wotr_article_share, .wotr_footer,
+    .category-title {
+        display: none ! important;   
+    }
+}
