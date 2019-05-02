@@ -1,15 +1,16 @@
 /* ==UserStyle==
 @name        Boston Globe
-@description Mask out various bits
+@description Mask out various bits, unhide content
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("bostonglobe.com") {
     #masthead, #section-nav, .tools, footer, .inlineNewsletter__wrapper,
-    .inline-newsletter, aside { 
+    .inline-newsletter, aside, #continue_button { 
         display: none ! important; 
     }
+    .hidden { display: unset ! important; }
 }
