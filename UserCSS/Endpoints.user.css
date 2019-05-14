@@ -1,0 +1,17 @@
+/* ==UserStyle==
+@name        Endpoints News
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("endpts.com") {
+    #header-subscribe, #header-twitter, a[title="Contact author"],
+    .sharebuttons,
+    #howwemakemoney, .ep_ad_container, #comments, #afterarticle,
+    #header-contact, #left-nav, #header_cabinet, footer, .section-marker {
+        display: none ! important;
+    }
+}
