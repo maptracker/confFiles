@@ -3,7 +3,7 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -13,7 +13,8 @@
     .type-video, .box-comments, .syndication-btn, #i100-0,
     #most_popular-0, #ines_video_sidebar-0, .fb-info, .partner-slots,
     .taboola, .hero-wrapper, [class*='video'], .inline-media, #comments, footer,
-    .share-bar-syndication, .subscription, .article-actions, .sidebar {
+    .share-bar-syndication, .subscription, .article-actions, .sidebar,
+    .bookmark-lightbox, .login-sidebar, .signup-comp, .quick-menu {
         display: none ! important;
     }
 }
