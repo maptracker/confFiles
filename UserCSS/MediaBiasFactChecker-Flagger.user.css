@@ -3,16 +3,17 @@
 @description Colorize news links according to MBFC ratings
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.43
+@version     1.0.44
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 /* Copy-paste block (just makes it easier to add new entries)
-     , a[href*='.thehindubusinessline.com/']
+     , a[href*='.aninews.in/']
 */
 
 @-moz-document domain("reddit.com"), domain("wikipedia.org"),
-domain("bing.com"), domain("google.com"), domain("startpage.com") {
+domain("bing.com"), domain("google.com"), domain("startpage.com"),
+domain("apnews.com") {
     /* ---    ---    ---    ---    ---    ---    ---    ---    ---    ---
        Media Bias Fact Check
        https://mediabiasfactcheck.com
@@ -58,17 +59,22 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='/bbc.com/'], a[href*='/bbc.co.uk/'],
 
     a[href*='.npr.org/'], a[href*='/n.pr/'], a[href*='.wesa.fm/'],
-       
+
+    a[href*='reuters.com'], a[href*='/reut.rs/'],
+    
+    a[href*='/phys.org/'], a[href*='.phys.org/'],
+
     a[href*='apnews.com'], a[href*='.jstor.org/'], a[href*='.nature.com/'],
-    a[href*='reuters.com'], a[href*='.who.int/'], a[href*='.icij.org'],
+    a[href*='.who.int/'], a[href*='.icij.org'],
     a[href*='.technologyreview.com/'], a[href*='.rollcall.com/'],
     a[href*='.sciencemag.org/'], a[href*='.alarabiya.net/'],
     a[href*='/ballotpedia.org/'], a[href*='.pewresearch.org/'],
     a[href*='.sciencedaily.com/'], a[href*='.astronomy.com/'],
-    a[href*='.space.com/'], a[href*='/phys.org/'], a[href*='.pnas.org/'],
+    a[href*='.space.com/'], a[href*='.pnas.org/'],
     a[href*='.popularmechanics.com/'], a[href*='.smithsonianmag.com/'],
     a[href*='.sciencealert.com/'], a[href*='.factcheck.org/'],
-    a[href*='.opensecrets.org/'] {
+    a[href*='.opensecrets.org/']
+    {
         /* Very High */
         background-color: #9f9 ! important; /* light green */
     }
@@ -116,6 +122,7 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='businessinsider.com'], a[href*='.businessinsider.de/'],
 
     a[href*='huffingtonpost.com/'], a[href*='.huffingtonpost.ca/'],
+    a[href*='.huffpost.com/'],
 
     a[href*='.dw.com/'], a[href*='/dw.com/'],
     
@@ -154,7 +161,7 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='desertsun.com'], a[href*='.france24.com'], a[href*='.trust.org'],
     a[href*='newyorker.com'], a[href*='japantoday.com'], a[href*='.vox.com/'],
     a[href*='arabnews.com'], a[href*='irishtimes.com'], a[href*='.wired.com'],
-    a[href*='bangkokpost.com'], a[href*='/time.com/'],
+    a[href*='bangkokpost.com'], a[href*='/time.com/'], a[href*='.aninews.in/'],
     a[href*='.stuff.co.nz'], a[href*='weeklystandard.com'], a[href*='.nj.com/'],
     a[href*='.smh.com.au'], a[href*='theintercept.com'], a[href*='.freep.com/'],
     a[href*='miamiherald.com'], a[href*='seattletimes.com'],
@@ -219,7 +226,9 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='.firstpost.com/'], a[href*='.thetrace.com/'],
     a[href*='.timesofindia.com/'], a[href*='.sltrib.com/'],
     a[href*='.consumerreports.org/'], a[href*='/elpais.com/'],
-    a[href*='.thehindubusinessline.com/'] {
+    a[href*='.thehindubusinessline.com/'], a[href*='reason.com/'],
+    a[href*='berkeleyside.com/']
+    {
         /* High */
         background-color: #cff ! important; /* light blue */
     }
@@ -272,7 +281,8 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='.thesun.co.uk/'], a[href*='.thewrap.com/'],
     a[href*='.ibtimes.com/'], a[href*='/jezebel.com/'],
     a[href*='.lfpress.com/'], a[href*='.rawstory.com/'],
-    a[href*='dailysabah.com/'] {
+    a[href*='dailysabah.com/'], a[href*='.tasnimnews.com/']
+    {
         /* Mixed */
         background-color: #ff6 ! important; /* yellow */
     }
@@ -315,7 +325,9 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='.cnsnews.com/'], a[href*='breaking911.com/'],
     a[href*='southafricatoday.net/'], a[href*='ancient-origins.net/'],
     a[href*='.zerohedge.com/'], a[href*='.debka.com/'], a[href*='.ewg.org/'],
-    a[href*='.ecowatch.com/'], a[href*='.dailystar.co.uk/'] {
+    a[href*='.ecowatch.com/'], a[href*='.dailystar.co.uk/']
+    {
+        /* Pseudoscience */
         background-color: #303 ! important;
         color: #ff6 ! important;
     }
@@ -329,7 +341,8 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
        satire and do not attempt to deceive"
    */
     a[href*='cracked.com'], a[href*='/babylonbee.com/'],
-    a[href*='.theonion.com/'] {
+    a[href*='.theonion.com/']
+    {
         background-color: #ccc ! important; /* light gray */
         /* Upside down text:
             https://priteshgupta.com/2011/09/flip-or-reverse-text-using-css/
@@ -352,7 +365,8 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
        No MBFC Entry:   ? Brown
     
     /* MBFC Sites: Extreme Left */
-    a[href*='liberalsociety.com'] {
+    a[href*='liberalsociety.com']
+    {
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwYZMUBZuQAAACRJREFUOMtjYBgF1AL//5MrxkSp1cPAAEbsgcPISLzYKKAYAACjxQwEXv/lEAAAAABJRU5ErkJggg==)
            ! important;
@@ -363,6 +377,7 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     
     /* MBFC Sites: Left */
     a[href*='huffingtonpost.com/'], a[href*='.huffingtonpost.ca/'],
+    a[href*='.huffpost.com/']
 
     /* CNN */
     a[href*='cnn.com'], a[href*='.news18.com/'], 
@@ -387,7 +402,8 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='.ecowatch.com/'], a[href*='/gizmodo.com/'],
     a[href*='.dailydot.com/'], a[href*='/jezebel.com/'],
     a[href*='.rawstory.com/'], a[href*='hillreporter.com/'],
-    a[href*='.firstpost.com/'] {
+    a[href*='.firstpost.com/']
+    {
         /* Left */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwYKtf4YZwAAACpJREFUOMtjYBgF1AfGxv//EyMGA0yUWjgMDGAkFGBnzzIyYhMbTW5UBAD/1wzS7pLB9AAAAABJRU5ErkJggg==)
@@ -489,7 +505,9 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='.mnn.com/'], a[href*='.hrw.org/'], a[href*='.suntimes.com/'],
     a[href*='.sbs.com.au/'], a[href*='.pbs.org/'], a[href*='.revealnews.org/'],
     a[href*='/forward.com/'], a[href*='.thetrace.com/'],
-    a[href*='.sltrib.com/'], a[href*='/elpais.com/'] {
+    a[href*='.sltrib.com/'], a[href*='/elpais.com/'],
+    a[href*='berkeleyside.com/']
+    {
         /* Left Center */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwU5IQMqsgAAACdJREFUOMtjYBgFtANpaf//E6OOiVKLhoEBjMQG4qxZjIyjSYtGAAAxUAbUce9dmgAAAABJRU5ErkJggg==)
@@ -500,13 +518,15 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     }
     
     /* MBFC Sites: Least-Biased */
-    a[href*='.upi.com'], a[href*='apnews.com'], a[href*='reuters.com'],
+    a[href*='reuters.com'], a[href*='/reut.rs/'],
+
+    a[href*='.upi.com'], a[href*='apnews.com'],
     a[href*='bridgemi.com'], a[href*='patheos.com'], a[href*='voanews.com'],
     a[href*='.abc.net.au/'], a[href*='/abc.net.au/'],
     a[href*='nzherald.co.nz'] , a[href*='.pnj.com'], a[href*='.rte.ie/'],
     a[href*='politifact.com'], a[href*='foreignpolicy.com'],
     a[href*='stardem.com'], a[href*='.jpost.com'], a[href*='bangkokpost.com'],
-    a[href*='/scmp.com/'], a[href*='.scmp.com/'],
+    a[href*='/scmp.com/'], a[href*='.scmp.com/'], a[href*='.aninews.in/'],
     a[href*='.icij.org'], a[href*='.afp.com/'],
     a[href*='.nhk.or.jp/'], a[href*='bellingcat.com/'],
     a[href*='.atimes.com/'], a[href*='.alarabiya.net/'],
@@ -525,7 +545,8 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='.taiwannews.com.tw/'], a[href*='.i24news.tv/'],
     a[href*='.euronews.com/'], a[href*='.indiatoday.in/'],
     a[href*='.rollcall.com/'], a[href*='.opensecrets.org/'],
-    a[href*='.timesofindia.com/'], a[href*='.consumerreports.org/'] {
+    a[href*='.timesofindia.com/'], a[href*='.consumerreports.org/']
+    {
         /* Least Biased */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwwucxIUPAAAABxJREFUOMtjYBgFowAGZjL8Z5jJ8J8ssVEwHAAAWeoJkREpGMwAAAAASUVORK5CYII=)
@@ -536,6 +557,8 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     }
     
     /* MBFC Sites: Pro-Science */
+    a[href*='/phys.org/'], a[href*='.phys.org/'],
+
     a[href*='nationalgeographic.com'], a[href*='.who.int/'],
     a[href*='.jstor.org/'], a[href*='/arstechnica.com/'],
     a[href*='.technologyreview.com/'], a[href*='.sciencemag.org/'],
@@ -543,8 +566,9 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='.cnet.com/'], a[href*='.zdnet.com/'], a[href*='.space.com/'],
     a[href*='.livescience.com/'], a[href*='.sciencealert.com/'],
     a[href*='.nature.com/'], a[href*='.popularmechanics.com/'],
-    a[href*='/phys.org/'], a[href*='.pnas.org/'],
-    a[href*='.smithsonianmag.com/'], a[href*='/neurosciencenews.com/'] {
+    a[href*='.pnas.org/'],
+    a[href*='.smithsonianmag.com/'], a[href*='/neurosciencenews.com/']
+    {
         /* Science */
         /* Little blue and yellow flasks */
         background-image:
@@ -576,7 +600,9 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='.realclearpolitics.com/'], a[href*='.lfpress.com/'],
     a[href*='.azcentral.com/'], a[href*='.spokesman.com/'],
     a[href*='nationalpost.com/'], a[href*='/triblive.com/'],
-    a[href*='/oilprice.com/'], a[href*='.thehindubusinessline.com/'] {
+    a[href*='/oilprice.com/'], a[href*='reason.com/'],
+    a[href*='.thehindubusinessline.com/']
+    {
         /* Right Center */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwQ336A29AAAADJJREFUOMtjYBgFFANGXBL/09L+oyicNYuRJJORDUA3DBkw0cULJDufJl7AZ8gooBAAANugFfnCrgsLAAAAAElFTkSuQmCC)
@@ -608,7 +634,9 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='.powerlineblog.com/'], a[href*='.lifezette.com/'],
     a[href*='.newsbusters.org/'], a[href*='southafricatoday.net/'],
     a[href*='.debka.com/'] , a[href*='/bearingarms.com/'],
-    a[href*='.thesun.co.uk/'], a[href*='dailysabah.com/'] {
+    a[href*='.thesun.co.uk/'], a[href*='dailysabah.com/'],
+    a[href*='.tasnimnews.com/']
+    {
         /* Right */
         background-image:
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwQkWx53KgAAADhJREFUOMtjYBgFFANGdIH/xsb/URScPcuITQyniciKYWxsYjDARFMvwJyKTYx+XkDXgEtsFFAAALHMJ+9VjEruAAAAAElFTkSuQmCC)
@@ -622,7 +650,8 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='rinf.com'], a[href*='breitbart.com'],
     a[href*='.conservapedia.com/'], a[href*='.jihadwatch.org/'],
     a[href*='.thegatewaypundit.com/'], a[href*='.cnsnews.com/'],
-    a[href*='.zerohedge.com/'] {
+    a[href*='.zerohedge.com/']
+    {
         background-image:
         url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsRDwMu9IoI8wAAADVJREFUOMtjYBgFFANGBgYGhv8MDP/RBBmJFWNANwDGJlaMiepeYCRRjDZeQA8sUsRGARkAAHTgKenRjGaPAAAAAElFTkSuQmCC)
            ! important;
@@ -754,7 +783,9 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='.popsci.com/'], a[href*='.nhk.or.jp/'], a[href*='.11alive.com/'],
     a[href*='japantimes.co.jp/'], a[href*='.usnews.com/'],
     a[href*='.orlandosentinel.com/'], a[href*='pressrepublican.com/'],
-    a[href*='.theregister.co.uk/'] {
+    a[href*='.theregister.co.uk/']
+    {
+        /* Tor-Unfriendly / needs Javascript */
         /* Cut'n'Paste:     , a[href*='pressrepublican.com/']  */
         /* 'do not enter' circle with slash */
 
@@ -804,9 +835,11 @@ domain("bing.com"), domain("google.com"), domain("startpage.com") {
     a[href*='vettimes.co.uk/'], a[href*='/journalstar.com/'],
     a[href*='chicagobusiness.com/'], a[href*='sanjoseinside.com/'],
     a[href*='/click2houston.com/'], a[href*='technode.com/'],
-    a[href*='.billboard.com/'] {
+    a[href*='.billboard.com/'], a[href*='.fin24.com/'],
+    a[href*='/spectrumlocalnews.com/']
+    {
         /* Unknown, No Entry on MBFC */
-        /* Cut'n'Paste:     , a[href*='.billboard.com/']  */
+        /* Cut'n'Paste:     , a[href*='/spectrumlocalnews.com/']  */
         background-image:
         url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsREB0U8b0K0wAAADlJREFUOMtjYBgFjPgk04wZ/sPYs87iV4tXc5oxw39kPjJgwmUAyTbicwku26mimWlwx/Ew8AJdAABtFRLIrXPiBQAAAABJRU5ErkJggg==)
            ! important;
