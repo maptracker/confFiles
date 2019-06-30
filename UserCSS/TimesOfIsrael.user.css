@@ -1,0 +1,20 @@
+/* ==UserStyle==
+@name        Times if Israel
+@description Show toggled content, mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("timesofisrael.com") {
+    .article-content-container { 
+        overflow: unset ! important; display: unset ! important; 
+    }
+    .main { overflow-x: unset ! important; }
+
+    .article-read-more, .sidebar, .newsletter-promo, .sidebar-control,
+    .social, #comments {
+        display: none ! important;
+    }
+}
