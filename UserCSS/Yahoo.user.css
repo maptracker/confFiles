@@ -1,0 +1,32 @@
+/* ==UserStyle==
+@name        Yahoo
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("yahoo.com") {
+    #leftContent, .type_contentcarousel, .type_footer, .type_subfooter,
+    .mul-cont, .type_ads, .specialevents, .type_marketindices, #yn-vitality ,
+    .carousel, .header-navigation, .universal-header, iframe, .footer-container,
+    .caas-readmore-collapse, .caas-card-loader::after, .modalRight, .YDC-UH,
+    svg, .yvideo, .CompanionSlot, .caas-img-loader
+    { 
+        display: none ! important;
+    }
+
+    #disposableEmailAddresses_scroller { 
+        height: 40em ! important; 
+    }
+
+    .disposableAddressEducation, #yfi_fidelity, #yfi_fp_featured_videos,
+    #yfi_fp_investing_ideas { 
+        display: none ! important; 
+    }
+
+    .caas-readmore-collapse ~ * { 
+        display: unset ! important; 
+    }
+}
