@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name        Extra Fabulous
+@description Remove a heap o' whitespace
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("extrafabulouscomics.com") {
+    #header, .widget_custom_html, .widget_image, .widget_text, #disqus_thread {
+        display: none ! important;
+    }
+}
