@@ -3,7 +3,7 @@
 @description Mask add block in widget panel
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.1
+@version     1.0.2
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -29,6 +29,17 @@
         display: none ! important; 
     }
 
+    /* Thanks, no thanks */
+    div[data-subreddit="PewdiepieSubmissons"], div[data-subreddit="madlads"], 
+    div[data-subreddit="PrequelMemes"], div[data-subreddit="wholesomememes"],
+    div[data-subreddit="me_irl"], div[data-subreddit="teenagers"],
+    div[data-subreddit="BlackPeopleTwitter"], div[data-subreddit="videos"],
+    div[data-subreddit="WhitePeopleTwitter"],
+    div[data-subreddit="unpopularopinion"],
+    div[data-subreddit="PublicFreakout"] { 
+        display: none ! important; 
+    }
+    
     /* Pop-up menu for hamburger - interfers with essentially all other
        elements */
     .gCimVU::before { width: 0px ! important; }
