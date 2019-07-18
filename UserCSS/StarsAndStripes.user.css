@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name        Stars and Stripes
+@description Mask out irritations, show content
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("stripes.com") {
+    html { overflow-y: unset ! important;}
+    main { float: unset ! important; }
+    .off-canvas-wrap { overflow: unset ! important; }
+
+    #related_articles_ad_block, #social-media, .stripes-carousel-block,
+    #social-bar-top {
+        display: none ! important;
+    }
+}
