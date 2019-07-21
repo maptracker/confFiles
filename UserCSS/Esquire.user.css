@@ -3,7 +3,7 @@
 @description Deal with aggresively broken NoJS styling
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -15,6 +15,10 @@
         display: unset ! important;
         visibility: unset ! important;
     }
+
+    .body-link, blockquote { position: unset ! important; }
+    blockquote { color: unset ! important; }
+    body { font-kerning: unset ! important; }
 
     .no-js body .vertical-ad, .no-js body script, .no-js body footer,
     .no-js body .seo-tags-container, .no-js body .transporter,
