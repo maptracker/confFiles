@@ -1,0 +1,20 @@
+/* ==UserStyle==
+@name        Mirror
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("mirror.co.uk") {
+    header {
+        display: none !important;
+    }
+    body { margin-top: unset !important; }
+
+    *[data-mod="mostRead"], .top-stories, .mod-video, .embedded-image-grid,
+    .skinny-signup, footer, figure, .sharebar, #social-follow {
+        display: none ! important;
+    }
+}
