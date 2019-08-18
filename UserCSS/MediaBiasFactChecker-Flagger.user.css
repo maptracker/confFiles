@@ -785,7 +785,7 @@ domain("apnews.com") {
    */
     
     a[href*='.cnbc.com'], a[href*='/cnbc.com'], a[href*='.wgrz.com/'],
-    a[href*='.wvtm13.com/'],
+    a[href*='.wvtm13.com/'], a[href*='.scmp.com/'],
     a[href*='.popsci.com/'], a[href*='.nhk.or.jp/'], a[href*='.11alive.com/'],
     a[href*='japantimes.co.jp/'], a[href*='.usnews.com/'],
     a[href*='.orlandosentinel.com/'], a[href*='pressrepublican.com/'],
