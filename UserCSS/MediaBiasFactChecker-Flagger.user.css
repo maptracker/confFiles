@@ -8,7 +8,7 @@
 ==/UserStyle== */
 
 /* Copy-paste block (just makes it easier to add new entries)
-     , a[href*='.aninews.in/']
+     , a[href*='.businessinsider.my/']
 */
 
 @-moz-document domain("reddit.com"), domain("wikipedia.org"),
@@ -59,6 +59,7 @@ domain("apnews.com") {
     a[href*='/bbc.com/'], a[href*='/bbc.co.uk/'],
 
     a[href*='.npr.org/'], a[href*='/n.pr/'], a[href*='.wesa.fm/'],
+    a[href*='/1010wcsi.com/'],
 
     a[href*='reuters.com'], a[href*='/reut.rs/'],
     
@@ -93,7 +94,7 @@ domain("apnews.com") {
     a[href*='abcnews.go.com'], a[href*='.abc10.com/'], a[href*='.13abc.com/'],
     a[href*='/abc30.com/'], a[href*='.local10.com/'], a[href*='.wxyz.com/'],
     a[href*='.wcvb.com/'], a[href*='.kxxv.com/'], a[href*='/wset.com/'],
-    a[href*='abc7chicago.com/'],
+    a[href*='abc7chicago.com/'], a[href*='/6abc.com/'],
     
     /* CBS - Eye logo */
     a[href*='.wibw.com/'], a[href*='cbsnews.com'], a[href*='.wkbn.com/'],
@@ -115,11 +116,12 @@ domain("apnews.com") {
     a[href*='.wsfa.com/'], a[href*='.wistv.com/'], a[href*='.wlwt.com/'],
     a[href*='.wavy.com/'], a[href*='.wect.com/'], a[href*='.kob.com/'],
     a[href*='.wpxi.com/'], a[href*='.wthr.com/'], a[href*='.kxan.com/'],
-    a[href*='.wwlp.com/'],
+    a[href*='.wwlp.com/'], a[href*='.wjhg.com/'],
     
     a[href*='bloomberg.com'], a[href*='.bloombergquint.com/'],
 
     a[href*='businessinsider.com'], a[href*='.businessinsider.de/'],
+    a[href*='.businessinsider.my/'],
 
     a[href*='huffingtonpost.com/'], a[href*='.huffingtonpost.ca/'],
     a[href*='.huffpost.com/'],
@@ -225,12 +227,13 @@ domain("apnews.com") {
     a[href*='hillreporter.com/'], a[href*='.euronews.com/'],
     a[href*='.indiatoday.in/'], a[href*='.economist.com/'],
     a[href*='nationalpost.com/'], a[href*='/triblive.com/'],
-    a[href*='/oilprice.com/'], a[href*='/forward.com/'],
+    a[href*='/oilprice.com/'], a[href*='/forward.com/'], a[href*='/nos.nl/'],
     a[href*='.firstpost.com/'], a[href*='.thetrace.com/'],
     a[href*='.timesofindia.com/'], a[href*='.sltrib.com/'],
     a[href*='.consumerreports.org/'], a[href*='/elpais.com/'],
     a[href*='.thehindubusinessline.com/'], a[href*='reason.com/'],
-    a[href*='berkeleyside.com/']
+    a[href*='berkeleyside.com/'], a[href*='.abs-cbn.com/'],
+    a[href*='.vulture.com/']
     {
         /* High */
         background-color: #cff ! important; /* light blue */
@@ -424,7 +427,7 @@ domain("apnews.com") {
     a[href*='abcnews.go.com'], a[href*='.abc10.com/'], a[href*='.13abc.com/'],
     a[href*='/abc30.com/'], a[href*='.local10.com/'], a[href*='.wxyz.com/'],
     a[href*='.wcvb.com/'], a[href*='.kxxv.com/'], a[href*='/wset.com/'],
-    a[href*='abc7chicago.com/'],
+    a[href*='abc7chicago.com/'], a[href*='/6abc.com/'],
 
     /* CBS - Eye logo */
     a[href*='.wibw.com/'], a[href*='cbsnews.com'], a[href*='.wkbn.com/'],
@@ -446,7 +449,7 @@ domain("apnews.com") {
     a[href*='.wsfa.com/'], a[href*='.wistv.com/'], a[href*='.wlwt.com/'],
     a[href*='.wavy.com/'], a[href*='.wect.com/'], a[href*='.kob.com/'],
     a[href*='.wpxi.com/'], a[href*='.wthr.com/'], a[href*='.kxan.com/'],
-    a[href*='.wwlp.com/'],
+    a[href*='.wwlp.com/'], a[href*='.wjhg.com/'],
     
     a[href*='.bbc.com/'], a[href*='.bbc.co.uk/'],
     a[href*='/bbc.com/'], a[href*='/bbc.co.uk/'],
@@ -454,10 +457,12 @@ domain("apnews.com") {
     a[href*='bloomberg.com'], a[href*='.bloombergquint.com/'],
 
     a[href*='businessinsider.com'], a[href*='.businessinsider.de/'],
+    a[href*='.businessinsider.my/'],
 
     a[href*='buzzfeed.com'], a[href*='buzzfeednews.com'],
 
     a[href*='.npr.org/'], a[href*='/n.pr/'], a[href*='.wesa.fm/'],
+    a[href*='/1010wcsi.com/'],
 
     a[href*='politico.com'], a[href*='.politico.eu/'],
 
@@ -512,7 +517,7 @@ domain("apnews.com") {
     a[href*='.sbs.com.au/'], a[href*='.revealnews.org/'],
     a[href*='/forward.com/'], a[href*='.thetrace.com/'],
     a[href*='.sltrib.com/'], a[href*='/elpais.com/'],
-    a[href*='berkeleyside.com/']
+    a[href*='berkeleyside.com/'], a[href*='.vulture.com/']
     {
         /* Left Center */
         background-image:
@@ -551,7 +556,8 @@ domain("apnews.com") {
     a[href*='.taiwannews.com.tw/'], a[href*='.i24news.tv/'],
     a[href*='.euronews.com/'], a[href*='.indiatoday.in/'],
     a[href*='.rollcall.com/'], a[href*='.opensecrets.org/'],
-    a[href*='.timesofindia.com/'], a[href*='.consumerreports.org/']
+    a[href*='.timesofindia.com/'], a[href*='.consumerreports.org/'],
+    a[href*='.abs-cbn.com/']
     {
         /* Least Biased */
         background-image:
@@ -597,7 +603,7 @@ domain("apnews.com") {
     a[href*='.heraldsun.com.au/'], a[href*='.forbes.com/'],
     a[href*='.thenational.ae/'], a[href*='/nypost.com/'],
     a[href*='.deseretnews.com/'], a[href*='.theglobeandmail.com/'],
-    a[href*='sputniknews.com/'], a[href*='antiwar.com/'],
+    a[href*='sputniknews.com/'], a[href*='antiwar.com/'], a[href*='/nos.nl/'],
     a[href*='.theepochtimes.com/'], a[href*='.ocregister.com/'],
     a[href*='durangoherald.com/'], a[href*='/the-japan-news.com/'],
     a[href*='.jns.org/'], a[href*='.al.com/'], a[href*='/tass.com/'],
@@ -842,7 +848,8 @@ domain("apnews.com") {
     a[href*='chicagobusiness.com/'], a[href*='sanjoseinside.com/'],
     a[href*='/click2houston.com/'], a[href*='technode.com/'],
     a[href*='.billboard.com/'], a[href*='.fin24.com/'],
-    a[href*='/spectrumlocalnews.com/']
+    a[href*='/spectrumlocalnews.com/'], a[href*='/news-nw.com/'],
+    a[href*='/thelondoneconomic.com/']
     {
         /* Unknown, No Entry on MBFC */
         /* Cut'n'Paste:     , a[href*='/spectrumlocalnews.com/']  */
