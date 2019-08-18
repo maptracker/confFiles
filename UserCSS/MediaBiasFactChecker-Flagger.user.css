@@ -3,7 +3,7 @@
 @description Colorize news links according to MBFC ratings
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.44
+@version     1.0.45
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -130,6 +130,9 @@ domain("apnews.com") {
 
     a[href*='/usnews.com/'], a[href*='.usnews.com/'],
 
+    /* PBS and affiliates */
+    a[href*='.pbs.org/'], a[href*='.opb.org/'],
+
     a[href*='washingtonpost.com'], a[href*='theguardian.com'],
     a[href*='.upi.com'], a[href*='.tmj4.com'],
     a[href*='commondreams.org'], a[href*='nymag.com'],
@@ -214,7 +217,7 @@ domain("apnews.com") {
     a[href*='.snopes.com/'], a[href*='.mnn.com/'], a[href*='.hrw.org/'],
     a[href*='/bgr.com/'], a[href*='.dailydot.com/'], a[href*='.courant.com/'],
     a[href*='.realclearpolitics.com/'], a[href*='.eastbaytimes.com/'],
-    a[href*='.newsday.com/'], a[href*='.csmonitor.com/'], a[href*='.pbs.org/'],
+    a[href*='.newsday.com/'], a[href*='.csmonitor.com/'], 
     a[href*='.sbs.com.au/'], a[href*='/tass.com/'], a[href*='/slate.com/'],
     a[href*='.taiwannews.com.tw/'], a[href*='.suntimes.com/'],
     a[href*='.azcentral.com/'], a[href*='.i24news.tv/'],
@@ -460,6 +463,9 @@ domain("apnews.com") {
 
     a[href*='/usnews.com/'], a[href*='.usnews.com/'],
 
+    /* PBS and affiliates */
+    a[href*='.pbs.org/'], a[href*='.opb.org/'],
+
     a[href*='washingtonpost.com'], a[href*='theguardian.com'], 
     a[href*='news.com.au'], a[href*='.sky.com'], 
     a[href*='thehill.com'], a[href*='hurriyetdailynews.com'],
@@ -503,7 +509,7 @@ domain("apnews.com") {
     a[href*='/metro.co.uk/'], a[href*='/bgr.com/'], a[href*='.courant.com/'],
     a[href*='.eastbaytimes.com/'], a[href*='.newsday.com/'],
     a[href*='.mnn.com/'], a[href*='.hrw.org/'], a[href*='.suntimes.com/'],
-    a[href*='.sbs.com.au/'], a[href*='.pbs.org/'], a[href*='.revealnews.org/'],
+    a[href*='.sbs.com.au/'], a[href*='.revealnews.org/'],
     a[href*='/forward.com/'], a[href*='.thetrace.com/'],
     a[href*='.sltrib.com/'], a[href*='/elpais.com/'],
     a[href*='berkeleyside.com/']
