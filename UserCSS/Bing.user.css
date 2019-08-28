@@ -3,7 +3,7 @@
 @description Mask out sites I'm not really interested in
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.22
+@version     1.0.23
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -143,6 +143,7 @@
     a[href*='.nascar.com/'],
     a[href*='.nba.com/'],
     a[href*='.nhl.com/'],
+    a[href*='.msn.com/'],
     a[href*='.oregonlive.com/'],
     a[href*='.pe.com/'],
     a[href*='.scout.com'],
