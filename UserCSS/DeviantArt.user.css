@@ -3,12 +3,15 @@
 @description Mask one object
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("deviantart.com") {
-    #printtabscontainer {
+    #printtabscontainer, #outdated_banner,
+    div[data-hook="comments_thread"], 
+    div[data-hook="profile-comments-widget"],
+    a[href^="https://about.deviantart.com"] {
         display: none ! important
     }
 }
