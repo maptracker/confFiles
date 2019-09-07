@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name        Spaceflight Now
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("spaceflightnow.com") {
+    .mh-social-top, .mh-social-bottom, #custom_html-2, .widget_custom_html,
+    .mh-header-bar-bottom-right, .lazy-hidden{
+        display: none ! important;
+    }
+}
