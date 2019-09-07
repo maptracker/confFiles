@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name        Zimbabwe Herald
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("herald.co.zw") {
+    body { background-image: none ! important; }
+    #container { top: unset ! important; width: unset ! important; }
+
+    aside {display: none ! important; }
+}

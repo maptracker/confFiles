@@ -1,0 +1,30 @@
+/* ==UserStyle==
+@name        Wall Street Journal
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("wsj.com") {
+    .footer_columns, .footnotes , #morein, #fblikebot, #abt.at.emailthis,
+    .stBtn-email, .stBtn-reprint, .header, #hat_div,
+    .art_tabbed_nav, .sTools, #newsreeliframe, .wsjSubnav, .wsjMainNav,
+    .margin-left-big, .footer_bar, footer, .article-chiclet, .unitType-reel,
+    header, .adSummary, .masthead, #hat_portal,
+    .aTools, .articleTools_bottom, #abt.at.container, .video-list,
+    #wsjdn-links, #about-links, #tools-links, #help-links, #bottom-links,
+    .top, .hamburger, .sponsored, .footer, #footer, #newReel, .unsub-lock
+    { 
+        display: none ! important; 
+    }
+
+    .stream_c { 
+        width: 100em ! important; 
+    }
+
+    #articles_right_rail { 
+        width: 300px; 
+    }
+}

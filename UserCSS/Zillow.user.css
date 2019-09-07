@@ -1,0 +1,18 @@
+/* ==UserStyle==
+@name        Zillow
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("zillow.com") {
+    #seller-lead-contact-form-c, .owner-dashboard, #seller-lead-contact-form-ab,
+    .zsgxw-subfooter, .hdp-ov-inline, div[data-usabilla="contact-form"],
+    .nfs-popup, #search-map-upsell, .zss-account-popup-container,
+    .cf-la-agent-module, .yui3-ajax-form-content, #listing-provided-by
+    {
+        display: none ! important;
+    }
+}

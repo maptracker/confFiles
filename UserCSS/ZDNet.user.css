@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name        ZDNet
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("zdnet.com") {
+    #promo-subscribe-nl-e590, #footer, #promo-subscribe-logged-out,
+    #promo-subscribe-nl-e589
+    { 
+        display: none; 
+    }
+}

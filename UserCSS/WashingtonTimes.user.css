@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name        Washington Times
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("washingtontimes.com") {
+    form, footer, .comments, .email-alerts, .ed-columns, .qotd, .breaking-news,
+    #top-bar, #masthead, #info-bar, noscript, #no-js-warning
+    {
+        display: none !important;
+    }
+}

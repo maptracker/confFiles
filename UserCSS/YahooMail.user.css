@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name        Yahoo Mail
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("mail.yahoo.com") {
+    .disposableAddressEducationDiv, #ChatWindow { 
+        display: none ! important; 
+    }
+
+    #disposableEmailAddresses_scroller, #disposableEmailAddresses_list
+    { 
+        height: 40em ! important; 
+    }
+}

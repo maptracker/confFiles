@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name        WikiTribune
+@description Show hidden images
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("wikitribune.com") {
+    .b-lazy {filter: unset ! important; transition: unset ! important; }
+
+    img img { display: none ! important; }
+}

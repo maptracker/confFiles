@@ -1,0 +1,36 @@
+/* ==UserStyle==
+@name        Washington Post
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("washingtonpost.com") {
+    #header-v3, #newsharebarMasthead, #right-rail, .posttv-your-three-container,
+    .pb-f-page-share-bar, .pb-f-page-recommended-strip, .pb-f-games-gamesWidget,
+    .pb-f-page-trending-strip, .posttv-video-embed, .inline-video, #wp-header, 
+    .pb-f-page-comments, .pb-f-page-newsletter-inLine, .pb-f-page-footer-v2,
+    .pb-f-sharebars-top-share-bar, #page, .chain-button, #botPromoStrip,
+    #brand-wrapper,  #wrapperMainRight, #content_column_tools, .inline-video,
+    #NN-module-sidebar, #NN-module-footer, .partners, #footer-v3,
+    .tos,  #wrapperTop, #tsPostPolitics, #secondary, #menu-share-float,
+    .pb-f-most-sidebar, .next-story-wrapper
+
+    { 
+        display : none ! important; 
+    }
+
+    .img.unprocessed.placeholder {
+        -webkit-filter: unset ! important;
+        filter: none ! important;
+        filter: unset ! important;
+    }
+
+    #main-content { 
+        width: 100% ! important; 
+        border-right: none ! important; 
+        background-image: none ! important; 
+    }
+}
