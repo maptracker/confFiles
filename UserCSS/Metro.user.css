@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name        Metro
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("metro.co.uk") {
+    #we-need-monies, .share-buttons, .item-share, .more-posts,
+    .vjs-video-container, #widget-area-home-2, #fb-comments-area{
+        display: none ! important;
+    }
+}
