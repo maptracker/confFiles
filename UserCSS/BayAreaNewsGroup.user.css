@@ -1,0 +1,24 @@
+/* ==UserStyle==
+@name        Bay Area News Group
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("mercurynews.com"), domain("eastbaytimes.com"),
+domain("marinij.com") {
+    footer, #mobile-adhesion, .article-slideshow, .article-sidebar,
+    .article-share, .nav-wrapper, .header-banners, iframe, .more-news,
+    .bang-trust-indicators-footer-links {
+        display: none ! important;
+    }
+
+    .site-header { height: unset ! important; }
+
+    #page {
+        overflow-x: unset ! important;
+        overflow-y: unset ! important;
+    }
+}
