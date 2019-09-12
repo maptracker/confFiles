@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name        Haaretz
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("haaretz.com") {
+    #masthead-wrapper, .ribbon-stick-wrapper, #social-bar, .emb-wrapper,
+    aside, footer, .js-ribbon, #article-comments, .h-mb--xxtight {
+        display: none ! important;
+    }
+}
