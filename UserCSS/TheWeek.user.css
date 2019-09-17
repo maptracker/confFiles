@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name        The Week
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("theweek.com") {
+    .speedreads-left-rail, .speedreads-share-section, .header-wrapper,
+    .page-header-section, #page-footer, .sr-image-section {
+        display: none ! important;
+    }
+
+    .speedreads-main-section, .speedreads-main-content { 
+        padding-left: unset ! important; max-width: unset ! important;
+    }
+}
