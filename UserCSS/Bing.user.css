@@ -3,7 +3,7 @@
 @description Mask out sites I'm not really interested in
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.23
+@version     1.0.24
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -61,7 +61,7 @@
        market crash' as well as masking stories of higher national
        interest), but I'm relying on other news sources to cover
        those. */
-    
+
     a[href*='abuse' i],
     a[href*='accused' i],
     a[href*='alarm' i],
@@ -139,11 +139,11 @@
     a[href*='.inquisitr.com/'],
     a[href*='.mlb.com/'],
     a[href*='.mlive.com/'],
+    a[href*='.msn.com/'],
     a[href*='.mtv.com/'],
     a[href*='.nascar.com/'],
     a[href*='.nba.com/'],
     a[href*='.nhl.com/'],
-    a[href*='.msn.com/'],
     a[href*='.oregonlive.com/'],
     a[href*='.pe.com/'],
     a[href*='.scout.com'],
@@ -155,6 +155,7 @@
     a[href*='/90minutes/'],
     a[href*='/arts/'],
     a[href*='/auto/'],
+    a[href*='/beauty/'],
     a[href*='/cars/'],
     a[href*='/celebrity/'],
     a[href*='/collider.com'],
@@ -189,7 +190,6 @@
     a[href*='/video/'],
     a[href*='/weather/'],
     a[href*='/world-cafe/'],
-    a[href*='businessinsider.com'], /* 9 cult-favorite micellar waters that lift dirt and grime out of your skin like a magnet */
     a[href*='Entertainment'],
     a[href*='Sports_News'],
     a[href*='aarp.org'],
@@ -209,6 +209,7 @@
     a[href*='boredpanda.com'],
     a[href*='bravotv.com/'],
     a[href*='broadwayworld'],
+    a[href*='businessinsider.com'], /* 9 cult-favorite micellar waters that lift dirt and grime out of your skin like a magnet */
     a[href*='buzzfeed'],
     a[href*='cbssports.com'],
     a[href*='celbrity'],
@@ -228,6 +229,7 @@
     a[href*='flickeringmyth'],
     a[href*='foodandwine'],
     a[href*='foxsports.com'],
+    a[href*='ftw.usatoday.com/'],
     a[href*='fubiz.net'],
     a[href*='gamespot.com/'],
     a[href*='gearjunkie'],
@@ -294,6 +296,7 @@
     a[href*='powerball'],
     a[href*='pressrepublican.com'],
     a[href*='prideofdetroit'],
+    a[href*='psychologytoday.com/'],
     a[href*='realtor.com/'],
     a[href*='reuters.com'],
     a[href*='rotoworld'],
