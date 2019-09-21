@@ -1,0 +1,22 @@
+/* ==UserStyle==
+@name        NY Post
+@description Mask out irritations, get images to behave
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("nypost.com") {
+    div[id^='slideshow'] {opacity: unset ! important; }
+    body { margin-top: unset ! important; }
+
+    /* Slide shows have double images. Set up to hide one, but allow the
+       other to be visible, plus 'plain' images on other pages. */
+    img, #page-header, .sd-sharing, .desktop-share, #sidebar-primary, footer,
+    .widget-more-stories, .read-next-wrapper, .comments, .sidebar,
+    .inline-related{
+        display: none ! important;
+    }
+    img[srcset*="http"] { display: unset ! important; }
+}
