@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name        Gfycat
+@description Mask out irritations, hide pop-up
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("gfycat.com") {
+    .gif-share, .toast-notification, .navigation-container,
+    .follow-button-auth-link, .gif-actions {
+        display: none ! important;
+    }
+}
