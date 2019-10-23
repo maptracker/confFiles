@@ -49,8 +49,14 @@ script, eg:
     exit
 fi
 
+## Normalize location of source file (which I sometimes symlink)
+srcPath="${BASH_SOURCE[0]}"
+if [[ -n "$(which realpath)" ]]; then
+    srcPath="$(realpath "$srcPath")"
+fi
+
 ## script folder: https://stackoverflow.com/a/246128
-my_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+my_dir="$( cd "$( dirname "$srcPath" )" && pwd )"
 utilFunc="$my_dir/../../generalUtilities/_util_functions.sh"
 
 if [[ -e "$utilFunc" ]]; then
