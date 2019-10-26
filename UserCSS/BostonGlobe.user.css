@@ -3,13 +3,14 @@
 @description Mask out various bits, unhide content
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.2
+@version     1.0.3
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("bostonglobe.com") {
     #masthead, #section-nav, .tools, footer, .inlineNewsletter__wrapper,
-    .inline-newsletter, aside, #continue_button, .sharebar, header { 
+    .inline-newsletter, aside, #continue_button, .sharebar, header,
+    div[id^='ad_position'] { 
         display: none ! important; 
     }
     .hidden { display: unset ! important; }
