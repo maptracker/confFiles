@@ -3,12 +3,12 @@
 @description Colorize news links according to MBFC ratings
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.46
+@version     1.0.47
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 /* Copy-paste block (just makes it easier to add new entries)
-     , a[href*='/wlos.com/']
+     , a[href*='.indystar.com/']
 */
 
 @-moz-document domain("reddit.com"), domain("wikipedia.org"),
@@ -55,9 +55,6 @@ domain("apnews.com") {
        makes immediate corrections to incorrect information and has
        never failed a fact check"
    */
-    a[href*='.bbc.com/'], a[href*='.bbc.co.uk/'],
-    a[href*='/bbc.com/'], a[href*='/bbc.co.uk/'],
-
     a[href*='.npr.org/'], a[href*='/n.pr/'], a[href*='.wesa.fm/'],
     a[href*='/1010wcsi.com/'],
 
@@ -74,7 +71,7 @@ domain("apnews.com") {
     a[href*='.space.com/'], a[href*='.pnas.org/'],
     a[href*='.popularmechanics.com/'], a[href*='.smithsonianmag.com/'],
     a[href*='.sciencealert.com/'], a[href*='.factcheck.org/'],
-    a[href*='.opensecrets.org/']
+    a[href*='.opensecrets.org/'], a[href*='/newatlas.com/']
     {
         /* Very High */
         background-color: #9f9 ! important; /* light green */
@@ -117,7 +114,7 @@ domain("apnews.com") {
     a[href*='.wavy.com/'], a[href*='.wect.com/'], a[href*='.kob.com/'],
     a[href*='.wpxi.com/'], a[href*='.wthr.com/'], a[href*='.kxan.com/'],
     a[href*='.wwlp.com/'], a[href*='.wjhg.com/'], a[href*='nbcchicago.com/'],
-    a[href*='.kshb.com/'],
+    a[href*='.kshb.com/'], a[href*='.indystar.com/'],
     
     a[href*='bloomberg.com'], a[href*='.bloombergquint.com/'],
 
@@ -175,7 +172,7 @@ domain("apnews.com") {
     a[href*='seattletimes.com/'], a[href*='oregonlive.com'],
     a[href*='financialpost.com'], a[href*='.mprnews.org/'],
     a[href*='.jsonline.com/'], a[href*='.nola.com/'],
-    a[href*='opendemocracy.net/'], 
+    a[href*='opendemocracy.net/'], a[href*='/newatlas.com/'], 
     a[href*='.nhk.or.jp/'], a[href*='themoscowtimes.com/'],
     a[href*='.dawn.com/'], a[href*='.goerie.com/'], a[href*='.sfgate.com/'],
     a[href*='talkingpointsmemo.com/'], a[href*='.atimes.com/'],
@@ -252,19 +249,22 @@ domain("apnews.com") {
        checked. Further, any source that does not disclose a mission
        or ownership information will automatically be deemed mixed"
    */
+    a[href*='.bbc.com/'], a[href*='.bbc.co.uk/'],
+    a[href*='/bbc.com/'], a[href*='/bbc.co.uk/'],
+
     a[href*='foxnews.com'], a[href*='fox2detroit.com'], a[href*='.foxla.com/'],
     a[href*='fox5atlanta.com'], a[href*='fox5dc.com'], a[href*='.wbrc.com/'],
     a[href*='/fox17.com/'], a[href*='.ktvu.com/'], a[href*='/fox4kc.com/'],
     a[href*='/fox28spokane.com/'], a[href*='.foxcarolina.com/'],
     a[href*='.fox4news.com/'], a[href*='.fox19.com/'], a[href*='fox6now.com/'],
-    a[href*='fox43.com/'],
+    a[href*='fox43.com/'], a[href*='foxbusiness.com/'],
     a[href*='fox13memphis.com/'], a[href*='.fox5vegas.com/'],
     a[href*='.fox35orlando.com/'], a[href*='.fox13news.com/'],
 
     /* CNN */
     a[href*='cnn.com'], a[href*='.news18.com/'], 
     
-    a[href*='mirror.co.uk'], 
+    a[href*='mirror.co.uk'], a[href*='.vanityfair.com/'], 
     a[href*='newsweek.com'], a[href*='hurriyetdailynews.com'],
     a[href*='buzzfeed.com'], a[href*='buzzfeednews.com'], a[href*='yahoo.com'],
     a[href*='middleeastmonitor.com'], a[href*='komonews.com'],
@@ -333,7 +333,8 @@ domain("apnews.com") {
     a[href*='.cnsnews.com/'], a[href*='breaking911.com/'],
     a[href*='southafricatoday.net/'], a[href*='ancient-origins.net/'],
     a[href*='.zerohedge.com/'], a[href*='.debka.com/'], a[href*='.ewg.org/'],
-    a[href*='.ecowatch.com/'], a[href*='.dailystar.co.uk/']
+    a[href*='.ecowatch.com/'], a[href*='.dailystar.co.uk/'],
+    a[href*='byuiscroll.org/']
     {
         /* Pseudoscience */
         background-color: #303 ! important;
@@ -399,7 +400,7 @@ domain("apnews.com") {
     a[href*='rappler.com'], a[href*='thedailybeast.com'],
     a[href*='msmagazine.com'], a[href*='.advocate.com'],
     a[href*='newyorker.com'], a[href*='pravdareport.com/'],
-    a[href*='/people.com/'],
+    a[href*='/people.com/'], a[href*='.vanityfair.com/'],
     a[href*='.telesurtv.net/'], a[href*='telesurenglish.net/'],
     a[href*='talkingpointsmemo.com/'], a[href*='.mediaite.com/'],
     a[href*='.theroot.com/'], a[href*='.salon.com/'], a[href*='.esquire.com/'],
@@ -454,9 +455,6 @@ domain("apnews.com") {
     a[href*='.wwlp.com/'], a[href*='.wjhg.com/'], a[href*='nbcchicago.com/'],
     a[href*='.kshb.com/'],
     
-    a[href*='.bbc.com/'], a[href*='.bbc.co.uk/'],
-    a[href*='/bbc.com/'], a[href*='/bbc.co.uk/'],
-
     a[href*='bloomberg.com'], a[href*='.bloombergquint.com/'],
 
     a[href*='businessinsider.com'], a[href*='.businessinsider.de/'],
@@ -496,7 +494,7 @@ domain("apnews.com") {
     a[href*='.cleveland.com'], a[href*='/time.com/'], a[href*='.koco.com/'],
     a[href*='seattletimes.com/'], a[href*='.freep.com/'], a[href*='.rfa.org/'],
     a[href*='.mprnews.org/'], a[href*='.jsonline.com/'], a[href*='.msn.com/'],
-    a[href*='.wired.com'], a[href*='.nola.com/'],
+    a[href*='.wired.com'], a[href*='.nola.com/'], a[href*='.indystar.com/'],
     a[href*='opendemocracy.net/'], a[href*='themoscowtimes.com/'],
     a[href*='.dawn.com/'], a[href*='.sfgate.com/'], a[href*='.euractiv.com/'],
     a[href*='.ctvnews.ca/'], a[href*='.startribune.com/'], a[href*='.dw.com/'],
@@ -595,6 +593,9 @@ domain("apnews.com") {
     }
     
     /* MBFC Sites: Right-Center */
+    a[href*='.bbc.com/'], a[href*='.bbc.co.uk/'],
+    a[href*='/bbc.com/'], a[href*='/bbc.co.uk/'],
+
     a[href*='telegraph.co.uk'], a[href*='washingtontimes.com'],
     a[href*='.pe.com'], a[href*='chicagotribune.com'] , a[href*='/fee.org/'],
     a[href*='/fortune.com'], a[href*='.standard.co.uk'], a[href*='.rt.com'],
@@ -633,7 +634,7 @@ domain("apnews.com") {
     a[href*='/fox17.com/'], a[href*='.ktvu.com/'], a[href*='/fox4kc.com/'],
     a[href*='/fox28spokane.com/'], a[href*='.foxcarolina.com/'],
     a[href*='.fox4news.com/'], a[href*='.fox19.com/'], a[href*='fox6now.com/'],
-    a[href*='fox43.com/'],
+    a[href*='fox43.com/'], a[href*='foxbusiness.com/'],
     a[href*='fox13memphis.com/'], a[href*='.fox5vegas.com/'],
     a[href*='.fox35orlando.com/'], a[href*='.fox13news.com/'],
     
