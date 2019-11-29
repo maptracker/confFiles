@@ -23,9 +23,11 @@ egrep -v '^ *\/\/images' "$HTML" | \
     sed -E 's/.+="([^"]*)".*"([0-9]+)"/    *[product-tile-id="\2"], \/* \1 *\//'
 
 
-echo ""
+echo "
+/* Soundtracks, artbooks, etc */
+"
 ## Find soundtracks
 
-egrep -i '(soundtrack|artbook)' "$HTML" | \
+egrep -i '(soundtrack|arts? ?book|arts? collection|comic book|bonus content| ost|goodies|digital extra)' "$HTML" | \
     egrep -o 'cart-title.+cart-id="[0-9]+"' | \
     sed -E 's/.+="([^"]*)".*"([0-9]+)"/    *[product-tile-id="\2"], \/* \1 *\//'
