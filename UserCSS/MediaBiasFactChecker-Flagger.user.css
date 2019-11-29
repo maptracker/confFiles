@@ -3,12 +3,12 @@
 @description Colorize news links according to MBFC ratings
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.48
+@version     1.0.49
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 /* Copy-paste block (just makes it easier to add new entries)
-     , a[href*='.nowtheendbegins.com/']
+     , a[href*='/tbsnews.net/']
 */
 
 @-moz-document domain("reddit.com"), domain("wikipedia.org"),
@@ -92,6 +92,7 @@ domain("apnews.com") {
     a[href*='/abc30.com/'], a[href*='.local10.com/'], a[href*='.wxyz.com/'],
     a[href*='.wcvb.com/'], a[href*='.kxxv.com/'], a[href*='/wset.com/'],
     a[href*='abc7chicago.com/'], a[href*='/6abc.com/'], a[href*='/wlos.com/'],
+    a[href*='/kiva.com/'], a[href*='.wcpo.com/'],
     
     /* CBS - Eye logo */
     a[href*='.wibw.com/'], a[href*='cbsnews.com'], a[href*='.wkbn.com/'],
@@ -220,7 +221,7 @@ domain("apnews.com") {
     a[href*='.newsday.com/'], a[href*='.csmonitor.com/'], 
     a[href*='.sbs.com.au/'], a[href*='/tass.com/'], a[href*='/slate.com/'],
     a[href*='.taiwannews.com.tw/'], a[href*='.suntimes.com/'],
-    a[href*='.azcentral.com/'], a[href*='.i24news.tv/'],
+    a[href*='.azcentral.com/'], a[href*='.i24news.tv/'], a[href*='.un.org/'],
     a[href*='.spokesman.com/'], a[href*='.revealnews.org/'],
     a[href*='hillreporter.com/'], a[href*='.euronews.com/'],
     a[href*='.indiatoday.in/'], a[href*='.economist.com/'],
@@ -234,8 +235,11 @@ domain("apnews.com") {
     a[href*='.vulture.com/'], a[href*='americanmilitarynews.com/'],
     a[href*='.necn.com/'], a[href*='.cosmopolitan.com/'],
     a[href*='.algemeiner.com/'], a[href*='/lawandcrime.com/'],
-    a[href*='.cbpp.org/'], a[href*='.routefifty.com/'],
-    a[href*='.splcenter.org/'], a[href*='.psychologytoday.com/']
+    a[href*='.cbpp.org/'], a[href*='.routefifty.com/'], a[href*='.itv.com/'],
+    a[href*='.splcenter.org/'], a[href*='.psychologytoday.com/'],
+    a[href*='/variety.com/'], a[href*='militarytimes.com/'],
+    a[href*='/vancouversun.com/'], a[href*='/gulfnews.com/'],
+    a[href*='.military.com/']
     {
         /* High */
         background-color: #cff ! important; /* light blue */
@@ -263,6 +267,7 @@ domain("apnews.com") {
     a[href*='fox43.com/'], a[href*='foxbusiness.com/'],
     a[href*='fox13memphis.com/'], a[href*='.fox5vegas.com/'],
     a[href*='.fox35orlando.com/'], a[href*='.fox13news.com/'],
+    a[href*='.fox32chicago.com/'],
 
     /* CNN */
     a[href*='cnn.com'], a[href*='.news18.com/'], 
@@ -438,6 +443,7 @@ domain("apnews.com") {
     a[href*='/abc30.com/'], a[href*='.local10.com/'], a[href*='.wxyz.com/'],
     a[href*='.wcvb.com/'], a[href*='.kxxv.com/'], a[href*='/wset.com/'],
     a[href*='abc7chicago.com/'], a[href*='/6abc.com/'], a[href*='/wlos.com/'],
+    a[href*='/kiva.com/'], a[href*='.wcpo.com/'],
 
     /* CBS - Eye logo */
     a[href*='.wibw.com/'], a[href*='cbsnews.com'], a[href*='.wkbn.com/'],
@@ -527,7 +533,7 @@ domain("apnews.com") {
     a[href*='.sltrib.com/'], a[href*='/elpais.com/'], a[href*='.necn.com/'],
     a[href*='berkeleyside.com/'], a[href*='.vulture.com/'],
     a[href*='/lawandcrime.com/'], a[href*='.cbpp.org/'],
-    a[href*='.routefifty.com/']
+    a[href*='.routefifty.com/'], a[href*='/variety.com/']
     {
         /* Left Center */
         background-image:
@@ -567,7 +573,8 @@ domain("apnews.com") {
     a[href*='.euronews.com/'], a[href*='.indiatoday.in/'],
     a[href*='.rollcall.com/'], a[href*='.opensecrets.org/'],
     a[href*='.timesofindia.com/'], a[href*='.consumerreports.org/'],
-    a[href*='.abs-cbn.com/'], a[href*='americanmilitarynews.com/']
+    a[href*='.abs-cbn.com/'], a[href*='americanmilitarynews.com/'],
+    a[href*='militarytimes.com/'], a[href*='.military.com/']
     {
         /* Least Biased */
         background-image:
@@ -626,8 +633,9 @@ domain("apnews.com") {
     a[href*='.realclearpolitics.com/'], a[href*='.lfpress.com/'],
     a[href*='.azcentral.com/'], a[href*='.spokesman.com/'],
     a[href*='nationalpost.com/'], a[href*='/triblive.com/'],
-    a[href*='/oilprice.com/'], a[href*='reason.com/'],
-    a[href*='.thehindubusinessline.com/'], a[href*='.algemeiner.com/']
+    a[href*='/oilprice.com/'], a[href*='reason.com/'], a[href*='.itv.com/'],
+    a[href*='.thehindubusinessline.com/'], a[href*='.algemeiner.com/'],
+    a[href*='/vancouversun.com/'], a[href*='/gulfnews.com/']
     {
         /* Right Center */
         background-image:
@@ -647,6 +655,7 @@ domain("apnews.com") {
     a[href*='fox43.com/'], a[href*='foxbusiness.com/'],
     a[href*='fox13memphis.com/'], a[href*='.fox5vegas.com/'],
     a[href*='.fox35orlando.com/'], a[href*='.fox13news.com/'],
+    a[href*='.fox32chicago.com/'],
     
     a[href*='komonews.com'], a[href*='townhall.com'],
     a[href*='americanthinker.com'], a[href*='bizpacreview.com'],
@@ -718,7 +727,7 @@ domain("apnews.com") {
 
      */
 
-    a[href*='.gov/'], a[href*='.gov.ua/'] {
+    a[href*='.gov/'], a[href*='.gov.ua/'], a[href*='.un.org/'] {
         /* The '.gov/' selector may have a lot of false positives */
         /* Purple greek temple */
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsWEBoaxJOJqgAAAoBJREFUOMuVk7tPFFEUh3/nzszOPtllV1hAZcH1BYWPRCOGRCmsLQydFGLARzAaYmFlYaN/AA8lQtgYpEFtNGqDMTQmRtFCY1SIRBGBLOxjFnZ2Zu69FoiBLCb4Vb/inO+cnOQQ1nD7VA8uPuoAAAzG+veRiU4SlLNdvKvt57kv2ABaDT1N3eh4eQm9Ld2xwBPfUzKpfm2h8IhX6Qaj+fKzKzOn0Yz7eLBeMFB996SWUa6TRYdIEjaEAUIVY045v3F2ov0FAFDiyMAe8Y2PKoayFf/oK1pbEmyf/ZUdVE+oTFEmCkvmjuUt+S5ZkO5NGaR07Xpe37pwdc7+O7M/3teVz+TjPuZ76OhOrVWwGr3kHeYuESiYZrOXee+RgGU4RruHeR63JS/cJCKwVYHuuLSgETycy+cSnDuToVywiTM+NIOfo6XLoaMKYyPxW7tHIsuRhtJt4XEiWj3LCkbKcFRdYZU1leRf8HMICPeijjplrya4gExK+e77e6+ERFJLlqy56wphPey1uY351DzUWq0cKhirUli+wgyRIJSej0R/9E4JECA+CFEksN12ieIoMpQKIp1KkeASucUcFiYXJBHh7cdx9/GaYzokULa/LFYksFIWSCcPVTLyp/1gjCHgCqCKVWiSJOJvamk2Oh8AgOlf01QkcJNH5Q6HkTSgbteiUgpYaoHsqAhDAFqjqyY7lhYgoCITda0TDCNBwi0cxljGL3xkLGVNEEye4zQ3N2uRRtbUpykrFompUGCLalm67heG3InXYKgDwCCwBIILBO1PVkHQIWECkCB4ANjgGGwpnOmkOwd6Wn2fvX0kScN/IBWY2Z3ZazSkJ+Rmf6DYAvwGPxoHfbmihZwAAAAASUVORK5CYII=)
@@ -833,6 +842,8 @@ domain("apnews.com") {
        it's not heavily visited, at least by the (presumably Western)
        population of visitors that use MBFC
    */
+    a[href*='shanghai.ist/'], a[href*='/shanghaiist.com/'],
+    
     a[href*='yenisafak.com'], a[href*='masslive.com'], a[href*='etherail.com'],
     a[href*='physicsworld.com'], a[href*='middleeasteye.net'],
     a[href*='news-leader.com'], a[href*='channelnewsasia.com'],
@@ -845,7 +856,7 @@ domain("apnews.com") {
     a[href*='.asiaone.com/'], a[href*='.avclub.com/'],
     a[href*='.intellinews.com/'], a[href*='talkradio.co.uk/'],
     a[href*='hungarytoday.hu/'], a[href*='outlookindia.com/'],
-    a[href*='hawaiinewsnow.com/'], a[href*='militarytimes.com/'],
+    a[href*='hawaiinewsnow.com/'],
     a[href*='syrianobserver.com/'], a[href*='canadiangeographic.ca/'],
     a[href*='.essence.com/'], a[href*='/nebraska.tv/'],
     a[href*='/myrtlebeachonline.com/'], a[href*='.techtimes.com/'],
@@ -868,13 +879,15 @@ domain("apnews.com") {
     a[href*='/thelondoneconomic.com/'], a[href*='theintelligencer.net/'],
     a[href*='hattiesburgamerican.com/'], a[href*='foodsafetynews.com/'],
     a[href*='westfaironline.com/'], a[href*='federalnewsnetwork.com/'],
-    a[href*='shanghai.ist/'], a[href*='.china-underground.com/'],
+    a[href*='.china-underground.com/'], a[href*='/timesofmalta.com/'],
     a[href*='theculturechronicles'], a[href*='breakthematrix.com/'],
     a[href*='/issuesinsights.com/'], a[href*='/breakingwide.com/'],
-    a[href*='/nworeport.me/']
+    a[href*='/nworeport.me/'], a[href*='governmenteuropa.eu/'],
+    a[href*='cleveland19.com/'], a[href*='/tbsnews.net/'],
+    a[href*='/thehimalayantimes.com/'], a[href*='.dutchnews.nl/']
     {
         /* Unknown, No Entry on MBFC */
-        /* Cut'n'Paste:     , a[href*='/breakingwide.com/']  */
+        /* Cut'n'Paste:     , a[href*='.military.com/']  */
         background-image:
         url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsREB0U8b0K0wAAADlJREFUOMtjYBgFjPgk04wZ/sPYs87iV4tXc5oxw39kPjJgwmUAyTbicwku26mimWlwx/Ew8AJdAABtFRLIrXPiBQAAAABJRU5ErkJggg==)
            ! important;
@@ -883,5 +896,4 @@ domain("apnews.com") {
         padding-left: 18px ! important;
         background-color: #fc9 ! important; /* light brown */
     }
-
 }
