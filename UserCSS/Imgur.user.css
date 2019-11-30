@@ -3,7 +3,7 @@
 @description Masks random cruft
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.1
+@version     1.0.2
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -11,9 +11,17 @@
     #cta-container-placeholder, #fixed-side-footer-links, #promoted-spotlight,
     .BetaSignUp, .upload, .video-play, .social-icon, .caption-create,
     .post-action-upvote, .post-action-downvote, .post-action-favorite,
-    .Open-Save-To-Folder-Button, .NavbarButtonSS-tooltip, .Footer { 
+    .Open-Save-To-Folder-Button, .NavbarButtonSS-tooltip, .Footer,
+    .Gallery-Sidebar, .GalleryPage-betaOptOut, .Navigation-Container,
+    .NavbarContainer-right, .share-fb, .share-twttr, .GalleryComment-create,
+    .reply, .btn-favorite, .Vote-down, .Vote-up { 
         display : none ! important; 
     }
+
+    .Gallery-Vote, .Gallery-Share {
+        height: unset ! important; margin-bottom: unset ! important;
+    }
+    .Gallery-EngagementBarContainer {top: unset ! important}
 
     .promoted-tag {
         font-size: 600% ! important; 
