@@ -3,7 +3,7 @@
 @description Mask out unwanted or owned tiles
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.7
+@version     1.0.8
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -717,6 +717,21 @@
     *[product-tile-id="1207658853"], /* Outcast 1.1 */
     *[product-tile-id="1207659229"], /* Wizardry 6+7 */
     *[product-tile-id="1207659230"], /* Wizardry 8 */
+    *[product-tile-id="1207658747"], /* Prince of Persia®: The Sands of Time */
+    *[product-tile-id="1440426004"], /* Anno 1404: Gold Edition */
+    *[product-tile-id="1443699418"], /* Return to Castle Wolfenstein */
+    *[product-tile-id="1878529522"], /* Tachyon: The Fringe */
+    *[product-tile-id="1207658846"], /* Gobliiins pack */
+    *[product-tile-id="1207658865"], /* Independence War Deluxe */
+    *[product-tile-id="1207658883"], /* Age of Wonders */
+    *[product-tile-id="1207658873"], /* Independence War 2: Edge of Chaos */
+    *[product-tile-id="1207658877"], /* Serious Sam: The Second Encounter */
+    *[product-tile-id="1207658879"], /* Raptor: Call of the Shadows 2010 Edition */
+    *[product-tile-id="1207659063"], /* Legacy of Kain: Soul Reaver 2 */
+    *[product-tile-id="1207659080"], /* Nexus: The Jupiter Incident */
+    *[product-tile-id="1207659081"], /* The Book of Unwritten Tales */
+    *[product-tile-id="1449651388"], /* Grim Dawn */
+    *[product-tile-id="1455704410"], /* Codename Panzers: Phase Two */
     *[product-tile-id="1411626324"], /* Tower of Time */
     *[product-tile-id="1421404433"], /* STAR WARS™: Dark Forces */
     *[product-tile-id="z"], /*  */
@@ -731,13 +746,17 @@
     *[product-tile-id="z"], /*  */
     *[product-tile-id="z"], /*  */
     *[product-tile-id="z"], /*  */
+    *[product-tile-id="1797616458"], /* Ancestors Legacy - Digital Soundtrack */
     *[product-tile-id="1404652139"], /* Red Faction Guerrilla Soundtrack */
     *[product-tile-id="1080723281"], /* Cultist Simulator: Original Soundtrack */
     *[product-tile-id="1083935233"], /* Ne no Kami - The Two Princess Knights of Kyoto Original Soundtrack */
     *[product-tile-id="1103300729"], /* Slay the Spire - Soundtrack */
+    *[product-tile-id="1495131849"], /* Tangledeep + Legend of Shara + Soundtrack */
+    *[product-tile-id="1926382789"], /* Even the Ocean OST */
     *[product-tile-id="1296840864"], /* Noita Official Soundtrack */
     *[product-tile-id="1362286130"], /* Blasphemous Digital Comic Book */
     *[product-tile-id="1559529299"], /* Blasphemous Original Soundtrack */
+    *[product-tile-id="1080747106"], /* Lamplight City Original Soundtrack */
     *[product-tile-id="1672732476"], /* Animation Arts Collection */
     *[product-tile-id="1122951927"], /* Lovecraft's Untold Stories OST */
     *[product-tile-id="1303954178"], /* Darkwood - Soundtrack */
