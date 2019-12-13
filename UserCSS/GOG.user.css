@@ -3,7 +3,7 @@
 @description Mask out unwanted or owned tiles
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.6
+@version     1.0.8
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -691,6 +691,52 @@
     *[product-tile-id="1207660583"], /* S.T.A.L.K.E.R.: Call of Pripyat */
     *[product-tile-id="1207660573"], /* S.T.A.L.K.E.R.: Shadow of Chernobyl */
     *[product-tile-id="1438168222"], /* Anno 1602 A.D. */
+    *[product-tile-id="1193013642"], /* Count Lucanor */
+    *[product-tile-id="1207658884"], /* Age of Wonders 2: The Wizard's Throne */
+    *[product-tile-id="1207658920"], /* XIII */
+    *[product-tile-id="1207659235"], /* Project Eden */
+    *[product-tile-id="1232053269"], /* Train Valley */
+    *[product-tile-id="1242989820"], /* Elder Scrolls IV: Oblivion - Game of the Year Edition Deluxe, The */
+    *[product-tile-id="1269268081"], /* BioShock™ Remastered */
+    *[product-tile-id="1325415523"], /* Full Throttle Remastered */
+    *[product-tile-id="1428580803"], /* Men of War: Assault Squad */
+    *[product-tile-id="1557265213"], /* Call of Cthulhu: Dark Corners of the Earth */
+    *[product-tile-id="1207658988"], /* Alien Breed + Tower Assault */
+    *[product-tile-id="1453298883"], /* Project Zomboid */
+    *[product-tile-id="1508702879"], /* Stellaris */
+    *[product-tile-id="1629258827"], /* Deep Sky Derelicts */
+    *[product-tile-id="1207659196"], /* Krush Kill ‘N Destroy 2: Krossfire */
+    *[product-tile-id="1769957642"], /* Metal Fatigue */
+    *[product-tile-id="1207658799"], /* Incredible Machine Mega Pack, The  */
+    *[product-tile-id="1207660603"], /* S.T.A.L.K.E.R.: Clear Sky */
+    *[product-tile-id="1207664803"], /* Xenonauts */
+    *[product-tile-id="1411619402"], /* Candle */
+    *[product-tile-id="1576810170"], /* Hidden &amp; Dangerous 2: Courage Under Fire */
+
+    *[product-tile-id="1207658794"], /* The Longest Journey */
+    *[product-tile-id="1207658853"], /* Outcast 1.1 */
+    *[product-tile-id="1207659229"], /* Wizardry 6+7 */
+    *[product-tile-id="1207659230"], /* Wizardry 8 */
+    *[product-tile-id="1207658747"], /* Prince of Persia®: The Sands of Time */
+    *[product-tile-id="1440426004"], /* Anno 1404: Gold Edition */
+    *[product-tile-id="1443699418"], /* Return to Castle Wolfenstein */
+    *[product-tile-id="1878529522"], /* Tachyon: The Fringe */
+    *[product-tile-id="1207658846"], /* Gobliiins pack */
+    *[product-tile-id="1207658865"], /* Independence War Deluxe */
+    *[product-tile-id="1207658883"], /* Age of Wonders */
+    *[product-tile-id="1207658873"], /* Independence War 2: Edge of Chaos */
+    *[product-tile-id="1207658877"], /* Serious Sam: The Second Encounter */
+    *[product-tile-id="1207658879"], /* Raptor: Call of the Shadows 2010 Edition */
+    *[product-tile-id="1207659063"], /* Legacy of Kain: Soul Reaver 2 */
+    *[product-tile-id="1207659080"], /* Nexus: The Jupiter Incident */
+    *[product-tile-id="1207659081"], /* The Book of Unwritten Tales */
+    *[product-tile-id="1449651388"], /* Grim Dawn */
+    *[product-tile-id="1455704410"], /* Codename Panzers: Phase Two */
+    *[product-tile-id="1411626324"], /* Tower of Time */
+    *[product-tile-id="1421404433"], /* STAR WARS™: Dark Forces */
+    *[product-tile-id="z"], /*  */
+    *[product-tile-id="z"], /*  */
+    *[product-tile-id="z"], /*  */
     *[product-tile-id="z"], /*  */
     *[product-tile-id="z"], /*  */
     *[product-tile-id="z"], /*  */
@@ -700,6 +746,35 @@
     *[product-tile-id="z"], /*  */
     *[product-tile-id="z"], /*  */
     *[product-tile-id="z"], /*  */
+    *[product-tile-id="1797616458"], /* Ancestors Legacy - Digital Soundtrack */
+    *[product-tile-id="1404652139"], /* Red Faction Guerrilla Soundtrack */
+    *[product-tile-id="1080723281"], /* Cultist Simulator: Original Soundtrack */
+    *[product-tile-id="1083935233"], /* Ne no Kami - The Two Princess Knights of Kyoto Original Soundtrack */
+    *[product-tile-id="1103300729"], /* Slay the Spire - Soundtrack */
+    *[product-tile-id="1495131849"], /* Tangledeep + Legend of Shara + Soundtrack */
+    *[product-tile-id="1926382789"], /* Even the Ocean OST */
+    *[product-tile-id="1296840864"], /* Noita Official Soundtrack */
+    *[product-tile-id="1362286130"], /* Blasphemous Digital Comic Book */
+    *[product-tile-id="1559529299"], /* Blasphemous Original Soundtrack */
+    *[product-tile-id="1080747106"], /* Lamplight City Original Soundtrack */
+    *[product-tile-id="1672732476"], /* Animation Arts Collection */
+    *[product-tile-id="1122951927"], /* Lovecraft's Untold Stories OST */
+    *[product-tile-id="1303954178"], /* Darkwood - Soundtrack */
+    *[product-tile-id="1315204328"], /* The Textorcist: The Story of Ray Bibbia Soundtrack */
+    *[product-tile-id="1423381799"], /* Night Call Soundtrack */
+    *[product-tile-id="1426170901"], /* Lovecraft's Untold Stories Artbook */
+    *[product-tile-id="1515017516"], /* Leisure Suit Larry - Wet Dreams Don't Dry Artbook &amp; Soundtrack */
+    *[product-tile-id="1712223025"], /* Kingdom Come: Deliverance – OST Atmospheres &amp; Additionals */
+    *[product-tile-id="1748366068"], /* Train Valley 2 - Original Soundtrack */
+    *[product-tile-id="1772977987"], /* Egypt: Old Kingdom - Artbook */
+    *[product-tile-id="1802017027"], /* Unforeseen Incidents Artbook */
+    *[product-tile-id="1949131988"], /* Minotaur - Nod's route OST */
+    *[product-tile-id="1969644461"], /* The Messenger Soundtrack - Disc III: Picnic Panic */
+    *[product-tile-id="1994397371"], /* A Light in the Dark Original Soundtrack */
+    *[product-tile-id="2017471796"], /* Whispers of a Machine Soundtrack */
+    *[product-tile-id="1828931756"], /* Cuphead OST */
+    *[product-tile-id="1410484709"], /* Solstice OST + Bonus Content */
+    *[product-tile-id="1614145698"], /* Gorogoa - Soundtrack */
     *[product-tile-id="1225510575"], /* Reigns: Her Majesty Soundtrack */
     *[product-tile-id="1470685745"], /* Owlboy Soundtrack */
     *[product-tile-id="1500539331"], /* BUTCHER - Extended Soundtrack */
