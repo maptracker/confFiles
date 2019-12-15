@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name        Global News
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("globalnews.ca") {
+    .c-video, div[data-shortcode*="video"], div[data-shortcode="omny"],
+    .l-article__oembed, #content-related-items, #sidebar, .l-main__footer,
+    .l-popup, footer, #content-feedback, #article-tags, .l-article__details,
+    .is-slid-and-faded-out, .l-main__smartfeed {
+        display: none !important;
+    }
+    .l-article__story { max-width: unset; }
+    
+}
