@@ -3,7 +3,7 @@
 @description Just hide a whole bunch of irritating stuff
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -13,7 +13,9 @@
     div.navFooterLine:nth-child(2), div.navFooterLine:nth-child(5),
     #nav-bar-inner.nav-sprite, #marketing, #wrapper-credit-account,
     #wrapper-add-bank-account, #cart-upsell, #hlbcc, .prime-ad-banner-content,
-    #footer, #hows-my-search, #poweredBy { 
+    #footer, #hows-my-search, #poweredBy, div[data-ad-id],
+    .s-shopping-adviser, span[data-component-type*='brand-footer'],
+    span[data-component-type*='feedback']  { 
         display: none ! important; 
     }
 }
