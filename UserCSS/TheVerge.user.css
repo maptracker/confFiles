@@ -3,12 +3,12 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("theverge.com") {
-    .c-dynamic-image, .c-related-list, aside, #comments,
+    .c-dynamic-image, .c-related-list, aside, #comments, #privacy-consent,
     .c-compact-river, footer, .l-col__sidebar, svg, symbol {
       display : none ! important;
     }
