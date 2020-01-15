@@ -3,7 +3,7 @@
 @description New York Times user style, mostly masks components
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.5
+@version     1.0.6
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -20,6 +20,7 @@
     #site-index, #whats-next, .text-ad, #page-footer, .ribbon, .navigation,
     .video, [class*='Masthead'], [class*='ResponsiveAd'], [class*='shareMenu'],
     div[class*="RelatedCoverageNode-imageContent"],
+    #gateway, #regiwall, #gdprConsent, #dock, #lireDock,
     [class*='Newsletter'], #nytint-hp-watching, #masthead-placeholder { 
         display: none ! important; 
     }
