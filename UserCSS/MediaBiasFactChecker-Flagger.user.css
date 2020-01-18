@@ -3,7 +3,7 @@
 @description Colorize news links according to MBFC ratings
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.50
+@version     1.0.51
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -243,7 +243,7 @@ domain("apnews.com") {
     a[href*='/vancouversun.com/'], a[href*='/gulfnews.com/'],
     a[href*='.military.com/'], a[href*='/wtop.com'], a[href*='.fdd.org'],
     a[href*='.inverse.com'], a[href*='/panampost.com'],
-    a[href*='/thesaturdaypaper.com.au'], a[href*='.indystar.com/']
+    a[href*='thesaturdaypaper.com.au'], a[href*='.indystar.com/']
     {
         /* High */
         background-color: #cff ! important; /* light blue */
@@ -541,7 +541,7 @@ domain("apnews.com") {
     a[href*='/lawandcrime.com/'], a[href*='.cbpp.org/'],
     a[href*='.routefifty.com/'], a[href*='/variety.com/'],
     a[href*='.inverse.com'], a[href*='/panampost.com'],
-    a[href*='/thesaturdaypaper.com.au']
+    a[href*='thesaturdaypaper.com.au']
     {
         /* Left Center */
         background-image:
