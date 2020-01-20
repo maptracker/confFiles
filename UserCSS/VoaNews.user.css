@@ -1,0 +1,17 @@
+/* ==UserStyle==
+@name        VOA News
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("voanews.com") {
+    .blazy, .article__social, .site-header, .article__footer, .site-footer,
+    .embedded-entity {
+        display: none ! important;
+    }
+
+    .twitter-tweet { font-size: 0.5em ! important; }
+}
