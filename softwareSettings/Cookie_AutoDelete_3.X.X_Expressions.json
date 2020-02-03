@@ -1,87 +1,129 @@
 {
   "default": [
     {
+      "expression": "*.angieslist.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "id": "BkJXZYwhM",
+      "cookieNames": []
+    },
+    {
       "expression": "*.bms.com",
       "storeId": "default",
       "listType": "WHITE",
-      "id": "HkZ3WPP1f",
+      "id": "SyX7os-iG",
+      "cookieNames": []
+    },
+    {
+      "expression": "*.chase.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "id": "rkfsueMCG",
+      "cookieNames": []
+    },
+    {
+      "expression": "*.citi.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "id": "HkVbrn8iM",
       "cookieNames": []
     },
     {
       "expression": "*.coursera.org",
       "storeId": "default",
       "listType": "WHITE",
-      "id": "ByD2bwvyf",
+      "id": "Hkl77jsWsM",
       "cookieNames": []
     },
     {
       "expression": "*.ensembl.org",
       "storeId": "default",
       "listType": "WHITE",
-      "id": "Hy32-wP1M",
+      "id": "r1ZQmooZsG",
+      "cookieNames": []
+    },
+    {
+      "expression": "*.fidelity.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "id": "H10k03whG",
+      "cookieNames": []
+    },
+    {
+      "expression": "*.online-cu.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "id": "H1Ei8-qif",
       "cookieNames": []
     },
     {
       "expression": "*.plateau.com",
       "storeId": "default",
       "listType": "WHITE",
-      "id": "rkmaWDwJG",
+      "id": "SyGmXiiZiG",
       "cookieNames": []
     },
     {
       "expression": "gog.com",
       "storeId": "default",
       "listType": "WHITE",
-      "id": "Skm0ePv1G",
+      "id": "Bk7Q7ojbsz",
       "cookieNames": []
     },
     {
       "expression": "habitica.com",
       "storeId": "default",
       "listType": "WHITE",
-      "id": "SkxX0lvPkM",
+      "id": "BJVQXsiWjf",
       "cookieNames": []
     },
     {
       "expression": "humblebundle.com",
       "storeId": "default",
       "listType": "WHITE",
-      "id": "BJbXRgvPJM",
+      "id": "H1BQmjsbjG",
       "cookieNames": []
     },
     {
       "expression": "ingenuity.com",
       "storeId": "default",
       "listType": "WHITE",
-      "id": "HJtGWDvkM",
+      "id": "Sy8QQoi-sf",
       "cookieNames": []
     },
     {
       "expression": "khanacademy.org",
       "storeId": "default",
       "listType": "WHITE",
-      "id": "B1GQClwwkG",
+      "id": "Bkw7Xos-iG",
       "cookieNames": []
     },
     {
       "expression": "mojang.com",
       "storeId": "default",
       "listType": "WHITE",
-      "id": "rJQ7ClPDyf",
+      "id": "B1u7mjo-oM",
       "cookieNames": []
     },
     {
       "expression": "mozilla.org",
       "storeId": "default",
       "listType": "WHITE",
-      "id": "S1x7-wvkz",
+      "id": "HyKQmoiZof",
       "cookieNames": []
     },
     {
       "expression": "twitter.com",
       "storeId": "default",
       "listType": "WHITE",
-      "id": "BJ4m0ewPyz",
+      "id": "Skcm7osboz",
+      "cookieNames": []
+    },
+    {
+      "expression": "usaa.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "id": "Hyb3JbzRG",
       "cookieNames": []
     }
   ]
