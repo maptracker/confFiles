@@ -3,14 +3,15 @@
 @description Mask out irritations, fix lists
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("allrecipes.com") {
     #divGoBack, #divGoNext, .lo-container, #shareRecipe, [class*="ad-mag"],
     #btn-addtolist, .magazine-bar, .lo-reservespace, .recipe-navbar,
-    .toolbar-i-made-it, .share, footer, #recipe-notes {
+    .toolbar-i-made-it, .share, footer, #recipe-notes, #privacyNotification,
+    header {
         display: none ! important;
     }
     
