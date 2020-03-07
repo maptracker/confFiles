@@ -3,15 +3,18 @@
 @description Mask out various bits, unhide content
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.3
+@version     1.0.4
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("bostonglobe.com") {
     #masthead, #section-nav, .tools, footer, .inlineNewsletter__wrapper,
     .inline-newsletter, aside, #continue_button, .sharebar, header,
-    div[id^='ad_position'] { 
+    div[id^='ad_position'], #nav-bar, #hp-top-rail, .subscribe,
+    a[href*="/opinion/"], a[href*="/arts/"], a[href*="/obituaries/"],
+    a[href*="/sports/"], a[href*="/lifestyle/"] { 
         display: none ! important; 
     }
     .hidden { display: unset ! important; }
+    #hp-top-main { max-width: 100%; flex-basis: unset ! important;}
 }
