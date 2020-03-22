@@ -3,13 +3,14 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("aljazeera.com") {
     .infinite-scroll-init-block, .page-load-status, .footer-top-socials,
-    .footer, .feedback-signForm, .search-live-block, .video-slider {
+    .footer, .feedback-signForm, .search-live-block, .video-slider,
+    #article-main-header {
         display: none ! important;
     }
 
