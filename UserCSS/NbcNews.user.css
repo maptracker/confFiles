@@ -3,7 +3,7 @@
 @description Mostly masking components, expanding used width
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.7
+@version     1.0.8
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -21,7 +21,8 @@ domain("nbc4i.com"), domain("nbcnewyork.com") {
     .continue-reading, .anvato-player, .mod-headline-list,
     .mod-prev-next, .radar_container, #AmpSidebar,
     section[class*="inlineVideo"], section[class*="related"],
-    div[class*='lazyload'] { 
+    div[class*='lazyload'], div[class*='social-share'],
+    section[data-test='related'], *[data-test*='video'] { 
         display : none ! important; 
     }
 
