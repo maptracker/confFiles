@@ -17,7 +17,8 @@
 // @include     http://*aljazeera.com/*
 // @include     https://*.usatoday.com/*
 // @include     https://*wikitribune.com/*
-// @version     1
+// @include     https://www.bostonglobe.com/*
+// @version     1.0.0
 // @grant       none
 // @grant       GM_log
 // ==/UserScript==
