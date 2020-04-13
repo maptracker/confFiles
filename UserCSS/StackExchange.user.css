@@ -3,7 +3,7 @@
 @description Remove random cruft and overlays
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.2
+@version     1.0.3
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -17,7 +17,7 @@ domain("mathoverflow.net") {
     .hero-box, #herobox, #newsletter-ad, .community-bulletin, #hero-content,
     #chat-feature, #hlogo, #footer, #feed-link, #post-form, .newsletter-anon,
     .hero-container, .s-hero, #js-gdpr-consent-banner, .js-dismissable-hero,
-    #left-sidebar { 
+    #left-sidebar, .theme-selector { 
         display: none !important;
     }
     a:visited { 
