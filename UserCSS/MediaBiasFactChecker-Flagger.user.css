@@ -3,12 +3,12 @@
 @description Colorize news links according to MBFC ratings
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.52
+@version     1.0.53
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 /* Copy-paste block (just makes it easier to add new entries)
-     , a[href*='.ubc.ca']
+     , a[href*='.theadvocate.com/']
 */
 
 @-moz-document domain("reddit.com"), domain("wikipedia.org"),
@@ -92,6 +92,7 @@ domain("apnews.com") {
     a[href*='.wcvb.com/'], a[href*='.kxxv.com/'], a[href*='/wset.com/'],
     a[href*='abc7chicago.com/'], a[href*='/6abc.com/'], a[href*='/wlos.com/'],
     a[href*='/kvia.com/'], a[href*='.wcpo.com/'], a[href*='www.kxly.com'],
+    a[href*='.kltv.com/'],
     a[href*='/abc6onyourside.com'],
     
     /* CBS - Eye logo */
@@ -119,9 +120,6 @@ domain("apnews.com") {
     a[href*='.kshb.com/'], a[href*='.wrdw.com/'], a[href*='.wptv.com/'],
     
     a[href*='bloomberg.com'], a[href*='.bloombergquint.com/'],
-
-    a[href*='businessinsider.com'], a[href*='.businessinsider.de/'],
-    a[href*='.businessinsider.my/'], a[href*='.businessinsider.in/'],
 
     a[href*='huffingtonpost.com/'], a[href*='.huffingtonpost.ca/'],
     a[href*='.huffpost.com/'],
@@ -243,8 +241,9 @@ domain("apnews.com") {
     a[href*='.military.com/'], a[href*='/wtop.com'], a[href*='.fdd.org'],
     a[href*='.inverse.com'], a[href*='/panampost.com'],
     a[href*='thesaturdaypaper.com.au'], a[href*='.indystar.com/'],
-    a[href*='.mongabay.com'], a[href*='.cp24.com'],
-    a[href*='mexiconewsdaily.com']
+    a[href*='.mongabay.com'], a[href*='.cp24.com'], a[href*='/mainichi.jp/'],
+    a[href*='mexiconewsdaily.com'], a[href*='.americamagazine.org'],
+    a[href*='scientificamerican.com/'], a[href*='.theadvocate.com/']
     {
         /* High */
         background-color: #cff ! important; /* light blue */
@@ -305,7 +304,7 @@ domain("apnews.com") {
     a[href*='dailysabah.com/'], a[href*='.tasnimnews.com/'],
     a[href*='.independentsentinel.com/'], a[href*='/humanevents.com/'],
     a[href*='/thelibertydaily.com/'], a[href*='.dailykos.com/'],
-    a[href*='.newsmax.com/']
+    a[href*='.newsmax.com/'], a[href*='.aa.com.tr/']
     {
         /* Mixed */
         background-color: #ff6 ! important; /* yellow */
@@ -428,7 +427,8 @@ domain("apnews.com") {
     a[href*='.dailydot.com/'], a[href*='/jezebel.com/'],
     a[href*='.rawstory.com/'], a[href*='hillreporter.com/'],
     a[href*='.firstpost.com/'], a[href*='.cosmopolitan.com/'],
-    a[href*='.splcenter.org/'], a[href*='.dailykos.com/']
+    a[href*='.splcenter.org/'], a[href*='.dailykos.com/'],
+    a[href*='.theadvocate.com/']
     {
         /* Left */
         background-image:
@@ -449,6 +449,7 @@ domain("apnews.com") {
     a[href*='.wcvb.com/'], a[href*='.kxxv.com/'], a[href*='/wset.com/'],
     a[href*='abc7chicago.com/'], a[href*='/6abc.com/'], a[href*='/wlos.com/'],
     a[href*='/kvia.com/'], a[href*='.wcpo.com/'], a[href*='www.kxly.com'],
+    a[href*='.kltv.com/'],
     a[href*='/abc6onyourside.com'],
 
     /* CBS - Eye logo */
@@ -476,9 +477,6 @@ domain("apnews.com") {
     a[href*='.kshb.com/'], a[href*='.wrdw.com/'], a[href*='.wptv.com/'],
     
     a[href*='bloomberg.com'], a[href*='.bloombergquint.com/'],
-
-    a[href*='businessinsider.com'], a[href*='.businessinsider.de/'],
-    a[href*='.businessinsider.my/'], a[href*='.businessinsider.in/'],
 
     a[href*='buzzfeed.com'], a[href*='buzzfeednews.com'],
 
@@ -543,7 +541,8 @@ domain("apnews.com") {
     a[href*='.routefifty.com/'], a[href*='/variety.com/'],
     a[href*='.inverse.com'], a[href*='/panampost.com'],
     a[href*='thesaturdaypaper.com.au'], a[href*='.mongabay.com'],
-    a[href*='mexiconewsdaily.com']
+    a[href*='mexiconewsdaily.com'], a[href*='.americamagazine.org'],
+    a[href*='/mainichi.jp/']
     {
         /* Left Center */
         background-image:
@@ -606,7 +605,8 @@ domain("apnews.com") {
     a[href*='.nature.com/'], a[href*='.popularmechanics.com/'],
     a[href*='.pnas.org/'],
     a[href*='.smithsonianmag.com/'], a[href*='/neurosciencenews.com/'],
-    a[href*='.psychologytoday.com/']
+    a[href*='.psychologytoday.com/'], a[href*='/weather.com/'],
+    a[href*='scientificamerican.com/']
     {
         /* Science */
         /* Little blue and yellow flasks */
@@ -680,7 +680,7 @@ domain("apnews.com") {
     a[href*='.debka.com/'] , a[href*='/bearingarms.com/'],
     a[href*='.thesun.co.uk/'], a[href*='dailysabah.com/'],
     a[href*='.tasnimnews.com/'], a[href*='/humanevents.com/'],
-    a[href*='.newsmax.com/']
+    a[href*='.newsmax.com/'], a[href*='.aa.com.tr/']
     {
         /* Right */
         background-image:
@@ -825,6 +825,9 @@ domain("apnews.com") {
 
    */
     
+    a[href*='businessinsider.com'], a[href*='.businessinsider.de/'],
+    a[href*='.businessinsider.my/'], a[href*='.businessinsider.in/'],
+
     a[href*='.cnbc.com'], a[href*='/cnbc.com'], a[href*='.wgrz.com/'],
     a[href*='.wvtm13.com/'], a[href*='.scmp.com/'],
     a[href*='.popsci.com/'], a[href*='.nhk.or.jp/'], a[href*='.11alive.com/'],
@@ -913,13 +916,15 @@ domain("apnews.com") {
     a[href*='cleveland19.com/'], a[href*='/tbsnews.net/'],
     a[href*='/thehimalayantimes.com/'], a[href*='.dutchnews.nl/'],
     a[href*='deadlinenews.co.uk'], a[href*='.worldnews.com'],
-    a[href*='.insider.com'], a[href*='.dnaindia.com'],
+    a[href*='.insider.com'], a[href*='.dnaindia.com'], a[href*='/see.news/'],
     a[href*='filipinotimes.net'], a[href*='9to5mac.com'],
     a[href*='sverigesradio.se'], a[href*='covidmetrics.com'],
-    a[href*='telegraphindia.com'], a[href*='.philstar.com']
+    a[href*='telegraphindia.com'], a[href*='.philstar.com'],
+    a[href*='countryliving.com'], a[href*='mymodernmet.com'],
+    a[href*='current-news.co.uk'], a[href*='.breakingasia.com']
     {
         /* Unknown, No Entry on MBFC */
-        /* Cut'n'Paste:     , a[href*='.philstar.com']  */
+        /* Cut'n'Paste:     , a[href*='/see.news/']  */
         background-image:
         url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gsREB0U8b0K0wAAADlJREFUOMtjYBgFjPgk04wZ/sPYs87iV4tXc5oxw39kPjJgwmUAyTbicwku26mimWlwx/Ew8AJdAABtFRLIrXPiBQAAAABJRU5ErkJggg==)
            ! important;
