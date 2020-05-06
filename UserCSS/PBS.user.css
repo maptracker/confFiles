@@ -3,13 +3,14 @@
 @description Suppress pop-up
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.2
+@version     1.0.3
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("pbs.org"), domain("opb.org") {
     .eloqua-popup-container, #pjax-loading-indicator, .tab-bar,
-    div[class*="popup"], .post__col-left, .recirc, footer { 
+    div[class*="popup"], .post__col-left, .recirc, footer, .logo,
+    .subscribe__topper { 
         display: none ! important; 
     }
 }
