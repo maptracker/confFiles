@@ -22,6 +22,17 @@ sudo apt-get -y install gfortran g++ libreadline-dev xorg-dev \
 #######################################
 ###### 3.4.3 on Mint 18.3 Sylvia ######
 
+## ? Not sure why this system didn't track with the other 18.3/3.4.3
+## installation
+
+## Also needed:
+
+
+sudo apt-get -y install libpcre3-dev libcurl4-gnutls-dev
+
+#######################################
+###### 3.4.3 on Mint 18.3 Sylvia ######
+
 ### configure: error: No F77 compiler found
 ## https://stackoverflow.com/a/17721091
 
