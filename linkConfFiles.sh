@@ -58,6 +58,7 @@ function link () {
         err "Source file does not exist: $SRC"
         return
     fi
+    
     if [ -L "$TRG" ]; then
         SRCC=`readlink -f "$SRC"`
         TRGC=`readlink -f "$TRG"`
@@ -107,8 +108,8 @@ NoLink file prevents linking of standard files
         return
     fi
     
-    CHKLINK=`ln -s "$SRC" "$TRG"`
-    if [ -z "$CHKLINK" ]; then
+    CHKLINK=$(ln -s "$SRC" "$TRG")
+    if [[ -z "$CHKLINK" && -L "$TRG" ]]; then
         # Success - the file is now symlinked to the repo
         msg "1;34" "Create: \$$SH ->\n  $TH"
     else
@@ -124,7 +125,18 @@ function noisy_cd () {
 function link_dir () {
     ## Recursively crawls through $LINKDIR and links files into $HOME/
     srcdir="$1"
+    ## Path relative to $HOME:
     relpath=`relativePath "$LINKDIR" "$srcdir"`
+    relHome="$HOME/$relpath"
+    if [[ ! -d "$relHome" ]]; then
+        ## Some programs might not be installed yet, and may not have
+        ## the directory structure for their settings (eg the KDE
+        ## hierarchy on a system that does not yet have KDE apps
+        ## installed). Assure that the directories are there
+        msg "$FgMagenta" "  Creating directory $relHome"
+        mkdir -p "$relHome"
+    fi
+
     ## Single level find: https://stackoverflow.com/a/2107982
     ## Loop with spaces:  https://stackoverflow.com/a/7039208
     find "$srcdir" -maxdepth 1 -mindepth 1 -type f -or -type l | while read srcfile
@@ -137,7 +149,7 @@ function link_dir () {
         isSup=`echo "$bn" | egrep -i '(readme)'`
         [[ -z "$isSup" ]] || continue
         
-        targfile=`readlink -f "$HOME"/"$relpath"`/"$bn"
+        targfile="$(readlink -f "$relHome")/$bn"
 
         #msg "31" "FILE: $srcfile -> $targfile" # && continue
         
