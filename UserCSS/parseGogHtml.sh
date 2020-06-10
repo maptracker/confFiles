@@ -17,9 +17,9 @@ HTML="$1"
 ## Grep just the title and ID
 ## s/e/d to make a CSS rule
 
-egrep -v '^ *\/\/images' "$HTML" | \
-    egrep -B 8 'labels--in-library' | \
-    egrep -o 'cart-title.+cart-id="[0-9]+"' | \
+egrep -v ' \/\/images' "$HTML" | \
+    egrep -B 10 'labels--in-library' | \
+    egrep -o 'track-add-to-cart-id="[0-9]+"' | \
     sed -E 's/.+="([^"]*)".*"([0-9]+)"/    *[product-tile-id="\2"], \/* \1 *\//'
 
 
