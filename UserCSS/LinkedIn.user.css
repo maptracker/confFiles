@@ -3,14 +3,15 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.3
+@version     1.0.4
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("linkedin.com") {
     #today-news-wrapper, .feature-promo, .upsell, .guided-setup,
     li[data-test-artdeco-toast-item-type='gdpr'],
-    #msg-overlay { 
+    #msg-overlay, #ads-container, .feed-shared-news-module, .ad-banner,
+    .feed-learning-bites-module, footer { 
         display: none; 
     }
 }
