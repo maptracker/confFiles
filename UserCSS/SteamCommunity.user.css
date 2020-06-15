@@ -1,0 +1,13 @@
+/* ==UserStyle==
+@name        Steam Community
+@description Mask birthdate check
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("steamcommunity.com") {
+    .responsive_page_template_content { display: unset ! important; }
+    div[class*='_age_gate'] { display: none ! important; }
+}
