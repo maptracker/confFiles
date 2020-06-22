@@ -3,7 +3,7 @@
 @description Mask out various cruft
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.2
+@version     1.0.3
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -13,7 +13,7 @@
     .headerbg, .headerBgContainer, #share-bottom , .short_nav, 
     #disqus, #_fs_container, #nav, noscript, .dsq-brlink, .navigation,
     .VideoPlayerContainer, .LivePromotion, .FeaturedMedia, .MediaPlaceholder
-    #sectionnav, .abcn-interests { 
+    #sectionnav, .abcn-interests, .navContainer { 
         display: none ! important; 
     }
     
