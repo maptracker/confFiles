@@ -3,7 +3,7 @@
 @description Masks random cruft
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.3
+@version     1.0.4
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -14,7 +14,8 @@
     .Open-Save-To-Folder-Button, .NavbarButtonSS-tooltip, .Footer,
     .Gallery-Sidebar, .GalleryPage-betaOptOut, .Navigation-Container,
     .NavbarContainer-right, .share-fb, .share-twttr, .GalleryComment-create,
-    .reply, .btn-favorite, .Vote-down, .Vote-up, .BetaFeedback { 
+    .reply, .btn-favorite, .Vote-down, .Vote-up, .BetaFeedback,
+    .Footer-wrapper { 
         display : none ! important; 
     }
 
