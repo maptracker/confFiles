@@ -3,11 +3,11 @@
 @description New York Times user style, mostly masks components
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.7
+@version     1.0.8
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
-@-moz-document domain("nytimes.com") {
+@-moz-document domain("nytimes.com"), domain("nytimes3xbfgragh.onion") {
 
     /* Mask a whole bunch of cruft */
     #cColumn, .runaroundLeft, .shareTools, .emailAlertModule,
@@ -32,7 +32,8 @@
     }
 }
 
-@-moz-document url("https://www.nytimes.com/") {
+@-moz-document url("https://www.nytimes.com/"),
+url("https://nytimes3xbfgragh.onion/") {
 
     /* Landing page (only) has a big ad block at top */
     #app > div:nth-child(1) { 
