@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name        UP I
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("upi.com") {
+    .rc_social, .btn-social, .widget, .col-md-4, #fifo_hl, footer, .expand {
+        display: none !important;
+    }
+
+    .col-md-7 { width: unset ! important }
+}
