@@ -1366,6 +1366,12 @@ telescope.com code.jquery.com script allow
 telescope.com images.telescope.com xhr allow
 telescope.com www.telescope.com script allow
 theguardian.com www.youtube.com frame allow
+theonion.com adlightning.com * block
+theonion.com kinja-vh.akamaihd.net xhr allow
+theonion.com kinja.com script allow
+theonion.com politics.theonion.com script allow
+theonion.com theonion.com script allow
+theonion.com x.kinja-static.com script allow
 thepsc.com joneslanglasalle.com script allow
 thingiverse.com buysellads.net * block
 thingiverse.com cdn-s2s.buysellads.net * block
