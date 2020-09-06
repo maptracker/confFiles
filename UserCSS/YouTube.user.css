@@ -3,7 +3,7 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.1
+@version     1.0.2
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -25,7 +25,7 @@
     yt-live-chat-app, #chatframe, ytd-live-chat-frame,
     ytd-mealbar-promo-renderer,  *[class*='merch-'], *[id*='merch-'],
     ytd-popup-container, #watch-discussion, #ticker-content,
-    ytd-comment-thread-renderer, ytd-comments { 
+    ytd-comment-thread-renderer, ytd-comments, ytd-consent-bump-lightbox { 
         display: none ! important; 
     }
 }
