@@ -3,11 +3,11 @@
 @description Show collapsed content without JS
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
-@-moz-document domain("scp-wiki.net") {
+@-moz-document domain("scp-wiki.net"), domain("scpwiki.com") {
     .collapsible-block, .collapsible-block-content, 
     .collapsible-block-unfolded, .collapsible-block-folded {
         display: block !important;
