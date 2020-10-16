@@ -3,7 +3,7 @@
 @description Mask out sites I'm not really interested in
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.24
+@version     1.0.25
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -62,6 +62,8 @@
        interest), but I'm relying on other news sources to cover
        those. */
 
+    a[href*='/bruins/' i],
+    a[href*='/aclick?' i],
     a[href*='abuse' i],
     a[href*='accused' i],
     a[href*='alarm' i],
@@ -77,6 +79,7 @@
     a[href*='crime' i],
     a[href*='deputies' i],
     a[href*='deputy' i],
+    a[href*='entertainment' i],
     a[href*='execution' i],
     a[href*='firefighter' i],
     a[href*='funeral' i],
@@ -86,6 +89,8 @@
     a[href*='juvenile' i],
     a[href*='kidnap' i],
     a[href*='knife' i],
+    a[href*='life-style' i],
+    a[href*='lifeandstyle' i],
     a[href*='memorial' i],
     a[href*='murder' i],
     a[href*='offender' i],
@@ -126,6 +131,7 @@
        without Javascript */
     a[href*='.avclub.com'],
     a[href*='.bicycling.com/'],
+    a[href*='.bigthink.com/'],
     a[href*='.businessinsider.com/'],
     a[href*='.cio.com'],
     a[href*='.cnbc.com'],
@@ -251,6 +257,7 @@
     a[href*='iflscience.com'],
     a[href*='indiewire.com'],
     a[href*='inhabitat.com'],
+    a[href*='inquirer.com'],
     a[href*='instyle.com'],
     a[href*='investors.com'],
     a[href*='jalopnik.com'],
