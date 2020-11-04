@@ -3,7 +3,7 @@
 @description Mask out sites I'm not really interested in
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.25
+@version     1.0.26
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -13,7 +13,8 @@
     .snippet, .arrw, .localnews, .rightrail, .news_fc_hint, .bottom, .source,
     .nlr-interests, .rt_Sports, .rt_ScienceAndTechnology, .rt_Business,
     .rt_Entertainment, .rt_FactCheck, .rt_Health, .rt_Products,
-    .rt_TopicBar_Auto, .rt_TopicBar_Fashion, .rt_TopicBar_Personal {
+    .rt_TopicBar_Auto, .rt_TopicBar_Fashion, .rt_TopicBar_Personal,
+    #bnp_cookie_banner, #bnp_container {
         display: none ! important;
     }
     
