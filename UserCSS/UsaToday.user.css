@@ -3,14 +3,23 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.1
+@version     1.0.2
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("usatoday.com") {
     .more-stories-content, .inline-share-tools, .ui-video-wrapper,
     header, .close-wrap, #Adv10, .oembed-asset, .banner, .footer-links,
-    .copyright, .secondary, partner-banner, footer {
+    .copyright, .secondary, partner-banner, footer, .ten-column {
         display: none !important;
+    }
+    .page-main-content-container, .primary {
+        flex-direction: unset;
+        width: 100% !important;
+        max-width: 100% !important;
+        display: unset;
+    }
+    .mainContentSection {
+        
     }
 }
