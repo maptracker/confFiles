@@ -3,14 +3,14 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.2
+@version     1.0.3
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("theonion.com") {
     div.image div, .reading-list-video-player-wrapper, #footer,
     .reading-list-after-item-content, .js_subscribe, .js_share-tools,
-    .js_footer-container { 
+    .js_footer-container, .js_modal_exit_intent { 
         display : none !important;
     }
 }
