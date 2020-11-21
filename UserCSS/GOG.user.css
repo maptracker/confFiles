@@ -3,7 +3,7 @@
 @description Mask out unwanted or owned tiles
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.8
+@version     1.0.9
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -737,6 +737,12 @@
     *[product-tile-id="1421404433"], /* STAR WARS™: Dark Forces */
     *[product-tile-id="1703478259"], /* Tangledeep */
     *[product-tile-id="1432039876"], /* StarCrawlers */
+    *[product-tile-id="1111208428"], /* Bioshock 2 */
+    *[product-tile-id="1752654506"], /* Bioshock Infinite */
+    *[product-tile-id="1207658792"], /* Mobile Forces */
+    *[product-tile-id="1207658789"], /* Expendable */
+    *[product-tile-id="1421404999"], /* SW Starfighter */
+    *[product-tile-id="1207658894"], /* Chaser */
     *[product-tile-id="z"], /*  */
     *[product-tile-id="z"], /*  */
     *[product-tile-id="z"], /*  */
@@ -748,6 +754,19 @@
     *[product-tile-id="z"], /*  */
     *[product-tile-id="z"], /*  */
     *[product-tile-id="z"], /*  */
+    *[product-tile-id="1156350347"], /* Neon Chrome Original Soundtrack */
+    *[product-tile-id="1085408740"], /* Vampire: The Masquerade - Shadows of New York - Artbook */
+    *[product-tile-id="1618612563"], /* Disco Elysium - Artbooklet */
+    *[product-tile-id="1448752059"], /* Yooka-Laylee and the Impossible Lair OST */
+    *[product-tile-id="1484914907"], /* Vambrace: Cold Soul Soundtrack */
+    *[product-tile-id="1547157814"], /* DISTRAINT 2 - OST */
+    *[product-tile-id="1584151500"], /* Wanderlust: Travel Stories Soundtrack */
+    *[product-tile-id="1790890383"], /* The 13th Doll: A Fan Game of The 7th Guest OST */
+    *[product-tile-id="1825224893"], /* Indivisible Game Soundtrack */
+    *[product-tile-id="1905785793"], /* Colt Canyon - Soundtrack */
+    *[product-tile-id="1970749318"], /* Official Vampire: The Masquerade - Coteries of New York Soundtrack */
+    *[product-tile-id="2088874455"], /* Carrion Soundtrack */
+    *[product-tile-id="1322407652"], /* GRIS Soundtrack */
     *[product-tile-id="1758520904"], /* Tangledeep Original Soundtrack */
     *[product-tile-id="2129826400"], /* Baldur's Gate II Enhanced Edition Official Soundtrack */
     *[product-tile-id="1092899832"], /* Baldur's Gate Enhanced Edition Official Soundtrack */
