@@ -3,7 +3,7 @@
 @description Mask add block in widget panel
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.2
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -23,4 +23,6 @@
     .timer { background-color: yellow ! important; }
     .monthly .timer { background-color: unset ! important; }
 
+    a[href*="/books/"] { width: 15% ! important; }
+    a[href*="subscription"] { display: none ! important; }
 }
