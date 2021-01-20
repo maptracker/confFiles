@@ -14,11 +14,12 @@
 // @include     http://time.com/*
 // @include     http://*.denverpost.com/*
 // @include     http://*abc7.com/*
-// @include     http://*aljazeera.com/*
+// @include     https://*aljazeera.com/*
 // @include     https://*.usatoday.com/*
 // @include     https://*wikitribune.com/*
 // @include     https://www.bostonglobe.com/*
-// @version     1.0.0
+// @include     https://www.politico.com/*
+// @version     1.0.2
 // @grant       none
 // @grant       GM_log
 // ==/UserScript==
@@ -58,6 +59,8 @@ if (/washingtonpost/.test(loc)) {
 } else if (/abc\d+\./.test(loc)) {
     hrSrc = 'data-imgsrc';
     tag   = 'div';
+} else if (/politico/.test(loc)) {
+    hrSrc = 'data-lazy-img';
 } else {
     /* This seems like the 'standard' way to do a lazy load */
 }
