@@ -3,7 +3,7 @@
 @description Mask various stuff, deal with lazy loading
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.4
+@version     1.0.5
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -20,8 +20,13 @@
         display: none ! important;
     }
 
-body { visibility: unset ! important; }
+    body { visibility: unset ! important; }
 
-p, .story-intro {
-    margin-right: unset ! important; }
+    p, .story-intro { margin-right: unset ! important; }
+
+    .media-item__image img[data-lazy-img] {
+        /* Take out lazy load masking */
+        height: unset ! important;
+        padding-bottom: unset ! important;
+    }
 }
