@@ -3,7 +3,7 @@
 @description Mask bits, including GDPR opaque layer
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -23,7 +23,7 @@
     
     .wrapper { overflow: auto; }
     .article-viewport { overflow:auto; }
-    body { overflow: auto ! important; }
+    body { overflow: auto ! important; position: unset ! important; }
 
     .component.lazy-image.marquee_large_2x img {
         display: unset;
