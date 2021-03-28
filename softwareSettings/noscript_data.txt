@@ -9,7 +9,8 @@
         "object",
         "other",
         "script",
-        "webgl"
+        "webgl",
+        "noscript"
       ],
       "temp": false
     },
@@ -22,7 +23,8 @@
         "object",
         "other",
         "script",
-        "webgl"
+        "webgl",
+        "noscript"
       ],
       "temp": false
     },
@@ -626,7 +628,34 @@
         "§:zillowapi.com",
         "§:hunterindustries.com",
         "§:squarespace.com",
-        "§:arrowheadcanton.com"
+        "§:arrowheadcanton.com",
+        "§:alibaba.com",
+        "§:alicdn.com",
+        "§:aliapp.org",
+        "§:tableau.com",
+        "§:tableausoftware.com",
+        "§:sentry.io",
+        "§:zencdn.net",
+        "§:seesay2020.com",
+        "§:go.com",
+        "§:abcnews.com",
+        "§:newshourapps.org",
+        "§:steamstatic.com",
+        "§:jhu.edu",
+        "§:plot.ly",
+        "§:learnfromanyone.com",
+        "§:datadryad.org",
+        "§:floridacovidaction.com",
+        "§:killsixbilliondemons.com",
+        "§:gfycat.com",
+        "§:nytimes3xbfgragh.onion",
+        "§:graylady3jvrrxbe.onion",
+        "§:media.net",
+        "§:geoedge.be",
+        "§:webtoons.com",
+        "§:pstatic.net",
+        "§:interstatebatteries.com",
+        "§:jalopnik.com"
       ],
       "untrusted": [
         "adlightning.com",
@@ -706,7 +735,6 @@
         "monetate.net",
         "mxpnl.com",
         "myregistry.com",
-        "newrelic.com",
         "newsweek.com",
         "ntv.io",
         "omtrdc.net",
@@ -756,8 +784,9 @@
         "aaxads.com",
         "adsafeprotected.com",
         "adsrvr.org",
-        "litix.io",
-        "imasdk.googleapis.com"
+        "imrworldwide.com",
+        "bluekai.com",
+        "speedcurve.com"
       ],
       "custom": {}
     },
