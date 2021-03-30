@@ -28,6 +28,6 @@ echo "
 "
 ## Find soundtracks
 
-egrep -i '(soundtrack|arts? ?book|arts? collection|comic book|bonus content| ost|goodies|digital extra)' "$HTML" | \
+egrep -i '(soundtrack|arts? ?book|arts? collection|fishing|texture|comic book|bonus content| ost|goodies|deluxe content|digital extra)' "$HTML" | \
     egrep -o 'cart-title.+cart-id="[0-9]+"' | \
     sed -E 's/.+="([^"]*)".*"([0-9]+)"/    *[product-tile-id="\2"], \/* \1 *\//'
