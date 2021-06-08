@@ -3,7 +3,7 @@
 @description Mask out unwanted or owned tiles
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.9
+@version     1.0.10
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -34,6 +34,8 @@
         background-color: lime ! important;
         padding: 10px 10px ! important;
     }
+
+    a[href*="/visa?"] { display: none ! important; }
 
     /* #wishlistHolder .invisible { display: block ! important } */
     
