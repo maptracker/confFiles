@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name        Encyclopedia Britannica
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("britannica.com") {
+    .marketing-slider, .col-auto, .col-da-300, .marketing-content {
+        display: none !important;
+    }
+}
