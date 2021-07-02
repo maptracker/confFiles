@@ -17,11 +17,19 @@ HTML="$1"
 ## Grep just the title and ID
 ## s/e/d to make a CSS rule
 
+echo "
+
+/* Owned titles */
+"
 egrep -v ' \/\/images' "$HTML" | \
     egrep -B 10 'labels--in-library' | \
-    egrep -o 'track-add-to-cart-id="[0-9]+"' | \
-    sed -E 's/.+="([^"]*)".*"([0-9]+)"/    *[product-tile-id="\2"], \/* \1 *\//'
+    egrep -o 'track-add-to-cart-id="[0-9]+".+<\/div>' |
+    sed -E 's/track-add-to-cart-id=/    *[product-tile-id=/' |
+    sed -E 's/<\/div>/ *\//' |
+    sed -E 's/>.+>/\], \/* /'
 
+    #| \
+    #sed -E 's/.+="([^"]*)".*"([0-9]+)"/    *[product-tile-id="\2"], \/* \1 *\//'
 
 echo "
 /* Soundtracks, artbooks, etc */
@@ -31,3 +39,6 @@ echo "
 egrep -i '(soundtrack|arts? ?book|arts? collection|fishing|texture|comic book|bonus content| ost|goodies|deluxe content|digital extra)' "$HTML" | \
     egrep -o 'cart-title.+cart-id="[0-9]+"' | \
     sed -E 's/.+="([^"]*)".*"([0-9]+)"/    *[product-tile-id="\2"], \/* \1 *\//'
+
+echo "
+";
