@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name        Detroit Free Press
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("freep.com") {
+    aside, .gnt_rr, .gnt_ss, header, footer, .gnt_tb {
+        display: none !important;
+    }
+    .gnt_cw_w { min-width: unset ! important; }
+}
