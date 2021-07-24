@@ -3,14 +3,14 @@
 @description Mask out irritations, hide pop-up
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.2
+@version     1.0.3
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("gfycat.com") {
     .gif-share, .toast-notification, .navigation-container,
     .follow-button-auth-link, .gif-actions, .cookie-popup, .pro-cta,
-    .block-3 {
+    .block-3, .cookieBannerContainer  {
         display: none ! important;
     }
 }
