@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name        Angie's List
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.2
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("angi.com") {
+    #featured-banner, footer {
+        display: none !important;
+    }
+}
