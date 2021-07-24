@@ -3,7 +3,7 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.1
+@version     1.0.2
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -17,7 +17,7 @@
     #NN-module-sidebar, #NN-module-footer, .partners, #footer-v3,
     .tos,  #wrapperTop, #tsPostPolitics, #secondary, #menu-share-float,
     .pb-f-most-sidebar, .next-story-wrapper, div[data-qa="article-body-ad"],
-    .powa-wrapper
+    .powa-wrapper, .hide-for-print
 
     { 
         display : none ! important; 
