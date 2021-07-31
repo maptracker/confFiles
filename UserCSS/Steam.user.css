@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name        Steam
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.1
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("steampowered.com") {
+    #cookiePrefPopup, div[data-featuretarget*='broadcast-embed'],
+    div[class*='broadcast_embed'] {
+        display: none !important;
+    }
+}
