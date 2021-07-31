@@ -67,6 +67,8 @@ alkermes.com cse.google.com script allow
 alkermes.com use.typekit.com script allow
 alkermes.com www.alkermes.com script allow
 alkermes.com www.google.com script allow
+allbasicsstoves.com www.allbasicsstoves.com script allow
+allbasicsstoves.com www.allbasicsstoves.com xhr allow
 allrecipes.com moprd-cdnservice-uw1.azureedge.net script allow
 allrecipes.com moprd-cdnservice-uw1.azureedge.net xhr allow
 allrecipes.com secureimages.allrecipes.com script allow
@@ -312,6 +314,7 @@ carlislemosquito.org www.carlislemosquito.org media allow
 carlislemosquito.org www.carlislemosquito.org xhr allow
 carlislemosquito.org www.gstatic.com script allow
 cdc.gov cdnjs.cloudflare.com script allow
+cdc.gov covid.cdc.gov script allow
 cdc.gov ephtracking.cdc.gov script allow
 cdc.gov ephtracking.cdc.gov xhr allow
 cdc.gov search.usa.gov script allow
@@ -355,6 +358,7 @@ checkbook.org www.gstatic.com script allow
 checkfreeweb.com bmsfcu.online-cu.com cookie allow
 checkfreeweb.com checkfreeweb.com script allow
 checkfreeweb.com cw411.checkfreeweb.com xhr allow
+chelmsfordfireplace.com chelmsfordfireplace.com script allow
 cihar.com cihar.com script allow
 cihar.com cihar.com xhr allow
 circle-health.org ajax.googleapis.com script allow
@@ -753,6 +757,11 @@ google.nl apis.google.com script allow
 google.nl www.google.com script allow
 google.nl www.gstatic.com script allow
 google.nl www.gstatic.com xhr allow
+grapevine.is cdn.shopify.com script allow
+grapevine.is cdnjs.cloudflare.com script allow
+grapevine.is grapevine.is script allow
+grapevine.is s3.amazonaws.com script allow
+grapevine.is shop.grapevine.is xhr allow
 gtexportal.org ajax.googleapis.com script allow
 gtexportal.org apis.google.com script allow
 gtexportal.org igv.org script allow
@@ -777,6 +786,8 @@ hbr.org www.google.com xhr allow
 hbr.org www.gstatic.com script allow
 healthsafe-id.com healthsafe-id.com script allow
 healthsafe-id.com healthsafe-id.com xhr allow
+hearth-works.com www.hearth-works.com script allow
+hearth-works.com www.hearth-works.com xhr allow
 hivemill.com app-cdn.productcustomizer.com script allow
 hivemill.com cdn.shopify.com script allow
 hivemill.com d1liekpayvooaz.cloudfront.net script allow
@@ -827,6 +838,8 @@ hotwater.com code.jquery.com script allow
 hotwater.com d39vf9bwtb4sua.cloudfront.net script allow
 hotwater.com maxcdn.bootstrapcdn.com script allow
 hotwater.com www.hotwater.com script allow
+howlongtobeat.com howlongtobeat.com script allow
+howlongtobeat.com howlongtobeat.com xhr allow
 hughesnet.com cdnjs.cloudflare.com script allow
 hughesnet.com maps.googleapis.com script allow
 hughesnet.com www.hughesnet.com script allow
@@ -904,6 +917,9 @@ i-doxs.net secure8.i-doxs.net script allow
 i-doxs.net www.eversource.com cookie allow
 i-doxs.net www.eversource.com script allow
 i-doxs.net www.eversource.com xhr allow
+idylwildefarm.com squarespace.com script allow
+idylwildefarm.com use.typekit.net script allow
+idylwildefarm.com www.idylwildefarm.com script allow
 imgur.com adlightning.com * block
 imgur.com ajax.googleapis.com script allow
 imgur.com d1fh3f0kkan5vq.cloudfront.net script allow
@@ -1020,9 +1036,14 @@ kickstarter.com www.kickstarter.com script allow
 kickstarter.com www.kickstarter.com xhr allow
 killsixbilliondemons.com ajax.googleapis.com script allow
 killsixbilliondemons.com killsixbilliondemons.com script allow
+killsixbilliondemons.com killsixbilliondemons.com xhr allow
+killsixbilliondemons.com maxcdn.bootstrapcdn.com script allow
 killsixbilliondemons.com www.google.com frame allow
 killsixbilliondemons.com www.google.com script allow
+killsixbilliondemons.com www.google.com xhr allow
 killsixbilliondemons.com www.gstatic.com script allow
+kimballfarm.com kimballfarm.com other allow
+kimballfarm.com kimballfarm.com script allow
 komatsuamerica.com cdnjs.cloudflare.com script allow
 komatsuamerica.com code.jquery.com script allow
 komatsuamerica.com www.komatsuamerica.com script allow
@@ -1271,6 +1292,8 @@ myworkdayjobs.com wd5.myworkdayjobs.com script allow
 myworkdayjobs.com wd5.myworkdayjobs.com xhr allow
 nasa.gov solarsystem.nasa.gov script allow
 nasa.gov solarsystem.nasa.gov xhr allow
+natickfireplace.com www.natickfireplace.com script allow
+natickfireplace.com www.natickfireplace.com xhr allow
 nature.com a.disquscdn.com script allow
 nature.com disqus.com frame allow
 nature.com disqus.com script allow
@@ -1319,6 +1342,7 @@ noaa.gov arcgis.com script allow
 noaa.gov arcgis.com xhr allow
 noaa.gov arcgisonline.com xhr allow
 noaa.gov maps-api-ssl.google.com script allow
+noaa.gov maps.googleapis.com script allow
 noaa.gov www.ncdc.noaa.gov script allow
 noaa.gov www.ncdc.noaa.gov xhr allow
 nomansskymods.com accounts.google.com frame allow
@@ -1429,6 +1453,8 @@ pbs.org www.youtube.com frame allow
 pbs.org www.youtube.com other allow
 pbs.org www.youtube.com script allow
 pbs.org www.youtube.com xhr allow
+pem.org www.pem.org script allow
+pem.org www.pem.org xhr allow
 percayai.com static.parastorage.com script allow
 percayai.com www.percayai.com script allow
 percayai.com www.percayai.com xhr allow
@@ -1448,6 +1474,10 @@ photobucket.com photobucket.com media allow
 photobucket.com photobucket.com script allow
 photobucket.com photobucket.com xhr allow
 photobucket.com s3.amazonaws.com script allow
+pine64.com js.stripe.com frame allow
+pine64.com js.stripe.com script allow
+pine64.com pine64.com script allow
+pine64.com pine64.com xhr allow
 plaintextoffenders.com www.tumblr.com frame allow
 plateau.com fpdownload.adobe.com media allow
 plateau.com plateau.com script allow
@@ -1528,6 +1558,8 @@ robtex.net google.com script allow
 robtex.net robtex.com xhr allow
 roll20.net marketplace.roll20.net xhr allow
 roll20.net roll20.net script allow
+rottentomatoes.com www.rottentomatoes.com script allow
+rottentomatoes.com www.rottentomatoes.com xhr allow
 royalsocietypublishing.org crossref.org script allow
 royalsocietypublishing.org dvg4ol0hclm7o.cloudfront.net script allow
 royalsocietypublishing.org jsdelivr.net script allow
@@ -1573,6 +1605,8 @@ scp-wiki.net scpfoundation.org frame allow
 seesay2020.com seesay2020.com script allow
 seesay2020.com survey123.arcgis.com frame allow
 seesay2020.com survey123.arcgis.com script allow
+serif.com serif.com script allow
+serif.com serif.com xhr allow
 serverfault.com ajax.googleapis.com script allow
 serverfault.com serverfault.com script allow
 serverfault.com serverfault.com xhr allow
@@ -1610,6 +1644,11 @@ slashdot.org a.fsdn.com script allow
 slashdot.org fsdn.com script allow
 slashdot.org slashcdn.com script allow
 slashdot.org slashdot.org script allow
+sonschimney.com assets.squarespace.com script allow
+sonschimney.com static1.squarespace.com script allow
+sonschimney.com use.typekit.net script allow
+sonschimney.com www.sonschimney.com script allow
+sonschimney.com www.sonschimney.com xhr allow
 soundcloud.com a-v2.sndcdn.com script allow
 soundcloud.com cf-hls-media.sndcdn.com xhr allow
 soundcloud.com i1.sndcdn.com xhr allow
@@ -1697,6 +1736,7 @@ steamcommunity.com community.cloudflare.steamstatic.com script allow
 steamcommunity.com steamcommunity-a.akamaihd.net script allow
 steamcommunity.com steamcommunity.com script allow
 steamcommunity.com steamcommunity.com xhr allow
+steampowered.com akamai.steamstatic.com media allow
 steampowered.com akamaihd.net script allow
 steampowered.com cdn.akamai.steamstatic.com media allow
 steampowered.com cdn.akamai.steamstatic.com other allow
@@ -1745,6 +1785,9 @@ stihlusa.com stihlusa.com script allow
 stihlusa.com stihlusa.com xhr allow
 stihlusa.com www.google.com script allow
 stihlusa.com www.gstatic.com script allow
+stonegategardens.com stonegategardens.com script allow
+stonegategardens.com stonegategardens.com xhr allow
+stoveshop.com stoveshop.com script allow
 streamable.com cdn-b-east.streamable.com media allow
 streamable.com cdn-cf-east.streamable.com media allow
 streamable.com socket.streamable.com xhr allow
@@ -1805,6 +1848,9 @@ taleo.net staticcho.tbe.taleo.net script allow
 taleo.net use.typekit.com script allow
 taleo.net www.alkermes.com script allow
 taleo.net www.google.com script allow
+tapas.io d30womf5coomej.cloudfront.net script allow
+tapas.io tapas.io script allow
+tapas.io tapas.io xhr allow
 te4.org cdnjs.cloudflare.com script allow
 te4.org te4.org script allow
 teamarrayo.com ajax.googleapis.com script allow
@@ -2057,8 +2103,10 @@ zillow.com google.com script allow
 zillow.com keystone.zillow.com other allow
 zillow.com maps.googleapis.com script allow
 zillow.com maps.googleapis.com xhr allow
+zillow.com perimeterx.net script allow
 zillow.com pf.zillow.com xhr allow
 zillow.com proxy.zillowapi.com xhr allow
+zillow.com px-cdn.net script allow
 zillow.com s.zillowstatic.com xhr allow
 zillow.com www.googleapis.com xhr allow
 zillow.com www.zillow.com other allow
