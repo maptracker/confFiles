@@ -6,7 +6,7 @@
 // @match        https://imgur.com/a/*
 // @icon         https://www.google.com/s2/favicons?domain=imgur.com
 // @grant        none
-// @version      1.0.2
+// @version      1.0.3
 // ==/UserScript==
 
 (function() {
@@ -42,8 +42,8 @@
         dest.textContent = "Media component has zero elements";
         return;
     }
-     // It appears to reference media. Make a new container to hold them:
-    alert(JSON.stringify(jmed, null, 1));
+    // It appears to reference media. 
+    //alert(JSON.stringify(jmed, null, 1));
     var isImg = new RegExp('.+\.(jpg|jpeg|gif|png)$', 'i');
     var isVid = new RegExp('.+\.(mp4)$', 'i');
     // Cycle through each entry
