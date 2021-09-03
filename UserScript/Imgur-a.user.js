@@ -6,7 +6,7 @@
 // @match        https://imgur.com/a/*
 // @icon         https://www.google.com/s2/favicons?domain=imgur.com
 // @grant        none
-// @version      1.0.1
+// @version      1.0.2
 // ==/UserScript==
 
 (function() {
@@ -19,19 +19,31 @@
      resource usage.
     */
 
-    // JSON object created by Imgur
-    var jtxt = window.postDataJSON;
-    if (!jtxt) return;
-    var jdat = JSON.parse(jtxt);
-    var jmed = jdat.media;
-    if (!jmed) return;
-    var len = jmed.length;
-    if (len == 0) return;
-     // It appears to reference media. Make a new container to hold them:
+    // Container to hold images:
     var dest = document.createElement("div");
     document.body.insertBefore(dest, document.body.firstChild);
-    dest.style.width="800px"
-    // alert(JSON.stringify(jmed, null, 1));
+    dest.style.width="800px";
+    dest.style.padding="6px";
+
+    // JSON object created by Imgur
+    var jtxt = window.postDataJSON;
+    if (!jtxt) {
+        dest.textContent = "No JSON structure found";
+        return;
+    }
+    var jdat = JSON.parse(jtxt);
+    var jmed = jdat.media;
+    if (!jmed) {
+        dest.textContent = "No media component found";
+        return;
+    }
+    var len = jmed.length;
+    if (len == 0) {
+        dest.textContent = "Media component has zero elements";
+        return;
+    }
+     // It appears to reference media. Make a new container to hold them:
+    alert(JSON.stringify(jmed, null, 1));
     var isImg = new RegExp('.+\.(jpg|jpeg|gif|png)$', 'i');
     var isVid = new RegExp('.+\.(mp4)$', 'i');
     // Cycle through each entry
@@ -74,4 +86,9 @@
         dest.append(bit);
         success++;
     }
+    if (success == 0) {
+        dest.textContent = "No components found to add to page";
+        return;
+    }
+
 })();
