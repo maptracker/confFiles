@@ -6,7 +6,7 @@
 // @match        https://imgur.com/a/*
 // @icon         https://www.google.com/s2/favicons?domain=imgur.com
 // @grant        none
-// @version      1.0.4
+// @version      1.0.5
 // ==/UserScript==
 
 (function() {
@@ -42,7 +42,7 @@
         if (imgs.length == 0) {
             dest.textContent = "No JSON structure found";
         } else {
-            document.location = ctnt[imgs.length-1];
+            document.location = imgs[imgs.length-1];
         }
         return;
     }
