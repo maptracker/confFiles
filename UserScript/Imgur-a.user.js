@@ -6,13 +6,13 @@
 // @match        https://imgur.com/a/*
 // @icon         https://www.google.com/s2/favicons?domain=imgur.com
 // @grant        none
-// @version      1.0.5
+// @version      1.0.6
 // ==/UserScript==
 
 (function() {
     'use strict';
 
-    /* 
+    /*
      Got tired of Imgur demanding increasing domains to show
      images. Scraping their JSON structure and adding media manually
      to pages. Pages load MUCH faster, and with significantly lower
@@ -26,6 +26,7 @@
     dest.style.padding="6px";
 
     var isImg = new RegExp('.+\.(jpg|jpeg|gif|png)$', 'i');
+    var isFI  = new RegExp('favicon', 'i');
     // JSON object created by Imgur
     var jtxt = window.postDataJSON;
     if (!jtxt) {
@@ -35,13 +36,16 @@
         var imgs  = [];
         for (var m=0; m < mlen; m++) {
             var ctnt = metas[m].content;
-            if (isImg.test(ctnt)) {
+            if (isImg.test(ctnt) && !isFI.test(ctnt)) {
                 imgs.push(ctnt);
             }
         }
+        // alert(imgs);
         if (imgs.length == 0) {
             dest.textContent = "No JSON structure found";
         } else {
+            // Looks like we have at least one image in <meta>?
+            // Take the last one found
             document.location = imgs[imgs.length-1];
         }
         return;
