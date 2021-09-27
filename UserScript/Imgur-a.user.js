@@ -6,7 +6,7 @@
 // @match        https://imgur.com/a/*
 // @icon         https://www.google.com/s2/favicons?domain=imgur.com
 // @grant        none
-// @version      1.0.3
+// @version      1.0.4
 // ==/UserScript==
 
 (function() {
@@ -25,10 +25,25 @@
     dest.style.width="800px";
     dest.style.padding="6px";
 
+    var isImg = new RegExp('.+\.(jpg|jpeg|gif|png)$', 'i');
     // JSON object created by Imgur
     var jtxt = window.postDataJSON;
     if (!jtxt) {
-        dest.textContent = "No JSON structure found";
+        // Discovered that sometimes there's a single image in <meta> tags
+        var metas = document.getElementsByTagName('meta');
+        var mlen  = metas.length;
+        var imgs  = [];
+        for (var m=0; m < mlen; m++) {
+            var ctnt = metas[m].content;
+            if (isImg.test(ctnt)) {
+                imgs.push(ctnt);
+            }
+        }
+        if (imgs.length == 0) {
+            dest.textContent = "No JSON structure found";
+        } else {
+            document.location = ctnt[imgs.length-1];
+        }
         return;
     }
     var jdat = JSON.parse(jtxt);
@@ -44,7 +59,6 @@
     }
     // It appears to reference media. 
     //alert(JSON.stringify(jmed, null, 1));
-    var isImg = new RegExp('.+\.(jpg|jpeg|gif|png)$', 'i');
     var isVid = new RegExp('.+\.(mp4)$', 'i');
     // Cycle through each entry
     var success = 0;
