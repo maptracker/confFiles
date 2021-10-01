@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name        Boston.com
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.1
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("boston.com") {
+    header, .m-article-header__social, .m-content-advert,
+    div[class~="email-signup"], #sidebar-home, img, footer {
+        display: none !important;
+    }
+}
