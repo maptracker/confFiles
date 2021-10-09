@@ -1,0 +1,32 @@
+/* ==UserStyle==
+@name        Food.com
+@description Full visibility, make compact
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("food.com") {
+    .recipe-layout__ad-sponsor, .recipe-layout__badge, .recipe-layout__share,
+    .recipe-layout__media, .recipe-layout__save, .recipe-layout__discussion,
+    .recipe-layout__notes, .recipe-layout__ad-cartridge,
+    .recipe-layout__suggestions,
+    footer, .recipe-layout__buttons, .recipe-details__avatar, .gk-header-wrap {
+        display: none ! important;
+    }
+
+    .recipe-layout__truncated-element {
+        overflow: unset ! important;
+        max-height: unset ! important;
+    }
+
+    .recipe-layout__facts, .recipe-ingredients__ingredient,
+    .recipe-directions__step {
+        padding: 5px ! important;
+    }
+
+    .recipe-layout__truncated-element::before {
+        background: unset ! important;
+    }
+}
