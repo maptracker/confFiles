@@ -11,14 +11,15 @@
 // @include       https://www.reddit.com/r/*
 // @include       https://www.reddit.com/
 // @include       https://old.reddit.com/*
-// @version       1.0.3
+// @version       1.0.4
 // @grant         none
 // ==/UserScript==
 
 useOld()
-    
+
 console.log("TEST");
 logX("-- Reddit Comment Highlighter --");
+randomImage();
 setTimeout(highlightX, 3000);
 
 function useOld() {
@@ -29,6 +30,17 @@ function useOld() {
         var old = loc.replace(newDom, '/old.reddit.com/');
         document.location = old;
     }
+}
+
+function randomImage() {
+    // Weird behavior where videos often only load after you go back
+    // and forth to the page. This just injects a handy image that you
+    // can click on to go "forward", then oscillate the browser <- ->
+    // buttons until the video loads.
+    var targ = document.getElementById('header-img-a');
+    if (!targ) return;
+    targ.innerHTML = "<b>BUN</b>";
+    targ.href = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Conejitolindo.jpg/207px-Conejitolindo.jpg";
 }
 
 function highlightX() {
