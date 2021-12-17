@@ -11,7 +11,7 @@
 // @include       https://www.reddit.com/r/*
 // @include       https://www.reddit.com/
 // @include       https://old.reddit.com/*
-// @version       1.0.5
+// @version       1.0.6
 // @grant         none
 // ==/UserScript==
 
@@ -44,7 +44,7 @@ function randomImage() {
     var ll    = links.length;
     for (var i=0; i < ll; i++) {
         var targ = links[i];
-        if (targ.href.test(chk)) {
+        if (chk.test(targ.href)) {
             targ.innerHTML = bH;
             targ.href = bun;
         }
