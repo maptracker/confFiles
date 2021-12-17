@@ -11,7 +11,7 @@
 // @include       https://www.reddit.com/r/*
 // @include       https://www.reddit.com/
 // @include       https://old.reddit.com/*
-// @version       1.0.4
+// @version       1.0.5
 // @grant         none
 // ==/UserScript==
 
@@ -37,10 +37,18 @@ function randomImage() {
     // and forth to the page. This just injects a handy image that you
     // can click on to go "forward", then oscillate the browser <- ->
     // buttons until the video loads.
-    var targ = document.getElementById('header-img-a');
-    if (!targ) return;
-    targ.innerHTML = "<b>BUN</b>";
-    targ.href = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Conejitolindo.jpg/207px-Conejitolindo.jpg";
+    var bun   = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Conejitolindo.jpg/207px-Conejitolindo.jpg";
+    var bH    = "<b>BUN</b>";
+    var chk   = new RegExp('\/domain\/v\.redd\.it');
+    var links = document.getElementsByTagName('a');
+    var ll    = links.length;
+    for (var i=0; i < ll; i++) {
+        var targ = links[i];
+        if (targ.href.test(chk)) {
+            targ.innerHTML = bH;
+            targ.href = bun;
+        }
+    }
 }
 
 function highlightX() {
