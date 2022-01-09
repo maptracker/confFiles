@@ -37,6 +37,7 @@
       "editor.toc.expanded": true,
       "editor.options.expanded": true,
       "editor.lint.expanded": true,
+      "editor.publish.expanded": true,
       "editor.lineWrapping": true,
       "editor.smartIndent": true,
       "editor.indentWithTabs": false,
@@ -2801,7 +2802,7 @@
     "id": 215,
     "updateDate": 1610242894500,
     "_id": "a1216f39-56e7-4f3e-a1e9-d1819c70a487",
-    "_rev": 1615596137600,
+    "_rev": 1640696251600,
     "etag": "W/\"bb254f9108721eeff35e9286bcd8de78dce1f23255572150811828cf6eefa2b4\"",
     "_usw": {}
   },
@@ -6260,15 +6261,13 @@
   {
     "enabled": true,
     "updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/SteamCommunity.user.css",
-    "md5Url": null,
     "url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
-    "originalMd5": null,
     "installDate": 1592223120200,
-    "sourceCode": "/* ==UserStyle==\n@name        Steam Community\n@description Mask birthdate check\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"steamcommunity.com\") {\n    .responsive_page_template_content { display: unset ! important; }\n    div[class*='_age_gate'] { display: none ! important; }\n}\n",
+    "sourceCode": "/* ==UserStyle==\n@name        Steam Community\n@description Mask birthdate check\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.1\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"steamcommunity.com\") {\n    .responsive_page_template_content { display: unset ! important; }\n    div[class*='_age_gate'], #cookiePrefPopup, #footer_spacer, #footer,\n    #footer_responsive_optin_spacer, .cookiepreferences_popup_content {\n        display: none ! important;\n    }\n}\n",
     "sections": [
       {
-        "code": ".responsive_page_template_content { display: unset ! important; }\n    div[class*='_age_gate'] { display: none ! important; }",
-        "start": 47,
+        "code": ".responsive_page_template_content { display: unset ! important; }\n    div[class*='_age_gate'], #cookiePrefPopup, #footer_spacer, #footer,\n    #footer_responsive_optin_spacer, .cookiepreferences_popup_content {\n        display: none ! important;\n    }",
+        "start": 311,
         "domains": [
           "steamcommunity.com"
         ]
@@ -6279,17 +6278,18 @@
       "description": "Mask birthdate check",
       "namespace": "github.com/maptracker/confFiles",
       "homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "license": "GPL-3.0-or-later"
     },
     "description": "Mask birthdate check",
     "name": "Steam Community",
-    "originalDigest": "506bd5e1acc2712b6420fef527e63b75d7965ea6",
+    "originalDigest": "1dfc0eb3c1e4edcd10c6336dc2e3d698bfea9332",
     "_id": "598c31d8-d742-44e3-a97b-db7f4b57b975",
-    "_rev": 1592223120200,
+    "_rev": 1640283128200,
     "id": 370,
-    "etag": "W/\"29ee27a2fa22e9f82804f5becf9b029005525365e2a1532e356e4ed7bc0ff1b8\"",
-    "_usw": {}
+    "etag": "W/\"caca81cc3e4b3fa027696b3904570da1a9d058967e5ced70399c50a006f5aa06\"",
+    "_usw": {},
+    "updateDate": 1640283127300
   },
   {
     "enabled": true,
@@ -6425,6 +6425,104 @@
   },
   {
     "enabled": true,
+    "updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/Steam.user.css",
+    "url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+    "installDate": 1627737482300,
+    "sections": [
+      {
+        "code": "#cookiePrefPopup, div[data-featuretarget*='broadcast-embed'],\n    div[class*='broadcast_embed'], footer {\n        display: none !important;\n    }",
+        "start": 299,
+        "domains": [
+          "steampowered.com"
+        ]
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name        Steam\n@description Mask out irritations\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.2\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"steampowered.com\") {\n    #cookiePrefPopup, div[data-featuretarget*='broadcast-embed'],\n    div[class*='broadcast_embed'], footer {\n        display: none !important;\n    }\n}\n",
+    "usercssData": {
+      "name": "Steam",
+      "description": "Mask out irritations",
+      "namespace": "github.com/maptracker/confFiles",
+      "homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+      "version": "1.0.2",
+      "license": "GPL-3.0-or-later"
+    },
+    "description": "Mask out irritations",
+    "name": "Steam",
+    "originalDigest": "ed1b4e391a25bd0b3be62af79d5ffc00957961cf",
+    "_id": "f6585ac8-3e6c-440b-a045-ef60e4e66132",
+    "_rev": 1627738357400,
+    "id": 377,
+    "etag": "W/\"69ce57e2b3d822893bc716aaa872bfdd10ca21aac7f837e3ec37cb2f6fe17354\"",
+    "updateDate": 1627738055600,
+    "_usw": {}
+  },
+  {
+    "enabled": true,
+    "updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/Boston.user.css",
+    "url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+    "installDate": 1633109135900,
+    "sections": [
+      {
+        "code": "header, .m-article-header__social, .m-content-advert, #comments,\n    div[class*=\"email-signup\"], #sidebar-home, img, footer, #site-modal {\n        display: none !important;\n    }",
+        "start": 298,
+        "domains": [
+          "boston.com"
+        ]
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name        Boston.com\n@description Mask out irritations\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.2\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"boston.com\") {\n    header, .m-article-header__social, .m-content-advert, #comments,\n    div[class*=\"email-signup\"], #sidebar-home, img, footer, #site-modal {\n        display: none !important;\n    }\n}\n",
+    "usercssData": {
+      "name": "Boston.com",
+      "description": "Mask out irritations",
+      "namespace": "github.com/maptracker/confFiles",
+      "homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+      "version": "1.0.2",
+      "license": "GPL-3.0-or-later"
+    },
+    "description": "Mask out irritations",
+    "name": "Boston.com",
+    "originalDigest": "0c0193fa585d4a0478c5ded62f213aa41abc423c",
+    "_id": "03eed83a-06bd-4c05-ab61-bf6f4c412823",
+    "_rev": 1633184347500,
+    "id": 378,
+    "etag": "W/\"0fe2b62fa20f9e5b6487eea9a0be53459a1dd99ed6b7cffbf5651fd637c2e3fa\"",
+    "_usw": {},
+    "updateDate": 1633184347500
+  },
+  {
+    "enabled": true,
+    "updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/Food.com.user.css",
+    "url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+    "installDate": 1633820165800,
+    "sections": [
+      {
+        "code": ".recipe-layout__ad-sponsor, .recipe-layout__badge, .recipe-layout__share,\n    .recipe-layout__media, .recipe-layout__save, .recipe-layout__discussion,\n    .recipe-layout__notes, .recipe-layout__ad-cartridge,\n    .recipe-layout__suggestions,\n    footer, .recipe-layout__buttons, .recipe-details__avatar, .gk-header-wrap {\n        display: none ! important;\n    }\n\n    .recipe-layout__truncated-element {\n        overflow: unset ! important;\n        max-height: unset ! important;\n    }\n\n    .recipe-layout__facts, .recipe-ingredients__ingredient,\n    .recipe-directions__step {\n        padding: 5px ! important;\n    }\n\n    .recipe-layout__truncated-element::before {\n        background: unset ! important;\n    }",
+        "start": 303,
+        "domains": [
+          "food.com"
+        ]
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name        Food.com\n@description Full visibility, make compact\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"food.com\") {\n    .recipe-layout__ad-sponsor, .recipe-layout__badge, .recipe-layout__share,\n    .recipe-layout__media, .recipe-layout__save, .recipe-layout__discussion,\n    .recipe-layout__notes, .recipe-layout__ad-cartridge,\n    .recipe-layout__suggestions,\n    footer, .recipe-layout__buttons, .recipe-details__avatar, .gk-header-wrap {\n        display: none ! important;\n    }\n\n    .recipe-layout__truncated-element {\n        overflow: unset ! important;\n        max-height: unset ! important;\n    }\n\n    .recipe-layout__facts, .recipe-ingredients__ingredient,\n    .recipe-directions__step {\n        padding: 5px ! important;\n    }\n\n    .recipe-layout__truncated-element::before {\n        background: unset ! important;\n    }\n}\n",
+    "usercssData": {
+      "name": "Food.com",
+      "description": "Full visibility, make compact",
+      "namespace": "github.com/maptracker/confFiles",
+      "homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+      "version": "1.0.0",
+      "license": "GPL-3.0-or-later"
+    },
+    "description": "Full visibility, make compact",
+    "name": "Food.com",
+    "originalDigest": "06d44e1d7e9f6c74e6f4293a99a02212cc84fdd2",
+    "_id": "6e785b84-8e87-4630-bf67-44d0b89c72c6",
+    "_rev": 1633820165800,
+    "id": 380,
+    "_usw": {},
+    "etag": "W/\"7c9b0a5160fc9a2887aba0fc358582134086c0b4ceb92f74249d382d1905ede1\""
+  },
+  {
+    "enabled": true,
     "updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/Gamepedia.user.css",
     "md5Url": null,
     "url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
@@ -6522,7 +6620,7 @@
     "updateDate": 1624715726400,
     "id": 45,
     "_id": "fd24e02f-e364-48eb-8a25-79d27b218008",
-    "_rev": 1624715726400,
+    "_rev": 1640718953200,
     "etag": "W/\"2fb3bb989ef3f007c86e985c80c15c18f61fd6a6f98f5bd0d5b7692c53829818\"",
     "_usw": {}
   },
@@ -7309,7 +7407,7 @@
     "id": 95,
     "updateDate": 1625853473100,
     "_id": "c5d63e2e-194e-4e23-b9f1-804fa954b6b8",
-    "_rev": 1625853474300,
+    "_rev": 1640092505700,
     "etag": "W/\"5dcf6b3c07c8f9d85415ed04d730e20f5008ce3e97fdc44415733f6f98b39338\"",
     "_usw": {}
   },
@@ -7383,21 +7481,51 @@
   },
   {
     "enabled": true,
-    "updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/Steam.user.css",
+    "updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/Fastmail.user.css",
     "url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
-    "installDate": 1627737482300,
+    "installDate": 1641746939000,
     "sections": [
       {
-        "code": "#cookiePrefPopup, div[data-featuretarget*='broadcast-embed'],\n    div[class*='broadcast_embed'], footer {\n        display: none !important;\n    }",
-        "start": 299,
+        "code": "a:visited { color: purple ! important; }",
+        "start": 296,
         "domains": [
-          "steampowered.com"
+          "fastmail.com"
         ]
       }
     ],
-    "sourceCode": "/* ==UserStyle==\n@name        Steam\n@description Mask out irritations\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.2\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"steampowered.com\") {\n    #cookiePrefPopup, div[data-featuretarget*='broadcast-embed'],\n    div[class*='broadcast_embed'], footer {\n        display: none !important;\n    }\n}\n",
+    "sourceCode": "/* ==UserStyle==\n@name        Fastmail\n@description Show visited links\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"fastmail.com\") {\n    a:visited { color: purple ! important; }\n}\n",
     "usercssData": {
-      "name": "Steam",
+      "name": "Fastmail",
+      "description": "Show visited links",
+      "namespace": "github.com/maptracker/confFiles",
+      "homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+      "version": "1.0.0",
+      "license": "GPL-3.0-or-later"
+    },
+    "description": "Show visited links",
+    "name": "Fastmail",
+    "originalDigest": "e6bbb54e4716e6efba5112f591e6617822413285",
+    "_id": "cfa3a965-78ff-4017-a3e2-bc7946bc7be2",
+    "_rev": 1641746939000,
+    "id": 381
+  },
+  {
+    "enabled": true,
+    "updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/AngiesList.user.css",
+    "url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+    "installDate": 1641747628600,
+    "sections": [
+      {
+        "code": "#featured-banner, footer {\n        display: none !important;\n    }",
+        "start": 298,
+        "domains": [
+          "angi.com"
+        ]
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name        Angie's List\n@description Mask out irritations\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.2\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"angi.com\") {\n    #featured-banner, footer {\n        display: none !important;\n    }\n}\n",
+    "usercssData": {
+      "name": "Angie's List",
       "description": "Mask out irritations",
       "namespace": "github.com/maptracker/confFiles",
       "homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
@@ -7405,12 +7533,40 @@
       "license": "GPL-3.0-or-later"
     },
     "description": "Mask out irritations",
-    "name": "Steam",
-    "originalDigest": "ed1b4e391a25bd0b3be62af79d5ffc00957961cf",
-    "_id": "f6585ac8-3e6c-440b-a045-ef60e4e66132",
-    "_rev": 1627738058200,
-    "id": 377,
-    "etag": "W/\"69ce57e2b3d822893bc716aaa872bfdd10ca21aac7f837e3ec37cb2f6fe17354\"",
-    "updateDate": 1627738055600
+    "name": "Angie's List",
+    "originalDigest": "33a14951e127d234d9a561db13d2d8bbddd3926c",
+    "_id": "5b2371d1-43ab-431b-a068-d5e31a4bb324",
+    "_rev": 1641747628600,
+    "id": 382
+  },
+  {
+    "enabled": true,
+    "updateUrl": "https://raw.githubusercontent.com/maptracker/confFiles/master/UserCSS/GlassDoor.user.css",
+    "url": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+    "installDate": 1641747647700,
+    "sections": [
+      {
+        "code": "footer {\n        display: none ! important;\n    }",
+        "start": 300,
+        "domains": [
+          "glassdoor.com"
+        ]
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name        GlassDoor\n@description Mask out irritations\n@namespace   github.com/maptracker/confFiles\n@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS\n@version     1.0.0\n@license     GPL-3.0-or-later\n==/UserStyle== */\n\n@-moz-document domain(\"glassdoor.com\") {\n    footer {\n        display: none ! important;\n    }\n}\n",
+    "usercssData": {
+      "name": "GlassDoor",
+      "description": "Mask out irritations",
+      "namespace": "github.com/maptracker/confFiles",
+      "homepageURL": "https://github.com/maptracker/confFiles/tree/master/UserCSS",
+      "version": "1.0.0",
+      "license": "GPL-3.0-or-later"
+    },
+    "description": "Mask out irritations",
+    "name": "GlassDoor",
+    "originalDigest": "1fa08422e2666a000576796539a6ceea40e558e8",
+    "_id": "aa0156be-a08c-4062-acee-2b3309d3f450",
+    "_rev": 1641747647700,
+    "id": 383
   }
 ]
