@@ -3,12 +3,11 @@
 @description New York Times user style, mostly masks components
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.10
+@version     1.0.11
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
-@-moz-document domain("nytimes.com"), domain("nytimes3xbfgragh.onion"),
-domain( "nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion") {
+@-moz-document domain("nytimes.com"), domain("nytimes3xbfgragh.onion") {
 
     /* Mask a whole bunch of cruft */
     #cColumn, .runaroundLeft, .shareTools, .emailAlertModule,
