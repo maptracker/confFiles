@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name          Reddit Comments
+// @name          Reddit Comments II
 // @namespace     https://github.com/maptracker/confFiles/tree/master/UserScript
 // @include       http://www.reddit.com/*/comments/*
 // @include       http://np.reddit.com/*/comments/*
@@ -11,7 +11,8 @@
 // @include       https://www.reddit.com/r/*
 // @include       https://www.reddit.com/
 // @include       https://old.reddit.com/*
-// @version       1.0.6
+// @description   Colorizes posts and comments by count
+// @version       1.0.7
 // @grant         none
 // ==/UserScript==
 
