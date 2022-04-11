@@ -3,7 +3,7 @@
 @description Mask out various bits, unhide content
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.5
+@version     1.0.6
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -13,9 +13,11 @@
     div[id^='ad_position'], #nav-bar, #hp-top-rail, .subscribe,
     a[href*="/opinion/"], a[href*="/arts/"], a[href*="/obituaries/"],
     a[href*="/sports/"], a[href*="/lifestyle/"], div[class^='sharebar'],
-    .tagline_hr { 
+    .tagline_hr, .newsletter, .image { 
         display: none ! important; 
     }
     .hidden { display: unset ! important; }
-    #hp-top-main, article { max-width: 100%; flex-basis: unset ! important;}
+    #hp-top-main, article, .paragraph {
+        max-width: 100%; flex-basis: unset ! important;
+    }
 }
