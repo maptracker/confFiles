@@ -3,13 +3,14 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.2
+@version     1.0.3
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("boston.com") {
     header, .m-article-header__social, .m-content-advert, #comments,
-    div[class*="email-signup"], #sidebar-home, img, footer, #site-modal {
+    div[class*="email-signup"], #sidebar-home, img, footer, #site-modal,
+    div[class*="webgears"] {
         display: none !important;
     }
 }
