@@ -3,13 +3,19 @@
 @description Mask out unwanted or owned tiles
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.11
+@version     1.0.12
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("gog.com") {
     .is-owned { 
         display: none ! important
+    }
+    .owned-status {
+        font-size: 300%;
+        background-color: yellow;
+        color: red;
+        font-weight: bold;
     }
     .icon-linux { 
         background-color: darkorange ! important;
@@ -152,6 +158,7 @@
     *[product-tile-id="2140144873"], /* rel texas */
     *[product-tile-id="1735987864"], /* shadow warrior */
     *[product-tile-id="1207658828"], /* gabriel knight */
+    a[href$="game/gabriel_knight_sins_of_the_fathers"],
     *[product-tile-id="1207664393"], /* blackwell */
     *[product-tile-id="1207658837"], /* gabriel knight */
     *[product-tile-id="1207660094"], /* dust */
@@ -285,9 +292,12 @@
     *[product-tile-id="1207664473"], /* f-117 2 */
     *[product-tile-id="1207666263"], /* x-wing */
     *[product-tile-id="1207666283"], /* KotR */
-    *[product-tile-id="1312824873"], /* Fallout new vegas */
     *[product-tile-id="1440163901"], /* morrowind */
+    *[product-tile-id="1312824873"], /* Fallout new vegas */
+    a[href$="/fallout_new_vegas_ultimate_edition"],
     *[product-tile-id="1440166436"], /* fallout 2 */
+    a[href$="/fallout_2"],
+    a[href$="/fallout_tactics"],
     *[product-tile-id="1440166436"], /* civ 4 */
     *[product-tile-id="1330235937"], /* divinity 2 */
     *[product-tile-id="1879910422"], /* divinity 2 */
@@ -306,6 +316,7 @@
     *[product-tile-id="1330235937"], /* star trek */
     *[product-tile-id="1429089605"], /* star trek */
     *[product-tile-id="1440166342"], /* fallout */
+    a[href$="/fallout"],
     *[product-tile-id="1949616134"], /* dragon age */
     *[product-tile-id="1207658829"], /* arcanum */
     *[product-tile-id="1207658833"], /* space quest 4/5/6 */
@@ -822,6 +833,7 @@
     *[product-tile-id="1796017250"], /* Brothers in Arms: Hell's Highway™ */
     *[product-tile-id="1807214820"], /* Helium Rain */
     *[product-tile-id="1248282609"], /* Fallout 3: Game of the Year Edition */
+    a[href$="/fallout_3_game_of_the_year_edition"],
     *[product-tile-id="1352176936"], /* JYDGE */
     *[product-tile-id="1398417576"], /* Nightmares from the Deep 2: The Siren's Call */
     *[product-tile-id="1443519435"], /* Sublevel Zero Redux */
