@@ -3,7 +3,7 @@
 @description Mask various stuff, deal with lazy loading
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.5
+@version     1.0.6
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -15,7 +15,7 @@
     a[data-tracking*='teasebox'], a[data-tracking*='navigation'], 
     a[href*='addthis'], a[data-tracking*='mid=Tab'], 
     a[data-tracking*='footer'], a[data-tracking*='header'], 
-    a[data-tracking*='Parenthetical'], 
+    a[data-tracking*='Parenthetical'], div[class*='sign-up'],
     footer { 
         display: none ! important;
     }
