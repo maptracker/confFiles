@@ -62,8 +62,7 @@
     }
 
     /* Sites that don't play well with my addons */
-    a[href*="gfycat.com"], a[href*="streamable.com"],
-    a[href*="v.reddit.com"], a[href*="v.redd.it"] {
+    a[href*="gfycat.com"], a[href*="streamable.com"] {
         color: red ! important;
         background-color: #999 ! important;
     }
