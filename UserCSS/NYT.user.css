@@ -3,7 +3,7 @@
 @description New York Times user style, mostly masks components
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.13
+@version     1.0.14
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -43,6 +43,12 @@ url("https://nytimes3xbfgragh.onion/") {
 
     /* Landing page (only) has a big ad block at top */
     #app > div:nth-child(1) { 
+        display: none ! important; 
+    }
+}
+
+@-moz-document url("https://www.nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion") {
+    #bottom-wrapper, #site-index, footer, div[role="complementary"] { 
         display: none ! important; 
     }
 }
