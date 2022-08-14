@@ -3,13 +3,14 @@
 @description Mask out irritations, compact layout
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.2
+@version     1.0.3
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("apnews.com") {
     .Footer, .SocialShare, .LazyImage, .GenericCarousel, .thumbnail,
-    .share-link, div[class="fluid-wrapper"], .Header {
+    .share-link, div[class="fluid-wrapper"], a[class^="image"], .Header,
+    .FeedAd {
         display: none ! important; 
     }
 
