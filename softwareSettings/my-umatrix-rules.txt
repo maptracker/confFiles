@@ -809,11 +809,13 @@ google.com gstatic.com cookie allow
 google.com gstatic.com script allow
 google.com gstatic.com xhr allow
 google.com maps.googleapis.com script allow
+google.com play.google.com other allow
 google.com ssl.gstatic.com media allow
 google.com ssl.gstatic.com script allow
 google.com storage.googleapis.com media allow
 google.com storage.googleapis.com script allow
 google.com storage.googleapis.com xhr allow
+google.com translate.google.com other allow
 google.com translate.googleusercontent.com frame allow
 google.com www.gstatic.com script allow
 google.com www.gstatic.com xhr allow
@@ -1070,10 +1072,14 @@ ipernity.com ipernity.com script allow
 ipernity.com ipernity.com xhr allow
 iqhealth.com d292eo2ec5lzlq.cloudfront.net script allow
 iqhealth.com iqhealth.com script allow
+itch.io f.vimeocdn.com script allow
 itch.io google.com script allow
 itch.io googlevideo.com * allow
 itch.io itch.io script allow
 itch.io itch.io xhr allow
+itch.io player.vimeo.com frame allow
+itch.io player.vimeo.com script allow
+itch.io skyfire.vimeocdn.com xhr allow
 itch.io youtube.com frame allow
 itch.io youtube.com other allow
 itch.io youtube.com script allow
@@ -1908,6 +1914,7 @@ steamcommunity.com community.cloudflare.steamstatic.com script allow
 steamcommunity.com steamcommunity-a.akamaihd.net script allow
 steamcommunity.com steamcommunity.com script allow
 steamcommunity.com steamcommunity.com xhr allow
+steamcommunity.com store.steampowered.com xhr allow
 steampowered.com akamai.steamstatic.com media allow
 steampowered.com akamaihd.net script allow
 steampowered.com cdn.akamai.steamstatic.com media allow
@@ -1929,6 +1936,8 @@ steampowered.com store.steampowered.com xhr allow
 steampowered.com video.steamstatic.com xhr allow
 steampowered.com www.paypal.com script allow
 steampowered.com www.paypalobjects.com script allow
+stellartactics.com stellartactics.com script allow
+stellartactics.com stellartactics.com xhr allow
 stevelichman.com siteassets.parastorage.com xhr allow
 stevelichman.com static.parastorage.com script allow
 stevelichman.com static.parastorage.com xhr allow
