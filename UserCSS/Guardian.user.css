@@ -3,14 +3,14 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("guardian.co.uk") {
     .m-guardianbookshop, .named-trailblock, .twitter-container, .jobs-box,
     .share-links, .facebook, .tweet, #footer, #header,
-    .list-of-trails { 
+    .list-of-trails, figure[data-spacefinder-type*="Newsletter"] { 
         display: none ! important; 
     }
 }
