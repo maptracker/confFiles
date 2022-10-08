@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name        Frontier India
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("frontierindia.com") {
+    #ez-cookie-dialog-wrapper, #comments, .td-footer-template-wrap,
+    .tdb_single_tags, .tdb_single_post_share {
+        display: none !important;
+    }
+}
