@@ -141,6 +141,8 @@ angieslist.com member.angieslist.com script allow
 angieslist.com member.angieslist.com xhr allow
 annualcreditreport.com annualcreditreport.com script allow
 annualcreditreport.com annualcreditreport.com xhr allow
+ap.org interactives.ap.org script allow
+ap.org interactives.ap.org xhr allow
 arcgis.com arcg.is frame allow
 arcgis.com arcg.is xhr allow
 arcgis.com arcgis.com script allow
@@ -620,8 +622,10 @@ firefox.com monitor.firefox.com other allow
 firefox.com monitor.firefox.com script allow
 firefox.com monitor.firefox.com xhr allow
 fisglobal.com ii.fisglobal.com script allow
+fivethirtyeight.com assets.espn.go.com frame allow
 fivethirtyeight.com cdn.registerdisney.go.com * block
 fivethirtyeight.com connect.facebook.net * block
+fivethirtyeight.com dcf.espn.com script allow
 fivethirtyeight.com dwcdn.net frame allow
 fivethirtyeight.com dwcdn.net script allow
 fivethirtyeight.com dwcdn.net xhr allow
@@ -859,6 +863,10 @@ healthsafe-id.com healthsafe-id.com script allow
 healthsafe-id.com healthsafe-id.com xhr allow
 hearth-works.com www.hearth-works.com script allow
 hearth-works.com www.hearth-works.com xhr allow
+hf.space cdnjs.cloudflare.com script allow
+hf.space hf.space script allow
+hf.space hf.space xhr allow
+hf.space spaces.huggingface.tech xhr allow
 hivemill.com app-cdn.productcustomizer.com script allow
 hivemill.com cdn.shopify.com script allow
 hivemill.com d1liekpayvooaz.cloudfront.net script allow
@@ -922,6 +930,9 @@ hotwater.com maxcdn.bootstrapcdn.com script allow
 hotwater.com www.hotwater.com script allow
 howlongtobeat.com howlongtobeat.com script allow
 howlongtobeat.com howlongtobeat.com xhr allow
+huggingface.co hf.space frame allow
+huggingface.co huggingface.co script allow
+huggingface.co huggingface.co xhr allow
 hughesnet.com cdnjs.cloudflare.com script allow
 hughesnet.com maps.googleapis.com script allow
 hughesnet.com www.hughesnet.com script allow
@@ -1104,6 +1115,8 @@ jobs.abbott www.jobs.abbott xhr allow
 jpmchase.com securemail.jpmchase.com media allow
 jpmchase.com securemail.jpmchase.com script allow
 jqueryui.com jquery.com script allow
+jsfiddle.net jsfiddle.net script allow
+jsfiddle.net jsfiddle.net xhr allow
 jsfiddle.net jshell.net frame allow
 jsfiddle.net jshell.net script allow
 jsperf.com www.browserscope.org script allow
@@ -1453,6 +1466,8 @@ noaa.gov maps-api-ssl.google.com script allow
 noaa.gov maps.googleapis.com script allow
 noaa.gov www.ncdc.noaa.gov script allow
 noaa.gov www.ncdc.noaa.gov xhr allow
+noaa.gov www.nhc.noaa.gov script allow
+noaa.gov www.nhc.noaa.gov xhr allow
 noaa.gov www.nohrsc.noaa.gov script allow
 nomansskymods.com accounts.google.com frame allow
 nomansskymods.com ajax.googleapis.com script allow
@@ -1496,6 +1511,7 @@ nuts.com www.google.com script allow
 nuts.com www.google.com xhr allow
 nuts.com www.gstatic.com script allow
 nytimes.com nytimes.com cookie block
+nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion 1st-party cookie inherit
 nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion a.et.nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion other allow
 nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion a1.nyt2sl3njavkomjxqe2e5nz6bsqv56yqbwkvhpmfn5jwh4pyccmjibad.onion script allow
 nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion api.mapbox.com xhr allow
@@ -1510,6 +1526,7 @@ nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion rumcdn.geoedge.be
 nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion s1.nyt2sl3njavkomjxqe2e5nz6bsqv56yqbwkvhpmfn5jwh4pyccmjibad.onion script allow
 nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion static01.nyt2sl3njavkomjxqe2e5nz6bsqv56yqbwkvhpmfn5jwh4pyccmjibad.onion script allow
 nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion static01.nyt2sl3njavkomjxqe2e5nz6bsqv56yqbwkvhpmfn5jwh4pyccmjibad.onion xhr allow
+nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion vp.nyt2sl3njavkomjxqe2e5nz6bsqv56yqbwkvhpmfn5jwh4pyccmjibad.onion xhr allow
 nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion www.google.com frame allow
 nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion www.google.com script allow
 nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion www.google.com xhr allow
@@ -1685,6 +1702,7 @@ reddit.com g.redditmedia.com media allow
 reddit.com g.redditmedia.com other allow
 reddit.com imgur.com frame allow
 reddit.com np.reddit.com script allow
+reddit.com old.reddit.com media allow
 reddit.com old.reddit.com script allow
 reddit.com preview.redd.it media allow
 reddit.com redditstatic.com script allow
@@ -1844,6 +1862,10 @@ ssa.gov ajax.googleapis.com script allow
 ssa.gov ssa.gov script allow
 ssa.gov ssa.gov xhr allow
 ssa.gov www.socialsecurity.gov script allow
+stability.ai squarespace.com script allow
+stability.ai stability.ai script allow
+stability.ai stability.ai xhr allow
+stability.ai use.typekit.net script allow
 stackexchange.com ajax.googleapis.com script allow
 stackexchange.com cdn.sstatic.net script allow
 stackexchange.com cdnjs.cloudflare.com script allow
@@ -2153,6 +2175,10 @@ usaa.com gb.usaa360.com xhr allow
 usaa.com l.usaa.com xhr allow
 usaa.com usaa.com script allow
 usaa.com www.usaa.com xhr allow
+usda.gov ask.usda.gov script allow
+usda.gov ask.usda.gov xhr allow
+usda.gov usda.gov script allow
+usda.gov usda.gov xhr allow
 usps.com serverapi.arcgisonline.com script allow
 usps.com usps.com script allow
 usps.com usps.com xhr allow
