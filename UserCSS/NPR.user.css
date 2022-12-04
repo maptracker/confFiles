@@ -3,13 +3,13 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("npr.org") {
-    footer, .branding, #global-navigation-wrap, .share-tools,
-    iframe, .statichtml {
+    footer, .branding, #global-navigation-wrap, .share-tools, .toggle-caption,
+    iframe, .statichtml, #header, .skip-links, .audio-module-tools, .bucket {
         display: none ! important;
     }
     a:visited { color: purple ! important; }
