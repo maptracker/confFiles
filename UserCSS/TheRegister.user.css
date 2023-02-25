@@ -3,13 +3,14 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("theregister.com") {
     .RegCTBWF_wrapper, #forums-nav, .forum_user_bar, .floating_bar, #footer,
-    .wptl btm{
+    .wptl, #masthead, .sharing_block {
         display: none !important;
     }
+    .centre_col { max-width: unset ! important; }
 }
