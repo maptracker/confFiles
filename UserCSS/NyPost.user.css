@@ -3,7 +3,7 @@
 @description Mask out irritations, get images to behave
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.1
+@version     1.0.2
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -15,7 +15,9 @@
        other to be visible, plus 'plain' images on other pages. */
     img, #page-header, .sd-sharing, .desktop-share, #sidebar-primary, footer,
     .widget-more-stories, .read-next-wrapper, .comments, .sidebar,
-    .inline-related, #navigation, .inline-module, .wp-block-image {
+    .inline-related, #navigation, .inline-module, .wp-block-image,
+    div[class*="comments"], #share-url-modal, #amp-mobile-version-switcher,
+    .social-share, .recirc {
         display: none ! important;
     }
     img[srcset*="http"] { display: unset ! important; }
