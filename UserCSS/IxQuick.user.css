@@ -3,7 +3,7 @@
 @description Highlight commonly used sites
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.5
+@version     1.0.6
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -23,7 +23,7 @@ domain("bing.com"), domain("google.com"), domain("duckduckgo.com") {
     }
 
     /* Mask cruft */
-    #sponsored, iframe, .banner-container, #block-display, .ex-qi-tp-container { 
+    #sponsored, iframe, .banner-container, #block-display, #ex-qi-tp-container { 
         display: none ! important; 
     }
 
