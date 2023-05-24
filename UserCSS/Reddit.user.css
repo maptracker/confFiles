@@ -3,7 +3,7 @@
 @description Mask add block in widget panel
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.7
+@version     1.0.8
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -24,8 +24,8 @@
     #fixed-side-footer-links, #recommendations, #promoted-spotlight,
     #eu-cookie-policy, .report-button, .flair, .morecomments,
     .commentsignupbar, .listingsignupbar, .welcome, #onboarding-splash,
-    #hamburgers, .s6prp9s-8, .s1l07lbt-0, .s1cwcagp-6,
-    #block-homepage, .error, .side, .footer-parent { 
+    #hamburgers, .s6prp9s-8, .s1l07lbt-0, .s1cwcagp-6, .reddit-infobar,
+    #block-homepage, .error, .side, .footer-parent, .read-next-container { 
         display: none ! important; 
     }
 
