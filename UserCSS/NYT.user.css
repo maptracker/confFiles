@@ -3,7 +3,7 @@
 @description New York Times user style, mostly masks components
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.18
+@version     1.0.19
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -26,9 +26,11 @@
     #standalone-footer, footer { 
         display: none ! important; 
     }
+    
     /* Mask specific sections */
     a[href*="/podcasts/"], a[href*="/well/"], a[href*="/sports/"],
-    a[href*="/arts/"], a[href*="/puzzles/"] {
+    a[href*="/arts/"], a[href*="/puzzles/"], a[href*="theathletic.com"]],
+    a[href*="/theater/"], a[href*="/movies/"] {
         display: none ! important; 
     }
 
@@ -38,8 +40,9 @@
     }
 }
 
+/* Onion site */
 @-moz-document url("https://www.nytimes.com/"),
-url("https://nytimes3xbfgragh.onion/") {
+url("https://nytimes3xbfgragh.onion/"), @-moz-document domain("nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion") {
 
     /* Landing page (only) has a big ad block at top */
     #app > div:nth-child(1) { 
@@ -48,15 +51,18 @@ url("https://nytimes3xbfgragh.onion/") {
     a[href*="/opinion/"] { 
         color:orange ! important;
     }
-}
-
-/* Onion site */
-@-moz-document domain("nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion") {
+    
     #bottom-wrapper, #site-index, footer, div[role="complementary"],
     div[data-testid="StandardAd"] { 
         display: none ! important; 
     }
-    a[href*="/opinion/"] * { 
-        color:orange ! important;
+
+    /* Mask specific sections */
+    a[href*="/podcasts/"], a[href*="/well/"], a[href*="/sports/"],
+    a[href*="/arts/"], a[href*="/puzzles/"], a[href*="theathletic.com"]],
+    a[href*="/theater/"], a[href*="/movies/"] {
+        display: none ! important; 
     }
+
 }
+
