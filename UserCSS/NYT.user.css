@@ -3,7 +3,7 @@
 @description New York Times user style, mostly masks components
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.21
+@version     1.0.22
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -41,13 +41,9 @@
 }
 
 /* Onion site */
-@-moz-document url("https://www.nytimes.com/"),
-url("https://nytimes3xbfgragh.onion/"), domain("nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion") {
+@-moz-document domain("nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion") {
 
-    /* Landing page (only) has a big ad block at top */
-    #app > div:nth-child(1) { 
-        display: none ! important; 
-    }
+    
     a[href*="/opinion/"] { 
         color:orange ! important;
     }
@@ -60,7 +56,7 @@ url("https://nytimes3xbfgragh.onion/"), domain("nytimesn7cgmftshazwhfgzm37qxb44r
     /* Mask specific sections */
     a[href*="/podcasts/"], a[href*="/well/"], a[href*="/sports/"],
     a[href*="/arts/"], a[href*="/puzzles/"], a[href*="theathletic.com"],
-    a[href*="/theater/"], a[href*="/movies/"] {
+    a[href*="/theater/"], a[href*="/movies/"], a[href*="/style/"] {
         display: none ! important; 
     }
 
