@@ -3,7 +3,7 @@
 @description New York Times user style, mostly masks components
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.20
+@version     1.0.21
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -42,7 +42,7 @@
 
 /* Onion site */
 @-moz-document url("https://www.nytimes.com/"),
-url("https://nytimes3xbfgragh.onion/"), @-moz-document domain("nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion") {
+url("https://nytimes3xbfgragh.onion/"), domain("nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion") {
 
     /* Landing page (only) has a big ad block at top */
     #app > div:nth-child(1) { 
