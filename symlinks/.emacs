@@ -1,6 +1,13 @@
 ;; Red Hat Linux default .emacs initialization file
 ;; The file that emacs defaults to is located at:
 ;; /net/cyclops/u2/people/tilfordc
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (setq load-path (cons (concat (getenv "HOME") "/.lisp") load-path))
 (setq load-path (cons (concat (getenv "HOME") "/lisp") load-path))
 
@@ -45,11 +52,11 @@
 ;; Prevent Bob from supressing line numbering
 (setq inhibit-mmm-line-number-mode-inhibition t)
 
-
 ;; Explicitly redefine key in case other systems do not have that flag
 (global-set-key [delete] 'delete-char)
 
-(setq lpr-switches '("-Pb3a047b") )
+;; Printer
+;; (setq lpr-switches '("-Pb3a047b") )
 
 ;;; Prevent Extraneous Tabs
 (setq-default indent-tabs-mode nil)
@@ -61,8 +68,6 @@
                             (left . 1620) 
                             (height . 70) 
                             (width . 80)))
-
-
 
 
 ;; background was DarkSlateGray
@@ -84,32 +89,8 @@
 (setq auto-mode-alist       
      (cons '("\\.html\\'" . html-helper-mode) auto-mode-alist))
 
-;; (setq-default lpr-command "b3a047b")
-
-; Suggested to make xemacs connect to servers properly:
-; http://list-archive.xemacs.org/xemacs/200010/msg00001.html
-(eval-after-load "efs"
-   '(setq efs-ftp-program-args (cons "-u" efs-ftp-program-args)))
-
 (delete-selection-mode nil)
 (transient-mark-mode t)
-
-;; Remap to standard macintosh editting commands
-;; (global-set-key "\A-x" 'cut)
-;; (global-set-key "\M-c" 'copy)  ;; Leaving these out as mouse actions
-;; (global-set-key "\M-v" 'paste) ;; cover these functions
-;; (global-set-key "\A-z" 'undo)
-
-;; -----------------------------------------------------------
-;;; Ideas from Javier Oviedo's Emacs init file. joviedo@glue.umd.edu
-
-;;; Have the titlebar contain name of current buffer
-
-;;; Irritatingly, the title is still reset to "emacs@<machine domain>"
-;;; when the window gets minimized. I have not found a way to prevent
-;;; this.
-
-;; (setq frame-title-format '("%b" (buffer-file-name " :   %f")))
 
 ;;; https://www.gnu.org/software/emacs/manual/html_node/efaq/Displaying-the-current-file-name-in-the-titlebar.html
 (setq frame-title-format "%b")
@@ -118,31 +99,13 @@
 (setq inhibit-startup-message t)
 ;;; Disable down-arrow and C-n at end of a buffer from adding new lines
 (setq next-line-add-newlines nil)
-;;; Turn on auto-fill. 
-;(setq auto-fill-mode t)
+
 ;;; Automatically makes the matching paren stand out in color.
 (condition-case err
     (show-paren-mode t)
   (error
    (message "Cannot show parens %s" (cdr err))))
 ;;;
-;; -----------------------------------------------------------
-;; For using xslide XSL mode
-;; $Id: dot_emacs,v 1.4 2001-04-06 23:05:36-04 tkg Exp $
-;; XSL mode
-;; (autoload 'xsl-mode "xslide" "Major mode for XSL stylesheets." t)
-
-;; Turn on font lock when in XSL mode
-;;(add-hook 'xsl-mode-hook
-;;	  'turn-on-font-lock)
-
-;;(setq auto-mode-alist
-;;     (append
-;;       (list
-;;	'("\\.fo" . xsl-mode)
-;;	'("\\.bsm" . sgml-mode)
-;;	'("\\.xsl" . xsl-mode))
-;;       auto-mode-alist))
 
 
 ;; Uncomment if using abbreviations
@@ -205,6 +168,9 @@
 ;
 
 (global-font-lock-mode 3)
+
+;; --------------------------------------
+
 
 ;; javascript mode
 ;; (autoload 'javascript-mode "javascript-mode" "JavaScript mode" t)
