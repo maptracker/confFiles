@@ -3,7 +3,7 @@
 @description New York Times user style, mostly masks components
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.22
+@version     1.0.24
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -43,10 +43,12 @@
 /* Onion site */
 @-moz-document domain("nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion") {
 
+    h3, .indicate-hover { color: unset ! important }
     
-    a[href*="/opinion/"] { 
+    a[href*="/opinion/"], a[href*="/opinion/"] * {
         color:orange ! important;
     }
+    
     
     #bottom-wrapper, #site-index, footer, div[role="complementary"],
     div[data-testid="StandardAd"] { 
