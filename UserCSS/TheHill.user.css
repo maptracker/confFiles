@@ -3,7 +3,7 @@
 @description Allow content to wrap to page, block various cruft
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.12
+@version     1.0.13
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -15,7 +15,7 @@
     .share-box, .dfp-tag-wrapper, article[about*="/opinion/"],
     .store-item, .thehill-store-list, .video-widget, .social-share,
     div[id*="hill-tv"], div[id*="hill-store"], div[id*="video"],
-    .header-highlighted-area, #thehillheader, .load-more { 
+    .header-highlighted-area, #thehillheader, .load-more, .sailthru_shortcode { 
         display: none!important;
     }
     a[href*="/opinion/"] { 
