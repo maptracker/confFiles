@@ -12,7 +12,7 @@
 // @match         https://www.reddit.com/
 // @match         https://old.reddit.com/*
 // @description   Colorizes posts and comments by count
-// @version       1.0.8
+// @version       1.0.9
 // @grant         none
 // ==/UserScript==
 
@@ -146,7 +146,12 @@ function filterButtons () {
     comEl.parentNode.insertBefore(maskStyle, comEl);
     // Div to hold percentile buttons
     var butDiv = document.createElement('div');
+    butDiv.appendChild(noteEl);
     comEl.parentNode.insertBefore(butDiv, comEl);
+    // Feedback on number of comments being shown:
+    noteEl.innerHTML = "All comments shown";
+    noteEl.style.fontStyle = "italic";
+    noteEl.style.fontSize = "1em";
     // Make percentile buttons
     var k = 0, dbg="";
     for (var i = 1; i <= 10; i++) {
@@ -158,6 +163,7 @@ function filterButtons () {
         bt.innerHTML = (i*10)+"%";
         bt.threshold = thres;
         bt.thresholdClass = setClass;
+        bt.numCom = 0;
         bt.onclick = function() { doFilter(this) };
         butDiv.append(bt);
         // Set comment element classes
@@ -168,13 +174,12 @@ function filterButtons () {
             coms[k][0].className = coms[k][0].className + ceCls;
             dbg += coms[k][1] + " ";
             k++;
+            bt.numCom++;
         }
+        // Start initially at 10% filtering
+        if (i == 1) doFilter(bt);
 
     }
-    noteEl.innerHTML = "All comments shown";
-    noteEl.style.fontStyle = "italic";
-    noteEl.style.fontSize = "1em";
-    butDiv.appendChild(noteEl);
     // alert(dbg);
 }
 
