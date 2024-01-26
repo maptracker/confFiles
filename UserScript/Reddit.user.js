@@ -12,7 +12,7 @@
 // @match         https://www.reddit.com/
 // @match         https://old.reddit.com/*
 // @description   Colorizes posts and comments by count
-// @version       1.0.9
+// @version       1.0.11
 // @grant         none
 // ==/UserScript==
 
@@ -88,6 +88,9 @@ function highlightX() {
             if (pts == '[score hidden]') {
                 col = 'silver';
                 pts = 10;
+            } else if (pts == '[removed]' || pts == '[deleted]') {
+                col = 'red';
+                pts = -10;
             } else if (/\dk$/.test(pts)) {
                 // abbreviated thousands
                 fgc = 'yellow';
