@@ -37,7 +37,7 @@
     div[data-subreddit="BlackPeopleTwitter"], div[data-subreddit="videos"],
     div[data-subreddit="WhitePeopleTwitter"],
     div[data-subreddit="unpopularopinion"],
-    div[data-subreddit="PublicFreakout"] { 
+    div[data-subreddit="PublicFreakout"]  { 
         display: none ! important; 
     }
     
