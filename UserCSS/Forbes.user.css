@@ -1,0 +1,20 @@
+/* ==UserStyle==
+@name        Forbes
+@description Mask out irritations, refactor layout
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("forbes.com") {
+    .article-wrapper, .fs-article { max-width: unset ! important }
+    .article-wrapper, .main-content {
+        max-width: 100% ! important;  width: 100% ! important;
+    }
+    .main-content { overflow: unset ! important }
+    progressive-image, .image-embed, .article-sharing, .left-rail,
+    .recirc-module, .openWeb-wrapper, .article-footer {
+        display: none ! important;
+    }
+}
