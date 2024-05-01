@@ -3,13 +3,13 @@
 @description Hide unused bulky bits
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.1
+@version     1.0.2
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("weather.gov") {
     /* NOAA does not believe in classes or ids ... */
-    body table:nth-child(6) tbody tr:nth-child(3) td table {
+    body table:nth-child(3) tbody tr:nth-child(2)  {
         /* Mask out bulky graph controls, which I never use */
         display: none ! important;
     }
