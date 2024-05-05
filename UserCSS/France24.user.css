@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name        France 24
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("france24.com") {
+    body, html {
+        overscroll-behavior-y: unset ! important;
+        overflow-x: unset ! important;
+    }
+
+    .o-ad-container, .t-content__shares, .o-footer {
+        display: none ! important;
+    }
+}
