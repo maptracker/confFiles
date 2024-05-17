@@ -3,11 +3,11 @@
 @description Strip out a lot of the UI, hide a bunch of cruft
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.2
+@version     1.0.3
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
-@-moz-document domain("twitter.com") {
+@-moz-document domain("twitter.com"), domain("x.com") {
     .dashboard, #side_lists, #trends, #following, .modal-overlay,
     .empty-home, .get-started-steps, .PromptbirdPrompt-streamItem,  
     .empty-timeline, #global-nav-search, #user-dropdown-toggle,
