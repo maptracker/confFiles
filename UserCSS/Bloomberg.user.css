@@ -3,7 +3,7 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.1
+@version     1.0.2
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -14,7 +14,8 @@
     #story_social_toolbar_top_container, #header_container,
     .header_top_unit, .social_tout, header.global,aside, #global_footer,
     .secure-tip-tout-v2, .terminal-tout-v2, footer, .video-player,
-    .leaderboard-container, nav {
+    .leaderboard-container, nav, div[class*="Placeholder"],
+    div[class*="Footer"], div[class*="share"] {
         display: none ! important; 
     }
 }
