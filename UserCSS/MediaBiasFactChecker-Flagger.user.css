@@ -3,7 +3,7 @@
 @description Colorize news links according to MBFC ratings
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.58
+@version     1.0.59
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -438,7 +438,7 @@ domain("apnews.com"), domain("duckduckgo.com"), domain("warontherocks.com") {
     a[href*='.rawstory.com/'], a[href*='hillreporter.com/'],
     a[href*='.firstpost.com/'], a[href*='.cosmopolitan.com/'],
     a[href*='.splcenter.org/'], a[href*='.dailykos.com/'],
-    a[href*='.theadvocate.com/'], a[href*='.democraticunderground.com/'],
+    a[href*='.theadvocate.com/'], a[href*='.democraticunderground.com/']
     {
         /* Left */
         background-image:
@@ -950,5 +950,14 @@ domain("apnews.com"), domain("duckduckgo.com"), domain("warontherocks.com") {
         background-position: center left ! important;
         padding-left: 18px ! important;
         background-color: #fc9 ! important; /* light brown */
+    }
+}
+
+@-moz-document domain("apnews.com") {
+    /* Do not colorize AP links on AP itself */
+    a[href*='apnews.com'] {
+        background-color: unset ! important;
+        background-image: unset ! important;
+        padding-left: unset ! important;
     }
 }
