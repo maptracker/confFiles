@@ -10,17 +10,19 @@
 @-moz-document domain("apnews.com") {
     .Footer, .SocialShare, .LazyImage, .GenericCarousel, .thumbnail,
     .share-link, div[class="fluid-wrapper"], a[class^="image"], .Header,
-    .FeedAd, .count-caption, div[data-key*="media-placeholder"],
-    .Page-header-hamburger-menu-wrapper, .Page-actions, .PagePromo, footer,
-    bsp-header, .PagePromoTrending, .VideoEnhancement, .VideoLead,
-    .Enhancement, footer {
+    .FeedAd, .count-caption, div[data-key*="media-placeholder"], footer,
+    .PagePromoTrending,     .VideoEnhancement, bsp-header, .Page-actions,
+    .Page-header-hamburger-menu-wrapper, .VideoLead, .Enhancement {
         display: none ! important; 
     }
     a:active, a:hover, a:link, a:visited { color: unset ! important; }
     .FeedCard { padding: unset ! important; }
     a[class*="firstwords"] { grid-column: 1/4 ! important;
                              color: black ! important; }
+
+    /* This isn't the right scope */
     :root {
         --headlineFont: 2rem;
     }
 }
+
