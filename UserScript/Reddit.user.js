@@ -11,8 +11,16 @@
 // @match         https://www.reddit.com/r/*
 // @match         https://www.reddit.com/
 // @match         https://old.reddit.com/*
+
+// @match         https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/*/comments/*
+// @match         https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/comments/*
+// @match         https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/user/*
+// @match         https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/r/*
+// @match         https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/
+// @match         https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/*
+
 // @description   Colorizes posts and comments by count
-// @version       1.0.11
+// @version       1.0.12
 // @grant         none
 // ==/UserScript==
 
@@ -63,7 +71,7 @@ function highlightX() {
     // Sometimes spans, sometimes divs. Links for index comment count
 
     var elems = [ [document.getElementsByTagName('div'),
-    {"Comment__metadata": 1, "score unvoted": 1}],
+    {"Comment__metadata": 1, "score unvoted": 1 }],
                   [document.getElementsByTagName('span'),
     {"score unvoted": 1, "score-hidden": 1}],
                   [document.getElementsByTagName('a'),
@@ -72,14 +80,18 @@ function highlightX() {
     logX("Scanning " + elems[0][0].length + " DIVs + "+
          elems[1][0].length + " SPANs");
     for (var e = 0; e < elems.length; e++) {
+        // Primary object-type loop (div, span, a)
         var e2 = elems[e][0];
         var e2l = e2.length;
         var okClass = elems[e][1];
         for (var s = 0; s < e2l; s++) {
+            // Looping over objects
             var elem = e2[s];
+            // Only consider objects with certain classes:
             var cn = elem.className;
-            var tn = elem.tagName.toLowerCase();
             if (!okClass[ cn ]) continue;
+
+            var tn = elem.tagName.toLowerCase(); // not used?
             var pts = elem.innerHTML;
             var col = "";
             var fgc = "";
