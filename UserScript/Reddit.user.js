@@ -39,7 +39,7 @@ setTimeout(highlightX, 3000);
 function useOld() {
     // auto-redirect to old website if on new one
     var loc = window.location.href;
-    var newDom = new RegExp('https:\/\/www\.');
+    var newDom = new RegExp('^https:\/\/www\.');
     if (newDom.test(loc)) {
         var old = loc.replace(newDom, 'https://old.');
         document.location = old;
