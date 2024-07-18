@@ -11,16 +11,14 @@
 // @match         https://www.reddit.com/r/*
 // @match         https://www.reddit.com/
 // @match         https://old.reddit.com/*
-
 // @match         https://www.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/*/comments/*
 // @match         https://www.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/comments/*
 // @match         https://www.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/user/*
 // @match         https://www.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/r/*
 // @match         https://www.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/
 // @match         https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/*
-
 // @description   Colorizes posts and comments by count
-// @version       1.0.12
+// @version       1.0.13
 // @grant         none
 // ==/UserScript==
 
@@ -41,9 +39,9 @@ setTimeout(highlightX, 3000);
 function useOld() {
     // auto-redirect to old website if on new one
     var loc = window.location.href;
-    var newDom = new RegExp('\/www\.reddit\.com\/');
+    var newDom = new RegExp('https:\/\/www\.');
     if (newDom.test(loc)) {
-        var old = loc.replace(newDom, '/old.reddit.com/');
+        var old = loc.replace(newDom, 'https://old.');
         document.location = old;
     }
 }
