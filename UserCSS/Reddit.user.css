@@ -3,15 +3,26 @@
 @description Mask add block in widget panel
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.7
+@version     1.0.18
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
-@-moz-document domain("reddit.com") {
+@-moz-document domain("reddit.com"), domain("reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion") {
     div.entry.unvoted ul.flat-list.buttons { 
         display: block ! important; 
     }
-    body { background : none !important;  }
+    body { background : none !important;
+           background-color: white ! important;
+           color: black ! important;
+         }
+
+    /* Assure text colors are readable */
+    .usertext-body, .md, .tagline, .comment .md p, .noncollapsed .md,
+    p, .comment {
+        background-color: white ! important;
+        color: black ! important;
+    }
+
 
     /* 2018-04-09 - drastic rewrite of DOM, not sure how many classes are
        stable */
@@ -24,19 +35,47 @@
     #fixed-side-footer-links, #recommendations, #promoted-spotlight,
     #eu-cookie-policy, .report-button, .flair, .morecomments,
     .commentsignupbar, .listingsignupbar, .welcome, #onboarding-splash,
-    #hamburgers, .s6prp9s-8, .s1l07lbt-0, .s1cwcagp-6,
-    #block-homepage, .error, .side, .footer-parent { 
+    #hamburgers, .s6prp9s-8, .s1l07lbt-0, .s1cwcagp-6, .reddit-infobar,
+    #block-homepage, .error, .side, .footer-parent, .read-next-container,
+    reddit-cookie-banner { 
         display: none ! important; 
     }
 
     /* Thanks, no thanks */
     div[data-subreddit="PewdiepieSubmissions"], div[data-subreddit="madlads"], 
     div[data-subreddit="PrequelMemes"], div[data-subreddit="wholesomememes"],
-    div[data-subreddit="me_irl"], div[data-subreddit="teenagers"],
+    div[data-subreddit="me_irl"], div[data-subreddit="WhatsWrongWithYourCat"],
     div[data-subreddit="BlackPeopleTwitter"], div[data-subreddit="videos"],
-    div[data-subreddit="WhitePeopleTwitter"],
-    div[data-subreddit="unpopularopinion"],
-    div[data-subreddit="PublicFreakout"] { 
+    div[data-subreddit="WhitePeopleTwitter"], div[data-subreddit="cats"],
+    div[data-subreddit="unpopularopinion"], div[data-subreddit="KendrickLamar"],
+    div[data-subreddit="MemePiece"], div[data-subreddit="formuladank"],
+    div[data-subreddit="USNewsHub"], div[data-subreddit="teenagers"],
+    div[data-subreddit="HouseOfTheDragon"], div[data-subreddit="TheBoys"],
+    div[data-subreddit="wholesomegreentext"], div[data-subreddit="sports"],
+    div[data-subreddit="formula1"], div[data-subreddit="JustGuysBeingDudes"],
+    div[data-subreddit="Paranormal"], div[data-subreddit="NintendoSwitch"],
+    div[data-subreddit="DeepRockGalactic"], div[data-subreddit="BatmanArkham"],
+    div[data-subreddit="blackcats"], div[data-subreddit="notinteresting"],
+    div[data-subreddit="theydidthemath"], div[data-subreddit="SipsTea"],
+    div[data-subreddit="CozyPlaces"], div[data-subreddit="moviecritic"],
+    div[data-subreddit="WitchesVsPatriarchy"], div[data-subreddit="DOG"],
+    div[data-subreddit="2meirl4meirl"], div[data-subreddit="okbuddychicanery"],
+    div[data-subreddit="hockey"], div[data-subreddit="OnePiece"],
+    div[data-subreddit="pokemon"], div[data-subreddit="Eldenring"],
+    div[data-subreddit="malelivingspace"], div[data-subreddit="evangelion"],
+    div[data-subreddit="FluentInFinance"], div[data-subreddit="Showerthoughts"],
+    div[data-subreddit="OneOrangeBraincell"], div[data-subreddit="nba"],
+    div[data-subreddit="Superstonk"], div[data-subreddit="holdmycatnip"],
+    div[data-subreddit="legendofkorra"], div[data-subreddit="OldSchoolCool"],
+    div[data-subreddit="BikiniBottomTwitter"], div[data-subreddit="coolguides"],
+    div[data-subreddit="TheLastAirbender"], div[data-subreddit="DunderMifflin"],
+    div[data-subreddit="leagueoflegends"], div[data-subreddit="holdmycatnip"],
+    div[data-subreddit="shitposting"], div[data-subreddit="wallstreetbets"],
+    div[data-subreddit="inthenews"], div[data-subreddit="politics"],
+    div[data-subreddit="Catswithjobs"], div[data-subreddit="AnythingGoesNews"],
+    div[data-subreddit="shittymoviedetails"], div[data-subreddit="Music"],
+    div[data-subreddit="AnimalCrossing"], div[data-subreddit="HonkaiStarRail"],
+    div[data-subreddit="PublicFreakout"], div[data-subreddit="Helldivers"]  { 
         display: none ! important; 
     }
     

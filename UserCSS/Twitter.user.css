@@ -3,11 +3,11 @@
 @description Strip out a lot of the UI, hide a bunch of cruft
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.2
+@version     1.0.5
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
-@-moz-document domain("twitter.com") {
+@-moz-document domain("twitter.com"), domain("x.com") {
     .dashboard, #side_lists, #trends, #following, .modal-overlay,
     .empty-home, .get-started-steps, .PromptbirdPrompt-streamItem,  
     .empty-timeline, #global-nav-search, #user-dropdown-toggle,
@@ -17,7 +17,9 @@
     .js-recommended-followers, #empty-timeline-recommendations,
     .dashboard-left, .dashboard-right, .ProfileTweet-actionList,
     .js-more-ProfileTweet-actions, .PlayableMedia-reactWrapper,
-    .BannersContainer, #signin-dropdown { 
+    .BannersContainer, #signin-dropdown, div[role="progressbar"],
+    div[data-testid="BottomBar"], section[aria-label="Sign up"],
+    nav[aria-label="Footer"] { 
         display: none ! important; 
     }
     

@@ -3,7 +3,7 @@
 @description Colorize news links according to MBFC ratings
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.58
+@version     1.0.61
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -13,7 +13,8 @@
 
 @-moz-document domain("reddit.com"), domain("wikipedia.org"),
 domain("bing.com"), domain("google.com"), domain("startpage.com"),
-domain("apnews.com"), domain("duckduckgo.com"), domain("warontherocks.com") {
+domain("apnews.com"), domain("duckduckgo.com"), domain("warontherocks.com"),
+domain("reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion") {
     /* ---    ---    ---    ---    ---    ---    ---    ---    ---    ---
        Media Bias Fact Check
        https://mediabiasfactcheck.com
@@ -247,7 +248,8 @@ domain("apnews.com"), domain("duckduckgo.com"), domain("warontherocks.com") {
     a[href*='scientificamerican.com/'], a[href*='.theadvocate.com/'],
     a[href*='/click2houston.com/'], a[href*='.winknews.com'],
     a[href*='channelnewsasia.com'], a[href*='asia.nikkei.com'],
-    a[href*='focustaiwan.tw'], a[href*='.swissinfo.ch/']
+    a[href*='focustaiwan.tw'], a[href*='.swissinfo.ch/'],
+    a[href*='/.navytimes.com/'], a[href*='.kyodonews.net/']
     {
         /* High */
         background-color: #cff ! important; /* light blue */
@@ -283,7 +285,6 @@ domain("apnews.com"), domain("duckduckgo.com"), domain("warontherocks.com") {
 
     /* CNN */
     a[href*='cnn.com'], a[href*='.news18.com/'], a[href*='cnnphilippines.com'], 
-    
     a[href*='mirror.co.uk'], a[href*='.vanityfair.com/'], 
     a[href*='newsweek.com'], a[href*='hurriyetdailynews.com'],
     a[href*='buzzfeed.com'], a[href*='buzzfeednews.com'],
@@ -314,7 +315,9 @@ domain("apnews.com"), domain("duckduckgo.com"), domain("warontherocks.com") {
     a[href*='/thelibertydaily.com/'], a[href*='.dailykos.com/'],
     a[href*='.newsmax.com/'], a[href*='.aa.com.tr/'],
     a[href*='.pravda.com.ua/'], a[href*='.democraticunderground.com/'],
-    a[href*='futurism.com/'], a[href*='yna.co.kr/'], a[href*='/yle.fi/']
+    a[href*='futurism.com/'], a[href*='yna.co.kr/'], a[href*='/yle.fi/'],
+    a[href*='.india.com/'], a[href*='/jpost.com/'],
+    a[href*='.kyivpost.com/'], a[href*='.koreatimes.co.kr/']
     {
         /* Mixed + Mostly Factual*/
         background-color: #ff6 ! important; /* yellow */
@@ -438,7 +441,7 @@ domain("apnews.com"), domain("duckduckgo.com"), domain("warontherocks.com") {
     a[href*='.rawstory.com/'], a[href*='hillreporter.com/'],
     a[href*='.firstpost.com/'], a[href*='.cosmopolitan.com/'],
     a[href*='.splcenter.org/'], a[href*='.dailykos.com/'],
-    a[href*='.theadvocate.com/'], a[href*='.democraticunderground.com/'],
+    a[href*='.theadvocate.com/'], a[href*='.democraticunderground.com/']
     {
         /* Left */
         background-image:
@@ -552,7 +555,8 @@ domain("apnews.com"), domain("duckduckgo.com"), domain("warontherocks.com") {
     a[href*='thesaturdaypaper.com.au'], a[href*='.mongabay.com'],
     a[href*='mexiconewsdaily.com'], a[href*='.americamagazine.org'],
     a[href*='/mainichi.jp/'], a[href*='focustaiwan.tw'],
-    a[href*='.swissinfo.ch/']
+    a[href*='.swissinfo.ch/'], a[href*='.kyivpost.com/'],
+    a[href*='.koreatimes.co.kr/']
     {
         /* Left Center Left-Center*/
         background-image:
@@ -594,7 +598,8 @@ domain("apnews.com"), domain("duckduckgo.com"), domain("warontherocks.com") {
     a[href*='.abs-cbn.com/'], a[href*='americanmilitarynews.com/'],
     a[href*='militarytimes.com/'], a[href*='.military.com/'],
     a[href*='/click2houston.com/'], a[href*='.winknews.com'],
-    a[href*='channelnewsasia.com'], a[href*='/yle.fi/']
+    a[href*='channelnewsasia.com'], a[href*='/yle.fi/'],
+    a[href*='/.navytimes.com/'], a[href*='.kyodonews.net/']
     {
         /* Least Biased */
         background-image:
@@ -659,7 +664,8 @@ domain("apnews.com"), domain("duckduckgo.com"), domain("warontherocks.com") {
     a[href*='/oilprice.com/'], a[href*='reason.com/'], a[href*='.itv.com/'],
     a[href*='.thehindubusinessline.com/'], a[href*='.algemeiner.com/'],
     a[href*='/vancouversun.com/'], a[href*='/gulfnews.com/'],
-    a[href*='asia.nikkei.com'], a[href*='yna.co.kr/']
+    a[href*='asia.nikkei.com'], a[href*='yna.co.kr/'], a[href*='.india.com/'],
+    a[href*='/jpost.com/']
     {
         /* Right Center Right-Center*/
         background-image:
@@ -891,11 +897,10 @@ domain("apnews.com"), domain("duckduckgo.com"), domain("warontherocks.com") {
        population of visitors that use MBFC
    */
     a[href*='shanghai.ist/'], a[href*='/shanghaiist.com/'],
-    
     a[href*='yenisafak.com'], a[href*='masslive.com'], a[href*='etherail.com'],
     a[href*='physicsworld.com'], a[href*='middleeasteye.net'],
     a[href*='news-leader.com'],
-    a[href*='differentimpulse.com/'], a[href*='.kyodonews.net/'],
+    a[href*='differentimpulse.com/'],
     a[href*='camdenadvertiser.com.au/'], a[href*='thedefensepost.com/'],
     a[href*='israelpalestinenews.org/'], a[href*='.tiredearth.com/'],
     a[href*='.businesstimes.com.sg/'],
@@ -939,7 +944,8 @@ domain("apnews.com"), domain("duckduckgo.com"), domain("warontherocks.com") {
     a[href*='sverigesradio.se'], a[href*='covidmetrics.com'],
     a[href*='telegraphindia.com'], a[href*='.philstar.com'],
     a[href*='countryliving.com'], a[href*='mymodernmet.com'],
-    a[href*='current-news.co.uk'], a[href*='.breakingasia.com']
+    a[href*='current-news.co.uk'], a[href*='.breakingasia.com'],
+    a[href*='vicksburgnews.com'], a[href*='/notesfrompoland.com']
     {
         /* Unknown, No Entry on MBFC */
         /* Cut'n'Paste:     , a[href*='/see.news/']  */
@@ -950,5 +956,14 @@ domain("apnews.com"), domain("duckduckgo.com"), domain("warontherocks.com") {
         background-position: center left ! important;
         padding-left: 18px ! important;
         background-color: #fc9 ! important; /* light brown */
+    }
+}
+
+@-moz-document domain("apnews.com") {
+    /* Do not colorize AP links on AP itself */
+    a[href*='apnews.com'] {
+        background-color: unset ! important;
+        background-image: unset ! important;
+        padding-left: unset ! important;
     }
 }

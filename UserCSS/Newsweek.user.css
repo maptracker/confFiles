@@ -3,14 +3,19 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.2
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("newsweek.com") {
     .trial-promo, .nw-subscribe-today, .hidden-xs, #discussion,
     #taboola-below-main-column, noscript, .trial-link, .social-share,
-    .brand, .header-top, .newsletter-signup, .subscription, .social { 
+    .brand, .header-top, .newsletter-signup, .subscription, .social,
+    .subscription-tabs, .footer-main-container-bg, .page-bottom,
+    .content-correction, .page-sidebar, .videocontent-wrapper,
+    .article-videoplayer, .trinityAudioPlaceholder,
+    #block-ibtmedia-facebook-facebook-comment { 
         display: none ! important; 
     }
+    .page-content { width: unset ! important; }
 }

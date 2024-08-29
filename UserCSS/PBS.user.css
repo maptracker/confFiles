@@ -3,15 +3,21 @@
 @description Suppress pop-up
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.7
+@version     1.0.11
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
-@-moz-document domain("pbs.org"), domain("opb.org") {
+@-moz-document domain("pbs.org"), domain("opb.org"), domain("wgbh.org") {
     .eloqua-popup-container, #pjax-loading-indicator, .tab-bar,
     div[class*="popup"], .post__col-left, .recirc, footer, .logo,
     .subscribe__topper, .menu, .stream-launcher, .ad-container,
-    .newsletter, .sponsors, .overlay-cta {
+    .newsletter, .sponsors, .overlay-cta, .PromoCard, .PromoS,
+    .PromoCardList-2Up, footer, .SendGridSubscribe, .actions, aside,
+    .BrightspotPersistentPlayer, ps-pledge-modal {
         display: none ! important; 
+    }
+
+    article {
+        max-width: unset ! important;
     }
 }
