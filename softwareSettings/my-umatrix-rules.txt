@@ -400,6 +400,7 @@ carlisle.k12.ma.us ajax.googleapis.com script allow
 carlisle.k12.ma.us extend.schoolwires.com script allow
 carlisle.k12.ma.us www.carlisle.k12.ma.us script allow
 carlisle.k12.ma.us www.carlisle.k12.ma.us xhr allow
+carlislema.gov az416426.vo.msecnd.net script allow
 carlislema.gov carlislema.gov script allow
 carlislema.gov carlislema.gov xhr allow
 carlislema.gov www.carlislema.gov media allow
@@ -2431,6 +2432,8 @@ t-mobile.com tmobilees.mpeasylink.com script allow
 t-mobile.com www.facebook.com * block
 t-mobile.com www.t-mobile.com script allow
 t-mobile.com www.t-mobile.com xhr allow
+t.me cdn-telegram.org media allow
+t.me cdn4.cdn-telegram.org xhr allow
 t.me t.me script allow
 t.me t.me xhr allow
 t.me telegram.org script allow
@@ -2496,6 +2499,7 @@ theguardian.com ophan.theguardian.com xhr allow
 theguardian.com s3.amazonaws.com xhr allow
 theguardian.com www.theguardian.com script allow
 theguardian.com www.youtube.com frame allow
+thehill.com thehill.com cookie block
 theonion.com adlightning.com * block
 theonion.com kinja-vh.akamaihd.net xhr allow
 theonion.com kinja.com script allow
