@@ -3,7 +3,7 @@
 @description New York Times user style, mostly masks components
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.25
+@version     1.0.26
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -52,7 +52,7 @@
     
     
     #bottom-wrapper, #site-index, footer, div[role="complementary"],
-    div[data-testid="StandardAd"] { 
+    div[data-testid="StandardAd"], dialog { 
         display: none ! important; 
     }
 
@@ -61,6 +61,12 @@
     a[href*="/arts/"], a[href*="/puzzles/"], a[href*="theathletic.com"],
     a[href*="/theater/"], a[href*="/movies/"], a[href*="/style/"] {
         display: none ! important; 
+    }
+
+    body, .vi-gateway-container {
+        overflow: unset ! important;
+        overflow-x: unset ! important;
+        overflow-y: unset ! important;
     }
 
 }

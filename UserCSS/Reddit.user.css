@@ -3,7 +3,7 @@
 @description Mask add block in widget panel
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.18
+@version     1.0.19
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -71,6 +71,7 @@
     div[data-subreddit="TheLastAirbender"], div[data-subreddit="DunderMifflin"],
     div[data-subreddit="leagueoflegends"], div[data-subreddit="holdmycatnip"],
     div[data-subreddit="shitposting"], div[data-subreddit="wallstreetbets"],
+    div[data-subreddit="the_everything_bubble"], 
     div[data-subreddit="inthenews"], div[data-subreddit="politics"],
     div[data-subreddit="Catswithjobs"], div[data-subreddit="AnythingGoesNews"],
     div[data-subreddit="shittymoviedetails"], div[data-subreddit="Music"],
