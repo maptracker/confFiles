@@ -37,9 +37,12 @@ ssh() {
 ## Terminator does not have a keyboard shortcut to set terminal title
 ## Make function to make it easier ...
 tt() {
+    ## If no argument passed, used the current directory name
+    HEREDIR="$(basename $(pwd))"
+    TNAME="${1:-$HEREDIR}"
     ## https://stackoverflow.com/a/8850484
     ORIG=$PS1
-    TITLE="\e]2;$1\a"
+    TITLE="\e]2;$TNAME\a"
     PS1=${ORIG}${TITLE}
     ## terminator-gtk3 has keyboard shortcuts for both the window and
     ## the terminal, but they don't seem to be reflected in the
