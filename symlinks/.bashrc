@@ -4,27 +4,17 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-
-#### chsh -s /bin/bash
-## Done for:
-# kraken
+# alias python='/usr/bin/python3.6'
 
 # I've pared down this file to be universal across machines I
 # use. Machine-specific settings are put in ~/.bashrc-local.sh
+# See also POSTBASHRC at the end
 XTRABASHRC="$HOME/.bashrc-local.sh"
 [ -f "$XTRABASHRC" ] && . "$XTRABASHRC"
 
 # If not running interactively, don't do anything
 # This is defensive against complaints involving tput.
 [ -z "$PS1" ] && return
-
-## Postgres information
-export PGPORT=5433
-export PGHOST=elephant.pri.bms.com
-alias  mt-sql="psql maptracker"
-alias  vir-sql="psql virologydb"
-alias  ga-sql="psql genacc"
-alias  sg-sql="psql stndgene"
 
 ssh() {
     # ssh wrapper to allow tmux to set short hostname
@@ -47,9 +37,12 @@ ssh() {
 ## Terminator does not have a keyboard shortcut to set terminal title
 ## Make function to make it easier ...
 tt() {
+    ## If no argument passed, used the current directory name
+    HEREDIR="$(basename $(pwd))"
+    TNAME="${1:-$HEREDIR}"
     ## https://stackoverflow.com/a/8850484
     ORIG=$PS1
-    TITLE="\e]2;$1\a"
+    TITLE="\e]2;$TNAME\a"
     PS1=${ORIG}${TITLE}
     ## terminator-gtk3 has keyboard shortcuts for both the window and
     ## the terminal, but they don't seem to be reflected in the
@@ -189,18 +182,7 @@ esac
 if [ -x /usr/bin/dircolors ]; then
     eval "`dircolors -b`"
     alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
-
-    #alias grep='grep --color=auto'
-    #alias fgrep='fgrep --color=auto'
-    #alias egrep='egrep --color=auto'
 fi
-
-# some more ls aliases
-#alias ll='ls -l'
-#alias la='ls -A'
-#alias l='ls -CF'
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile

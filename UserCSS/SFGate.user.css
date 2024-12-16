@@ -3,7 +3,7 @@
 @description Mask cruft and video frames
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -12,4 +12,5 @@
     .menu-bar, header, .article-comments, footer {
         display: none ! important;
     }
+    body { overflow: unset ! important; }
 }

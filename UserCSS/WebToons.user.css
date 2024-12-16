@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name        WebToon
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("webtoons.com") {
+    #footer, .dsc_encourage, .spi_area, .viewer_patron_area, #reportArea {
+        display: none ! important;
+    }
+    #content { padding: unset ! important; }
+}
