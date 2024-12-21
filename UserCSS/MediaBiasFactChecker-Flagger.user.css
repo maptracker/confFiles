@@ -414,10 +414,11 @@ domain("reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion") {
     
     /* MBFC Sites: Left */
     a[href*='huffingtonpost.com/'], a[href*='.huffingtonpost.ca/'],
-    a[href*='.huffpost.com/']
+    a[href*='.huffpost.com/'],
 
     /* CNN */
-    a[href*='cnn.com'], a[href*='.news18.com/'], a[href*='cnnphilippines.com'], 
+    a[href*='cnn.com'], a[href*='.news18.com/'], a[href*='cnnphilippines.com'],
+    
     a[href*='mirror.co.uk'], a[href*='newsweek.com'],
     a[href*='middleeastmonitor.com'], a[href*='commondreams.org'],
     a[href*='newsweek.com'], a[href*='nymag.com'], a[href*='newrepublic.com'],
