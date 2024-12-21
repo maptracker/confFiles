@@ -3,7 +3,7 @@
 @description Colorize news links according to MBFC ratings
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.63
+@version     1.0.64
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -658,7 +658,7 @@ domain("reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion") {
     a[href*='.jns.org/'], a[href*='.al.com/'], a[href*='/tass.com/'],
     a[href*='.israelhayom.com/'], a[href*='/mynorthwest.com/'],
     a[href*='.orlandosentinel.com/'], a[href*='.dallasnews.com/'],
-    a[href*='.realclearpolitics.com/'], a[href*='.lfpress.com/'],
+    a[href*='.realclearpolitics.com/'], a[href*='lfpress.com/'],
     a[href*='.azcentral.com/'], a[href*='.spokesman.com/'],
     a[href*='nationalpost.com/'], a[href*='/triblive.com/'],
     a[href*='/oilprice.com/'], a[href*='reason.com/'], a[href*='.itv.com/'],
@@ -801,20 +801,6 @@ domain("reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion") {
         background-size: 16px 16px;
         padding-left: 18px ! important;
     }
-    
-}
-
-
-@-moz-document domain("reddit.com") {
-    /* Highlight Wikipedia links, but not on Wikipedia
-
-       We'll flag it as "High" for factuality, even though sound
-       arguments can be made against that stance. Also assigning its
-       own shortcut icon rather than one of the bias icons.
-
-       https://mediabiasfactcheck.com/wikipedia/
-
-     */
     
     a[href*='wikipedia.org'] {
         background-image: url(https://en.m.wikipedia.org/static/favicon/wikipedia.ico)
@@ -966,3 +952,13 @@ domain("reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion") {
         padding-left: unset ! important;
     }
 }
+
+@-moz-document domain("wikipedia.org") {
+    /* Do not colorize Wikipedia links on Wikipedia itself */
+    a[href*='wikipedia.org'] {
+        background-color: unset ! important;
+        background-image: unset ! important;
+        padding-left: unset ! important;
+    }
+}
+
