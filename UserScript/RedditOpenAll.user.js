@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name        Reddit gallery mass open
 // @namespace   https://github.com/maptracker/confFiles/tree/master/UserScript
-
 // @match       https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/r/*
 // @match       https://old.reddit.com/r/*
+// @match       https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/user/*
+// @match       https://old.reddit.com/user/*
 // @grant       none
-// @version     1.0
+// @version     1.1
 // @author      Charles Tilford
 // @description Adds a button to Reddit image galleries to open all images in new tabs
 // ==/UserScript==
