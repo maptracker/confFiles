@@ -38,7 +38,7 @@ ssh() {
 ## Make function to make it easier ...
 tt() {
     ## If no argument passed, used the current directory name
-    HEREDIR="$(basename $(pwd))"
+    HEREDIR="$(basename "$(pwd)")"
     TNAME="${1:-$HEREDIR}"
     ## https://stackoverflow.com/a/8850484
     ORIG=$PS1

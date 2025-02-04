@@ -3,7 +3,7 @@
 @description Mask add block in widget panel
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.21
+@version     1.0.24
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -76,8 +76,24 @@
     div[data-subreddit="ZZZ_Official"], div[data-subreddit="Hololive"],
     div[data-subreddit="inthenews"], div[data-subreddit="politics"],
     div[data-subreddit="Catswithjobs"], div[data-subreddit="AnythingGoesNews"],
+    div[data-subreddit="UFOs"], div[data-subreddit="NonPoliticalTwitter"],
+    div[data-subreddit="memes"], div[data-subreddit="AITA_WIBTA_PUBLIC"],
+    div[data-subreddit="AmIOverreacting"], div[data-subreddit="CuratedTumblr"],
+    div[data-subreddit="AllThatIsInteresting"], div[data-subreddit="baseball"],
+    div[data-subreddit="BaldursGate3"], div[data-subreddit="starterpacks"],
+    div[data-subreddit="Justfuckmyshitup"], div[data-subreddit="Losercity"],
+    div[data-subreddit="GlowUps"], div[data-subreddit="adventuretime"],
+    div[data-subreddit="AmItheAsshole"], div[data-subreddit="movies"],
+    div[data-subreddit="IllegallySmolCats"], div[data-subreddit="MadeMeSmile"],
+    div[data-subreddit="anime_irl"], div[data-subreddit="SonicTheHedgehog"],
     div[data-subreddit="shittymoviedetails"], div[data-subreddit="Music"],
     div[data-subreddit="AnimalCrossing"], div[data-subreddit="HonkaiStarRail"],
+    div[data-subreddit="marvelrivals"],div[data-subreddit="FortNiteBR"],
+    div[data-subreddit="ZenlessZoneZero"], div[data-subreddit="arcane"],
+    div[data-subreddit="SteamDeck"], div[data-subreddit="PERSoNA"],
+    div[data-subreddit="Genshin_Impact"], div[data-subreddit="xyz123"],
+    div[data-subreddit="PathOfExile2"], div[data-subreddit="xyz123"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="PublicFreakout"], div[data-subreddit="Helldivers"]  { 
         display: none ! important; 
     }
