@@ -3,16 +3,16 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("cnbc.com") {
-    header, .InlineImage-imageEmbed, footer {
+    #GlobalNavigation, .InlineImage-imageEmbed, footer, .lazyload-placeholder {
         display: none !important;
     }
-    .PageBuilder-article {
+    .PageBuilder-article, .group {
         margin-left: unset ! important;
-        max-width: unset ! important;
+        max-width: 80% ! important;
     }
 }
