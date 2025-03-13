@@ -1,40 +1,306 @@
-{
-  "timeStamp": 1724926967521,
-  "version": "1.59.0",
-  "userSettings": {
-    "alwaysDetachLogger": false,
-    "importedLists": [],
-    "popupPanelSections": 15
-  },
-  "selectedFilterLists": [
-    "ublock-quick-fixes",
-    "urlhaus-1",
-    "user-filters",
-    "assets.json",
-    "public_suffix_list.dat",
-    "ublock-resources",
-    "ublock-filters",
-    "ublock-badware",
-    "ublock-privacy",
-    "ublock-unbreak",
-    "easylist",
-    "easyprivacy",
-    "malware-0",
-    "malware-1",
-    "plowe-0"
-  ],
-  "hiddenSettings": {},
-  "whitelist": [
-    "about-scheme",
-    "behind-the-scene",
-    "chrome-extension-scheme",
-    "chrome-scheme",
-    "moz-extension-scheme",
-    "opera-scheme",
-    "vivaldi-scheme"
-  ],
-  "dynamicFilteringString": "behind-the-scene * 3p-frame noop\nbehind-the-scene * 3p noop",
-  "urlFilteringString": "",
-  "hostnameSwitchesString": "no-csp-reports: * true",
-  "userFilters": "! 8/30/2019 https://www.myabandonware.com\nwww.myabandonware.com##.wgm\nwww.myabandonware.com##.abox\nwww.myabandonware.com##h2\n\nwww.youtube.com##+js(nano-stb, resolve(1), *, 0.001)\n\n! 9/18/2019 https://old.reddit.com\n||b.thumbs.redditmedia.com/TUJPunnmH5kQtBnr1gUUhaGHlFAffhOF41KltpfD-0s.png$image\n\n! 1/11/2020 https://www.stevelichman.com\n||static.wixstatic.com/media/6187e0_8b4a49bd02564b06bb467917447cf4b6~mv2.png/v1/fill/w_180,h_197,al_c,usm_0.66_1.00_0.01,blur_2/000.png$image\n\n! 3/18/2020 https://newsone.com\nnewsone.com###push-menu\n\n! 5/12/2020 https://archaeologynewsnetwork.blogspot.com\narchaeologynewsnetwork.blogspot.com###g207\n\n! 6/1/2020 https://steamcommunity.com\nsteamcommunity.com###GuideTableOfContents\n\n! 7/7/2020 https://www.newindianexpress.com\nwww.newindianexpress.com##figure > .cssload-zenith\n||images.newindianexpress.com/images/FrontEnd/images/loader-Nie.png$image\n\n! 8/8/2020 https://www.bing.com\nwww.bing.com###b_desc\nwww.bing.com###b_notificationContainer_bop\n\n! 8/9/2020 https://old.reddit.com\nold.reddit.com##.horizontal.centered > .play-pause > .play-pause > path\nold.reddit.com##.horizontal.centered > .play-pause > .play-pause\nold.reddit.com##.horizontal.centered > .play-pause\n||www.redditstatic.com/video-expand.svg$image\nold.reddit.com##.horizontal.centered > .fullscreen\n\n! 2020-09-05 https://www.youtube.com\nwww.youtube.com##.opened\n\n! 2020-10-02 https://consent.yahoo.com\nconsent.yahoo.com###consent-page > .consent-overlay\n\n! 2021-02-07 https://old.reddit.com\nold.reddit.com##.redditname.pagename.hover > [href=\"https://old.reddit.com/r/TalesFromTheFrontDesk/\"]\nold.reddit.com##.selected > .choice\n||a.thumbs.redditmedia.com/gq9561mrzeY9TrVx.png$image\nold.reddit.com##.redditname.pagename.hover > [href=\"https://old.reddit.com/r/RBI/\"]\nold.reddit.com##.tabmenu > li > .choice\n\n! 2021-03-03 https://www.scottadamssays.com\n||www.scottadamssays.com/wp-content/uploads/*/Episode-*.png$image\n||www.scottadamssays.com/wp-content/uploads/*/Episode-*.png$image\n||www.scottadamssays.com/wp-content/uploads/*/Episode-*.jpg$image\n||www.scottadamssays.com/wp-content/uploads/*/*-Cover*.jpg$image\n||www.scottadamssays.com/wp-content/uploads/*/Episode-*.jpg$image\n\n! 2021-06-14 https://old.reddit.com\n||b.thumbs.redditmedia.com/9VV16N28YPReN2cnTq4u52qJwjNv2jJX-0C_pso85mc.png$image\n\n! 2021-09-13 https://kotaku.com\nkotaku.com##.ghJeHa.b2q2vh-1\n\n! 2021-10-24 https://www.city-data.com\nwww.city-data.com###cookie_notification\n\n! 2022-02-09 https://twitter.com\ntwitter.com##.r-13qz1uu.r-1rnoaur.r-1ye8kvj.r-pm9dpa.r-1jgb5lz.r-1867qdf.r-14lw9ot.css-1dbjc4n\ntwitter.com##.r-ipm5af.r-zchlnj.r-1xcajam.r-1d2f490.r-1p0dtai.r-1ffj0ar.css-1dbjc4n\ntwitter.com##.r-184en5c.r-ipm5af.r-zchlnj.r-u8s1d.r-1d2f490\n\n! 2022-02-26 https://old.reddit.com\nold.reddit.com##.tabmenu\n\n! 2022-03-07 https://old.reddit.com\nold.reddit.com##.redditname.pagename.hover > [href=\"https://old.reddit.com/r/Damnthatsinteresting/\"]\n\n! 2022-07-07 https://www.nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion\nwww.nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion##.css-rfqw0c.top-wrapper.ad\nwww.nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion###top-wrapper\n\n! 2022-07-24 https://old.reddit.com\nold.reddit.com##.redditname.pagename.hover > [href=\"https://old.reddit.com/r/HFY/\"]\n\n! 2022-10-12 https://www.enotes.com\nwww.enotes.com###enotes-paywall\n\n! 2022-12-15 https://old.reddit.com\n||a.thumbs.redditmedia.com/ReHZYxnCpjd4ETFQxWxy-q_RiAco2Y2GZ4QyXmMCR_8.png$image\n\n! 2022-12-17 https://www.democraticunderground.com\nwww.democraticunderground.com###ez-cookie-dialog-wrapper\n\n! 2022-12-26 https://ww2db.com\nww2db.com##.xcol\n\n! 2023-01-06 https://www.nature.com\nwww.nature.com##.cc-banner__content\n\n! 2023-01-20 https://www.eastbaytimes.com\nwww.eastbaytimes.com##.pushnav\n\n! 2023-01-21 https://www.theinformation.com\n||tii.imgix.net/production/articles/9540/2f9f1149-29ef-466f-bda9-b7fe4028bf42.png?fm=*&auto=compress&w=*$image\nwww.theinformation.com###gdpr-modal-container\n\n! 2023-02-09 https://www.gmbinder.com\nwww.gmbinder.com##.footer\n\n! 2023-02-24 https://www.thetimes.co.uk\nwww.thetimes.co.uk##.GlobalFooter\n\n! 2023-03-04 https://old.reddit.com\nold.reddit.com###thing_t3_11dm48x > .unvoted.midcol\n\n! 2023-03-21 https://www.aviacionline.com\nwww.aviacionline.com##.ez_banner\n\n! 2023-07-02 https://www.pjstar.com\nwww.pjstar.com##video\n\n! 2023-07-03 https://davidrozado.substack.com\ndavidrozado.substack.com##.frontend-components-SubscribePrompt-module__subscribeDialog--Yce7g.frontend-pencraft-Box-module__flex-align-center--rSd6h.frontend-pencraft-Box-module__flex-direction-column--Rq7pk.frontend-pencraft-Box-module__display-flex--ZqeZt.frontend-pencraft-Box-module__reset--VfQY8.pencraft\ndavidrozado.substack.com##.frontend-components-SubscribePrompt-module__background--WF3cB\ndavidrozado.substack.com###cookie-banner\n\n! 2023-07-07 https://www.bloomberg.com\nwww.bloomberg.com##.shimmering-text\n\n! 2023-07-22 https://www.wunderground.com\nwww.wunderground.com##.message-container\nwww.wunderground.com##.cdk-overlay-container\n\n! 2023-07-24 https://warontherocks.com\nwarontherocks.com##p > [href=\"https://warontherocks.com/membership/\"]\n\n! 2023-07-30 https://biobot.io\nbiobot.io##.show.fade.modal\nbiobot.io##.show.fade.modal-backdrop\n\n! 2023-08-01 https://i.redd.it\ni.redd.it##reddit-cookie-banner\n\n! 2023-08-04 https://www.globalsecurity.org\nwww.globalsecurity.org##.ez_banner\n\n! 2023-08-08 https://old.reddit.com\nold.reddit.com##.infobar-toaster-container\n\n! 2023-11-05 https://inshort.geartape.com\ninshort.geartape.com###ez-cookie-dialog-wrapper\n\n! 2023-12-02 https://twitter.com\ntwitter.com##.r-12vffkv.r-1p0dtai.r-1d2f490.r-1xcajam.r-zchlnj.r-aqfbo4.css-175oi2r > div.r-12vffkv.css-175oi2r > .r-12vffkv.css-175oi2r\n\n! 2023-12-03 https://www.schlockmercenary.com\nwww.schlockmercenary.com##.ad-house.ad-banner.ad-container\n\n! 2023-12-06 https://old.reddit.com\n||b.thumbs.redditmedia.com/jhl48lvmJH5aFChgITfR5ln9zxRvnLV37pKf3km7cbE.png$image\n||b.thumbs.redditmedia.com/mx88Pw2vxplBlrLAmz4m6GmU1CJbaFQ_3f1Uh58vbUY.png$image\n||b.thumbs.redditmedia.com/jhl48lvmJH5aFChgITfR5ln9zxRvnLV37pKf3km7cbE.png$image\n||b.thumbs.redditmedia.com/mx88Pw2vxplBlrLAmz4m6GmU1CJbaFQ_3f1Uh58vbUY.png$image\n||b.thumbs.redditmedia.com/jhl48lvmJH5aFChgITfR5ln9zxRvnLV37pKf3km7cbE.png$image\n\n! 2023-12-11 https://www.bbc.com\n||www.bbc.com/bbcx/grey-placeholder.png$image\n\n! 2023-12-22 https://imgur.com\nimgur.com##.Gallery-EngagementBarContainer\n\n! 2024-01-06 https://www.wgbh.org\nwww.wgbh.org##div.List.ListG:nth-of-type(6)\n\n! 2024-01-20 https://forums.freebsd.org\nforums.freebsd.org##.notice--cookie\n\n! 2024-01-23 https://warontherocks.com\n||warontherocks.com/wp-content/uploads/2023/10/Untitled-design*.png$image\n\n! 2024-01-24 https://old.reddit.com\nold.reddit.com###media-preview-19bnuw4 > div > div > .expando-gate--normal.expando-gate--overlay.expando-gate--nsfw.expando-gate > .expando-gate__controls > .expando-gate__show-once\n\n! 2024-02-21 https://www.nature.com\nwww.nature.com##.cc-banner__backdrop\n\n! 2024-03-10 https://old.reddit.com\n||b.thumbs.redditmedia.com/mx88Pw2vxplBlrLAmz4m6GmU1CJbaFQ_3f1Uh58vbUY.png$image\nold.reddit.com##.redditname.pagename.hover > [href=\"https://old.reddit.com/r/BaldursGate3/\"]\n||b.thumbs.redditmedia.com/jhl48lvmJH5aFChgITfR5ln9zxRvnLV37pKf3km7cbE.png$image\n||b.thumbs.redditmedia.com/jhl48lvmJH5aFChgITfR5ln9zxRvnLV37pKf3km7cbE.png$image\n\n! 2024-04-20 https://www.employeefiduciary.com\nwww.employeefiduciary.com##.loader\n\n! 2024-04-20 https://www.startpage.com\nwww.startpage.com##.block-display\n\n! 2024-05-10 https://en.vectorbuilder.com\nen.vectorbuilder.com##.cg-busy-animation.cg-busy\n\n! 2024-05-17 https://www.nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion\nwww.nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion###slideup-regwall\nwww.nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion###darken-overlay\n\n! Jun 1, 2024 https://www.startpage.com\nwww.startpage.com##.sx-media\nwww.startpage.com##.sx-main\n\n! Jul 26, 2024 https://medium.com\nmedium.com##.sp.so.jn.sn.jd.n.hv.l\n\n! Jul 27, 2024 https://gcaptain.com\ngcaptain.com##.gcaptain-subscribe-modal\n\n! Aug 1, 2024 https://thehill.com\nthehill.com##.civic-science-article-container\n\n! Aug 2, 2024 https://www.sfgate.com\nwww.sfgate.com###modals\n\n! Aug 27, 2024 https://www.lemonde.fr\nwww.lemonde.fr##.js-paywall.paywall\nwww.lemonde.fr##.footer--free.footer"
-}
+! 8/30/2019 https://www.myabandonware.com
+www.myabandonware.com##.wgm
+www.myabandonware.com##.abox
+www.myabandonware.com##h2
+
+www.youtube.com##+js(nano-stb, resolve(1), *, 0.001)
+
+! 9/18/2019 https://old.reddit.com
+||b.thumbs.redditmedia.com/TUJPunnmH5kQtBnr1gUUhaGHlFAffhOF41KltpfD-0s.png$image
+
+! 1/11/2020 https://www.stevelichman.com
+||static.wixstatic.com/media/6187e0_8b4a49bd02564b06bb467917447cf4b6~mv2.png/v1/fill/w_180,h_197,al_c,usm_0.66_1.00_0.01,blur_2/000.png$image
+
+! 3/18/2020 https://newsone.com
+newsone.com###push-menu
+
+! 5/12/2020 https://archaeologynewsnetwork.blogspot.com
+archaeologynewsnetwork.blogspot.com###g207
+
+! 6/1/2020 https://steamcommunity.com
+steamcommunity.com###GuideTableOfContents
+
+! 7/7/2020 https://www.newindianexpress.com
+www.newindianexpress.com##figure > .cssload-zenith
+||images.newindianexpress.com/images/FrontEnd/images/loader-Nie.png$image
+
+! 8/8/2020 https://www.bing.com
+www.bing.com###b_desc
+www.bing.com###b_notificationContainer_bop
+
+! 8/9/2020 https://old.reddit.com
+old.reddit.com##.horizontal.centered > .play-pause > .play-pause > path
+old.reddit.com##.horizontal.centered > .play-pause > .play-pause
+old.reddit.com##.horizontal.centered > .play-pause
+||www.redditstatic.com/video-expand.svg$image
+old.reddit.com##.horizontal.centered > .fullscreen
+
+! 2020-09-05 https://www.youtube.com
+www.youtube.com##.opened
+
+! 2020-10-02 https://consent.yahoo.com
+consent.yahoo.com###consent-page > .consent-overlay
+
+! 2021-02-07 https://old.reddit.com
+old.reddit.com##.redditname.pagename.hover > [href="https://old.reddit.com/r/TalesFromTheFrontDesk/"]
+old.reddit.com##.selected > .choice
+||a.thumbs.redditmedia.com/gq9561mrzeY9TrVx.png$image
+old.reddit.com##.redditname.pagename.hover > [href="https://old.reddit.com/r/RBI/"]
+old.reddit.com##.tabmenu > li > .choice
+
+! 2021-03-03 https://www.scottadamssays.com
+||www.scottadamssays.com/wp-content/uploads/*/Episode-*.png$image
+||www.scottadamssays.com/wp-content/uploads/*/Episode-*.png$image
+||www.scottadamssays.com/wp-content/uploads/*/Episode-*.jpg$image
+||www.scottadamssays.com/wp-content/uploads/*/*-Cover*.jpg$image
+||www.scottadamssays.com/wp-content/uploads/*/Episode-*.jpg$image
+
+! 2021-06-14 https://old.reddit.com
+||b.thumbs.redditmedia.com/9VV16N28YPReN2cnTq4u52qJwjNv2jJX-0C_pso85mc.png$image
+
+! 2021-09-13 https://kotaku.com
+kotaku.com##.ghJeHa.b2q2vh-1
+
+! 2021-10-24 https://www.city-data.com
+www.city-data.com###cookie_notification
+
+! 2022-02-09 https://twitter.com
+twitter.com##.r-13qz1uu.r-1rnoaur.r-1ye8kvj.r-pm9dpa.r-1jgb5lz.r-1867qdf.r-14lw9ot.css-1dbjc4n
+twitter.com##.r-ipm5af.r-zchlnj.r-1xcajam.r-1d2f490.r-1p0dtai.r-1ffj0ar.css-1dbjc4n
+twitter.com##.r-184en5c.r-ipm5af.r-zchlnj.r-u8s1d.r-1d2f490
+
+! 2022-02-26 https://old.reddit.com
+old.reddit.com##.tabmenu
+
+! 2022-03-07 https://old.reddit.com
+old.reddit.com##.redditname.pagename.hover > [href="https://old.reddit.com/r/Damnthatsinteresting/"]
+
+! 2022-07-07 https://www.nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion
+www.nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion##.css-rfqw0c.top-wrapper.ad
+www.nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion###top-wrapper
+
+! 2022-07-24 https://old.reddit.com
+old.reddit.com##.redditname.pagename.hover > [href="https://old.reddit.com/r/HFY/"]
+
+! 2022-10-12 https://www.enotes.com
+www.enotes.com###enotes-paywall
+
+! 2022-12-15 https://old.reddit.com
+||a.thumbs.redditmedia.com/ReHZYxnCpjd4ETFQxWxy-q_RiAco2Y2GZ4QyXmMCR_8.png$image
+
+! 2022-12-17 https://www.democraticunderground.com
+www.democraticunderground.com###ez-cookie-dialog-wrapper
+
+! 2022-12-26 https://ww2db.com
+ww2db.com##.xcol
+
+! 2023-01-06 https://www.nature.com
+www.nature.com##.cc-banner__content
+
+! 2023-01-20 https://www.eastbaytimes.com
+www.eastbaytimes.com##.pushnav
+
+! 2023-01-21 https://www.theinformation.com
+||tii.imgix.net/production/articles/9540/2f9f1149-29ef-466f-bda9-b7fe4028bf42.png?fm=*&auto=compress&w=*$image
+www.theinformation.com###gdpr-modal-container
+
+! 2023-02-09 https://www.gmbinder.com
+www.gmbinder.com##.footer
+
+! 2023-02-24 https://www.thetimes.co.uk
+www.thetimes.co.uk##.GlobalFooter
+
+! 2023-03-04 https://old.reddit.com
+old.reddit.com###thing_t3_11dm48x > .unvoted.midcol
+
+! 2023-03-21 https://www.aviacionline.com
+www.aviacionline.com##.ez_banner
+
+! 2023-07-02 https://www.pjstar.com
+www.pjstar.com##video
+
+! 2023-07-03 https://davidrozado.substack.com
+davidrozado.substack.com##.frontend-components-SubscribePrompt-module__subscribeDialog--Yce7g.frontend-pencraft-Box-module__flex-align-center--rSd6h.frontend-pencraft-Box-module__flex-direction-column--Rq7pk.frontend-pencraft-Box-module__display-flex--ZqeZt.frontend-pencraft-Box-module__reset--VfQY8.pencraft
+davidrozado.substack.com##.frontend-components-SubscribePrompt-module__background--WF3cB
+davidrozado.substack.com###cookie-banner
+
+! 2023-07-07 https://www.bloomberg.com
+www.bloomberg.com##.shimmering-text
+
+! 2023-07-22 https://www.wunderground.com
+www.wunderground.com##.message-container
+www.wunderground.com##.cdk-overlay-container
+
+! 2023-07-24 https://warontherocks.com
+warontherocks.com##p > [href="https://warontherocks.com/membership/"]
+
+! 2023-07-30 https://biobot.io
+biobot.io##.show.fade.modal
+biobot.io##.show.fade.modal-backdrop
+
+! 2023-08-01 https://i.redd.it
+i.redd.it##reddit-cookie-banner
+
+! 2023-08-04 https://www.globalsecurity.org
+www.globalsecurity.org##.ez_banner
+
+! 2023-08-08 https://old.reddit.com
+old.reddit.com##.infobar-toaster-container
+
+! 2023-11-05 https://inshort.geartape.com
+inshort.geartape.com###ez-cookie-dialog-wrapper
+
+! 2023-12-02 https://twitter.com
+twitter.com##.r-12vffkv.r-1p0dtai.r-1d2f490.r-1xcajam.r-zchlnj.r-aqfbo4.css-175oi2r > div.r-12vffkv.css-175oi2r > .r-12vffkv.css-175oi2r
+
+! 2023-12-03 https://www.schlockmercenary.com
+www.schlockmercenary.com##.ad-house.ad-banner.ad-container
+
+! 2023-12-06 https://old.reddit.com
+||b.thumbs.redditmedia.com/jhl48lvmJH5aFChgITfR5ln9zxRvnLV37pKf3km7cbE.png$image
+||b.thumbs.redditmedia.com/mx88Pw2vxplBlrLAmz4m6GmU1CJbaFQ_3f1Uh58vbUY.png$image
+||b.thumbs.redditmedia.com/jhl48lvmJH5aFChgITfR5ln9zxRvnLV37pKf3km7cbE.png$image
+||b.thumbs.redditmedia.com/mx88Pw2vxplBlrLAmz4m6GmU1CJbaFQ_3f1Uh58vbUY.png$image
+||b.thumbs.redditmedia.com/jhl48lvmJH5aFChgITfR5ln9zxRvnLV37pKf3km7cbE.png$image
+
+! 2023-12-11 https://www.bbc.com
+||www.bbc.com/bbcx/grey-placeholder.png$image
+
+! 2023-12-22 https://imgur.com
+imgur.com##.Gallery-EngagementBarContainer
+
+! 2024-01-06 https://www.wgbh.org
+www.wgbh.org##div.List.ListG:nth-of-type(6)
+
+! 2024-01-20 https://forums.freebsd.org
+forums.freebsd.org##.notice--cookie
+
+! 2024-01-23 https://warontherocks.com
+||warontherocks.com/wp-content/uploads/2023/10/Untitled-design*.png$image
+
+! 2024-01-24 https://old.reddit.com
+old.reddit.com###media-preview-19bnuw4 > div > div > .expando-gate--normal.expando-gate--overlay.expando-gate--nsfw.expando-gate > .expando-gate__controls > .expando-gate__show-once
+
+! 2024-02-21 https://www.nature.com
+www.nature.com##.cc-banner__backdrop
+
+! 2024-03-10 https://old.reddit.com
+||b.thumbs.redditmedia.com/mx88Pw2vxplBlrLAmz4m6GmU1CJbaFQ_3f1Uh58vbUY.png$image
+old.reddit.com##.redditname.pagename.hover > [href="https://old.reddit.com/r/BaldursGate3/"]
+||b.thumbs.redditmedia.com/jhl48lvmJH5aFChgITfR5ln9zxRvnLV37pKf3km7cbE.png$image
+||b.thumbs.redditmedia.com/jhl48lvmJH5aFChgITfR5ln9zxRvnLV37pKf3km7cbE.png$image
+
+! 2024-04-20 https://www.employeefiduciary.com
+www.employeefiduciary.com##.loader
+
+! 2024-04-20 https://www.startpage.com
+www.startpage.com##.block-display
+
+! 2024-05-10 https://en.vectorbuilder.com
+en.vectorbuilder.com##.cg-busy-animation.cg-busy
+
+! 2024-05-17 https://www.nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion
+www.nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion###slideup-regwall
+www.nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion###darken-overlay
+
+! Jun 1, 2024 https://www.startpage.com
+www.startpage.com##.sx-media
+www.startpage.com##.sx-main
+
+! Jul 26, 2024 https://medium.com
+medium.com##.sp.so.jn.sn.jd.n.hv.l
+
+! Jul 27, 2024 https://gcaptain.com
+gcaptain.com##.gcaptain-subscribe-modal
+
+! Aug 1, 2024 https://thehill.com
+thehill.com##.civic-science-article-container
+
+! Aug 2, 2024 https://www.sfgate.com
+www.sfgate.com###modals
+
+! Aug 27, 2024 https://www.lemonde.fr
+www.lemonde.fr##.js-paywall.paywall
+www.lemonde.fr##.footer--free.footer
+
+! Sep 17, 2024 https://odessa-journal.com
+odessa-journal.com##.article__quote-content_banner
+odessa-journal.com##.article__hictory > .article__hictory-descr > .article__hictory-descr_banners
+
+! Sep 18, 2024 https://www.linkedin.com
+www.linkedin.com##.top-level-modal-container
+
+! Sep 19, 2024 https://www.nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion
+www.nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion##.css-1hs03y9
+www.nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion##.css-19q4c8e
+www.nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion###gateway-content
+www.nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion##div:nth-of-type(5)
+www.nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion##.css-ew4tgv
+
+! Oct 28, 2024 https://www.startpage.com
+www.startpage.com##.css-1kpz5m3.serp-sidebar-app-promo-widget
+
+! Nov 1, 2024 https://consent.economist.com
+consent.economist.com##.message-overlay
+consent.economist.com##.type-modal.message
+consent.economist.com##.teg-container.message-container
+
+! Nov 7, 2024 https://www.nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion
+www.nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion###embedded-2024-11-05-storyline-nav-results-nav-2024-11-05
+
+! Nov 11, 2024 https://komonews.com
+komonews.com###navbar
+
+! Nov 13, 2024 https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion
+old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##.tabmenu
+
+! Nov 16, 2024 https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion
+old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##.redditname.pagename.hover
+
+! Nov 24, 2024 https://magicstudio.com
+magicstudio.com##.sticky
+magicstudio.com##h1
+magicstudio.com##h2
+||meta.magicstudio.com/assets/ai-art-generator-*.webp$image
+magicstudio.com##div.gap-2.flex-col
+
+! Nov 28, 2024 https://www.huffpost.com
+www.huffpost.com##.cli-support-huffpost
+
+! Dec 6, 2024 https://cyberpunk.fandom.com
+cyberpunk.fandom.com##.notifications-placeholder
+
+! Dec 8, 2024 https://warandpeas.com
+warandpeas.com###post-29371 > .entry-content > .patreon-campaign-banner
+warandpeas.com###post-29123 > .entry-content > .patreon-campaign-banner
+warandpeas.com##.site-footer
+warandpeas.com##.patreon-campaign-banner
+
+! Dec 21, 2024 https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion
+old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion###media-preview-1hit5my > div > div > .expando-gate--normal.expando-gate--overlay.expando-gate--nsfw.expando-gate > .expando-gate__controls
+old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion###media-preview-1hit5my > div > div > .expando-gate--normal.expando-gate--overlay.expando-gate--nsfw.expando-gate
+old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion###media-preview-1hiotrq > div > div > .expando-gate--normal.expando-gate--overlay.expando-gate--nsfw.expando-gate
+old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##.expando-gate--nsfw.expando-gate
+
+! Dec 30, 2024 https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion
+old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##.horizontal.centered > .fullscreen
+old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##.pinned.play-pause
+
+! Jan 4, 2025 https://anntelnaes.substack.com
+anntelnaes.substack.com##._background_15pnt_96
+anntelnaes.substack.com##._subscribeDialog_15pnt_1
+
+! Jan 8, 2025 https://www.smh.com.au
+www.smh.com.au##.noPrint
+
+! Jan 10, 2025 https://www.independent.co.uk
+www.independent.co.uk###main > .hydrate-root
+
+! Jan 10, 2025 https://www.hindustantimes.com
+www.hindustantimes.com##.headMenu
+
+! Jan 15, 2025 https://trenchcrusadewiki.miraheze.org
+trenchcrusadewiki.miraheze.org##.mw-cookiewarning-container
+
+! Feb 3, 2025 https://www.bing.com
+www.bing.com##.mh-content
