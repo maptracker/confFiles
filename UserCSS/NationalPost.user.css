@@ -1,25 +1,19 @@
 /* ==UserStyle==
-@name        USA Today
+@name        National Post
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.2
+@version     1.0.0
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
-@-moz-document domain("usatoday.com") {
-    .more-stories-content, .inline-share-tools, .ui-video-wrapper,
-    header, .close-wrap, #Adv10, .oembed-asset, .banner, .footer-links,
-    .copyright, .secondary, partner-banner, footer, .ten-column {
+@-moz-document domain("nationalpost.com") {
+    .share-button__wrapper , .header-menu-nav__wrapper,
+    .header__after, .social-share, .visually-hidden, .identity-intro,
+    .identity-screen, section[class*='newsletter'], .embedded-video, 
+    div[class*='article-meta'], .header__left, .skip-to, figure, 
+    .more-topic, #comments, .widget, div[class*='related-story'],
+    div[class*='sliding'], button[class*='sliding'], footer {
         display: none !important;
-    }
-    .page-main-content-container, .primary {
-        flex-direction: unset;
-        width: 100% !important;
-        max-width: 100% !important;
-        display: unset;
-    }
-    .mainContentSection {
-        
     }
 }
