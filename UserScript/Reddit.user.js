@@ -18,7 +18,7 @@
 // @match         https://www.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/
 // @match         https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/*
 // @description   Colorizes posts and comments by count
-// @version       1.0.14
+// @version       1.0.15
 // @grant         none
 // ==/UserScript==
 
@@ -330,37 +330,40 @@ function findScale () {
 }
 
 var timeFilterList = []; // Will hold filterable elements
-var tre = new RegExp("^[0-9]+ (hour|day|week|year)s?", "i");
+var tre = new RegExp("^([0-9]+|a|an) (hour|day|week|year)s?", "i");
 function colorRecentness () {
     findScale(); // Determine maximum time to scale against
-  var times = document.getElementsByTagName("time");
-   for (var i = 0; i < times.length; i++) {
+    var times = document.getElementsByTagName("time");
+    for (var i = 0; i < times.length; i++) {
         var el = times[i];
         var it = el.innerText;
         if (it.match(tre)) {
-           // Appears to be in the format 'x hours'
+            // Appears to be in the format 'x hours'
             // What fraction of the time scale has elapsed?
-          var nt = Number(it.replace(/ .+/, '')); // numeric value
-          // Normalize everything to hours
-          if (it.match(/day/i)) {
-            nt = nt * 24;
-          } else if (it.match(/week/i)) {
-            nt = nt * 24 * 7;
-          } else if (it.match(/month/i)) {
-            nt = nt * 24 * 30;
-          } else if (it.match(/year/i)) {
-            nt = nt * 24 * 365;
-          }
-          // Given the current scale, what fraction along the scale is this entry?
-          var frac = nt / maxScale;
-          el.style.backgroundColor = gradStyle( frac );
-          // Can we find a filterable parent?
-          var par = parFromTime(el);
-          if (par) {
-            timeFilterList.push([par, frac])
-          }
+            var nt = it.replace(/ .+/, ''); //isolate the number
+            // Recognize use of a/an for singular values:
+            if (nt.match(/^(a|an)$/i)) nt = "1";
+            nt = Number(nt); // numeric value
+            // Normalize everything to hours
+            if (it.match(/day/i)) {
+                nt = nt * 24;
+            } else if (it.match(/week/i)) {
+                nt = nt * 24 * 7;
+            } else if (it.match(/month/i)) {
+                nt = nt * 24 * 30;
+            } else if (it.match(/year/i)) {
+                nt = nt * 24 * 365;
+            }
+            // Given the current scale, what fraction along the scale is this entry?
+            var frac = nt / maxScale;
+            el.style.backgroundColor = gradStyle( frac );
+            // Can we find a filterable parent?
+            var par = parFromTime(el);
+            if (par) {
+                timeFilterList.push([par, frac]);
+            }
         }
-   }
+    }
 }
 
 function filterByTime (frac) {
