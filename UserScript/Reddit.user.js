@@ -18,7 +18,7 @@
 // @match         https://www.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/
 // @match         https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/*
 // @description   Colorizes posts and comments by count
-// @version       1.0.13
+// @version       1.0.14
 // @grant         none
 // ==/UserScript==
 
@@ -141,6 +141,7 @@ function highlightX() {
         }
     }
     filterButtons();
+    colorRecentness();
 }
 
 function filterButtons () {
@@ -204,4 +205,189 @@ function doFilter(x) {
 
 function logX (msg) {
     console.log(msg);
+}
+
+/* -------------------------------------------------------------------
+ * Colorizing post times
+ * This is to allow using filters like "last 24 hours" but highlighting
+ * and allowing filtering on entries from the last 8 hours.
+ * Use case: Read 24-hour news in morning, read again in evening, filter
+ * for last 12 hours
+ * -------------------------------------------------------------------
+ */
+
+var recent, middle, later;
+/* Trying to get a gradient that doesn't overlap with score colors
+ * and also does not have gray in the middle. I had to add a midpoint
+ * color to avoid an ungly center point
+ * Colors via https://www.visibone.com/products/ebk1_850.jpg
+ */
+
+recent = [255, 153, 153]; // Light Red
+recent = [255,   0, 204]; // Magenta
+later  = [204, 255, 255]; // Light Blue
+middle = [255,   0, 204]; // Magenta
+
+recent = [255,  51,  53]; // Light Magenta
+middle = [255, 255, 204]; // Pale Yellow
+later  = [ 51, 153, 255]; // Darker Blue
+
+function midHex (frac, lo, hi) {
+    // Given low and high values (0-255) and a fraction between them,
+    // return the two character hex value representing that midpoint
+    if (lo < 0) lo = 0;
+    if (hi > 255) hi = 255;
+    if (frac < 0) {
+        frac = 0;
+    } else if (frac > 1) {
+        frac = 1;
+    }
+    // Make hexidecimal
+    //  https://stackoverflow.com/a/16360660
+    var mid = Math.ceil(lo + frac * (hi - lo));
+    var hx  = mid.toString(16);
+    return (hx.length == 1) ? '0'+hx :  hx;
+}
+
+function gradStyle (frac) {
+    // Create style string for gradient background color
+    // frac = fraction (0-1) along gradient
+    // Midpoint is taken at 0.5
+    var p1 = recent;
+    var p2 = middle;
+    if (frac > 0.5) {
+        p1 = middle;
+        p2 = later;
+        frac = (frac - 0.5) * 2;
+    } else {
+        frac *= 2;
+    }
+
+    return "#" +
+        midHex(frac, p1[0], p2[0]) +
+        midHex(frac, p1[1], p2[1]) +
+        midHex(frac, p1[2], p2[2]);
+}
+
+/* Try to auto-detect the scope of threads being shown
+ * That is, look for Reddit's drop-down time filter and parse the current value
+ * We will do two things:
+ * 1. Determine the current value
+ * 2. Add a gradient legend
+ * The legend will also be clickable, and will act as a filter
+ */
+
+var maxScale = 24;
+var maxName = "1 day";
+function findScale () {
+    // Interface uses "selected" element
+    var chk = document.getElementsByClassName('selected');
+    var ok = /^(past 24 hours|past week|past month|past year|all time)$/i;
+    for (var i = 0; i < chk.length; i++) {
+        var it = chk[i].innerText;
+        if (it.match(ok)) {
+            // Looks like we found what we want
+            if (it.match(/week/i)) {
+                maxScale = 24 * 7;
+                maxName = "1 week";
+            } else if (it.match(/month/i)) {
+                maxScale = 30 * 24;
+                maxName = "30 days";
+            } else if (it.match(/year/i) || it.match(/all/i)) {
+                maxScale = 365 * 24;
+                maxName = "1 year";
+            }
+            // el is going to hold the legend
+            var el = document.createElement("span");
+            el.innerHTML="&nbsp;:&nbsp;now&nbsp;";
+            // How many segments in the legend?
+            var gradBits=20;
+            // Build color scale with non-breaking spaces
+            for (j = 0; j <= gradBits; j++) {
+                var gb = document.createElement("span");
+                gb.innerHTML="&nbsp;"
+                    const frac = j/gradBits;
+                gb.style.backgroundColor=gradStyle(j/gradBits);
+                // Make each element of legend a clickable interface to the time filter function
+                gb.style.cursor = "crosshair";
+                gb.onclick = "filterByTime("+(Math.ceil(100*frac)/100)+")";
+                gb.onclick = function() { filterByTime(frac) };
+                el.appendChild(gb);
+            }
+            // Final text indicating extent of gradient range
+            var fin = document.createElement("span");
+            fin.innerHTML="&nbsp;"+maxName;
+            // Clicking on the max time should remove all time filters
+            fin.style.cursor = "crosshair";
+            fin.onclick = function() { filterByTime(9999999) };
+            el.appendChild(fin);
+            // Append the legend just outside the drop-down interface
+            chk[i].parentNode.parentNode.appendChild(el);
+            //alert("maxScale: "+maxScale+ " maxName: "+maxName);
+            break;
+        }
+    }
+}
+
+var timeFilterList = []; // Will hold filterable elements
+var tre = new RegExp("^[0-9]+ (hour|day|week|year)s?", "i");
+function colorRecentness () {
+    findScale(); // Determine maximum time to scale against
+  var times = document.getElementsByTagName("time");
+   for (var i = 0; i < times.length; i++) {
+        var el = times[i];
+        var it = el.innerText;
+        if (it.match(tre)) {
+           // Appears to be in the format 'x hours'
+            // What fraction of the time scale has elapsed?
+          var nt = Number(it.replace(/ .+/, '')); // numeric value
+          // Normalize everything to hours
+          if (it.match(/day/i)) {
+            nt = nt * 24;
+          } else if (it.match(/week/i)) {
+            nt = nt * 24 * 7;
+          } else if (it.match(/month/i)) {
+            nt = nt * 24 * 30;
+          } else if (it.match(/year/i)) {
+            nt = nt * 24 * 365;
+          }
+          // Given the current scale, what fraction along the scale is this entry?
+          var frac = nt / maxScale;
+          el.style.backgroundColor = gradStyle( frac );
+          // Can we find a filterable parent?
+          var par = parFromTime(el);
+          if (par) {
+            timeFilterList.push([par, frac])
+          }
+        }
+   }
+}
+
+function filterByTime (frac) {
+    // onclick event requesting to filter visibile elements to a particular
+    // scale fraction or more recent
+    for (var i=0; i < timeFilterList.length; i++) {
+        var tfl = timeFilterList[i];
+        // first array element is the DOM element to be filtered, second value is it's fraction
+        if  (tfl[1] > frac) {
+            // Older than requested fraction - hide
+            tfl[0].style.display = "none";
+        } else {
+            tfl[0].style.display = "inline";
+        }
+    }
+}
+
+function parFromTime (el) {
+    // Find the "relevant" parent object from a time element
+    var par = el.parentNode;
+    if (!par || !par.classList) return null; // Got to root without finding anything
+    if (par.classList.contains('entryzzz') ||
+        par.classList.contains('thing')) {
+        // entry = comment. This caused problem with subreddit lists
+        // thing = subredit list entry?
+        return(par);
+    }
+    // Recurse upwards
+    return(parFromTime(par));
 }
