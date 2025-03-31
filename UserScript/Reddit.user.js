@@ -18,7 +18,7 @@
 // @match         https://www.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/
 // @match         https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/*
 // @description   Colorizes posts and comments by count
-// @version       1.0.15
+// @version       1.0.16
 // @grant         none
 // ==/UserScript==
 
@@ -308,7 +308,8 @@ function findScale () {
                 gb.innerHTML="&nbsp;"
                     const frac = j/gradBits;
                 gb.style.backgroundColor=gradStyle(j/gradBits);
-                // Make each element of legend a clickable interface to the time filter function
+                // Make each element of legend a clickable interface
+                // to the time filter function
                 gb.style.cursor = "crosshair";
                 gb.onclick = "filterByTime("+(Math.ceil(100*frac)/100)+")";
                 gb.onclick = function() { filterByTime(frac) };
@@ -329,8 +330,12 @@ function findScale () {
     }
 }
 
+/* Find all timestamps and color them with the "recentness" gradient.
+ * Also build an array structure of these stamps, which will be used
+ * to filter values
+ */
 var timeFilterList = []; // Will hold filterable elements
-var tre = new RegExp("^([0-9]+|a|an) (hour|day|week|year)s?", "i");
+var tre = new RegExp("^([0-9]+|a|an) (hour|day|week|minute|year)s?", "i");
 function colorRecentness () {
     findScale(); // Determine maximum time to scale against
     var times = document.getElementsByTagName("time");
@@ -345,23 +350,24 @@ function colorRecentness () {
             if (nt.match(/^(a|an)$/i)) nt = "1";
             nt = Number(nt); // numeric value
             // Normalize everything to hours
-            if (it.match(/day/i)) {
-                nt = nt * 24;
+            if (it.match(/minute/i)) {
+                nt /= 60;
+            } else if (it.match(/day/i)) {
+                nt *= 24;
             } else if (it.match(/week/i)) {
-                nt = nt * 24 * 7;
+                nt *= 24 * 7;
             } else if (it.match(/month/i)) {
-                nt = nt * 24 * 30;
+                nt *= 24 * 30;
             } else if (it.match(/year/i)) {
-                nt = nt * 24 * 365;
+                nt *= 24 * 365;
             }
-            // Given the current scale, what fraction along the scale is this entry?
+            // Given the current scale, what fraction along the scale
+            // is this entry?
             var frac = nt / maxScale;
             el.style.backgroundColor = gradStyle( frac );
             // Can we find a filterable parent?
             var par = parFromTime(el);
-            if (par) {
-                timeFilterList.push([par, frac]);
-            }
+            if (par) timeFilterList.push([par, frac]);
         }
     }
 }
@@ -371,7 +377,8 @@ function filterByTime (frac) {
     // scale fraction or more recent
     for (var i=0; i < timeFilterList.length; i++) {
         var tfl = timeFilterList[i];
-        // first array element is the DOM element to be filtered, second value is it's fraction
+        // first array element is the DOM element to be filtered,
+        // second value is it's fraction
         if  (tfl[1] > frac) {
             // Older than requested fraction - hide
             tfl[0].style.display = "none";
