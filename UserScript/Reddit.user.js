@@ -18,7 +18,7 @@
 // @match         https://www.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/
 // @match         https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/*
 // @description   Colorizes posts and comments by count
-// @version       1.0.16
+// @version       1.0.17
 // @grant         none
 // ==/UserScript==
 
@@ -282,12 +282,15 @@ var maxName = "1 day";
 function findScale () {
     // Interface uses "selected" element
     var chk = document.getElementsByClassName('selected');
-    var ok = /^(past 24 hours|past week|past month|past year|all time)$/i;
+    var ok = /^(past hour|past 24 hours|past week|past month|past year|all time)$/i;
     for (var i = 0; i < chk.length; i++) {
         var it = chk[i].innerText;
         if (it.match(ok)) {
             // Looks like we found what we want
-            if (it.match(/week/i)) {
+            if (it.match(/past hour/i)) {
+                maxScale = 1;
+                maxName = "1 hour";
+            } else if (it.match(/week/i)) {
                 maxScale = 24 * 7;
                 maxName = "1 week";
             } else if (it.match(/month/i)) {
