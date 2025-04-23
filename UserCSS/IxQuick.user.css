@@ -3,12 +3,13 @@
 @description Highlight commonly used sites
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.7
+@version     1.0.8
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("ixquick.com"), domain("startpage.com"),
-domain("bing.com"), domain("google.com"), domain("duckduckgo.com") {
+domain("bing.com"), domain("google.com"), domain("duckduckgo.com"),
+domain("startpagel6srwcjlue4zgq3zevrujfaow726kjytqbbjyrswwmjzcqd.onion") {
     
     /* Generally I'm looking for one of these: */
     a[href*='stackoverflow'], a[href*='stackexchange'],
