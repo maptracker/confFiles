@@ -3,12 +3,12 @@
 @description Highlight or suppress various things
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.1
+@version     1.0.2
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("costco.com") {
-    .promo, div[class*='promo'] {
+    .promo, div[class*='promo'], div[data-testid*='promo'] {
         color: red ! important;
         background-color: yellow ! important;
     }
