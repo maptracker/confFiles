@@ -3,7 +3,7 @@
 @description SO. MUCH. SPAM. 
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.3
+@version     1.0.4
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -25,7 +25,8 @@
     #edpIngress_feature_diva , #student_benefit_container,
     ms3-include[data-template-id="Prime_Legal_Text"], .prime-confirm-button,
     #benefit-content-container, #osu-prime-recommendations,
-    .pmts-add-amazon-store-card-learn-more-link,
+    .pmts-add-amazon-store-card-learn-more-link, .prime-updp-accept-cta,
+    .prime-updp-mobile-table,
     #apx-add-bank-account-content-trigger-declarative-action-test-id { 
         display: none ! important; 
     }
@@ -49,7 +50,7 @@
         background-color: yellow; 
     }
 
-    .no-thanks-link, #cancel_button_container { 
+    .no-thanks-link, #cancel_button_container, #prime-updp-decline-cta { 
         height: 3em ! important; 
         width: 1000px ! important; 
         border: solid green 1px; 
