@@ -3,7 +3,7 @@
 @description Mask add block in widget panel
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.27
+@version     1.0.28
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -110,9 +110,17 @@
     div[data-subreddit="whenthe"], div[data-subreddit="LoveIslandUSA"],
     div[data-subreddit="meme"], div[data-subreddit="airplaneears"],
     div[data-subreddit="ChikaPH"], div[data-subreddit="Xennials"],
-    div[data-subreddit="WikipediaVandalism"], div[data-subreddit="xyz123"],
-    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
-    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
+    div[data-subreddit="WikipediaVandalism"], div[data-subreddit="mlb"],
+    div[data-subreddit="StarWarsCirclejerk"], div[data-subreddit="balatro"],
+    div[data-subreddit="boxingcirclejerk"], div[data-subreddit="harrypotter"],
+    div[data-subreddit="MemeVideos"], div[data-subreddit="Nightreign"],
+    div[data-subreddit="helldivers2"], div[data-subreddit="NoShitSherlock"],
+    div[data-subreddit="Snorkblot"], div[data-subreddit="sssdfg"],
+    div[data-subreddit="egg_irl"], div[data-subreddit="UmaMusume"],
+    div[data-subreddit="delta"], div[data-subreddit="weddingshaming"],
+    div[data-subreddit="Nails"], div[data-subreddit="boxingcirclejerk"],
+    div[data-subreddit="LoveTrash"], div[data-subreddit="Tinycatsinbigspaces"],
+    div[data-subreddit="CATHELP"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="PublicFreakout"], div[data-subreddit="Helldivers"]  { 
