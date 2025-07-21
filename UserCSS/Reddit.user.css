@@ -3,7 +3,7 @@
 @description Mask add block in widget panel
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.28
+@version     1.0.29
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -120,7 +120,15 @@
     div[data-subreddit="delta"], div[data-subreddit="weddingshaming"],
     div[data-subreddit="Nails"], div[data-subreddit="boxingcirclejerk"],
     div[data-subreddit="LoveTrash"], div[data-subreddit="Tinycatsinbigspaces"],
-    div[data-subreddit="CATHELP"], div[data-subreddit="xyz123"],
+    div[data-subreddit="CATHELP"], div[data-subreddit="mapporncirclejerk"],
+    div[data-subreddit="bindingofisaac"], div[data-subreddit="Undertale"],
+    div[data-subreddit="EngagementRings"], div[data-subreddit="FilmiFiles"],
+    div[data-subreddit="DeathStranding"], div[data-subreddit="Warframe"],
+    div[data-subreddit="Jujutsufolk"], div[data-subreddit="hatsune"],
+    div[data-subreddit="complaints"], div[data-subreddit="inflation"],
+    div[data-subreddit="somepinkpart"], div[data-subreddit="NameMyCat"],
+    div[data-subreddit="cowcats"], div[data-subreddit="xyz123"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="PublicFreakout"], div[data-subreddit="Helldivers"]  { 
