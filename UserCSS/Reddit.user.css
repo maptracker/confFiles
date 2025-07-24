@@ -3,7 +3,7 @@
 @description Mask add block in widget panel
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.25
+@version     1.0.29
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -95,7 +95,41 @@
     div[data-subreddit="PathOfExile2"], div[data-subreddit="GuysBeingDudes"],
     div[data-subreddit="interestingnewsworld"], div[data-subreddit="GuyCry"],
     div[data-subreddit="popculturechat"], div[data-subreddit="MapPorn"],
-    div[data-subreddit="justgalsbeingchicks"], div[data-subreddit="xyz123"],
+    div[data-subreddit="justgalsbeingchicks"], div[data-subreddit="stockbetz"],
+    div[data-subreddit="deadbydaylight"], div[data-subreddit="goodnews"],
+    div[data-subreddit="chaoticgood"], div[data-subreddit="Fauxmoi"],
+    div[data-subreddit="GlobalNews"], div[data-subreddit="BlueskySkeets"],
+    div[data-subreddit="blunderyears"], div[data-subreddit="ufc"],
+    div[data-subreddit="brooklynninenine"], div[data-subreddit="Deltarune"],
+    div[data-subreddit="IASIP"], div[data-subreddit="spreadsmile"],
+    div[data-subreddit="soccercirclejerk"], div[data-subreddit="andor"],
+    div[data-subreddit="FavoriteCharacter"], div[data-subreddit="dankmemes"],
+    div[data-subreddit="HumanBeingBros"], div[data-subreddit="SpeedOfLobsters"],
+    div[data-subreddit="Futurology"], div[data-subreddit="science"],
+    div[data-subreddit="CatDistributionSystem"], div[data-subreddit="golf"],
+    div[data-subreddit="whenthe"], div[data-subreddit="LoveIslandUSA"],
+    div[data-subreddit="meme"], div[data-subreddit="airplaneears"],
+    div[data-subreddit="ChikaPH"], div[data-subreddit="Xennials"],
+    div[data-subreddit="WikipediaVandalism"], div[data-subreddit="mlb"],
+    div[data-subreddit="StarWarsCirclejerk"], div[data-subreddit="balatro"],
+    div[data-subreddit="boxingcirclejerk"], div[data-subreddit="harrypotter"],
+    div[data-subreddit="MemeVideos"], div[data-subreddit="Nightreign"],
+    div[data-subreddit="helldivers2"], div[data-subreddit="NoShitSherlock"],
+    div[data-subreddit="Snorkblot"], div[data-subreddit="sssdfg"],
+    div[data-subreddit="egg_irl"], div[data-subreddit="UmaMusume"],
+    div[data-subreddit="delta"], div[data-subreddit="weddingshaming"],
+    div[data-subreddit="Nails"], div[data-subreddit="boxingcirclejerk"],
+    div[data-subreddit="LoveTrash"], div[data-subreddit="Tinycatsinbigspaces"],
+    div[data-subreddit="CATHELP"], div[data-subreddit="mapporncirclejerk"],
+    div[data-subreddit="bindingofisaac"], div[data-subreddit="Undertale"],
+    div[data-subreddit="EngagementRings"], div[data-subreddit="FilmiFiles"],
+    div[data-subreddit="DeathStranding"], div[data-subreddit="Warframe"],
+    div[data-subreddit="Jujutsufolk"], div[data-subreddit="hatsune"],
+    div[data-subreddit="complaints"], div[data-subreddit="inflation"],
+    div[data-subreddit="somepinkpart"], div[data-subreddit="NameMyCat"],
+    div[data-subreddit="cowcats"], div[data-subreddit="xyz123"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="PublicFreakout"], div[data-subreddit="Helldivers"]  { 
         display: none ! important; 
