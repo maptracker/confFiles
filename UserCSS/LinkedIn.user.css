@@ -3,7 +3,7 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.6
+@version     1.0.7
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -11,9 +11,12 @@
     #today-news-wrapper, .feature-promo, .upsell, .guided-setup,
     li[data-test-artdeco-toast-item-type='gdpr'], div[id*='feed-news'],
     #msg-overlay, #ads-container, .feed-shared-news-module, .ad-banner,
-    .feed-learning-bites-module, footer, .global-alert-banner { 
+    .feed-learning-bites-module, footer, div[id*='feed-news'],
+    div[class*='promo'], a[href*='/games/'], #feed-news-module,
+    .global-alert-banner { 
         display: none ! important;
     }
+    
     body {
         overflow: unset ! important;
     }
