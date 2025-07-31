@@ -3,7 +3,7 @@
 @description Mask add block in widget panel
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.29
+@version     1.0.30
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -42,6 +42,7 @@
     }
 
     /* Thanks, no thanks */
+    /* Mask out a whole lotta subs */
     div[data-subreddit="PewdiepieSubmissions"], div[data-subreddit="madlads"], 
     div[data-subreddit="PrequelMemes"], div[data-subreddit="wholesomememes"],
     div[data-subreddit="me_irl"], div[data-subreddit="WhatsWrongWithYourCat"],
@@ -127,8 +128,18 @@
     div[data-subreddit="Jujutsufolk"], div[data-subreddit="hatsune"],
     div[data-subreddit="complaints"], div[data-subreddit="inflation"],
     div[data-subreddit="somepinkpart"], div[data-subreddit="NameMyCat"],
-    div[data-subreddit="cowcats"], div[data-subreddit="xyz123"],
-    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
+    div[data-subreddit="cowcats"], div[data-subreddit="sticknpokes"],
+    div[data-subreddit="MMA"], div[data-subreddit="BobsBurgers"],
+    div[data-subreddit="fuckcars"], div[data-subreddit="NoFilterNews"],
+    div[data-subreddit="saitatsumaki"], div[data-subreddit="shittytattoos"],
+    div[data-subreddit="stonerfood"], div[data-subreddit="playstation"],
+    div[data-subreddit="LivestreamFail"], div[data-subreddit="fakehistoryporn"],
+    div[data-subreddit="JoeRogan"], div[data-subreddit="blursed_videos"],
+    div[data-subreddit="2007scape"], div[data-subreddit="Battlefield"],
+    div[data-subreddit="okbuddycinephile"], div[data-subreddit="gtaonline"],
+    div[data-subreddit="WholesomeAraAra"], div[data-subreddit="Dinosaurs"],
+    div[data-subreddit="UniversalBeauty"], div[data-subreddit="GloDaP"],
+    div[data-subreddit="ActressGlobal"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="PublicFreakout"], div[data-subreddit="Helldivers"]  { 
