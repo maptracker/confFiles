@@ -285,7 +285,16 @@
         "§:home-assistant.io",
         "§:winehq.org",
         "§:usgovcloudapi.net",
-        "§:nytimes.com"
+        "§:nytimes.com",
+        "§:nyt.com",
+        "§:arcg.is",
+        "§:ago-item-storage.s3.amazonaws.com",
+        "§:nornagon.net",
+        "§:nanskitchen.com",
+        "§:gnome.org",
+        "§:beyondallreason.info",
+        "§:youtube.googleapis.com",
+        "§:usgs.gov"
       ],
       "untrusted": [
         "amazon-adsystem.com",
