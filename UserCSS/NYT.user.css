@@ -3,7 +3,7 @@
 @description New York Times user style, mostly masks components
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.27
+@version     1.0.28
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -32,7 +32,8 @@
     a[href*="/podcasts/"], a[href*="/well/"], a[href*="/sports/"],
     a[href*="/arts/"], a[href*="/puzzles/"], a[href*="theathletic.com"],
     a[href*="/theater/"], a[href*="/movies/"], a[href*="/style/"],
-    a[href*="/athletic/"], a[href*="/games/"] {
+    a[href*="/athletic/"], a[href*="/games/"], a[href*="/game/"],
+    a[href*="/crosswords"] {
         display: none ! important; 
     }
 
