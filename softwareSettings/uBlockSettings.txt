@@ -304,3 +304,6 @@ trenchcrusadewiki.miraheze.org##.mw-cookiewarning-container
 
 ! Feb 3, 2025 https://www.bing.com
 www.bing.com##.mh-content
+
+! Apr 8, 2025 https://www.motherjones.com
+www.motherjones.com##.social
