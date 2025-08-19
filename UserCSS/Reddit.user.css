@@ -3,7 +3,7 @@
 @description Mask add block in widget panel
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.30
+@version     1.0.31
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -139,7 +139,21 @@
     div[data-subreddit="okbuddycinephile"], div[data-subreddit="gtaonline"],
     div[data-subreddit="WholesomeAraAra"], div[data-subreddit="Dinosaurs"],
     div[data-subreddit="UniversalBeauty"], div[data-subreddit="GloDaP"],
-    div[data-subreddit="ActressGlobal"], div[data-subreddit="xyz123"],
+    div[data-subreddit="ActressGlobal"], div[data-subreddit="discordVideos"],
+    div[data-subreddit="countwithchickenlady"], div[data-subreddit="sewing"],
+    div[data-subreddit="indianrailways"], div[data-subreddit="ich_iel"],
+    div[data-subreddit="bleach"], div[data-subreddit="Animemes"],
+    div[data-subreddit="MinecraftMemes"], div[data-subreddit="Dandadan"],
+    div[data-subreddit="Chainsawfolk"], div[data-subreddit="pcmasterrace"],
+    div[data-subreddit="Battlefield6"], div[data-subreddit="IndianCivicFails"],
+    div[data-subreddit="rupaulsdragrace"], div[data-subreddit="Silksong"],
+    div[data-subreddit="indianrailways"], div[data-subreddit="indiasocial"],
+    div[data-subreddit="MiyabiMains"], div[data-subreddit="TheDigitalCircus"],
+    div[data-subreddit="Indian_flex"], div[data-subreddit="CryptoCurrency"],
+    div[data-subreddit="delhi"], div[data-subreddit="xyz123"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="PublicFreakout"], div[data-subreddit="Helldivers"]  { 
