@@ -1,0 +1,21 @@
+/* ==UserStyle==
+@name        Investing.com
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("investing.com") {
+    #PromoteSignUpPopUp, #sideNotificationZone, #topAlertBarContainer,
+    .promo-strip-wrapper, #marketMoversBoxWrapper, #webinars_new, 
+    .sidebarCommentary, footer, .instrumentsSentiments, .notificationImportant,
+    #pairSublinksLevel1, #pairSublinksLevel2, .instrumentHeader,
+    .innerHeaderSeperatorBottom, .buySellDiv {
+        display: none !important;
+    }
+    #quotes_summary_current_data {
+        padding-bottom: unset ! important;
+    }
+}
