@@ -3,7 +3,7 @@
 @description Mask add block in widget panel
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.31
+@version     1.0.32
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -150,9 +150,15 @@
     div[data-subreddit="indianrailways"], div[data-subreddit="indiasocial"],
     div[data-subreddit="MiyabiMains"], div[data-subreddit="TheDigitalCircus"],
     div[data-subreddit="Indian_flex"], div[data-subreddit="CryptoCurrency"],
-    div[data-subreddit="delhi"], div[data-subreddit="xyz123"],
-    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
-    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
+    div[data-subreddit="delhi"], div[data-subreddit="HollowKnightMemes"],
+    div[data-subreddit="ahmedabad"], div[data-subreddit="RaidenMains"],
+    div[data-subreddit="HollowKnight"], div[data-subreddit="me_irlgbt"],
+    div[data-subreddit="theamazingdigitalciru"], div[data-subreddit="smosh"],
+    div[data-subreddit="TwentiesIndia"], div[data-subreddit="DragonBallZ"],
+    div[data-subreddit="RATS"], div[data-subreddit="KpopDemonhunters"],
+    div[data-subreddit="tattoos"], div[data-subreddit="PeterExplainsTheJoke"],
+    div[data-subreddit="ExplainTheJoke"], div[data-subreddit="Clamworks"],
+    div[data-subreddit="MayNagChat"], div[data-subreddit="tattooadvice"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
