@@ -3,7 +3,7 @@
 @description Just hide a whole bunch of irritating stuff
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.1
+@version     1.0.2
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -15,7 +15,10 @@
     #wrapper-add-bank-account, #cart-upsell, #hlbcc, .prime-ad-banner-content,
     #footer, #hows-my-search, #poweredBy, div[data-ad-id],
     .s-shopping-adviser, span[data-component-type*='brand-footer'],
-    span[data-component-type*='feedback']  { 
+    span[data-component-type*='feedback'], #prime-signup-button  { 
         display: none ! important; 
+    }
+    #prime-decline-button {
+        font-size: 300%;
     }
 }
