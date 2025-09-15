@@ -3,7 +3,7 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.9
+@version     1.0.10
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -20,4 +20,6 @@
     body, body.artdeco-modal-is-open {
         overflow: unset ! important;
     }
+    /* Not sure this is wise, keeping it isolated for a bit */
+    div[role="status"] {display: none !important; }
 }
