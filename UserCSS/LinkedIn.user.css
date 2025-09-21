@@ -3,21 +3,23 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.7
+@version     1.0.10
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("linkedin.com") {
     #today-news-wrapper, .feature-promo, .upsell, .guided-setup,
     li[data-test-artdeco-toast-item-type='gdpr'], div[id*='feed-news'],
-    #msg-overlay, #ads-container, .feed-shared-news-module, .ad-banner,
+    #ads-container, .feed-shared-news-module, .ad-banner,
     .feed-learning-bites-module, footer, div[id*='feed-news'],
     div[class*='promo'], a[href*='/games/'], #feed-news-module,
-    .global-alert-banner { 
+    .global-alert-banner, div[class*='celebration-image'] { 
         display: none ! important;
     }
     
-    body {
+    body, body.artdeco-modal-is-open {
         overflow: unset ! important;
     }
+    /* Not sure this is wise, keeping it isolated for a bit */
+    div[role="status"] {display: none !important; }
 }
