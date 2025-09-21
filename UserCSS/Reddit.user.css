@@ -3,7 +3,7 @@
 @description Mask add block in widget panel
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.32
+@version     1.0.33
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -159,7 +159,16 @@
     div[data-subreddit="tattoos"], div[data-subreddit="PeterExplainsTheJoke"],
     div[data-subreddit="ExplainTheJoke"], div[data-subreddit="Clamworks"],
     div[data-subreddit="MayNagChat"], div[data-subreddit="tattooadvice"],
-    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
+    div[data-subreddit="anime_random"], div[data-subreddit="cyberpunkgame"],
+    div[data-subreddit="meirl"], div[data-subreddit="ShareMarketupdates"],
+    div[data-subreddit="squeeze_stocks"], div[data-subreddit="meirl"],
+    div[data-subreddit="stocks"], div[data-subreddit="CFB"],
+    div[data-subreddit="StardustCrusaders"], div[data-subreddit="funnycats"],
+    div[data-subreddit="dropout"], div[data-subreddit="kardashians"],
+    div[data-subreddit="tf2"], div[data-subreddit="Naruto"],
+    div[data-subreddit="CirclejerkSopranos"], div[data-subreddit="PokemonTCG"],
+    div[data-subreddit="50501"], div[data-subreddit="fantasyfootball"],
+    div[data-subreddit="GlobalOffensive"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="PublicFreakout"], div[data-subreddit="Helldivers"]  { 
