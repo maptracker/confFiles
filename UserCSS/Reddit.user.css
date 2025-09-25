@@ -3,7 +3,7 @@
 @description Mask add block in widget panel
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.33
+@version     1.0.34
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -168,7 +168,11 @@
     div[data-subreddit="tf2"], div[data-subreddit="Naruto"],
     div[data-subreddit="CirclejerkSopranos"], div[data-subreddit="PokemonTCG"],
     div[data-subreddit="50501"], div[data-subreddit="fantasyfootball"],
-    div[data-subreddit="GlobalOffensive"], div[data-subreddit="xyz123"],
+    div[data-subreddit="GlobalOffensive"], div[data-subreddit="antimeme"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="PublicFreakout"], div[data-subreddit="Helldivers"]  { 
