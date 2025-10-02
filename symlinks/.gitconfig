@@ -5,3 +5,5 @@
 	editor = emacs
 [push]
 	default = matching
+[pull]
+	rebase = false
