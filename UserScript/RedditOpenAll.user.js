@@ -6,7 +6,7 @@
 // @match       https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/user/*
 // @match       https://old.reddit.com/user/*
 // @grant       none
-// @version     1.1
+// @version     1.2
 // @author      Charles Tilford
 // @description Adds a button to Reddit image galleries to open all images in new tabs
 // ==/UserScript==
@@ -30,7 +30,7 @@ function findLinks() {
 function openAll() {
     // Triggered after clicking button
     // Cycle through all urls, open in new tabs
-    but.style.backgroundColor = 'pink';
+    but.style.backgroundColor = 'yellow';
     var cnt = 0;
     for (i=0; i < urls.length; i++) {
         but.innerText = "Opening " + (i+1);
@@ -38,7 +38,8 @@ function openAll() {
         cnt++;
     }
     but.innerText = "Opened " + cnt + " tabs";
-    but.style.backgroundColor = 'lime';
+    but.style.backgroundColor = 'red';
+    but.style.color = 'yellow';
 }
 
 function openTab(href) {
@@ -74,7 +75,8 @@ function addButton() {
     var tm = document.getElementsByClassName('top-matter');
     if (tm.length == 0) return;
     but = document.createElement('button');
-    but.style.backgroundColor = 'yellow';
+    but.style.backgroundColor = 'lime';
+    but.style.color = 'black';
     but.innerText = "Open All " + urls.length + " Images";
     but.onclick = openAll;
     tm[0].appendChild(but);
