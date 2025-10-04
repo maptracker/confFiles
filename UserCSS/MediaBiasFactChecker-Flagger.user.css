@@ -3,7 +3,7 @@
 @description Colorize news links according to MBFC ratings
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.64
+@version     1.0.65
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -71,7 +71,8 @@ domain("reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion") {
     a[href*='.space.com/'], a[href*='.pnas.org/'],
     a[href*='.popularmechanics.com/'], a[href*='.smithsonianmag.com/'],
     a[href*='.sciencealert.com/'], a[href*='.factcheck.org/'],
-    a[href*='.opensecrets.org/'], a[href*='/newatlas.com/']
+    a[href*='.opensecrets.org/'], a[href*='/newatlas.com/'],
+    a[href*='reuters.com'], a[href*='/reut.rs/']
     {
         /* Very High */
         background-color: #9f9 ! important; /* light green */
@@ -249,7 +250,9 @@ domain("reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion") {
     a[href*='/click2houston.com/'], a[href*='.winknews.com'],
     a[href*='channelnewsasia.com'], a[href*='asia.nikkei.com'],
     a[href*='focustaiwan.tw'], a[href*='.swissinfo.ch/'],
-    a[href*='/.navytimes.com/'], a[href*='.kyodonews.net/']
+    a[href*='/.navytimes.com/'], a[href*='.kyodonews.net/'],
+    a[href*='.lemonde.fr/'], a[href*='kyivindependent.com/'],
+    a[href*='manchestereveningnews.co.uk/'], a[href*='euromaidanpress.com/']
     {
         /* High */
         background-color: #cff ! important; /* light blue */
@@ -308,16 +311,17 @@ domain("reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion") {
     a[href*='antiwar.com/'], a[href*='.theepochtimes.com/'],
     a[href*='/bearingarms.com/'], a[href*='egyptianstreets.com/'],
     a[href*='.thesun.co.uk/'], a[href*='.thewrap.com/'],
-    a[href*='.ibtimes.com/'], a[href*='/jezebel.com/'],
+    a[href*='.ibtimes.com/'], a[href*='/jezebel.com/'], a[href*='.rfi.fr/'],
     a[href*='.lfpress.com/'], a[href*='.rawstory.com/'],
     a[href*='dailysabah.com/'], a[href*='.tasnimnews.com/'],
     a[href*='.independentsentinel.com/'], a[href*='/humanevents.com/'],
     a[href*='/thelibertydaily.com/'], a[href*='.dailykos.com/'],
-    a[href*='.newsmax.com/'], a[href*='.aa.com.tr/'],
+    a[href*='.newsmax.com/'], a[href*='.aa.com.tr/'], a[href*='lbc.co.uk/'],
     a[href*='.pravda.com.ua/'], a[href*='.democraticunderground.com/'],
     a[href*='futurism.com/'], a[href*='yna.co.kr/'], a[href*='/yle.fi/'],
-    a[href*='.india.com/'], a[href*='/jpost.com/'],
-    a[href*='.kyivpost.com/'], a[href*='.koreatimes.co.kr/']
+    a[href*='.india.com/'], a[href*='/jpost.com/'], a[href*='lbc.co.uk/'],
+    a[href*='.kyivpost.com/'], a[href*='.koreatimes.co.kr/'],
+    a[href*='united24media.com/'], a[href*='deccanherald.com/']
     {
         /* Mixed + Mostly Factual*/
         background-color: #ff6 ! important; /* yellow */
@@ -556,7 +560,10 @@ domain("reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion") {
     a[href*='mexiconewsdaily.com'], a[href*='.americamagazine.org'],
     a[href*='/mainichi.jp/'], a[href*='focustaiwan.tw'],
     a[href*='.swissinfo.ch/'], a[href*='.kyivpost.com/'],
-    a[href*='.koreatimes.co.kr/']
+    a[href*='.koreatimes.co.kr/'], a[href*='united24media.com/'],
+    a[href*='.lemonde.fr/'], a[href*='kyivindependent.com/'],
+    a[href*='deccanherald.com/'], a[href*='manchestereveningnews.co.uk/'],
+    a[href*='euromaidanpress.com/']
     {
         /* Left Center Left-Center*/
         background-image:
@@ -599,7 +606,8 @@ domain("reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion") {
     a[href*='militarytimes.com/'], a[href*='.military.com/'],
     a[href*='/click2houston.com/'], a[href*='.winknews.com'],
     a[href*='channelnewsasia.com'], a[href*='/yle.fi/'],
-    a[href*='/.navytimes.com/'], a[href*='.kyodonews.net/']
+    a[href*='/.navytimes.com/'], a[href*='.kyodonews.net/'],
+    a[href*='reuters.com'], a[href*='/reut.rs/'], a[href*='.rfi.fr/']
     {
         /* Least Biased */
         background-image:
@@ -665,7 +673,7 @@ domain("reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion") {
     a[href*='.thehindubusinessline.com/'], a[href*='.algemeiner.com/'],
     a[href*='/vancouversun.com/'], a[href*='/gulfnews.com/'],
     a[href*='asia.nikkei.com'], a[href*='yna.co.kr/'], a[href*='.india.com/'],
-    a[href*='/jpost.com/']
+    a[href*='/jpost.com/'], a[href*='lbc.co.uk/']
     {
         /* Right Center Right-Center*/
         background-image:
@@ -843,7 +851,7 @@ domain("reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion") {
     a[href*='japantimes.co.jp/'], a[href*='.usnews.com/'],
     a[href*='.orlandosentinel.com/'], a[href*='pressrepublican.com/'],
     a[href*='.theregister.co.uk/'], a[href*='.ft.com/'],
-    a[href*='reuters.com'], a[href*='/reut.rs/']
+    a[href*='bbcnewsd73hkzno2ini43t4gblxvycyac5aw4gnv7t2rccijh7745uqd.onion']
     {
         /* Tor-Unfriendly / needs Javascript */
         /* Cut'n'Paste:     , a[href*='pressrepublican.com/']  */
@@ -930,7 +938,10 @@ domain("reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion") {
     a[href*='telegraphindia.com'], a[href*='.philstar.com'],
     a[href*='countryliving.com'], a[href*='mymodernmet.com'],
     a[href*='current-news.co.uk'], a[href*='.breakingasia.com'],
-    a[href*='vicksburgnews.com'], a[href*='/notesfrompoland.com']
+    a[href*='vicksburgnews.com'], a[href*='/notesfrompoland.com'],
+    a[href*='armyrecognition.com'], a[href*='gwaramedia.com'],
+    a[href*='tvpworld.com'], a[href*='ukdefencejournal.org.uk'],
+    a[href*='/tech.eu/'], a[href*='pulse.mk.co.kr/']
     {
         /* Unknown, No Entry on MBFC */
         /* Cut'n'Paste:     , a[href*='/see.news/']  */
