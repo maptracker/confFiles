@@ -3,7 +3,7 @@
 // @namespace   Violentmonkey Scripts
 // @match       https://www.linkedin.com/feed/*
 // @grant       none
-// @version     1.0.2
+// @version     1.0.3
 // @author      -
 // @description 9/5/2025, 11:51:40 AM
 // ==/UserScript==
@@ -31,6 +31,8 @@ function getInformativeElements () {
     pickByText('update-components-header',
                /(^Suggested$|Promoted$| follows? |Recommended for you|Unlock your potential|LinkedIn Learning)/i);
     pickByText('update-components-actor__description',
+               /(^Promoted$)/i);
+    pickByText('update-components-actor__sub-description',
                /(^Promoted$)/i);
 }
 
