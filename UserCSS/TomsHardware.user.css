@@ -3,12 +3,13 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("tomshardware.com") {
-    ol.field.listing.h { 
+    ol.field.listing.h, div[class*='newsletter'], div[class*='social'],
+    aside[id*='affiliate'], aside[data-component-name*='Recirculation'] { 
         display: none ! important; 
     }
 }
