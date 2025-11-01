@@ -3,7 +3,7 @@
 @description Mask add block in widget panel
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.34
+@version     1.0.35
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -169,14 +169,21 @@
     div[data-subreddit="CirclejerkSopranos"], div[data-subreddit="PokemonTCG"],
     div[data-subreddit="50501"], div[data-subreddit="fantasyfootball"],
     div[data-subreddit="GlobalOffensive"], div[data-subreddit="antimeme"],
-    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
-    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
-    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
-    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
+    div[data-subreddit="iphone"], div[data-subreddit="FantasticFour"],
+    div[data-subreddit="beatles"], div[data-subreddit="bald"],
+    div[data-subreddit="Mariners"], div[data-subreddit="gravityfalls"],
+    div[data-subreddit="ClashOfClans"], div[data-subreddit="explainitpeter"],
+    div[data-subreddit="pitbulls"], div[data-subreddit="kingdomcome"],
+    div[data-subreddit="CrusaderKings"], div[data-subreddit="indianmemer"],
+    div[data-subreddit="Ulta"], div[data-subreddit="okbuddyvicodin"],
+    div[data-subreddit="HazbinHotel"], div[data-subreddit="wizardposting"],
+    div[data-subreddit="TheWalkingDeadGame"], div[data-subreddit="xyz123"],
+    div[data-subreddit="IndianWorkplace"], div[data-subreddit="xyz123"],
+    div[data-subreddit="piercing"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="PublicFreakout"], div[data-subreddit="Helldivers"]  { 
-        display: none ! important; 
+        display: none ! important;
     }
     
     /* Pop-up menu for hamburger - interfers with essentially all other
