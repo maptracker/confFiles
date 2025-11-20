@@ -3,7 +3,7 @@
 @description Mask add block in widget panel
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.36
+@version     1.0.37
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -184,12 +184,20 @@
     div[data-subreddit="ForCuriousSouls"], div[data-subreddit="Bioshock"],
     div[data-subreddit="LegendsZA"], div[data-subreddit="StarRailStation"],
     div[data-subreddit="LudwigAhgren"], div[data-subreddit="namesoundalikes"],
-    div[data-subreddit="Isekai"], div[data-subreddit="indiameme"],
+    div[data-subreddit="Isekai"], div[data-subreddit="TheMatpatEffect"],
     div[data-subreddit="Shark_Park"], div[data-subreddit="MeganFoxCircle"],
     div[data-subreddit="AliceInWonder1and"], div[data-subreddit="CelebEvents"],
     div[data-subreddit="NFLv2"], div[data-subreddit="NFCEastMemeWar"],
     div[data-subreddit="travisandtaylor"], div[data-subreddit="DDLC"],
-    div[data-subreddit="ClashRoyale"], div[data-subreddit="xyz123"],
+    div[data-subreddit="ClashRoyale"], div[data-subreddit="UnderReportedNews"],
+    div[data-subreddit="ShitPostCrusaders"], div[data-subreddit="ChainsawMan"],
+    div[data-subreddit="NewDelhi"], div[data-subreddit="MonsterHunter"],
+    div[data-subreddit="thomastheplankengine"], div[data-subreddit="Nbamemes"],
+    div[data-subreddit="PataHaiAajKyaHua"], div[data-subreddit="indiameme"],
+    div[data-subreddit="CzechCoconutCommunity"], div[data-subreddit="Shenseea"],
+    div[data-subreddit="StockLaunchers"], div[data-subreddit="xyz123"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
