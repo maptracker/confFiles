@@ -3,7 +3,7 @@
 // @namespace   Violentmonkey Scripts
 // @match       https://www.linkedin.com/feed/*
 // @grant       none
-// @version     1.0.4
+// @version     1.0.5
 // @author      -
 // @description 9/5/2025, 11:51:40 AM
 // ==/UserScript==
@@ -34,6 +34,8 @@ function getInformativeElements () {
                /(Promoted)/i);
     pickByText('update-components-actor__sub-description',
                /(Promoted)/i);
+    pickByText('feed-shared-update-v2',
+               /(job update)/i);
 }
 
 function pickByText(findClass, textPattern) {
