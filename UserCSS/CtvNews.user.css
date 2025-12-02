@@ -3,7 +3,7 @@
 @description Show content, mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.1
+@version     1.0.2
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -11,7 +11,7 @@
     html { display : unset ! important; } /* Just... weird */
 
     .video-header, .playa, footer, .sideItems, .StoryShareBottom, .teaser,
-    .sidebar, .currMain, .b-double-chain-custom {
+    .sidebar, .currMain, .b-double-chain-custom, div[class*='shopping'] {
         display : none ! important;
     }
 }
