@@ -18,7 +18,7 @@
 // @match         https://www.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/
 // @match         https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/*
 // @description   Colorizes posts and comments by count
-// @version       1.0.17
+// @version       1.0.18
 // @grant         none
 // ==/UserScript==
 
@@ -32,9 +32,12 @@ var noteEl = document.createElement('div');
 
 console.log("TEST");
 logX("-- Reddit Comment Highlighter --");
-// randomImage();
-setTimeout(highlightX, 3000);
+setTimeout(modifyDoc, 3000);
 
+function modifyDoc {
+  highlightX();
+  torSwap();
+}
 
 function useOld() {
     // auto-redirect to old website if on new one
@@ -43,25 +46,6 @@ function useOld() {
     if (newDom.test(loc)) {
         var old = loc.replace(newDom, 'https://old.');
         document.location = old;
-    }
-}
-
-function randomImage() {
-    // Weird behavior where videos often only load after you go back
-    // and forth to the page. This just injects a handy image that you
-    // can click on to go "forward", then oscillate the browser <- ->
-    // buttons until the video loads.
-    var bun = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Conejitolindo.jpg/207px-Conejitolindo.jpg";
-    var bH = "<b>BUN</b>";
-    var chk = new RegExp('\/domain\/v\.redd\.it');
-    var links = document.getElementsByTagName('a');
-    var ll = links.length;
-    for (var i=0; i < ll; i++) {
-        var targ = links[i];
-        if (chk.test(targ.href)) {
-            targ.innerHTML = bH;
-            targ.href = bun;
-        }
     }
 }
 
@@ -403,4 +387,35 @@ function parFromTime (el) {
     }
     // Recurse upwards
     return(parFromTime(par));
+}
+
+function torSwap () {
+    // Add convienence link to jump between normal and onion sites
+    var tm = document.getElementsByClassName('top-matter');
+    if (tm.length == 0) return;
+    but = document.createElement('a');
+    var loc    = document.location.href;
+    var notTor = "//old.reddit.com";
+    var isTor  = "//old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion";
+    var itRE = new RegExp(isTor);
+    if (itRE.test(loc)) {
+        // Button will switch to the normal site
+        but.href = loc.replace(itRE, notTor);
+        but.innerText = "un-Tor";
+        but.style.backgroundColor = "tan";
+    } else {
+        // Button will switch to Onion site
+        var ntRE = new RegExp(notTor);
+        but.href = loc.replace(ntRE, isTor);
+        but.innerText = "Tor";
+        but.style.backgroundColor = "cyan";
+    }
+    // Styling anchor as a buttion:
+    //  https://stackoverflow.com/a/2906586
+    but.style.color = "black";
+    but.style.textDecoration = "none";
+    but.style.border = "1px outset buttonborder";
+    but.style.padding = "1px 6px";
+    but.style.borderRadius = "3px";
+    tm[0].appendChild(but);
 }
