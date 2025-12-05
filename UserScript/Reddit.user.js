@@ -18,7 +18,7 @@
 // @match         https://www.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/
 // @match         https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/*
 // @description   Colorizes posts and comments by count
-// @version       1.0.18
+// @version       1.0.19
 // @grant         none
 // ==/UserScript==
 
@@ -34,7 +34,7 @@ console.log("TEST");
 logX("-- Reddit Comment Highlighter --");
 setTimeout(modifyDoc, 3000);
 
-function modifyDoc {
+function modifyDoc() {
   highlightX();
   torSwap();
 }
