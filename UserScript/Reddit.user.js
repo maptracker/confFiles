@@ -18,7 +18,7 @@
 // @match         https://www.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/
 // @match         https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/*
 // @description   Colorizes posts and comments by count
-// @version       1.0.19
+// @version       1.0.20
 // @grant         none
 // ==/UserScript==
 
@@ -27,8 +27,10 @@ useOld();
 // Array to hold all comment elements, plus their score
 var coms = [];
 var comAreaClass = "commentarea"
-var comEl = document.getElementsByClassName(comAreaClass)[0];
-var noteEl = document.createElement('div');
+var comEl   = document.getElementsByClassName(comAreaClass)[0];
+var noteEl  = document.createElement('div');
+// Will hold the top-by-date sorter target, if it's found
+var topTarg = false;
 
 console.log("TEST");
 logX("-- Reddit Comment Highlighter --");
@@ -36,6 +38,8 @@ setTimeout(modifyDoc, 3000);
 
 function modifyDoc() {
   highlightX();
+  filterButtons();
+  colorRecentness();
   torSwap();
 }
 
@@ -108,13 +112,6 @@ function highlightX() {
                     fgc = 'white';
                 } else if (pts <= 5) {
                     var par = elem;
-                    /*
-                      while (par && par.tagName != 'div' &&
-                      par.className != 'entry unvoted') {
-                      par = par.parentNode;
-                      }
-                      // if (par && par.tagName == 'div') par.style.display = 'none';
-                      */
                 }
             }
             // logX(pts + ' = ' + col);
@@ -124,8 +121,6 @@ function highlightX() {
             coms.push( [ cEl, pts ] );
         }
     }
-    filterButtons();
-    colorRecentness();
 }
 
 function filterButtons () {
@@ -310,7 +305,9 @@ function findScale () {
             fin.onclick = function() { filterByTime(9999999) };
             el.appendChild(fin);
             // Append the legend just outside the drop-down interface
-            chk[i].parentNode.parentNode.appendChild(el);
+            // We will capture the element for use later
+            topTarg = chk[i].parentNode.parentNode
+            topTarg.appendChild(el);
             //alert("maxScale: "+maxScale+ " maxName: "+maxName);
             break;
         }
@@ -391,8 +388,13 @@ function parFromTime (el) {
 
 function torSwap () {
     // Add convienence link to jump between normal and onion sites
-    var tm = document.getElementsByClassName('top-matter');
-    if (tm.length == 0) return;
+    // Do we have a place to put it?
+    var tm = topTarg;
+    if (!tm) {
+        tm = document.getElementsByClassName('top-matter');
+        if (tm.length == 0) return;
+        tm = tm[0];
+    }
     but = document.createElement('a');
     var loc    = document.location.href;
     var notTor = "//old.reddit.com";
@@ -417,5 +419,5 @@ function torSwap () {
     but.style.border = "1px outset buttonborder";
     but.style.padding = "1px 6px";
     but.style.borderRadius = "3px";
-    tm[0].appendChild(but);
+    tm.appendChild(but);
 }
