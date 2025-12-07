@@ -3,15 +3,18 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.3
+@version     1.0.4
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
-@-moz-document domain("theguardian.com") {
+@-moz-document domain("theguardian.com"), domain("guardian.co.uk") {
     .submeta__share, .submeta__syndication, .js-most-popular-footer, footer,
     .new-header__inner, iframe, [data-alt*="Sign up"], .block-share,
     #the-adconsent-element, div[aria-label="Show more"], #ad-undefined, svg,
-    gu-island, .content-footer {
+    gu-island, .content-footer, .m-guardianbookshop, .named-trailblock,
+    .twitter-container, .jobs-box, figure[data-spacefinder-type*="Newsletter"],
+    .share-links, .facebook, #footer, #header,
+    .list-of-trails  {
         display: none ! important;
     }
     div { max-width: unset ! important; width: unset ! important; }
