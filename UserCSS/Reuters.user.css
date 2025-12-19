@@ -3,7 +3,7 @@
 @description Mask various bits that won't render without JS
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.3
+@version     1.0.4
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -15,7 +15,8 @@
     div[data-template='footer'] ,.module, div[class^='inline-container'],
     div[class^='image__container'], ul[class^='share-buttons'],
     div[class*='newsletter'], div[class*='registration'], footer,
-    div[class*='styles-module__image-container'] { 
+    div[class*='styles-module__image-container'], div[data-testid="Topic"], 
+    div[data-testid="ArticleToolbar"], div[class*='__related__'] { 
         display: none !important;
     }
     
