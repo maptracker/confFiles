@@ -3,13 +3,14 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.1
+@version     1.0.2
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("natesilver.net") {
     .subscribe-widget, .paywall, .footer-wrap,
-    div[class*="subscribe"], div[class*="background"] {
+    div[class*="subscribe"], div[class*="background"],
+    div[class*="cookieBanner"] {
         display: none !important;
     }
 }
