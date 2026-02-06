@@ -26,6 +26,8 @@ Detect_Web_Filter
 
 ts
 
+## CSS sandbox
+Test.user.css
 
 ## Greasemonkey suddenly makes DB files for every script? Most of
 ## these scripts have no need for local storage, so exclude them from
