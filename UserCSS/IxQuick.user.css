@@ -3,7 +3,7 @@
 @description Highlight commonly used sites
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.9
+@version     1.0.10
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -24,7 +24,8 @@ domain("startpagel6srwcjlue4zgq3zevrujfaow726kjytqbbjyrswwmjzcqd.onion") {
     }
 
     /* Mask cruft */
-    #sponsored, iframe, .banner-container, #block-display, #ex-qi-tp-container {
+    #sponsored, iframe, .banner-container, #block-display, #ex-qi-tp-container,
+    div[class*="support-banner"] {
         display: none ! important;
     }
 
