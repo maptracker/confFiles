@@ -3,7 +3,7 @@
 @description Mask add block in widget panel
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.46
+@version     1.0.47
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -39,6 +39,11 @@
     #block-homepage, .error, .side, .footer-parent, .read-next-container,
     reddit-cookie-banner { 
         display: none ! important; 
+    }
+
+    /* Mask out source websites */
+    data[data-domain='blocknow.com'] { 
+        display: none ! important;
     }
 
     /* Thanks, no thanks */
@@ -258,16 +263,25 @@
     div[data-subreddit="heatedrivalry"], div[data-subreddit="TenseiSlime"],
     div[data-subreddit="RezeCult"], div[data-subreddit="yakuzagames"],
     div[data-subreddit="OUTFITS"], div[data-subreddit="Leakednews"],
-    div[data-subreddit="NFCWestMemeWar"], div[data-subreddit="Doom"],
+    div[data-subreddit="NFCWestMemeWar"], div[data-subreddit="hockeymemes"],
     div[data-subreddit="MyChemicalRomance"], div[data-subreddit="PcBuild"],
     div[data-subreddit="circled"], div[data-subreddit="LetsDiscussThis"],
     div[data-subreddit="TrendoraX"], div[data-subreddit="newsinterpretation"],
     div[data-subreddit="RandomShit_ISaw"], div[data-subreddit="International"],
     div[data-subreddit="ImmigrationPathways"], div[data-subreddit="wendigoon"],
     div[data-subreddit="NapangitiAko"], div[data-subreddit="IndiaPulse_"],
-    div[data-subreddit="playboicarti"], div[data-subreddit="adressme"],
+    div[data-subreddit="playboicarti"], div[data-subreddit="InBitcoinWeTrust"],
     div[data-subreddit="PopularCultureZone"], div[data-subreddit="custommagic"],
-    div[data-subreddit="AllConspiracyTheories"], div[data-subreddit="xyz123"],
+    div[data-subreddit="AllConspiracyTheories"], div[data-subreddit="adressme"],
+    div[data-subreddit="DieDeutschenBackrooms"], div[data-subreddit="Doom"],
+    div[data-subreddit="TrendingNews_"], div[data-subreddit="DesiVideoMemes"],
+    div[data-subreddit="hockeymemes"], div[data-subreddit="notmycat"],
+    div[data-subreddit="TuxedoCats"], div[data-subreddit="olympics"],
+    div[data-subreddit="femalelivingspace"], div[data-subreddit="PinoyHouse"],
+    div[data-subreddit="malelivingspace"], div[data-subreddit="brasil"],
+    div[data-subreddit="nhl"], div[data-subreddit="xyz123"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
