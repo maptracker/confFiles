@@ -3,7 +3,7 @@
 @description Mask add block in widget panel
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.48
+@version     1.0.49
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -278,14 +278,20 @@
     div[data-subreddit="hockeymemes"], div[data-subreddit="notmycat"],
     div[data-subreddit="TuxedoCats"], div[data-subreddit="olympics"],
     div[data-subreddit="femalelivingspace"], div[data-subreddit="PinoyHouse"],
-    div[data-subreddit="malelivingspace"], div[data-subreddit="brasil"],
+    div[data-subreddit="malelivingspace"], div[data-subreddit="FitGirlRepack"],
     div[data-subreddit="coaxedintoasnafu"], div[data-subreddit="ZZZ_Romance"],
     div[data-subreddit="aberBitteLaminiert"], div[data-subreddit="nhl"],
     div[data-subreddit="Ultrakill"], div[data-subreddit="peoplewhogiveashit"],
     div[data-subreddit="GameTheorists"], div[data-subreddit="Shittyaskflying"],
     div[data-subreddit="RatemeBrutallyHonest"], div[data-subreddit="USNEWS"],
-    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
-    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
+    div[data-subreddit="Bengaluru"], div[data-subreddit="stevehofstetter"],
+    div[data-subreddit="90smemorylane"], div[data-subreddit="JournalismNews"],
+    div[data-subreddit="slaythespire"], div[data-subreddit="sportsgossips"],
+    div[data-subreddit="brasil"], div[data-subreddit="nowthatsgoodstuff"],
+    div[data-subreddit="StockMarketIndia"], div[data-subreddit="AskSocialists"],
+    div[data-subreddit="thenextgenbusiness"], div[data-subreddit="Rottweiler"],
+    div[data-subreddit="gameofthrones"], div[data-subreddit="CelebsCave"],
+    div[data-subreddit="mtg"], div[data-subreddit="StockMarketIndia"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
