@@ -3,7 +3,7 @@
 @description Mask add block in widget panel
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.50
+@version     1.0.51
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -299,9 +299,28 @@
     div[data-subreddit="postanythingfun"], div[data-subreddit="NBAGossips"],
     div[data-subreddit="buffy"], div[data-subreddit="IndiaMemes"],
     div[data-author="AutoModerator"], div[data-subreddit="IndianStockMarket"],
-    div[data-subreddit="CollegeBasketball"], div[data-subreddit="TFE"],
+    div[data-subreddit="CollegeBasketball"], div[data-subreddit="WhatAWeeb"],
     div[data-subreddit="ichichs"], div[data-subreddit="spongebob"],
     div[data-subreddit="ScienceOdyssey"], div[data-subreddit="DeepMarketScan"],
+    div[data-subreddit="youtubeindia"], div[data-subreddit="LegalNews"],
+    div[data-subreddit="FirstTimeHomeBuyer"], div[data-subreddit="TFE"],
+    div[data-subreddit="justincaseyoumissedit"], div[data-subreddit="Salary"],
+    div[data-subreddit="TsukishiroYanagiMains"], div[data-subreddit="DINgore"],
+    div[data-subreddit="SnacksIndia"], div[data-subreddit="AskFitnessIndia"],
+    div[data-subreddit="ChurchOfNobara"], div[data-subreddit="pokemonmemes"],
+    div[data-subreddit="IndiaCricketGossips"], div[data-subreddit="RCB"],
+    div[data-subreddit="GenZIndia"], div[data-subreddit="Philippines"],
+    div[data-subreddit="berozgarchidiyaghar"], div[data-subreddit="jaipur"],
+    div[data-subreddit="Dhurandhar"], div[data-subreddit="Kantenhausen"],
+    div[data-subreddit="tomodachilife"], div[data-subreddit="magicTCG"],
+    div[data-subreddit="hungary"], div[data-subreddit="evangelionmemes"],
+    div[data-subreddit="allthequestions"], div[data-subreddit="Kantenhausen"],
+    div[data-subreddit="Polska"], div[data-subreddit="BravoRealHousewives"],
+    div[data-subreddit="Piratefolk"], div[data-subreddit="xyz123"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
