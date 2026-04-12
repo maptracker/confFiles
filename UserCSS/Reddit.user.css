@@ -3,7 +3,7 @@
 @description Mask add block in widget panel
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.51
+@version     1.0.52
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -300,7 +300,7 @@
     div[data-subreddit="buffy"], div[data-subreddit="IndiaMemes"],
     div[data-author="AutoModerator"], div[data-subreddit="IndianStockMarket"],
     div[data-subreddit="CollegeBasketball"], div[data-subreddit="WhatAWeeb"],
-    div[data-subreddit="ichichs"], div[data-subreddit="spongebob"],
+    div[data-subreddit="ichichs"], div[data-subreddit="actualcricketshitpost"],
     div[data-subreddit="ScienceOdyssey"], div[data-subreddit="DeepMarketScan"],
     div[data-subreddit="youtubeindia"], div[data-subreddit="LegalNews"],
     div[data-subreddit="FirstTimeHomeBuyer"], div[data-subreddit="TFE"],
@@ -316,10 +316,16 @@
     div[data-subreddit="hungary"], div[data-subreddit="evangelionmemes"],
     div[data-subreddit="allthequestions"], div[data-subreddit="Kantenhausen"],
     div[data-subreddit="Polska"], div[data-subreddit="BravoRealHousewives"],
-    div[data-subreddit="Piratefolk"], div[data-subreddit="xyz123"],
-    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
-    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
-    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
+    div[data-subreddit="Piratefolk"], div[data-subreddit="heissemeinung"],
+    div[data-subreddit="KeineDummenFragen"], div[data-subreddit="spongebob"],
+    div[data-subreddit="PHBookClub"], div[data-subreddit="TimesNow"],
+    div[data-subreddit="SchittsCreek"], div[data-subreddit="okbuddyviltrum"],
+    div[data-subreddit="magyar"], div[data-subreddit="PokemonROMhacks"],
+    div[data-subreddit="KafkaFPS"], div[data-subreddit="wallstreetbetsGER"],
+    div[data-subreddit="IndianFocus"], div[data-subreddit="Productivitycafe"],
+    div[data-subreddit="HonkaiStarRail_leaks"], div[data-subreddit="Piracy"],
+    div[data-subreddit="AwwwIndia"], div[data-subreddit="PiratedGames"],
+    div[data-subreddit="tja"], div[data-subreddit="IndiaNostalgia"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
