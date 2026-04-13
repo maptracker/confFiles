@@ -3,13 +3,14 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.4
+@version     1.0.5
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("independent.co.uk") {
     .video, .social-share, aside, .show-comments, #comments, footer,
-    div [data-primis*='videoEmbedId'] {
+    div [data-primis*='videoEmbedId'], div[data-component*='Engagement'],
+    #standard-header-main {
         display: none !important;
     }
     .main-wrapper {
