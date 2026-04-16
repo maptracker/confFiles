@@ -3,13 +3,14 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.1
+@version     1.0.2
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("dw.com") {
     .placeholder-image, .yt-wrapper, section[data-tracking-name*="sharing"],
-    section[id*='related-content'], footer {
+    section[id*='related-'], footer, .vjs-wrapper, .page-header,
+    .rich-text-ad {
         display: none !important;
     }
 }
