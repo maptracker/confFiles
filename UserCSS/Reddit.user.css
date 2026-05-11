@@ -3,7 +3,7 @@
 @description Mask add block in widget panel
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.53
+@version     1.0.54
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -298,7 +298,7 @@
     div[data-subreddit="Persona5"], div[data-subreddit="SciFiQueens"],
     div[data-subreddit="postanythingfun"], div[data-subreddit="NBAGossips"],
     div[data-subreddit="buffy"], div[data-subreddit="IndiaMemes"],
-    div[data-author="AutoModerator"], div[data-subreddit="IndianStockMarket"],
+    div[data-subreddit="IndianStockMarket"], div[data-subreddit="Baking"],
     div[data-subreddit="CollegeBasketball"], div[data-subreddit="WhatAWeeb"],
     div[data-subreddit="ichichs"], div[data-subreddit="actualcricketshitpost"],
     div[data-subreddit="ScienceOdyssey"], div[data-subreddit="DeepMarketScan"],
@@ -334,7 +334,22 @@
     div[data-subreddit="NailArt"], div[data-subreddit="IndianTeenagers"],
     div[data-subreddit="dogsofrph"], div[data-subreddit="grilling"],
     div[data-subreddit="mumbai"], div[data-subreddit="megantheestallion"],
-    div[data-subreddit="Indianbooks"], div[data-subreddit="xyz123"],
+    div[data-subreddit="Indianbooks"], div[data-subreddit="otakucollections"],
+    div[data-subreddit="popping"], div[data-subreddit="pyraandmythramains"],
+    div[data-subreddit="Adulting"], div[data-subreddit="VeganDE"],
+    div[data-subreddit="Freiheitsfront"], div[data-subreddit="indianbikes"],
+    div[data-subreddit="KanalHumor"], div[data-subreddit="IndiaSpeaks"],
+    div[data-subreddit="memeframe"], div[data-subreddit="DeadlockTheGame"],
+    div[data-subreddit="motivation"], div[data-subreddit="Cricket"],
+    div[data-subreddit="ghaziabad"], div[data-subreddit="LeagueOfMemes"],
+    div[data-subreddit="selfie"], div[data-subreddit="PHFoodPorn"],
+    div[data-subreddit="seniorkitties"], div[data-subreddit="catsofrph"],
+    div[data-subreddit="Beichtstuhl"], div[data-subreddit="FirstTimeKo"],
+    div[data-subreddit="CharacterAI"], div[data-subreddit="Kolkatacity"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
@@ -342,6 +357,10 @@
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="PublicFreakout"], div[data-subreddit="Helldivers"]  { 
+        display: none ! important;
+    }
+
+    div[data-author="AutoModerator"], div[data-author="read-the-rules"] { 
         display: none ! important;
     }
     
