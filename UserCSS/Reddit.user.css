@@ -7,6 +7,11 @@
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
+/*
+  I don't have a reddit account, but I browse /r/top and /r/all
+  This stylesheet lets me mask out subreddits I have no interest in
+*/
+
 @-moz-document domain("reddit.com"), domain("reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion") {
     div.entry.unvoted ul.flat-list.buttons { 
         display: block ! important; 
@@ -265,11 +270,29 @@
     div[data-subreddit="RandomShit_ISaw"], div[data-subreddit="International"],
     div[data-subreddit="ImmigrationPathways"], div[data-subreddit="wendigoon"],
     div[data-subreddit="NapangitiAko"], div[data-subreddit="IndiaPulse_"],
-    div[data-subreddit="playboicarti"], div[data-subreddit="adressme"],
+    div[data-subreddit="playboicarti"], div[data-subreddit="interesting"],
     div[data-subreddit="PopularCultureZone"], div[data-subreddit="custommagic"],
-    div[data-subreddit="AllConspiracyTheories"], div[data-subreddit="xyz123"],
-    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
-    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
+    div[data-subreddit="AllConspiracyTheories"], div[data-subreddit="adressme"],
+    div[data-subreddit="MemyPolskaa"], div[data-subreddit="BroThrewInAFunFact"],
+    div[data-subreddit="hatethissmug"], div[data-subreddit="lovethissmug"],
+    div[data-subreddit="VideosAmazing"], div[data-subreddit="newsPH"],
+    div[data-subreddit="Sidemen"], div[data-subreddit="residentevil"],
+    div[data-subreddit="Suomi"], div[data-subreddit="CappieClub"],
+    div[data-subreddit="ResidentEvilCapcom"], div[data-subreddit="GodofWar"],
+    div[data-subreddit="overlord"], div[data-subreddit="fantanoforever"],
+    div[data-subreddit="IndianGaming"], div[data-subreddit="euphoria"],
+    div[data-subreddit="MogelPackung"], div[data-subreddit="MandJTV"],
+    div[data-subreddit="annakendrick"], div[data-subreddit="Energiewirtschaft"],
+    div[data-subreddit="destiny2"], div[data-subreddit="SeveranceAppleTVPlus"],
+    div[data-subreddit="geometrydash"], div[data-subreddit="HIMYM"],
+    div[data-subreddit="IndiaTax"], div[data-subreddit="Zenlesszonezeroleaks_"],
+    div[data-subreddit="spotted"], div[data-subreddit="MyaSmooveJones"],
+    div[data-subreddit="DotA2"], div[data-subreddit="DafneKeenLove"],
+    div[data-subreddit="AEWOfficial"], div[data-subreddit="PhysicsWallah"],
+    div[data-subreddit="ArknightsEndfield"], div[data-subreddit="Mandaluyong"],
+    div[data-subreddit="xbox"], div[data-subreddit="Chihuahua"],
+    div[data-subreddit="csk"], div[data-subreddit="Mckenna_Grace"],
+    div[data-subreddit="ussoccer"], div[data-subreddit="IndiaTodayGlobalLIVE"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
