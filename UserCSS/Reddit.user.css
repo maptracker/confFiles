@@ -3,7 +3,7 @@
 @description Mask add block in widget panel
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.57
+@version     1.0.58
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -200,7 +200,7 @@
     div[data-subreddit="PoursTea"], div[data-subreddit="interestingasfuck"],
     div[data-subreddit="PrequelMemes"], div[data-subreddit="wholesomememes"],
     div[data-subreddit="ProgressiveHQ"], div[data-subreddit="ZyadaKuchNai"],
-    div[data-subreddit="PublicFreakout"], div[data-subreddit="Helldivers"]  { 
+    div[data-subreddit="PublicFreakout"], div[data-subreddit="Helldivers"],
     div[data-subreddit="RATS"], div[data-subreddit="KpopDemonhunters"],
     div[data-subreddit="RandomShit_ISaw"], div[data-subreddit="International"],
     div[data-subreddit="RatemeBrutallyHonest"], div[data-subreddit="USNEWS"],
@@ -387,7 +387,7 @@
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
-    div[data-subreddit="youtubeindia"], div[data-subreddit="LegalNews"],
+    div[data-subreddit="youtubeindia"], div[data-subreddit="LegalNews"] {
         display: none ! important;
     }
 
