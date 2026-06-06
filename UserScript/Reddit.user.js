@@ -18,10 +18,11 @@
 // @match         https://www.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/
 // @match         https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/*
 // @description   Colorizes posts and comments by count
-// @version       1.0.20
+// @version       1.0.21
 // @grant         none
 // ==/UserScript==
 
+// Redirect to old version of Reddit if needed
 useOld();
 
 // Array to hold all comment elements, plus their score
@@ -41,6 +42,7 @@ function modifyDoc() {
   filterButtons();
   colorRecentness();
   torSwap();
+  basicHyperlinks();
 }
 
 function useOld() {
@@ -420,4 +422,33 @@ function torSwap () {
     but.style.padding = "1px 6px";
     but.style.borderRadius = "3px";
     tm.appendChild(but);
+}
+
+function basicHyperlinks () {
+    // Reddit adds an event that intercepts external events
+    // This provides no user value, and can slow down access to the other site
+    // StackExchange suggests easiest fix is just to clone the node
+    //   https://stackoverflow.com/a/4386514
+
+    var myDomain = window.location.hostname;
+    var allLinks = document.getElementsByTagName('a');
+    logX("Scanning "+allLinks.length+ " hyperlinks to remove click intercept");
+    var cleaned = 0;
+    for (var i = 0; i < allLinks.length; i++) {
+        var lnk = allLinks[i];
+        // Ignore any links that are to Reddit itself
+        if (lnk.hostname == myDomain) continue;
+        // Make a copy of the link, insert next to original, remove original
+        var cloneLink = lnk.cloneNode(true);
+        // Cloning did not seem to sanitize as expected.
+        // But removing some Reddit attributes did?
+        // The first ATTR is the key one, but clearing the others to tidy up
+        cloneLink.removeAttribute("data-outbound-url");
+        cloneLink.removeAttribute("data-outbound-expiration");
+        cloneLink.removeAttribute("data-href-url");
+        lnk.parentNode.insertBefore(cloneLink, lnk);
+        lnk.remove();
+        cleaned++;
+    }
+    logX("  Sanitized "+cleaned+" hyperlinks");
 }

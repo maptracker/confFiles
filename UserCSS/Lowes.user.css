@@ -3,10 +3,13 @@
 @description No I don't want to sign up for your email
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("lowes.com") {
-    #emailSignUpDialog { display: none ! important; }
+    #emailSignUpDialog, div[id*="shop-by-room"],
+    article[class*="recommendations"] {
+        display: none ! important;
+    }
 }
