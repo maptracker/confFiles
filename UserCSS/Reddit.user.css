@@ -51,6 +51,13 @@
         display: none ! important;
     }
 
+    /* Try to manage coordination with ViolentMonkey script that dynamically
+       hides posts. Cosmetic fixes to prevent over-padding of hidden posts
+    */
+    .sitetable, .commentarea .child .thing, .commentarea .thing {
+        margin: unset ! important;
+    }
+
     /* Thanks, no thanks */
     /* Mask out a whole lotta subs */
     div[data-subreddit="PewdiepieSubmissions"], div[data-subreddit="madlads"], 
