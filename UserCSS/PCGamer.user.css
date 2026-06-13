@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name        PC Gamer
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.2
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("pcgamer.com") {
+    #popular-data, div[data-jwp-carousel-payload*="playerID"], aside,
+    div[id*="newsletter"], footer, .slice-author-bio, .primary-nav,
+    #slice-container-trendingbar, #utility-bar {
+        display: none ! important;
+    }
+}
