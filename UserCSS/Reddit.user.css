@@ -3,7 +3,7 @@
 @description Mask add block in widget panel
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.59
+@version     1.0.60
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -394,6 +394,19 @@
     div[data-subreddit="Rivian"], div[data-subreddit="carscirclejerk"],
     div[data-subreddit="EmmaWatsonMythology"], div[data-subreddit="NYKnicks"],
     div[data-subreddit="Overwatch_Memes"], div[data-subreddit="Chihuahua"],
+    div[data-subreddit="AskIndianMen"], div[data-subreddit="30PlusSkinCare"],
+    div[data-subreddit="Polymarket_news"], div[data-subreddit="RoMunca"],
+    div[data-subreddit="worldcup"], div[data-subreddit="FaltooGyan"],
+    div[data-subreddit="Paralives"], div[data-subreddit="BMW"],
+    div[data-subreddit="BoyDinnerDiaries"], div[data-subreddit="SoccerCentral"],
+    div[data-subreddit="splatoon"], div[data-subreddit="okbuddytracen"],
+    div[data-subreddit="Pokopia"], div[data-subreddit="NoahKahan"],
+    div[data-subreddit="FatuiHQ"], div[data-subreddit="SmilingCelebs"],
+    div[data-subreddit="WNBAgossips"], div[data-subreddit="tf_irl"],
+    div[data-subreddit="stellarblade"], div[data-subreddit="PS5"],
+    div[data-subreddit="worldcup"], div[data-subreddit="RentnerfahreninDinge"],
+    div[data-subreddit="SECourses"], div[data-subreddit="tadc"],
+    div[data-subreddit="MyAdventuresWithSuper"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
