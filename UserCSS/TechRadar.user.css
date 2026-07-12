@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name        TechRadar
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("techradar.com") {
+    aside, div[data-component-name*="JwPlayer"], div[class*="newsletter"],
+    div[class*="viafoura"], section[class*="footer"] {
+        display: none ! important;
+    }
+}
