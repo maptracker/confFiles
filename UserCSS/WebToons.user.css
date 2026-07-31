@@ -3,13 +3,15 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("webtoons.com") {
-    #footer, .dsc_encourage, .spi_area, .viewer_patron_area, #reportArea {
+    #footer, .dsc_encourage, .spi_area, .viewer_patron_area, #reportArea,
+    .comment_area, .aside viewer, .ranking_lst, .ly_wrap, .ly_dim {
         display: none ! important;
     }
     #content { padding: unset ! important; }
+    body { overflow: unset ! important; }
 }
