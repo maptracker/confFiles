@@ -3,7 +3,7 @@
 @description Mask add block in widget panel
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.60
+@version     1.0.61
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -403,10 +403,19 @@
     div[data-subreddit="Pokopia"], div[data-subreddit="NoahKahan"],
     div[data-subreddit="FatuiHQ"], div[data-subreddit="SmilingCelebs"],
     div[data-subreddit="WNBAgossips"], div[data-subreddit="tf_irl"],
-    div[data-subreddit="stellarblade"], div[data-subreddit="PS5"],
+    div[data-subreddit="beschissene_Werbungen"], div[data-subreddit="PS5"],
     div[data-subreddit="worldcup"], div[data-subreddit="RentnerfahreninDinge"],
-    div[data-subreddit="SECourses"], div[data-subreddit="tadc"],
-    div[data-subreddit="MyAdventuresWithSuper"], div[data-subreddit="xyz123"],
+    div[data-subreddit="SECourses"], div[data-subreddit="Erinnerungen"],
+    div[data-subreddit="MyAdventuresWithSuper"], div[data-subreddit="tadc"],
+    div[data-subreddit="SydneySweeney"], div[data-subreddit="stellarblade"],
+    div[data-subreddit="VintageFashion"], div[data-subreddit="Apartmentliving"],
+    div[data-subreddit="OliviaRodrigoCircle"], div[data-subreddit="stunfisk"],
+    div[data-subreddit="recontext"], div[data-subreddit="Freudeteilen"],
+    div[data-subreddit="IndianMemeTemplates"], div[data-subreddit="xbox"],
+    div[data-subreddit="Manga_Manwa_Manhua"], div[data-subreddit="xyz123"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
