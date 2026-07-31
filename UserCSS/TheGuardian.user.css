@@ -3,7 +3,7 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.4
+@version     1.0.5
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -14,7 +14,7 @@
     gu-island, .content-footer, .m-guardianbookshop, .named-trailblock,
     .twitter-container, .jobs-box, figure[data-spacefinder-type*="Newsletter"],
     .share-links, .facebook, #footer, #header,
-    .list-of-trails  {
+    .list-of-trails, .open-lightbox  {
         display: none ! important;
     }
     div { max-width: unset ! important; width: unset ! important; }
