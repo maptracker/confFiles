@@ -3,13 +3,14 @@
 @description Hide cruft and JS menus
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.1
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
 @-moz-document domain("cbc.ca") {
     #sidebar-right, .ad, .newsletter, .commentIndicator, #banner,
-    .contentFeedback, .discover-articles, div[id^='comments'] {
+    .contentFeedback, .discover-articles, div[id^='comments'],
+    .detailDiscovery, footer, div[class*="textToSpeech"] {
         display: none ! important;
     }
 }
