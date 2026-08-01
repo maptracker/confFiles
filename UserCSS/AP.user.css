@@ -3,7 +3,7 @@
 @description Mask out irritations, compact layout
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.14
+@version     1.0.15
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -21,6 +21,8 @@
     .FeedCard { padding: unset ! important; }
     a[class*="firstwords"] { grid-column: 1/4 ! important;
                              color: black ! important; }
+
+    .LinkEnhancement { color: unset ! important; }
 
     /* This isn't the right scope */
     :root {
