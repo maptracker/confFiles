@@ -3,7 +3,7 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.2
+@version     1.0.3
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -14,8 +14,14 @@
     .subscription-tabs, .footer-main-container-bg, .page-bottom,
     .content-correction, .page-sidebar, .videocontent-wrapper,
     .article-videoplayer, .trinityAudioPlaceholder,
-    #block-ibtmedia-facebook-facebook-comment { 
+    #block-ibtmedia-facebook-facebook-comment, div[class*="Google"],
+    section[class*="RelatedStories"], div[id*="engagement"],
+    div[class*="Fairness"], footer, div[class*="ContentCorrection"],
+    div[class*="ArticleHeader"] { 
         display: none ! important; 
     }
     .page-content { width: unset ! important; }
+    div[class*="TwitterEmbed"] {
+        min-height: unset ! important;
+    }
 }
