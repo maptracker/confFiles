@@ -3,7 +3,7 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.4
+@version     1.0.5
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -14,6 +14,11 @@
     .page__right-rail {
         width: unset ! important;
     }
+    /* Eh the rail was being a pain */
+    .page__right-rail {
+        display: none !important;
+    }
+    
     .resizable-container {
         max-width: unset ! important;
         margin: unset ! important;
