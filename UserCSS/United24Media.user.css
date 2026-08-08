@@ -1,0 +1,20 @@
+/* ==UserStyle==
+@name        United 24 Media
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.1
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("united24media.com") {
+    article[class*="read-more"], a[href*='donate'], .gtm-article-small,
+    div[data-analytics*="discussion"], article[data-donation-article=""],
+    footer, .lazy, .c-entry__date, .c-entry--list .c-entry__img, .u-cover,
+    .c-header {
+        display: none ! important;
+    }
+    .c-entry__date {
+        width: unset ! important;
+    }
+}
