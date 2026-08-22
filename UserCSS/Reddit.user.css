@@ -3,7 +3,7 @@
 @description Mask add block in widget panel
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.62
+@version     1.0.63
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -42,7 +42,7 @@
     .commentsignupbar, .listingsignupbar, .welcome, #onboarding-splash,
     #hamburgers, .s6prp9s-8, .s1l07lbt-0, .s1cwcagp-6, .reddit-infobar,
     #block-homepage, .error, .side, .footer-parent, .read-next-container,
-    reddit-cookie-banner { 
+    reddit-cookie-banner, commentsignupbar { 
         display: none ! important; 
     }
 
@@ -418,6 +418,24 @@
     div[data-subreddit="btd6"], div[data-subreddit="SmugAlana"],
     div[data-subreddit="SpyxFamily"], div[data-subreddit="NewsThread"],
     div[data-subreddit="hopeposting"], div[data-subreddit="WaterfallDump"],
+    div[data-subreddit="soccermemes"], div[data-subreddit="FinalFantasyVII"],
+    div[data-subreddit="Coconaad"], div[data-subreddit="luftablassen"],
+    div[data-subreddit="wacken"], div[data-subreddit="KingdomHearts"],
+    div[data-subreddit="gainit"], div[data-subreddit="luftablassen"],
+    div[data-subreddit="Staiy"], div[data-subreddit="GTA6unmoderated"],
+    div[data-subreddit="IndianEngineers"], div[data-subreddit="Kerala"],
+    div[data-subreddit="objetdelecture"], div[data-subreddit="ps5india"],
+    div[data-subreddit="catsph"], div[data-subreddit="indonesia"],
+    div[data-subreddit="serbia"], div[data-subreddit="thewalkingdead"],
+    div[data-subreddit="GTAIV"], div[data-subreddit="classywomen"],
+    div[data-subreddit="MayNagComment"], div[data-subreddit="Staiy"],
+    div[data-subreddit="ArlecchinoMains"], div[data-subreddit="SpiderPhoenix"],
+    div[data-subreddit="Catmemes"], div[data-subreddit="Modern_Family"],
+    div[data-subreddit="redrising"], div[data-subreddit="MoviesCave"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
+    div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
     div[data-subreddit="xyz123"], div[data-subreddit="xyz123"],
