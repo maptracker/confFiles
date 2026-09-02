@@ -3,11 +3,11 @@
 @description Mask out irritations
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.0
+@version     1.0.3
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
-@-moz-document domain("usatoday.com") {
+@-moz-document domain("pcgamer.com") {
     .flex { display: unset ! important; }
 
     div[data-component-name*="JwPlayer"], aside, div[id*="newsletter"],
