@@ -3,7 +3,7 @@
 @description Mask add block in widget panel
 @namespace   github.com/maptracker/confFiles
 @homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
-@version     1.0.65
+@version     1.1.0
 @license     GPL-3.0-or-later
 ==/UserStyle== */
 
@@ -33,7 +33,7 @@
        stable */
 
     /* Ick. Stupid pop-up subscription pane*/
-    .modal-open { overflow: unset ! important; }
+    .modal-open, .rpl-scroll-lock { overflow: unset ! important; }
 
     .promotedlink, #siteTable_promoted,  .promoted, .arrow, div.side,
     #header-bottom-right, .footer-parent, #cta-container-placeholder,
@@ -43,7 +43,9 @@
     #hamburgers, .s6prp9s-8, .s1l07lbt-0, .s1cwcagp-6, .reddit-infobar,
     #block-homepage, .error, .side, .footer-parent, .read-next-container,
     reddit-cookie-banner, commentsignupbar, #left-sidebar-container,
-    #right-sidebar-container, post-bottom-bar, reddit-header-action-items { 
+    #right-sidebar-container, post-bottom-bar, reddit-header-action-items,
+    community-highlight-carousel, create-post-entry-point-wrapper,
+    shreddit-join-button { 
         display: none ! important; 
     }
 
