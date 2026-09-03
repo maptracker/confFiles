@@ -61,8 +61,8 @@
         margin: unset ! important;
     }
 
-    /* Thanks, no thanks */
-    /* Mask out a whole lotta subs */
+    /* Thanks, no thanks - Mask out a whole lotta subs */
+    /* SUBREDDIT START */
     shreddit-post[subreddit-name="2007scape"], shreddit-post[subreddit-name="Battlefield"],
     shreddit-post[subreddit-name="2meirl4meirl"], shreddit-post[subreddit-name="okbuddychicanery"],
     shreddit-post[subreddit-name="49ers"], shreddit-post[subreddit-name="fivenightsatfreddys"],
@@ -439,13 +439,17 @@
     shreddit-post[subreddit-name="dunstkirsten"], shreddit-post[subreddit-name="adhdmeme"],
     shreddit-post[subreddit-name="HydroHomies"], shreddit-post[subreddit-name="GTA"],
     shreddit-post[subreddit-name="PopCultureV2"], shreddit-post[subreddit-name="AhyeonJung"],
-    shreddit-post[subreddit-name="ZZZ_Discussion"], shreddit-post[subreddit-name="xyz123"],
+    shreddit-post[subreddit-name="ZZZ_Discussion"], shreddit-post[subreddit-name="WeirdSideHustles "],
+    shreddit-post[subreddit-name="WhatIsTheTea"], shreddit-post[subreddit-name="xyz123"],
+    shreddit-post[subreddit-name="xyz123"], shreddit-post[subreddit-name="xyz123"],
+    shreddit-post[subreddit-name="xyz123"], shreddit-post[subreddit-name="xyz123"],
     shreddit-post[subreddit-name="xyz123"], shreddit-post[subreddit-name="xyz123"],
     shreddit-post[subreddit-name="xyz123"], shreddit-post[subreddit-name="xyz123"],
     shreddit-post[subreddit-name="xyz123"], shreddit-post[subreddit-name="xyz123"],
     shreddit-post[subreddit-name="youtubeindia"], shreddit-post[subreddit-name="LegalNews"] {
         display: none ! important;
     }
+    /* SUBREDDIT END */
 
     div[data-author="AutoModerator"], div[data-author="read-the-rules"],
     .deleted { 
