@@ -18,15 +18,18 @@
 // @match         https://www.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/
 // @match         https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/*
 // @description   Colorizes posts and comments by count
-// @version       1.0.21
+// @version       1.1.0
 // @grant         none
 // ==/UserScript==
 
 // Redirect to old version of Reddit if needed
-useOld();
+// useOld(); // Summer 2026 Reddit is killing Old Reddit
+
+var infoDiv;
+var newSpace = makeNewSpace();
 
 // Array to hold all comment elements, plus their score
-var coms = [];
+var coms    = [];
 var comAreaClass = "commentarea"
 var comEl   = document.getElementsByClassName(comAreaClass)[0];
 var noteEl  = document.createElement('div');
@@ -38,11 +41,219 @@ logX("-- Reddit Comment Highlighter --");
 setTimeout(modifyDoc, 3000);
 
 function modifyDoc() {
-  highlightX();
-  filterButtons();
-  colorRecentness();
-  torSwap();
-  basicHyperlinks();
+    doubleNext();
+    relocatePageContent();
+    highlightX();
+    filterButtons();
+    colorRecentness();
+    torSwap();
+    basicHyperlinks();
+}
+
+function doubleNext() {
+    var buts = document.getElementsByClassName('next-button');
+    for (var i = 0; i < buts.length; i++) {
+        var but = buts[i];
+        var a = but.getElementsByTagName('a');
+        if (a.length > 0) {
+            var href = a[0].href;
+            if (/count=/.test(href) && !/\+/.test(href)) {
+                href = href.replace(/\/r\/([^/]+)\//, (_, sr) => `/r/${sr}+${sr}/`);
+                a[0].href = href;
+            }
+        }
+    }
+}
+
+function makeNewSpace() {
+    var nsid = 'newSpace';
+    var chk = document.getElementById(nsid);
+    if (chk) return(chk);
+    var loc = window.location.href;
+    var isComment = new RegExp('\/comments\/');
+    if (!isComment.test(loc)) return(null);
+
+    var el = document.createElement('div');
+    el.id = nsid;
+    document.body.insertBefore(el, document.body.firstChild);
+    infoDiv = document.createElement('div');
+    infoDiv.id = 'infoDiv';
+    el.appendChild(infoDiv);
+    return(el);
+}
+
+function relocatePageContent() {
+    if (!newSpace) return(null);
+
+    // The topBar is a table holding simplified information about this page
+    const topBar = [];
+    const post = document.querySelector("shreddit-post");
+    const postSroot = post.shadowRoot;
+    const acts = postSroot.querySelector('rpl-action-bar');
+
+    if (acts) {
+        // Upvotes
+        const nums  = acts.getElementsByTagName('faceplate-number');
+        if (nums.length > 0) {
+            const td = document.createElement('td');
+            td.appendChild(nums[0]);
+            topBar.push(td);
+        }
+    }
+
+    const info = document.getElementById('pdp-credit-bar');
+    if (info) {
+        // Author
+        var auths = info.getElementsByClassName('author-name');
+        if (auths.length > 0) {
+            var td = document.createElement('td');
+            td.appendChild(auths[0]);
+            topBar.push(td);
+        }
+        // Date
+        var times  = info.getElementsByTagName('faceplate-timeago');
+        if (times.length > 0) {
+            var td = document.createElement('td');
+            td.appendChild(times[0]);
+            topBar.push(td);
+        }
+        // Subreddit
+        var sred  = info.getElementsByTagName('faceplate-hovercard');
+        if (sred.length > 0) {
+            var td = document.createElement('td');
+            td.appendChild(sred[0]);
+            topBar.push(td);
+        }
+
+    }
+    if (topBar.length > 0) {
+        const metaTab = document.createElement('table');
+        metaTab.style.width = "max-content";
+        metaTab.style.whiteSpace = "nowrap";
+        infoDiv.appendChild(metaTab);
+        const metaBod = document.createElement('tbody');
+        metaTab.appendChild(metaBod);
+        const metaTr  = document.createElement('tr');
+        metaBod.appendChild(metaTr);
+        for (var i=0; i < topBar.length; i++) {
+            var td = topBar[i];
+            metaTr.appendChild(td);
+        }
+    }
+    // Title
+    //const app = document.querySelector("shreddit-app");
+    //const appSroot = app.shadowRoot;
+    var h1s = post.querySelectorAll('h1');
+    if (h1s.length > 0) infoDiv.appendChild(h1s[0]);
+
+    // Post content
+    const contentDiv  = document.createElement('div');
+    contentDiv.id = 'contentDiv';
+    infoDiv.appendChild(contentDiv);
+
+    const oneimg = document.getElementById('post-image');
+    if (oneimg) {
+        // The post has a single image
+        if (relocateSingleImage(oneimg, contentDiv)) {
+            return clearPost(post);
+        }
+    }
+    const gcs = post.querySelectorAll('gallery-carousel');
+    if (gcs.length > 0) {
+        // Gallery, collection of 2+ images
+        if (relocateGallery(gcs[0], contentDiv)) {
+            return clearPost(post);
+        }
+    }
+}
+
+function largestSourceSet(img) {
+    // takes an image element
+    // if it has a parsable srcset, returns largest source
+    // otherwise returns vanilla srcset
+    const srcset = img.srcset;
+    var src;
+    if (srcset) src = [...srcset.matchAll(/(\S+)\s+(\d+)w/g)]
+                    .reduce((largest, [, url, width]) =>
+                            Number(width) > largest.width
+                            ? { url, width: Number(width) }
+                            : largest,
+                            { url: null, width: -Infinity }
+                            ).url;
+    if (!src) src = img.src;
+    return(src);
+}
+
+function relocateGallery(gc, outerdiv) {
+    const style = document.createElement("style");
+
+    style.textContent = `
+    #newGallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .tile {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        background: #eee;
+    }
+
+    .tile img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+    `;
+
+    document.head.appendChild(style);
+    div = document.createElement('div');
+    div.id = 'newGallery';
+    contentDiv.appendChild(div);
+    const imgs = gc.querySelectorAll("img");
+    for (var i = 0; i < imgs.length; i ++) {
+        const el = imgs[i];
+        if (!el.classList.contains('absolute')) continue;
+        const src = largestSourceSet(el);
+        if (!src) continue;
+        const tile = document.createElement("div");
+        tile.className = "tile";
+        const imgA = document.createElement("a");
+        imgA.href = src;
+        const image = document.createElement("img");
+        image.src = src;
+        image.alt = "Gallery image";
+        image.loading = "lazy";
+
+        div.appendChild(tile);
+        tile.appendChild(imgA);
+        imgA.appendChild(image);
+    }
+    return(true);
+}
+
+function clearPost(post) {
+    post.parentNode.removeChild(post);
+}
+
+function relocateSingleImage(img, div) {
+    const src = largestSourceSet(img);
+    if (!src) return(false);
+
+    div.style.maxWidth = "600px";
+    div.style.maxHeight = "600px";
+    const imgA = document.createElement('a');
+    imgA.href = src;
+    div.appendChild(imgA);
+    const newImg  = document.createElement('img');
+    newImg.src=src;
+    imgA.appendChild(newImg);
+    return(true);
 }
 
 function useOld() {
