@@ -18,7 +18,7 @@
 // @match         https://www.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/
 // @match         https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/*
 // @description   Colorizes posts and comments by count
-// @version       1.1.0
+// @version       1.1.1
 // @grant         none
 // ==/UserScript==
 
@@ -171,17 +171,26 @@ function largestSourceSet(img) {
     // takes an image element
     // if it has a parsable srcset, returns largest source
     // otherwise returns vanilla srcset
-    const srcset = img.srcset;
     var src;
-    if (srcset) src = [...srcset.matchAll(/(\S+)\s+(\d+)w/g)]
-                    .reduce((largest, [, url, width]) =>
-                            Number(width) > largest.width
-                            ? { url, width: Number(width) }
-                            : largest,
-                            { url: null, width: -Infinity }
-                            ).url;
+    if (img.srcset) {
+        src = lrgSrcMthd(img.srcset);
+    } else if (img.getAttribute('data-lazy-srcset')) {
+        src = lrgSrcMthd(img.getAttribute('data-lazy-srcset'));
+    }
     if (!src) src = img.src;
+    if (!src) src = img.getAttribute('data-lazy-src');
     return(src);
+}
+
+function lrgSrcMthd(srcset) {
+    // Disassembles srcset to find largest image
+    return([...srcset.matchAll(/(\S+)\s+(\d+)w/g)]
+           .reduce((largest, [, url, width]) =>
+                   Number(width) > largest.width
+                   ? { url, width: Number(width) }
+                   : largest,
+                   { url: null, width: -Infinity }
+                   ).url);
 }
 
 function relocateGallery(gc, outerdiv) {
