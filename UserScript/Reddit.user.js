@@ -18,31 +18,33 @@
 // @match         https://www.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/
 // @match         https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/*
 // @description   Colorizes posts and comments by count
-// @version       1.1.1
+// @version       1.1.3
 // @grant         none
 // ==/UserScript==
 
 // Redirect to old version of Reddit if needed
 // useOld(); // Summer 2026 Reddit is killing Old Reddit
 
-var infoDiv;
-var newSpace = makeNewSpace();
 
 // Array to hold all comment elements, plus their score
-var coms    = [];
-var comAreaClass = "commentarea"
+const coms    = [];
+const comAreaClass = "commentarea";
 var comEl   = document.getElementsByClassName(comAreaClass)[0];
-var noteEl  = document.createElement('div');
+const noteEl  = document.createElement('div');
 // Will hold the top-by-date sorter target, if it's found
-var topTarg = false;
+let topTarg = false;
 
 console.log("TEST");
 logX("-- Reddit Comment Highlighter --");
+
+// Start the cascade looking to configure New Reddit
+let infoDiv, newSpace, contentDiv;
+makeNewSpace();
+
 setTimeout(modifyDoc, 3000);
 
 function modifyDoc() {
     doubleNext();
-    relocatePageContent();
     highlightX();
     filterButtons();
     colorRecentness();
@@ -60,72 +62,100 @@ function doubleNext() {
             if (/count=/.test(href) && !/\+/.test(href)) {
                 href = href.replace(/\/r\/([^/]+)\//, (_, sr) => `/r/${sr}+${sr}/`);
                 a[0].href = href;
+                logX("[-] Reddit Comments - Patched Next url");
             }
         }
     }
 }
 
 function makeNewSpace() {
-    var nsid = 'newSpace';
-    var chk = document.getElementById(nsid);
-    if (chk) return(chk);
-    var loc = window.location.href;
-    var isComment = new RegExp('\/comments\/');
-    if (!isComment.test(loc)) return(null);
+    const loc = window.location.href;
+    const isComment = new RegExp('\/comments\/');
+    const domain = window.location.hostname;
+    const isNew = new RegExp('^www\.');
+    // Logic that is initiated below is only for New Reddit, and comment pages
+    if (!isComment.test(loc) || !isNew.test(domain)) return(null);
 
-    var el = document.createElement('div');
-    el.id = nsid;
-    document.body.insertBefore(el, document.body.firstChild);
+    setStyles();
+    newSpace = document.createElement('div');
+    newSpace.id = 'newSpace';
+    document.body.insertBefore(newSpace, document.body.firstChild);
     infoDiv = document.createElement('div');
     infoDiv.id = 'infoDiv';
-    el.appendChild(infoDiv);
-    return(el);
+    newSpace.appendChild(infoDiv);
+    logX("[0] Reddit Comments II - Created " + infoDiv.id);
+    // Start waiting for content to appear
+    relocateMetadata();
 }
 
-function relocatePageContent() {
-    if (!newSpace) return(null);
+function relocateMetadata() {
+      logX("[DEBUG] starting relocation");
+    if (!newSpace) {
+      logX("[x] Reddit Comments - Metadata relocation didn't find newSpace");
+      return(null);
+    }
+    const post = document.querySelector("shreddit-post");
+    if (!post) {
+        // If the post element isn't available try again after a second
+        logX("[x] Reddit Comments - Awaiting shreddit-post");
+        setTimeout(relocateMetadata, 1000);
+        return(false);
+    }
+    const postSroot = post.shadowRoot;
+    if (!postSroot) {
+        // If the post element isn't available try again after a second
+        logX("[x] Reddit Comments - Awaiting post shadowRoot");
+        setTimeout(relocateMetadata, 1000);
+        return(false);
+    }
 
+    const acts = postSroot.querySelector('rpl-action-bar');
+    if (!acts) {
+        // If the action bar isn't available try again after a second
+        logX("[x] Reddit Comments - Awaiting rpl-action-bar");
+        setTimeout(relocateMetadata, 1000);
+        return(false);
+    }
+
+    logX("[1] Reddit Comments II - Metadata found");
     // The topBar is a table holding simplified information about this page
     const topBar = [];
-    const post = document.querySelector("shreddit-post");
-    const postSroot = post.shadowRoot;
-    const acts = postSroot.querySelector('rpl-action-bar');
-
-    if (acts) {
-        // Upvotes
-        const nums  = acts.getElementsByTagName('faceplate-number');
-        if (nums.length > 0) {
-            const td = document.createElement('td');
-            td.appendChild(nums[0]);
-            topBar.push(td);
-        }
-    }
+    // Upvotes
+    const nums  = acts.getElementsByTagName('faceplate-number');
+    if (nums.length == 0) nums.push('?');
+    const numTD = document.createElement('td');
+    numTD.appendChild(nums[0]);
+    topBar.push(numTD);
 
     const info = document.getElementById('pdp-credit-bar');
-    if (info) {
-        // Author
-        var auths = info.getElementsByClassName('author-name');
-        if (auths.length > 0) {
-            var td = document.createElement('td');
-            td.appendChild(auths[0]);
-            topBar.push(td);
-        }
-        // Date
-        var times  = info.getElementsByTagName('faceplate-timeago');
-        if (times.length > 0) {
-            var td = document.createElement('td');
-            td.appendChild(times[0]);
-            topBar.push(td);
-        }
-        // Subreddit
-        var sred  = info.getElementsByTagName('faceplate-hovercard');
-        if (sred.length > 0) {
-            var td = document.createElement('td');
-            td.appendChild(sred[0]);
-            topBar.push(td);
-        }
-
+    if (!info) {
+        // If the author isn't available try again after a second
+        // logX("[x] Reddit Comments - Failed to find shreddit-post");
+        setTimeout(relocateMetadata, 1000);
+        return(false);
     }
+    // Author
+    const auths = info.getElementsByClassName('author-name');
+    if (auths.length == 0) auths.push("Unknown Author");
+    const authTD = document.createElement('td');
+    authTD.appendChild(auths[0]);
+    topBar.push(authTD);
+    logX("[1] Reddit Comments II - Metadata +Author");
+
+    // Date
+    const times  = info.getElementsByTagName('faceplate-timeago');
+    if (times.length == 0) times.push("Unknown Date");
+    const timeTD = document.createElement('td');
+    timeTD.appendChild(times[0]);
+    topBar.push(timeTD);
+
+    // Subreddit
+    const sred  = info.getElementsByTagName('faceplate-hovercard');
+    if (sred.length == 0) sred.push("Unknown Subredit");
+    const sredTD = document.createElement('td');
+    sredTD.appendChild(sred[0]);
+    topBar.push(sredTD);
+
     if (topBar.length > 0) {
         const metaTab = document.createElement('table');
         metaTab.style.width = "max-content";
@@ -140,31 +170,48 @@ function relocatePageContent() {
             metaTr.appendChild(td);
         }
     }
-    // Title
-    //const app = document.querySelector("shreddit-app");
-    //const appSroot = app.shadowRoot;
-    var h1s = post.querySelectorAll('h1');
-    if (h1s.length > 0) infoDiv.appendChild(h1s[0]);
+    relocateTitle();
+}
 
+function relocateTitle() {
+    const post = document.querySelector("shreddit-post");
+    const h1s = post.querySelectorAll('h1');
+    if (h1s.length == 0) {
+        // If the title isn't available try again after a second
+        setTimeout(relocateTitle, 1000);
+        return(false);
+    }
+    infoDiv.appendChild(h1s[0]);
+    relocatePostContent();
+}
+
+function relocatePostContent() {
     // Post content
-    const contentDiv  = document.createElement('div');
+    contentDiv  = document.createElement('div');
     contentDiv.id = 'contentDiv';
-    infoDiv.appendChild(contentDiv);
+    newSpace.appendChild(contentDiv);
+    searchForContent();
+}
 
+function searchForContent() {
+    const post = document.querySelector("shreddit-post");
     const oneimg = document.getElementById('post-image');
     if (oneimg) {
         // The post has a single image
-        if (relocateSingleImage(oneimg, contentDiv)) {
+        if (relocateSingleImage(oneimg)) {
             return clearPost(post);
         }
     }
     const gcs = post.querySelectorAll('gallery-carousel');
     if (gcs.length > 0) {
         // Gallery, collection of 2+ images
-        if (relocateGallery(gcs[0], contentDiv)) {
+        if (relocateGallery(gcs[0])) {
             return clearPost(post);
         }
     }
+    // Couldn't find anything (or I haven't coded other option yet)
+    // Try again in a second
+    setTimeout(searchForContent, 1000);
 }
 
 function largestSourceSet(img) {
@@ -184,43 +231,14 @@ function largestSourceSet(img) {
 
 function lrgSrcMthd(srcset) {
     // Disassembles srcset to find largest image
-    return([...srcset.matchAll(/(\S+)\s+(\d+)w/g)]
-           .reduce((largest, [, url, width]) =>
-                   Number(width) > largest.width
-                   ? { url, width: Number(width) }
-                   : largest,
-                   { url: null, width: -Infinity }
-                   ).url);
+	return([...srcset.matchAll(/(\S+)\s+(\d+)w/g)]
+	  .reduce((largest, [, url, width]) =>
+	      Number(width) > largest.width ?
+	       { url, width: Number(width) } : largest,
+	       { url: null, width: -Infinity } ).url);
 }
 
-function relocateGallery(gc, outerdiv) {
-    const style = document.createElement("style");
-
-    style.textContent = `
-    #newGallery {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
-    }
-
-    .tile {
-        width: 200px;
-        height: 200px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        background: #eee;
-    }
-
-    .tile img {
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: contain;
-    }
-    `;
-
-    document.head.appendChild(style);
+function relocateGallery(gc) {
     div = document.createElement('div');
     div.id = 'newGallery';
     contentDiv.appendChild(div);
@@ -236,33 +254,67 @@ function relocateGallery(gc, outerdiv) {
         imgA.href = src;
         const image = document.createElement("img");
         image.src = src;
-        image.alt = "Gallery image";
-        image.loading = "lazy";
+        image.alt = "Image " + (i+1);
+        //image.loading = "lazy";
 
         div.appendChild(tile);
         tile.appendChild(imgA);
         imgA.appendChild(image);
     }
+    relocatePostText();
+    return(true);
+}
+
+function removeNode(el) {
+    if (!el) return(false);
+    el.parentNode.removeChild(el);
+    logX("[-] Removed node: "+ el.tagName);
     return(true);
 }
 
 function clearPost(post) {
-    post.parentNode.removeChild(post);
+    removeNode(post);
+    removeNode(document.querySelector('comment-body-header'));
 }
 
-function relocateSingleImage(img, div) {
+function relocateSingleImage(img) {
     const src = largestSourceSet(img);
     if (!src) return(false);
 
-    div.style.maxWidth = "600px";
-    div.style.maxHeight = "600px";
+    // Check if there's an external link associated with the image, too
+    const par = img.parentNode;
+    if (par.tagName == 'a') {
+        const href = par.href;
+        if (href && !/reddit/.test(href)) {
+            // Make a new anchor to strip any sillyness from original link
+            const newA = document.createElement('a');
+            newA.href = href;
+            newA.innerText = href;
+            contentDiv.appendChild(newA);
+            contentDiv.appendChild(document.createElement('br'));
+        }
+    }
+
+    // contentDiv.className = 'singleImage';
     const imgA = document.createElement('a');
     imgA.href = src;
-    div.appendChild(imgA);
+    contentDiv.appendChild(imgA);
     const newImg  = document.createElement('img');
     newImg.src=src;
+    newImg.style.objectFit = 'contain';
+    newImg.style.maxWidth = '600px';
+    newImg.style.maxHeight = '600px';
     imgA.appendChild(newImg);
+    relocatePostText();
     return(true);
+}
+
+function relocatePostText() {
+    const post = document.querySelector("shreddit-post");
+    const text = post.querySelector("shreddit-post-text-body");
+    if (text) {
+        contentDiv.appendChild(text);
+    }
 }
 
 function useOld() {
@@ -279,11 +331,11 @@ function highlightX() {
     // Sometimes spans, sometimes divs. Links for index comment count
 
     var elems = [ [document.getElementsByTagName('div'),
-    {"Comment__metadata": 1, "score unvoted": 1 }],
+                   {"Comment__metadata": 1, "score unvoted": 1 }],
                   [document.getElementsByTagName('span'),
-    {"score unvoted": 1, "score-hidden": 1}],
+                   {"score unvoted": 1, "score-hidden": 1}],
                   [document.getElementsByTagName('a'),
-    {"bylink comments may-blank": 1}]
+                   {"bylink comments may-blank": 1}]
                   ];
     logX("Scanning " + elems[0][0].length + " DIVs + "+
          elems[1][0].length + " SPANs");
@@ -348,19 +400,19 @@ function highlightX() {
 function filterButtons () {
     if (!comEl) return;
     // sort elements by score
-    var clen = coms.length;
+    const clen = coms.length;
     if (clen < 20) return;
-    coms.sort( function(a, b){return b[1] - a[1]} );
+    coms.sort( function(a, b){return b[1] - a[1];} );
     // Style to mask below-threshold comments
-    var maskStyle = document.createElement('style');
-    var styBits = [];
+    const maskStyle = document.createElement('style');
+    const styBits = [];
     for (var si = 2; si <= 10; si++) {
         styBits.push(".ca"+si+" * .cm"+si);
     }
     maskStyle.innerHTML = styBits.join(",") + " { display: none ! important }";
     comEl.parentNode.insertBefore(maskStyle, comEl);
     // Div to hold percentile buttons
-    var butDiv = document.createElement('div');
+    const butDiv = document.createElement('div');
     butDiv.appendChild(noteEl);
     comEl.parentNode.insertBefore(butDiv, comEl);
     // Feedback on number of comments being shown:
@@ -371,21 +423,24 @@ function filterButtons () {
     var k = 0, dbg="";
     for (var i = 1; i <= 10; i++) {
         // score threshold for this percentage:
-        var thres = coms[ Math.ceil( clen * i / 10 ) - 1][1];
-        var bt = document.createElement('button');
-        var setClass = "";
+        const thres = coms[ Math.ceil( clen * i / 10 ) - 1][1];
+        const bt = document.createElement('button');
+        let setClass = "";
         for (var j = i+1; j <= 10; j++) { setClass += " ca"+j; }
         bt.innerHTML = (i*10)+"%";
         bt.threshold = thres;
         bt.thresholdClass = setClass;
         bt.numCom = 0;
-        bt.onclick = function() { doFilter(this) };
+        bt.onclick = function() { doFilter(this); };
         butDiv.append(bt);
         // Set comment element classes
-        var ceCls = " cm"+i;
+        const ceCls = " cm"+i;
         dbg += "["+i+" = "+thres+"] ";
         while (k < clen) {
-            if (coms[k][1] < thres) { dbg += "("+coms[k][1]+" < "+thres+") "; break } ;
+            if (coms[k][1] < thres) {
+				dbg += "("+coms[k][1]+" < "+thres+") ";
+				break;
+			}
             coms[k][0].className = coms[k][0].className + ceCls;
             dbg += coms[k][1] + " ";
             k++;
@@ -509,14 +564,14 @@ function findScale () {
             // Build color scale with non-breaking spaces
             for (j = 0; j <= gradBits; j++) {
                 var gb = document.createElement("span");
-                gb.innerHTML="&nbsp;"
-                    const frac = j/gradBits;
+                gb.innerHTML="&nbsp;";
+                const frac = j/gradBits;
                 gb.style.backgroundColor=gradStyle(j/gradBits);
                 // Make each element of legend a clickable interface
                 // to the time filter function
                 gb.style.cursor = "crosshair";
                 gb.onclick = "filterByTime("+(Math.ceil(100*frac)/100)+")";
-                gb.onclick = function() { filterByTime(frac) };
+                gb.onclick = function() { filterByTime(frac); };
                 el.appendChild(gb);
             }
             // Final text indicating extent of gradient range
@@ -524,11 +579,11 @@ function findScale () {
             fin.innerHTML="&nbsp;"+maxName;
             // Clicking on the max time should remove all time filters
             fin.style.cursor = "crosshair";
-            fin.onclick = function() { filterByTime(9999999) };
+            fin.onclick = function() { filterByTime(9999999); };
             el.appendChild(fin);
             // Append the legend just outside the drop-down interface
             // We will capture the element for use later
-            topTarg = chk[i].parentNode.parentNode
+            topTarg = chk[i].parentNode.parentNode;
             topTarg.appendChild(el);
             //alert("maxScale: "+maxScale+ " maxName: "+maxName);
             break;
@@ -672,3 +727,42 @@ function basicHyperlinks () {
     }
     logX("  Sanitized "+cleaned+" hyperlinks");
 }
+
+function setStyles() {
+    const style = document.createElement("style");
+
+    style.textContent = `
+    #newGallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .singleImage {
+        maxWidth: 600px ! important;
+        maxHeight: 600px ! important;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+    }
+    .tile {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        background: #eee;
+    }
+
+    .tile img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        display: block;
+    }
+    `;
+
+    document.head.appendChild(style);
+}
+
