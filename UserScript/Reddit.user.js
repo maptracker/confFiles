@@ -18,7 +18,7 @@
 // @match         https://www.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/
 // @match         https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/*
 // @description   Colorizes posts and comments by count
-// @version       1.1.4
+// @version       1.1.5
 // @grant         none
 // ==/UserScript==
 
@@ -34,6 +34,9 @@ var comEl = document.getElementsByClassName(comAreaClass)[0];
 const noteEl = document.createElement("div");
 // Will hold the top-by-date sorter target, if it's found
 let topTarg = false;
+// Tracking how many times we tried to find content
+let contentSearchCount = 0;
+let opAuthor = "DummyInitialValue";
 
 console.log("TEST");
 logX("-- Reddit Comment Highlighter --");
@@ -122,6 +125,7 @@ function relocateMetadata() {
   }
 
   logX("[1] Reddit Comments II - Metadata found");
+  opAuthor = post.author;
   // The topBar is a table holding simplified information about this page
   const topBar = [];
   // Upvotes
@@ -136,6 +140,15 @@ function relocateMetadata() {
   }
   numTD.appendChild(nums[0]);
   topBar.push(numTD);
+
+  // Upvote ratio
+  const upr = post.getAttribute("upvote-ratio");
+  if (upr) {
+    const uprTD = document.createElement("td");
+    topBar.push(uprTD);
+    uprTD.innerText = Math.round(100 * upr) + "%";
+    uprTD.title = "Upvote Ratio";
+  }
 
   const info = document.getElementById("pdp-credit-bar");
   if (!info) {
@@ -208,6 +221,9 @@ function relocatePostContent() {
 
 function searchForContent() {
   const post = document.querySelector("shreddit-post");
+  // Can we use post-type to better find content? TODO
+  const type = post.getAttribute("post-type");
+
   const oneimg = document.getElementById("post-image");
   if (oneimg) {
     // The post has a single image
@@ -227,6 +243,13 @@ function searchForContent() {
     }
   }
 
+  const lightbox = post.querySelector('[source="post_lightbox"]');
+  if (lightbox) {
+    if (relocateLightbox(lightbox)) {
+      return true;
+    }
+  }
+
   if (relocatePostText()) {
     /* This may end up causing problems with asynchronous loading of 
 	   content. For text-only posts, this is all there will be. But other 
@@ -238,6 +261,13 @@ function searchForContent() {
     return true;
   }
   // Couldn't find anything (or I haven't coded other option yet)
+  if (contentSearchCount++ > 20) {
+    // Some posts don't seem to have content? Only a title?
+    // After 20 seconds give up and start managing rest of content
+    clearPost();
+    relocateComments();
+    return true;
+  }
   // Try again in a second
   setTimeout(searchForContent, 1000);
 }
@@ -315,14 +345,40 @@ function relocateVideo(player) {
   const pSroot = player.shadowRoot;
   if (!pSroot) return false;
   const vid = pSroot.querySelector("video");
-  vid.controls = "controls";
+  if (!vid) {
+    logX("[.] Reddit Comments II - Awaiting video content");
+    return false;
+  }
+  if (!vid.src) {
+    logX("[.] Reddit Comments II - Awaiting video source");
+    return false;
+  }
+  logX("[3] Reddit Comments II - Content type: Video");
 
   const pDiv = document.createElement("div");
   pDiv.className = "vidDiv";
-  pDiv.appendChild(vid);
-  //    const ui = pSroot.querySelector("shreddit-media-ui");
-  //	pDiv.appendChild(ui);
+  // Relocating the original video didn't work at all
+  // We'll make a new, clean video tag and just move the source over
+  const newVid = document.createElement("video");
+  newVid.controls = "controls";
+  newVid.muted = "muted";
+  newVid.width = 640;
+  pDiv.appendChild(newVid);
+  const vidSrc = document.createElement("source");
+  vidSrc.src = vid.src;
+  newVid.appendChild(vidSrc);
+
   contentDiv.appendChild(pDiv);
+  relocatePostText();
+  clearPost();
+  relocateComments();
+  return true;
+}
+
+function relocateLightbox(lightbox) {
+  if (!lightbox) return false;
+  logX("[3] Reddit Comments II - Content type: Basic Lightbox");
+  contentDiv.appendChild(lightbox);
   relocatePostText();
   clearPost();
   relocateComments();
@@ -456,6 +512,9 @@ function scanComments() {
        ' of ' + coms.length + " comments");
   // Comments are being dynamically loaded, keep checking for new ones
   if (moved > 0) filterComments();
+  // The comment block keeps popping back. So we'll hide the whole app at this point
+  const app = document.querySelector("shreddit-app");
+  app.style.display = "none";
   setTimeout(scanComments, 1000);
 }
 
@@ -464,6 +523,14 @@ function moveOneComment(com) {
   if (com.DONE) return false;
 
   const comID = com.getAttribute("thingid");
+  if (comLookup[comID]) {
+    // A relocated DIV was already made for this ID
+    // This shouldn't happen, but I think some comments may be
+    // re-loading into the DOM?
+    com.DONE = true;
+    com.style.display = "none";
+    return true;
+  }
   // The outer div will be used for nesting replies
   const comOuter = document.createElement("div");
   comOuter.className = "newCom";
@@ -488,6 +555,7 @@ function moveOneComment(com) {
   const val = com.getAttribute("score");
   const ptInfo = scoreToStyle(val);
   numTD.innerText = val;
+  numTD.title = "Score";
   applyStyle(ptInfo.style, numTD);
   coms.push([comDiv, ptInfo.value]);
 
@@ -497,6 +565,9 @@ function moveOneComment(com) {
   const auth = com.querySelector('[noun="comment_author"]');
   if (auth) {
     authTD.appendChild(auth);
+    // Highlight OP
+    if (auth.innerText == opAuthor)
+      authTD.className = authTD.className + " opauthor";
   } else {
     authTD.innerText = "?";
   }
@@ -510,12 +581,20 @@ function moveOneComment(com) {
   // Are there hidden children?
   const kids = com.querySelector("#comment-children");
   if (false && kids) {
-    // false: The button doesn't work when moved outside its native context
+    // Eh, still can't get this to work
     const kbut = kids.querySelector("button");
     if (kbut) {
       const kidTD = document.createElement("td");
-      kidTD.appendChild(kbut);
       metaTr.appendChild(kidTD);
+      // The button doesn't work when moved outside its native context
+      // So we'll make a new link that clicks the (now hidden) button for us
+      const loadKids = document.createElement("a");
+      loadKids.innerText = kbut.innerText;
+      loadKids.onclick = function () {
+        alert(kbut);
+        kbut.click();
+      };
+      kidTD.appendChild(loadKids);
     }
   }
 
@@ -663,7 +742,7 @@ function filterButtons() {
   // Style to mask below-threshold comments
   const maskStyle = document.createElement("style");
   const styBits = [];
-  for (var si = 2; si <= 10; si++) {
+  for (let si = 2; si <= 10; si++) {
     styBits.push(".ca" + si + " * .cm" + si);
   }
   maskStyle.innerHTML = styBits.join(",") + " { display: none ! important }";
@@ -677,14 +756,15 @@ function filterButtons() {
   noteEl.style.fontStyle = "italic";
   noteEl.style.fontSize = "1em";
   // Make percentile buttons
-  var k = 0,
-    dbg = "";
-  for (var i = 1; i <= 10; i++) {
+  let k = 0;
+  let dbg = "";
+  /* jshint loopfunc: true */
+  for (let i = 1; i <= 10; i++) {
     // score threshold for this percentage:
     const thres = coms[Math.ceil((clen * i) / 10) - 1][1];
     const bt = document.createElement("button");
     let setClass = "";
-    for (var j = i + 1; j <= 10; j++) {
+    for (let j = i + 1; j <= 10; j++) {
       setClass += " ca" + j;
     }
     bt.innerHTML = i * 10 + "%";
@@ -734,7 +814,7 @@ function logX(msg) {
  * -------------------------------------------------------------------
  */
 
-var recent, middle, later;
+let recent, middle, later;
 /* Trying to get a gradient that doesn't overlap with score colors
  * and also does not have gray in the middle. I had to add a midpoint
  * color to avoid an ungly center point
@@ -762,8 +842,8 @@ function midHex(frac, lo, hi) {
   }
   // Make hexidecimal
   //  https://stackoverflow.com/a/16360660
-  var mid = Math.ceil(lo + frac * (hi - lo));
-  var hx = mid.toString(16);
+  const mid = Math.ceil(lo + frac * (hi - lo));
+  const hx = mid.toString(16);
   return hx.length == 1 ? "0" + hx : hx;
 }
 
@@ -771,8 +851,8 @@ function gradStyle(frac) {
   // Create style string for gradient background color
   // frac = fraction (0-1) along gradient
   // Midpoint is taken at 0.5
-  var p1 = recent;
-  var p2 = middle;
+  let p1 = recent;
+  let p2 = middle;
   if (frac > 0.5) {
     p1 = middle;
     p2 = later;
@@ -797,8 +877,8 @@ function gradStyle(frac) {
  * The legend will also be clickable, and will act as a filter
  */
 
-var maxScale = 24;
-var maxName = "1 day";
+let maxScale = 24;
+let maxName = "1 day";
 function findScale() {
   // Interface uses "selected" element
   var chk = document.getElementsByClassName("selected");
@@ -827,7 +907,8 @@ function findScale() {
       // How many segments in the legend?
       var gradBits = 20;
       // Build color scale with non-breaking spaces
-      for (j = 0; j <= gradBits; j++) {
+      /* jshint loopfunc: true */
+      for (let j = 0; j <= gradBits; j++) {
         var gb = document.createElement("span");
         gb.innerHTML = "&nbsp;";
         const frac = j / gradBits;
@@ -974,16 +1055,26 @@ function basicHyperlinks() {
   // StackExchange suggests easiest fix is just to clone the node
   //   https://stackoverflow.com/a/4386514
 
-  var myDomain = window.location.hostname;
-  var allLinks = document.getElementsByTagName("a");
+  const myDomain = window.location.hostname;
+  const allLinks = document.getElementsByTagName("a");
   logX("Scanning " + allLinks.length + " hyperlinks to remove click intercept");
-  var cleaned = 0;
-  for (var i = 0; i < allLinks.length; i++) {
-    var lnk = allLinks[i];
+  let cleaned = 0;
+  let bested = 0;
+  for (let i = 0; i < allLinks.length; i++) {
+    const lnk = allLinks[i];
     // Ignore any links that are to Reddit itself
-    if (lnk.hostname == myDomain) continue;
+    if (lnk.hostname == myDomain) {
+      // If the link is to a comments page, set to sort by best by default
+      let href = lnk.href;
+      if (/\/comments\//.test(href)) {
+        href += /\?/.test(href) ? "&" : "?";
+        href += "sort=top";
+        lnk.href = href;
+      }
+      continue;
+    }
     // Make a copy of the link, insert next to original, remove original
-    var cloneLink = lnk.cloneNode(true);
+    const cloneLink = lnk.cloneNode(true);
     // Cloning did not seem to sanitize as expected.
     // But removing some Reddit attributes did?
     // The first ATTR is the key one, but clearing the others to tidy up
@@ -1049,12 +1140,13 @@ function setStyles() {
         width: auto;
         height: auto;
     }
-     .vidDiv video, .vidDiv shreddit-media-ui {
-        max-width: 100%;
-        max-height: 100%;
+     .vidDiv video {
+        max-width: 600px;
+        max-height: 600px;
         object-fit: contain;
         display: block;
     }
+    .opauthor { background-color: cyan; }
    `;
   document.head.appendChild(style);
   // Tile size will be dynamically controlled with a slider using function below
