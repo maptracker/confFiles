@@ -18,7 +18,7 @@
 // @match         https://www.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/
 // @match         https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/*
 // @description   Colorizes posts and comments by count
-// @version       1.1.5
+// @version       1.1.6
 // @grant         none
 // ==/UserScript==
 
@@ -264,10 +264,12 @@ function searchForContent() {
   if (contentSearchCount++ > 20) {
     // Some posts don't seem to have content? Only a title?
     // After 20 seconds give up and start managing rest of content
+    logX("[3] Reddit Comments II - ?? Couldn't find any other content");
     clearPost();
     relocateComments();
     return true;
   }
+
   // Try again in a second
   setTimeout(searchForContent, 1000);
 }
@@ -349,8 +351,14 @@ function relocateVideo(player) {
     logX("[.] Reddit Comments II - Awaiting video content");
     return false;
   }
-  if (!vid.src) {
+  let src = vid.src;
+  if (!src) {
     logX("[.] Reddit Comments II - Awaiting video source");
+    return false;
+  }
+  if (/^blob/.test(src)) {
+    // Not sure what this is, but it's not a video
+    logX("[.] Reddit Comments II - Seeing if video will stop being a blob");
     return false;
   }
   logX("[3] Reddit Comments II - Content type: Video");
@@ -362,10 +370,11 @@ function relocateVideo(player) {
   const newVid = document.createElement("video");
   newVid.controls = "controls";
   newVid.muted = "muted";
+  newVid.preload = "auto";
   newVid.width = 640;
   pDiv.appendChild(newVid);
   const vidSrc = document.createElement("source");
-  vidSrc.src = vid.src;
+  vidSrc.src = src;
   newVid.appendChild(vidSrc);
 
   contentDiv.appendChild(pDiv);
@@ -474,6 +483,7 @@ function relocateComments() {
 }
 
 function filterComments() {
+  // Function supporting slider on New Reddit pages
   const range = document.getElementById(comRangeFilter);
   if (!range) return -1;
   const x = Number(range.value);
@@ -648,41 +658,36 @@ function useOld() {
 
 function highlightX() {
   // Sometimes spans, sometimes divs. Links for index comment count
-
-  var elems = [
-    [
-      document.getElementsByTagName("div"),
-      { Comment__metadata: 1, "score unvoted": 1 }
-    ],
-    [
-      document.getElementsByTagName("span"),
-      { "score unvoted": 1, "score-hidden": 1 }
-    ],
-    [document.getElementsByTagName("a"), { "bylink comments may-blank": 1 }]
-  ];
   // prettier-ignore
-  logX("Scanning " + elems[0][0].length + " DIVs + " + 
-       elems[1][0].length + " SPANs");
-  for (var e = 0; e < elems.length; e++) {
-    // Primary object-type loop (div, span, a)
-    var e2 = elems[e][0];
-    var e2l = e2.length;
-    var okClass = elems[e][1];
-    for (var s = 0; s < e2l; s++) {
-      // Looping over objects
-      var elem = e2[s];
-      // Only consider objects with certain classes:
-      var cn = elem.className;
-      if (!okClass[cn]) continue;
+  var elems = document.querySelectorAll(`
+    div.score.unvoted,
+    div.Comment__metadata,
+    span.score.unvoted,
+    span.score-hidden,
+    a.bylink.comments.may-blank
+  `);
 
-      var tn = elem.tagName.toLowerCase(); // not used?
-      var pts = elem.innerHTML;
-      const ptInfo = scoreToStyle(pts);
-      applyStyle(ptInfo.style, elem);
-      var cEl = elem.parentNode.parentNode;
-      coms.push([cEl, ptInfo.value]);
+  // prettier-ignore
+  const tally = {};
+  logX("Scanning elements for colorization");
+  for (let e = 0; e < elems.length; e++) {
+    const elem = elems[e];
+    const ptInfo = scoreToStyle(elem.innerText);
+    applyStyle(ptInfo.style, elem);
+    const cEl = elem.parentNode.parentNode;
+    coms.push([cEl, ptInfo.value]);
+    const tn = elem.tagName;
+    if (isNaN(tally[tn])) {
+      tally[tn] = 1;
+    } else {
+      tally[tn]++;
     }
   }
+  let tallyTxt = "Score styled for:";
+  for (const [name, value] of Object.entries(tally)) {
+    tallyTxt += ` ${name}:${value}`;
+  }
+  logX(tallyTxt);
 }
 
 function applyStyle(sty, el) {
@@ -694,9 +699,8 @@ function applyStyle(sty, el) {
 function scoreToStyle(pts) {
   // Takes a score / vote count and generates style highlighting
   // Also generates placeholder values for non-numerics to aid in sorting
-  if (pts == null || isNaN(pts)) pts = "?";
-  pts = pts.replace(/ points?.*/, "");
-  pts = pts.replace(/ comments?.*/, "");
+  if (pts == null) pts = "?";
+  pts = pts.replace(/ (point|comment)s?.*/, "");
   if (pts == "[score hidden]") {
     return { style: { backgroundColor: "silver" }, value: 10 };
   }
