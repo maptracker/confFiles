@@ -35,9 +35,13 @@ awk '{
 }' "$RCSS" > "$RTMP"
 
 ## Now build the blacklist, one line at a time
+BLOCK="";
 while IFS= read -r line; do
-    echo "    shreddit-post[subreddit-name=\"$line\"], div[data-subreddit=\"$line\"]," >> "$RTMP"
-done < "$BL"
+    BLOCK="$BLOCK
+    shreddit-post[subreddit-name=\"$line\"], div[data-subreddit=\"$line\"],"
+done < <(sort -u -- "$BL")
+
+echo "$BLOCK" >> "$RTMP"
 ## Finall CSS rule
 echo "    dummyObjectToDealWithTrailingComma {
         display: none ! important;
@@ -51,7 +55,6 @@ awk '
 ' "$RCSS" >> "$RTMP"
 
 ## Finally, update the version number and write to actual file
-
 cat "$RTMP" | sed "s/$VLINE/$VNEW/" > "$RCSS"
 
 
