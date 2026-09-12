@@ -18,7 +18,7 @@
 // @match         https://www.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/
 // @match         https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/*
 // @description   Colorizes posts and comments by count
-// @version       1.1.8
+// @version       1.1.9
 // @grant         none
 // ==/UserScript==
 
@@ -125,7 +125,7 @@ function relocateMetadata() {
     return false;
   }
 
-  opAuthor = post.author;
+  opAuthor = post.getAttribute("author");
   logX("[1] Reddit Comments II - Metadata found. Author: " + opAuthor);
   // The topBar is a table holding simplified information about this page
   const topBar = [];
@@ -409,7 +409,6 @@ function clearPost() {
   removeNode(document.querySelector("comment-body-header"));
   const app = document.querySelector("#shreddit-app");
   if (app) app.style.display = "none";
-  const lastDiv = document.body.querySelector("div:last-of-type");
 }
 
 function relocateSingleImage(img) {
@@ -536,7 +535,8 @@ function scanComments() {
   const app = document.querySelector("shreddit-app");
   app.style.display = "none";
   setTimeout(scanComments, 1000);
-  if (lastDiv.innerText.includes("reCAPTCHA")) {
+  const lastDiv = document.body.querySelector("div:last-of-type");
+  if (lastDiv && lastDiv.innerText.includes("reCAPTCHA")) {
     // Shows up after some delay, so look for it here, inside timeout recursion
     removeNode(lastDiv);
   }
@@ -589,10 +589,13 @@ function moveOneComment(com) {
   const auth = com.querySelector('[noun="comment_author"]');
   if (auth) {
     authTD.appendChild(auth);
+    const authTxt = auth.innerText.replace(/\s*/g, "");
     // Highlight OP
-    if (auth.innerText == opAuthor) authTD.className = "opauthor";
+    if (authTxt == opAuthor) {
+      authTD.className = "opauthor";
+    }
     // legacy attribute used for some styling
-    comDiv.setAttribute("data-author", auth);
+    comDiv.setAttribute("data-author", authTxt);
   } else {
     authTD.innerText = "?";
   }
