@@ -17,8 +17,16 @@ SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
 RCSS="${SCRIPT_DIR}/Reddit.user.css"
 ## Source of individual blacklisted subreddits
 BL="${SCRIPT_DIR}/MaskedSubreddits.txt"
-## A temp file we'll build
+## A temp file we'll build of the CSS
 RTMP="${RCSS}.tmp"
+
+## Sort, unique and tidy the blacklist file
+BLTMP="${BL}.tmp"
+sort -u -- "$BL" |\
+    sed 's/ //g' |\
+    sed 'sZ.*/ZZ' \
+        > "$BLTMP"
+mv "$BLTMP" "$BL"
 
 ## Calculate the version for the new file
 VLINE=$(grep '@version' "$RTMP")
@@ -39,7 +47,7 @@ BLOCK="";
 while IFS= read -r line; do
     BLOCK="$BLOCK
     shreddit-post[subreddit-name=\"$line\"], div[data-subreddit=\"$line\"],"
-done < <(sort -u -- "$BL")
+done < "$BL"
 
 echo "$BLOCK" >> "$RTMP"
 ## Finall CSS rule
