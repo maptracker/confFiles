@@ -18,7 +18,7 @@
 // @match         https://www.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/
 // @match         https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/*
 // @description   Colorizes posts and comments by count
-// @version       1.1.6
+// @version       1.1.7
 // @grant         none
 // ==/UserScript==
 
@@ -408,6 +408,10 @@ function clearPost() {
   removeNode(document.querySelector("comment-body-header"));
   const app = document.querySelector("#shreddit-app");
   if (app) app.style.display = "none";
+  const lastDiv = document.body.querySelector("div:last-of-type");
+  if (lastDiv.innerText.includes("reCAPTCHA")) {
+    removeNode(lastDiv);
+  }
 }
 
 function relocateSingleImage(img) {
@@ -459,6 +463,14 @@ function relocatePostText() {
     text.style.maxWidth = "800px";
     return true;
   }
+  // Treat a removed post like simple text
+  const removed = post.querySelector('[slot="post-removed-banner"]');
+  if (removed) {
+    contentDiv.appendChild(removed);
+    text.style.maxWidth = "800px";
+    return true;
+  }
+
   return false;
 }
 
@@ -576,8 +588,7 @@ function moveOneComment(com) {
   if (auth) {
     authTD.appendChild(auth);
     // Highlight OP
-    if (auth.innerText == opAuthor)
-      authTD.className = authTD.className + " opauthor";
+    if (auth.innerText == opAuthor) authTD.className = "opauthor";
   } else {
     authTD.innerText = "?";
   }
@@ -725,8 +736,8 @@ function scoreToStyle(pts) {
   } else if (pts >= 100) {
     rv.style = { backgroundColor: "lime", color: "black" };
   } else if (pts >= 50) {
-    rv.style = { color: "yellow" };
-  } else if (pts < -100) {
+    rv.style = { backgroundColor: "yellow", color: "black" };
+  } else if (pts < -10) {
     rv.style = { backgroundColor: "black", color: "white" };
   } else if (pts <= 5) {
     // not sure why I had this here
