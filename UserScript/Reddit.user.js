@@ -18,7 +18,7 @@
 // @match         https://www.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/
 // @match         https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/*
 // @description   Colorizes posts and comments by count
-// @version       1.1.10
+// @version       1.1.11
 // @grant         none
 // ==/UserScript==
 
@@ -513,8 +513,18 @@ function relocatePostText() {
   const post = document.querySelector("shreddit-post");
   const text = post.querySelector("shreddit-post-text-body");
   if (text) {
-    contentDiv.appendChild(text);
-    text.style.maxWidth = "800px";
+    logX("[4] Text block relocated");
+    // Check if the content is inside a blured box
+    let using = text;
+    const blur = text.querySelector("shreddit-blurred-container");
+    if (blur) {
+      logX("[5] Blurred block identified");
+      blur.style.display = "block";
+      using = blur.querySelector('[slot="revealed"]');
+      if (!using) using = blur;
+    }
+    contentDiv.appendChild(using);
+    using.style.maxWidth = "800px";
     return true;
   }
   // Treat a removed post like simple text
