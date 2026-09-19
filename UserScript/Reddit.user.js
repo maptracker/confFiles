@@ -18,7 +18,7 @@
 // @match         https://www.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/
 // @match         https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/*
 // @description   Colorizes posts and comments by count
-// @version       1.1.9
+// @version       1.1.10
 // @grant         none
 // ==/UserScript==
 
@@ -36,6 +36,7 @@ const noteEl = document.createElement("div");
 let topTarg = false;
 // Tracking how many times we tried to find content
 let contentSearchCount = 0;
+let waitingForTitle = 0;
 let opAuthor = "DummyInitialValue";
 
 console.log("TEST");
@@ -205,8 +206,11 @@ function relocateTitle() {
   const h1s = post.querySelectorAll("h1");
   if (h1s.length == 0) {
     // If the title isn't available try again after a second
-    setTimeout(relocateTitle, 1000);
-    return false;
+    // ... up to 10 times. Sometimes there appears to be no title?
+    if (waitingForTitle++ < 10) {
+      setTimeout(relocateTitle, 1000);
+      return false;
+    }
   }
   infoDiv.appendChild(h1s[0]);
   relocatePostContent();
@@ -229,26 +233,51 @@ function searchForContent() {
   if (oneimg) {
     // The post has a single image
     relocateSingleImage(oneimg);
+    finalizeContentRelocation();
     return true;
   }
   const gcs = post.querySelector("gallery-carousel");
   if (gcs) {
+    // Image gallery of 2+ images
     relocateGallery(gcs);
+    finalizeContentRelocation();
     return true;
   }
 
   const player = post.querySelector("shreddit-player");
   if (player) {
+    // Video is primary content
     if (relocateVideo(player)) {
+      finalizeContentRelocation();
       return true;
+    } else {
+      setTimeout(searchForContent, 1000);
+      return false;
     }
   }
 
   const lightbox = post.querySelector('[source="post_lightbox"]');
   if (lightbox) {
     if (relocateLightbox(lightbox)) {
+      finalizeContentRelocation();
       return true;
     }
+  }
+
+  const embed = post.querySelector("shreddit-embed");
+  if (embed) {
+    if (relocateEmbeded(embed)) {
+      finalizeContentRelocation();
+      return true;
+    } else {
+      setTimeout(searchForContent, 1000);
+      return false;
+    }
+  }
+  const media = post.querySelector('[slot="post-media-container"]');
+  if (media) {
+    relocateAsIs(media);
+    return true;
   }
 
   if (relocatePostText()) {
@@ -266,13 +295,19 @@ function searchForContent() {
     // Some posts don't seem to have content? Only a title?
     // After 20 seconds give up and start managing rest of content
     logX("[3] Reddit Comments II - ?? Couldn't find any other content");
-    clearPost();
-    relocateComments();
+    finalizeContentRelocation();
     return true;
   }
 
   // Try again in a second
   setTimeout(searchForContent, 1000);
+}
+
+function finalizeContentRelocation() {
+  relocatePostText();
+  clearPost();
+  relocateComments();
+  return true;
 }
 
 function largestSourceSet(img) {
@@ -338,9 +373,28 @@ function relocateGallery(gc) {
     imgA.appendChild(image);
     //tile.appendChild(image);
   }
-  relocatePostText();
-  clearPost();
-  relocateComments();
+  finalizeContentRelocation();
+  return true;
+}
+
+function relocateAsIs(el) {
+  // Just move the object as it is
+  logX("[3] Reddit Comments II - Fixed content in " + el.tagName);
+  contentDiv.appendChild(el);
+  finalizeContentRelocation();
+  return true;
+}
+
+function relocateEmbeded(embed) {
+  const sroot = embed.shadowRoot;
+  if (!sroot) return false;
+  const iframe = sroot.querySelector("iframe");
+  if (!iframe) {
+    logX("[.] Reddit Comments II - Awaiting iframe content");
+    return false;
+  }
+  contentDiv.appendChild(iframe);
+  finalizeContentRelocation();
   return true;
 }
 
@@ -357,31 +411,38 @@ function relocateVideo(player) {
     logX("[.] Reddit Comments II - Awaiting video source");
     return false;
   }
-  if (/^blob/.test(src)) {
-    // Not sure what this is, but it's not a video
-    logX("[.] Reddit Comments II - Seeing if video will stop being a blob");
-    return false;
-  }
-  logX("[3] Reddit Comments II - Content type: Video");
-
   const pDiv = document.createElement("div");
   pDiv.className = "vidDiv";
-  // Relocating the original video didn't work at all
-  // We'll make a new, clean video tag and just move the source over
-  const newVid = document.createElement("video");
-  newVid.controls = "controls";
-  newVid.muted = "muted";
-  newVid.preload = "auto";
-  newVid.width = 640;
-  pDiv.appendChild(newVid);
-  const vidSrc = document.createElement("source");
-  vidSrc.src = src;
-  newVid.appendChild(vidSrc);
-
   contentDiv.appendChild(pDiv);
-  relocatePostText();
-  clearPost();
-  relocateComments();
+
+  if (/^blob/.test(src)) {
+    // Not sure what this is, but I've repeatedly failed to reloacte
+    // this as a "plain" video. Give up and stuff the Reddit player in
+    logX("[3] Reddit Comments II - Adding full Reddit video player");
+    pDiv.appendChild(player);
+    // Slam in some explicit styles, since our CSS won't pass the shadow root
+    //vid.style.setProperty("max-width", "600px", "important");
+    //vid.style.setProperty("max-height", "600px", "important");
+    vid.style.setProperty("width", "auto", "important");
+    //vid.style.setProperty("height", "auto", "important");
+    vid.style.setProperty("object-fit", "contain", "important");
+    vid.style.setProperty("display", "block", "important");
+  } else {
+    logX("[3] Reddit Comments II - Content type: Video");
+    pDiv.className = "vidDiv";
+    // Relocating the original video didn't work at all
+    // We'll make a new, clean video tag and just move the source over
+    const newVid = document.createElement("video");
+    newVid.controls = "controls";
+    newVid.muted = "muted";
+    newVid.preload = "auto";
+    newVid.width = 640;
+    pDiv.appendChild(newVid);
+    const vidSrc = document.createElement("source");
+    vidSrc.src = src;
+    newVid.appendChild(vidSrc);
+  }
+  finalizeContentRelocation();
   return true;
 }
 
@@ -389,9 +450,7 @@ function relocateLightbox(lightbox) {
   if (!lightbox) return false;
   logX("[3] Reddit Comments II - Content type: Basic Lightbox");
   contentDiv.appendChild(lightbox);
-  relocatePostText();
-  clearPost();
-  relocateComments();
+  finalizeContentRelocation();
   return true;
 }
 
@@ -446,9 +505,7 @@ function relocateSingleImage(img) {
   newImg.style.maxWidth = "600px";
   newImg.style.maxHeight = "600px";
   imgA.appendChild(newImg);
-  relocatePostText();
-  clearPost();
-  relocateComments();
+  finalizeContentRelocation();
   return true;
 }
 
@@ -467,7 +524,6 @@ function relocatePostText() {
     text.style.maxWidth = "800px";
     return true;
   }
-
   return false;
 }
 
@@ -1121,8 +1177,8 @@ function setStyles() {
     }
 
     .singleImage {
-        maxWidth: 600px ! important;
-        maxHeight: 600px ! important;
+        max-width: 600px ! important;
+        max-height: 600px ! important;
         width: auto;
         height: auto;
         object-fit: contain;
@@ -1157,16 +1213,18 @@ function setStyles() {
        font-size: 0.6em;
     }
     .vidDiv {
-        maxWidth: 600px ! important;
-        maxHeight: 600px ! important;
+        max-width: 600px ! important;
+        max-height: 600px ! important;
         width: auto;
         height: auto;
     }
-     .vidDiv video {
+    .vidDiv video {
         max-width: 600px;
         max-height: 600px;
         object-fit: contain;
         display: block;
+        width: 100%;
+        height: auto;
     }
     .opauthor { background-color: cyan; }
    `;
