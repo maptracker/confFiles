@@ -1,0 +1,18 @@
+/* ==UserStyle==
+@name        Kyiv Independent
+@description Mask out irritations
+@namespace   github.com/maptracker/confFiles
+@homepageURL https://github.com/maptracker/confFiles/tree/master/UserCSS
+@version     1.0.0
+@license     GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("kyivindependent.com") {
+    header, #support-us-article-banner-slot, .nts-ad, .kg-bookmark-group,
+    div[class*="EditorsPicks"], div[class*="ArticleBannerPlaceholder"], 
+    #ukraine-daily-side-banner-slot, footer, div[class*="TopBanners_wrapper"],
+    div[class*="DefaultPostHero_rightSideSection"],
+    div[style="min-height:73px"] {
+        display: none ! important;
+    }
+}
