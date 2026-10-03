@@ -18,7 +18,7 @@
 // @match         https://www.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/
 // @match         https://old.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion/*
 // @description   Colorizes posts and comments by count
-// @version       1.1.11
+// @version       1.1.12
 // @grant         none
 // ==/UserScript==
 
@@ -464,6 +464,7 @@ function removeNode(el) {
 function clearPost() {
   const post = document.querySelector("shreddit-post");
   if (!post) return;
+  logX("[-] Removing original post: " + post.tagName);
   removeNode(post);
   removeNode(document.querySelector("comment-body-header"));
   const app = document.querySelector("#shreddit-app");
@@ -530,8 +531,9 @@ function relocatePostText() {
   // Treat a removed post like simple text
   const removed = post.querySelector('[slot="post-removed-banner"]');
   if (removed) {
+    logX("[5] Post identified as removed");
     contentDiv.appendChild(removed);
-    text.style.maxWidth = "800px";
+    contentDiv.style.maxWidth = "800px";
     return true;
   }
   return false;
@@ -601,10 +603,14 @@ function scanComments() {
   const app = document.querySelector("shreddit-app");
   app.style.display = "none";
   setTimeout(scanComments, 1000);
-  const lastDiv = document.body.querySelector("div:last-of-type");
-  if (lastDiv && lastDiv.innerText.includes("reCAPTCHA")) {
-    // Shows up after some delay, so look for it here, inside timeout recursion
-    removeNode(lastDiv);
+  // Remove warning about recaptcha
+  const allDivs = document.body.querySelectorAll(":scope > div");
+  if (allDivs.length > 0) {
+    const lastDiv = allDivs[allDivs.length - 1];
+    if (lastDiv.innerText.includes("reCAPTCHA")) {
+      // Shows up after some delay, so look for it here, inside timeout recursion
+      removeNode(lastDiv);
+    }
   }
 }
 
@@ -663,7 +669,7 @@ function moveOneComment(com) {
     // legacy attribute used for some styling
     comDiv.setAttribute("data-author", authTxt);
   } else {
-    authTD.innerText = "?";
+    authTD.innerText = com.getAttribute("author");
   }
 
   // Posting date
