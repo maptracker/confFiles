@@ -22,18 +22,10 @@ RTMP="${RCSS}.tmp"
 
 ## Sort, unique and tidy the blacklist file
 BLTMP="${BL}.tmp"
-sort -u -- "$BL" |\
-    sed 's/ //g' |\
-    sed 'sZ.*/ZZ' \
-        > "$BLTMP"
-mv "$BLTMP" "$BL"
+sed 's/[[:space:]]//g; sZ.*/ZZ; /^[[:space:]]*$/d;' "$BL" |\
+    sort -u > "$BLTMP"
 
-## Calculate the version for the new file
-VLINE=$(grep '@version' "$RTMP")
-echo "Input  $VLINE"
-nowVers=$(echo "$VLINE" | sed 's/.*\.//')
-newVers=$((nowVers + 1))
-VNEW=$(sed "s/\.$nowVers$/.$newVers/" <<< "$VLINE")
+mv "$BLTMP" "$BL"
 
 ## Build the new file
 ## Grab the 'top' of the file
@@ -42,9 +34,19 @@ awk '{
     if (index($0, "SUBREDDIT START")) exit
 }' "$RCSS" > "$RTMP"
 
-## Now build the blacklist, one line at a time
+## Calculate the version for the new file
+VLINE=$(grep '@version' "$RTMP")
+echo "Input  $VLINE"
+nowVers=$(echo "$VLINE" | sed 's/.*\.//')
+newVers=$((nowVers + 1))
+VNEW=$(sed "s/\.$nowVers$/.$newVers/" <<< "$VLINE")
+
+## Now build the blacklist, one line at a time, as a string
+## Trying to >> each line to a file was VERY slow
 BLOCK="";
 while IFS= read -r line; do
+    ## Ignore empty lines
+    [[ $line == "" ]] && continue
     BLOCK="$BLOCK
     shreddit-post[subreddit-name=\"$line\"], div[data-subreddit=\"$line\"],"
 done < "$BL"
@@ -65,8 +67,6 @@ awk '
 ## Finally, update the version number and write to actual file
 cat "$RTMP" | sed "s/$VLINE/$VNEW/" > "$RCSS"
 
-
-echo "
-Output $VNEW
+echo "Output $VNEW
 $RCSS
 "
